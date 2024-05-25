@@ -1,4 +1,4 @@
-﻿// u240525.1402
+﻿// u240525.1957
 
 using System.Collections.Generic;
 using System.IO;
@@ -22,7 +22,7 @@ namespace Outpost31.Core.Configuration
         /// <returns>A TingenConfiguration object with default values.</returns>
         public static TingenConfiguration Build()
         {
-            Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.Build()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.Build()]"); /* <- For development use only */
 
             return new TingenConfiguration
             {
@@ -42,7 +42,7 @@ namespace Outpost31.Core.Configuration
         /// <returns>The Tingen configuration settings.</returns>
         public static TingenConfiguration Load(string configFilePath)
         {
-            Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.Load()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.Load()]"); /* <- For development use only */
 
             VerifyFileExists(configFilePath);
 
@@ -53,7 +53,7 @@ namespace Outpost31.Core.Configuration
         /// <param name="configFilePath">The path to the Tingen configuration file.</param>
         private static void VerifyFileExists(string configFilePath)
         {
-            Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.VerifyFileExists()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.VerifyFileExists()]"); /* <- For development use only */
 
             if (!File.Exists(configFilePath))
             {
@@ -66,7 +66,7 @@ namespace Outpost31.Core.Configuration
         /// <param name="configFilePath">The path to the Tingen configuration file.</param>
         private static void CreateNew(string configFilePath)
         {
-            Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.CreateNew()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.CreateNew()]"); /* <- For development use only */
 
             var configuration = Build();
 

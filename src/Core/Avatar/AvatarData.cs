@@ -80,9 +80,9 @@ namespace Outpost31.Core.Avatar
         /// <returns>The individual components of the ScriptParameter.</returns>
         private static Dictionary<string, string> GetScriptParameterComponents(string sentScriptParameter)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Avatar.AvatarData.ParseScriptParameter()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Avatar.AvatarData.GetScriptParameterComponents()]"); /* <- For development use only */
 
-            var scriptParameterComponent = SetComponentToUndefined();
+            var scriptParameterComponent = SetComponentsToUndefined();
             var numberOfComponents       = sentScriptParameter.Split('-').Length;
 
             for (int component = 0; component < numberOfComponents; component++)
@@ -118,9 +118,9 @@ namespace Outpost31.Core.Avatar
         ///     <para>This is done to avoid any issues where values are set to "null", or whatever.</para>>
         /// </remarks>
         /// <returns>The individual ScriptParameter components, all set to "undefined".</returns>
-        private static Dictionary<string, string> SetComponentToUndefined()
+        private static Dictionary<string, string> SetComponentsToUndefined()
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Avatar.AvatarData.SetComponentToUndefined()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Avatar.AvatarData.SetComponentsToUndefined()]"); /* <- For development use only */
 
             return new Dictionary<string, string>
             {

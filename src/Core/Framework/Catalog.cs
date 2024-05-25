@@ -1,4 +1,4 @@
-﻿// u240525.1402
+﻿// u240525.1957
 
 using System.Collections.Generic;
 
@@ -12,7 +12,7 @@ namespace Outpost31.Core.Framework
         /// </remarks>
         public static Dictionary<string, string> PathPostfixes(string avatarSystemCode)
         {
-            Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Framework.Catalog.PathPostfixes()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Framework.Catalog.PathPostfixes()]"); /* <- For development use only */
 
             var test = new Dictionary<string, string>
             {
@@ -49,7 +49,7 @@ namespace Outpost31.Core.Framework
 
         public static List<string> ServiceStatusPaths(TingenFramework tnFramework)
         {
-            Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Framework.Catalog.ServiceStatusPaths()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Framework.Catalog.ServiceStatusPaths()]"); /* <- For development use only */
 
             return new List<string>
             {

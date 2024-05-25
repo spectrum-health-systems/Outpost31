@@ -1,4 +1,6 @@
-﻿using Outpost31.Core.Session;
+﻿// u240525.1957
+
+using Outpost31.Core.Session;
 
 namespace Outpost31.Module.Admin.Action
 {
@@ -6,7 +8,7 @@ namespace Outpost31.Module.Admin.Action
     {
         public static void ParseAction(TingenSession tnSession)
         {
-            Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Module.Admin.Action.Service.ParseAction()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Module.Admin.Action.Service.ParseAction()]"); /* <- For development use only */
 
             switch (tnSession.AvComponents.ScriptAction)
             {
@@ -22,7 +24,7 @@ namespace Outpost31.Module.Admin.Action
 
         public static void ParseStatusOption(TingenSession tnSession)
         {
-            Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Module.Admin.Action.Service.ParseStatusOption()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Module.Admin.Action.Service.ParseStatusOption()]"); /* <- For development use only */
 
             switch (tnSession.AvComponents.ScriptOption)
             {
