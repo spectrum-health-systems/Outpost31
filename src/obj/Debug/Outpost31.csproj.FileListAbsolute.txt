@@ -1,0 +1,6 @@
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.dll
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.pdb
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.csproj.AssemblyReference.cache
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.csproj.CoreCompileInputs.cache
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.dll
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.pdb
