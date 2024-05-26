@@ -16,11 +16,13 @@ namespace Outpost31.Core.Framework
 
             var test = new Dictionary<string, string>
             {
+                { "Admin",          $@"{avatarSystemCode}\Admin" },
                 { "Alerts",         $@"{avatarSystemCode}\Messages\Alerts" },
                 { "Archive",        $@"{avatarSystemCode}\Archive" },
                 { "Configs",        $@"{avatarSystemCode}\Configs" },
                 { "Data",           $@"{avatarSystemCode}\Data" },
                 { "Debug",          $@"{avatarSystemCode}\Debug" },
+                { "Extensions",     $@"{avatarSystemCode}\Extensions" },
                 { "Errors",         $@"{avatarSystemCode}\Messages\Errors" },
                 { "Exports",        $@"{avatarSystemCode}\Data\Export" },
                 { "Imports",        $@"{avatarSystemCode}\Data\Import" },
