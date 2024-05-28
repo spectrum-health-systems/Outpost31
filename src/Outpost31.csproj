@@ -76,15 +76,21 @@
     <Compile Include="Core\Configuration\TingenConfiguration.cs" />
     <Compile Include="Core\Debuggler\Primeval.cs" />
     <Compile Include="Core\Framework\Catalog.cs" />
+    <Compile Include="Core\Framework\Maintenance.cs" />
     <Compile Include="Core\Framework\TingenFramework.Properties.cs" />
     <Compile Include="Core\Framework\TingenFramework.cs" />
     <Compile Include="Core\Logger\LogEvent.cs" />
     <Compile Include="Core\Session\TingenSession.Properties.cs" />
     <Compile Include="Core\Session\TingenSession.cs" />
+    <Compile Include="Core\TheOptionObject\TheReturnOptionObject.cs" />
     <Compile Include="Core\Utilities\DuJson.cs" />
     <Compile Include="Module\Admin\Action\Service.Parse.cs" />
     <Compile Include="Module\Admin\Action\Service.cs" />
     <Compile Include="Module\Admin\ParseScriptCommand.cs" />
+    <Compile Include="Core\Common\FormField.cs" />
+    <Compile Include="Module\OpenIncident\Action\VerifyAuthor.Parse.cs" />
+    <Compile Include="Module\OpenIncident\Action\VerifyAuthor.cs" />
+    <Compile Include="Module\OpenIncident\ParseScriptCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

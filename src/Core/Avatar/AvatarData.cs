@@ -70,7 +70,7 @@ namespace Outpost31.Core.Avatar
                 ScriptAction        = scriptParameterComponent["Action"],
                 ScriptOption        = scriptParameterComponent["Option"],
                 SentOptionObject    = sentOptionObject,
-                WorkOptionObject    = sentOptionObject,
+                WorkOptionObject    = sentOptionObject.Clone(),
                 ReturnOptionObject  = null
             };
         }

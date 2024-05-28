@@ -1,4 +1,4 @@
-﻿// u240525.1957
+﻿// u240528.1744
 
 using Outpost31.Core.Session;
 
@@ -17,9 +17,9 @@ namespace Outpost31.Core.Common
             {
                 Outpost31.Module.Admin.ParseScriptCommand.ParseCommand(tnSession);
             }
-            else if (tnSession.AvComponents.ScriptModule == "testing")
+            else if (tnSession.AvComponents.ScriptModule == "openincident")
             {
-                // Testing module goes here!
+                Outpost31.Module.OpenIncident.ParseScriptCommand.ParseCommand(tnSession);
             }
             else
             {
