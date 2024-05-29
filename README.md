@@ -4,10 +4,9 @@
 
 </div>
 
+# About Outpost31
 
-
-
-Core components and modules for the Tingen web service.
+The Outpost31 project contains the core components and modules for the [Tingen](https://github.com/spectrum-health-systems/Tingen) web service.
 
 ## Repository branches
 
@@ -16,7 +15,4 @@ Core components and modules for the Tingen web service.
 
 * [development](https://github.com/spectrum-health-systems/Outpost31_development/tree/development)
   The current development branch of Outpost31
-
-* [24.5_development](https://github.com/spectrum-health-systems/Outpost31_development/tree/24.5_development)
-* A snapshot of the current development branch of Outpost31
-
+  
