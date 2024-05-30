@@ -4,7 +4,7 @@ using Outpost31.Core.Session;
 
 namespace Outpost31.Core.Common
 {
-    /// <summary>Parses the <b>Module</b> component of the ScriptParameter.</summary>
+    /// <summary>Parses the <i>Module</i> component of the ScriptParameter.</summary>
     public static class ParseScriptModule
     {
         /// <summary>Determines which Tingen <i>Module</i> will be doing the work this session.</summary>
@@ -21,7 +21,6 @@ namespace Outpost31.Core.Common
         ///     </code>
         ///    </example>
         ///   </para>
-        ///  <para></para>
         /// </remarks>
         public static void ParseModule(TingenSession tnSession)
         {
@@ -37,7 +36,7 @@ namespace Outpost31.Core.Common
             }
             else
             {
-                // Exit gracefully.
+                // TODO Need to add code here to exit gracefully.
             }
         }
     }

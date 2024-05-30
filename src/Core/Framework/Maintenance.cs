@@ -2,7 +2,7 @@
 {
     public static class Maintenance
     {
-        public static void CleanUp()
+        public static void CleanSessionData()
         {
             //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Framework.Maintenance.CleanUp()]"); /* <- For development use only */
 

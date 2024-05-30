@@ -6,13 +6,15 @@ namespace Outpost31.Core.Avatar
 {
     /// <summary>Logic for Avatar-specific data.</summary>
     /// <remarks>
-    ///  <para>Propertises for the Avatar data are located in <b>AvatarData.Properties.cs.</b></para>
+    ///  <para>
+    ///   Properties for the Avatar data are located in <b>AvatarData.Properties.cs.</b>
+    ///  </para>
     ///  <para>
     ///   Only data sent directly from Avatar, and data derived from the sent data, should be here:
-    ///     <list type="bullet">
-    ///      <item>The sentOptionObject (and the workOptionObject and returnOptionObject)</item>
-    ///      <item>The sentScriptParameter (and its individual components)</item>
-    ///    </list>
+    ///   <list type="bullet">
+    ///    <item>The sentOptionObject (and the workOptionObject and returnOptionObject)</item>
+    ///    <item>The sentScriptParameter (and its individual components)</item>
+    ///   </list>
     ///  </para>
     /// </remarks>
     public partial class AvatarData

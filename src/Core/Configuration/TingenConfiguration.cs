@@ -1,17 +1,23 @@
-﻿// u240525.1957
+﻿// u240530.0828
 
 using System.Collections.Generic;
 using System.IO;
 
 namespace Outpost31.Core.Configuration
 {
-    /// <summary>Tingen configuration logic.</summary>
+    /// <summary>Logic for the Tingen configuration settings.</summary>
     /// <remarks>
-    ///     - Properties for the Tingen configuration are located in TingenConfiguration.Properties.cs.
-    ///     - Configuration settings:
-    ///         - Do not change between Tingen sessions.
-    ///         - Are stored in an external JSON file located in Tingen\%SystemCode%\Configs\.
-    ///         - Can be modified by the user.
+    ///  <para>
+    ///   Properties for the TingenConfiguration.cs are located in <b>TingenConfiguration.Properties.cs.</b>
+    ///  </para>
+    ///  <para>
+    ///   Tingen configuration settings:
+    ///   <list type="bullet">
+    ///    <item>are stored in an external JSON file located in <b>Tingen\%SystemCode%\Configs\</b></item>
+    ///    <item>Do not change between Tingen sessions</item>
+    ///    <item>Can be modified by the user to suit their environments.</item>
+    ///   </list>
+    ///  </para>
     /// </remarks>
     public partial class TingenConfiguration
     {
