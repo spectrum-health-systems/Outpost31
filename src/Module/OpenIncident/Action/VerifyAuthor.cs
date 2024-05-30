@@ -1,13 +1,7 @@
 ﻿// u240528.1744
 
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Outpost31.Core.Session;
-using Outpost31.Core.TheOptionObject;
 
 namespace Outpost31.Module.OpenIncident.Action
 {
@@ -22,7 +16,7 @@ namespace Outpost31.Module.OpenIncident.Action
 
             var filePath = $@"{tnSession.TnFramework.TemporaryPath}\{currentAvatarUser}-verifyauthor.data";
 
-            Outpost31.Module.Common.FormField.SaveValue(originalAuthor, filePath);
+            Outpost31.Module.Common.FieldOperation.SaveValue(originalAuthor, filePath);
         }
 
 

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Outpost31.Core.Session;
-using ScriptLinkStandard.Objects;
+﻿using Outpost31.Core.Session;
 
 namespace Outpost31.Core.TheOptionObject
 {
