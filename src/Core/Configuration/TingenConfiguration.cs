@@ -23,7 +23,10 @@ namespace Outpost31.Core.Configuration
     {
         /// <summary>Builds the default Tingen configuration object.</summary>
         /// <remarks>
-        ///     - <c>TingenMode</c> determines if Tingen is <b>enabled</b> or <b>disabled</b>.
+        ///  <para>
+        ///   These are the default values for the Tingen configuration settings, and need to be verified/updated when a new version of
+        ///   Tingen is released.
+        ///  </para>
         /// </remarks>
         /// <returns>A TingenConfiguration object with default values.</returns>
         public static TingenConfiguration Build()
@@ -45,6 +48,12 @@ namespace Outpost31.Core.Configuration
 
         /// <summary>Loads the Tingen configuration file.</summary>
         /// <param name="configFilePath">The path to the Tingen configuration file.</param>
+        /// <remarks>
+        ///  <para>
+        ///   By default, the configuration file is located in <b>Tingen\%SystemCode%\Configs\</b>.<br/><br/>
+        ///   If the configuration file does not exist, a configuration file with default values will be created.
+        ///  </para>
+        /// </remarks>
         /// <returns>The Tingen configuration settings.</returns>
         public static TingenConfiguration Load(string configFilePath)
         {

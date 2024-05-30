@@ -16,7 +16,6 @@ namespace Outpost31.Module.Common
         ///   <code>
         ///    var value1 = tnSession.AvComponents.SentOptionObject.GetFieldValue("10001")
         ///    var value2 = tnSession.AvComponents.SentOptionObject.GetFieldValue("10002");
-        ///
         ///    Outpost31.Module.Common.FieldOperation.SaveValue(value1, value1);
         ///   </code>
         ///  </example>
@@ -33,22 +32,23 @@ namespace Outpost31.Module.Common
         /// <param name="valueToSave">The value to save.</param>
         /// <param name="filePath">The file path.</param>
         /// <remarks>
-        ///  <example>
-        ///   To call FieldOperation.Compare():
-        ///   <code>
-        ///    var fieldValue = tnSession.AvComponents.SentOptionObject.GetFieldValue("10001")
-        ///    var filePath = $@"{tnSession.TnFramework.TemporaryPath}\{currentAvatarUser}-%filename%.%extension%";
-        ///
-        ///    Outpost31.Module.Common.FieldOperation.SaveValue(originalAuthor, filePath);
-        ///   </code>
-        ///  </example>
-        /// <para>
-        /// </para>
-        ///  To ensure that any sensitive data is removed at the end of a session, the filePath should adhere to the following standards:
-        ///  <list type="bullet">
-        ///   <item>The filename should always start with the <c>currentAvatarUser</c></item>
-        ///   <item>The <c>filePath</c> should be in <c>tnSession.TnFramework.TemporaryPath</c></item>
-        ///  </list>
+        ///  <para>
+        ///   <example>
+        ///    To call FieldOperation.Compare():
+        ///    <code>
+        ///     var fieldValue = tnSession.AvComponents.SentOptionObject.GetFieldValue("10001")
+        ///     var filePath = $@"{tnSession.TnFramework.TemporaryPath}\{currentAvatarUser}-%filename%.%extension%";
+        ///     Outpost31.Module.Common.FieldOperation.SaveValue(originalAuthor, filePath);
+        ///    </code>
+        ///   </example>
+        ///  </para>
+        ///  <para>
+        ///   To ensure that any sensitive data is removed at the end of a session, the filePath should adhere to the following standards:
+        ///   <list type="bullet">
+        ///    <item>The filename should always start with the <c>currentAvatarUser</c></item>
+        ///    <item>The <c>filePath</c> should be in <c>tnSession.TnFramework.TemporaryPath</c></item>
+        ///   </list>
+        ///  </para>
         ///  <para>
         ///   Since the <c>filePath</c> is user-definable, we will verify that the <c>filePath</c> doesn't exist before (re)creating it.
         ///  </para>

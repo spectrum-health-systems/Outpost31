@@ -1,4 +1,4 @@
-﻿// u240525.1957
+﻿// u240530.1120
 
 using System;
 using Outpost31.Core.Avatar;
@@ -10,7 +10,9 @@ namespace Outpost31.Core.Session
 {
     /// <summary>Contains Tingen session logic.</summary>
     /// <remarks>
-    ///     Properties for the Tingen session are located in <b>TingenSession.Properties.cs.</b>
+    ///  <para>  
+    ///   Properties for the Tingen session are located in <b>TingenSession.Properties.cs.</b>
+    ///  </para> 
     /// </remarks>
     public partial class TingenSession
     {
@@ -20,15 +22,19 @@ namespace Outpost31.Core.Session
         /// <param name="sentOptionObject">The OptionObject sent from Avatar.</param>
         /// <param name="sentScriptParameter">The ScriptParameter sent from Avatar.</param>
         /// <remarks>
-        ///     AbSession contains all of the information that Tingen needs to do what it does, including data from:
-        ///     <list type="bullet">
-        ///         <item>The Tingen configuration file, which contains data that does not change between sessions</item>
-        ///         <item>Static data that is specific to the current session, such as framework components</item>
-        ///         <item>Runtime settings that are specific to the current session, such as the session timestamp</item>
-        ///         <item>The <paramref name="sentOptionObject"/> and <paramref name="sentScriptParameter"/></item>
-        ///         <item>Abatab Modules</item>
-        ///     </list>
+        ///  <para>
+        ///   AbSession contains all of the information that Tingen needs to do what it does, including data from:
+        ///   <list type="bullet">
+        ///    <item>The Tingen configuration file, which contains data that does not change between sessions</item>
+        ///    <item>Static data that is specific to the current session, such as framework components</item>
+        ///    <item>Runtime settings that are specific to the current session, such as the session timestamp</item>
+        ///    <item>The <paramref name="sentOptionObject"/> and <paramref name="sentScriptParameter"/></item>
+        ///    <item>Abatab Modules</item>
+        ///   </list>
+        ///  </para>
+        ///  <para>
         ///     All strings in this method have been converted to lowercase to make it easlier to compare going forward.
+        ///  </para>
         /// </remarks>
         /// <returns>An AbSession object.</returns>
         public static TingenSession Load(string configFilePath, OptionObject2015 sentOptionObject, string sentScriptParameter)
@@ -47,7 +53,7 @@ namespace Outpost31.Core.Session
                 LogMode          = tnConfig.LogMode,
                 LogDelay         = tnConfig.LogDelay,
                 TnFramework      = TingenFramework.BuildComponents(tnConfig.TingenDataRoot, tnConfig.AvatarSystemCode),
-                AvComponents     = AvatarData.Setup(sentScriptParameter, sentOptionObject)
+                AvComponents     = AvatarComponents.Setup(sentScriptParameter, sentOptionObject)
             };
         }
     }
