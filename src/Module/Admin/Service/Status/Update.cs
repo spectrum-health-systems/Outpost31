@@ -1,19 +1,12 @@
-﻿// u240530.1209
+﻿// u240530.1723
 
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Outpost31.Module.Admin.Action
+namespace Outpost31.Module.Admin.Service.Status
 {
-    /// <summary>Logic for the <b>Service</b> Command of the Admin Module.</summary>
-    /// <remarks>
-    ///   <para>
-    ///    This class contains the methods that does things with the "Service" Command.
-    ///    The Service Command is parsed in the <b>ParseScriptCommand.cs</b> file.
-    ///  </para>
-    /// </remarks>
-    public static partial class Service
+    public static class Update
     {
         /// <summary>Write a file indicating the status of the Tingen web service.</summary>
         /// <param name="tingenMode">The current Tingen web service mode.</param>
@@ -25,11 +18,11 @@ namespace Outpost31.Module.Admin.Action
         ///   Status files are written to the various paths for various uses.
         ///  </para>
         /// </remarks>
-        public static void StatusUpdate(string tingenMode, string avatarSystemCode, List<string> serviceStatusPaths)
+        public static void CreateLocalStatusFiles(string tingenMode, string avatarSystemCode, List<string> serviceStatusPaths)
         {
             //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Module.Admin.Action.Service.StatusUpdate()]"); /* <- For development use only */
 
-            DeleteExistingStatusFiles(avatarSystemCode, serviceStatusPaths);
+            DeleteExistingLocalStatusFiles(avatarSystemCode, serviceStatusPaths);
 
             string statusFileName;
 
@@ -48,14 +41,13 @@ namespace Outpost31.Module.Admin.Action
                     break;
             }
 
-            CreateStatusFiles(statusFileName, serviceStatusPaths);
+            WriteLocalStatusFiles(statusFileName, serviceStatusPaths);
         }
-
 
         /// <summary>Delete existing status files.</summary>
         /// <param name="avatarSystemCode">The Avatar System Code.</param>
         /// <param name="serviceStatusPaths">Paths where the status file will be written.</param>
-        private static void DeleteExistingStatusFiles(string avatarSystemCode, List<string> serviceStatusPaths)
+        private static void DeleteExistingLocalStatusFiles(string avatarSystemCode, List<string> serviceStatusPaths)
         {
             //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Module.Admin.Action.Service.DeleteExistingStatusFiles()]"); /* <- For development use only */
 
@@ -73,7 +65,7 @@ namespace Outpost31.Module.Admin.Action
         /// <summary>Create the status files.</summary>
         /// <param name="statusFileName">The name of the status file to write.</param>
         /// <param name="serviceStatusPaths">Paths where the status file will be written.</param>
-        private static void CreateStatusFiles(string statusFileName, List<string> serviceStatusPaths)
+        private static void WriteLocalStatusFiles(string statusFileName, List<string> serviceStatusPaths)
         {
             //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Module.Admin.Action.Service.CreateStatusFiles()]"); /* <- For development use only */
 

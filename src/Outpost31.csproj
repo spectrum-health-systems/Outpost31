@@ -69,9 +69,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\Avatar\AvatarComponents.cs" />
-    <Compile Include="Core\Avatar\AvatarComponents.Properties.cs" />
-    <Compile Include="Core\Common\ParseScriptModule.cs" />
+    <Compile Include="Core\Avatar\DataFromAvatar.cs" />
+    <Compile Include="Core\Avatar\DataFromAvatar.Properties.cs" />
+    <Compile Include="Core\Parser\Roundhouse.cs" />
     <Compile Include="Core\Configuration\TingenConfiguration.Properties.cs" />
     <Compile Include="Core\Configuration\TingenConfiguration.cs" />
     <Compile Include="Core\Debuggler\Primeval.cs" />
@@ -84,10 +84,11 @@
     <Compile Include="Core\Session\TingenSession.cs" />
     <Compile Include="Core\TheOptionObject\TheReturnOptionObject.cs" />
     <Compile Include="Core\Utilities\DuJson.cs" />
-    <Compile Include="Module\Admin\Action\Service.Parse.cs" />
-    <Compile Include="Module\Admin\Action\Service.cs" />
-    <Compile Include="Module\Admin\ParseScriptCommand.cs" />
-    <Compile Include="Core\Common\FormField.cs" />
+    <Compile Include="Module\Admin\Service\Status\Update.cs" />
+    <Compile Include="Module\Common\Action\Field.cs" />
+    <Compile Include="Module\Common\Action\Field.Parsers.cs" />
+    <Compile Include="Module\Common\ParseScriptCommand.cs" />
+    <Compile Include="Module\FormComponent\Field\SaveValue\FieldId.cs" />
     <Compile Include="Module\OpenIncident\Action\VerifyAuthor.Parse.cs" />
     <Compile Include="Module\OpenIncident\Action\VerifyAuthor.cs" />
     <Compile Include="Module\OpenIncident\ParseScriptCommand.cs" />
@@ -97,7 +98,6 @@
     <Folder Include="Core\Exporter\" />
     <Folder Include="Core\Importer\" />
     <Folder Include="Core\Messenger\" />
-    <Folder Include="Module\Common\" />
     <Folder Include="Module\Testing\" />
   </ItemGroup>
   <ItemGroup>

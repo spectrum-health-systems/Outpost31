@@ -11,7 +11,7 @@ namespace Outpost31.Module.OpenIncident
         public static void ParseCommand(TingenSession tnSession)
         {
             //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Module.OpenIncident.ParseScriptCommand()]"); /* <- For development use only */
-            
+
             switch (tnSession.AvComponents.ScriptCommand)
             {
                 case "verifyauthor":

@@ -53,7 +53,7 @@ namespace Outpost31.Core.Session
                 LogMode          = tnConfig.LogMode,
                 LogDelay         = tnConfig.LogDelay,
                 TnFramework      = TingenFramework.BuildComponents(tnConfig.TingenDataRoot, tnConfig.AvatarSystemCode),
-                AvComponents     = AvatarComponents.Setup(sentScriptParameter, sentOptionObject)
+                AvComponents     = DataFromAvatar.Build(sentOptionObject, sentScriptParameter)
             };
         }
     }

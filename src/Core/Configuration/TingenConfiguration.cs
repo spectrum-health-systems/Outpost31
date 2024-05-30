@@ -31,7 +31,7 @@ namespace Outpost31.Core.Configuration
         /// <returns>A TingenConfiguration object with default values.</returns>
         public static TingenConfiguration Build()
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.Build()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Core.Configuration.TingenConfiguration.Build()]"); /* <- For development use only */
 
             return new TingenConfiguration
             {

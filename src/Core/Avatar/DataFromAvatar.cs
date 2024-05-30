@@ -1,35 +1,35 @@
-﻿// u240530.0620
+﻿// u240530.1505
 
 using System.Collections.Generic;
 using ScriptLinkStandard.Objects;
 
 namespace Outpost31.Core.Avatar
 {
-    /// <summary>Logic for Avatar-specific data (see AvatarData.Properties.cs for more information about this class).</summary>
-    public partial class AvatarComponents
+    /// <summary>Logic for Avatar-specific data (see DataFromAvatar.Properties.cs for more information about this class).</summary>
+    public partial class DataFromAvatar
     {
-        /// <summary>Builds the Avatar data</summary>
+        /// <summary>Converts the data sent from Avatar into a format that Tingen will use.</summary>
+        /// <param name="sentOptionObject">The OptionObject sent from Avatar.</param>
         /// <param name="sentScriptParameter">The ScriptParameter sent from Avatar.</param>
-        /// <param name="sentOptionObject">The Option Object sent from Avatar.</param>
         /// <remarks>
         ///  <para>
         ///   All of the necessary Avatar-specific data is stored here, so it's available when we need it.
         ///  </para>
         /// </remarks>
         /// <returns>The necessary Avatar data.</returns>
-        public static AvatarComponents Setup(string sentScriptParameter, OptionObject2015 sentOptionObject)
+        public static DataFromAvatar Build(OptionObject2015 sentOptionObject, string sentScriptParameter)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Avatar.AvatarData.Setup()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[DataFromAvatar.Build()]"); /* <- For development use only */
 
-            var scriptParameterComponent = GetScriptParameterComponents(sentScriptParameter);
+            var parameterComponent = GetParameterComponents(sentScriptParameter);
 
-            return new AvatarComponents
+            return new DataFromAvatar
             {
                 SentScriptParameter = sentScriptParameter,
-                ScriptModule        = scriptParameterComponent["Module"],
-                ScriptCommand       = scriptParameterComponent["Command"],
-                ScriptAction        = scriptParameterComponent["Action"],
-                ScriptOption        = scriptParameterComponent["Option"],
+                ScriptModule        = parameterComponent["Module"],
+                ScriptCommand       = parameterComponent["Command"],
+                ScriptAction        = parameterComponent["Action"],
+                ScriptOption        = parameterComponent["Option"],
                 SentOptionObject    = sentOptionObject,
                 WorkOptionObject    = sentOptionObject.Clone(),
                 ReturnOptionObject  = null
@@ -73,39 +73,40 @@ namespace Outpost31.Core.Avatar
         ///  </para>
         /// </remarks>
         /// <returns>The individual components of the ScriptParameter.</returns>
-        private static Dictionary<string, string> GetScriptParameterComponents(string sentScriptParameter)
+        private static Dictionary<string, string> GetParameterComponents(string sentScriptParameter)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Avatar.AvatarData.GetScriptParameterComponents()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Avatar.DataFromAvatar.GetParameterComponents()]"); /* <- For development use only */
 
-            var scriptParameterComponent = SetComponentsToUndefined();
-            var numberOfComponents       = sentScriptParameter.Split('-').Length;
+            var parameterComponent = SetParameterComponentsToUndefined();
+            var numberOfComponents = sentScriptParameter.Split('-').Length;
 
             for (int component = 0; component < numberOfComponents; component++)
             {
                 switch (component)
                 {
                     case 0:
-                        scriptParameterComponent["Module"] = sentScriptParameter.Split('-')[0].ToLower();
+                        parameterComponent["Module"] = sentScriptParameter.Split('-')[0].ToLower();
                         break;
 
                     case 1:
-                        scriptParameterComponent["Command"] = sentScriptParameter.Split('-')[1].ToLower();
+                        parameterComponent["Command"] = sentScriptParameter.Split('-')[1].ToLower();
                         break;
 
                     case 2:
-                        scriptParameterComponent["Action"] = sentScriptParameter.Split('-')[2].ToLower();
+                        parameterComponent["Action"] = sentScriptParameter.Split('-')[2].ToLower();
                         break;
 
                     case 3:
-                        scriptParameterComponent["Option"] = sentScriptParameter.Split('-')[3].ToLower();
+                        parameterComponent["Option"] = sentScriptParameter.Split('-')[3].ToLower();
                         break;
 
                     default:
+                        // TODO: Exit gracefully.
                         break;
                 }
             }
 
-            return scriptParameterComponent;
+            return parameterComponent;
         }
 
         /// <summary>Set all of the ScriptParameter components to "undefined".</summary>
@@ -115,9 +116,9 @@ namespace Outpost31.Core.Avatar
         ///  </para>
         /// </remarks>
         /// <returns>The individual ScriptParameter components, all set to "undefined".</returns>
-        private static Dictionary<string, string> SetComponentsToUndefined()
+        private static Dictionary<string, string> SetParameterComponentsToUndefined()
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Avatar.AvatarData.SetComponentsToUndefined()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Avatar.DataFromAvatar.SetParameterComponentsToUndefined()]"); /* <- For development use only */
 
             return new Dictionary<string, string>
             {

@@ -92,6 +92,6 @@ namespace Outpost31.Core.Session
         ///   See <b>Outpost31.Core.Configuration.TingenFramework.cs</b> for more information.
         ///  </para>
         /// </remarks>
-        public AvatarComponents AvComponents { get; set; }
+        public DataFromAvatar AvComponents { get; set; }
     }
 }

@@ -7,7 +7,7 @@ namespace Outpost31.Core.Avatar
     /// <summary>Logic for Avatar-specific data.</summary>
     /// <remarks>
     ///  <para>
-    ///   Properties for the AvatarData.cs are located in <b>AvatarData.Properties.cs.</b>
+    ///   Properties for the DataFromAvatar.cs are located in <b>DataFromAvatar.Properties.cs.</b>
     ///  </para>
     ///  <para>
     ///   Only data sent directly from Avatar, and data derived from the sent data, should be here:
@@ -17,7 +17,7 @@ namespace Outpost31.Core.Avatar
     ///   </list>
     ///  </para>
     /// </remarks>
-    public partial class AvatarComponents
+    public partial class DataFromAvatar
     {
         /// <summary>The original ScriptParameter sent from Avatar.</summary>
         /// <remarks>

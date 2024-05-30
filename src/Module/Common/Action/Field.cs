@@ -1,11 +1,11 @@
-﻿// u240530.0749
+﻿// u240530.1503
 
 using System.IO;
 
-namespace Outpost31.Module.Common
+namespace Outpost31.Module.Common.Action
 {
-    /// <summary>Logic for operations that target form fields.</summary>
-    public static class FieldOperation
+    /// <summary>Field operations.</summary>
+    public static partial class Field
     {
         /// <summary>Compare the values of two form field IDs to determine if they are the same.</summary>
         /// <param name="field01Value">The value of the first field.</param>
@@ -21,11 +21,21 @@ namespace Outpost31.Module.Common
         ///  </example>
         /// </remarks>
         /// <returns>True (the fields values are the same) or false(the field values are different).</returns>
-        public static bool Compare(string field01Value, string field02Value)
+        public static bool CompareValue(string field01Value, string field02Value)
         {
             //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Common.FieldOperation.Compare()]"); /* <- For development use only */
 
             return field01Value == field02Value;
+        }
+
+        /// <summary>Locks a field so that it cannot be edited.</summary>
+        /// <param name="fieldId">The field ID to be locked.</param>
+        public static void Lock(string fieldId)
+        {
+            // TODO: Future functionality.
+            /* Not sure what the best way to do this is.
+             * Also, the "fieldId" may need to be an int.
+             */
         }
 
         /// <summary>Saves the value of a field to a file.</summary>
@@ -56,6 +66,8 @@ namespace Outpost31.Module.Common
         public static void SaveValue(string valueToSave, string filePath)
         {
             //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Common.FieldOperation.SaveValue()]"); /* <- For development use only */
+
+            // TODO: Might want to encrypt this data.
 
             if (!File.Exists(filePath))
             {
