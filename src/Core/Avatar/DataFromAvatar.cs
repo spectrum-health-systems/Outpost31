@@ -18,7 +18,7 @@ namespace Outpost31.Core.Avatar
         /// <returns>The necessary Avatar data.</returns>
         public static DataFromAvatar Build(OptionObject2015 sentOptionObject, string sentScriptParameter)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Avatar.DataFromAvatar.Build()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Avatar.DataFromAvatar.Build()]"); /* <- For development use only */
 
             /* DEPRECIATED 240531 (see below)
              */

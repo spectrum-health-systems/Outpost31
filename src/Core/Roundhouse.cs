@@ -33,6 +33,7 @@ namespace Outpost31.Core
             switch (tnSession.AvData.SentScriptParameter)
             {
                 case "admin-service-mode-update":
+                    Outpost31.Core.Debuggler.PrimevalLog.Create($"[{tnSession.AvData.SentScriptParameter}/admin-service-mode-update]"); /* <- For development use only */
                     Module.Admin.Service.ModeUpdate(tnSession.TingenMode, tnSession.AvatarSystemCode, tnSession.TnFramework.ServiceStatusPaths);
                     break;
 

@@ -23,7 +23,7 @@ namespace Outpost31.Module.Common.Action
         /// <returns>True (the fields values are the same) or false(the field values are different).</returns>
         public static bool CompareValue(string field01Value, string field02Value)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Common.FieldOperation.Compare()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Common.FieldOperation.Compare()]"); /* <- For development use only */
 
             return field01Value == field02Value;
         }
@@ -65,7 +65,7 @@ namespace Outpost31.Module.Common.Action
         /// </remarks>
         public static void SaveValue(string valueToSave, string filePath)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Common.FieldOperation.SaveValue()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Common.FieldOperation.SaveValue()]"); /* <- For development use only */
 
             // TODO: Might want to encrypt this data.
 

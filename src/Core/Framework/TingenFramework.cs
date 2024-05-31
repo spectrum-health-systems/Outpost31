@@ -64,7 +64,7 @@ namespace Outpost31.Core.Framework
         /// <returns>The Abatab Framework components.</returns>
         public static TingenFramework Build(string tingenDataRoot, string avatarSystemCode)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Session.TingenSession.BuildComponents()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Session.TingenSession.BuildComponents()]"); /* <- For development use only */
 
             var pathPostfix = Framework.Catalog.PathPostfixes(avatarSystemCode);
 

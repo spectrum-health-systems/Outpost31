@@ -20,7 +20,7 @@ namespace Outpost31.Module.Admin
         /// </remarks>
         public static void ModeUpdate(string tingenMode, string avatarSystemCode, List<string> serviceStatusPaths)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Module.Admin.Action.Service.StatusUpdate()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Module.Admin.Action.Service.StatusUpdate()]"); /* <- For development use only */
 
             DeleteExistingLocalStatusFiles(avatarSystemCode, serviceStatusPaths);
 
@@ -49,7 +49,7 @@ namespace Outpost31.Module.Admin
         /// <param name="serviceStatusPaths">Paths where the status file will be written.</param>
         private static void DeleteExistingLocalStatusFiles(string avatarSystemCode, List<string> serviceStatusPaths)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Module.Admin.Action.Service.DeleteExistingStatusFiles()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Module.Admin.Action.Service.DeleteExistingStatusFiles()]"); /* <- For development use only */
 
             foreach (var path in serviceStatusPaths)
             {
@@ -67,7 +67,7 @@ namespace Outpost31.Module.Admin
         /// <param name="serviceStatusPaths">Paths where the status file will be written.</param>
         private static void WriteLocalStatusFiles(string statusFileName, List<string> serviceStatusPaths)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Module.Admin.Action.Service.CreateStatusFiles()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Module.Admin.Action.Service.CreateStatusFiles()]"); /* <- For development use only */
 
 
             foreach (var path in serviceStatusPaths)

@@ -26,7 +26,7 @@ namespace Outpost31.Core.Utilities
         /// </remarks>
         public static void ExportToLocalFile<JsonObject>(JsonObject jsonObject, string filePath, bool formatJson = true)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Utilities.DuJson.ExportToLocalFile()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Utilities.DuJson.ExportToLocalFile()]"); /* <- For development use only */
 
             JsonSerializerOptions jsonFormat = new JsonSerializerOptions();
 
@@ -43,7 +43,7 @@ namespace Outpost31.Core.Utilities
         /// <returns>A JSON object as a string[].</returns>
         public static string ConvertToString<JsonObject>(JsonObject jsonObject)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Utilities.DuJson.ConvertToString()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Utilities.DuJson.ConvertToString()]"); /* <- For development use only */
 
             return JsonSerializer.Serialize(jsonObject);
         }
@@ -64,7 +64,7 @@ namespace Outpost31.Core.Utilities
         /// <returns>The contents of the file as a JSON object.</returns>
         public static JsonObject ImportFromLocalFile<JsonObject>(string filePath)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Utilities.DuJson.ImportFromLocalFile()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Utilities.DuJson.ImportFromLocalFile()]"); /* <- For development use only */
 
             var configurationFileContents = File.ReadAllText(filePath);
 

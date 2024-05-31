@@ -20,7 +20,7 @@ namespace Outpost31.Core.TheOptionObject
         /// <param name="errorMessage"></param>
         public static void Error1(TingenSession tnSession, string errorMessage)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.TheOptionObject.TheReturnOptionObject()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.TheOptionObject.TheReturnOptionObject()]"); /* <- For development use only */
 
             tnSession.AvData.ReturnOptionObject = tnSession.AvData.SentOptionObject.ToReturnOptionObject(1, errorMessage);
         }

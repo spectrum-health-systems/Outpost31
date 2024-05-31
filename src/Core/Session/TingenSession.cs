@@ -39,7 +39,7 @@ namespace Outpost31.Core.Session
         /// <returns>An AbSession object.</returns>
         public static TingenSession Load(string configFilePath, OptionObject2015 sentOptionObject, string sentScriptParameter)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Session.TingenSession.Load()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Session.TingenSession.Load()]"); /* <- For development use only */
 
             var tnConfig = TingenConfiguration.Load(configFilePath);
 
