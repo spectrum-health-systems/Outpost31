@@ -1,6 +1,8 @@
-﻿using Outpost31.Core.Session;
+﻿// u240531.0722
 
-namespace Outpost31.Core.Parse
+using Outpost31.Core.Session;
+
+namespace Outpost31.Core
 {
     public static class Roundhouse
     {
@@ -19,19 +21,19 @@ namespace Outpost31.Core.Parse
         ///    </example>
         ///   </para>
         /// </remarks>
-        public static void TargetModule(TingenSession tnSession)
+        public static void Parse(TingenSession tnSession)
         {
             //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Common.Parse.Module()]"); /* <- For development use only */
 
-            var module  = tnSession.AvComponents.ScriptModule;
-            var command = tnSession.AvComponents.ScriptCommand;
-            var action  = tnSession.AvComponents.ScriptAction;
-            var option  = tnSession.AvComponents.ScriptOption;
+            //var module  = tnSession.AvComponents.ScriptModule;
+            //var command = tnSession.AvComponents.ScriptCommand;
+            //var action  = tnSession.AvComponents.ScriptAction;
+            //var option  = tnSession.AvComponents.ScriptOption;
 
-            switch (tnSession.AvComponents.SentScriptParameter)
+            switch (tnSession.AvData.SentScriptParameter)
             {
-                case "admin-service-status-update":
-                    Module.Admin.Service.Status.Update.CreateLocalStatusFiles(tnSession.TingenMode, tnSession.AvatarSystemCode, tnSession.TnFramework.ServiceStatusPaths);
+                case "admin-service-mode-update":
+                    Module.Admin.Service.ModeUpdate(tnSession.TingenMode, tnSession.AvatarSystemCode, tnSession.TnFramework.ServiceStatusPaths);
                     break;
 
                 case "admin-framework-archive-all":

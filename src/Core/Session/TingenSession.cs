@@ -52,8 +52,8 @@ namespace Outpost31.Core.Session
                 SessionTimestamp = DateTime.Now.ToString("yyyyMMdd-HHmmssfffffff"),
                 LogMode          = tnConfig.LogMode,
                 LogDelay         = tnConfig.LogDelay,
-                TnFramework      = TingenFramework.BuildComponents(tnConfig.TingenDataRoot, tnConfig.AvatarSystemCode),
-                AvComponents     = DataFromAvatar.Build(sentOptionObject, sentScriptParameter)
+                TnFramework      = TingenFramework.Build(tnConfig.TingenDataRoot, tnConfig.AvatarSystemCode),
+                AvData     = DataFromAvatar.Build(sentOptionObject, sentScriptParameter)
             };
         }
     }

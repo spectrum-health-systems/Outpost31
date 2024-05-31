@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 namespace Outpost31.Core.Framework
 {
+    /// <summary>Avatar-specific data. (see DataFromAvatar.Properties.cs for more information about this class).</summary>
+
     /// <summary>Logic for the Tingen Framework data (see TingenFramework.Properties.cs for more information about this class).</summary>
     public partial class TingenFramework
     {

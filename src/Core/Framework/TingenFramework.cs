@@ -1,11 +1,33 @@
-﻿// u240530.1034
+﻿// u240531.0811
+
+/* =====================================================================================================================
+ * Adding new framework components to Tingen
+ * -----------------------------------------
+ * When adding a new framework component to Tingen, you need to do the following:
+ *
+ * First, add the new component as a property to the TingenFramework class in TingenFramework.Properties.cs.
+ * 
+ * If the new component is a path:
+ *  - Add an entry for the path to Framework.Catalog.PathPostfixes()
+ *  - Add an entry for the path to TingenFramework.Build()
+ * ================================================================================================================== */
 
 namespace Outpost31.Core.Framework
 {
-    /// <summary>Logic for the Tingen Framework.</summary>
+    /// <summary>The Tingen Framwork.</summary>
     /// <remarks>
     ///  <para>
-    ///   Properties for the TingenFramework.cs are located in <b>TingenFramework.Properties.cs.</b>
+    ///   This is part of a partial class:
+    ///   <list type="table">
+    ///    <item>
+    ///     <term>TingenFramework.cs</term>
+    ///     <description>Logic for the TingenFramework class</description>
+    ///    </item>
+    ///    <item>
+    ///     <term>TingenFramework.Properties.cs</term>
+    ///     <description>Properties for the TingenFramework class</description>
+    ///    </item>
+    ///   </list>
     ///  </para>
     ///  <para>
     ///   The Tingen Framework is comprised of:
@@ -13,13 +35,6 @@ namespace Outpost31.Core.Framework
     ///    <item>The Tingen directory structure</item>
     ///    <item>Tingen core data/files</item>
     ///    <item>Tingen maintenance procedures</item>
-    ///   </list>
-    ///  </para>
-    ///  <para>
-    ///   When a new path property is added, a new entry needs to be added to:
-    ///   <list type="bullet">
-    ///    <item>Outpost31.Core.Framework.TingenFramework.BuidComponents()</item>
-    ///    <item>Outpost31.Core.Framework.TingenFramework.Catalog.PathPostfixes()</item>
     ///   </list>
     ///  </para>
     /// </remarks>
@@ -47,7 +62,7 @@ namespace Outpost31.Core.Framework
         ///  </para>
         /// </remarks>
         /// <returns>The Abatab Framework components.</returns>
-        public static TingenFramework BuildComponents(string tingenDataRoot, string avatarSystemCode)
+        public static TingenFramework Build(string tingenDataRoot, string avatarSystemCode)
         {
             //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Session.TingenSession.BuildComponents()]"); /* <- For development use only */
 

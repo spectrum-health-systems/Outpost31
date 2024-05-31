@@ -71,10 +71,10 @@
   <ItemGroup>
     <Compile Include="Core\Avatar\DataFromAvatar.cs" />
     <Compile Include="Core\Avatar\DataFromAvatar.Properties.cs" />
-    <Compile Include="Core\Parser\Roundhouse.cs" />
+    <Compile Include="Core\Roundhouse.cs" />
     <Compile Include="Core\Configuration\TingenConfiguration.Properties.cs" />
     <Compile Include="Core\Configuration\TingenConfiguration.cs" />
-    <Compile Include="Core\Debuggler\Primeval.cs" />
+    <Compile Include="Core\Debuggler\PrimevalLog.cs" />
     <Compile Include="Core\Framework\Catalog.cs" />
     <Compile Include="Core\Framework\Maintenance.cs" />
     <Compile Include="Core\Framework\TingenFramework.Properties.cs" />
@@ -83,21 +83,19 @@
     <Compile Include="Core\Session\TingenSession.Properties.cs" />
     <Compile Include="Core\Session\TingenSession.cs" />
     <Compile Include="Core\TheOptionObject\TheReturnOptionObject.cs" />
+    <Compile Include="Core\Utilities\DuFile.cs" />
     <Compile Include="Core\Utilities\DuJson.cs" />
-    <Compile Include="Module\Admin\Service\Status\Update.cs" />
-    <Compile Include="Module\Common\Action\Field.cs" />
-    <Compile Include="Module\Common\Action\Field.Parsers.cs" />
-    <Compile Include="Module\Common\ParseScriptCommand.cs" />
-    <Compile Include="Module\FormComponent\Field\SaveValue\FieldId.cs" />
-    <Compile Include="Module\OpenIncident\Action\VerifyAuthor.Parse.cs" />
-    <Compile Include="Module\OpenIncident\Action\VerifyAuthor.cs" />
-    <Compile Include="Module\OpenIncident\ParseScriptCommand.cs" />
+    <Compile Include="Module\Admin\Service.cs" />
+    <Compile Include="Module\FormComponent\Field.cs" />
+    <Compile Include="Module\OpenIncident\VerifyAuthor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\Exporter\" />
     <Folder Include="Core\Importer\" />
     <Folder Include="Core\Messenger\" />
+    <Folder Include="Core\Parser\" />
+    <Folder Include="Module\Common\" />
     <Folder Include="Module\Testing\" />
   </ItemGroup>
   <ItemGroup>

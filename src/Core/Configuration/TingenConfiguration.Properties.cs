@@ -1,16 +1,16 @@
-﻿// u240530.0921
+﻿// u240531.0853
 
 using System.Collections.Generic;
 
 namespace Outpost31.Core.Configuration
 {
-    /// <summary>Logic for the Tingen configuration settings (see TingenConfiguration.Properties.cs for more infomation about this class.</summary>
+    /// <summary>Tingen-specific configurations. (see TingenConfiguration.cs for more information about this class).</summary>
     public partial class TingenConfiguration
     {
         /// <summary>Determines what Tingen does, if anything.</summary>
         /// <remarks>
         ///  <para>
-        ///   Teh TingenMode can be:
+        ///   The TingenMode can be:
         ///   <list type="table">
         ///    <item>
         ///     <term>Enabled (default)</term>
@@ -18,13 +18,12 @@ namespace Outpost31.Core.Configuration
         ///    </item>
         ///    <item>
         ///     <term>Disabled</term>
-        ///     <description>Tingen is disabled, and will not do any work.</description>
+        ///     <description>Tingen is disabled, and will not do any work</description>
         ///    </item>
         ///   </list>
         ///  </para>
         ///  <para>
-        ///   When <i>disabled</i>, Tingen becomes a pass-through - no work is done, and the sentOptionObject is
-        ///   returned unmodified.<br/>
+        ///   When <i>disabled</i>, Tingen becomes a pass-through, and the sentOptionObject is returned unmodified.<br/><br/>
         ///   Setting the mode to <i>disabled</i> is the equivalent of disabling ScriptLink on every form that uses Tingen.
         ///  </para>
         /// </remarks>
@@ -41,9 +40,7 @@ namespace Outpost31.Core.Configuration
         /// <summary>The root path for Tingen data.</summary>
         /// <remarks>
         ///  <para>
-        ///   All non-service Tingen data is located here.
-        ///  </para>
-        ///  <para>
+        ///   All non-service Tingen data is located here.<br/><br/>
         ///   The default value is "<c>C:\TingenData\</c>"
         ///  </para>
         /// </remarks>
@@ -94,10 +91,9 @@ namespace Outpost31.Core.Configuration
         /// <summary>The delay between log writes.</summary>
         /// <remarks>
         ///  <para>
-        ///   In some cases, logs may be written to quickly and cause files to be overwritten. By including a short delay, the logs can
-        ///   be written in a way that prevents this from happening.
-        ///  </para>
-        ///  <para>
+        ///   In some cases, logs may be written to quickly and cause files to be overwritten.<br/>
+        ///   By including a short delay, the logs can
+        ///   be written in a way that prevents this from happening.<br/><br/>
         ///   The default value is <c>100</c> (milliseconds).
         ///  </para>
         /// </remarks>
@@ -130,16 +126,10 @@ namespace Outpost31.Core.Configuration
         /// <summary>The Admin Module user whitelist.</summary>
         /// <remarks>
         ///  <para>
-        ///   You can limit which users are allowed to access the Admin Module by including their username in this whitelist.
-        ///  </para>
-        ///  <para>
-        ///   If the whitelist is empty, all users will be allowed to access the Admin Module.
-        ///  </para>
-        ///  <para>
-        ///   When users are not on the whitelist, the Admin Module essentially becomes a pass-through for them.
-        ///  </para>
-        ///  <para>
-        ///   This is useful for testing, or for limiting access to the Admin Module to a select group of users.
+        ///   You can limit which users are allowed to access the Admin Module by including their username in this whitelist.<br/><br/>
+        ///   If the whitelist is empty, all users will be allowed to access the Admin Module.<br/><br/>
+        ///   When users are not on the whitelist, the Admin Module essentially becomes a pass-through for them.<br/><br/>
+        ///   This is useful for testing, or for limiting access to the Admin Module to a select group of users.<br/><br/>
         ///  </para>
         /// </remarks>
         public List<string> ModAdminWhitelist { get; set; }

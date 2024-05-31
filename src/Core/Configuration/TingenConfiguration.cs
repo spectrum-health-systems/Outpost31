@@ -1,42 +1,53 @@
-﻿// u240530.0828
+﻿// u240531.0849
 
 using System.Collections.Generic;
 using System.IO;
 
 namespace Outpost31.Core.Configuration
 {
-    /// <summary>Logic for the Tingen configuration settings.</summary>
+    /// <summary>Tingen-specific configuration.</summary>
     /// <remarks>
     ///  <para>
-    ///   Properties for the TingenConfiguration.cs are located in <b>TingenConfiguration.Properties.cs.</b>
+    ///   This is part of a partial class:
+    ///   <list type="table">
+    ///    <item>
+    ///     <term>TingenConfiguration.cs</term>
+    ///     <description>Logic for the TingenConfiguration class</description>
+    ///    </item>
+    ///    <item>
+    ///     <term>TingenConfiguration.Properties.cs</term>
+    ///     <description>Properties for the TingenConfiguration class</description>
+    ///    </item>
+    ///   </list>
     ///  </para>
     ///  <para>
     ///   Tingen configuration settings:
     ///   <list type="bullet">
-    ///    <item>are stored in an external JSON file located in <b>Tingen\%SystemCode%\Configs\</b></item>
+    ///    <item>Are specific to only to Tingen, not other components</item>
+    ///    <item>Are stored in an external, hardcoded JSON-formatted file located in <b>Tingen\%SystemCode%\Configs\</b></item>
     ///    <item>Do not change between Tingen sessions</item>
-    ///    <item>Can be modified by the user to suit their environments.</item>
+    ///    <item>Can be modified by the user to suit their environments</item>
     ///   </list>
     ///  </para>
     /// </remarks>
     public partial class TingenConfiguration
     {
-        /// <summary>Builds the default Tingen configuration object.</summary>
+        /// <summary>Builds a default Tingen configuration object.</summary>
         /// <remarks>
         ///  <para>
-        ///   These are the default values for the Tingen configuration settings, and need to be verified/updated when a new version of
-        ///   Tingen is released.
+        ///   The default values for the Tingen configuration settings.<br/><br/>
+        ///   When a new version of Tingen is released, these need to be verified/updated.
         ///  </para>
         /// </remarks>
-        /// <returns>A TingenConfiguration object with default values.</returns>
+        /// <returns>An object with default Tingen configuration values.</returns>
         public static TingenConfiguration Build()
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Core.Configuration.TingenConfiguration.Build()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.Build()]"); /* <- For development use only */
 
             return new TingenConfiguration
             {
                 TingenMode         = "enabled",
-                TingenVersionBuild = "24.5.0-240525.1849",
+                TingenVersionBuild = "24.5.0-240531.1044",
                 TingenDataRoot     = @"C:\TingenData",
                 AvatarSystemCode   = "UAT",
                 LogMode            = 1,
@@ -47,10 +58,10 @@ namespace Outpost31.Core.Configuration
         }
 
         /// <summary>Loads the Tingen configuration file.</summary>
-        /// <param name="configFilePath">The path to the Tingen configuration file.</param>
+        /// <param name="configFilePath">Path to the Tingen configuration file.</param>
         /// <remarks>
         ///  <para>
-        ///   By default, the configuration file is located in <b>Tingen\%SystemCode%\Configs\</b>.<br/><br/>
+        ///   The configuration file is <i>hardcoded</i> to <b>Tingen\%SystemCode%\Configs\</b>.<br/><br/>
         ///   If the configuration file does not exist, a configuration file with default values will be created.
         ///  </para>
         /// </remarks>
@@ -59,22 +70,36 @@ namespace Outpost31.Core.Configuration
         {
             //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.Load()]"); /* <- For development use only */
 
-            VerifyFileExists(configFilePath);
+            VerifyExists(configFilePath);
 
             return Utilities.DuJson.ImportFromLocalFile<TingenConfiguration>(configFilePath);
         }
 
+        /// <summary>Get the path to the Tingen configuration file.</summary>
+        /// <param name="systemCode">The Avatar System Code.</param>
+        /// <remarks>
+        ///  <para>
+        ///   The <paramref name="systemCode"/> parameter is passed from Tingen.asmx.cs when the Tingen session is started.
+        ///  </para>
+        /// </remarks>
+        /// <returns>The path to the Tingen configuration file.</returns>
+        public static string GetPath(string systemCode)
+        {
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.GetPath()]"); /* <- For development use only */
+
+            return $@"C:\TingenData\{systemCode}\Configs\Tingen.config";
+        }
+
         /// <summary>Verifies that the configuration file exists, and creates a new one if it does not.</summary>
         /// <param name="configFilePath">The path to the Tingen configuration file.</param>
-        private static void VerifyFileExists(string configFilePath)
+        private static void VerifyExists(string configFilePath)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.VerifyFileExists()]"); /* <- For development use only */
+            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.VerifyExists()]"); /* <- For development use only */
 
             if (!File.Exists(configFilePath))
             {
                 CreateNew(configFilePath);
             }
-
         }
 
         /// <summary>Creates a new Tingen configuration file.</summary>
@@ -83,9 +108,9 @@ namespace Outpost31.Core.Configuration
         {
             //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.CreateNew()]"); /* <- For development use only */
 
-            var configuration = Build();
+            var tingenConfig = Build();
 
-            Utilities.DuJson.ExportToLocalFile<TingenConfiguration>(configuration, configFilePath);
+            Utilities.DuJson.ExportToLocalFile<TingenConfiguration>(tingenConfig, configFilePath);
         }
     }
 }

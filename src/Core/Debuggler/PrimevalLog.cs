@@ -1,4 +1,4 @@
-﻿// u240530.0930
+﻿// u240531.0854
 
 using System;
 using System.IO;
@@ -6,19 +6,22 @@ using System.Threading;
 
 namespace Outpost31.Core.Debuggler
 {
-    public static class Primeval
+    /// <summary>Debugging tools for Outpost31.</summary>
+    /// <remarks>
+    ///  <para>
+    ///   Primeval logs:
+    ///   <list type="bullet">
+    ///    <item>Are the simplest logs available</item>
+    ///    <item>Do not require any parameters</item>
+    ///    <item>Are used for testing/debugging, and should be commented out in production</item>
+    ///   </list>
+    ///  </para>
+    /// </remarks>
+    public static class PrimevalLog
     {
         /// <summary>Creates a Primeval log.</summary>
         /// <param name="fileContent">The content of the log file.</param>
         /// <remarks>
-        ///  <para>
-        ///   Primeval logs:
-        ///   <list type="bullet">
-        ///    <item>Are the simplest logs available</item>
-        ///    <item>Do not require any parameters</item>
-        ///    <item>Are used for testing/debugging, and should be commented out in production.</item>
-        ///   </list>
-        ///  </para>
         ///  <para>
         ///    Log files may be created very quickly - and possibly at the same time - so a pause is added to ensure logs are unique.
         ///  </para>
@@ -35,7 +38,7 @@ namespace Outpost31.Core.Debuggler
         ///   </example>
         ///  </para>
         /// </remarks>
-        public static void Log(string fileContent = "[Abatab Primeval log]")
+        public static void Create(string fileContent = "[PRIMEVAL LOG]")
         {
             Thread.Sleep(100);
             var datetime    = DateTime.Now.ToString("yyMMdd-HHmmssfffffff");

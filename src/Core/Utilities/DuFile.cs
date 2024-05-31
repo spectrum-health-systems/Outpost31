@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Outpost31.Module.FormComponent.Field.SaveValue
+namespace Outpost31.Core.Utilities
 {
-    internal class FieldId
+    public static class DuFile
     {
     }
 }

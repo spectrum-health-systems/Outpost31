@@ -1,12 +1,12 @@
-﻿// u240530.1723
+﻿// u240531.0725
 
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Outpost31.Module.Admin.Service.Status
+namespace Outpost31.Module.Admin
 {
-    public static class Update
+    public static class Service
     {
         /// <summary>Write a file indicating the status of the Tingen web service.</summary>
         /// <param name="tingenMode">The current Tingen web service mode.</param>
@@ -18,7 +18,7 @@ namespace Outpost31.Module.Admin.Service.Status
         ///   Status files are written to the various paths for various uses.
         ///  </para>
         /// </remarks>
-        public static void CreateLocalStatusFiles(string tingenMode, string avatarSystemCode, List<string> serviceStatusPaths)
+        public static void ModeUpdate(string tingenMode, string avatarSystemCode, List<string> serviceStatusPaths)
         {
             //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Module.Admin.Action.Service.StatusUpdate()]"); /* <- For development use only */
 

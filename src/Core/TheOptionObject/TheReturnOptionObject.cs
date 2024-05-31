@@ -11,7 +11,7 @@ namespace Outpost31.Core.TheOptionObject
         /// <param name="tnSession"></param>
         public static void NoWork(TingenSession tnSession)
         {
-            tnSession.AvComponents.ReturnOptionObject = tnSession.AvComponents.SentOptionObject.ToReturnOptionObject();
+            tnSession.AvData.ReturnOptionObject = tnSession.AvData.SentOptionObject.ToReturnOptionObject();
 
         }
 
@@ -22,7 +22,7 @@ namespace Outpost31.Core.TheOptionObject
         {
             //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.TheOptionObject.TheReturnOptionObject()]"); /* <- For development use only */
 
-            tnSession.AvComponents.ReturnOptionObject = tnSession.AvComponents.SentOptionObject.ToReturnOptionObject(1, errorMessage);
+            tnSession.AvData.ReturnOptionObject = tnSession.AvData.SentOptionObject.ToReturnOptionObject(1, errorMessage);
         }
     }
 }
