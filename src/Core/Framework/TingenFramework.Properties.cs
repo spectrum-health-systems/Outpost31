@@ -1,4 +1,4 @@
-﻿// u240530.1131
+﻿// u240531.1229
 
 using System.Collections.Generic;
 
@@ -9,8 +9,76 @@ namespace Outpost31.Core.Framework
     /// <summary>Logic for the Tingen Framework data (see TingenFramework.Properties.cs for more information about this class).</summary>
     public partial class TingenFramework
     {
-        /// <summary>The Avatar System Code path</summary>
-        public string SystemCodePath { get; set; }
+        /*
+         * Data roots
+         */
+
+        /// <summary>The Tingen data root.</summary>
+        public string TingenDataRoot { get; set; }
+
+        /// <summary>The Avatar System Code root</summary>
+        public string SystemCodeRoot { get; set; }
+
+        /// <summary>Raw data is located here.</summary>
+        /// <remarks>
+        ///  <para>
+        ///   This directory contains the following subdirectories:
+        ///   <list type="bullet">
+        ///    <item>Export\</item>
+        ///    <item>Import\</item>
+        ///   </list>
+        ///  </para>
+        /// </remarks>
+        public string RawDataRoot { get; set; }
+
+        /// <summary>Messages are here.</summary>
+        /// <remarks>
+        ///  <para>
+        ///   This directory contains the following subdirectories:
+        ///   <list type="bullet">
+        ///    <item>Alert\</item>
+        ///    <item>Error\</item>
+        ///    <item>Warning\</item>
+        ///   </list>
+        ///  </para>
+        /// </remarks>
+        public string MessageRoot { get; set; }
+
+        /// <summary>Public data is located here.</summary>
+        /// <remarks>
+        ///  <para>
+        ///   Public data is available to users that have access to the %TingenDataRoot%\Public directory.
+        ///  </para>
+        ///  <para>
+        ///   This directory contains the following subdirectories:
+        ///   <list type="bullet">
+        ///    <item>Alert\</item>
+        ///    <item>Error\</item>
+        ///    <item>Export\</item>
+        ///    <item>Report\</item>
+        ///    <item>Warning\</item>
+        ///   </list>
+        ///  </para>
+        /// </remarks>
+        public string PublicRoot { get; set; }
+
+        /// <summary>Remote data is located here.</summary>
+        /// <remarks>
+        ///  <para>
+        ///   Remote data is available to users that have access to the %TingenDataRoot%\Remote directory.
+        ///  </para>
+        ///  <para>
+        ///   This directory contains the following subdirectories:
+        ///   <list type="bullet">
+        ///    <item>Alert\</item>
+        ///    <item>Error\</item>
+        ///    <item>Export\</item>
+        ///    <item>Report\</item>
+        ///    <item>Warning\</item>
+        ///   </list>
+        ///  </para>
+        /// </remarks>
+        public string RemoteRoot { get; set; }
 
         /*
          * System Code-specific paths
@@ -28,19 +96,7 @@ namespace Outpost31.Core.Framework
         /// <summary>Sytem Code-specific configuration files are located here.</summary>
         public string ConfigPath { get; set; }
 
-        /// <summary>Sytem Code-specific data files are located here.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   This directory contains the following subdirectories:
-        ///   <list type="bullet">
-        ///    <item>Export\</item>
-        ///    <item>Import\</item>
-        ///   </list>
-        ///  </para>
-        /// </remarks>
-        public string DataPath { get; set; }
-
-        /// <summary>Sytem Code-specific debugging information is located here.</summary>
+        /// <summary>Sytem Code-specific debug data is located here.</summary>
         public string DebugPath { get; set; }
 
         /// <summary>Sytem Code-specific error messages are located here.</summary>
@@ -50,7 +106,7 @@ namespace Outpost31.Core.Framework
         public string ExportPath { get; set; }
 
         /// <summary>Sytem Code-specific extensions are located here.</summary>
-        public string ExtensionsPath { get; set; }
+        public string ExtensionPath { get; set; }
 
         /// <summary>Sytem Code-specific imported data is located here.</summary>
         public string ImportPath { get; set; }
@@ -58,24 +114,11 @@ namespace Outpost31.Core.Framework
         /// <summary>Sytem Code-specific log files are located here.</summary>
         public string LogPath { get; set; }
 
-        /// <summary>Sytem Code-specific messages are located here.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   This directory contains the following subdirectories:
-        ///   <list type="bullet">
-        ///    <item>Alerts\</item>
-        ///    <item>Errors\</item>
-        ///    <item>Warnings\</item>
-        ///   </list>
-        ///  </para>
-        /// </remarks>
-        public string MessagePath { get; set; }
-
         /// <summary>Sytem Code-specific reports are located here.</summary>
         public string ReportPath { get; set; }
 
         /// <summary>Sytem Code-specific templates are located here.</summary>
-        public string TemplatesPath { get; set; }
+        public string TemplatePath { get; set; }
 
         /// <summary>Sytem Code-specific temporary data is located here.</summary>
         public string TemporaryPath { get; set; }
@@ -87,26 +130,11 @@ namespace Outpost31.Core.Framework
          * Public paths
          */
 
-        /// <summary>Public data is located here.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   Public data is available to users that have access to the %TingenDataRoot%\Public directory.
-        ///  </para>
-        ///  <para>
-        ///   This directory contains the following subdirectories:
-        ///   <list type="bullet">
-        ///    <item>Alerts\</item>
-        ///    <item>Errors\</item>
-        ///    <item>Exports\</item>
-        ///    <item>Reports\</item>   
-        ///    <item>Warnings\</item>
-        ///   </list>
-        ///  </para>
-        /// </remarks>
-        public string PublicPath { get; set; }
-
         /// <summary>Public alerts are located here.</summary>
         public string PublicAlertPath { get; set; }
+
+        /// <summary>Public errors are located here.</summary>
+        public string PublicErrorPath { get; set; }
 
         /// <summary>Public exports are located here.</summary>
         public string PublicExportPath { get; set; }
@@ -121,26 +149,19 @@ namespace Outpost31.Core.Framework
          * Remote paths
          */
 
-        /// <summary>Remote data is located here.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   Remote data is available to users that have access to the %TingenDataRoot%\Remote directory.
-        ///  </para>
-        ///  <para>
-        ///   This directory contains the following subdirectories:
-        ///   <list type="bullet">
-        ///    <item>Alerts\</item>
-        ///    <item>Errors\</item>
-        ///    <item>Exports\</item>
-        ///    <item>Reports\</item>   
-        ///    <item>Warnings\</item>
-        ///   </list>
-        ///  </para>
-        /// </remarks>
-        public string RemotePath { get; set; }
+        /// <summary>Remote alerts are located here.</summary>
         public string RemoteAlertPath { get; set; }
+
+        /// <summary>Remote errors are located here.</summary>
         public string RemoteErrorPath { get; set; }
+
+        /// <summary>Remote exports are located here.</summary>
+        public string RemoteExportPath { get; set; }
+
+        /// <summary>Remote reports are located here.</summary>
         public string RemoteReportPath { get; set; }
+
+        /// <summary>Remote warnings are located here.</summary>
         public string RemoteWarningPath { get; set; }
 
         /*
@@ -148,6 +169,5 @@ namespace Outpost31.Core.Framework
          */
 
         public List<string> ServiceStatusPaths { get; set; }
-
     }
 }

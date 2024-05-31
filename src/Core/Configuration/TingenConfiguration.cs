@@ -42,7 +42,7 @@ namespace Outpost31.Core.Configuration
         /// <returns>An object with default Tingen configuration values.</returns>
         public static TingenConfiguration Build()
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Configuration.TingenConfiguration.Build()]"); /* <- For development use only */
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Configuration.TingenConfiguration.Build()]"); /* <- For development use only */
 
             return new TingenConfiguration
             {
@@ -68,7 +68,7 @@ namespace Outpost31.Core.Configuration
         /// <returns>The Tingen configuration settings.</returns>
         public static TingenConfiguration Load(string configFilePath)
         {
-            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Configuration.TingenConfiguration.Load()]"); /* <- For development use only */
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Configuration.TingenConfiguration.Load()]"); /* <- For development use only */
 
             VerifyExists(configFilePath);
 
@@ -87,14 +87,14 @@ namespace Outpost31.Core.Configuration
         {
             //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Configuration.TingenConfiguration.GetPath()]"); /* <- For development use only */
 
-            return $@"C:\TingenData\{systemCode}\Configs\Tingen.config";
+            return $@"C:\TingenData\{systemCode}\Config\Tingen.config";
         }
 
         /// <summary>Verifies that the configuration file exists, and creates a new one if it does not.</summary>
         /// <param name="configFilePath">The path to the Tingen configuration file.</param>
         private static void VerifyExists(string configFilePath)
         {
-            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Configuration.TingenConfiguration.VerifyExists()]"); /* <- For development use only */
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Configuration.TingenConfiguration.VerifyExists()]"); /* <- For development use only */
 
             if (!File.Exists(configFilePath))
             {
@@ -106,7 +106,7 @@ namespace Outpost31.Core.Configuration
         /// <param name="configFilePath">The path to the Tingen configuration file.</param>
         private static void CreateNew(string configFilePath)
         {
-            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Configuration.TingenConfiguration.CreateNew()]"); /* <- For development use only */
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Configuration.TingenConfiguration.CreateNew()]"); /* <- For development use only */
 
             var tingenConfig = Build();
 

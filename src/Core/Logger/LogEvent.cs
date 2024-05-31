@@ -15,7 +15,7 @@ namespace Outpost31.Core.Logger
         /// </remarks>
         public static void Trace(string filePath, string fileContent)
         {
-            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Logger.LogEvent.Trace()]"); /* <- For development use only */
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Logger.LogEvent.Trace()]"); /* <- For development use only */
 
             File.WriteAllText(filePath, fileContent);
         }

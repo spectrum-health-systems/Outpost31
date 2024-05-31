@@ -1,4 +1,4 @@
-﻿// u240530.0910
+﻿// u240531.1226
 
 using System.Collections.Generic;
 
@@ -14,43 +14,45 @@ namespace Outpost31.Core.Framework
         ///   When a new path property is added to TingenFramework.Properties.cs, a new entry needs to be added here.
         ///  </para>
         /// </remarks>
-        public static Dictionary<string, string> PathPostfixes(string avatarSystemCode)
+        public static Dictionary<string, string> DataPaths(string tingenDataRoot, string avatarSystemCode)
         {
-            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Framework.Catalog.PathPostfixes()]"); /* <- For development use only */
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Framework.Catalog.PathPostfixes()]"); /* <- For development use only */
 
-            var pathPostFixes = new Dictionary<string, string>
+            var dataPaths = new Dictionary<string, string>
             {
-                { "SystemCodePath", $@"{avatarSystemCode}" },
-                { "Admin",          $@"{avatarSystemCode}\Admin" },
-                { "Alerts",         $@"{avatarSystemCode}\Messages\Alerts" },
-                { "Archive",        $@"{avatarSystemCode}\Archive" },
-                { "Configs",        $@"{avatarSystemCode}\Configs" },
-                { "Data",           $@"{avatarSystemCode}\Data" },
-                { "Debug",          $@"{avatarSystemCode}\Debug" },
-                { "Errors",         $@"{avatarSystemCode}\Messages\Errors" },
-                { "Exports",        $@"{avatarSystemCode}\Data\Export" },
-                { "Extensions",     $@"{avatarSystemCode}\Extensions" },
-                { "Imports",        $@"{avatarSystemCode}\Data\Import" },
-                { "Logs",           $@"{avatarSystemCode}\Logs" },
-                { "Messages",       $@"{avatarSystemCode}\Messages" },
-                { "Reports",        $@"{avatarSystemCode}\Reports" },
-                { "Templates",      $@"{avatarSystemCode}\Templates" },
-                { "Temporary",      $@"{avatarSystemCode}\Temporary" },
-                { "Warnings",       $@"{avatarSystemCode}\Messages\Warnings" },
-                { "Public",         $@"Public"},
-                { "PublicAlerts",   $@"Public\Messages\Alerts" },
-                { "PublicExports",  $@"Public\Exports" },
-                { "PublicReports",  $@"Public\Reports" },
-                { "PublicWarnings", $@"Public\Messages\Warnings" },
-                { "Remote",         $@"Remote" },
-                { "RemoteAlerts",   $@"Remote\Alerts" },
-                { "RemoteErrors",   $@"Remote\Errors" },
-                { "RemoteExports",  $@"Remote\Exports" },
-                { "RemoteReports",  $@"Remote\Reports" },
-                { "RemoteWarnings", $@"Remote\Warnings" }
+                { "TingenDataRoot",   $@"{tingenDataRoot}" },
+                { "AvatarSystemCode", $@"{tingenDataRoot}\{avatarSystemCode}" },
+                { "RawDataRoot",      $@"{tingenDataRoot}\{avatarSystemCode}\RawData" },
+                { "MessageRoot",      $@"{tingenDataRoot}\{avatarSystemCode}\Message" },
+                { "PublicRoot",       $@"{tingenDataRoot}\Public"},
+                { "RemoteRoot",       $@"{tingenDataRoot}\Remote" },
+                { "Admin",            $@"{tingenDataRoot}\{avatarSystemCode}\Admin" },
+                { "Alert",            $@"{tingenDataRoot}\{avatarSystemCode}\Message\Alert" },
+                { "Archive",          $@"{tingenDataRoot}\{avatarSystemCode}\Archive" },
+                { "Config",           $@"{tingenDataRoot}\{avatarSystemCode}\Config" },
+                { "Debug",            $@"{tingenDataRoot}\{avatarSystemCode}\Debug" },
+                { "Error",            $@"{tingenDataRoot}\{avatarSystemCode}\Message\Error" },
+                { "Export",           $@"{tingenDataRoot}\{avatarSystemCode}\RawData\Export" },
+                { "Extension",        $@"{tingenDataRoot}\{avatarSystemCode}\Extension" },
+                { "Import",           $@"{tingenDataRoot}\{avatarSystemCode}\RawData\Import" },
+                { "Log",              $@"{tingenDataRoot}\{avatarSystemCode}\Log" },
+                { "Report",           $@"{tingenDataRoot}\{avatarSystemCode}\Report" },
+                { "Template",         $@"{tingenDataRoot}\{avatarSystemCode}\Template" },
+                { "Temporary",        $@"{tingenDataRoot}\{avatarSystemCode}\Temporary" },
+                { "Warning",          $@"{tingenDataRoot}\{avatarSystemCode}\Message\Warning" },
+                { "PublicAlert",      $@"{tingenDataRoot}\Public\Alert" },
+                { "PublicError",      $@"{tingenDataRoot}\Public\Error" },
+                { "PublicExport",     $@"{tingenDataRoot}\Public\Export" },
+                { "PublicReport",     $@"{tingenDataRoot}\Public\Report" },
+                { "PublicWarning",    $@"{tingenDataRoot}\Public\Warning" },
+                { "RemoteAlert",      $@"{tingenDataRoot}\Remote\Alert" },
+                { "RemoteError",      $@"{tingenDataRoot}\Remote\Error" },
+                { "RemoteExport",     $@"{tingenDataRoot}\Remote\Export" },
+                { "RemoteReport",     $@"{tingenDataRoot}\Remote\Report" },
+                { "RemoteWarning",    $@"{tingenDataRoot}\Remote\Warning" }
             };
 
-            return pathPostFixes;
+            return dataPaths;
         }
 
         /// <summary>Create a list of paths where service status files are located.</summary>
@@ -63,12 +65,12 @@ namespace Outpost31.Core.Framework
         /// <returns>Paths for the service status files locations.</returns>
         public static List<string> ServiceStatusPaths(TingenFramework tnFramework)
         {
-            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Framework.Catalog.ServiceStatusPaths()]"); /* <- For development use only */
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Framework.Catalog.ServiceStatusPaths()]"); /* <- For development use only */
 
             return new List<string>
             {
-                tnFramework.SystemCodePath,
-                tnFramework.RemotePath
+                tnFramework.SystemCodeRoot,
+                tnFramework.RemoteRoot
             };
         }
     }

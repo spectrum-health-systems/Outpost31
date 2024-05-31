@@ -1,6 +1,5 @@
 ﻿// u240530.1213
 
-using System.IO;
 using Outpost31.Core.Session;
 
 namespace Outpost31.Module.OpenIncident.Action
@@ -12,7 +11,7 @@ namespace Outpost31.Module.OpenIncident.Action
         /// <param name="tnSession"></param>
         public static void IsOriginal(TingenSession tnSession)
         {
-            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Module.OpenIncident.Action.VerifyAuthor.SaveOriginal()]"); /* <- For development use only */
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Module.OpenIncident.Action.VerifyAuthor.SaveOriginal()]"); /* <- For development use only */
 
             ////var originalAuthor = File.ReadAllText($@"{tnSession.TnFramework.TemporaryPath}\{tnSession.AvComponents.SentOptionObject.OptionUserId}-verifyauthor.data");
             ////var currentAuthor = tnSession.AvComponents.SentOptionObject.GetFieldValue("32");
@@ -34,7 +33,7 @@ namespace Outpost31.Module.OpenIncident.Action
         /// <summary>Save the original author.</summary>
         public static void SaveOriginal(TingenSession tnSession)
         {
-            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Module.OpenIncident.Action.VerifyAuthor.IsOriginal()]"); /* <- For development use only */
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Module.OpenIncident.Action.VerifyAuthor.IsOriginal()]"); /* <- For development use only */
 
             ////var currentAvatarUser = tnSession.AvComponents.SentOptionObject.OptionUserId;
             ////var originalAuthor    = tnSession.AvComponents.SentOptionObject.GetFieldValue("32");

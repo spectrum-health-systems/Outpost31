@@ -1,4 +1,4 @@
-﻿// u240531.0748
+﻿// u240531.1243
 
 using ScriptLinkStandard.Objects;
 
@@ -38,42 +38,6 @@ namespace Outpost31.Core.Avatar
         ///  </para>
         /// </remarks>
         public string SentScriptParameter { get; set; }
-
-        /* DEPRECIATED 240531
-         * Going forward, we will just be using the SentScriptParameter to determin what work needs to be done. This is
-         * a holdover from the old way of doing things, and will be removed in the future.
-         */
-        ///// <summary>The<i> Module</i> component of the ScriptParameter.</summary>
-        ///// <remarks>
-        /////  <para>
-        /////   The<i> Module</i> component determines which Tingen Module will do the work during the session. (e.g., "<c>Admin</c>")
-        /////  </para>
-        ///// </remarks>
-        ////public string ScriptModule { get; set; }
-
-        ///// <summary>The<i> Command</i> component of the ScriptParameter.</summary>
-        ///// <remarks>
-        /////  <para>
-        /////   The<i> Command</i> component determines the Command that is being requested (e.g., "<c>Service</c>")
-        /////  </para>
-        ///// </remarks>
-        ////public string ScriptCommand { get; set; }
-
-        ///// <summary>The<i> Action</i> component of the ScriptParameter.</summary>
-        ///// <remarks>
-        /////  <para>
-        /////   The<i> Action</i> component determines the Action that is being requested (e.g., "<c>Status</c>")
-        /////  </para>
-        ///// </remarks>
-        ////public string ScriptAction { get; set; }
-
-        ///// <summary>The<i> Option</i> component of the ScriptParameter.</summary>
-        ///// <remarks>
-        /////  <para>
-        /////   The (optional) <i>Option</i> component determins any (optional!) Option for the Action component(e.g., "<c>Update</c>")
-        /////  </para>
-        ///// </remarks>
-        ////public string ScriptOption { get; set; }
 
         /// <summary>The OptionObject sent from Avatar.</summary>
         /// <remarks>

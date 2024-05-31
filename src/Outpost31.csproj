@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="Core\Avatar\DataFromAvatar.cs" />
     <Compile Include="Core\Avatar\DataFromAvatar.Properties.cs" />
+    <Compile Include="Core\Avatar\TheOptionObject.cs" />
     <Compile Include="Core\Roundhouse.cs" />
     <Compile Include="Core\Configuration\TingenConfiguration.Properties.cs" />
     <Compile Include="Core\Configuration\TingenConfiguration.cs" />
@@ -80,9 +81,9 @@
     <Compile Include="Core\Framework\TingenFramework.Properties.cs" />
     <Compile Include="Core\Framework\TingenFramework.cs" />
     <Compile Include="Core\Logger\LogEvent.cs" />
+    <Compile Include="Core\Session\Catalog.cs" />
     <Compile Include="Core\Session\TingenSession.Properties.cs" />
     <Compile Include="Core\Session\TingenSession.cs" />
-    <Compile Include="Core\TheOptionObject\TheReturnOptionObject.cs" />
     <Compile Include="Core\Utilities\DuFile.cs" />
     <Compile Include="Core\Utilities\DuJson.cs" />
     <Compile Include="Module\Admin\Service.cs" />

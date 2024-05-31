@@ -64,42 +64,51 @@ namespace Outpost31.Core.Framework
         /// <returns>The Abatab Framework components.</returns>
         public static TingenFramework Build(string tingenDataRoot, string avatarSystemCode)
         {
-            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Session.TingenSession.BuildComponents()]"); /* <- For development use only */
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Session.TingenSession.BuildComponents()]"); /* <- For development use only */
 
-            var pathPostfix = Framework.Catalog.PathPostfixes(avatarSystemCode);
+            var dataPaths = Framework.Catalog.DataPaths(tingenDataRoot, avatarSystemCode);
 
-            var tnFramework =  new TingenFramework
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[{tingenDataRoot}]");
+
+            var tnFramework = new TingenFramework
             {
-                SystemCodePath    = $@"{tingenDataRoot}\{avatarSystemCode}",
-                AdminPath         = $@"{tingenDataRoot}\{pathPostfix["Admin"]}",
-                AlertPath         = $@"{tingenDataRoot}\{pathPostfix["Alerts"]}",
-                ArchivePath       = $@"{tingenDataRoot}\{pathPostfix["Archive"]}",
-                ConfigPath        = $@"{tingenDataRoot}\{pathPostfix["Configs"]}",
-                DataPath          = $@"{tingenDataRoot}\{pathPostfix["Data"]}",
-                DebugPath         = $@"{tingenDataRoot}\{pathPostfix["Debug"]}",
-                ErrorPath         = $@"{tingenDataRoot}\{pathPostfix["Errors"]}",
-                ExportPath        = $@"{tingenDataRoot}\{pathPostfix["Exports"]}",
-                ExtensionsPath    = $@"{tingenDataRoot}\{pathPostfix["Extensions"]}",
-                ImportPath        = $@"{tingenDataRoot}\{pathPostfix["Imports"]}",
-                LogPath           = $@"{tingenDataRoot}\{pathPostfix["Logs"]}",
-                MessagePath       = $@"{tingenDataRoot}\{pathPostfix["Messages"]}",
-                ReportPath        = $@"{tingenDataRoot}\{pathPostfix["Reports"]}",
-                TemplatesPath     = $@"{tingenDataRoot}\{pathPostfix["Templates"]}",
-                TemporaryPath     = $@"{tingenDataRoot}\{pathPostfix["Temporary"]}",
-                WarningPath       = $@"{tingenDataRoot}\{pathPostfix["Warnings"]}",
-                PublicPath        = $@"{tingenDataRoot}\{pathPostfix["Public"]}",
-                PublicAlertPath   = $@"{tingenDataRoot}\{pathPostfix["PublicAlerts"]}",
-                PublicExportPath  = $@"{tingenDataRoot}\{pathPostfix["PublicExports"]}",
-                PublicReportPath  = $@"{tingenDataRoot}\{pathPostfix["PublicReports"]}",
-                PublicWarningPath = $@"{tingenDataRoot}\{pathPostfix["PublicWarnings"]}",
-                RemotePath        = $@"{tingenDataRoot}\{pathPostfix["Remote"]}",
-                RemoteAlertPath   = $@"{tingenDataRoot}\{pathPostfix["RemoteAlerts"]}",
-                RemoteErrorPath   = $@"{tingenDataRoot}\{pathPostfix["RemoteErrors"]}",
-                RemoteReportPath  = $@"{tingenDataRoot}\{pathPostfix["RemoteReports"]}",
-                RemoteWarningPath = $@"{tingenDataRoot}\{pathPostfix["RemoteWarnings"]}"
+                TingenDataRoot    = dataPaths["TingenDataRoot"],
+                SystemCodeRoot    = dataPaths["AvatarSystemCode"],
+                RawDataRoot       = dataPaths["RawDataRoot"],
+                MessageRoot       = dataPaths["MessageRoot"],
+                PublicRoot        = dataPaths["PublicRoot"],
+                RemoteRoot        = dataPaths["RemoteRoot"],
+                AdminPath         = dataPaths["Admin"],
+                AlertPath         = dataPaths["Alert"],
+                ArchivePath       = dataPaths["Archive"],
+                ConfigPath        = dataPaths["Config"],
+                DebugPath         = dataPaths["Debug"],
+                ErrorPath         = dataPaths["Error"],
+                ExportPath        = dataPaths["Export"],
+                ExtensionPath     = dataPaths["Extension"],
+                ImportPath        = dataPaths["Import"],
+                LogPath           = dataPaths["Log"],
+                ReportPath        = dataPaths["Report"],
+                TemplatePath      = dataPaths["Template"],
+                TemporaryPath     = dataPaths["Temporary"],
+                WarningPath       = dataPaths["Warning"],
+                PublicAlertPath   = dataPaths["PublicAlert"],
+                PublicErrorPath   = dataPaths["PublicError"],
+                PublicExportPath  = dataPaths["PublicExport"],
+                PublicReportPath  = dataPaths["PublicReport"],
+                PublicWarningPath = dataPaths["PublicWarning"],
+                RemoteAlertPath   = dataPaths["RemoteAlert"],
+                RemoteErrorPath   = dataPaths["RemoteError"],
+                RemoteExportPath  = dataPaths["RemoteExport"],
+                RemoteReportPath  = dataPaths["RemoteReport"],
+                RemoteWarningPath = dataPaths["RemoteWarning"]
             };
 
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[POST-POST-PREFIX]");
+
             tnFramework.ServiceStatusPaths = Catalog.ServiceStatusPaths(tnFramework);
+
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[POST-POST-POST-PREFIX]");
 
             return tnFramework;
         }

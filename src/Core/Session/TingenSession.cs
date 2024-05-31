@@ -39,9 +39,11 @@ namespace Outpost31.Core.Session
         /// <returns>An AbSession object.</returns>
         public static TingenSession Load(string configFilePath, OptionObject2015 sentOptionObject, string sentScriptParameter)
         {
-            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Session.TingenSession.Load()]"); /* <- For development use only */
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Session.TingenSession.Load()]"); /* <- For development use only */
 
             var tnConfig = TingenConfiguration.Load(configFilePath);
+
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[LOAD]");
 
             return new TingenSession
             {
@@ -53,7 +55,7 @@ namespace Outpost31.Core.Session
                 LogMode          = tnConfig.LogMode,
                 LogDelay         = tnConfig.LogDelay,
                 TnFramework      = TingenFramework.Build(tnConfig.TingenDataRoot, tnConfig.AvatarSystemCode),
-                AvData     = DataFromAvatar.Build(sentOptionObject, sentScriptParameter)
+                AvData           = DataFromAvatar.Build(sentOptionObject, sentScriptParameter)
             };
         }
     }

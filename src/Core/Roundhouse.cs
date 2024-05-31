@@ -23,7 +23,9 @@ namespace Outpost31.Core
         /// </remarks>
         public static void Parse(TingenSession tnSession)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Common.Parse.Module()]"); /* <- For development use only */
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Common.Parse.Module()]"); /* <- For development use only */
+
+            Outpost31.Core.Debuggler.PrimevalLog.Create($"[{tnSession.AvData.SentScriptParameter}]");
 
             //var module  = tnSession.AvComponents.ScriptModule;
             //var command = tnSession.AvComponents.ScriptCommand;
@@ -35,6 +37,16 @@ namespace Outpost31.Core
                 case "admin-service-mode-update":
                     Outpost31.Core.Debuggler.PrimevalLog.Create($"[{tnSession.AvData.SentScriptParameter}/admin-service-mode-update]"); /* <- For development use only */
                     Module.Admin.Service.ModeUpdate(tnSession.TingenMode, tnSession.AvatarSystemCode, tnSession.TnFramework.ServiceStatusPaths);
+                    break;
+
+                case "admin-service-currentsettings-update":
+                    Outpost31.Core.Debuggler.PrimevalLog.Create($"[{tnSession.AvData.SentScriptParameter}/admin-service-currentsettings-update]"); /* <- For development use only */
+                    Module.Admin.Service.CurrentSettingsUpdate(tnSession);
+                    break;
+
+                case "admin-service-all-update":
+                    Outpost31.Core.Debuggler.PrimevalLog.Create($"[{tnSession.AvData.SentScriptParameter}/admin-service-all-update]"); /* <- For development use only */
+                    Module.Admin.Service.AllUpdate(tnSession);
                     break;
 
                 case "admin-framework-archive-all":
