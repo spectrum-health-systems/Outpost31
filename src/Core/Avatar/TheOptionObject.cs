@@ -1,29 +1,37 @@
-﻿// u240531.1336
+﻿// u240603.1742
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Reflection;
+using Outpost31.Core.Logger;
 using Outpost31.Core.Session;
 
 namespace Outpost31.Core.Avatar
 {
     public static class TheOptionObject
     {
+        /// <summary>Executing assembly name for log files.</summary>
+        /// <remarks>
+        ///   <para>
+        ///    The executing assembly is defined at the start of the class so it can be easily used throughout the class when creating
+        ///    log files.
+        ///   </para>
+        /// </remarks>
+        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+
         /// <summary>Clones the SentOptionObject to the ReturnOptionObject (so, no work).</summary>
         public static void ReturnClonedSent(TingenSession tnSession)
         {
+            LogEvent.Trace(tnSession, AssemblyName);
+
             tnSession.AvData.ReturnOptionObject = tnSession.AvData.SentOptionObject.Clone();
         }
-
-
 
         /// <summary>No work is done.</summary>
         /// <param name="tnSession"></param>
         public static void NoWork(TingenSession tnSession)
         {
-            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.TheOptionObject.TheReturnOptionObject.NoWork()]"); /* <- For development use only */
+            LogEvent.Trace(tnSession, AssemblyName);
+
+            // TODO
 
             //tnSession.AvData.ReturnOptionObject = tnSession.AvData.SentOptionObject.ToReturnOptionObject();
 
@@ -34,7 +42,9 @@ namespace Outpost31.Core.Avatar
         /// <param name="errorMessage"></param>
         public static void Error1(TingenSession tnSession, string errorMessage)
         {
-            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.TheOptionObject.TheReturnOptionObject()]"); /* <- For development use only */
+            LogEvent.Trace(tnSession, AssemblyName);
+
+            // TODO
 
             //tnSession.AvData.ReturnOptionObject = tnSession.AvData.SentOptionObject.ToReturnOptionObject(1, errorMessage);
         }

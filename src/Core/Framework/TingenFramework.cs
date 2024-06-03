@@ -1,4 +1,4 @@
-﻿// u240531.0811
+﻿// u240603.1731
 
 /* =====================================================================================================================
  * Adding new framework components to Tingen
@@ -11,6 +11,8 @@
  *  - Add an entry for the path to Framework.Catalog.PathPostfixes()
  *  - Add an entry for the path to TingenFramework.Build()
  * ================================================================================================================== */
+
+using System.Reflection;
 
 namespace Outpost31.Core.Framework
 {
@@ -40,6 +42,15 @@ namespace Outpost31.Core.Framework
     /// </remarks>
     public partial class TingenFramework
     {
+        /// <summary>Executing assembly name for log files.</summary>
+        /// <remarks>
+        ///   <para>
+        ///    The executing assembly is defined at the start of the class so it can be easily used throughout the class when creating
+        ///    log files.
+        ///   </para>
+        /// </remarks>
+        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+
         /// <summary>Builds the Tingen Framework components.</summary>
         /// <param name="tingenDataRoot">The Tingen data root directory.</param>
         /// <param name="avatarSystemCode">The Avatar System Code</param>
@@ -64,51 +75,48 @@ namespace Outpost31.Core.Framework
         /// <returns>The Abatab Framework components.</returns>
         public static TingenFramework Build(string tingenDataRoot, string avatarSystemCode)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Session.TingenSession.BuildComponents()]"); /* <- For development use only */
+            /* Can't put a trace log here, so we'll use a Primeval log for debugging.
+             */
+            //LogEvent.Primeval(AssemblyName);
 
-            var dataPaths = Framework.Catalog.DataPaths(tingenDataRoot, avatarSystemCode);
-
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[{tingenDataRoot}]");
+            var dataPath = Framework.Catalog.DataPaths(tingenDataRoot, avatarSystemCode);
 
             var tnFramework = new TingenFramework
             {
-                TingenDataRoot    = dataPaths["TingenDataRoot"],
-                SystemCodeRoot    = dataPaths["AvatarSystemCode"],
-                RawDataRoot       = dataPaths["RawDataRoot"],
-                MessageRoot       = dataPaths["MessageRoot"],
-                PublicRoot        = dataPaths["PublicRoot"],
-                RemoteRoot        = dataPaths["RemoteRoot"],
-                AdminPath         = dataPaths["Admin"],
-                AlertPath         = dataPaths["Alert"],
-                ArchivePath       = dataPaths["Archive"],
-                ConfigPath        = dataPaths["Config"],
-                DebugPath         = dataPaths["Debug"],
-                ErrorPath         = dataPaths["Error"],
-                ExportPath        = dataPaths["Export"],
-                ExtensionPath     = dataPaths["Extension"],
-                ImportPath        = dataPaths["Import"],
-                LogPath           = dataPaths["Log"],
-                ReportPath        = dataPaths["Report"],
-                TemplatePath      = dataPaths["Template"],
-                TemporaryPath     = dataPaths["Temporary"],
-                WarningPath       = dataPaths["Warning"],
-                PublicAlertPath   = dataPaths["PublicAlert"],
-                PublicErrorPath   = dataPaths["PublicError"],
-                PublicExportPath  = dataPaths["PublicExport"],
-                PublicReportPath  = dataPaths["PublicReport"],
-                PublicWarningPath = dataPaths["PublicWarning"],
-                RemoteAlertPath   = dataPaths["RemoteAlert"],
-                RemoteErrorPath   = dataPaths["RemoteError"],
-                RemoteExportPath  = dataPaths["RemoteExport"],
-                RemoteReportPath  = dataPaths["RemoteReport"],
-                RemoteWarningPath = dataPaths["RemoteWarning"]
+                TingenDataRoot    = dataPath["TingenDataRoot"],
+                SystemCodeRoot    = dataPath["AvatarSystemCode"],
+                RawDataRoot       = dataPath["RawDataRoot"],
+                MessageRoot       = dataPath["MessageRoot"],
+                PublicRoot        = dataPath["PublicRoot"],
+                RemoteRoot        = dataPath["RemoteRoot"],
+                SessionRoot       = dataPath["SessionRoot"],
+                AdminPath         = dataPath["Admin"],
+                AlertPath         = dataPath["Alert"],
+                ArchivePath       = dataPath["Archive"],
+                ConfigPath        = dataPath["Config"],
+                DebugPath         = dataPath["Debug"],
+                ErrorPath         = dataPath["Error"],
+                ExportPath        = dataPath["Export"],
+                ExtensionPath     = dataPath["Extension"],
+                ImportPath        = dataPath["Import"],
+                LogPath           = dataPath["Log"],
+                ReportPath        = dataPath["Report"],
+                TemplatePath      = dataPath["Template"],
+                TemporaryPath     = dataPath["Temporary"],
+                WarningPath       = dataPath["Warning"],
+                PublicAlertPath   = dataPath["PublicAlert"],
+                PublicErrorPath   = dataPath["PublicError"],
+                PublicExportPath  = dataPath["PublicExport"],
+                PublicReportPath  = dataPath["PublicReport"],
+                PublicWarningPath = dataPath["PublicWarning"],
+                RemoteAlertPath   = dataPath["RemoteAlert"],
+                RemoteErrorPath   = dataPath["RemoteError"],
+                RemoteExportPath  = dataPath["RemoteExport"],
+                RemoteReportPath  = dataPath["RemoteReport"],
+                RemoteWarningPath = dataPath["RemoteWarning"]
             };
 
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[POST-POST-PREFIX]");
-
             tnFramework.ServiceStatusPaths = Catalog.ServiceStatusPaths(tnFramework);
-
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[POST-POST-POST-PREFIX]");
 
             return tnFramework;
         }

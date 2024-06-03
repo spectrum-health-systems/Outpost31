@@ -1,20 +1,31 @@
-﻿// u240531.0725
+﻿// u240603.1755
 
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
+using Outpost31.Core.Logger;
 using Outpost31.Core.Session;
 
 namespace Outpost31.Module.Admin
 {
     public static class Service
     {
+        /// <summary>Executing assembly name for log files.</summary>
+        /// <remarks>
+        ///   <para>
+        ///    The executing assembly is defined at the start of the class so it can be easily used throughout the class when creating
+        ///    log files.
+        ///   </para>
+        /// </remarks>
+        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+
         public static void AllUpdate(TingenSession tnSession)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Module.Admin.Action.Service.AllUpdate()]"); /* <- For development use only */
+            LogEvent.Trace(tnSession, AssemblyName);
 
-            ModeUpdate(tnSession.TingenMode, tnSession.AvatarSystemCode, tnSession.TnFramework.ServiceStatusPaths);
+            ModeUpdate(tnSession.TingenMode, tnSession.AvatarSystemCode, tnSession.TnFramework.ServiceStatusPaths, tnSession.TraceInfo);
             CurrentSettingsUpdate(tnSession);
         }
 
@@ -28,11 +39,11 @@ namespace Outpost31.Module.Admin
         ///   Status files are written to the various paths for various uses.
         ///  </para>
         /// </remarks>
-        public static void ModeUpdate(string tingenMode, string avatarSystemCode, List<string> statusFilePaths)
+        public static void ModeUpdate(string tingenMode, string avatarSystemCode, List<string> statusFilePaths, TraceLog traceInfo)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Module.Admin.Action.Service.StatusUpdate()]"); /* <- For development use only */
+            LogEvent.Trace(traceInfo, AssemblyName);
 
-            DeleteModeUpdateFiles(avatarSystemCode, statusFilePaths);
+            DeleteModeUpdateFiles(avatarSystemCode, statusFilePaths, traceInfo);
 
             string statusFileName;
 
@@ -51,27 +62,27 @@ namespace Outpost31.Module.Admin
                     break;
             }
 
-            WriteModeUpdateFiles(statusFileName, statusFilePaths);
+            WriteModeUpdateFiles(statusFileName, statusFilePaths, traceInfo);
         }
 
         public static void CurrentSettingsUpdate(TingenSession tnSession)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Module.Admin.Action.Service.CurrentSettingsUpdate()]"); /* <- For development use only */
+            LogEvent.Trace(tnSession, AssemblyName);
 
             var currentSettingsFileName = $"Current-Tingen-{tnSession.AvatarSystemCode}-settings.md";
 
-            DeleteCurrentSettingFiles(currentSettingsFileName, tnSession.TnFramework.ServiceStatusPaths);
+            DeleteCurrentSettingFiles(currentSettingsFileName, tnSession.TnFramework.ServiceStatusPaths, tnSession.TraceInfo);
 
             var currentSettings = Outpost31.Core.Session.Catalog.CurrentSettings(tnSession);
 
-            WriteCurrentSettingsFiles(currentSettingsFileName, currentSettings, tnSession.TnFramework.ServiceStatusPaths);
+            WriteCurrentSettingsFiles(currentSettingsFileName, currentSettings, tnSession.TnFramework.ServiceStatusPaths, tnSession.TraceInfo);
 
             //Outpost31.Core.Session.Catalog.CurrentSettings(tnSession);
         }
 
-        private static void DeleteCurrentSettingFiles(string currentSettingsFileName, List<string> statusFilePaths)
+        private static void DeleteCurrentSettingFiles(string currentSettingsFileName, List<string> statusFilePaths, TraceLog traceInfo)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Module.Admin.Action.Service.DeleteCurrentSettingFiles()]"); /* <- For development use only */
+            LogEvent.Trace(traceInfo, AssemblyName);
 
             foreach (var path in statusFilePaths)
             {
@@ -87,11 +98,9 @@ namespace Outpost31.Module.Admin
         /// <summary>Create the status files.</summary>
         /// <param name="statusFileName">The name of the status file to write.</param>
         /// <param name="statusFilePaths">Paths where the status file will be written.</param>
-        private static void WriteCurrentSettingsFiles(string currentSettingFileName, string currentSettingContent, List<string> statusFilePaths)
+        private static void WriteCurrentSettingsFiles(string currentSettingFileName, string currentSettingContent, List<string> statusFilePaths, TraceLog traceInfo)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Module.Admin.Action.Service.CreateStatusFiles()]"); /* <- For development use only */
-
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[A]");
+            LogEvent.Trace(traceInfo, AssemblyName);
 
             foreach (var path in statusFilePaths)
             {
@@ -100,16 +109,14 @@ namespace Outpost31.Module.Admin
                     File.WriteAllText($@"{path}\{currentSettingFileName}", currentSettingContent);
                 }
             }
-
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[B]");
         }
 
         /// <summary>Delete existing status files.</summary>
         /// <param name="avatarSystemCode">The Avatar System Code.</param>
         /// <param name="statusFilePaths">Paths where the status file will be written.</param>
-        private static void DeleteModeUpdateFiles(string avatarSystemCode, List<string> statusFilePaths)
+        private static void DeleteModeUpdateFiles(string avatarSystemCode, List<string> statusFilePaths, TraceLog traceInfo)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Module.Admin.Action.Service.DeleteExistingStatusFiles()]"); /* <- For development use only */
+            LogEvent.Trace(traceInfo, AssemblyName);
 
             foreach (var path in statusFilePaths)
             {
@@ -125,9 +132,9 @@ namespace Outpost31.Module.Admin
         /// <summary>Create the status files.</summary>
         /// <param name="statusFileName">The name of the status file to write.</param>
         /// <param name="statusFilePaths">Paths where the status file will be written.</param>
-        private static void WriteModeUpdateFiles(string statusFileName, List<string> statusFilePaths)
+        private static void WriteModeUpdateFiles(string statusFileName, List<string> statusFilePaths, TraceLog traceInfo)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Module.Admin.Action.Service.CreateStatusFiles()]"); /* <- For development use only */
+            LogEvent.Trace(traceInfo, AssemblyName);
 
             foreach (var path in statusFilePaths)
             {

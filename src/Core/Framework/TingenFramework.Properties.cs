@@ -1,11 +1,9 @@
-﻿// u240531.1229
+﻿// u240603.1709
 
 using System.Collections.Generic;
 
 namespace Outpost31.Core.Framework
 {
-    /// <summary>Avatar-specific data. (see DataFromAvatar.Properties.cs for more information about this class).</summary>
-
     /// <summary>Logic for the Tingen Framework data (see TingenFramework.Properties.cs for more information about this class).</summary>
     public partial class TingenFramework
     {
@@ -79,6 +77,9 @@ namespace Outpost31.Core.Framework
         ///  </para>
         /// </remarks>
         public string RemoteRoot { get; set; }
+
+        /// <summary>Session-specific session data is located here.</summary>
+        public string SessionRoot { get; set; }
 
         /*
          * System Code-specific paths

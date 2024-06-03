@@ -1,8 +1,9 @@
-﻿// u240530.1114
+﻿// u240603.1707
 
 using System.Collections.Generic;
 using Outpost31.Core.Avatar;
 using Outpost31.Core.Framework;
+using Outpost31.Core.Logger;
 
 namespace Outpost31.Core.Session
 {
@@ -36,7 +37,9 @@ namespace Outpost31.Core.Session
         public string TingenBuild { get; set; }
 
         /// <summary>The session timestamp.</summary>
-        public string SessionTimestamp { get; set; }
+        public string DateStamp { get; set; }
+        /// <summary>The session timestamp.</summary>
+        public string TimeStamp { get; set; }
 
         /// <summary>The Avatar System Code.</summary>
         /// <remarks>
@@ -46,21 +49,25 @@ namespace Outpost31.Core.Session
         /// </remarks>
         public string AvatarSystemCode { get; set; }
 
-        /// <summary>The log mode Tingen will use.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   See <b>Outpost31.Core.Configuration.TingenConfiguration.Properties.cs</b> for more information.
-        ///  </para>
-        /// </remarks>
-        public int LogMode { get; set; }
+        ///////// <summary>The log mode Tingen will use.</summary>
+        ///////// <remarks>
+        /////////  <para>
+        /////////   See <b>Outpost31.Core.Configuration.TingenConfiguration.Properties.cs</b> for more information.
+        /////////  </para>
+        ///////// </remarks>
+        //////public int TraceLogMode { get; set; }
 
-        /// <summary>The delay between creating logs.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   See <b>Outpost31.Core.Configuration.TingenConfiguration.Properties.cs</b> for more information.
-        ///  </para>
-        /// </remarks>
-        public int LogDelay { get; set; }
+        ///////// <summary>The delay between creating logs.</summary>
+        ///////// <remarks>
+        /////////  <para>
+        /////////   See <b>Outpost31.Core.Configuration.TingenConfiguration.Properties.cs</b> for more information.
+        /////////  </para>
+        ///////// </remarks>
+        //////public int LogDelay { get; set; }
+
+        /// <summary>The current session path</summary>
+        public string CurrentSessionPath { get; set; }
+
 
         /// <summary>Determines if the Admin Module is enabled.</summary>
         /// <remarks>
@@ -93,5 +100,8 @@ namespace Outpost31.Core.Session
         ///  </para>
         /// </remarks>
         public DataFromAvatar AvData { get; set; }
+
+        /// <summary>Trace log information.</summary>
+        public TraceLog TraceInfo { get; set; }
     }
 }

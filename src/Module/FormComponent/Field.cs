@@ -1,12 +1,23 @@
 ﻿// u240530.1503
 
 using System.IO;
+using System.Reflection;
+using Outpost31.Core.Logger;
 
 namespace Outpost31.Module.Common.Action
 {
     /// <summary>Field operations.</summary>
     public static partial class Field
     {
+        /// <summary>Executing assembly name for log files.</summary>
+        /// <remarks>
+        ///   <para>
+        ///    The executing assembly is defined at the start of the class so it can be easily used throughout the class when creating
+        ///    log files.
+        ///   </para>
+        /// </remarks>
+        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+
         /// <summary>Compare the values of two form field IDs to determine if they are the same.</summary>
         /// <param name="field01Value">The value of the first field.</param>
         /// <param name="field02Value">The value of the second field.</param>
@@ -21,9 +32,9 @@ namespace Outpost31.Module.Common.Action
         ///  </example>
         /// </remarks>
         /// <returns>True (the fields values are the same) or false(the field values are different).</returns>
-        public static bool CompareValue(string field01Value, string field02Value)
+        public static bool CompareValue(string field01Value, string field02Value, TraceLog traceInfo)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Common.FieldOperation.Compare()]"); /* <- For development use only */
+            LogEvent.Trace(traceInfo, AssemblyName);
 
             return field01Value == field02Value;
         }
@@ -63,9 +74,9 @@ namespace Outpost31.Module.Common.Action
         ///   Since the <c>filePath</c> is user-definable, we will verify that the <c>filePath</c> doesn't exist before (re)creating it.
         ///  </para>
         /// </remarks>
-        public static void SaveValue(string valueToSave, string filePath)
+        public static void SaveValue(string valueToSave, string filePath, TraceLog traceInfo)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Common.FieldOperation.SaveValue()]"); /* <- For development use only */
+            LogEvent.Trace(traceInfo, AssemblyName);
 
             // TODO: Might want to encrypt this data.
 

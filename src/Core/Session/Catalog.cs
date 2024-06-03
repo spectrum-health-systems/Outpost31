@@ -1,14 +1,25 @@
-﻿// u240531.1125
+﻿// u240603.1731
 
 using System;
+using System.Reflection;
+using Outpost31.Core.Logger;
 
 namespace Outpost31.Core.Session
 {
     public static class Catalog
     {
+        /// <summary>Executing assembly name for log files.</summary>
+        /// <remarks>
+        ///   <para>
+        ///    The executing assembly is defined at the start of the class so it can be easily used throughout the class when creating
+        ///    log files.
+        ///   </para>
+        /// </remarks>
+        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+
         public static string CurrentSettings(TingenSession tnSession)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Session.Catalog.CurrentSettings()]"); /* <- For development use only */
+            LogEvent.Trace(tnSession, AssemblyName);
 
             return $"# Current Tingen Settings{Environment.NewLine}" +
                    $"> v24.10.11 b240502  {Environment.NewLine}" +
@@ -17,8 +28,13 @@ namespace Outpost31.Core.Session
                    $"## Tingen{Environment.NewLine}" +
                    $"Mode: {tnSession.TingenMode}  {Environment.NewLine}" +
                    $"System Code: {tnSession.AvatarSystemCode.ToUpper()}  {Environment.NewLine}" +
-                   $"Log Mode: {tnSession.LogMode}  {Environment.NewLine}" +
-                   $"Log Delay: {tnSession.LogDelay}  {Environment.NewLine}" +
+                   Environment.NewLine +
+                   $"## Logging{Environment.NewLine}" +
+                   Environment.NewLine +
+                   $"### Trace logs{Environment.NewLine}" +
+                   Environment.NewLine +
+                   $"Trace log mode: {tnSession.TraceInfo.TraceLogMode}  {Environment.NewLine}" +
+                   $"Trace log delay: {tnSession.TraceInfo.TraceLogDelay}  {Environment.NewLine}" +
                    Environment.NewLine +
                    $"## Modules{Environment.NewLine}" +
                    Environment.NewLine +

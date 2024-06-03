@@ -1,21 +1,31 @@
-﻿// u240530.1120
+﻿// u240603.1721
 
 using System;
+using System.Reflection;
 using Outpost31.Core.Avatar;
 using Outpost31.Core.Configuration;
 using Outpost31.Core.Framework;
+using Outpost31.Core.Logger;
 using ScriptLinkStandard.Objects;
 
 namespace Outpost31.Core.Session
 {
     /// <summary>Contains Tingen session logic.</summary>
     /// <remarks>
-    ///  <para>  
+    ///  <para>
     ///   Properties for the Tingen session are located in <b>TingenSession.Properties.cs.</b>
-    ///  </para> 
+    ///  </para>
     /// </remarks>
     public partial class TingenSession
     {
+        /// <summary>Executing assembly name for log files.</summary>
+        /// <remarks>
+        ///   <para>
+        ///    The executing assembly is defined at the start of the class so it can be easily used throughout the class when creating
+        ///    log files.
+        ///   </para>
+        /// </remarks>
+        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>Loads the object.</summary>
         /// <param name="configFilePath">The path to the Tingen configuration file.</param>
@@ -37,26 +47,48 @@ namespace Outpost31.Core.Session
         ///  </para>
         /// </remarks>
         /// <returns>An AbSession object.</returns>
-        public static TingenSession Load(string configFilePath, OptionObject2015 sentOptionObject, string sentScriptParameter)
+        public static TingenSession Build(string configFilePath, OptionObject2015 sentOptionObject, string sentScriptParameter)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Session.TingenSession.Load()]"); /* <- For development use only */
+            /* Can't put a trace log here, so we'll use a Primeval log for debugging.
+             */
+            //LogEvent.Primeval(AssemblyName);
+
+            LogEvent.Primeval(AssemblyName, configFilePath);
 
             var tnConfig = TingenConfiguration.Load(configFilePath);
 
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[LOAD]");
+            LogEvent.Primeval(AssemblyName, tnConfig.ToString());
 
-            return new TingenSession
+            var tnSession = new TingenSession
             {
                 TingenMode       = tnConfig.TingenMode.ToLower(),
                 TingenVersion    = tnConfig.TingenVersionBuild.Split('-')[0],
                 TingenBuild      = tnConfig.TingenVersionBuild.Split('-')[1],
                 AvatarSystemCode = tnConfig.AvatarSystemCode.ToLower(),
-                SessionTimestamp = DateTime.Now.ToString("yyyyMMdd-HHmmssfffffff"),
-                LogMode          = tnConfig.LogMode,
-                LogDelay         = tnConfig.LogDelay,
+                DateStamp        = DateTime.Now.ToString("yyMMdd"),
+                TimeStamp        = DateTime.Now.ToString("HHmmss"),
                 TnFramework      = TingenFramework.Build(tnConfig.TingenDataRoot, tnConfig.AvatarSystemCode),
-                AvData           = DataFromAvatar.Build(sentOptionObject, sentScriptParameter)
+                AvData           = DataFromAvatar.Build(sentOptionObject, sentScriptParameter),
             };
+
+            LogEvent.Primeval(AssemblyName, tnSession.ToString());
+
+            tnSession.CurrentSessionPath = $@"{tnSession.TnFramework.SessionRoot}\{tnSession.AvData.SentOptionObject.OptionUserId}";
+
+            LogEvent.Primeval(AssemblyName, tnSession.CurrentSessionPath);
+
+            tnSession.TraceInfo          = TraceLog.BuildInfo(tnConfig.TraceLogMode, tnConfig.TraceLogDelay, tnSession.CurrentSessionPath);
+
+            LogEvent.Primeval(AssemblyName, tnSession.TraceInfo.ToString());
+
+            return tnSession;
+        }
+
+        public static void Initialize(TingenSession tnSession)
+        {
+            LogEvent.Trace(tnSession, AssemblyName);
+
+            Maintenance.VerifyDirectory(tnSession.CurrentSessionPath);
         }
     }
 }

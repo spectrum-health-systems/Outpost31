@@ -1,4 +1,4 @@
-﻿// u240531.0853
+﻿// u240603.1756
 
 using System.Collections.Generic;
 
@@ -20,11 +20,17 @@ namespace Outpost31.Core.Configuration
         ///     <term>Disabled</term>
         ///     <description>Tingen is disabled, and will not do any work</description>
         ///    </item>
+        ///    <item>
+        ///     <term>Development</term>
+        ///     <description>Tingen is enabled, and development/debugging data is reset at execution</description>
+        ///    </item>
         ///   </list>
         ///  </para>
         ///  <para>
         ///   When <i>disabled</i>, Tingen becomes a pass-through, and the sentOptionObject is returned unmodified.<br/><br/>
-        ///   Setting the mode to <i>disabled</i> is the equivalent of disabling ScriptLink on every form that uses Tingen.
+        ///   Setting the mode to <i>disabled</i> is the equivalent of disabling ScriptLink on every form that uses Tingen.<br/><br/>
+        ///   When the mode is set to <i>development</i>, Tingen is enabled and works normally. However,<br/>
+        ///   any development-related data, such as debugging logs or testing data, is reset at execution.
         ///  </para>
         /// </remarks>
         public string TingenMode { get; set; }
@@ -86,7 +92,7 @@ namespace Outpost31.Core.Configuration
         ///   Logs are written to <i>%TingenDataRoot%\%AvatarSystemCode%\Logs</i> (ex: "<c>C:\TingenData\UAT\Logs</c>").
         ///  </para>
         /// </remarks>
-        public int LogMode { get; set; }
+        public int TraceLogMode { get; set; }
 
         /// <summary>The delay between log writes.</summary>
         /// <remarks>
@@ -97,7 +103,7 @@ namespace Outpost31.Core.Configuration
         ///   The default value is <c>100</c> (milliseconds).
         ///  </para>
         /// </remarks>
-        public int LogDelay { get; set; }
+        public int TraceLogDelay { get; set; }
 
         /// <summary>Determines if the Admin Module is enabled.</summary>
         /// <remarks>

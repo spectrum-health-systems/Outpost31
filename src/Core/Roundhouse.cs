@@ -1,11 +1,22 @@
-﻿// u240531.0722
+﻿// u240603.1712
 
+using System.Reflection;
+using Outpost31.Core.Logger;
 using Outpost31.Core.Session;
 
 namespace Outpost31.Core
 {
     public static class Roundhouse
     {
+        /// <summary>Executing assembly name for log files.</summary>
+        /// <remarks>
+        ///   <para>
+        ///    The executing assembly is defined at the start of the class so it can be easily used throughout the class when creating
+        ///    log files.
+        ///   </para>
+        /// </remarks>
+        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+
         /// <summary>OLD Determines which Tingen <i>Module</i> will be doing the work this session.</summary>
         /// <param name="tnSession">The Tingen session object.</param>
         /// <remarks>
@@ -23,45 +34,51 @@ namespace Outpost31.Core
         /// </remarks>
         public static void Parse(TingenSession tnSession)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Common.Parse.Module()]"); /* <- For development use only */
+            LogEvent.Trace(tnSession, AssemblyName);
 
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[{tnSession.AvData.SentScriptParameter}]");
+            if (tnSession.TingenMode == "development")
+            {
+                LogEvent.Trace(tnSession, AssemblyName);
 
-            //var module  = tnSession.AvComponents.ScriptModule;
-            //var command = tnSession.AvComponents.ScriptCommand;
-            //var action  = tnSession.AvComponents.ScriptAction;
-            //var option  = tnSession.AvComponents.ScriptOption;
+                // TODO
+                //PrimevalLog.DevelopmentCleanup();
+            }
 
             switch (tnSession.AvData.SentScriptParameter)
             {
                 case "admin-service-mode-update":
-                    Outpost31.Core.Debuggler.PrimevalLog.Create($"[{tnSession.AvData.SentScriptParameter}/admin-service-mode-update]"); /* <- For development use only */
-                    Module.Admin.Service.ModeUpdate(tnSession.TingenMode, tnSession.AvatarSystemCode, tnSession.TnFramework.ServiceStatusPaths);
+                    LogEvent.Trace(tnSession, AssemblyName);
+                    Module.Admin.Service.ModeUpdate(tnSession.TingenMode, tnSession.AvatarSystemCode, tnSession.TnFramework.ServiceStatusPaths, tnSession.TraceInfo);
                     break;
 
                 case "admin-service-currentsettings-update":
-                    Outpost31.Core.Debuggler.PrimevalLog.Create($"[{tnSession.AvData.SentScriptParameter}/admin-service-currentsettings-update]"); /* <- For development use only */
+                    LogEvent.Trace(tnSession, AssemblyName);
                     Module.Admin.Service.CurrentSettingsUpdate(tnSession);
                     break;
 
                 case "admin-service-all-update":
-                    Outpost31.Core.Debuggler.PrimevalLog.Create($"[{tnSession.AvData.SentScriptParameter}/admin-service-all-update]"); /* <- For development use only */
+                    LogEvent.Trace(tnSession, AssemblyName);
                     Module.Admin.Service.AllUpdate(tnSession);
                     break;
 
                 case "admin-framework-archive-all":
+                    LogEvent.Trace(tnSession, AssemblyName);
                     break;
 
                 case "admin-framework-archive-logs":
+                    LogEvent.Trace(tnSession, AssemblyName);
                     break;
 
                 case "common-field-lock-id":
+                    LogEvent.Trace(tnSession, AssemblyName);
                     break;
 
                 case "common-field-save-id":
+                    LogEvent.Trace(tnSession, AssemblyName);
                     break;
 
                 default:
+                    LogEvent.Trace(tnSession, AssemblyName);
                     // TODO: Exit gracefully
                     break;
             }

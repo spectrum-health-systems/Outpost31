@@ -1,7 +1,9 @@
-﻿// u240531.0849
+﻿// u240603.1754
 
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
+using Outpost31.Core.Logger;
 
 namespace Outpost31.Core.Configuration
 {
@@ -32,6 +34,15 @@ namespace Outpost31.Core.Configuration
     /// </remarks>
     public partial class TingenConfiguration
     {
+        /// <summary>Executing assembly name for log files.</summary>
+        /// <remarks>
+        ///   <para>
+        ///    The executing assembly is defined at the start of the class so it can be easily used throughout the class when creating
+        ///    log files.
+        ///   </para>
+        /// </remarks>
+        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+
         /// <summary>Builds a default Tingen configuration object.</summary>
         /// <remarks>
         ///  <para>
@@ -40,18 +51,20 @@ namespace Outpost31.Core.Configuration
         ///  </para>
         /// </remarks>
         /// <returns>An object with default Tingen configuration values.</returns>
-        public static TingenConfiguration Build()
+        public static TingenConfiguration BuildDefault()
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Configuration.TingenConfiguration.Build()]"); /* <- For development use only */
+            /* Can't put a trace log here, so we'll use a Primeval log for debugging.
+             */
+            //LogEvent.Primeval(AssemblyName);
 
             return new TingenConfiguration
             {
                 TingenMode         = "enabled",
-                TingenVersionBuild = "24.5.0-240531.1044",
+                TingenVersionBuild = "24.6.0-240603.1755",
                 TingenDataRoot     = @"C:\TingenData",
                 AvatarSystemCode   = "UAT",
-                LogMode            = 1,
-                LogDelay           = 0,
+                TraceLogMode       = 1,
+                TraceLogDelay      = 100,
                 ModAdminEnabled    = true,
                 ModAdminWhitelist  = new List<string>()
             };
@@ -68,9 +81,19 @@ namespace Outpost31.Core.Configuration
         /// <returns>The Tingen configuration settings.</returns>
         public static TingenConfiguration Load(string configFilePath)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Configuration.TingenConfiguration.Load()]"); /* <- For development use only */
+            /* Can't put a trace log here, so we'll use a Primeval log for debugging.
+             */
+            //LogEvent.Primeval(AssemblyName);
 
-            VerifyExists(configFilePath);
+            LogEvent.Primeval(AssemblyName, configFilePath);
+
+            Framework.Maintenance.VerifyDirectory(configFilePath);
+
+            LogEvent.Primeval(AssemblyName, "1");
+
+            VerifyConfigurationExists(configFilePath);
+
+            LogEvent.Primeval(AssemblyName, "2");
 
             return Utilities.DuJson.ImportFromLocalFile<TingenConfiguration>(configFilePath);
         }
@@ -79,25 +102,34 @@ namespace Outpost31.Core.Configuration
         /// <param name="systemCode">The Avatar System Code.</param>
         /// <remarks>
         ///  <para>
-        ///   The <paramref name="systemCode"/> parameter is passed from Tingen.asmx.cs when the Tingen session is started.
+        ///   The <paramref name="systemCode"/> parameter is passed from Tingen.asmx.cs when the Tingen session is started.<br/><br/>
+        ///   Even though this is a simple, one line method, this way we can easily change the path.
         ///  </para>
         /// </remarks>
         /// <returns>The path to the Tingen configuration file.</returns>
         public static string GetPath(string systemCode)
         {
-            //Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Configuration.TingenConfiguration.GetPath()]"); /* <- For development use only */
+            /* Can't put a trace log here, so we'll use a Primeval log for debugging.
+             */
+            //LogEvent.Primeval(AssemblyName);
 
             return $@"C:\TingenData\{systemCode}\Config\Tingen.config";
         }
 
         /// <summary>Verifies that the configuration file exists, and creates a new one if it does not.</summary>
         /// <param name="configFilePath">The path to the Tingen configuration file.</param>
-        private static void VerifyExists(string configFilePath)
+        private static void VerifyConfigurationExists(string configFilePath)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Configuration.TingenConfiguration.VerifyExists()]"); /* <- For development use only */
+            /* Can't put a trace log here, so we'll use a Primeval log for debugging.
+             */
+            //LogEvent.Primeval(AssemblyName);
+
+            LogEvent.Primeval(AssemblyName, configFilePath);
 
             if (!File.Exists(configFilePath))
             {
+                LogEvent.Primeval(AssemblyName, "3");
+
                 CreateNew(configFilePath);
             }
         }
@@ -106,11 +138,19 @@ namespace Outpost31.Core.Configuration
         /// <param name="configFilePath">The path to the Tingen configuration file.</param>
         private static void CreateNew(string configFilePath)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Configuration.TingenConfiguration.CreateNew()]"); /* <- For development use only */
+            /* Can't put a trace log here, so we'll use a Primeval log for debugging.
+             */
+            //LogEvent.Primeval(AssemblyName);
 
-            var tingenConfig = Build();
+            LogEvent.Primeval(AssemblyName, configFilePath);
 
-            Utilities.DuJson.ExportToLocalFile<TingenConfiguration>(tingenConfig, configFilePath);
+            var defaultConfiguration = BuildDefault();
+
+            LogEvent.Primeval(AssemblyName, "4");
+
+            Utilities.DuJson.ExportToLocalFile<TingenConfiguration>(defaultConfiguration, configFilePath);
+
+            LogEvent.Primeval(AssemblyName, "777");
         }
     }
 }

@@ -1,12 +1,23 @@
-﻿// u240531.1226
+﻿// u240603.1707
 
+using System;
 using System.Collections.Generic;
+using System.Reflection;
 
 namespace Outpost31.Core.Framework
 {
     /// <summary>This class contains pre-defined information for the Tingen Framework.</summary>
     public static class Catalog
     {
+        /// <summary>Executing assembly name for log files.</summary>
+        /// <remarks>
+        ///   <para>
+        ///    The executing assembly is defined at the start of the class so it can be easily used throughout the class when creating
+        ///    log files.
+        ///   </para>
+        /// </remarks>
+        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+
         /// <summary>Create postfixes for Tingen directory paths.</summary>
         /// <remarks>
         ///  <para>
@@ -16,9 +27,11 @@ namespace Outpost31.Core.Framework
         /// </remarks>
         public static Dictionary<string, string> DataPaths(string tingenDataRoot, string avatarSystemCode)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Framework.Catalog.PathPostfixes()]"); /* <- For development use only */
+            /* Can't put a trace log here, so we'll use a Primeval log for debugging.
+             */
+            //LogEvent.Primeval(AssemblyName);
 
-            var dataPaths = new Dictionary<string, string>
+            return new Dictionary<string, string>
             {
                 { "TingenDataRoot",   $@"{tingenDataRoot}" },
                 { "AvatarSystemCode", $@"{tingenDataRoot}\{avatarSystemCode}" },
@@ -26,6 +39,7 @@ namespace Outpost31.Core.Framework
                 { "MessageRoot",      $@"{tingenDataRoot}\{avatarSystemCode}\Message" },
                 { "PublicRoot",       $@"{tingenDataRoot}\Public"},
                 { "RemoteRoot",       $@"{tingenDataRoot}\Remote" },
+                { "SessionRoot",      $@"{tingenDataRoot}\{avatarSystemCode}\Session\{DateTime.Now:yyMMdd}" },
                 { "Admin",            $@"{tingenDataRoot}\{avatarSystemCode}\Admin" },
                 { "Alert",            $@"{tingenDataRoot}\{avatarSystemCode}\Message\Alert" },
                 { "Archive",          $@"{tingenDataRoot}\{avatarSystemCode}\Archive" },
@@ -51,8 +65,6 @@ namespace Outpost31.Core.Framework
                 { "RemoteReport",     $@"{tingenDataRoot}\Remote\Report" },
                 { "RemoteWarning",    $@"{tingenDataRoot}\Remote\Warning" }
             };
-
-            return dataPaths;
         }
 
         /// <summary>Create a list of paths where service status files are located.</summary>
@@ -65,10 +77,13 @@ namespace Outpost31.Core.Framework
         /// <returns>Paths for the service status files locations.</returns>
         public static List<string> ServiceStatusPaths(TingenFramework tnFramework)
         {
-            Outpost31.Core.Debuggler.PrimevalLog.Create($"[Outpost31.Core.Framework.Catalog.ServiceStatusPaths()]"); /* <- For development use only */
+            /* Can't put a trace log here, so we'll use a Primeval log for debugging.
+             */
+            //LogEvent.Primeval(AssemblyName);
 
             return new List<string>
             {
+                tnFramework.TingenDataRoot,
                 tnFramework.SystemCodeRoot,
                 tnFramework.RemoteRoot
             };
