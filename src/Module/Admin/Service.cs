@@ -23,7 +23,7 @@ namespace Outpost31.Module.Admin
 
         public static void AllUpdate(TingenSession tnSession)
         {
-            LogEvent.Trace(tnSession, AssemblyName);
+            LogEvent.Trace(1, tnSession, AssemblyName);
 
             ModeUpdate(tnSession.TingenMode, tnSession.AvatarSystemCode, tnSession.TnFramework.ServiceStatusPaths, tnSession.TraceInfo);
             CurrentSettingsUpdate(tnSession);
@@ -41,7 +41,7 @@ namespace Outpost31.Module.Admin
         /// </remarks>
         public static void ModeUpdate(string tingenMode, string avatarSystemCode, List<string> statusFilePaths, TraceLog traceInfo)
         {
-            LogEvent.Trace(traceInfo, AssemblyName);
+            LogEvent.Trace(1, traceInfo, AssemblyName);
 
             DeleteModeUpdateFiles(avatarSystemCode, statusFilePaths, traceInfo);
 
@@ -67,7 +67,7 @@ namespace Outpost31.Module.Admin
 
         public static void CurrentSettingsUpdate(TingenSession tnSession)
         {
-            LogEvent.Trace(tnSession, AssemblyName);
+            LogEvent.Trace(1, tnSession, AssemblyName);
 
             var currentSettingsFileName = $"Current-Tingen-{tnSession.AvatarSystemCode}-settings.md";
 
@@ -82,7 +82,7 @@ namespace Outpost31.Module.Admin
 
         private static void DeleteCurrentSettingFiles(string currentSettingsFileName, List<string> statusFilePaths, TraceLog traceInfo)
         {
-            LogEvent.Trace(traceInfo, AssemblyName);
+            LogEvent.Trace(1, traceInfo, AssemblyName);
 
             foreach (var path in statusFilePaths)
             {
@@ -100,7 +100,7 @@ namespace Outpost31.Module.Admin
         /// <param name="statusFilePaths">Paths where the status file will be written.</param>
         private static void WriteCurrentSettingsFiles(string currentSettingFileName, string currentSettingContent, List<string> statusFilePaths, TraceLog traceInfo)
         {
-            LogEvent.Trace(traceInfo, AssemblyName);
+            LogEvent.Trace(1, traceInfo, AssemblyName);
 
             foreach (var path in statusFilePaths)
             {
@@ -116,7 +116,7 @@ namespace Outpost31.Module.Admin
         /// <param name="statusFilePaths">Paths where the status file will be written.</param>
         private static void DeleteModeUpdateFiles(string avatarSystemCode, List<string> statusFilePaths, TraceLog traceInfo)
         {
-            LogEvent.Trace(traceInfo, AssemblyName);
+            LogEvent.Trace(1, traceInfo, AssemblyName);
 
             foreach (var path in statusFilePaths)
             {
@@ -134,7 +134,7 @@ namespace Outpost31.Module.Admin
         /// <param name="statusFilePaths">Paths where the status file will be written.</param>
         private static void WriteModeUpdateFiles(string statusFileName, List<string> statusFilePaths, TraceLog traceInfo)
         {
-            LogEvent.Trace(traceInfo, AssemblyName);
+            LogEvent.Trace(1, traceInfo, AssemblyName);
 
             foreach (var path in statusFilePaths)
             {

@@ -24,22 +24,22 @@ namespace Outpost31.Core.Logger
         ///    Trace logs are used to record major session events.
         ///  </para>
         /// </remarks>
-        public static void Trace(TingenSession tnSession, string assemblyName, string fileContent = "Trace log.", [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
+        public static void Trace(int traceLevel, TingenSession tnSession, string assemblyName, [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
         {
             /* Since we can't put a trace log here, we'll use a Primeval log to debug.
              */
             //LogEvent.Primeval(AssemblyName);
 
-            TraceLog.Create(tnSession.TraceInfo, assemblyName, fileContent, callPath, callMember, callLine);
+            TraceLog.Create(traceLevel, tnSession.TraceInfo, assemblyName, callPath, callMember, callLine);
         }
 
-        public static void Trace(TraceLog traceInfo, string assemblyName, string fileContent = "Trace log.", [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
+        public static void Trace(int traceLevel, TraceLog traceInfo, string assemblyName, string fileContent = "Trace log.", [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
         {
             /* Since we can't put a trace log here, we'll use a Primeval log to debug.
              */
             //LogEvent.Primeval(AssemblyName);
 
-            TraceLog.Create(traceInfo, assemblyName, fileContent, callPath, callMember, callLine);
+            TraceLog.Create(traceLevel, traceInfo, assemblyName, callPath, callMember, callLine);
         }
 
         public static void Primeval(string assemblyName, string fileContent = "[TINGEN PRIMEVAL LOG]", [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)

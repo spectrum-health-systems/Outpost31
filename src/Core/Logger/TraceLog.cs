@@ -1,5 +1,6 @@
 ﻿// u240603.1706
 
+using System;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -18,13 +19,13 @@ namespace Outpost31.Core.Logger
         {
             return new TraceLog
             {
-                TraceLogMode       = mode,
+                TraceLogLevel       = mode,
                 TraceLogDelay      = delay,
                 CurrentSessionPath = path
             };
         }
 
-        public static void Create(TraceLog traceInfo, string assemblyName, string fileContent = "Trace log.", [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
+        public static void Create(int traceLevel, TraceLog traceInfo, string assemblyName, [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
         {
             /* Can't put a trace log here, so we'll use a Primeval log for debugging.
              */
@@ -32,50 +33,20 @@ namespace Outpost31.Core.Logger
 
             var calledClass = callPath.Split('\\').Last();
 
-            switch (traceInfo.TraceLogMode)
+            if (traceLevel <= traceInfo.TraceLogLevel)
             {
-                case 1:
-                    /* Can't put a trace log here, so we'll use a Primeval log for debugging.
-                     */
-                    //LogEvent.Primeval(AssemblyName);
-                    Thread.Sleep(traceInfo.TraceLogDelay);
-                    SimpleTrace(assemblyName, traceInfo.CurrentSessionPath, calledClass, callMember, callLine);
-                    break;
-
-                case 2:
-                    /* Can't put a trace log here, so we'll use a Primeval log for debugging.
-                     */
-                    //LogEvent.Primeval(AssemblyName);
-                    Thread.Sleep(traceInfo.TraceLogDelay);
-                    StandardTrace();
-                    break;
-
-                case 3:
-                    /* Can't put a trace log here, so we'll use a Primeval log for debugging.
-                     */
-                    //LogEvent.Primeval(AssemblyName);
-                    Thread.Sleep(traceInfo.TraceLogDelay);
-                    VerboseTrace();
-                    break;
-
-                case 0:
-                default:
-                    /* Can't put a trace log here, so we'll use a Primeval log for debugging.
-                     */
-                    //LogEvent.Primeval(AssemblyName);
-                    // gracefully exit
-                    break;
+                Thread.Sleep(traceInfo.TraceLogDelay);
+                SimpleTrace(assemblyName, traceInfo.CurrentSessionPath, calledClass, callMember, callLine);
             }
         }
 
-
-        private static void SimpleTrace(string assemblyName, string sessionPath, string calledClass, string calledMethod, int calledLine)
+        public static void SimpleTrace(string assemblyName, string sessionPath, string calledClass, string calledMethod, int calledLine)
         {
             /* Can't put a trace log here, so we'll use a Primeval log for debugging.
              */
             //LogEvent.Primeval(AssemblyName);
 
-            var filePath = $@"{sessionPath}\{calledClass}-{calledMethod}-{calledLine}.trace";
+            var filePath = $@"{sessionPath}\{DateTime.Now:fffffff}-{calledClass}-{calledLine}.trace";
 
             File.WriteAllText(filePath, "");
         }

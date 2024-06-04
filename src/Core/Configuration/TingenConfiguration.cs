@@ -63,7 +63,7 @@ namespace Outpost31.Core.Configuration
                 TingenVersionBuild = "24.6.0-240603.1755",
                 TingenDataRoot     = @"C:\TingenData",
                 AvatarSystemCode   = "UAT",
-                TraceLogMode       = 1,
+                TraceLogLevel      = 1,
                 TraceLogDelay      = 100,
                 ModAdminEnabled    = true,
                 ModAdminWhitelist  = new List<string>()
@@ -87,7 +87,7 @@ namespace Outpost31.Core.Configuration
 
             LogEvent.Primeval(AssemblyName, configFilePath);
 
-            Framework.Maintenance.VerifyDirectory(configFilePath);
+            //Framework.Maintenance.VerifyDirectory(configFilePath);
 
             LogEvent.Primeval(AssemblyName, "1");
 
@@ -109,6 +109,11 @@ namespace Outpost31.Core.Configuration
         /// <returns>The path to the Tingen configuration file.</returns>
         public static string GetPath(string systemCode)
         {
+
+            /* For development: "UAT".
+             * For production: "LIVE".
+             */
+
             /* Can't put a trace log here, so we'll use a Primeval log for debugging.
              */
             //LogEvent.Primeval(AssemblyName);

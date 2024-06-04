@@ -77,7 +77,7 @@ namespace Outpost31.Core.Session
 
             LogEvent.Primeval(AssemblyName, tnSession.CurrentSessionPath);
 
-            tnSession.TraceInfo          = TraceLog.BuildInfo(tnConfig.TraceLogMode, tnConfig.TraceLogDelay, tnSession.CurrentSessionPath);
+            tnSession.TraceInfo          = TraceLog.BuildInfo(tnConfig.TraceLogLevel, tnConfig.TraceLogDelay, tnSession.CurrentSessionPath);
 
             LogEvent.Primeval(AssemblyName, tnSession.TraceInfo.ToString());
 
@@ -86,7 +86,7 @@ namespace Outpost31.Core.Session
 
         public static void Initialize(TingenSession tnSession)
         {
-            LogEvent.Trace(tnSession, AssemblyName);
+            // NO LogEvent.Trace(1, tnSession, AssemblyName);
 
             Maintenance.VerifyDirectory(tnSession.CurrentSessionPath);
         }

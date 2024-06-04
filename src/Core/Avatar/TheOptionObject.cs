@@ -20,7 +20,7 @@ namespace Outpost31.Core.Avatar
         /// <summary>Clones the SentOptionObject to the ReturnOptionObject (so, no work).</summary>
         public static void ReturnClonedSent(TingenSession tnSession)
         {
-            LogEvent.Trace(tnSession, AssemblyName);
+            LogEvent.Trace(1, tnSession, AssemblyName);
 
             tnSession.AvData.ReturnOptionObject = tnSession.AvData.SentOptionObject.Clone();
         }
@@ -29,7 +29,7 @@ namespace Outpost31.Core.Avatar
         /// <param name="tnSession"></param>
         public static void NoWork(TingenSession tnSession)
         {
-            LogEvent.Trace(tnSession, AssemblyName);
+            LogEvent.Trace(1, tnSession, AssemblyName);
 
             // TODO
 
@@ -42,7 +42,7 @@ namespace Outpost31.Core.Avatar
         /// <param name="errorMessage"></param>
         public static void Error1(TingenSession tnSession, string errorMessage)
         {
-            LogEvent.Trace(tnSession, AssemblyName);
+            LogEvent.Trace(1, tnSession, AssemblyName);
 
             // TODO
 

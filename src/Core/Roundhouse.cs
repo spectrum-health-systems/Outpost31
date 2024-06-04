@@ -34,11 +34,11 @@ namespace Outpost31.Core
         /// </remarks>
         public static void Parse(TingenSession tnSession)
         {
-            LogEvent.Trace(tnSession, AssemblyName);
+            LogEvent.Trace(1, tnSession, AssemblyName);
 
             if (tnSession.TingenMode == "development")
             {
-                LogEvent.Trace(tnSession, AssemblyName);
+                LogEvent.Trace(2, tnSession, AssemblyName);
 
                 // TODO
                 //PrimevalLog.DevelopmentCleanup();
@@ -47,38 +47,38 @@ namespace Outpost31.Core
             switch (tnSession.AvData.SentScriptParameter)
             {
                 case "admin-service-mode-update":
-                    LogEvent.Trace(tnSession, AssemblyName);
+                    LogEvent.Trace(2, tnSession, AssemblyName);
                     Module.Admin.Service.ModeUpdate(tnSession.TingenMode, tnSession.AvatarSystemCode, tnSession.TnFramework.ServiceStatusPaths, tnSession.TraceInfo);
                     break;
 
                 case "admin-service-currentsettings-update":
-                    LogEvent.Trace(tnSession, AssemblyName);
+                    LogEvent.Trace(2, tnSession, AssemblyName);
                     Module.Admin.Service.CurrentSettingsUpdate(tnSession);
                     break;
 
                 case "admin-service-all-update":
-                    LogEvent.Trace(tnSession, AssemblyName);
+                    LogEvent.Trace(2, tnSession, AssemblyName);
                     Module.Admin.Service.AllUpdate(tnSession);
                     break;
 
                 case "admin-framework-archive-all":
-                    LogEvent.Trace(tnSession, AssemblyName);
+                    LogEvent.Trace(2, tnSession, AssemblyName);
                     break;
 
                 case "admin-framework-archive-logs":
-                    LogEvent.Trace(tnSession, AssemblyName);
+                    LogEvent.Trace(2, tnSession, AssemblyName);
                     break;
 
                 case "common-field-lock-id":
-                    LogEvent.Trace(tnSession, AssemblyName);
+                    LogEvent.Trace(2, tnSession, AssemblyName);
                     break;
 
                 case "common-field-save-id":
-                    LogEvent.Trace(tnSession, AssemblyName);
+                    LogEvent.Trace(2, tnSession, AssemblyName);
                     break;
 
                 default:
-                    LogEvent.Trace(tnSession, AssemblyName);
+                    LogEvent.Trace(2, tnSession, AssemblyName);
                     // TODO: Exit gracefully
                     break;
             }

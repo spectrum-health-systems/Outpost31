@@ -49,8 +49,11 @@ namespace Outpost31.Core.Utilities
 
             string fileContent = JsonSerializer.Serialize(jsonObject, jsonFormat);
 
+            LogEvent.Primeval(AssemblyName, filePath);
+
             LogEvent.Primeval(AssemblyName, fileContent);
 
+            //File.WriteAllText(@"C:\TingenData\UAT\Config\Tingen.config", "test");
             File.WriteAllText(filePath, fileContent);
 
             LogEvent.Primeval(AssemblyName, "&&&");

@@ -34,7 +34,7 @@ namespace Outpost31.Module.Common.Action
         /// <returns>True (the fields values are the same) or false(the field values are different).</returns>
         public static bool CompareValue(string field01Value, string field02Value, TraceLog traceInfo)
         {
-            LogEvent.Trace(traceInfo, AssemblyName);
+            LogEvent.Trace(1, traceInfo, AssemblyName);
 
             return field01Value == field02Value;
         }
@@ -76,7 +76,7 @@ namespace Outpost31.Module.Common.Action
         /// </remarks>
         public static void SaveValue(string valueToSave, string filePath, TraceLog traceInfo)
         {
-            LogEvent.Trace(traceInfo, AssemblyName);
+            LogEvent.Trace(1, traceInfo, AssemblyName);
 
             // TODO: Might want to encrypt this data.
 

@@ -19,7 +19,7 @@ namespace Outpost31.Core.Session
 
         public static string CurrentSettings(TingenSession tnSession)
         {
-            LogEvent.Trace(tnSession, AssemblyName);
+            LogEvent.Trace(1, tnSession, AssemblyName);
 
             return $"# Current Tingen Settings{Environment.NewLine}" +
                    $"> v24.10.11 b240502  {Environment.NewLine}" +
@@ -33,7 +33,7 @@ namespace Outpost31.Core.Session
                    Environment.NewLine +
                    $"### Trace logs{Environment.NewLine}" +
                    Environment.NewLine +
-                   $"Trace log mode: {tnSession.TraceInfo.TraceLogMode}  {Environment.NewLine}" +
+                   $"Trace log mode: {tnSession.TraceInfo.TraceLogLevel}  {Environment.NewLine}" +
                    $"Trace log delay: {tnSession.TraceInfo.TraceLogDelay}  {Environment.NewLine}" +
                    Environment.NewLine +
                    $"## Modules{Environment.NewLine}" +

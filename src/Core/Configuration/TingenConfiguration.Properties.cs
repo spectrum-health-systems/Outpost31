@@ -92,7 +92,7 @@ namespace Outpost31.Core.Configuration
         ///   Logs are written to <i>%TingenDataRoot%\%AvatarSystemCode%\Logs</i> (ex: "<c>C:\TingenData\UAT\Logs</c>").
         ///  </para>
         /// </remarks>
-        public int TraceLogMode { get; set; }
+        public int TraceLogLevel { get; set; }
 
         /// <summary>The delay between log writes.</summary>
         /// <remarks>
