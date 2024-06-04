@@ -6,7 +6,7 @@
  * When adding a new framework component to Tingen, you need to do the following:
  *
  * First, add the new component as a property to the TingenFramework class in TingenFramework.Properties.cs.
- * 
+ *
  * If the new component is a path:
  *  - Add an entry for the path to Framework.Catalog.PathPostfixes()
  *  - Add an entry for the path to TingenFramework.Build()
@@ -40,8 +40,15 @@ namespace Outpost31.Core.Framework
     ///   </list>
     ///  </para>
     /// </remarks>
-    public partial class TingenFramework
+    public class TingenFramework
     {
+        public DataRoots DataRoot { get; set; }
+        public SystemCodePaths SystemCodePath { get; set; }
+        public PublicPaths PublicPath { get; set; }
+        public RemotePaths RemotePath { get; set; }
+        public OtherPaths OtherPath { get; set; }
+
+
         /// <summary>Executing assembly name for log files.</summary>
         /// <remarks>
         ///   <para>
@@ -73,50 +80,56 @@ namespace Outpost31.Core.Framework
         ///  </para>
         /// </remarks>
         /// <returns>The Abatab Framework components.</returns>
-        public static TingenFramework Build(string tingenDataRoot, string avatarSystemCode)
+        public static TingenFramework Build(string tingenDataRoot, string avatarSystemCode, string date)
         {
-            /* Can't put a trace log here, so we'll use a Primeval log for debugging.
-             */
-            //LogEvent.Primeval(AssemblyName);
+            /* <!-- For debugging: LogEvent.Primeval(asm); --> */ // To be removed.
 
-            var dataPath = Framework.Catalog.DataPaths(tingenDataRoot, avatarSystemCode);
+            var dataPath = Framework.Catalog.DataPaths(tingenDataRoot, avatarSystemCode, date);
 
             var tnFramework = new TingenFramework
             {
-                TingenDataRoot    = dataPath["TingenDataRoot"],
-                SystemCodeRoot    = dataPath["AvatarSystemCode"],
-                RawDataRoot       = dataPath["RawDataRoot"],
-                MessageRoot       = dataPath["MessageRoot"],
-                PublicRoot        = dataPath["PublicRoot"],
-                RemoteRoot        = dataPath["RemoteRoot"],
-                SessionRoot       = dataPath["SessionRoot"],
-                AdminPath         = dataPath["Admin"],
-                AlertPath         = dataPath["Alert"],
-                ArchivePath       = dataPath["Archive"],
-                ConfigPath        = dataPath["Config"],
-                DebugPath         = dataPath["Debug"],
-                ErrorPath         = dataPath["Error"],
-                ExportPath        = dataPath["Export"],
-                ExtensionPath     = dataPath["Extension"],
-                ImportPath        = dataPath["Import"],
-                LogPath           = dataPath["Log"],
-                ReportPath        = dataPath["Report"],
-                TemplatePath      = dataPath["Template"],
-                TemporaryPath     = dataPath["Temporary"],
-                WarningPath       = dataPath["Warning"],
-                PublicAlertPath   = dataPath["PublicAlert"],
-                PublicErrorPath   = dataPath["PublicError"],
-                PublicExportPath  = dataPath["PublicExport"],
-                PublicReportPath  = dataPath["PublicReport"],
-                PublicWarningPath = dataPath["PublicWarning"],
-                RemoteAlertPath   = dataPath["RemoteAlert"],
-                RemoteErrorPath   = dataPath["RemoteError"],
-                RemoteExportPath  = dataPath["RemoteExport"],
-                RemoteReportPath  = dataPath["RemoteReport"],
-                RemoteWarningPath = dataPath["RemoteWarning"]
+                DataRoot = new DataRoots
+                {
+                    Tingen     = dataPath["TingenDataRoot"],
+                    SystemCode = dataPath["AvatarSystemCode"],
+                    RawData    = dataPath["RawDataRoot"],
+                    Message    = dataPath["MessageRoot"],
+                    Public     = dataPath["PublicRoot"],
+                    Remote     = dataPath["RemoteRoot"],
+                    Session    = dataPath["SessionRoot"]
+                },
+                SystemCodePath = new SystemCodePaths
+                {
+                    Admin     = dataPath["Admin"],
+                    Archive   = dataPath["Archive"],
+                    Config    = dataPath["Config"],
+                    Debug     = dataPath["Debug"],
+                    Extension = dataPath["Extension"],
+                    Log       = dataPath["Log"],
+                    Report    = dataPath["Report"],
+                    Template  = dataPath["Template"],
+                    Temporary = dataPath["Temporary"]
+                },
+                PublicPath = new PublicPaths
+                {
+                    Alert   = dataPath["PublicAlert"],
+                    Error   = dataPath["PublicError"],
+                    Export  = dataPath["PublicExport"],
+                    Report  = dataPath["PublicReport"],
+                    Warning = dataPath["PublicWarning"]
+                },
+                RemotePath = new RemotePaths
+                {
+                    Alert   = dataPath["RemoteAlert"],
+                    Error   = dataPath["RemoteError"],
+                    Export  = dataPath["RemoteExport"],
+                    Report  = dataPath["RemoteReport"],
+                    Warning = dataPath["RemoteWarning"]
+                },
+
             };
 
-            tnFramework.ServiceStatusPaths = Catalog.ServiceStatusPaths(tnFramework);
+            tnFramework.OtherPath.ServiceStatusPaths = Catalog.ServiceStatusPaths(tnFramework);
 
             return tnFramework;
         }

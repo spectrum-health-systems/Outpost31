@@ -1,11 +1,27 @@
-﻿// u240603.1756
+﻿// u240604.1539
 
-using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
 
 namespace Outpost31.Core.Configuration
 {
-    /// <summary>Tingen-specific configurations. (see TingenConfiguration.cs for more information about this class).</summary>
-    public partial class TingenConfiguration
+    /// <summary>Tingen configuration.</summary>
+    /// <remarks>
+    ///  <para>
+    ///   - Logic for this class is in  <see cref="TingenConfig.cs"/> class.<br/>
+    ///   - Properties for this class is in <see cref="TingenConfig.Properties.cs"/><br/>
+    ///   - The Tingen configuration file is located in <b>Tingen\%SystemCode%\Config\</b>.
+    ///  </para>
+    ///  <para>
+    ///   Tingen configuration settings:
+    ///   <list type="bullet">
+    ///    <item>Specific to Tingen, not other components/modules/etc.</item>
+    ///    <item>Do not change between Tingen sessions</item>
+    ///    <item>Can be modified by the user to suit their environments</item>
+    ///   </list>
+    ///  </para>
+    /// </remarks>
+    public class TingenConfig
     {
         /// <summary>Determines what Tingen does, if anything.</summary>
         /// <remarks>
@@ -71,7 +87,7 @@ namespace Outpost31.Core.Configuration
         ///   The System Code also determines where Tingen data is written (ex: "<c>C:\TingenData\UAT\</c>").
         ///  </para>
         /// </remarks>
-        public string AvatarSystemCode { get; set; }
+        //public string AvatarSystemCode { get; set; }
 
         /// <summary>The Tingen log mode.</summary>
         /// <remarks>
@@ -105,39 +121,65 @@ namespace Outpost31.Core.Configuration
         /// </remarks>
         public int TraceLogDelay { get; set; }
 
-        /// <summary>Determines if the Admin Module is enabled.</summary>
+        /// <summary>Executing assembly name for log files.</summary>
         /// <remarks>
-        ///  <para>
-        ///   <list type="table">
-        ///    <item>
-        ///     <term>Enabled (default)</term>
-        ///     <description>The Admin Module is enabled, and will do work</description>
-        ///    </item>
-        ///    <item>
-        ///     <term>Disabled</term>
-        ///     <description>The Admin Module is disabled, and will not do any work.</description>
-        ///    </item>
-        ///   </list>
-        ///  </para>
-        ///  <para>
-        ///   When <i>disabled</i>, the Admin Module becomes a pass-through - no work is done, and the sentOptionObject
-        ///   is returned unmodified.<br/>
-        ///   Setting the mode to <i>disabled</i> is the equivalent of disabling ScriptLink on every form that uses the
-        ///   <b>Admin Module</b>.
-        ///   The rest of the web service, and Modules that are enabled, will continue to work as normal.
-        ///  </para>
+        ///   <para>
+        ///    - Executing assembly is defined here so it can be used when creating log files.
+        ///   </para>
         /// </remarks>
-        public bool ModAdminEnabled { get; set; }
+        public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
-        /// <summary>The Admin Module user whitelist.</summary>
+        /// <summary>Builds a default Tingen configuration object.</summary>
         /// <remarks>
         ///  <para>
-        ///   You can limit which users are allowed to access the Admin Module by including their username in this whitelist.<br/><br/>
-        ///   If the whitelist is empty, all users will be allowed to access the Admin Module.<br/><br/>
-        ///   When users are not on the whitelist, the Admin Module essentially becomes a pass-through for them.<br/><br/>
-        ///   This is useful for testing, or for limiting access to the Admin Module to a select group of users.<br/><br/>
+        ///   - Default values for the Tingen configuration settings.<br/>
+        ///   - When a new version of Tingen is released, these need to be verified/updated.
         ///  </para>
         /// </remarks>
-        public List<string> ModAdminWhitelist { get; set; }
+        /// <returns>An object with default Tingen configuration values.</returns>
+        public static TingenConfig BuildDefaultConfig()
+        {
+            /* <!-- For debugging: LogEvent.Primeval(asm); --> */ // To be removed.
+
+            return new TingenConfig
+            {
+                TingenMode         = "enabled",
+                TingenVersionBuild = "24.6.0-240604.1534",
+                TingenDataRoot     = @"C:\TingenData",
+                //AvatarSystemCode   = "UAT",
+                TraceLogLevel      = 0,
+                TraceLogDelay      = 0
+            };
+        }
+
+        /// <summary>Loads the Tingen configuration file.</summary>
+        /// <param name="configFilePath">Path to the Tingen configuration file.</param>
+        /// <remarks>
+        ///  <para>
+        ///   - The configuration file is <i>hardcoded</i> to <b>Tingen\%SystemCode%\Configs\</b>.<br/>
+        ///   - If the configuration file does not exist, a configuration file with default values will be created.
+        ///  </para>
+        /// </remarks>
+        /// <returns>The Tingen configuration settings.</returns>
+        public static TingenConfig Load(string configFilePath)
+        {
+            /* <!-- For debugging: LogEvent.Primeval(asm); --> */ // To be removed.
+
+            if (!File.Exists(configFilePath))
+            {
+                Utilities.DuJson.ExportToLocalFile<TingenConfig>(BuildDefaultConfig(), configFilePath);
+            }
+
+            return Utilities.DuJson.ImportFromLocalFile<TingenConfig>(configFilePath);
+        }
     }
 }
+
+/*
+
+Development notes
+
+- Remove the Primeval calls, potentially replace with Tracelogs.
+- If logs aren't written, remove the Asm property.
+
+*/

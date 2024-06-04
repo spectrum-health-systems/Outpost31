@@ -1,6 +1,5 @@
 ﻿// u240603.1707
 
-using System;
 using System.Collections.Generic;
 using System.Reflection;
 
@@ -12,11 +11,10 @@ namespace Outpost31.Core.Framework
         /// <summary>Executing assembly name for log files.</summary>
         /// <remarks>
         ///   <para>
-        ///    The executing assembly is defined at the start of the class so it can be easily used throughout the class when creating
-        ///    log files.
+        ///    - Executing assembly is defined here so it can be used when creating log files.
         ///   </para>
         /// </remarks>
-        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+        public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>Create postfixes for Tingen directory paths.</summary>
         /// <remarks>
@@ -25,45 +23,43 @@ namespace Outpost31.Core.Framework
         ///   When a new path property is added to TingenFramework.Properties.cs, a new entry needs to be added here.
         ///  </para>
         /// </remarks>
-        public static Dictionary<string, string> DataPaths(string tingenDataRoot, string avatarSystemCode)
+        public static Dictionary<string, string> DataPaths(string dataRoot, string systemCode, string date)
         {
-            /* Can't put a trace log here, so we'll use a Primeval log for debugging.
-             */
-            //LogEvent.Primeval(AssemblyName);
+            /* <!-- For debugging: LogEvent.Primeval(asm); --> */ // To be removed.
 
             return new Dictionary<string, string>
             {
-                { "TingenDataRoot",   $@"{tingenDataRoot}" },
-                { "AvatarSystemCode", $@"{tingenDataRoot}\{avatarSystemCode}" },
-                { "RawDataRoot",      $@"{tingenDataRoot}\{avatarSystemCode}\RawData" },
-                { "MessageRoot",      $@"{tingenDataRoot}\{avatarSystemCode}\Message" },
-                { "PublicRoot",       $@"{tingenDataRoot}\Public"},
-                { "RemoteRoot",       $@"{tingenDataRoot}\Remote" },
-                { "SessionRoot",      $@"{tingenDataRoot}\{avatarSystemCode}\Session\{DateTime.Now:yyMMdd}" },
-                { "Admin",            $@"{tingenDataRoot}\{avatarSystemCode}\Admin" },
-                { "Alert",            $@"{tingenDataRoot}\{avatarSystemCode}\Message\Alert" },
-                { "Archive",          $@"{tingenDataRoot}\{avatarSystemCode}\Archive" },
-                { "Config",           $@"{tingenDataRoot}\{avatarSystemCode}\Config" },
-                { "Debug",            $@"{tingenDataRoot}\{avatarSystemCode}\Debug" },
-                { "Error",            $@"{tingenDataRoot}\{avatarSystemCode}\Message\Error" },
-                { "Export",           $@"{tingenDataRoot}\{avatarSystemCode}\RawData\Export" },
-                { "Extension",        $@"{tingenDataRoot}\{avatarSystemCode}\Extension" },
-                { "Import",           $@"{tingenDataRoot}\{avatarSystemCode}\RawData\Import" },
-                { "Log",              $@"{tingenDataRoot}\{avatarSystemCode}\Log" },
-                { "Report",           $@"{tingenDataRoot}\{avatarSystemCode}\Report" },
-                { "Template",         $@"{tingenDataRoot}\{avatarSystemCode}\Template" },
-                { "Temporary",        $@"{tingenDataRoot}\{avatarSystemCode}\Temporary" },
-                { "Warning",          $@"{tingenDataRoot}\{avatarSystemCode}\Message\Warning" },
-                { "PublicAlert",      $@"{tingenDataRoot}\Public\Alert" },
-                { "PublicError",      $@"{tingenDataRoot}\Public\Error" },
-                { "PublicExport",     $@"{tingenDataRoot}\Public\Export" },
-                { "PublicReport",     $@"{tingenDataRoot}\Public\Report" },
-                { "PublicWarning",    $@"{tingenDataRoot}\Public\Warning" },
-                { "RemoteAlert",      $@"{tingenDataRoot}\Remote\Alert" },
-                { "RemoteError",      $@"{tingenDataRoot}\Remote\Error" },
-                { "RemoteExport",     $@"{tingenDataRoot}\Remote\Export" },
-                { "RemoteReport",     $@"{tingenDataRoot}\Remote\Report" },
-                { "RemoteWarning",    $@"{tingenDataRoot}\Remote\Warning" }
+                { "TingenDataRoot",   $@"{dataRoot}" },
+                { "AvatarSystemCode", $@"{dataRoot}\{systemCode}" },
+                { "RawDataRoot",      $@"{dataRoot}\{systemCode}\RawData" },
+                { "MessageRoot",      $@"{dataRoot}\{systemCode}\Message" },
+                { "PublicRoot",       $@"{dataRoot}\Public"},
+                { "RemoteRoot",       $@"{dataRoot}\Remote" },
+                { "SessionRoot",      $@"{dataRoot}\{systemCode}\Session\{date}" },
+                { "Admin",            $@"{dataRoot}\{systemCode}\Admin" },
+                { "Alert",            $@"{dataRoot}\{systemCode}\Message\Alert" },
+                { "Archive",          $@"{dataRoot}\{systemCode}\Archive" },
+                { "Config",           $@"{dataRoot}\{systemCode}\Config" },
+                { "Debug",            $@"{dataRoot}\{systemCode}\Debug" },
+                { "Error",            $@"{dataRoot}\{systemCode}\Message\Error" },
+                { "Export",           $@"{dataRoot}\{systemCode}\RawData\Export" },
+                { "Extension",        $@"{dataRoot}\{systemCode}\Extension" },
+                { "Import",           $@"{dataRoot}\{systemCode}\RawData\Import" },
+                { "Log",              $@"{dataRoot}\{systemCode}\Log" },
+                { "Report",           $@"{dataRoot}\{systemCode}\Report" },
+                { "Template",         $@"{dataRoot}\{systemCode}\Template" },
+                { "Temporary",        $@"{dataRoot}\{systemCode}\Temporary" },
+                { "Warning",          $@"{dataRoot}\{systemCode}\Message\Warning" },
+                { "PublicAlert",      $@"{dataRoot}\Public\Alert" },
+                { "PublicError",      $@"{dataRoot}\Public\Error" },
+                { "PublicExport",     $@"{dataRoot}\Public\Export" },
+                { "PublicReport",     $@"{dataRoot}\Public\Report" },
+                { "PublicWarning",    $@"{dataRoot}\Public\Warning" },
+                { "RemoteAlert",      $@"{dataRoot}\Remote\Alert" },
+                { "RemoteError",      $@"{dataRoot}\Remote\Error" },
+                { "RemoteExport",     $@"{dataRoot}\Remote\Export" },
+                { "RemoteReport",     $@"{dataRoot}\Remote\Report" },
+                { "RemoteWarning",    $@"{dataRoot}\Remote\Warning" }
             };
         }
 
@@ -75,17 +71,15 @@ namespace Outpost31.Core.Framework
         ///  </para>
         /// </remarks>
         /// <returns>Paths for the service status files locations.</returns>
-        public static List<string> ServiceStatusPaths(TingenFramework tnFramework)
+        public static List<string> ServiceStatusPaths(TingenFramework framework)
         {
-            /* Can't put a trace log here, so we'll use a Primeval log for debugging.
-             */
-            //LogEvent.Primeval(AssemblyName);
+            /* <!-- For debugging: LogEvent.Primeval(asm); --> */ // To be removed.
 
             return new List<string>
             {
-                tnFramework.TingenDataRoot,
-                tnFramework.SystemCodeRoot,
-                tnFramework.RemoteRoot
+                framework.DataRoot.Tingen,
+                framework.DataRoot.SystemCode,
+                framework.DataRoot.Remote
             };
         }
     }

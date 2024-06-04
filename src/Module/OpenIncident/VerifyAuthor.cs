@@ -12,17 +12,16 @@ namespace Outpost31.Module.OpenIncident.Action
         /// <summary>Executing assembly name for log files.</summary>
         /// <remarks>
         ///   <para>
-        ///    The executing assembly is defined at the start of the class so it can be easily used throughout the class when creating
-        ///    log files.
+        ///    - Executing assembly is defined here so it can be used when creating log files.
         ///   </para>
         /// </remarks>
-        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+        public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>Verify the Avatar user is the same as the original author.</summary>
         /// <param name="tnSession"></param>
         public static void IsOriginal(TingenSession tnSession)
         {
-            LogEvent.Trace(1, tnSession, AssemblyName);
+            LogEvent.Trace(1, tnSession, Asm);
 
             ////var originalAuthor = File.ReadAllText($@"{tnSession.TnFramework.TemporaryPath}\{tnSession.AvComponents.SentOptionObject.OptionUserId}-verifyauthor.data");
             ////var currentAuthor = tnSession.AvComponents.SentOptionObject.GetFieldValue("32");
@@ -44,7 +43,7 @@ namespace Outpost31.Module.OpenIncident.Action
         /// <summary>Save the original author.</summary>
         public static void SaveOriginal(TingenSession tnSession)
         {
-            LogEvent.Trace(1, tnSession, AssemblyName);
+            LogEvent.Trace(1, tnSession, Asm);
 
             ////var currentAvatarUser = tnSession.AvComponents.SentOptionObject.OptionUserId;
             ////var originalAuthor    = tnSession.AvComponents.SentOptionObject.GetFieldValue("32");

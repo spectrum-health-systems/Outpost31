@@ -71,6 +71,7 @@ namespace Outpost31.Core.Logger
             Framework.Maintenance.VerifyDirectory(PrimevalLogPath);
 
             Thread.Sleep(100);
+
             var callPathNew = callPath.Split('\\').Last();
 
             var content = $"[ASSEMBLY NAME] {assemblyName}{Environment.NewLine}" +

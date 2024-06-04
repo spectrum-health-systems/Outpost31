@@ -3,7 +3,6 @@
 using System.IO;
 using System.Reflection;
 using System.Text.Json;
-using Outpost31.Core.Logger;
 
 namespace Outpost31.Core.Utilities
 {
@@ -13,11 +12,10 @@ namespace Outpost31.Core.Utilities
         /// <summary>Executing assembly name for log files.</summary>
         /// <remarks>
         ///   <para>
-        ///    The executing assembly is defined at the start of the class so it can be easily used throughout the class when creating
-        ///    log files.
+        ///    - Executing assembly is defined here so it can be used when creating log files.
         ///   </para>
         /// </remarks>
-        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+        public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>Export JSON data to an external file.</summary>
         /// <typeparam name="JsonObject">The JSON object type.</typeparam>
@@ -37,11 +35,8 @@ namespace Outpost31.Core.Utilities
         /// </remarks>
         public static void ExportToLocalFile<JsonObject>(JsonObject jsonObject, string filePath, bool formatJson = true)
         {
-            /* Since this method may be called prior to the creation of the TingenSession, we'll use a Primeval log for debugging.
-             */
-            //LogEvent.Primeval(AssemblyName, "Exporting to local JSON-formatted file.");
-
-            LogEvent.Primeval(AssemblyName, filePath);
+            //* For debugging */
+            //LogEvent.Primeval(Asm);
 
             JsonSerializerOptions jsonFormat = new JsonSerializerOptions();
 
@@ -49,14 +44,7 @@ namespace Outpost31.Core.Utilities
 
             string fileContent = JsonSerializer.Serialize(jsonObject, jsonFormat);
 
-            LogEvent.Primeval(AssemblyName, filePath);
-
-            LogEvent.Primeval(AssemblyName, fileContent);
-
-            //File.WriteAllText(@"C:\TingenData\UAT\Config\Tingen.config", "test");
             File.WriteAllText(filePath, fileContent);
-
-            LogEvent.Primeval(AssemblyName, "&&&");
         }
 
         /// <summary>Convert a JSON object to a string[].</summary>
@@ -65,9 +53,8 @@ namespace Outpost31.Core.Utilities
         /// <returns>A JSON object as a string[].</returns>
         public static string ConvertToString<JsonObject>(JsonObject jsonObject)
         {
-            /* Since this method may be called prior to the creation of the TingenSession, we'll use a Primeval log for debugging.
- */
-            //LogEvent.Primeval(AssemblyName, "Converting local JSON-formatted file to a string.");
+            //* For debugging */
+            //LogEvent.Primeval(Asm);
 
             return JsonSerializer.Serialize(jsonObject);
         }
@@ -88,9 +75,8 @@ namespace Outpost31.Core.Utilities
         /// <returns>The contents of the file as a JSON object.</returns>
         public static JsonObject ImportFromLocalFile<JsonObject>(string filePath)
         {
-            /* Since this method may be called prior to the creation of the TingenSession, we'll use a Primeval log for debugging.
-             */
-            //LogEvent.Primeval(AssemblyName, "Importing from local JSON-formatted file.");
+            //* For debugging */
+            //LogEvent.Primeval(Asm);
 
             var configurationFileContents = File.ReadAllText(filePath);
 

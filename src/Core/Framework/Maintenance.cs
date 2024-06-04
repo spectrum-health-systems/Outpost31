@@ -1,5 +1,6 @@
-﻿// u240603.1702
+﻿// u240604.1416
 
+using System.Collections.Generic;
 using System.Reflection;
 
 namespace Outpost31.Core.Framework
@@ -17,9 +18,8 @@ namespace Outpost31.Core.Framework
 
         public static void CleanSessionData()
         {
-            /* Can't put a trace log here, so we'll use a Primeval log for debugging.
-             */
-            //LogEvent.Primeval(AssemblyName);
+            //* For debugging */
+            //LogEvent.Primeval(Asm);
 
             // Clean up temporary files
             // Clean up log files
@@ -29,8 +29,7 @@ namespace Outpost31.Core.Framework
 
         public static void RefreshDirectory(string directoryPath)
         {
-            /* Can't do logging here, sorry!
-             */
+            /* Can't do logging here, sorry! */
 
             /* This method may be called by Outpost31.Core.Debuggler.PrimevalLog.DevelopmentCleanup(), and to avoid a possible
              * infinate loop/stack overflow, we'll skip creating a Primeval log when refreshing the Primeval log directories. Since
@@ -39,7 +38,7 @@ namespace Outpost31.Core.Framework
              */
             if (!directoryPath.Contains("Primeval"))
             {
-                //LogEvent.Primeval(AssemblyName);
+                //LogEvent.Primeval(Asm);
             }
             else
             {
@@ -55,8 +54,7 @@ namespace Outpost31.Core.Framework
 
         public static void VerifyDirectory(string directoryPath)
         {
-            /* Can't do logging here, sorry!
-             */
+            /* Can't do logging here, sorry! */
 
             /* This method may be called by Outpost31.Core.Debuggler.PrimevalLog.Create(), and attempting verify the path to Primeval
              * logs when creating one causes a infinate loop/stack overflow. Therefore, if the path contains "Primeval", do not create
@@ -64,7 +62,7 @@ namespace Outpost31.Core.Framework
              */
             if (!directoryPath.Contains("Primeval"))
             {
-                //LogEvent.Primeval(AssemblyName);
+                //LogEvent.Primeval(Asm);
             }
             else
             {
@@ -74,6 +72,32 @@ namespace Outpost31.Core.Framework
             if (!System.IO.Directory.Exists(directoryPath))
             {
                 System.IO.Directory.CreateDirectory(directoryPath);
+            }
+        }
+
+        public static void VerifyDirectories(List<string> directoryPaths)
+        {
+            /* Can't do logging here, sorry! */
+
+            foreach (var directoryPath in directoryPaths)
+            {
+                /* This method may be called by Outpost31.Core.Debuggler.PrimevalLog.Create(), and attempting verify the path to Primeval
+                 * logs when creating one causes a infinate loop/stack overflow. Therefore, if the path contains "Primeval", do not create
+                 * a Primeval log, just verify that the directory exists. For all other verifications, create a Primeval log.
+                 */
+                if (!directoryPath.Contains("Primeval"))
+                {
+                    //LogEvent.Primeval(Asm);
+                }
+                else
+                {
+                    // TODO maybe put a trace log here.
+                }
+
+                if (!System.IO.Directory.Exists(directoryPath))
+                {
+                    System.IO.Directory.CreateDirectory(directoryPath);
+                }
             }
         }
     }

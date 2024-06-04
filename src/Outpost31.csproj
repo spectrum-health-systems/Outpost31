@@ -69,23 +69,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\Avatar\DataFromAvatar.cs" />
-    <Compile Include="Core\Avatar\DataFromAvatar.Properties.cs" />
-    <Compile Include="Core\Avatar\TheOptionObject.cs" />
+    <Compile Include="Core\Avatar\AvatarData.cs" />
+    <Compile Include="Core\Avatar\OptionObjects.cs" />
+    <Compile Include="Core\Framework\DataRoots.cs" />
+    <Compile Include="Core\Framework\OtherPaths.cs" />
+    <Compile Include="Core\Framework\PublicPaths.cs" />
+    <Compile Include="Core\Framework\RemotePaths.cs" />
+    <Compile Include="Core\Framework\SystemCodePaths.cs" />
     <Compile Include="Core\Logger\Catalog.cs" />
     <Compile Include="Core\Logger\TraceLog.Properties.cs" />
     <Compile Include="Core\Logger\TraceLog.cs" />
     <Compile Include="Core\Roundhouse.cs" />
-    <Compile Include="Core\Configuration\TingenConfiguration.Properties.cs" />
-    <Compile Include="Core\Configuration\TingenConfiguration.cs" />
+    <Compile Include="Core\Configuration\TingenConfig.cs" />
     <Compile Include="Core\Logger\PrimevalLog.cs" />
     <Compile Include="Core\Framework\Catalog.cs" />
     <Compile Include="Core\Framework\Maintenance.cs" />
-    <Compile Include="Core\Framework\TingenFramework.Properties.cs" />
     <Compile Include="Core\Framework\TingenFramework.cs" />
     <Compile Include="Core\Logger\LogEvent.cs" />
     <Compile Include="Core\Session\Catalog.cs" />
-    <Compile Include="Core\Session\TingenSession.Properties.cs" />
     <Compile Include="Core\Session\TingenSession.cs" />
     <Compile Include="Core\Utilities\DuFile.cs" />
     <Compile Include="Core\Utilities\DuJson.cs" />

@@ -15,36 +15,34 @@ namespace Outpost31.Core.Logger
         /// <param name="delay"></param>
         /// <param name="path"></param>
         /// <returns></returns>
-        public static TraceLog BuildInfo(int mode, int delay, string path)
+        public static TraceLog BuildInfo(string path, int mode, int delay)
         {
             return new TraceLog
             {
-                TraceLogLevel       = mode,
-                TraceLogDelay      = delay,
-                CurrentSessionPath = path
+                TraceLogPath  = $@"{path}\Tracelog",
+                TraceLogLevel = mode,
+                TraceLogDelay = delay
             };
         }
 
         public static void Create(int traceLevel, TraceLog traceInfo, string assemblyName, [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
         {
-            /* Can't put a trace log here, so we'll use a Primeval log for debugging.
-             */
-            //LogEvent.Primeval(AssemblyName, "Creating a trace log.");
+            //* For debugging */
+            //LogEvent.Primeval(Asm);
 
             var calledClass = callPath.Split('\\').Last();
 
             if (traceLevel <= traceInfo.TraceLogLevel)
             {
                 Thread.Sleep(traceInfo.TraceLogDelay);
-                SimpleTrace(assemblyName, traceInfo.CurrentSessionPath, calledClass, callMember, callLine);
+                SimpleTrace(assemblyName, traceInfo.TraceLogPath, calledClass, callMember, callLine);
             }
         }
 
         public static void SimpleTrace(string assemblyName, string sessionPath, string calledClass, string calledMethod, int calledLine)
         {
-            /* Can't put a trace log here, so we'll use a Primeval log for debugging.
-             */
-            //LogEvent.Primeval(AssemblyName);
+            //* For debugging */
+            //LogEvent.Primeval(Asm);
 
             var filePath = $@"{sessionPath}\{DateTime.Now:fffffff}-{calledClass}-{calledLine}.trace";
 
