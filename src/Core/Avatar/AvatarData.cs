@@ -1,4 +1,4 @@
-﻿// u240604.1535
+﻿// u240605.0954
 
 using System.Reflection;
 using ScriptLinkStandard.Objects;
@@ -8,9 +8,13 @@ namespace Outpost31.Core.Avatar
     /// <summary>Avatar data.</summary>
     /// <remarks>
     ///  <para>
-    ///   - Contains the properties for the <see cref="AvatarData"/> class.<br/>
-    ///   - Logic for the <see cref="AvatarData"/> class is in the <b>DataFromAvatar.cs</b> file.<br/>
-    ///   - Only data sent directly from Avatar, and derived data, should be here.
+    ///   This class should only contain Avatar-specific data:<br/>
+    ///   <list type="bullet">
+    ///    <item>The Avatar System Code</item>
+    ///    <item>The <paramref name="OptionObject"/> sent from Avatar</item>
+    ///    <item>The <paramref name="ScriptParameter"/> sent from Avatar</item>
+    ///    <item>The<paramref name="WorkObject"/> and <paramref name="ReturnObject"/>, which are derived from the SentOptionObject</item>
+    ///   </list>
     ///  </para>
     /// </remarks>
     public class AvatarData
@@ -18,6 +22,20 @@ namespace Outpost31.Core.Avatar
         /// <summary>The Avatar System Code.</summary>
         /// <remarks>
         ///  <para>
+        ///   - The Avatar System Code is initially set in Tingen.asmx.cs (or Tingen_development.asmx.cs).<br/>
+        ///  </para>
+        ///  <para>
+        ///   Valid Avatar System Codes:
+        ///   <list type="table">
+        ///    <item>
+        ///     <term>UAT</term>
+        ///     <description>The System Code used for the development version of Tingen.</description>
+        ///    </item>
+        ///    <item>
+        ///     <term>LIVE</term>
+        ///     <description>The System Code used for the production version of Tingen.</description>
+        ///    </item>
+        ///   </list>
         ///  </para>
         /// </remarks>
         public string SystemCode { get; set; }
@@ -26,24 +44,50 @@ namespace Outpost31.Core.Avatar
         /// <remarks>
         ///  <para>
         ///   - The original <see cref="ScriptParameter"/> sent from Avatar.<br/>
-        ///   - A delimited string that contains necessary information that tells Tingen what it needs to do.<br/>
+        ///  </para>
+        ///  <para>
+        ///   The ScriptParameter is a "-" delimited string with the following compoents:
+        ///   <list type="table">
+        ///    <item>
+        ///     <term>Module</term>
+        ///     <description>The Tingen <i>Module</i> that will be doing the session work (ex: "Admin").</description>
+        ///    </item>
+        ///    <item>
+        ///     <term>Command</term>
+        ///     <description>The Tingen <i>Command</i> request (ex: "Service").</description>
+        ///    </item>
+        ///    <item>
+        ///     <term>Action</term>
+        ///     <description>The Tingen <i>Action</i> request (ex: "Status").</description>
+        ///    </item>
+        ///    <item>
+        ///     <term>Option</term>
+        ///     <description>The optional <i>Action Option</i> (ex: "Update").</description>
+        ///    </item>
+        ///   </list>
+        ///  </para>
+        ///  <para>
+        ///   <example>
+        ///    <c>Admin-Service-Status-Update</c>
+        ///   </example>
         ///  </para>
         /// </remarks>
         public string ScriptParameter { get; set; }
 
-        /// <summary>The OptionObject sent from Avatar.</summary>
+        /// <summary>The original OptionObject sent from Avatar.</summary>
         /// <remarks>
         ///  <para>
-        ///   - The original <see cref="OptionObject2015"/> sent from Avatar.<br/>
-        ///   - Should not be modified, since work is done using the <paramref name="WorkOptionObject"/>.
+        ///   - This should <i>not be modified</i>.<br/>
+        ///   - All session work should use the <paramref name="WorkObject"/>.
         ///  </para>
         /// </remarks>
         public OptionObject2015 SentObject { get; set; }
 
-        /// <summary>The OptionObject that will be used to do the work during the session.</summary>
+        /// <summary>The OptionObject that is modified during the session.</summary>
         /// <remarks>
         ///  <para>
-        ///   - A clone of the <paramref name="SentOptionObject"/>, used to do the session work.
+        ///   - When a session is initialized, the <paramref name="WorkObject"/> is cloned from the <paramref name="SentObject"/>.<br/>
+        ///   - All session work should use the <paramref name="WorkObject"/>.
         ///  </para>
         /// </remarks>
         public OptionObject2015 WorkObject { get; set; }
@@ -51,37 +95,33 @@ namespace Outpost31.Core.Avatar
         /// <summary>The OptionObject2015 that will be returned to Avatar.</summary>
         /// <remarks>
         ///  <para>
-        ///   - A clone of the <paramref name="WorkOptionObject"/>, formatted to be returned to Avatar.<br/><br/>
+        ///   - Prior to returning data to Avatar, the <paramref name="ReturnObject"/> is cloned from the <paramref name="WorkObject"/>.<br/>
+        ///   - The <paramref name="WorkObject"/> is property formatted, and is the only valid OptionObject that will be accepted by Avatar.
         ///  </para>
         /// </remarks>
         public OptionObject2015 ReturnObject { get; set; }
 
-        /// <summary>Executing assembly name for log files.</summary>
+        /// <summary>Assembly name for log files.</summary>
         /// <remarks>
         ///   <para>
-        ///    - Executing assembly is defined here so it can be used when creating log files.
+        ///    - Define the assembly name here so it can be used to write log files throughout the class.
         ///   </para>
         /// </remarks>
         public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
-        /// <summary>Builds an object that contains all of the Avatar-specific data Tingen needs.</summary>
+        /// <summary>Builds a new AvatarData object.</summary>
         /// <param name="sentObject">The OptionObject sent from Avatar.</param>
-        /// <param name="scriptParameter">The ScriptParameter sent from Avatar.</param>
-        /// <remarks>
-        ///  <para>
-        ///   - Data from Avatar, and derived data.<br/>
-        ///   - Will be added to the TingenSession so it is available throughout the session.
-        ///  </para>
-        /// </remarks>
+        /// <param name="sentScriptParameter">The ScriptParameter sent from Avatar.</param>
+        /// <param name="avatarSystemCode">The Avatar System Code.</param>
         /// <returns>The necessary Avatar data.</returns>
-        public static AvatarData BuildNew(OptionObject2015 sentObject, string scriptParameter, string systemCode)
+        public static AvatarData BuildNew(OptionObject2015 sentObject, string sentScriptParameter, string avatarSystemCode)
         {
-            /* <!-- For debugging: LogEvent.Primeval(asm); --> */ // To be removed.
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             return new AvatarData
             {
-                SystemCode      = systemCode,
-                ScriptParameter = scriptParameter.ToLower(),
+                SystemCode      = avatarSystemCode,
+                ScriptParameter = sentScriptParameter.ToLower(),
                 SentObject      = sentObject,
                 WorkObject      = sentObject.Clone(),
                 ReturnObject    = null
@@ -93,8 +133,6 @@ namespace Outpost31.Core.Avatar
 /*
 
 Development notes
-
-- Remove the Primeval calls, potentially replace with Tracelogs.
-- If logs aren't written, remove the Asm property.
+-----------------
 
 */

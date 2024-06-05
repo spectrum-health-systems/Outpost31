@@ -94,6 +94,7 @@
     <Compile Include="Module\FormComponent\Field.cs" />
     <Compile Include="Module\OpenIncident\VerifyAuthor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WelcomeToOutpost31.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\Debuggler\" />
