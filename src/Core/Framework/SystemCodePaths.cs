@@ -1,5 +1,8 @@
-﻿namespace Outpost31.Core.Framework
+﻿// u240605.1126
+
+namespace Outpost31.Core.Framework
 {
+    /// <summary>Soon.</summary>
     public class SystemCodePaths
     {
         /// <summary>Sytem Code-specific administration data is located here.</summary>
@@ -45,3 +48,10 @@
         public string Warning { get; set; }
     }
 }
+
+/*
+
+Development notes
+-----------------
+
+*/

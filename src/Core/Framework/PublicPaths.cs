@@ -1,5 +1,8 @@
-﻿namespace Outpost31.Core.Framework
+﻿// u240605.1157
+
+namespace Outpost31.Core.Framework
 {
+    /// <summary>Soon.</summary>
     public class PublicPaths
     {
         /// <summary>Public alerts are located here.</summary>
@@ -18,3 +21,10 @@
         public string Warning { get; set; }
     }
 }
+
+/*
+
+Development notes
+-----------------
+
+*/

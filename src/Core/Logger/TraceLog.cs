@@ -1,4 +1,4 @@
-﻿// u240603.1706
+﻿// u240605.1115
 
 using System;
 using System.IO;
@@ -8,6 +8,7 @@ using System.Threading;
 
 namespace Outpost31.Core.Logger
 {
+    /// <summary>Soon.</summary>
     public partial class TraceLog
     {
         /// <summary>Build the trace log information.</summary>
@@ -25,10 +26,16 @@ namespace Outpost31.Core.Logger
             };
         }
 
+        /// <summary>Soon.</summary>
+        /// <param name="traceLevel"></param>
+        /// <param name="traceInfo"></param>
+        /// <param name="assemblyName"></param>
+        /// <param name="callPath"></param>
+        /// <param name="callMember"></param>
+        /// <param name="callLine"></param>
         public static void Create(int traceLevel, TraceLog traceInfo, string assemblyName, [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
         {
-            //* For debugging */
-            //LogEvent.Primeval(Asm);
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             var calledClass = callPath.Split('\\').Last();
 
@@ -39,25 +46,27 @@ namespace Outpost31.Core.Logger
             }
         }
 
+        /// <summary>Soon.</summary>
+        /// <param name="assemblyName"></param>
+        /// <param name="sessionPath"></param>
+        /// <param name="calledClass"></param>
+        /// <param name="calledMethod"></param>
+        /// <param name="calledLine"></param>
         public static void SimpleTrace(string assemblyName, string sessionPath, string calledClass, string calledMethod, int calledLine)
         {
-            //* For debugging */
-            //LogEvent.Primeval(Asm);
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             var filePath = $@"{sessionPath}\{DateTime.Now:fffffff}-{calledClass}-{calledLine}.trace";
 
             File.WriteAllText(filePath, "");
         }
-
-        private static void StandardTrace()
-        {
-            // TODO
-        }
-
-        private static void VerboseTrace()
-        {
-            // TODO
-        }
-
     }
 }
+
+/*
+
+Development notes
+-----------------
+
+- Move properties from TraceLog.Properties.cs to here.
+*/

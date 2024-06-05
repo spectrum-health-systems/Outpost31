@@ -1,4 +1,4 @@
-﻿// u240603.1721
+﻿// u240605.1127
 
 using System;
 using System.Reflection;
@@ -97,24 +97,25 @@ namespace Outpost31.Core.Session
             return tnSession;
         }
 
+        /// <summary>Soon.</summary>
+        /// <param name="tnSession"></param>
         public static void Initialize(TingenSession tnSession)
         {
-            /* Can't log here! */
-
-
+            /* Can't do any logging here. Sorry! */
 
             ////var requiredDirectories = new List<string>
             ////{
             ////   tnSession.Framework.
             ////};
 
-
             Maintenance.VerifyDirectory(tnSession.SessionPath);
-
-
-
-
-
         }
     }
 }
+
+/*
+
+Development notes
+-----------------
+
+*/

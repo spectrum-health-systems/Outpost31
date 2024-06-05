@@ -1,4 +1,4 @@
-﻿// u240603.1731
+﻿// u240605.1144
 
 /* =====================================================================================================================
  * Adding new framework components to Tingen
@@ -19,19 +19,6 @@ namespace Outpost31.Core.Framework
     /// <summary>The Tingen Framwork.</summary>
     /// <remarks>
     ///  <para>
-    ///   This is part of a partial class:
-    ///   <list type="table">
-    ///    <item>
-    ///     <term>TingenFramework.cs</term>
-    ///     <description>Logic for the TingenFramework class</description>
-    ///    </item>
-    ///    <item>
-    ///     <term>TingenFramework.Properties.cs</term>
-    ///     <description>Properties for the TingenFramework class</description>
-    ///    </item>
-    ///   </list>
-    ///  </para>
-    ///  <para>
     ///   The Tingen Framework is comprised of:
     ///   <list type = "bullet">
     ///    <item>The Tingen directory structure</item>
@@ -42,18 +29,26 @@ namespace Outpost31.Core.Framework
     /// </remarks>
     public class TingenFramework
     {
+        /// <summary>Soon.</summary>
         public DataRoots DataRoot { get; set; }
+
+        /// <summary>Soon.</summary>
         public SystemCodePaths SystemCodePath { get; set; }
+
+        /// <summary>Soon.</summary>
         public PublicPaths PublicPath { get; set; }
+
+        /// <summary>Soon.</summary>
         public RemotePaths RemotePath { get; set; }
+
+        /// <summary>Soon.</summary>
         public OtherPaths OtherPath { get; set; }
 
 
-        /// <summary>Executing assembly name for log files.</summary>
+        /// <summary>Assembly name for log files.</summary>
         /// <remarks>
         ///   <para>
-        ///    The executing assembly is defined at the start of the class so it can be easily used throughout the class when creating
-        ///    log files.
+        ///    - Define the assembly name here so it can be used to write log files throughout the class.
         ///   </para>
         /// </remarks>
         public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
@@ -62,27 +57,12 @@ namespace Outpost31.Core.Framework
         /// <param name="tingenDataRoot">The Tingen data root directory.</param>
         /// <param name="avatarSystemCode">The Avatar System Code</param>
         /// <remarks>
-        ///  <para>
-        ///   When a new path property is added to TingenFramework.Properties.cs, a new entry needs to be added here.
-        ///  </para>
-        ///  <para>
-        ///   This method build the following Tingen framework components:
-        ///   <list type="table">
-        ///    <item>
-        ///     <term>Directory paths</term>
-        ///     <description>Required directory paths</description>
-        ///    </item>
-        ///    <item>
-        ///     <term>Service status paths</term>
-        ///     <description>Paths where service status files are located</description>
-        ///    </item>
-        ///   </list>
-        ///  </para>
+        ///  Soon.
         /// </remarks>
         /// <returns>The Abatab Framework components.</returns>
         public static TingenFramework Build(string tingenDataRoot, string avatarSystemCode, string date)
         {
-            /* <!-- For debugging: LogEvent.Primeval(asm); --> */ // To be removed.
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             var dataPath = Framework.Catalog.DataPaths(tingenDataRoot, avatarSystemCode, date);
 
@@ -135,3 +115,12 @@ namespace Outpost31.Core.Framework
         }
     }
 }
+
+/*
+
+Development notes
+-----------------
+- Remove the Primeval calls, potentially replace with Tracelogs.
+- If logs aren't written, remove the Asm property.
+
+*/

@@ -1,4 +1,4 @@
-﻿// u240603.1725
+﻿// u240605.1128
 
 using System;
 
@@ -7,7 +7,7 @@ namespace Outpost31.Core.Logger
     /// <summary>Log catalog for the Outpost31.Core.Logger namespace.</summary>
     public static class Catalog
     {
-        /// <summary></summary>
+        /// <summary>Soon.</summary>
         /// <param name="assemblyName"></param>
         /// <param name="callPath"></param>
         /// <param name="callMember"></param>
@@ -16,6 +16,8 @@ namespace Outpost31.Core.Logger
         /// <returns></returns>
         public static string VerboseContent(string assemblyName, string callPath, string callMember, string callLine, string message)
         {
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+
             return $"[ASSEMBLY NAME] {assemblyName}{Environment.NewLine}" +
                    $"    [CALL PATH] {callPath}{Environment.NewLine}" +
                    $"  [CALL MEMBER] {callMember}{Environment.NewLine}" +
@@ -26,3 +28,12 @@ namespace Outpost31.Core.Logger
         }
     }
 }
+
+/*
+
+Development notes
+-----------------
+- Remove the Primeval calls, potentially replace with Tracelogs.
+- If logs aren't written, remove the Asm property.
+
+*/

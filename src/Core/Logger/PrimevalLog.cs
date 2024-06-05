@@ -1,4 +1,4 @@
-﻿// u240603.1623
+﻿// u240605.1113
 
 using System;
 using System.IO;
@@ -68,6 +68,8 @@ namespace Outpost31.Core.Logger
         /// </remarks>
         public static void Create(string assemblyName, string fileContent = "[TINGEN PRIMEVAL LOG]", [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
         {
+            /* Can't do any logging here. Sorry! */
+
             Framework.Maintenance.VerifyDirectory(PrimevalLogPath);
 
             Thread.Sleep(100);
@@ -89,9 +91,16 @@ namespace Outpost31.Core.Logger
         /// <summary> Removes old Primeval logs.</summary>
         public static void DevelopmentCleanup()
         {
-            // TODO
+            /* Can't do any logging here. Sorry! */
 
             Framework.Maintenance.RefreshDirectory(PrimevalLogPath);
         }
     }
 }
+
+/*
+
+Development notes
+-----------------
+
+*/

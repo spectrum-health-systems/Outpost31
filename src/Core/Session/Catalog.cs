@@ -1,4 +1,4 @@
-﻿// uPrototype b240604
+﻿// u240605.1103
 
 using System;
 using System.Reflection;
@@ -6,16 +6,20 @@ using Outpost31.Core.Logger;
 
 namespace Outpost31.Core.Session
 {
+    /// <summary>Soon.</summary>
     public static class Catalog
     {
-        /// <summary>Executing assembly name for log files.</summary>
+        /// <summary>Assembly name for log files.</summary>
         /// <remarks>
         ///   <para>
-        ///    - Executing assembly is defined here so it can be used when creating log files.
+        ///    - Define the assembly name here so it can be used to write log files throughout the class.
         ///   </para>
         /// </remarks>
         public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
+        /// <summary>Soon.</summary>
+        /// <param name="tnSession"></param>
+        /// <returns></returns>
         public static string CurrentSettings(TingenSession tnSession)
         {
             LogEvent.Trace(1, tnSession.TraceLogs, Asm);
@@ -88,3 +92,14 @@ namespace Outpost31.Core.Session
         }
     }
 }
+
+/*
+
+Development notes
+-----------------
+
+- Module enabled/disabled information should be here.
+- Module whitelists, should be in the Module configuration.
+- Add other Modules information
+
+*/

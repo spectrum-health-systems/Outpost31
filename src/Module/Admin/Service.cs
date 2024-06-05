@@ -1,4 +1,4 @@
-﻿// u240603.1755
+﻿// u240605.1135
 
 using System;
 using System.Collections.Generic;
@@ -10,16 +10,19 @@ using Outpost31.Core.Session;
 
 namespace Outpost31.Module.Admin
 {
+    /// <summary>Soon.</summary>
     public static class Service
     {
-        /// <summary>Executing assembly name for log files.</summary>
+        /// <summary>Assembly name for log files.</summary>
         /// <remarks>
         ///   <para>
-        ///    - Executing assembly is defined here so it can be used when creating log files.
+        ///    - Define the assembly name here so it can be used to write log files throughout the class.
         ///   </para>
         /// </remarks>
         public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
+        /// <summary>Soon.</summary>
+        /// <param name="tnSession"></param>
         public static void AllUpdate(TingenSession tnSession)
         {
             LogEvent.Trace(1, tnSession.TraceLogs, Asm);
@@ -64,6 +67,8 @@ namespace Outpost31.Module.Admin
             WriteModeUpdateFiles(statusFileName, statusFilePaths, traceInfo);
         }
 
+        /// <summary>Soon.</summary>
+        /// <param name="tnSession"></param>
         public static void CurrentSettingsUpdate(TingenSession tnSession)
         {
             LogEvent.Trace(1, tnSession.TraceLogs, Asm);
@@ -79,6 +84,10 @@ namespace Outpost31.Module.Admin
             //Outpost31.Core.Session.Catalog.CurrentSettings(tnSession);
         }
 
+        /// <summary>Soon.</summary>
+        /// <param name="currentSettingsFileName"></param>
+        /// <param name="statusFilePaths"></param>
+        /// <param name="traceInfo"></param>
         private static void DeleteCurrentSettingFiles(string currentSettingsFileName, List<string> statusFilePaths, TraceLog traceInfo)
         {
             LogEvent.Trace(1, traceInfo, Asm);
@@ -145,3 +154,10 @@ namespace Outpost31.Module.Admin
         }
     }
 }
+
+/*
+
+Development notes
+-----------------
+
+*/

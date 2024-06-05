@@ -1,4 +1,4 @@
-﻿// u240603.1712
+﻿// u240605.1102
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -6,6 +6,7 @@ using Outpost31.Core.Session;
 
 namespace Outpost31.Core
 {
+    /// <summary>Soon.</summary>
     public static class Roundhouse
     {
         /// <summary>Executing assembly name for log files.</summary>
@@ -84,3 +85,10 @@ namespace Outpost31.Core
         }
     }
 }
+
+/*
+
+Development notes
+-----------------
+
+*/

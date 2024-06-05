@@ -2,20 +2,16 @@
 {
     public class DataRoots
     {
-        /// <summary>The Tingen data root.</summary>
+        /// <summary>Tingen data root details.</summary>
         public string Tingen { get; set; }
 
         /// <summary>The Avatar System Code root</summary>
         public string SystemCode { get; set; }
 
-        /// <summary>Raw data is located here.</summary>
+        /// <summary>Raw data.</summary>
         /// <remarks>
         ///  <para>
-        ///   This directory contains the following subdirectories:
-        ///   <list type="bullet">
-        ///    <item>Export\</item>
-        ///    <item>Import\</item>
-        ///   </list>
+        ///   - Examples of raw data include import/export files.
         ///  </para>
         /// </remarks>
         public string RawData { get; set; }
@@ -23,53 +19,43 @@
         /// <summary>Messages are here.</summary>
         /// <remarks>
         ///  <para>
-        ///   This directory contains the following subdirectories:
-        ///   <list type="bullet">
-        ///    <item>Alert\</item>
-        ///    <item>Error\</item>
-        ///    <item>Warning\</item>
-        ///   </list>
+        ///   - Messages are alerts, errors, warnings, etc.
         ///  </para>
         /// </remarks>
         public string Message { get; set; }
 
-        /// <summary>Public data is located here.</summary>
+        /// <summary>Data available to authorized users.</summary>
         /// <remarks>
         ///  <para>
-        ///   Public data is available to users that have access to the %TingenDataRoot%\Public directory.
-        ///  </para>
-        ///  <para>
-        ///   This directory contains the following subdirectories:
-        ///   <list type="bullet">
-        ///    <item>Alert\</item>
-        ///    <item>Error\</item>
-        ///    <item>Export\</item>
-        ///    <item>Report\</item>
-        ///    <item>Warning\</item>
-        ///   </list>
+        ///   - Public data is available to users that have access to the <b>%TingenDataRoot%\Public\</b> directory.<br/>
+        ///   - Public data includes reports, alerts, errors, etc.
         ///  </para>
         /// </remarks>
         public string Public { get; set; }
 
-        /// <summary>Remote data is located here.</summary>
+        /// <summary>Data available to administrators and Tingen Commander.</summary>
         /// <remarks>
         ///  <para>
-        ///   Remote data is available to users that have access to the %TingenDataRoot%\Remote directory.
-        ///  </para>
-        ///  <para>
-        ///   This directory contains the following subdirectories:
-        ///   <list type="bullet">
-        ///    <item>Alert\</item>
-        ///    <item>Error\</item>
-        ///    <item>Export\</item>
-        ///    <item>Report\</item>
-        ///    <item>Warning\</item>
-        ///   </list>
+        ///   - Remote data is available to users that have access to the <b>%TingenDataRoot%\Remote\</b> directory.<br/>
+        ///   - Remote data is used by Tingen Commander.
+        ///   - Remote data includes reports, alerts, errors, etc.
         ///  </para>
         /// </remarks>
         public string Remote { get; set; }
 
         /// <summary>Session-specific session data is located here.</summary>
+        /// <remarks>
+        ///  <para>
+        ///   - This is the big one!
+        ///  </para>
+        /// </remarks>
         public string Session { get; set; }
     }
 }
+
+/*
+
+Development notes
+-----------------
+
+*/

@@ -141,7 +141,6 @@ namespace Outpost31.Core.Configuration
         ///    </item>
         ///   </list>
         ///  </para>
-        ///
         /// </remarks>
         /// <returns>An object with default Tingen configuration values.</returns>
         public static TingenConfig BuildDefaultConfig()

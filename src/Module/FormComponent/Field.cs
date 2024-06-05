@@ -1,4 +1,4 @@
-﻿// u240530.1503
+﻿// u240605.1140
 
 using System.IO;
 using System.Reflection;
@@ -9,10 +9,10 @@ namespace Outpost31.Module.Common.Action
     /// <summary>Field operations.</summary>
     public static partial class Field
     {
-        /// <summary>Executing assembly name for log files.</summary>
+        /// <summary>Assembly name for log files.</summary>
         /// <remarks>
         ///   <para>
-        ///    - Executing assembly is defined here so it can be used when creating log files.
+        ///    - Define the assembly name here so it can be used to write log files throughout the class.
         ///   </para>
         /// </remarks>
         public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
@@ -88,3 +88,10 @@ namespace Outpost31.Module.Common.Action
         }
     }
 }
+
+/*
+
+Development notes
+-----------------
+
+*/

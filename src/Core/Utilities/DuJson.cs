@@ -1,4 +1,4 @@
-﻿// u240530.1255
+﻿// u240605.1135
 
 using System.IO;
 using System.Reflection;
@@ -35,8 +35,7 @@ namespace Outpost31.Core.Utilities
         /// </remarks>
         public static void ExportToLocalFile<JsonObject>(JsonObject jsonObject, string filePath, bool formatJson = true)
         {
-            //* For debugging */
-            //LogEvent.Primeval(Asm);
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             JsonSerializerOptions jsonFormat = new JsonSerializerOptions();
 
@@ -53,8 +52,7 @@ namespace Outpost31.Core.Utilities
         /// <returns>A JSON object as a string[].</returns>
         public static string ConvertToString<JsonObject>(JsonObject jsonObject)
         {
-            //* For debugging */
-            //LogEvent.Primeval(Asm);
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             return JsonSerializer.Serialize(jsonObject);
         }
@@ -75,8 +73,7 @@ namespace Outpost31.Core.Utilities
         /// <returns>The contents of the file as a JSON object.</returns>
         public static JsonObject ImportFromLocalFile<JsonObject>(string filePath)
         {
-            //* For debugging */
-            //LogEvent.Primeval(Asm);
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             var configurationFileContents = File.ReadAllText(filePath);
 
@@ -84,3 +81,10 @@ namespace Outpost31.Core.Utilities
         }
     }
 }
+
+/*
+
+Development notes
+-----------------
+
+*/

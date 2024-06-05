@@ -1,5 +1,6 @@
-﻿// u240604.1416
+﻿// u240605.1111
 
+using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 
@@ -7,15 +8,15 @@ namespace Outpost31.Core.Framework
 {
     public static class Maintenance
     {
-        /// <summary>Executing assembly name for log files.</summary>
+        /// <summary>Assembly name for log files.</summary>
         /// <remarks>
         ///   <para>
-        ///    The executing assembly is defined at the start of the class so it can be easily used throughout the class when creating
-        ///    log files.
+        ///    - Define the assembly name here so it can be used to write log files throughout the class.
         ///   </para>
         /// </remarks>
         public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
+        /// <summary>Soon.</summary>
         public static void CleanSessionData()
         {
             //* For debugging */
@@ -27,18 +28,23 @@ namespace Outpost31.Core.Framework
             // Clean up session files
         }
 
+        /// <summary>Delete a directory, then recreate it.</summary>
+        /// <remarks>
+        ///  <para>
+        ///   <b>A note about this method and logging:</b><br/>
+        ///   This method may be called by <b>Outpost31.Core.Debuggler.PrimevalLog.DevelopmentCleanup()</b>. To avoid a possible infinate
+        ///   loop/stack overflow situation, we'll skip creating a Primeval log when refreshing the Primeval log directories.<br/><br/>
+        ///   Since the directories are going to be refreshed, any log we created would be deleted anyway.
+        ///  </para>
+        /// </remarks>
+        /// <param name="directoryPath">The path to the directory to refresh.</param>
         public static void RefreshDirectory(string directoryPath)
         {
-            /* Can't do logging here, sorry! */
+            /* See method comments for logging information. */
 
-            /* This method may be called by Outpost31.Core.Debuggler.PrimevalLog.DevelopmentCleanup(), and to avoid a possible
-             * infinate loop/stack overflow, we'll skip creating a Primeval log when refreshing the Primeval log directories. Since
-             * the directories are going to be refreshed, any log we created would be deleted anyway. For all other refreshes, create a
-             * Primeval log.
-             */
             if (!directoryPath.Contains("Primeval"))
             {
-                //LogEvent.Primeval(Asm);
+                /* For debugging purposes, use a Primeval log. */
             }
             else
             {
@@ -52,17 +58,23 @@ namespace Outpost31.Core.Framework
             }
         }
 
+        /// <summary>Verify a directory exists, and create it if it does not.</summary>
+        /// <remarks>
+        ///  <para>
+        ///   <b>A note about this method and logging:</b><br/>
+        ///   This method may be called by <b>Outpost31.Core.Debuggler.PrimevalLog.DevelopmentCleanup()</b>. To avoid a possible infinate
+        ///   loop/stack overflow situation, we'll skip creating a Primeval log when refreshing the Primeval log directories.<br/><br/>
+        ///   Since the directories are going to be refreshed, any log we created would be deleted anyway.
+        ///  </para>
+        /// </remarks>
+        /// <param name="directoryPath">The path to the directory to verify.</param>
         public static void VerifyDirectory(string directoryPath)
         {
-            /* Can't do logging here, sorry! */
+            /* See method comments for logging information. */
 
-            /* This method may be called by Outpost31.Core.Debuggler.PrimevalLog.Create(), and attempting verify the path to Primeval
-             * logs when creating one causes a infinate loop/stack overflow. Therefore, if the path contains "Primeval", do not create
-             * a Primeval log, just verify that the directory exists. For all other verifications, create a Primeval log.
-             */
             if (!directoryPath.Contains("Primeval"))
             {
-                //LogEvent.Primeval(Asm);
+                /* For debugging purposes, use a Primeval log. */
             }
             else
             {
@@ -75,19 +87,25 @@ namespace Outpost31.Core.Framework
             }
         }
 
+        /// <summary>Verify a list of directories exist, and create them if they do not.</summary>
+        /// <remarks>
+        ///  <para>
+        ///   <b>A note about this method and logging:</b><br/>
+        ///   This method may be called by <b>Outpost31.Core.Debuggler.PrimevalLog.DevelopmentCleanup()</b>. To avoid a possible infinate
+        ///   loop/stack overflow situation, we'll skip creating a Primeval log when refreshing the Primeval log directories.<br/><br/>
+        ///   Since the directories are going to be refreshed, any log we created would be deleted anyway.
+        ///  </para>
+        /// </remarks>
+        /// <param name="directoryPaths">The list of directories to verify.</param>
         public static void VerifyDirectories(List<string> directoryPaths)
         {
-            /* Can't do logging here, sorry! */
+            /* See method comments for logging information. */
 
             foreach (var directoryPath in directoryPaths)
             {
-                /* This method may be called by Outpost31.Core.Debuggler.PrimevalLog.Create(), and attempting verify the path to Primeval
-                 * logs when creating one causes a infinate loop/stack overflow. Therefore, if the path contains "Primeval", do not create
-                 * a Primeval log, just verify that the directory exists. For all other verifications, create a Primeval log.
-                 */
                 if (!directoryPath.Contains("Primeval"))
                 {
-                    //LogEvent.Primeval(Asm);
+                    /* For debugging purposes, use a Primeval log. */
                 }
                 else
                 {
@@ -102,3 +120,10 @@ namespace Outpost31.Core.Framework
         }
     }
 }
+
+/*
+
+Development notes
+-----------------
+
+*/

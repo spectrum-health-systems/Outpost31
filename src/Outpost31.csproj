@@ -88,7 +88,6 @@
     <Compile Include="Core\Logger\LogEvent.cs" />
     <Compile Include="Core\Session\Catalog.cs" />
     <Compile Include="Core\Session\TingenSession.cs" />
-    <Compile Include="Core\Utilities\DuFile.cs" />
     <Compile Include="Core\Utilities\DuJson.cs" />
     <Compile Include="Module\Admin\Service.cs" />
     <Compile Include="Module\FormComponent\Field.cs" />

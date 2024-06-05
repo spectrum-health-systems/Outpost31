@@ -9,3 +9,12 @@ namespace Outpost31.Core.Logger
         public int TraceLogDelay { get; set; }
     }
 }
+
+/*
+
+Development notes
+-----------------
+
+- Move this to TraceLog.cs.
+
+*/

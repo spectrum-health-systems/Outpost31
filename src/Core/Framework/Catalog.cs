@@ -1,4 +1,4 @@
-﻿// u240603.1707
+﻿// u240605.1104
 
 using System.Collections.Generic;
 using System.Reflection;
@@ -8,24 +8,24 @@ namespace Outpost31.Core.Framework
     /// <summary>This class contains pre-defined information for the Tingen Framework.</summary>
     public static class Catalog
     {
-        /// <summary>Executing assembly name for log files.</summary>
+        /// <summary>Assembly name for log files.</summary>
         /// <remarks>
         ///   <para>
-        ///    - Executing assembly is defined here so it can be used when creating log files.
+        ///    - Define the assembly name here so it can be used to write log files throughout the class.
         ///   </para>
         /// </remarks>
         public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
-        /// <summary>Create postfixes for Tingen directory paths.</summary>
+        /// <summary>Build data paths.</summary>
         /// <remarks>
         ///  <para>
-        ///   These are defined here so they are in one location, can be easily changed, and used in multiple classes.<br/><br/>
-        ///   When a new path property is added to TingenFramework.Properties.cs, a new entry needs to be added here.
+        ///   - Defined here so they are in one location, can be easily changed, and used in multiple classes.<br/>
+        ///   - When a new path is added to <b>TingenFramework.Properties.cs</b>, a new entry needs to be added here.
         ///  </para>
         /// </remarks>
         public static Dictionary<string, string> DataPaths(string dataRoot, string systemCode, string date)
         {
-            /* <!-- For debugging: LogEvent.Primeval(asm); --> */ // To be removed.
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             return new Dictionary<string, string>
             {
@@ -63,17 +63,19 @@ namespace Outpost31.Core.Framework
             };
         }
 
-        /// <summary>Create a list of paths where service status files are located.</summary>
+        /// <summary>List of paths where service status files are located.</summary>
         /// <param name="tnFramework">The Tingen Framework object.</param>
         /// <remarks>
         ///  <para>
-        ///   The ServiceStatusPaths should be in a few places, so different groups/staff/applications have access to them.
+        ///   - A <i>service status file</i> is a file that contains information about the web-service.<br/>
+        ///   - Examples of service status files are <b>Current-Tingen-%SystemCode%Settings.md</b> and the <b>MODE-FILE</b>.<br/>
+        ///   - Service status file should be located in a few places so different groups/staff have access to them.
         ///  </para>
         /// </remarks>
         /// <returns>Paths for the service status files locations.</returns>
         public static List<string> ServiceStatusPaths(TingenFramework framework)
         {
-            /* <!-- For debugging: LogEvent.Primeval(asm); --> */ // To be removed.
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             return new List<string>
             {
@@ -84,3 +86,10 @@ namespace Outpost31.Core.Framework
         }
     }
 }
+
+/*
+
+Development notes
+-----------------
+
+*/
