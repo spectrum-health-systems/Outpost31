@@ -21,11 +21,16 @@ namespace Outpost31.Module.Admin
         /// </remarks>
         public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
-        /// <summary>Soon.</summary>
-        /// <param name="tnSession"></param>
+        /// <summary>Update all of the System status documents.</summary>
+        /// <param name="tnSession">The Tingen session <see langword="object"/>.</param>
+        /// <remarks>
+        ///  <para>
+        ///   - Since CurrentSettingsUpdate uses pretty much everything in the tnSession object, we pass the entire thing. 
+        ///  </para>
+        /// </remarks>
         public static void AllUpdate(TingenSession tnSession)
         {
-            LogEvent.Trace( 1, Asm, tnSession.TraceInfo);
+            LogEvent.Trace(1, Asm, tnSession.TraceInfo);
 
             ModeUpdate(tnSession.Config.TingenMode, tnSession.AvatarData.SystemCode, tnSession.Framework.OtherPath.ServiceStatusPaths, tnSession.TraceInfo);
             CurrentSettingsUpdate(tnSession);
@@ -41,12 +46,12 @@ namespace Outpost31.Module.Admin
         ///   Status files are written to the various paths for various uses.
         ///  </para>
         /// </remarks>
-        public static void ModeUpdate(string tingenMode, string avatarSystemCode, List<string> statusFilePaths, TraceLogInfo traceInfo)
+        public static void ModeUpdate(string tingenMode, string avatarSystemCode, List<string> statusFilePaths, TraceLog traceInfo)
         {
             /* Trace log info for this method. */
             //Dictionary<string, string> traceInfo = LogInfo.TraceLog(Asm, tnSession.Config, tnSession.Framework);
 
-            LogEvent.Trace( 1, Asm, traceInfo);
+            LogEvent.Trace(1, Asm, traceInfo);
 
             DeleteModeUpdateFiles(avatarSystemCode, statusFilePaths, traceInfo);
 
@@ -91,7 +96,7 @@ namespace Outpost31.Module.Admin
         /// <param name="currentSettingsFileName"></param>
         /// <param name="statusFilePaths"></param>
         /// <param name="traceInfo"></param>
-        private static void DeleteCurrentSettingFiles(string currentSettingsFileName, List<string> statusFilePaths, TraceLogInfo traceInfo)
+        private static void DeleteCurrentSettingFiles(string currentSettingsFileName, List<string> statusFilePaths, TraceLog traceInfo)
         {
             LogEvent.Trace(1, Asm, traceInfo);
 
@@ -109,7 +114,7 @@ namespace Outpost31.Module.Admin
         /// <summary>Create the status files.</summary>
         /// <param name="statusFileName">The name of the status file to write.</param>
         /// <param name="statusFilePaths">Paths where the status file will be written.</param>
-        private static void WriteCurrentSettingsFiles(string currentSettingFileName, string currentSettingContent, List<string> statusFilePaths, TraceLogInfo traceInfo)
+        private static void WriteCurrentSettingsFiles(string currentSettingFileName, string currentSettingContent, List<string> statusFilePaths, TraceLog traceInfo)
         {
             LogEvent.Trace(1, Asm, traceInfo);
 
@@ -125,7 +130,7 @@ namespace Outpost31.Module.Admin
         /// <summary>Delete existing status files.</summary>
         /// <param name="avatarSystemCode">The Avatar System Code.</param>
         /// <param name="statusFilePaths">Paths where the status file will be written.</param>
-        private static void DeleteModeUpdateFiles(string avatarSystemCode, List<string> statusFilePaths, TraceLogInfo traceInfo)
+        private static void DeleteModeUpdateFiles(string avatarSystemCode, List<string> statusFilePaths, TraceLog traceInfo)
         {
             LogEvent.Trace(1, Asm, traceInfo);
 
@@ -143,7 +148,7 @@ namespace Outpost31.Module.Admin
         /// <summary>Create the status files.</summary>
         /// <param name="statusFileName">The name of the status file to write.</param>
         /// <param name="statusFilePaths">Paths where the status file will be written.</param>
-        private static void WriteModeUpdateFiles(string statusFileName, List<string> statusFilePaths, TraceLogInfo traceInfo)
+        private static void WriteModeUpdateFiles(string statusFileName, List<string> statusFilePaths, TraceLog traceInfo)
         {
             LogEvent.Trace(1, Asm, traceInfo);
 

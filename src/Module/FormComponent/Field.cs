@@ -31,7 +31,7 @@ namespace Outpost31.Module.Common.Action
         ///  </example>
         /// </remarks>
         /// <returns>True (the fields values are the same) or false(the field values are different).</returns>
-        public static bool CompareValue(string field01Value, string field02Value, TraceLogInfo traceInfo)
+        public static bool CompareValue(string field01Value, string field02Value, TraceLog traceInfo)
         {
             LogEvent.Trace(1, Asm, traceInfo);
 
@@ -73,7 +73,7 @@ namespace Outpost31.Module.Common.Action
         ///   Since the <c>filePath</c> is user-definable, we will verify that the <c>filePath</c> doesn't exist before (re)creating it.
         ///  </para>
         /// </remarks>
-        public static void SaveValue(string valueToSave, string filePath, TraceLogInfo traceInfo)
+        public static void SaveValue(string valueToSave, string filePath, TraceLog traceInfo)
         {
             LogEvent.Trace(1, Asm, traceInfo);
 

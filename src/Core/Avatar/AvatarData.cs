@@ -1,6 +1,5 @@
-﻿// u240605.0954
+﻿// u240605.1522
 
-using System.Reflection;
 using ScriptLinkStandard.Objects;
 
 namespace Outpost31.Core.Avatar

@@ -14,9 +14,6 @@
 
 using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
-using System.Runtime.ExceptionServices;
-using Outpost31.Core.Logger;
 using Outpost31.Core.Session;
 
 namespace Outpost31.Core.Framework
@@ -60,7 +57,7 @@ namespace Outpost31.Core.Framework
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
-            var dataPath = Framework.Catalog.DataPaths(tingenDataRoot, avatarSystemCode,  avatarUserName, datestamp, timestamp);
+            var dataPath = FrameworkCatalog.DataPaths(tingenDataRoot, avatarSystemCode,  avatarUserName, datestamp, timestamp);
 
             var tnFramework = new TingenFramework
             {
@@ -109,18 +106,19 @@ namespace Outpost31.Core.Framework
 
             };
 
-            tnFramework.OtherPath.ServiceStatusPaths = Catalog.ServiceStatusPaths(tnFramework);
+            tnFramework.OtherPath.ServiceStatusPaths = FrameworkCatalog.ServiceStatusUpdatePaths(tnFramework);
 
             return tnFramework;
         }
 
-        public static void VerifyRequiredDirectories(TingenSession tnSession)
-        {
-          if (!Directory.Exists(tnSession.Framework.SystemCodePath.Session))
-            {
-                Directory.CreateDirectory(tnSession.Framework.SystemCodePath.Session);
-            }
-        }
+        // DEPRECIATED
+        //public static void VerifyRequiredDirectories(TingenSession tnSession)
+        //{
+        //    if (!Directory.Exists(tnSession.Framework.SystemCodePath.Session))
+        //    {
+        //        Directory.CreateDirectory(tnSession.Framework.SystemCodePath.Session);
+        //    }
+        //}
     }
 }
 
@@ -128,7 +126,6 @@ namespace Outpost31.Core.Framework
 
 Development notes
 -----------------
-- Remove the Primeval calls, potentially replace with Tracelogs.
-- If logs aren't written, remove the Asm property.
+- Move the block of text at the top to documentation.
 
 */

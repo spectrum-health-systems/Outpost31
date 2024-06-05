@@ -1,6 +1,5 @@
 ﻿// u240605.1111
 
-using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 
@@ -44,11 +43,11 @@ namespace Outpost31.Core.Framework
 
             if (!directoryPath.Contains("Primeval"))
             {
-                /* For debugging purposes, use a Primeval log. */
+                /* For debugging purposes, use a Primeval log here. */
             }
             else
             {
-                // TODO maybe put a trace log here.
+                // TODO Trace log here.
             }
 
             if (System.IO.Directory.Exists(directoryPath))
@@ -64,7 +63,7 @@ namespace Outpost31.Core.Framework
         ///   <b>A note about this method and logging:</b><br/>
         ///   This method may be called by <b>Outpost31.Core.Debuggler.PrimevalLog.DevelopmentCleanup()</b>. To avoid a possible infinate
         ///   loop/stack overflow situation, we'll skip creating a Primeval log when refreshing the Primeval log directories.<br/><br/>
-        ///   Since the directories are going to be refreshed, any log we created would be deleted anyway.
+        ///   Since the directories are going to be refreshed, any log we created would be deleted anyway.Prototype b240605-stable.01
         ///  </para>
         /// </remarks>
         /// <param name="directoryPath">The path to the directory to verify.</param>
@@ -74,11 +73,11 @@ namespace Outpost31.Core.Framework
 
             if (!directoryPath.Contains("Primeval"))
             {
-                /* For debugging purposes, use a Primeval log. */
+                /* For debugging purposes, use a Primeval log here. */
             }
             else
             {
-                // TODO maybe put a trace log here.
+                // TODO Trace log here.
             }
 
             if (!System.IO.Directory.Exists(directoryPath))
@@ -105,11 +104,11 @@ namespace Outpost31.Core.Framework
             {
                 if (!directoryPath.Contains("Primeval"))
                 {
-                    /* For debugging purposes, use a Primeval log. */
+                    /* For debugging purposes, use a Primeval log here. */
                 }
                 else
                 {
-                    // TODO maybe put a trace log here.
+                    // TODO Trace log here.
                 }
 
                 if (!System.IO.Directory.Exists(directoryPath))

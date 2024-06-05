@@ -1,7 +1,6 @@
 ﻿// u240605.1103
 
 using System;
-using System.Collections.Generic;
 using System.Reflection;
 using Outpost31.Core.Logger;
 
@@ -16,7 +15,7 @@ namespace Outpost31.Core.Session
         ///    - Define the assembly name here so it can be used to write log files throughout the class.
         ///   </para>
         /// </remarks>
-        public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>Soon.</summary>
         /// <param name="tnSession"></param>
@@ -26,7 +25,7 @@ namespace Outpost31.Core.Session
             /* Trace log information for this method. */
             //Dictionary<string, string> TraceInfo = LogInfo.TraceLog(Asm, tnSession.Config, tnSession.Framework);
 
-            LogEvent.Trace( 1, Asm, tnSession.TraceInfo);
+            LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 
             return $"# Current Tingen Settings{Environment.NewLine}" +
                    $"> v{tnSession.Config.TingenVersionBuild}  {Environment.NewLine}" +
@@ -102,6 +101,7 @@ namespace Outpost31.Core.Session
 Development notes
 -----------------
 
+- Verify all of the data is here
 - Module enabled/disabled information should be here.
 - Module whitelists, should be in the Module configuration.
 - Add other Modules information

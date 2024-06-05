@@ -76,13 +76,12 @@
     <Compile Include="Core\Framework\PublicPaths.cs" />
     <Compile Include="Core\Framework\RemotePaths.cs" />
     <Compile Include="Core\Framework\SystemCodePaths.cs" />
-    <Compile Include="Core\Logger\LogInfo.cs" />
-    <Compile Include="Core\Logger\Catalog.cs" />
+    <Compile Include="Core\Logger\LoggerCatalog.cs" />
     <Compile Include="Core\Logger\TraceLog.cs" />
     <Compile Include="Core\Roundhouse.cs" />
     <Compile Include="Core\Configuration\TingenConfig.cs" />
     <Compile Include="Core\Logger\PrimevalLog.cs" />
-    <Compile Include="Core\Framework\Catalog.cs" />
+    <Compile Include="Core\Framework\FrameworkCatalog.cs" />
     <Compile Include="Core\Framework\Maintenance.cs" />
     <Compile Include="Core\Framework\TingenFramework.cs" />
     <Compile Include="Core\Logger\LogEvent.cs" />

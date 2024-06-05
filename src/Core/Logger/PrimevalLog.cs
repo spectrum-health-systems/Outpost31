@@ -3,22 +3,12 @@
 using System;
 using System.IO;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Threading;
 
 namespace Outpost31.Core.Logger
 {
-    /// <summary>Debugging tools for Outpost31.</summary>
-    /// <remarks>
-    ///  <para>
-    ///   Primeval logs:
-    ///   <list type="bullet">
-    ///    <item>Are the simplest logs available</item>
-    ///    <item>Do not require any parameters</item>
-    ///    <item>Are used for testing/debugging, and should be commented out in production</item>
-    ///   </list>
-    ///  </para>
-    /// </remarks>
+    /// <summary>Primeval logs</summary>
+
     public static class PrimevalLog
     {
         /// <summary>Primeval log path.</summary>
@@ -66,26 +56,17 @@ namespace Outpost31.Core.Logger
         ///   </example>
         ///  </para>
         /// </remarks>
-        public static void Create(string assemblyName, string fileContent = "[TINGEN PRIMEVAL LOG]", [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
+        public static void Create(string assemblyName, string message, string fromClass, string fromMethod, int line)
         {
             /* Can't do any logging here. Sorry! */
 
             Framework.Maintenance.VerifyDirectory(PrimevalLogPath);
 
+            var fileContent = LoggerCatalog.StandardContent(assemblyName, fromClass, fromMethod, line.ToString(), message);
+            var filePath    = $@"{PrimevalLogPath}\{DateTime.Now:yyMMddHHmmssfffffff}.primeval";
+
             Thread.Sleep(100);
-
-            var callPathNew = callPath.Split('\\').Last();
-
-            var content = $"[ASSEMBLY NAME] {assemblyName}{Environment.NewLine}" +
-                          $"    [CALL PATH] {callPathNew}{Environment.NewLine}" +
-                          $"  [CALL MEMBER] {callMember}{Environment.NewLine}" +
-                          $"  [LINE NUMBER] {callLine}{Environment.NewLine}" +
-                          Environment.NewLine +
-                          $"      [CONTENT] {fileContent}";
-
-            var filePath = $@"{PrimevalLogPath}\{DateTime.Now:yyMMddHHmmssfffffff}.primeval";
-
-            File.WriteAllText(filePath, content);
+            File.WriteAllText(filePath, fileContent);
         }
 
         /// <summary> Removes old Primeval logs.</summary>

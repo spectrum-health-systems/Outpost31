@@ -1,7 +1,6 @@
 ﻿// u240605.1157
 
-using System.Collections.Generic;
-using System.Reflection;
+using System.Linq;
 using System.Runtime.CompilerServices;
 
 namespace Outpost31.Core.Logger
@@ -9,25 +8,51 @@ namespace Outpost31.Core.Logger
     /// <summary>Provides logging functionality.</summary>
     public static class LogEvent
     {
-        /// <summary>Creates a trace log.</summary>
+        /// <summary>Logs a trace event.</summary>
         /// <remarks>
         ///  <para>
-        ///    Trace logs are used to record major session events.
+        ///   Trace logs are used to record information about the application's execution.
+        ///   <list type="bullet">
+        ///    <item>Records information about Tingen's execution</item>
+        ///    <item>Used when debugging/troublshooting during development, and should probably be disabled in production</item>
+        ///    <item>Important details are in the filename: <b>%assemblyName%-%calledClass%-%calledMethod%-%lineNumber.trace</b></item>
+        ///    <item>Do not contain any data</item>   
+        ///    <item>To ensure all logs are captured, filenames start with a timestamp: <b>ssfffffff_</b></item>
+        ///    <item>Extension is <b>.trace</b></item>
+        ///   </list>
         ///  </para>
         /// </remarks>
-        //public static void Trace(int traceLevel, TraceLog traceInfo, string assemblyName, string fileContent = "Trace log.", [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
-        public static void Trace(int logLevel, string asm, TraceLogInfo traceInfo, string fileContent = "Trace log.", [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
+        public static void Trace(int logLevel, string assemblyName, TraceLog traceInfo, [CallerFilePath] string fromPath = "", [CallerMemberName] string fromMethod = "", [CallerLineNumber] int line = 0)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
-            TraceLogInfo.Create(asm, logLevel, traceInfo, callPath, callMember, callLine);
+            var fromClass = fromPath.Split('\\').Last();
+
+            TraceLog.Create(logLevel, assemblyName, traceInfo, fromClass, fromMethod, line);
         }
 
-        public static void Primeval(string asm, string fileContent = "[TINGEN PRIMEVAL LOG]", [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
+        /// <summary>Logs a primeval event.</summary>
+        /// <remarks>
+        ///  <para>
+        ///   Primeval logs are vary simple logs that can be created with very little information.
+        ///   <list type="bullet">
+        ///    <item>Do not require any paramaters</item>
+        ///    <item>Used when debugging/troublshooting during development, and should be disabled in production</item>
+        ///    <item>Important details can be found in the file contents</item>
+        ///    <item>May have custom messages (the default message is "Tingen primeval log"</item>
+        ///    <item>To ensure all logs are captured, filenames are timestamped <b>yyMMddHHmmssfffffff</b></item>
+        ///    <item>Extenstion is <b>.primeval</b></item>
+        ///   </list>
+        ///  </para>
+        /// </remarks>
+
+        public static void Primeval(string assemblyName, string message = "Tingen primeval log", [CallerFilePath] string fromPath = "", [CallerMemberName] string fromMethod = "", [CallerLineNumber] int line = 0)
         {
             /* Can't do any logging here. Sorry! */
 
-            PrimevalLog.Create(asm, fileContent, callPath, callMember, callLine);
+            var fromClass = fromPath.Split('\\').Last();
+
+            PrimevalLog.Create(assemblyName, message, fromClass, fromMethod, line);
         }
     }
 }
@@ -36,5 +61,10 @@ namespace Outpost31.Core.Logger
 
 Development notes
 -----------------
+
+- Is there a more efficient way of doing this (see https://rules.sonarsource.com/csharp/RSPEC-6608/):
+
+  var calledClass = calledPath.Split('\\').Last();
+
 
 */

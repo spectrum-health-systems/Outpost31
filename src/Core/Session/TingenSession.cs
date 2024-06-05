@@ -23,9 +23,6 @@ namespace Outpost31.Core.Session
         /// <summary>The session timestamp.</summary>
         public string TimeStamp { get; set; }
 
-        /// <summary>The current session path</summary>
-        //public string SessionPath { get; set; }
-
         /// <summary>Config</summary>
         public TingenConfig Config { get; set; }
 
@@ -46,7 +43,7 @@ namespace Outpost31.Core.Session
         public AvatarData AvatarData { get; set; }
 
         /// <summary>Trace log information.</summary>
-        public TraceLogInfo TraceInfo { get; set; }
+        public TraceLog TraceInfo { get; set; }
 
         /// <summary>Loads the object.</summary>
         /// <param name="configFilePath">The path to the Tingen configuration file.</param>
@@ -83,12 +80,7 @@ namespace Outpost31.Core.Session
 
             tnSession.Framework  = TingenFramework.Build(tnConfig.TingenDataRoot, systemCode, sentObject.OptionUserId, tnSession.DateStamp, tnSession.TimeStamp);
             tnSession.AvatarData = AvatarData.BuildNew(sentObject, sentParameter, systemCode);
-
-            LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name, tnSession.Framework.SystemCodePath.Session);
-
-            tnSession.TraceInfo  = TraceLogInfo.Build(tnSession.Framework.SystemCodePath.Session, tnConfig.TraceLogLevel, tnConfig.TraceLogDelay);
-
-            TingenFramework.VerifyRequiredDirectories(tnSession);
+            tnSession.TraceInfo  = TraceLog.BuildInfo(tnSession.Framework.SystemCodePath.Session, tnConfig.TraceLogLevel, tnConfig.TraceLogDelay);
 
             return tnSession;
         }
@@ -113,5 +105,7 @@ namespace Outpost31.Core.Session
 
 Development notes
 -----------------
+
+- Do we need to verify the session path?
 
 */

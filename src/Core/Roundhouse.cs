@@ -1,6 +1,5 @@
 ﻿// u240605.1102
 
-using System.Collections.Generic;
 using System.Reflection;
 using Outpost31.Core.Logger;
 using Outpost31.Core.Session;
@@ -16,7 +15,7 @@ namespace Outpost31.Core
         ///    - Executing assembly is defined here so it can be used when creating log files.
         ///   </para>
         /// </remarks>
-        public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>OLD Determines which Tingen <i>Module</i> will be doing the work this session.</summary>
         /// <param name="tnSession">The Tingen session object.</param>
@@ -35,14 +34,11 @@ namespace Outpost31.Core
         /// </remarks>
         public static void Parse(TingenSession tnSession)
         {
-            /* Trace log info for this class. */
-            var traceInfo = tnSession.TraceInfo;
-
-            LogEvent.Trace( 1, Asm, traceInfo);
+            LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 
             if (tnSession.Config.TingenMode == "development")
             {
-                LogEvent.Trace( 2, Asm, traceInfo);
+                LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
 
                 // TODO
                 //PrimevalLog.DevelopmentCleanup();
@@ -51,38 +47,38 @@ namespace Outpost31.Core
             switch (tnSession.AvatarData.ScriptParameter)
             {
                 case "admin-service-mode-update":
-                    LogEvent.Trace(2, Asm, traceInfo);
+                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
                     Module.Admin.Service.ModeUpdate(tnSession.Config.TingenMode, tnSession.AvatarData.SystemCode, tnSession.Framework.OtherPath.ServiceStatusPaths, tnSession.TraceInfo);
                     break;
 
                 case "admin-service-currentsettings-update":
-                    LogEvent.Trace(2, Asm, traceInfo);
+                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
                     Module.Admin.Service.CurrentSettingsUpdate(tnSession);
                     break;
 
                 case "admin-service-all-update":
-                    LogEvent.Trace(2, Asm, traceInfo);
+                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
                     Module.Admin.Service.AllUpdate(tnSession);
                     break;
 
                 case "admin-framework-archive-all":
-                    LogEvent.Trace(2, Asm, traceInfo);
+                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
                     break;
 
                 case "admin-framework-archive-logs":
-                    LogEvent.Trace(2, Asm, traceInfo);
+                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
                     break;
 
                 case "common-field-lock-id":
-                    LogEvent.Trace(2, Asm, traceInfo);
+                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
                     break;
 
                 case "common-field-save-id":
-                    LogEvent.Trace(2, Asm, traceInfo);
+                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
                     break;
 
                 default:
-                    LogEvent.Trace(2, Asm, traceInfo);
+                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
                     // TODO: Exit gracefully
                     break;
             }

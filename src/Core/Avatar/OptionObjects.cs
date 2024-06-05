@@ -1,7 +1,6 @@
 ﻿// u240605.0913
 
 using System.Reflection;
-using Outpost31.Core.Logger;
 using Outpost31.Core.Session;
 
 namespace Outpost31.Core.Avatar
@@ -9,14 +8,6 @@ namespace Outpost31.Core.Avatar
     /// <summary>Logic for OptionObjects.</summary>
     public static class OptionObjects
     {
-        /// <summary>Assembly name for log files.</summary>
-        /// <remarks>
-        ///   <para>
-        ///    - Define the assembly name here so it can be used to write log files throughout the class.
-        ///   </para>
-        /// </remarks>
-        public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
-
         /// <summary>Return an unmodified OptionObject to Avatar.</summary>
         /// <remarks>
         ///  <para>

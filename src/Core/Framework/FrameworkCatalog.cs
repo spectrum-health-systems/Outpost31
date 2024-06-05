@@ -1,13 +1,11 @@
-﻿// u240605.1104
+﻿// u240605.1536
 
 using System.Collections.Generic;
-using System.Reflection;
-using Outpost31.Core.Logger;
 
 namespace Outpost31.Core.Framework
 {
     /// <summary>This class contains pre-defined information for the Tingen Framework.</summary>
-    public static class Catalog
+    public static class FrameworkCatalog
     {
         /// <summary>Build data paths.</summary>
         /// <remarks>
@@ -16,7 +14,7 @@ namespace Outpost31.Core.Framework
         ///   - When a new path is added to <b>TingenFramework.Properties.cs</b>, a new entry needs to be added here.
         ///  </para>
         /// </remarks>
-        public static Dictionary<string, string> DataPaths(string dataRoot, string systemCode, string avatarUserName,string datestamp, string timestamp)
+        public static Dictionary<string, string> DataPaths(string dataRoot, string systemCode, string avatarUserName, string datestamp, string timestamp)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
@@ -66,7 +64,7 @@ namespace Outpost31.Core.Framework
         ///  </para>
         /// </remarks>
         /// <returns>Paths for the service status files locations.</returns>
-        public static List<string> ServiceStatusPaths(TingenFramework framework)
+        public static List<string> ServiceStatusUpdatePaths(TingenFramework framework)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
@@ -84,5 +82,8 @@ namespace Outpost31.Core.Framework
 
 Development notes
 -----------------
+
+- Review DataPaths() method to make sure it is valid, accurate, and effecient
+- Make sure all of these locations are verified in an efficient manner
 
 */

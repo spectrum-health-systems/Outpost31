@@ -3,31 +3,32 @@
 using System;
 using System.IO;
 using System.Linq;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Threading;
 
 namespace Outpost31.Core.Logger
 {
     /// <summary>Soon.</summary>
-    public class TraceLogInfo
+    public class TraceLog
     {
-        public string LogPath { get; set; }
-        public int LogLevel { get; set; }
-        public int LogDelay { get; set; }
+        public string TraceLogPath { get; set; }
+        public int TraceLogLevel { get; set; }
+        public int TraceLogDelay { get; set; }
 
         /// <summary>Build the trace log information.</summary>
         /// <param name="traceLogLevel"></param>
         /// <param name="traceLogDelay"></param>
         /// <param name="traceLogPath"></param>
         /// <returns></returns>
-        public static TraceLogInfo Build(string traceLogPath, int traceLogLevel, int traceLogDelay)
+        public static TraceLog BuildInfo(string traceLogPath, int traceLogLevel, int traceLogDelay)
         {
-            return new TraceLogInfo
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+
+            return new TraceLog
             {
-                LogPath  = traceLogPath,
-                LogLevel = traceLogLevel,
-                LogDelay = traceLogDelay
+                TraceLogPath  = traceLogPath,
+                TraceLogLevel = traceLogLevel,
+                TraceLogDelay = traceLogDelay
             };
         }
 
@@ -38,32 +39,18 @@ namespace Outpost31.Core.Logger
         /// <param name="callPath"></param>
         /// <param name="callMember"></param>
         /// <param name="callLine"></param>
-        public static void Create(string asm, int logLevel, TraceLogInfo traceInfo, [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
+        public static void Create(int logLevel, string assemblyName, TraceLog traceInfo, string fromClass, string fromMethod, int line = 0)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
-            var calledClass = callPath.Split('\\').Last();
-
-            if (logLevel <= traceInfo.LogLevel)
+            if (logLevel <= traceInfo.TraceLogLevel)
             {
-                Thread.Sleep(traceInfo.LogDelay);
-                SimpleTrace(asm, traceInfo.LogPath, calledClass, callMember, callLine);
+                Thread.Sleep(traceInfo.TraceLogDelay);
+
+                var traceLogPath = $@"{traceInfo.TraceLogPath}\{DateTime.Now:mmssfffffff}_{assemblyName}-{fromClass}-{fromMethod}-{line}.trace";
+
+                File.Create(traceLogPath).Dispose();
             }
-        }
-
-        /// <summary>Soon.</summary>
-        /// <param name="assemblyName"></param>
-        /// <param name="sessionPath"></param>
-        /// <param name="calledClass"></param>
-        /// <param name="calledMethod"></param>
-        /// <param name="calledLine"></param>
-        public static void SimpleTrace(string assemblyName, string sessionPath, string calledClass, string calledMethod, int calledLine)
-        {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
-
-            var filePath = $@"{sessionPath}\{DateTime.Now:fffffff}-{calledClass}-{calledLine}.trace";
-
-            File.WriteAllText(filePath, "");
         }
     }
 }
@@ -73,5 +60,4 @@ namespace Outpost31.Core.Logger
 Development notes
 -----------------
 
-- Move properties from TraceLog.Properties.cs to here.
 */
