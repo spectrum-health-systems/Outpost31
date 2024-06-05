@@ -1,6 +1,7 @@
 ﻿// u240605.1128
 
 using System;
+using System.Reflection;
 
 namespace Outpost31.Core.Logger
 {

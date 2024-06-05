@@ -1,6 +1,7 @@
 ﻿// u240605.1103
 
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 using Outpost31.Core.Logger;
 
@@ -22,7 +23,10 @@ namespace Outpost31.Core.Session
         /// <returns></returns>
         public static string CurrentSettings(TingenSession tnSession)
         {
-            LogEvent.Trace(1, tnSession.TraceLogs, Asm);
+            /* Trace log information for this method. */
+            //Dictionary<string, string> TraceInfo = LogInfo.TraceLog(Asm, tnSession.Config, tnSession.Framework);
+
+            LogEvent.Trace( 1, Asm, tnSession.TraceInfo);
 
             return $"# Current Tingen Settings{Environment.NewLine}" +
                    $"> v{tnSession.Config.TingenVersionBuild}  {Environment.NewLine}" +
@@ -36,8 +40,8 @@ namespace Outpost31.Core.Session
                    Environment.NewLine +
                    $"### Trace logs{Environment.NewLine}" +
                    Environment.NewLine +
-                   $"Trace log mode: {tnSession.TraceLogs.TraceLogLevel}  {Environment.NewLine}" +
-                   $"Trace log delay: {tnSession.TraceLogs.TraceLogDelay}  {Environment.NewLine}" +
+                   $"Trace log level: {tnSession.Config.TraceLogLevel}  {Environment.NewLine}" +
+                   $"Trace log delay: {tnSession.Config.TraceLogDelay}  {Environment.NewLine}" +
                    Environment.NewLine +
                    $"## Modules{Environment.NewLine}" +
                    Environment.NewLine +

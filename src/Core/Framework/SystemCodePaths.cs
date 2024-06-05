@@ -38,6 +38,14 @@ namespace Outpost31.Core.Framework
         /// <summary>Sytem Code-specific reports are located here.</summary>
         public string Report { get; set; }
 
+        /// <summary>Session-specific session data is located here.</summary>
+        /// <remarks>
+        ///  <para>
+        ///   - This is the big one!
+        ///  </para>
+        /// </remarks>
+        public string Session { get; set; }
+
         /// <summary>Sytem Code-specific templates are located here.</summary>
         public string Template { get; set; }
 

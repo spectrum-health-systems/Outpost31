@@ -9,14 +9,6 @@ namespace Outpost31.Core.Utilities
     /// <summary>Provides JSON functionality.</summary>
     public static class DuJson
     {
-        /// <summary>Executing assembly name for log files.</summary>
-        /// <remarks>
-        ///   <para>
-        ///    - Executing assembly is defined here so it can be used when creating log files.
-        ///   </para>
-        /// </remarks>
-        public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
-
         /// <summary>Export JSON data to an external file.</summary>
         /// <typeparam name="JsonObject">The JSON object type.</typeparam>
         /// <param name="jsonObject">The JSON object.</param>

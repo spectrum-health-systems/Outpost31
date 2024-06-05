@@ -76,8 +76,8 @@
     <Compile Include="Core\Framework\PublicPaths.cs" />
     <Compile Include="Core\Framework\RemotePaths.cs" />
     <Compile Include="Core\Framework\SystemCodePaths.cs" />
+    <Compile Include="Core\Logger\LogInfo.cs" />
     <Compile Include="Core\Logger\Catalog.cs" />
-    <Compile Include="Core\Logger\TraceLog.Properties.cs" />
     <Compile Include="Core\Logger\TraceLog.cs" />
     <Compile Include="Core\Roundhouse.cs" />
     <Compile Include="Core\Configuration\TingenConfig.cs" />

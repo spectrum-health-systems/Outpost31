@@ -1,5 +1,6 @@
 ﻿// u240605.1102
 
+using System.Collections.Generic;
 using System.Reflection;
 using Outpost31.Core.Logger;
 using Outpost31.Core.Session;
@@ -34,11 +35,14 @@ namespace Outpost31.Core
         /// </remarks>
         public static void Parse(TingenSession tnSession)
         {
-            LogEvent.Trace(1, tnSession, Asm);
+            /* Trace log info for this class. */
+            var traceInfo = tnSession.TraceInfo;
 
-            if (tnSession.TingenMode == "development")
+            LogEvent.Trace( 1, Asm, traceInfo);
+
+            if (tnSession.Config.TingenMode == "development")
             {
-                LogEvent.Trace(2, tnSession, Asm);
+                LogEvent.Trace( 2, Asm, traceInfo);
 
                 // TODO
                 //PrimevalLog.DevelopmentCleanup();
@@ -47,38 +51,38 @@ namespace Outpost31.Core
             switch (tnSession.AvatarData.ScriptParameter)
             {
                 case "admin-service-mode-update":
-                    LogEvent.Trace(2, tnSession, Asm);
-                    Module.Admin.Service.ModeUpdate(tnSession.TingenMode, tnSession.AvatarSystemCode, tnSession.Framework.ServiceStatusPaths, tnSession.TraceLogs);
+                    LogEvent.Trace(2, Asm, traceInfo);
+                    Module.Admin.Service.ModeUpdate(tnSession.Config.TingenMode, tnSession.AvatarData.SystemCode, tnSession.Framework.OtherPath.ServiceStatusPaths, tnSession.TraceInfo);
                     break;
 
                 case "admin-service-currentsettings-update":
-                    LogEvent.Trace(2, tnSession, Asm);
+                    LogEvent.Trace(2, Asm, traceInfo);
                     Module.Admin.Service.CurrentSettingsUpdate(tnSession);
                     break;
 
                 case "admin-service-all-update":
-                    LogEvent.Trace(2, tnSession, Asm);
+                    LogEvent.Trace(2, Asm, traceInfo);
                     Module.Admin.Service.AllUpdate(tnSession);
                     break;
 
                 case "admin-framework-archive-all":
-                    LogEvent.Trace(2, tnSession, Asm);
+                    LogEvent.Trace(2, Asm, traceInfo);
                     break;
 
                 case "admin-framework-archive-logs":
-                    LogEvent.Trace(2, tnSession, Asm);
+                    LogEvent.Trace(2, Asm, traceInfo);
                     break;
 
                 case "common-field-lock-id":
-                    LogEvent.Trace(2, tnSession, Asm);
+                    LogEvent.Trace(2, Asm, traceInfo);
                     break;
 
                 case "common-field-save-id":
-                    LogEvent.Trace(2, tnSession, Asm);
+                    LogEvent.Trace(2, Asm, traceInfo);
                     break;
 
                 default:
-                    LogEvent.Trace(2, tnSession, Asm);
+                    LogEvent.Trace(2, Asm, traceInfo);
                     // TODO: Exit gracefully
                     break;
             }

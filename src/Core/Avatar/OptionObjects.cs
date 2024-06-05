@@ -28,8 +28,6 @@ namespace Outpost31.Core.Avatar
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
-            LogEvent.Trace(1, tnSession.TraceLogs, Asm);
-
             tnSession.AvatarData.ReturnObject = tnSession.AvatarData.SentObject.Clone();
         }
     }

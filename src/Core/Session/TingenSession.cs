@@ -24,7 +24,7 @@ namespace Outpost31.Core.Session
         public string TimeStamp { get; set; }
 
         /// <summary>The current session path</summary>
-        public string SessionPath { get; set; }
+        //public string SessionPath { get; set; }
 
         /// <summary>Config</summary>
         public TingenConfig Config { get; set; }
@@ -46,15 +46,7 @@ namespace Outpost31.Core.Session
         public AvatarData AvatarData { get; set; }
 
         /// <summary>Trace log information.</summary>
-        public TraceLog TraceLogs { get; set; }
-
-        /// <summary>Executing assembly name for log files.</summary>
-        /// <remarks>
-        ///   <para>
-        ///    - Executing assembly is defined here so it can be used when creating log files.
-        ///   </para>
-        /// </remarks>
-        public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+        public TraceLogInfo TraceInfo { get; set; }
 
         /// <summary>Loads the object.</summary>
         /// <param name="configFilePath">The path to the Tingen configuration file.</param>
@@ -78,7 +70,7 @@ namespace Outpost31.Core.Session
         /// <returns>An AbSession object.</returns>
         public static TingenSession Build(OptionObject2015 sentObject, string sentParameter, string systemCode, string configFilePath)
         {
-            /* <!-- For debugging: LogEvent.Primeval(asm); --> */ // To be removed.
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             var tnConfig = TingenConfig.Load(configFilePath);
 
@@ -89,10 +81,14 @@ namespace Outpost31.Core.Session
                 Config     = TingenConfig.Load(configFilePath)
             };
 
-            tnSession.SessionPath = $@"{tnSession.Framework.DataRoot.Session}\{tnSession.AvatarData.SentObject.OptionUserId}\{DateTime.Now:HHmmss}";
-            tnSession.Framework   = TingenFramework.Build(tnConfig.TingenDataRoot, systemCode, tnSession.DateStamp);
-            tnSession.AvatarData  = AvatarData.BuildNew(sentObject, sentParameter, systemCode);
-            tnSession.TraceLogs   = TraceLog.BuildInfo(tnSession.SessionPath, tnConfig.TraceLogLevel, tnConfig.TraceLogDelay);
+            tnSession.Framework  = TingenFramework.Build(tnConfig.TingenDataRoot, systemCode, sentObject.OptionUserId, tnSession.DateStamp, tnSession.TimeStamp);
+            tnSession.AvatarData = AvatarData.BuildNew(sentObject, sentParameter, systemCode);
+
+            LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name, tnSession.Framework.SystemCodePath.Session);
+
+            tnSession.TraceInfo  = TraceLogInfo.Build(tnSession.Framework.SystemCodePath.Session, tnConfig.TraceLogLevel, tnConfig.TraceLogDelay);
+
+            TingenFramework.VerifyRequiredDirectories(tnSession);
 
             return tnSession;
         }
@@ -108,7 +104,7 @@ namespace Outpost31.Core.Session
             ////   tnSession.Framework.
             ////};
 
-            Maintenance.VerifyDirectory(tnSession.SessionPath);
+            Maintenance.VerifyDirectory(tnSession.Framework.SystemCodePath.Session);
         }
     }
 }

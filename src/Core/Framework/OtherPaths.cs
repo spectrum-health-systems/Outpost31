@@ -6,6 +6,9 @@ namespace Outpost31.Core.Framework
     public class OtherPaths
     {
         /// <summary>Soon.</summary>
+        /// <remarks>
+        ///  A test
+        /// </remarks>
         public List<string> ServiceStatusPaths { get; set; }
     }
 }

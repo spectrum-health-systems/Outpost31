@@ -3,26 +3,31 @@
 using System;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Threading;
 
 namespace Outpost31.Core.Logger
 {
     /// <summary>Soon.</summary>
-    public partial class TraceLog
+    public class TraceLogInfo
     {
+        public string LogPath { get; set; }
+        public int LogLevel { get; set; }
+        public int LogDelay { get; set; }
+
         /// <summary>Build the trace log information.</summary>
-        /// <param name="mode"></param>
-        /// <param name="delay"></param>
-        /// <param name="path"></param>
+        /// <param name="traceLogLevel"></param>
+        /// <param name="traceLogDelay"></param>
+        /// <param name="traceLogPath"></param>
         /// <returns></returns>
-        public static TraceLog BuildInfo(string path, int mode, int delay)
+        public static TraceLogInfo Build(string traceLogPath, int traceLogLevel, int traceLogDelay)
         {
-            return new TraceLog
+            return new TraceLogInfo
             {
-                TraceLogPath  = $@"{path}\Tracelog",
-                TraceLogLevel = mode,
-                TraceLogDelay = delay
+                LogPath  = traceLogPath,
+                LogLevel = traceLogLevel,
+                LogDelay = traceLogDelay
             };
         }
 
@@ -33,16 +38,16 @@ namespace Outpost31.Core.Logger
         /// <param name="callPath"></param>
         /// <param name="callMember"></param>
         /// <param name="callLine"></param>
-        public static void Create(int traceLevel, TraceLog traceInfo, string assemblyName, [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
+        public static void Create(string asm, int logLevel, TraceLogInfo traceInfo, [CallerFilePath] string callPath = "", [CallerMemberName] string callMember = "", [CallerLineNumber] int callLine = 0)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             var calledClass = callPath.Split('\\').Last();
 
-            if (traceLevel <= traceInfo.TraceLogLevel)
+            if (logLevel <= traceInfo.LogLevel)
             {
-                Thread.Sleep(traceInfo.TraceLogDelay);
-                SimpleTrace(assemblyName, traceInfo.TraceLogPath, calledClass, callMember, callLine);
+                Thread.Sleep(traceInfo.LogDelay);
+                SimpleTrace(asm, traceInfo.LogPath, calledClass, callMember, callLine);
             }
         }
 

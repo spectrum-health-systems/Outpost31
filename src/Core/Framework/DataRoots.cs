@@ -42,14 +42,6 @@
         ///  </para>
         /// </remarks>
         public string Remote { get; set; }
-
-        /// <summary>Session-specific session data is located here.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   - This is the big one!
-        ///  </para>
-        /// </remarks>
-        public string Session { get; set; }
     }
 }
 

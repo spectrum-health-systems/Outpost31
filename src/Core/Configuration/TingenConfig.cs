@@ -102,14 +102,6 @@ namespace Outpost31.Core.Configuration
         /// </remarks>"
         public int TraceLogDelay { get; set; }
 
-        /// <summary>Assembly name for log files.</summary>
-        /// <remarks>
-        ///   <para>
-        ///    - Define the assembly name here so it can be used to write log files throughout the class.
-        ///   </para>
-        /// </remarks>
-        public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
-
         /// <summary>Build a default Tingen configuration object.</summary>
         /// <remarks>
         ///  <para>

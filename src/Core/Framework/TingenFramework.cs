@@ -12,7 +12,12 @@
  *  - Add an entry for the path to TingenFramework.Build()
  * ================================================================================================================== */
 
+using System.Collections.Generic;
+using System.IO;
 using System.Reflection;
+using System.Runtime.ExceptionServices;
+using Outpost31.Core.Logger;
+using Outpost31.Core.Session;
 
 namespace Outpost31.Core.Framework
 {
@@ -44,15 +49,6 @@ namespace Outpost31.Core.Framework
         /// <summary>Soon.</summary>
         public OtherPaths OtherPath { get; set; }
 
-
-        /// <summary>Assembly name for log files.</summary>
-        /// <remarks>
-        ///   <para>
-        ///    - Define the assembly name here so it can be used to write log files throughout the class.
-        ///   </para>
-        /// </remarks>
-        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
-
         /// <summary>Builds the Tingen Framework components.</summary>
         /// <param name="tingenDataRoot">The Tingen data root directory.</param>
         /// <param name="avatarSystemCode">The Avatar System Code</param>
@@ -60,11 +56,11 @@ namespace Outpost31.Core.Framework
         ///  Soon.
         /// </remarks>
         /// <returns>The Abatab Framework components.</returns>
-        public static TingenFramework Build(string tingenDataRoot, string avatarSystemCode, string date)
+        public static TingenFramework Build(string tingenDataRoot, string avatarSystemCode, string avatarUserName, string datestamp, string timestamp)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
-            var dataPath = Framework.Catalog.DataPaths(tingenDataRoot, avatarSystemCode, date);
+            var dataPath = Framework.Catalog.DataPaths(tingenDataRoot, avatarSystemCode,  avatarUserName, datestamp, timestamp);
 
             var tnFramework = new TingenFramework
             {
@@ -75,8 +71,7 @@ namespace Outpost31.Core.Framework
                     RawData    = dataPath["RawDataRoot"],
                     Message    = dataPath["MessageRoot"],
                     Public     = dataPath["PublicRoot"],
-                    Remote     = dataPath["RemoteRoot"],
-                    Session    = dataPath["SessionRoot"]
+                    Remote     = dataPath["RemoteRoot"]
                 },
                 SystemCodePath = new SystemCodePaths
                 {
@@ -87,6 +82,7 @@ namespace Outpost31.Core.Framework
                     Extension = dataPath["Extension"],
                     Log       = dataPath["Log"],
                     Report    = dataPath["Report"],
+                    Session   = dataPath["Session"],
                     Template  = dataPath["Template"],
                     Temporary = dataPath["Temporary"]
                 },
@@ -106,12 +102,24 @@ namespace Outpost31.Core.Framework
                     Report  = dataPath["RemoteReport"],
                     Warning = dataPath["RemoteWarning"]
                 },
+                OtherPath = new OtherPaths
+                {
+                    ServiceStatusPaths = new List<string>()
+                }
 
             };
 
             tnFramework.OtherPath.ServiceStatusPaths = Catalog.ServiceStatusPaths(tnFramework);
 
             return tnFramework;
+        }
+
+        public static void VerifyRequiredDirectories(TingenSession tnSession)
+        {
+          if (!Directory.Exists(tnSession.Framework.SystemCodePath.Session))
+            {
+                Directory.CreateDirectory(tnSession.Framework.SystemCodePath.Session);
+            }
         }
     }
 }

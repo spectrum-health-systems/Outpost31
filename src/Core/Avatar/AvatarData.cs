@@ -101,14 +101,6 @@ namespace Outpost31.Core.Avatar
         /// </remarks>
         public OptionObject2015 ReturnObject { get; set; }
 
-        /// <summary>Assembly name for log files.</summary>
-        /// <remarks>
-        ///   <para>
-        ///    - Define the assembly name here so it can be used to write log files throughout the class.
-        ///   </para>
-        /// </remarks>
-        public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
-
         /// <summary>Builds a new AvatarData object.</summary>
         /// <param name="sentObject">The OptionObject sent from Avatar.</param>
         /// <param name="sentScriptParameter">The ScriptParameter sent from Avatar.</param>

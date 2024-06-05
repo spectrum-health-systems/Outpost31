@@ -2,20 +2,13 @@
 
 using System.Collections.Generic;
 using System.Reflection;
+using Outpost31.Core.Logger;
 
 namespace Outpost31.Core.Framework
 {
     /// <summary>This class contains pre-defined information for the Tingen Framework.</summary>
     public static class Catalog
     {
-        /// <summary>Assembly name for log files.</summary>
-        /// <remarks>
-        ///   <para>
-        ///    - Define the assembly name here so it can be used to write log files throughout the class.
-        ///   </para>
-        /// </remarks>
-        public static string Asm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
-
         /// <summary>Build data paths.</summary>
         /// <remarks>
         ///  <para>
@@ -23,7 +16,7 @@ namespace Outpost31.Core.Framework
         ///   - When a new path is added to <b>TingenFramework.Properties.cs</b>, a new entry needs to be added here.
         ///  </para>
         /// </remarks>
-        public static Dictionary<string, string> DataPaths(string dataRoot, string systemCode, string date)
+        public static Dictionary<string, string> DataPaths(string dataRoot, string systemCode, string avatarUserName,string datestamp, string timestamp)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
@@ -35,7 +28,6 @@ namespace Outpost31.Core.Framework
                 { "MessageRoot",      $@"{dataRoot}\{systemCode}\Message" },
                 { "PublicRoot",       $@"{dataRoot}\Public"},
                 { "RemoteRoot",       $@"{dataRoot}\Remote" },
-                { "SessionRoot",      $@"{dataRoot}\{systemCode}\Session\{date}" },
                 { "Admin",            $@"{dataRoot}\{systemCode}\Admin" },
                 { "Alert",            $@"{dataRoot}\{systemCode}\Message\Alert" },
                 { "Archive",          $@"{dataRoot}\{systemCode}\Archive" },
@@ -47,6 +39,7 @@ namespace Outpost31.Core.Framework
                 { "Import",           $@"{dataRoot}\{systemCode}\RawData\Import" },
                 { "Log",              $@"{dataRoot}\{systemCode}\Log" },
                 { "Report",           $@"{dataRoot}\{systemCode}\Report" },
+                { "Session",          $@"{dataRoot}\{systemCode}\Session\{datestamp}\{avatarUserName}\{timestamp}" },
                 { "Template",         $@"{dataRoot}\{systemCode}\Template" },
                 { "Temporary",        $@"{dataRoot}\{systemCode}\Temporary" },
                 { "Warning",          $@"{dataRoot}\{systemCode}\Message\Warning" },

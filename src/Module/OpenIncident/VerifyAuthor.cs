@@ -21,7 +21,7 @@ namespace Outpost31.Module.OpenIncident.Action
         /// <param name="tnSession"></param>
         public static void IsOriginal(TingenSession tnSession)
         {
-            LogEvent.Trace(1, tnSession, Asm);
+            LogEvent.Trace(1, Asm, tnSession.TraceInfo);
 
             ////var originalAuthor = File.ReadAllText($@"{tnSession.TnFramework.TemporaryPath}\{tnSession.AvComponents.SentOptionObject.OptionUserId}-verifyauthor.data");
             ////var currentAuthor = tnSession.AvComponents.SentOptionObject.GetFieldValue("32");
@@ -43,7 +43,7 @@ namespace Outpost31.Module.OpenIncident.Action
         /// <summary>Save the original author.</summary>
         public static void SaveOriginal(TingenSession tnSession)
         {
-            LogEvent.Trace(1, tnSession, Asm);
+            LogEvent.Trace(1, Asm, tnSession.TraceInfo);
 
             ////var currentAvatarUser = tnSession.AvComponents.SentOptionObject.OptionUserId;
             ////var originalAuthor    = tnSession.AvComponents.SentOptionObject.GetFieldValue("32");
