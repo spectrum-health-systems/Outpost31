@@ -1,12 +1,13 @@
 ﻿// u240605.1127
 
 using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Reflection;
 using Outpost31.Core.Avatar;
 using Outpost31.Core.Configuration;
 using Outpost31.Core.Framework;
 using Outpost31.Core.Logger;
+using Outpost31.Module.OpenIncident;
 using ScriptLinkStandard.Objects;
 
 namespace Outpost31.Core.Session
@@ -19,13 +20,15 @@ namespace Outpost31.Core.Session
     /// </remarks>
     public class TingenSession
     {
+        public string Version { get; set; }
+
         /// <summary>The session datestamp.</summary>
-        public string DateStamp { get; set; }
+        public string Date { get; set; }
         /// <summary>The session timestamp.</summary>
-        public string TimeStamp { get; set; }
+        public string Time { get; set; }
 
         /// <summary>Config</summary>
-        public TingenConfig Config { get; set; }
+        public ConfigSettings TnConfig { get; set; }
 
         /// <summary>Tingen Framework information.</summary>
         /// <remarks>
@@ -33,7 +36,7 @@ namespace Outpost31.Core.Session
         ///   See <b>Outpost31.Core.Configuration.TingenFramework.cs</b> for more information.
         ///  </para>
         /// </remarks>
-        public TingenFramework Framework { get; set; }
+        public Paths TnPath { get; set; }
 
         /// <summary>Avatar components .</summary>
         /// <remarks>
@@ -41,15 +44,20 @@ namespace Outpost31.Core.Session
         ///   See <b>Outpost31.Core.Configuration.TingenFramework.cs</b> for more information.
         ///  </para>
         /// </remarks>
-        public AvatarData AvatarData { get; set; }
+        public AvatarData AvData { get; set; }
+
 
         /// <summary>Trace log information.</summary>
         public TraceLog TraceInfo { get; set; }
 
+        /// <summary>Module to open an incident.</summary>
+        ///
+        public ModuleOpenIncident ModOpenIncident { get; set; }
+
         /// <summary>Builds the Tingen Session object.</summary>
         /// <param name="configFile">The path to the Tingen configuration file.</param>
-        /// <param name="sentObject">The OptionObject sent from Avatar.</param>
-        /// <param name="sentParameter">The ScriptParameter sent from Avatar.</param>
+        /// <param name="sentOptionObject">The OptionObject sent from Avatar.</param>
+        /// <param name="sentScriptParameter">The ScriptParameter sent from Avatar.</param>
         /// <remarks>
         ///  <para>
         ///   The Tingen Session contains all of the information that Tingen needs to do what it does, including:
@@ -57,8 +65,8 @@ namespace Outpost31.Core.Session
         ///    <item>Configuration settings (user-definable settings from the <paramref name="configFile"/>)</item>
         ///    <item>Static settings (these do not change between sessions)</item>
         ///    <item>Runtime settings (unique to the current session)</item>
-        ///    <item>Data sent from Avatar, including the <paramref name="sentObject"/> and <paramref name="sentParameter"/></item>
-        ///    <item>Data derived from the <paramref name="sentObject"/> or <paramref name="sentParameter"/>.</item>
+        ///    <item>Data sent from Avatar, including the <paramref name="sentOptionObject"/> and <paramref name="sentScriptParameter"/></item>
+        ///    <item>Data derived from the <paramref name="sentOptionObject"/> or <paramref name="sentScriptParameter"/>.</item>
         ///    <item>Required Tingen Module details.</item>
         ///   </list>
         ///  </para>
@@ -70,26 +78,44 @@ namespace Outpost31.Core.Session
         ///    <item>A basic TingenSession object is initalized with the current date, time, configuration settings, and Avatar data.</item>
         ///    <item>Framework information is added seperately.</item>
         ///    <item>Trace log information is added seperately.</item>
+        ///    <item>Module objects are added seperately.</item>
         ///   </list>
         ///  </para>
         /// </remarks>
         /// <returns>An Tingen Session object.</returns>
-        public static TingenSession Build(OptionObject2015 sentObject, string sentParameter, string systemCode, string configFile)
+        public static TingenSession Build(OptionObject2015 sentOptionObject, string sentScriptParameter, string version, string tnDataRoot, string avSystemCode, string tnConfigFileName)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
-            var tnConfig = TingenConfig.Load(configFile);
-
             var tnSession = new TingenSession
             {
-                DateStamp  = DateTime.Now.ToString("yyMMdd"),
-                TimeStamp  = DateTime.Now.ToString("HHmmss"),
-                Config     = TingenConfig.Load(configFile),
-                AvatarData = AvatarData.BuildNew(sentObject, sentParameter, systemCode)
+                Version  = version,
+                Date     = DateTime.Now.ToString("yyMMdd"),
+                Time     = DateTime.Now.ToString("HHmmss"),
+                TnConfig = ConfigSettings.Load($@"{tnDataRoot}\{avSystemCode}\Config", tnConfigFileName),
+                AvData   = AvatarData.BuildNew(sentOptionObject, sentScriptParameter, avSystemCode),
+                TnPath   = Paths.Build(tnDataRoot, avSystemCode)
             };
 
-            tnSession.Framework  = TingenFramework.Build(tnConfig.TingenDataRoot, systemCode, sentObject.OptionUserId, tnSession.DateStamp, tnSession.TimeStamp, tnSession.AvatarData.SentScriptParameter);
-            tnSession.TraceInfo  = TraceLog.BuildInfo(tnSession.Framework.SystemCodePath.Session, tnConfig.TraceLogLevel, tnConfig.TraceLogDelay);
+            //////tnSession.Path = Paths.Build(tnSession.Config.TingenDataRoot, avSystemCode);
+
+            /* The session-specific path is built here.
+             */
+            tnSession.TnPath.SystemCode.CurrentSession = $@"{tnSession.TnPath.SystemCode.Sessions}\{tnSession.Date}\{sentOptionObject.OptionUserId}\{tnSession.Time}";
+
+            /* Trace info
+             */
+            tnSession.TraceInfo = TraceLog.BuildInfo(tnSession.TnPath.SystemCode.CurrentSession, tnSession.TnConfig.TraceLevel, tnSession.TnConfig.TraceDelay);
+
+            // Module stuff
+            if (tnSession.TnConfig.ModOpenIncidentMode == "enabled" && tnSession.AvData.SentScriptParameter.ToLower().StartsWith("openincident"))
+            {
+                tnSession.ModOpenIncident = ModuleOpenIncident.Load($@"{tnSession.TnPath.SystemCode.Config}\ModOpenIncident.config", tnSession.TnPath.SystemCode.Sessions, tnSession.AvData.WorkOptionObject);
+            }
+            else
+            {
+                tnSession.ModOpenIncident = new ModuleOpenIncident();
+            }
 
             return tnSession;
         }
@@ -105,7 +131,14 @@ namespace Outpost31.Core.Session
             ////   tnSession.Framework.
             ////};
 
-            Maintenance.VerifyDirectory(tnSession.Framework.SystemCodePath.Session);
+            //Maintenance.VerifyDirectory(tnSession.TnPath.SystemCode.Session);
+        }
+
+        public static void WriteSessionDetails(TingenSession tnSession)
+        {
+            var sessionDetailFilePath = $@"{tnSession.TnPath.SystemCode.CurrentSession}\Session.md";
+
+            File.WriteAllText(sessionDetailFilePath, Catalog.SessionDetails(tnSession));
         }
     }
 }
@@ -114,7 +147,6 @@ namespace Outpost31.Core.Session
 
 Development notes
 -----------------
-
 - Do we need to verify the session path?
 
 */

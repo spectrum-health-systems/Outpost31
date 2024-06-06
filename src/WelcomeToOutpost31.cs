@@ -13,5 +13,8 @@ namespace Outpost31
     {
         /* This class doesn't do anything, but it's here to welcome you to Outpost 31!
          */
+
+        /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+        //LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
     }
 }

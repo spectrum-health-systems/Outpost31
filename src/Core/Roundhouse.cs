@@ -36,7 +36,7 @@ namespace Outpost31.Core
         {
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 
-            if (tnSession.Config.TingenMode == "development")
+            if (tnSession.TnConfig.TingenMode == "development")
             {
                 LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
 
@@ -44,21 +44,23 @@ namespace Outpost31.Core
                 //PrimevalLog.DevelopmentCleanup();
             }
 
-            switch (tnSession.AvatarData.SentScriptParameter)
+            switch (tnSession.AvData.SentScriptParameter)
             {
+                /* Admin Module */
+
                 case "admin-service-mode-update":
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                    Module.Admin.Service.ModeUpdate(tnSession.Config.TingenMode, tnSession.AvatarData.AvatarSystemCode, tnSession.Framework.OtherPath.ServiceStatusPaths, tnSession.TraceInfo);
+                    Module.Admin.Service.Status.UpdateMode(tnSession.TnConfig.TingenMode, tnSession.AvData.AvatarSystemCode, tnSession.TnConfig.TingenMode, tnSession.TraceInfo);
                     break;
 
                 case "admin-service-currentsettings-update":
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                    Module.Admin.Service.CurrentSettingsUpdate(tnSession);
+                    Module.Admin.Service.Status.UpdateSettings(tnSession);
                     break;
 
                 case "admin-service-all-update":
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                    Module.Admin.Service.AllUpdate(tnSession);
+                    Module.Admin.Service.Status.UpdateAll(tnSession);
                     break;
 
                 case "admin-framework-archive-all":
@@ -69,13 +71,14 @@ namespace Outpost31.Core
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
                     break;
 
-                case "common-field-lock-id":
+                /* Open Incident Module */
+
+                case "openincident-verify-authorisviewing":
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+                    Module.OpenIncident.Action.Verify.AuthorIsViewing(tnSession);
                     break;
 
-                case "common-field-save-id":
-                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                    break;
+                /* Fall through */
 
                 default:
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
@@ -90,5 +93,8 @@ namespace Outpost31.Core
 
 Development notes
 -----------------
+
+- Verify these are all actual calls
+
 
 */

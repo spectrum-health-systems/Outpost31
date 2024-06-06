@@ -2,6 +2,9 @@
 
 using System.Collections.Generic;
 using System.Reflection;
+using Outpost31.Core.Framework.Catalog;
+using Outpost31.Core.Logger;
+using Outpost31.Core.Session;
 
 namespace Outpost31.Core.Framework
 {
@@ -26,6 +29,21 @@ namespace Outpost31.Core.Framework
             // Clean up cache files
             // Clean up session files
         }
+
+        public static void DevelopmentModeCleanup(string primeval, string sessions)
+        {
+            Outpost31.Core.Framework.Maintenance.RefreshDirectory(primeval);
+            Outpost31.Core.Framework.Maintenance.RefreshDirectory(sessions);
+        }
+
+        public static void VerifyFrameworkStructure(TingenSession tnSession)
+        {
+            Outpost31.Core.Framework.Maintenance.VerifyDirectories(Outpost31.Core.Framework.Catalog.TingenPaths.Required(tnSession.TnPath.Tingen));
+            Outpost31.Core.Framework.Maintenance.VerifyDirectories(Outpost31.Core.Framework.Catalog.PublicPaths.Required(tnSession.TnPath.Public));
+            Outpost31.Core.Framework.Maintenance.VerifyDirectories(Outpost31.Core.Framework.Catalog.RemotePaths.Required(tnSession.TnPath.Remote));
+            Outpost31.Core.Framework.Maintenance.VerifyDirectories(Outpost31.Core.Framework.Catalog.SystemCodePaths.Required(tnSession.TnPath.SystemCode));
+        }
+
 
         /// <summary>Delete a directory, then recreate it.</summary>
         /// <remarks>

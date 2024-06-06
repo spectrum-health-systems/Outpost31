@@ -1,6 +1,8 @@
 ﻿// u240605.0930
 
 using System.IO;
+using Outpost31.Core.Logger;
+using System.Reflection;
 
 namespace Outpost31.Core.Configuration
 {
@@ -18,7 +20,7 @@ namespace Outpost31.Core.Configuration
     ///   </list>
     ///  </para>
     /// </remarks>
-    public class TingenConfig
+    public class ConfigSettings
     {
         /// <summary>Determines what Tingen does, if anything.</summary>
         /// <remarks>
@@ -51,22 +53,8 @@ namespace Outpost31.Core.Configuration
         /// </remarks>
         public string TingenMode { get; set; }
 
-        /// <summary>Current Tingen version-build.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   - Valid format: <b>%version%-%build%</b>
-        ///  </para>
-        /// </remarks>
-        public string TingenVersionBuild { get; set; }
-
-        /// <summary>Root path for Tingen data.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   - Even though this is user-configurable, it should <i>not be changed</i> unless you <i>really</i> know what you are doing.<br/>
-        ///   - The Tingen data root contains any Tingen-related data that is not source code.<br/>
-        ///  </para>
-        /// </remarks>
-        public string TingenDataRoot { get; set; }
+        /// <summary>Soon.</summary>
+        public string ModOpenIncidentMode { get; set; }
 
         /// <summary>The trace log level.</summary>
         /// <remarks>
@@ -90,7 +78,7 @@ namespace Outpost31.Core.Configuration
         ///   </example>
         ///  </para>
         /// </remarks>
-        public int TraceLogLevel { get; set; }
+        public int TraceLevel { get; set; }
 
         /// <summary>The delay between trace log writes.</summary>
         /// <remarks>
@@ -99,7 +87,7 @@ namespace Outpost31.Core.Configuration
         ///   - By including a short delay, the logs can be written in a way that prevents this from happening.<br/><br/>
         ///  </para>
         /// </remarks>"
-        public int TraceLogDelay { get; set; }
+        public int TraceDelay { get; set; }
 
         /// <summary>Build a default Tingen configuration object.</summary>
         /// <remarks>
@@ -134,22 +122,21 @@ namespace Outpost31.Core.Configuration
         ///  </para>
         /// </remarks>
         /// <returns>An object with default Tingen configuration values.</returns>
-        public static TingenConfig BuildDefaultConfig()
+        public static ConfigSettings BuildDefaultConfig()
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
-            return new TingenConfig
+            return new ConfigSettings
             {
-                TingenMode         = "enabled",
-                TingenVersionBuild = "24.6.0-240605.1042",
-                TingenDataRoot     = @"C:\TingenData",
-                TraceLogLevel      = 0,
-                TraceLogDelay      = 0
+                TingenMode          = "disabled",
+                ModOpenIncidentMode = "disabled",
+                TraceLevel          = 0,
+                TraceDelay          = 10
             };
         }
 
         /// <summary>Loads the Tingen configuration file.</summary>
-        /// <param name="configFilePath">Path to the Tingen configuration file.</param>
+        /// <param name="configPath">Path to the Tingen configuration file.</param>
         /// <remarks>
         ///  <para>
         ///   - The configuration file path is created in <b>Tingen.asmx.cs</b><br/>
@@ -157,16 +144,23 @@ namespace Outpost31.Core.Configuration
         ///  </para>
         /// </remarks>
         /// <returns>The Tingen configuration settings.</returns>
-        public static TingenConfig Load(string configFilePath)
+        public static ConfigSettings Load(string configPath, string configFileName)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
+            var configFilePath = $@"{configPath}\{configFileName}";
+
             if (!File.Exists(configFilePath))
             {
-                Utilities.DuJson.ExportToLocalFile<TingenConfig>(BuildDefaultConfig(), configFilePath);
+                if (!Directory.Exists(configPath))
+                {
+                    Directory.CreateDirectory(configPath);
+                }
+
+                Utilities.DuJson.ExportToLocalFile<ConfigSettings>(BuildDefaultConfig(), configFilePath);
             }
 
-            return Utilities.DuJson.ImportFromLocalFile<TingenConfig>(configFilePath);
+            return Utilities.DuJson.ImportFromLocalFile<ConfigSettings>(configFilePath);
         }
     }
 }

@@ -24,20 +24,22 @@ namespace Outpost31.Core.Session
         {
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 
+            //return tnSession.Version;
+
             return $"# Current Tingen Settings{Environment.NewLine}" +
-                   $"> v{tnSession.Config.TingenVersionBuild}  {Environment.NewLine}" +
+                   $"> v{tnSession.Version}  {Environment.NewLine}" +
                    $"> Last updated: {DateTime.Now}{Environment.NewLine}" +
                    Environment.NewLine +
                    $"## Tingen{Environment.NewLine}" +
-                   $"Mode: {tnSession.Config.TingenMode}  {Environment.NewLine}" +
-                   $"System Code: {tnSession.AvatarData.AvatarSystemCode.ToUpper()}  {Environment.NewLine}" +
+                   $"Mode: {tnSession.TnConfig.TingenMode}  {Environment.NewLine}" +
+                   $"System Code: {tnSession.AvData.AvatarSystemCode.ToUpper()}  {Environment.NewLine}" +
                    Environment.NewLine +
                    $"## Logging{Environment.NewLine}" +
                    Environment.NewLine +
                    $"### Trace logs{Environment.NewLine}" +
                    Environment.NewLine +
-                   $"Trace log level: {tnSession.Config.TraceLogLevel}  {Environment.NewLine}" +
-                   $"Trace log delay: {tnSession.Config.TraceLogDelay}  {Environment.NewLine}" +
+                   $"Trace log level: {tnSession.TnConfig.TraceLevel}  {Environment.NewLine}" +
+                   $"Trace log delay: {tnSession.TnConfig.TraceDelay}  {Environment.NewLine}" +
                    Environment.NewLine +
                    $"## Modules{Environment.NewLine}" +
                    Environment.NewLine +
@@ -48,47 +50,47 @@ namespace Outpost31.Core.Session
                    Environment.NewLine +
                    $"## Paths{Environment.NewLine}" +
                    Environment.NewLine +
-                   $"### Root paths{Environment.NewLine}" +
+                   $"### Tingen{Environment.NewLine}" +
                    Environment.NewLine +
-                   $"Tingen data root: {tnSession.Framework.DataRoot.Tingen}  {Environment.NewLine}" +
-                   $"System Code root: {tnSession.Framework.DataRoot.SystemCode}  {Environment.NewLine}" +
-                   $"Raw data root: {tnSession.Framework.DataRoot.RawData}  {Environment.NewLine}" +
-                   $"Messages root: {tnSession.Framework.DataRoot.Message}  {Environment.NewLine}" +
-                   $"Public data root: {tnSession.Framework.DataRoot.Public}  {Environment.NewLine}" +
-                   $"Remote data root: {tnSession.Framework.DataRoot.Remote}  {Environment.NewLine}" +
+                   $"Root: {tnSession.TnPath.Tingen.Root}  {Environment.NewLine}" +
+                   $"Primeval: {tnSession.TnPath.Tingen.Primeval}  {Environment.NewLine}" +  
                    Environment.NewLine +
-                   $"### System Code paths{Environment.NewLine}" +
+                   $"### System Code{Environment.NewLine}" +
                    Environment.NewLine +
-                   $"Admin data: {tnSession.Framework.SystemCodePath.Admin}  {Environment.NewLine}" +
-                   $"Alerts: {tnSession.Framework.SystemCodePath.Alert}  {Environment.NewLine}" +
-                   $"Archived data: {tnSession.Framework.SystemCodePath.Archive}  {Environment.NewLine}" +
-                   $"Configuration files: {tnSession.Framework.SystemCodePath.Config}  {Environment.NewLine}" +
-                   $"Debugging information: {tnSession.Framework.SystemCodePath.Debug}  {Environment.NewLine}" +
-                   $"Errors: {tnSession.Framework.SystemCodePath.Error}  {Environment.NewLine}" +
-                   $"Exported data: {tnSession.Framework.SystemCodePath.Export}  {Environment.NewLine}" +
-                   $"Extensions: {tnSession.Framework.SystemCodePath.Extension}  {Environment.NewLine}" +
-                   $"Imported data: {tnSession.Framework.SystemCodePath.Import}  {Environment.NewLine}" +
-                   $"Logs: {tnSession.Framework.SystemCodePath.Log}  {Environment.NewLine}" +
-                   $"Reports: {tnSession.Framework.SystemCodePath.Report}  {Environment.NewLine}" +
-                   $"Templates: {tnSession.Framework.SystemCodePath.Template}  {Environment.NewLine}" +
-                   $"Temporary data: {tnSession.Framework.SystemCodePath.Temporary}  {Environment.NewLine}" +
-                   $"Warnings: {tnSession.Framework.SystemCodePath.Warning}  {Environment.NewLine}" +
+                   $"Root: {tnSession.TnPath.SystemCode.Root}  {Environment.NewLine}" +
+                   $"Admin: {tnSession.TnPath.SystemCode.Admin}  {Environment.NewLine}" +
+                   $"Alerts: {tnSession.TnPath.SystemCode.Alerts}  {Environment.NewLine}" +
+                   $"Archive: {tnSession.TnPath.SystemCode.Archive}  {Environment.NewLine}" +
+                   $"Configuration: {tnSession.TnPath.SystemCode.Config}  {Environment.NewLine}" +
+                   $"Debugging: {tnSession.TnPath.SystemCode.Debug}  {Environment.NewLine}" +
+                   $"Errors: {tnSession.TnPath.SystemCode.Errors}  {Environment.NewLine}" +
+                   $"Exports: {tnSession.TnPath.SystemCode.ExportData}  {Environment.NewLine}" +
+                   $"Extensions: {tnSession.TnPath.SystemCode.Extensions}  {Environment.NewLine}" +
+                   $"Imports: {tnSession.TnPath.SystemCode.ImportData}  {Environment.NewLine}" +
+                   $"Logs: {tnSession.TnPath.SystemCode.Logs}  {Environment.NewLine}" +
+                   $"Reports: {tnSession.TnPath.SystemCode.Reports}  {Environment.NewLine}" +
+                   $"Sessions: {tnSession.TnPath.SystemCode.Sessions}  {Environment.NewLine}" +
+                   $"Templates: {tnSession.TnPath.SystemCode.Templates}  {Environment.NewLine}" +
+                   $"Temporary data: {tnSession.TnPath.SystemCode.Temporary}  {Environment.NewLine}" +
+                   $"Warnings: {tnSession.TnPath.SystemCode.Warnings}  {Environment.NewLine}" +
                    Environment.NewLine +
-                   $"### Public data{Environment.NewLine}" +
+                   $"### Public{Environment.NewLine}" +
                    Environment.NewLine +
-                   $"Alerts: {tnSession.Framework.PublicPath.Alert}  {Environment.NewLine}" +
-                   $"Errors: {tnSession.Framework.PublicPath.Error}  {Environment.NewLine}" +
-                   $"Exported data: {tnSession.Framework.PublicPath.Export}  {Environment.NewLine}" +
-                   $"Reports: {tnSession.Framework.PublicPath.Report}  {Environment.NewLine}" +
-                   $"Warnings: {tnSession.Framework.PublicPath.Warning}  {Environment.NewLine}" +
+                   $"Root: {tnSession.TnPath.Public.Root}  {Environment.NewLine}" +
+                   $"Alerts: {tnSession.TnPath.Public.Alerts}  {Environment.NewLine}" +
+                   $"Errors: {tnSession.TnPath.Public.Errors}  {Environment.NewLine}" +
+                   $"Exports: {tnSession.TnPath.Public.ExportData}  {Environment.NewLine}" +
+                   $"Reports: {tnSession.TnPath.Public.Reports}  {Environment.NewLine}" +
+                   $"Warnings: {tnSession.TnPath.Public.Warnings}  {Environment.NewLine}" +
                    Environment.NewLine +
-                   $"### Remote data{Environment.NewLine}" +
+                   $"### Remote{Environment.NewLine}" +
                    Environment.NewLine +
-                   $"Alerts: {tnSession.Framework.RemotePath.Alert}  {Environment.NewLine}" +
-                   $"Errors: {tnSession.Framework.RemotePath.Error}  {Environment.NewLine}" +
-                   $"Exported data: {tnSession.Framework.RemotePath.Export}  {Environment.NewLine}" +
-                   $"Reports: {tnSession.Framework.RemotePath.Report}  {Environment.NewLine}" +
-                   $"Warnings: {tnSession.Framework.RemotePath.Warning}  {Environment.NewLine}";
+                   $"Root: {tnSession.TnPath.Remote.Root}  {Environment.NewLine}" +
+                   $"Alerts: {tnSession.TnPath.Remote.Alerts}  {Environment.NewLine}" +
+                   $"Errors: {tnSession.TnPath.Remote.Errors}  {Environment.NewLine}" +
+                   $"Exports: {tnSession.TnPath.Remote.ExportData}  {Environment.NewLine}" +
+                   $"Reports: {tnSession.TnPath.Remote.Reports}  {Environment.NewLine}" +
+                   $"Warnings: {tnSession.TnPath.Remote.Warnings}  {Environment.NewLine}";
         }
 
         public static string SessionDetails(TingenSession tnSession)
@@ -97,30 +99,30 @@ namespace Outpost31.Core.Session
 
             return $"# Session details{Environment.NewLine}" +
                    Environment.NewLine +
-                   $"**Session date:** {tnSession.DateStamp}  {Environment.NewLine}" +
-                   $"**Session time:** {tnSession.TimeStamp}  {Environment.NewLine}" +
+                   $"**Session date:** {tnSession.Date}  {Environment.NewLine}" +
+                   $"**Session time:** {tnSession.Time}  {Environment.NewLine}" +
                    Environment.NewLine +
                    $"## Avatar details{Environment.NewLine}" +
                    Environment.NewLine +
-                   $"**Script Parameter:** {tnSession.AvatarData.SentScriptParameter}  {Environment.NewLine}" +
-                   $"**System Code:** {tnSession.AvatarData.AvatarSystemCode}  {Environment.NewLine}" +
+                   $"**Script Parameter:** {tnSession.AvData.SentScriptParameter}  {Environment.NewLine}" +
+                   $"**System Code:** {tnSession.AvData.AvatarSystemCode}  {Environment.NewLine}" +
                    Environment.NewLine +
                    $"### OptionObjects{Environment.NewLine}" +
                    Environment.NewLine +
                    $"#### SentObject{Environment.NewLine}" +
                    Environment.NewLine +
                    $"```json{Environment.NewLine}" +
-                   $"{tnSession.AvatarData.SentOptionObject.ToJson()}{Environment.NewLine}" +
+                   $"{tnSession.AvData.SentOptionObject.ToJson()}{Environment.NewLine}" +
                    $"```{Environment.NewLine}" +
                    $"#### WorkObject{Environment.NewLine}" +
                    Environment.NewLine +
                    $"```json{Environment.NewLine}" +
-                   $"{tnSession.AvatarData.WorkOptionObject.ToJson()}{Environment.NewLine}" +
+                   $"{tnSession.AvData.WorkOptionObject.ToJson()}{Environment.NewLine}" +
                    $"```{Environment.NewLine}" +
                    $"#### ReturnObject{Environment.NewLine}" +
                    Environment.NewLine +
                    $"```json{Environment.NewLine}" +
-                   $"{tnSession.AvatarData.ReturnOptionObject.ToJson()}{Environment.NewLine}" +
+                   $"{tnSession.AvData.ReturnOptionObject.ToJson()}{Environment.NewLine}" +
                    $"```{Environment.NewLine}" +
                    Environment.NewLine +
                    $"<br>" +
@@ -128,9 +130,9 @@ namespace Outpost31.Core.Session
                    $"***" +
                    Environment.NewLine +
                    $"**Tingen details**  {Environment.NewLine}" +
-                   $"**Version:** {tnSession.Config.TingenVersionBuild}  {Environment.NewLine}" +
-                   $"**Mode:** {tnSession.Config.TingenMode}  {Environment.NewLine}" +
-                   $"**Trace log level:** {tnSession.Config.TraceLogLevel.ToString()}  {Environment.NewLine}";
+                   $"**Version:** {tnSession.Version}  {Environment.NewLine}" +
+                   $"**Mode:** {tnSession.TnConfig.TingenMode}  {Environment.NewLine}" +
+                   $"**Trace log level:** {tnSession.TnConfig.TraceLevel.ToString()}  {Environment.NewLine}";
         }
     }
 }
