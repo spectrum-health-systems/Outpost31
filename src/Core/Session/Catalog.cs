@@ -30,7 +30,7 @@ namespace Outpost31.Core.Session
                    Environment.NewLine +
                    $"## Tingen{Environment.NewLine}" +
                    $"Mode: {tnSession.Config.TingenMode}  {Environment.NewLine}" +
-                   $"System Code: {tnSession.AvatarData.SystemCode.ToUpper()}  {Environment.NewLine}" +
+                   $"System Code: {tnSession.AvatarData.AvatarSystemCode.ToUpper()}  {Environment.NewLine}" +
                    Environment.NewLine +
                    $"## Logging{Environment.NewLine}" +
                    Environment.NewLine +
@@ -102,25 +102,25 @@ namespace Outpost31.Core.Session
                    Environment.NewLine +
                    $"## Avatar details{Environment.NewLine}" +
                    Environment.NewLine +
-                   $"**Script Parameter:** {tnSession.AvatarData.ScriptParameter}  {Environment.NewLine}" +
-                   $"**System Code:** {tnSession.AvatarData.SystemCode}  {Environment.NewLine}" +
+                   $"**Script Parameter:** {tnSession.AvatarData.SentScriptParameter}  {Environment.NewLine}" +
+                   $"**System Code:** {tnSession.AvatarData.AvatarSystemCode}  {Environment.NewLine}" +
                    Environment.NewLine +
                    $"### OptionObjects{Environment.NewLine}" +
                    Environment.NewLine +
                    $"#### SentObject{Environment.NewLine}" +
                    Environment.NewLine +
                    $"```json{Environment.NewLine}" +
-                   $"{tnSession.AvatarData.SentObject.ToJson()}{Environment.NewLine}" +
+                   $"{tnSession.AvatarData.SentOptionObject.ToJson()}{Environment.NewLine}" +
                    $"```{Environment.NewLine}" +
                    $"#### WorkObject{Environment.NewLine}" +
                    Environment.NewLine +
                    $"```json{Environment.NewLine}" +
-                   $"{tnSession.AvatarData.WorkObject.ToJson()}{Environment.NewLine}" +
+                   $"{tnSession.AvatarData.WorkOptionObject.ToJson()}{Environment.NewLine}" +
                    $"```{Environment.NewLine}" +
                    $"#### ReturnObject{Environment.NewLine}" +
                    Environment.NewLine +
                    $"```json{Environment.NewLine}" +
-                   $"{tnSession.AvatarData.ReturnObject.ToJson()}{Environment.NewLine}" +
+                   $"{tnSession.AvatarData.ReturnOptionObject.ToJson()}{Environment.NewLine}" +
                    $"```{Environment.NewLine}" +
                    Environment.NewLine +
                    $"<br>" +

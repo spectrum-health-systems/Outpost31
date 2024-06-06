@@ -1,4 +1,4 @@
-﻿// u240605.1522
+﻿// u240606.0947
 
 using ScriptLinkStandard.Objects;
 
@@ -9,10 +9,10 @@ namespace Outpost31.Core.Avatar
     ///  <para>
     ///   This class should only contain Avatar-specific data:<br/>
     ///   <list type="bullet">
-    ///    <item>The Avatar System Code</item>
-    ///    <item>The <paramref name="OptionObject"/> sent from Avatar</item>
-    ///    <item>The <paramref name="ScriptParameter"/> sent from Avatar</item>
-    ///    <item>The<paramref name="WorkObject"/> and <paramref name="ReturnObject"/>, which are derived from the SentOptionObject</item>
+    ///    <item>The <paramref name="AvatarSystemCode"/></item>
+    ///    <item>The <paramref name="SentOptionObject"/> sent from Avatar</item>
+    ///    <item>The <paramref name="SentScriptParameter"/> sent from Avatar</item>
+    ///    <item>The <paramref name="WorkOptionObject"/> and <paramref name="ReturnOptionObject"/>, which are derived from the <paramref name="SentOptionObject"/></item>
     ///   </list>
     ///  </para>
     /// </remarks>
@@ -21,7 +21,7 @@ namespace Outpost31.Core.Avatar
         /// <summary>The Avatar System Code.</summary>
         /// <remarks>
         ///  <para>
-        ///   - The Avatar System Code is initially set in Tingen.asmx.cs (or Tingen_development.asmx.cs).<br/>
+        ///   - The <paramref name="AvatarSystemCode"/> is initially set in Tingen.asmx.cs (or Tingen_development.asmx.cs).<br/>
         ///  </para>
         ///  <para>
         ///   Valid Avatar System Codes:
@@ -37,12 +37,12 @@ namespace Outpost31.Core.Avatar
         ///   </list>
         ///  </para>
         /// </remarks>
-        public string SystemCode { get; set; }
+        public string AvatarSystemCode { get; set; }
 
         /// <summary>The original ScriptParameter sent from Avatar.</summary>
         /// <remarks>
         ///  <para>
-        ///   - The original <see cref="ScriptParameter"/> sent from Avatar.<br/>
+        ///   - The original <see cref="SentScriptParameter"/> sent from Avatar.<br/>
         ///  </para>
         ///  <para>
         ///   The ScriptParameter is a "-" delimited string with the following compoents:
@@ -71,34 +71,34 @@ namespace Outpost31.Core.Avatar
         ///   </example>
         ///  </para>
         /// </remarks>
-        public string ScriptParameter { get; set; }
+        public string SentScriptParameter { get; set; }
 
         /// <summary>The original OptionObject sent from Avatar.</summary>
         /// <remarks>
         ///  <para>
         ///   - This should <i>not be modified</i>.<br/>
-        ///   - All session work should use the <paramref name="WorkObject"/>.
+        ///   - All session work should use the <paramref name="WorkOptionObject"/>.
         ///  </para>
         /// </remarks>
-        public OptionObject2015 SentObject { get; set; }
+        public OptionObject2015 SentOptionObject { get; set; }
 
         /// <summary>The OptionObject that is modified during the session.</summary>
         /// <remarks>
         ///  <para>
-        ///   - When a session is initialized, the <paramref name="WorkObject"/> is cloned from the <paramref name="SentObject"/>.<br/>
-        ///   - All session work should use the <paramref name="WorkObject"/>.
+        ///   - When a session is initialized, the <paramref name="WorkOptionObject"/> is cloned from the <paramref name="SentOptionObject"/>.<br/>
+        ///   - All session work should use the <paramref name="WorkOptionObject"/>.
         ///  </para>
         /// </remarks>
-        public OptionObject2015 WorkObject { get; set; }
+        public OptionObject2015 WorkOptionObject { get; set; }
 
         /// <summary>The OptionObject2015 that will be returned to Avatar.</summary>
         /// <remarks>
         ///  <para>
-        ///   - Prior to returning data to Avatar, the <paramref name="ReturnObject"/> is cloned from the <paramref name="WorkObject"/>.<br/>
-        ///   - The <paramref name="WorkObject"/> is property formatted, and is the only valid OptionObject that will be accepted by Avatar.
+        ///   - Prior to returning data to Avatar, the <paramref name="ReturnOptionObject"/> is cloned from the <paramref name="WorkOptionObject"/>.<br/>
+        ///   - The <paramref name="ReturnOptionObject"/> is property formatted, and is the only valid OptionObject that will be accepted by Avatar.
         ///  </para>
         /// </remarks>
-        public OptionObject2015 ReturnObject { get; set; }
+        public OptionObject2015 ReturnOptionObject { get; set; }
 
         /// <summary>Builds a new AvatarData object.</summary>
         /// <param name="sentObject">The OptionObject sent from Avatar.</param>
@@ -111,11 +111,11 @@ namespace Outpost31.Core.Avatar
 
             return new AvatarData
             {
-                SystemCode      = avatarSystemCode,
-                ScriptParameter = sentScriptParameter.ToLower(),
-                SentObject      = sentObject,
-                WorkObject      = sentObject.Clone(),
-                ReturnObject    = null
+                AvatarSystemCode      = avatarSystemCode,
+                SentScriptParameter = sentScriptParameter.ToLower(),
+                SentOptionObject      = sentObject,
+                WorkOptionObject      = sentObject.Clone(),
+                ReturnOptionObject    = null
             };
         }
     }

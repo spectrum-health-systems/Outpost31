@@ -44,11 +44,11 @@ namespace Outpost31.Core
                 //PrimevalLog.DevelopmentCleanup();
             }
 
-            switch (tnSession.AvatarData.ScriptParameter)
+            switch (tnSession.AvatarData.SentScriptParameter)
             {
                 case "admin-service-mode-update":
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                    Module.Admin.Service.ModeUpdate(tnSession.Config.TingenMode, tnSession.AvatarData.SystemCode, tnSession.Framework.OtherPath.ServiceStatusPaths, tnSession.TraceInfo);
+                    Module.Admin.Service.ModeUpdate(tnSession.Config.TingenMode, tnSession.AvatarData.AvatarSystemCode, tnSession.Framework.OtherPath.ServiceStatusPaths, tnSession.TraceInfo);
                     break;
 
                 case "admin-service-currentsettings-update":

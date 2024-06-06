@@ -1,6 +1,7 @@
 ﻿// u240605.1127
 
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 using Outpost31.Core.Avatar;
 using Outpost31.Core.Configuration;
@@ -45,41 +46,49 @@ namespace Outpost31.Core.Session
         /// <summary>Trace log information.</summary>
         public TraceLog TraceInfo { get; set; }
 
-        /// <summary>Loads the object.</summary>
-        /// <param name="configFilePath">The path to the Tingen configuration file.</param>
+        /// <summary>Builds the Tingen Session object.</summary>
+        /// <param name="configFile">The path to the Tingen configuration file.</param>
         /// <param name="sentObject">The OptionObject sent from Avatar.</param>
         /// <param name="sentParameter">The ScriptParameter sent from Avatar.</param>
         /// <remarks>
         ///  <para>
-        ///   AbSession contains all of the information that Tingen needs to do what it does, including data from:
+        ///   The Tingen Session contains all of the information that Tingen needs to do what it does, including:
         ///   <list type="bullet">
-        ///    <item>The Tingen configuration file, which contains data that does not change between sessions</item>
-        ///    <item>Static data that is specific to the current session, such as framework components</item>
-        ///    <item>Runtime settings that are specific to the current session, such as the session timestamp</item>
-        ///    <item>The <paramref name="sentObject"/> and <paramref name="sentParameter"/></item>
-        ///    <item>Abatab Modules</item>
+        ///    <item>Configuration settings (user-definable settings from the <paramref name="configFile"/>)</item>
+        ///    <item>Static settings (these do not change between sessions)</item>
+        ///    <item>Runtime settings (unique to the current session)</item>
+        ///    <item>Data sent from Avatar, including the <paramref name="sentObject"/> and <paramref name="sentParameter"/></item>
+        ///    <item>Data derived from the <paramref name="sentObject"/> or <paramref name="sentParameter"/>.</item>
+        ///    <item>Required Tingen Module details.</item>
         ///   </list>
         ///  </para>
         ///  <para>
-        ///     All strings in this method have been converted to lowercase to make it easlier to compare going forward.
+        ///   <b>More information about this method:</b><br/>
+        ///   This method is one of the most important in Tingen, as it builds the Tingen Session object.<br/><br/>
+        ///   The Session object is built in this order:
+        ///   <list type="number">
+        ///    <item>A basic TingenSession object is initalized with the current date, time, configuration settings, and Avatar data.</item>
+        ///    <item>Framework information is added seperately.</item>
+        ///    <item>Trace log information is added seperately.</item>
+        ///   </list>
         ///  </para>
         /// </remarks>
-        /// <returns>An AbSession object.</returns>
-        public static TingenSession Build(OptionObject2015 sentObject, string sentParameter, string systemCode, string configFilePath)
+        /// <returns>An Tingen Session object.</returns>
+        public static TingenSession Build(OptionObject2015 sentObject, string sentParameter, string systemCode, string configFile)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
-            var tnConfig = TingenConfig.Load(configFilePath);
+            var tnConfig = TingenConfig.Load(configFile);
 
             var tnSession = new TingenSession
             {
                 DateStamp  = DateTime.Now.ToString("yyMMdd"),
                 TimeStamp  = DateTime.Now.ToString("HHmmss"),
-                Config     = TingenConfig.Load(configFilePath)
+                Config     = TingenConfig.Load(configFile),
+                AvatarData = AvatarData.BuildNew(sentObject, sentParameter, systemCode)
             };
 
-            tnSession.AvatarData = AvatarData.BuildNew(sentObject, sentParameter, systemCode);
-            tnSession.Framework  = TingenFramework.Build(tnConfig.TingenDataRoot, systemCode, sentObject.OptionUserId, tnSession.DateStamp, tnSession.TimeStamp, tnSession.AvatarData.ScriptParameter);
+            tnSession.Framework  = TingenFramework.Build(tnConfig.TingenDataRoot, systemCode, sentObject.OptionUserId, tnSession.DateStamp, tnSession.TimeStamp, tnSession.AvatarData.SentScriptParameter);
             tnSession.TraceInfo  = TraceLog.BuildInfo(tnSession.Framework.SystemCodePath.Session, tnConfig.TraceLogLevel, tnConfig.TraceLogDelay);
 
             return tnSession;

@@ -32,7 +32,7 @@ namespace Outpost31.Module.Admin
         {
             LogEvent.Trace(1, Asm, tnSession.TraceInfo);
 
-            ModeUpdate(tnSession.Config.TingenMode, tnSession.AvatarData.SystemCode, tnSession.Framework.OtherPath.ServiceStatusPaths, tnSession.TraceInfo);
+            ModeUpdate(tnSession.Config.TingenMode, tnSession.AvatarData.AvatarSystemCode, tnSession.Framework.OtherPath.ServiceStatusPaths, tnSession.TraceInfo);
             CurrentSettingsUpdate(tnSession);
         }
 
@@ -81,7 +81,7 @@ namespace Outpost31.Module.Admin
         {
             LogEvent.Trace(2, Asm, tnSession.TraceInfo);
 
-            var currentSettingsFileName = $"Current-Tingen-{tnSession.AvatarData.SystemCode}-settings.md";
+            var currentSettingsFileName = $"Current-Tingen-{tnSession.AvatarData.AvatarSystemCode}-settings.md";
 
             DeleteCurrentSettingFiles(currentSettingsFileName, tnSession.Framework.OtherPath.ServiceStatusPaths, tnSession.TraceInfo);
 

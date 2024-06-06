@@ -19,7 +19,7 @@ namespace Outpost31.Core.Avatar
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
-            tnSession.AvatarData.ReturnObject = tnSession.AvatarData.SentObject.Clone();
+            tnSession.AvatarData.ReturnOptionObject = tnSession.AvatarData.SentOptionObject.Clone();
         }
     }
 }
