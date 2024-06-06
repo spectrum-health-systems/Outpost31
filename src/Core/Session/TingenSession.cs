@@ -1,6 +1,7 @@
 ﻿// u240605.1127
 
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using Outpost31.Core.Avatar;
@@ -102,7 +103,7 @@ namespace Outpost31.Core.Session
             /* The session-specific path is built here.
              */
             tnSession.TnPath.SystemCode.CurrentSession = $@"{tnSession.TnPath.SystemCode.Sessions}\{tnSession.Date}\{sentOptionObject.OptionUserId}\{tnSession.Time}";
-
+            
             /* Trace info
              */
             tnSession.TraceInfo = TraceLog.BuildInfo(tnSession.TnPath.SystemCode.CurrentSession, tnSession.TnConfig.TraceLevel, tnSession.TnConfig.TraceDelay);
@@ -116,6 +117,8 @@ namespace Outpost31.Core.Session
             {
                 tnSession.ModOpenIncident = new ModuleOpenIncident();
             }
+
+            Initialize(tnSession); // somewhere else?
 
             return tnSession;
         }
@@ -131,7 +134,7 @@ namespace Outpost31.Core.Session
             ////   tnSession.Framework.
             ////};
 
-            //Maintenance.VerifyDirectory(tnSession.TnPath.SystemCode.Session);
+            Maintenance.VerifyDirectory(tnSession.TnPath.SystemCode.CurrentSession);
         }
 
         public static void WriteSessionDetails(TingenSession tnSession)
@@ -139,6 +142,17 @@ namespace Outpost31.Core.Session
             var sessionDetailFilePath = $@"{tnSession.TnPath.SystemCode.CurrentSession}\Session.md";
 
             File.WriteAllText(sessionDetailFilePath, Catalog.SessionDetails(tnSession));
+        }
+
+        public static Dictionary<string,string> BuildStaticVars(string tnVer)
+        {
+            return new Dictionary<string, string>
+            {
+                { "tnVersion",        tnVer },
+                { "avSystemCode",     "UAT" },
+                { "tnDataRoot",       @"C:\TingenData" },
+                { "tnConfigFileName", "Tingen.config" }
+            };
         }
     }
 }

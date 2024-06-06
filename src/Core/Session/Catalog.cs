@@ -53,7 +53,7 @@ namespace Outpost31.Core.Session
                    $"### Tingen{Environment.NewLine}" +
                    Environment.NewLine +
                    $"Root: {tnSession.TnPath.Tingen.Root}  {Environment.NewLine}" +
-                   $"Primeval: {tnSession.TnPath.Tingen.Primeval}  {Environment.NewLine}" +  
+                   $"Primeval: {tnSession.TnPath.Tingen.Primeval}  {Environment.NewLine}" +
                    Environment.NewLine +
                    $"### System Code{Environment.NewLine}" +
                    Environment.NewLine +

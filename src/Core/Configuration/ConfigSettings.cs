@@ -1,8 +1,6 @@
 ﻿// u240605.0930
 
 using System.IO;
-using Outpost31.Core.Logger;
-using System.Reflection;
 
 namespace Outpost31.Core.Configuration
 {

@@ -2,8 +2,6 @@
 
 using System.Collections.Generic;
 using System.Reflection;
-using Outpost31.Core.Framework.Catalog;
-using Outpost31.Core.Logger;
 using Outpost31.Core.Session;
 
 namespace Outpost31.Core.Framework
