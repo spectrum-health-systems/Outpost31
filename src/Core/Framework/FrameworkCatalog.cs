@@ -1,6 +1,7 @@
 ﻿// u240605.1536
 
 using System.Collections.Generic;
+using Microsoft.SqlServer.Server;
 
 namespace Outpost31.Core.Framework
 {
@@ -14,7 +15,7 @@ namespace Outpost31.Core.Framework
         ///   - When a new path is added to <b>TingenFramework.Properties.cs</b>, a new entry needs to be added here.
         ///  </para>
         /// </remarks>
-        public static Dictionary<string, string> DataPaths(string dataRoot, string systemCode, string avatarUserName, string datestamp, string timestamp)
+        public static Dictionary<string, string> DataPaths(string dataRoot, string systemCode, string avatarUserName, string datestamp, string timestamp, string scriptParameter)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
@@ -37,7 +38,7 @@ namespace Outpost31.Core.Framework
                 { "Import",           $@"{dataRoot}\{systemCode}\RawData\Import" },
                 { "Log",              $@"{dataRoot}\{systemCode}\Log" },
                 { "Report",           $@"{dataRoot}\{systemCode}\Report" },
-                { "Session",          $@"{dataRoot}\{systemCode}\Session\{datestamp}\{avatarUserName}\{timestamp}" },
+                { "Session",          $@"{dataRoot}\{systemCode}\Session\{datestamp}\{avatarUserName}\{timestamp}-{scriptParameter}" },
                 { "Template",         $@"{dataRoot}\{systemCode}\Template" },
                 { "Temporary",        $@"{dataRoot}\{systemCode}\Temporary" },
                 { "Warning",          $@"{dataRoot}\{systemCode}\Message\Warning" },

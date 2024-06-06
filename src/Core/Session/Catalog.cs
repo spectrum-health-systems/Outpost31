@@ -1,4 +1,4 @@
-﻿// u240605.1103
+﻿// u240606.0633
 
 using System;
 using System.Reflection;
@@ -22,9 +22,6 @@ namespace Outpost31.Core.Session
         /// <returns></returns>
         public static string CurrentSettings(TingenSession tnSession)
         {
-            /* Trace log information for this method. */
-            //Dictionary<string, string> TraceInfo = LogInfo.TraceLog(Asm, tnSession.Config, tnSession.Framework);
-
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 
             return $"# Current Tingen Settings{Environment.NewLine}" +
@@ -92,6 +89,48 @@ namespace Outpost31.Core.Session
                    $"Exported data: {tnSession.Framework.RemotePath.Export}  {Environment.NewLine}" +
                    $"Reports: {tnSession.Framework.RemotePath.Report}  {Environment.NewLine}" +
                    $"Warnings: {tnSession.Framework.RemotePath.Warning}  {Environment.NewLine}";
+        }
+
+        public static string SessionDetails(TingenSession tnSession)
+        {
+            LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
+
+            return $"# Session details{Environment.NewLine}" +
+                   Environment.NewLine +
+                   $"**Session date:** {tnSession.DateStamp}  {Environment.NewLine}" +
+                   $"**Session time:** {tnSession.TimeStamp}  {Environment.NewLine}" +
+                   Environment.NewLine +
+                   $"## Avatar details{Environment.NewLine}" +
+                   Environment.NewLine +
+                   $"**Script Parameter:** {tnSession.AvatarData.ScriptParameter}  {Environment.NewLine}" +
+                   $"**System Code:** {tnSession.AvatarData.SystemCode}  {Environment.NewLine}" +
+                   Environment.NewLine +
+                   $"### OptionObjects{Environment.NewLine}" +
+                   Environment.NewLine +
+                   $"#### SentObject{Environment.NewLine}" +
+                   Environment.NewLine +
+                   $"```json{Environment.NewLine}" +
+                   $"{tnSession.AvatarData.SentObject.ToJson()}{Environment.NewLine}" +
+                   $"```{Environment.NewLine}" +
+                   $"#### WorkObject{Environment.NewLine}" +
+                   Environment.NewLine +
+                   $"```json{Environment.NewLine}" +
+                   $"{tnSession.AvatarData.WorkObject.ToJson()}{Environment.NewLine}" +
+                   $"```{Environment.NewLine}" +
+                   $"#### ReturnObject{Environment.NewLine}" +
+                   Environment.NewLine +
+                   $"```json{Environment.NewLine}" +
+                   $"{tnSession.AvatarData.ReturnObject.ToJson()}{Environment.NewLine}" +
+                   $"```{Environment.NewLine}" +
+                   Environment.NewLine +
+                   $"<br>" +
+                   $"<br>" +
+                   $"***" +
+                   Environment.NewLine +
+                   $"**Tingen details**  {Environment.NewLine}" +
+                   $"**Version:** {tnSession.Config.TingenVersionBuild}  {Environment.NewLine}" +
+                   $"**Mode:** {tnSession.Config.TingenMode}  {Environment.NewLine}" +
+                   $"**Trace log level:** {tnSession.Config.TraceLogLevel.ToString()}  {Environment.NewLine}";
         }
     }
 }

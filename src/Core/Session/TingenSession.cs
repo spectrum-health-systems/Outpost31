@@ -78,8 +78,8 @@ namespace Outpost31.Core.Session
                 Config     = TingenConfig.Load(configFilePath)
             };
 
-            tnSession.Framework  = TingenFramework.Build(tnConfig.TingenDataRoot, systemCode, sentObject.OptionUserId, tnSession.DateStamp, tnSession.TimeStamp);
             tnSession.AvatarData = AvatarData.BuildNew(sentObject, sentParameter, systemCode);
+            tnSession.Framework  = TingenFramework.Build(tnConfig.TingenDataRoot, systemCode, sentObject.OptionUserId, tnSession.DateStamp, tnSession.TimeStamp, tnSession.AvatarData.ScriptParameter);
             tnSession.TraceInfo  = TraceLog.BuildInfo(tnSession.Framework.SystemCodePath.Session, tnConfig.TraceLogLevel, tnConfig.TraceLogDelay);
 
             return tnSession;

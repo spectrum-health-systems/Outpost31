@@ -24,6 +24,10 @@ namespace Outpost31.Core.Logger
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
+
+            /* The <b>TraceLogPath</b> is the same as the <b>tnSession.Framework.SystemCodePath.Session</b>
+             * It's here so we can easily pass all the data
+             */
             return new TraceLog
             {
                 TraceLogPath  = traceLogPath,

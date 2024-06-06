@@ -53,11 +53,11 @@ namespace Outpost31.Core.Framework
         ///  Soon.
         /// </remarks>
         /// <returns>The Abatab Framework components.</returns>
-        public static TingenFramework Build(string tingenDataRoot, string avatarSystemCode, string avatarUserName, string datestamp, string timestamp)
+        public static TingenFramework Build(string tingenDataRoot, string avatarSystemCode, string avatarUserName, string datestamp, string timestamp, string scriptParameter)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
-            var dataPath = FrameworkCatalog.DataPaths(tingenDataRoot, avatarSystemCode,  avatarUserName, datestamp, timestamp);
+            var dataPath = FrameworkCatalog.DataPaths(tingenDataRoot, avatarSystemCode,  avatarUserName, datestamp, timestamp, scriptParameter);
 
             var tnFramework = new TingenFramework
             {
