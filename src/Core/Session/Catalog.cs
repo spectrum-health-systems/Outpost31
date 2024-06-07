@@ -1,4 +1,4 @@
-﻿// u240606.0633
+﻿// u240607.0843
 
 using System;
 using System.Reflection;
@@ -27,7 +27,7 @@ namespace Outpost31.Core.Session
             //return tnSession.Version;
 
             return $"# Current Tingen Settings{Environment.NewLine}" +
-                   $"> v{tnSession.Version}  {Environment.NewLine}" +
+                   $"> Version {tnSession.TnVersion} [Build {tnSession.TnBuild}]  {Environment.NewLine}" +
                    $"> Last updated: {DateTime.Now}{Environment.NewLine}" +
                    Environment.NewLine +
                    $"## Tingen{Environment.NewLine}" +
@@ -130,7 +130,7 @@ namespace Outpost31.Core.Session
                    $"***" +
                    Environment.NewLine +
                    $"**Tingen details**  {Environment.NewLine}" +
-                   $"**Version:** {tnSession.Version}  {Environment.NewLine}" +
+                   $"**Version:** {tnSession.TnVersion}  {Environment.NewLine}" +
                    $"**Mode:** {tnSession.TnConfig.TingenMode}  {Environment.NewLine}" +
                    $"**Trace log level:** {tnSession.TnConfig.TraceLevel.ToString()}  {Environment.NewLine}";
         }

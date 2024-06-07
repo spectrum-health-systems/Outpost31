@@ -75,6 +75,7 @@
     <Compile Include="Core\Framework\Catalog\PublicPaths.cs" />
     <Compile Include="Core\Framework\Catalog\RemotePaths.cs" />
     <Compile Include="Core\Framework\Catalog\TingenPaths.cs" />
+    <Compile Include="Core\Framework\Refresh.cs" />
     <Compile Include="Core\Logger\LoggerCatalog.cs" />
     <Compile Include="Core\Logger\TraceLog.cs" />
     <Compile Include="Core\Roundhouse.cs" />
@@ -85,6 +86,8 @@
     <Compile Include="Core\Logger\LogEvent.cs" />
     <Compile Include="Core\Session\Catalog.cs" />
     <Compile Include="Core\Session\TingenSession.cs" />
+    <Compile Include="Core\Start.cs" />
+    <Compile Include="Core\Stop.cs" />
     <Compile Include="Core\Utilities\DuJson.cs" />
     <Compile Include="Module\Admin\Framework\Verify.cs" />
     <Compile Include="Module\Admin\Service\Status.cs" />

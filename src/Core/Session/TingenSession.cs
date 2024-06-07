@@ -3,7 +3,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
 using Outpost31.Core.Avatar;
 using Outpost31.Core.Configuration;
 using Outpost31.Core.Framework;
@@ -21,7 +20,9 @@ namespace Outpost31.Core.Session
     /// </remarks>
     public class TingenSession
     {
-        public string Version { get; set; }
+        public string TnVersion { get; set; }
+
+        public string TnBuild { get; set; }
 
         /// <summary>The session datestamp.</summary>
         public string Date { get; set; }
@@ -84,18 +85,21 @@ namespace Outpost31.Core.Session
         ///  </para>
         /// </remarks>
         /// <returns>An Tingen Session object.</returns>
-        public static TingenSession Build(OptionObject2015 sentOptionObject, string sentScriptParameter, string version, string tnDataRoot, string avSystemCode, string tnConfigFileName)
+        public static TingenSession Build(OptionObject2015 sentOptionObject, string sentScriptParameter, string tnVersion)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
+            var staticVar = TingenSession.BuildStaticVars();
+
             var tnSession = new TingenSession
             {
-                Version  = version,
-                Date     = DateTime.Now.ToString("yyMMdd"),
-                Time     = DateTime.Now.ToString("HHmmss"),
-                TnConfig = ConfigSettings.Load($@"{tnDataRoot}\{avSystemCode}\Config", tnConfigFileName),
-                AvData   = AvatarData.BuildNew(sentOptionObject, sentScriptParameter, avSystemCode),
-                TnPath   = Paths.Build(tnDataRoot, avSystemCode)
+                TnVersion = tnVersion,
+                TnBuild   = staticVar["tnBuild"],
+                Date      = DateTime.Now.ToString("yyMMdd"),
+                Time      = DateTime.Now.ToString("HHmmss"),
+                TnConfig  = ConfigSettings.Load($@"{staticVar["tnDataRoot"]}\{staticVar["avSystemCode"]}\Config", staticVar["tnConfigFileName"]),
+                AvData    = AvatarData.BuildNew(sentOptionObject, sentScriptParameter, staticVar["avSystemCode"]),
+                TnPath    = Paths.Build(staticVar["tnDataRoot"], staticVar["avSystemCode"])
             };
 
             //////tnSession.Path = Paths.Build(tnSession.Config.TingenDataRoot, avSystemCode);
@@ -103,7 +107,7 @@ namespace Outpost31.Core.Session
             /* The session-specific path is built here.
              */
             tnSession.TnPath.SystemCode.CurrentSession = $@"{tnSession.TnPath.SystemCode.Sessions}\{tnSession.Date}\{sentOptionObject.OptionUserId}\{tnSession.Time}";
-            
+
             /* Trace info
              */
             tnSession.TraceInfo = TraceLog.BuildInfo(tnSession.TnPath.SystemCode.CurrentSession, tnSession.TnConfig.TraceLevel, tnSession.TnConfig.TraceDelay);
@@ -144,11 +148,11 @@ namespace Outpost31.Core.Session
             File.WriteAllText(sessionDetailFilePath, Catalog.SessionDetails(tnSession));
         }
 
-        public static Dictionary<string,string> BuildStaticVars(string tnVer)
+        public static Dictionary<string, string> BuildStaticVars()
         {
             return new Dictionary<string, string>
             {
-                { "tnVersion",        tnVer },
+                { "tnBuild",          "240607.0959" },
                 { "avSystemCode",     "UAT" },
                 { "tnDataRoot",       @"C:\TingenData" },
                 { "tnConfigFileName", "Tingen.config" }

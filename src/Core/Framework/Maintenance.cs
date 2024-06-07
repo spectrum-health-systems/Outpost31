@@ -28,11 +28,11 @@ namespace Outpost31.Core.Framework
             // Clean up session files
         }
 
-        public static void DevelopmentModeCleanup(string primeval, string sessions)
-        {
-            Outpost31.Core.Framework.Maintenance.RefreshDirectory(primeval);
-            Outpost31.Core.Framework.Maintenance.RefreshDirectory(sessions);
-        }
+        ////public static void DevelopmentModeCleanup(string primeval, string sessions)
+        ////{
+        ////    Outpost31.Core.Framework.Maintenance.RefreshDirectory(primeval);
+        ////    Outpost31.Core.Framework.Maintenance.RefreshDirectory(sessions);
+        ////}
 
         public static void VerifyFrameworkStructure(TingenSession tnSession)
         {
