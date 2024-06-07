@@ -1,4 +1,4 @@
-﻿// u240606.1336
+﻿// u240607.1017
 
 using Outpost31.Core.Framework.Catalog;
 
@@ -28,10 +28,10 @@ namespace Outpost31.Core.Framework
 
             return new Paths
             {
-                Tingen     = TingenPaths.Build(tnDataRoot),
-                Public     = PublicPaths.Build(tnDataRoot),
-                Remote     = RemotePaths.Build(tnDataRoot),
-                SystemCode = SystemCodePaths.Build(tnDataRoot, avSystemCode)
+                Tingen     = TingenPaths.BuildObject(tnDataRoot),
+                Public     = PublicPaths.BuildObject(tnDataRoot),
+                Remote     = RemotePaths.BuildObject(tnDataRoot),
+                SystemCode = SystemCodePaths.BuildObject(tnDataRoot, avSystemCode)
             };
         }
     }
@@ -39,6 +39,7 @@ namespace Outpost31.Core.Framework
 
 /*
 
+-----------------
 Development notes
 -----------------
 

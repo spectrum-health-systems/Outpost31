@@ -1,4 +1,4 @@
-﻿// u240605.1106
+﻿// u240607.1049
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -24,10 +24,6 @@ namespace Outpost31.Module.OpenIncident.Action
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 
             var currentAuthor = tnSession.AvData.WorkOptionObject.GetFieldValue("32");
-
-
-
-
 
             //if (originalAuthor == currentAuthor)
             //{
@@ -60,6 +56,7 @@ namespace Outpost31.Module.OpenIncident.Action
 
 /*
 
+-----------------
 Development notes
 -----------------
 

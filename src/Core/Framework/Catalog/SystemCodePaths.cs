@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿// u240607.1011
+
+using System.Collections.Generic;
 
 namespace Outpost31.Core.Framework.Catalog
 {
@@ -18,15 +20,13 @@ namespace Outpost31.Core.Framework.Catalog
         public string ImportData { get; set; }
         public string Reports { get; set; }
         public string Sessions { get; set; }
-
         public string CurrentSession { get; set; }
         public string Templates { get; set; }
         public string Temporary { get; set; }
 
-
-        public static SystemCodePaths Build(string tingenDataRoot, string avatarSystemCode)
+        public static SystemCodePaths BuildObject(string tnDataRoot, string avSystemCode)
         {
-            var systemCodeRoot = $@"{tingenDataRoot}\{avatarSystemCode}";
+            var systemCodeRoot = $@"{tnDataRoot}\{avSystemCode}";
 
             return new SystemCodePaths
             {
@@ -50,7 +50,7 @@ namespace Outpost31.Core.Framework.Catalog
             };
         }
 
-        public static List<string> Required(SystemCodePaths systemCodePaths)
+        public static List<string> RequiredPaths(SystemCodePaths systemCodePaths)
         {
             return new List<string>
             {
@@ -77,6 +77,8 @@ namespace Outpost31.Core.Framework.Catalog
 }
 
 /*
+
+-----------------
 Development notes
 -----------------
 

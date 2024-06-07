@@ -1,17 +1,31 @@
-﻿using System.Collections.Generic;
+﻿// u240607.1046
+
+using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
+using Outpost31.Core.Logger;
 using ScriptLinkStandard.Objects;
 
 namespace Outpost31.Module.OpenIncident
 {
     public class ModuleOpenIncident
     {
+        /// <summary>Assembly name for log files.</summary>
+        /// <remarks>
+        ///   <para>
+        ///    - Define the assembly name here so it can be used to write log files throughout the class.
+        ///   </para>
+        /// </remarks>
+        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+
         public List<string> Whitelist { get; set; }
         public List<string> Blacklist { get; set; }
         public int PersonCompletingIncidentFormFieldId { get; set; }
 
-        public static ModuleOpenIncident BuildDefaultModOpenIncident()
+        public static ModuleOpenIncident BuildDefaultModOpenIncident(TraceLog traceInfo)
         {
+            LogEvent.Trace(1, AssemblyName, traceInfo);
+
             return new ModuleOpenIncident
             {
                 Whitelist                           = new List<string>(),
@@ -20,13 +34,15 @@ namespace Outpost31.Module.OpenIncident
             };
         }
 
-        public static ModuleOpenIncident Load(string modConfigFilePath, string currentSessionPath, OptionObject2015 workOptionObjectObject)
+        public static ModuleOpenIncident Load(string modConfigFilePath, string currentSessionPath, OptionObject2015 workOptionObject, TraceLog traceInfo)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            LogEvent.Trace(1, AssemblyName, traceInfo);
 
             if (!File.Exists(modConfigFilePath))
             {
-                Outpost31.Core.Utilities.DuJson.ExportToLocalFile<ModuleOpenIncident>(BuildDefaultModOpenIncident(), modConfigFilePath);
+                LogEvent.Trace(2, AssemblyName, traceInfo);
+
+                Outpost31.Core.Utilities.DuJson.ExportToLocalFile<ModuleOpenIncident>(BuildDefaultModOpenIncident(traceInfo), modConfigFilePath);
             }
 
             return Outpost31.Core.Utilities.DuJson.ImportFromLocalFile<ModuleOpenIncident>(modConfigFilePath);
@@ -35,3 +51,11 @@ namespace Outpost31.Module.OpenIncident
     }
 
 }
+
+/*
+
+-----------------
+Development notes
+-----------------
+
+*/

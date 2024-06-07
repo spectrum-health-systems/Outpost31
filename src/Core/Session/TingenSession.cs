@@ -1,4 +1,4 @@
-﻿// u240605.1127
+﻿// u240607.1023
 
 using System;
 using System.Collections.Generic;
@@ -87,9 +87,7 @@ namespace Outpost31.Core.Session
         /// <returns>An Tingen Session object.</returns>
         public static TingenSession Build(OptionObject2015 sentOptionObject, string sentScriptParameter, string tnVersion)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
-
-            var staticVar = TingenSession.BuildStaticVars();
+            var staticVar = BuildStaticVars();
 
             var tnSession = new TingenSession
             {
@@ -98,24 +96,22 @@ namespace Outpost31.Core.Session
                 Date      = DateTime.Now.ToString("yyMMdd"),
                 Time      = DateTime.Now.ToString("HHmmss"),
                 TnConfig  = ConfigSettings.Load($@"{staticVar["tnDataRoot"]}\{staticVar["avSystemCode"]}\Config", staticVar["tnConfigFileName"]),
-                AvData    = AvatarData.BuildNew(sentOptionObject, sentScriptParameter, staticVar["avSystemCode"]),
+                AvData    = AvatarData.BuildObject(sentOptionObject, sentScriptParameter, staticVar["avSystemCode"]),
                 TnPath    = Paths.Build(staticVar["tnDataRoot"], staticVar["avSystemCode"])
             };
 
             //////tnSession.Path = Paths.Build(tnSession.Config.TingenDataRoot, avSystemCode);
 
-            /* The session-specific path is built here.
-             */
+            /* The session-specific path is built here. */
             tnSession.TnPath.SystemCode.CurrentSession = $@"{tnSession.TnPath.SystemCode.Sessions}\{tnSession.Date}\{sentOptionObject.OptionUserId}\{tnSession.Time}";
 
-            /* Trace info
-             */
+            /* Trace info */
             tnSession.TraceInfo = TraceLog.BuildInfo(tnSession.TnPath.SystemCode.CurrentSession, tnSession.TnConfig.TraceLevel, tnSession.TnConfig.TraceDelay);
 
             // Module stuff
             if (tnSession.TnConfig.ModOpenIncidentMode == "enabled" && tnSession.AvData.SentScriptParameter.ToLower().StartsWith("openincident"))
             {
-                tnSession.ModOpenIncident = ModuleOpenIncident.Load($@"{tnSession.TnPath.SystemCode.Config}\ModOpenIncident.config", tnSession.TnPath.SystemCode.Sessions, tnSession.AvData.WorkOptionObject);
+                tnSession.ModOpenIncident = ModuleOpenIncident.Load($@"{tnSession.TnPath.SystemCode.Config}\ModOpenIncident.config", tnSession.TnPath.SystemCode.Sessions, tnSession.AvData.WorkOptionObject, tnSession.TraceInfo);
             }
             else
             {
@@ -152,7 +148,7 @@ namespace Outpost31.Core.Session
         {
             return new Dictionary<string, string>
             {
-                { "tnBuild",          "240607.0959" },
+                { "tnBuild",          "240607.1104" },
                 { "avSystemCode",     "UAT" },
                 { "tnDataRoot",       @"C:\TingenData" },
                 { "tnConfigFileName", "Tingen.config" }
@@ -163,8 +159,10 @@ namespace Outpost31.Core.Session
 
 /*
 
+-----------------
 Development notes
 -----------------
+
 - Do we need to verify the session path?
 
 */

@@ -1,4 +1,4 @@
-﻿// u240607.0843
+﻿// u240607.1023
 
 using System;
 using System.Reflection;
@@ -23,8 +23,6 @@ namespace Outpost31.Core.Session
         public static string CurrentSettings(TingenSession tnSession)
         {
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
-
-            //return tnSession.Version;
 
             return $"# Current Tingen Settings{Environment.NewLine}" +
                    $"> Version {tnSession.TnVersion} [Build {tnSession.TnBuild}]  {Environment.NewLine}" +
@@ -139,6 +137,7 @@ namespace Outpost31.Core.Session
 
 /*
 
+-----------------
 Development notes
 -----------------
 

@@ -1,20 +1,31 @@
-﻿// ================================================================ 24.6.0 =====
-// Outpost31: Core and Module functionality for the Tingen web service.
-// https://github.com/APrettyCoolProgram/Outpost31
-// Copyright (c) A Pretty Cool Program. All rights reserved.
-// Licensed under the Apache 2.0 license.
-// ================================================================ 240606 =====
-
-// u240605.0833
+﻿// u240607.1004
 
 namespace Outpost31
 {
     internal class WelcomeToOutpost31
     {
-        /* This class doesn't do anything, but it's here to welcome you to Outpost 31!
-         */
-
-        /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
-        //LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
     }
 }
+
+/*
+
+Welcome to Outpost 31!
+
+This class providea important information and documentation about Tingen/Outpost 31.
+
+-----------------------
+VALID SCRIPT PARAMETERS
+-----------------------
+
+Module: Admin
+
+* admin-service-update-mode
+* admin-service-update-currentsettings
+* admin-service-update-all
+
+Module: OpenIncident
+
+* openincident-verify-authorisviewing
+
+
+*/

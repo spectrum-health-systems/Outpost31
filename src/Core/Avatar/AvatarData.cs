@@ -1,10 +1,11 @@
-﻿// u240606.0947
+﻿// u240607.1004
 
+using Outpost31.Core.Session;
 using ScriptLinkStandard.Objects;
 
 namespace Outpost31.Core.Avatar
 {
-    /// <summary>Avatar data.</summary>
+    /// <summary>Provides Avatar-specific data and logic.</summary>
     /// <remarks>
     ///  <para>
     ///   This class should only contain Avatar-specific data:<br/>
@@ -101,21 +102,19 @@ namespace Outpost31.Core.Avatar
         public OptionObject2015 ReturnOptionObject { get; set; }
 
         /// <summary>Builds a new AvatarData object.</summary>
-        /// <param name="sentObject">The OptionObject sent from Avatar.</param>
+        /// <param name="sentOptionObject">The OptionObject sent from Avatar.</param>
         /// <param name="sentScriptParameter">The ScriptParameter sent from Avatar.</param>
-        /// <param name="avatarSystemCode">The Avatar System Code.</param>
+        /// <param name="avSystemCode">The Avatar System Code.</param>
         /// <returns>The necessary Avatar data.</returns>
-        public static AvatarData BuildNew(OptionObject2015 sentObject, string sentScriptParameter, string avatarSystemCode)
+        public static AvatarData BuildObject(OptionObject2015 sentOptionObject, string sentScriptParameter, string avSystemCode)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
-
             return new AvatarData
             {
-                AvatarSystemCode      = avatarSystemCode,
+                AvatarSystemCode    = avSystemCode,
                 SentScriptParameter = sentScriptParameter.ToLower(),
-                SentOptionObject      = sentObject,
-                WorkOptionObject      = sentObject.Clone(),
-                ReturnOptionObject    = null
+                SentOptionObject    = sentOptionObject,
+                WorkOptionObject    = sentOptionObject.Clone(),
+                ReturnOptionObject  = null
             };
         }
     }
@@ -123,6 +122,7 @@ namespace Outpost31.Core.Avatar
 
 /*
 
+-----------------
 Development notes
 -----------------
 

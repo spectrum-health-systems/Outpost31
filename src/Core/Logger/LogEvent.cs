@@ -1,4 +1,4 @@
-﻿// u240605.1157
+﻿// u240607.1019
 
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -22,13 +22,18 @@ namespace Outpost31.Core.Logger
         ///   </list>
         ///  </para>
         /// </remarks>
-        public static void Trace(int logLevel, string assemblyName, TraceLog traceInfo, [CallerFilePath] string fromPath = "", [CallerMemberName] string fromMethod = "", [CallerLineNumber] int line = 0)
+        public static void Trace(int logLevel, string assemblyName, TraceLog traceInfo, string message = "", [CallerFilePath] string fromPath = "", [CallerMemberName] string fromMethod = "", [CallerLineNumber] int line = 0)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
-
             var fromClass = fromPath.Split('\\').Last();
 
-            TraceLog.Create(logLevel, assemblyName, traceInfo, fromClass, fromMethod, line);
+            if (string.IsNullOrEmpty(message))
+            {
+                TraceLog.Create(logLevel, assemblyName, traceInfo, fromClass, fromMethod, line);
+            }
+            else
+            {
+                TraceLog.Create(logLevel, assemblyName, traceInfo, fromClass, fromMethod, line, message);
+            }
         }
 
         /// <summary>Logs a primeval event.</summary>
@@ -48,8 +53,6 @@ namespace Outpost31.Core.Logger
 
         public static void Primeval(string assemblyName, string message = "Tingen primeval log", [CallerFilePath] string fromPath = "", [CallerMemberName] string fromMethod = "", [CallerLineNumber] int line = 0)
         {
-            /* Can't do any logging here. Sorry! */
-
             var fromClass = fromPath.Split('\\').Last();
 
             PrimevalLog.Create(assemblyName, message, fromClass, fromMethod, line);
@@ -59,12 +62,12 @@ namespace Outpost31.Core.Logger
 
 /*
 
+-----------------
 Development notes
 -----------------
 
 - Is there a more efficient way of doing this (see https://rules.sonarsource.com/csharp/RSPEC-6608/):
 
   var calledClass = calledPath.Split('\\').Last();
-
 
 */

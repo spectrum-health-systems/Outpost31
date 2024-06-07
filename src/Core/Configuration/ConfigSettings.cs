@@ -1,4 +1,4 @@
-﻿// u240605.0930
+﻿// u240607.1007
 
 using System.IO;
 
@@ -120,10 +120,8 @@ namespace Outpost31.Core.Configuration
         ///  </para>
         /// </remarks>
         /// <returns>An object with default Tingen configuration values.</returns>
-        public static ConfigSettings BuildDefaultConfig()
+        public static ConfigSettings BuildDefaultObject()
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
-
             return new ConfigSettings
             {
                 TingenMode          = "disabled",
@@ -144,8 +142,6 @@ namespace Outpost31.Core.Configuration
         /// <returns>The Tingen configuration settings.</returns>
         public static ConfigSettings Load(string configPath, string configFileName)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
-
             var configFilePath = $@"{configPath}\{configFileName}";
 
             if (!File.Exists(configFilePath))
@@ -155,7 +151,7 @@ namespace Outpost31.Core.Configuration
                     Directory.CreateDirectory(configPath);
                 }
 
-                Utilities.DuJson.ExportToLocalFile<ConfigSettings>(BuildDefaultConfig(), configFilePath);
+                Utilities.DuJson.ExportToLocalFile<ConfigSettings>(BuildDefaultObject(), configFilePath);
             }
 
             return Utilities.DuJson.ImportFromLocalFile<ConfigSettings>(configFilePath);
@@ -165,7 +161,9 @@ namespace Outpost31.Core.Configuration
 
 /*
 
+-----------------
 Development notes
+-----------------
 
 - Create a "blacklist" that will allow certain users to bypass Tingen?
 

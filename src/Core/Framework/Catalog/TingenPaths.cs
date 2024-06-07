@@ -1,4 +1,4 @@
-﻿// u240606.1145
+﻿// u240607.1012
 
 using System.Collections.Generic;
 
@@ -10,27 +10,29 @@ namespace Outpost31.Core.Framework.Catalog
         public string Root { get; set; }
         public string Primeval { get; set; }
 
-        public static TingenPaths Build(string tingenDataRoot)
+        public static TingenPaths BuildObject(string tnDataRoot)
         {
             return new TingenPaths
             {
-                Root     = tingenDataRoot,
-                Primeval = $@"{tingenDataRoot}\Primeval"
+                Root     = tnDataRoot,
+                Primeval = $@"{tnDataRoot}\Primeval"
             };
         }
 
-        public static List<string> Required(TingenPaths tingenPaths)
+        public static List<string> RequiredPaths(TingenPaths tnPaths)
         {
             return new List<string>
             {
-                tingenPaths.Root,
-                tingenPaths.Primeval
+                tnPaths.Root,
+                tnPaths.Primeval
             };
         }
     }
 }
 
 /*
+
+-----------------
 Development notes
 -----------------
 

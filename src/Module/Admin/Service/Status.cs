@@ -1,4 +1,4 @@
-﻿// u240606.1450
+﻿// u240607.1043
 
 using System.IO;
 using System.Linq;
@@ -32,27 +32,28 @@ namespace Outpost31.Module.Admin.Service
         {
             LogEvent.Trace(1, AssemblyName, traceInfo);
 
-            string existingStatusFile = Directory.GetFiles(remoteRoot).Where(directoryFiles => directoryFiles.Contains($"TINGEN {avSystemCode.ToUpper()} IS CURRENTLY")).FirstOrDefault();
-
             foreach (var file in Directory.GetFiles(remoteRoot))
             {
-                LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
+                LogEvent.Trace(2, AssemblyName, traceInfo);
+
                 if (file.Contains($"TINGEN {avSystemCode.ToUpper()} IS CURRENTLY"))
                 {
-                    LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
+                    LogEvent.Trace(3, AssemblyName, traceInfo);
+
                     File.Delete(file);
                 }
-
-                //LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name, file);
-
-
             }
 
-            LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name, remoteRoot);
-
-            File.WriteAllText($@"{remoteRoot}\TINGEN {avSystemCode.ToUpper()} IS CURRENTLY {tnMode.ToUpper()}", "");
-
-            LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
+            if (tnMode == "enabled" || tnMode == "disabled")
+            {
+                LogEvent.Trace(2, AssemblyName, traceInfo);
+                File.WriteAllText($@"{remoteRoot}\TINGEN {avSystemCode.ToUpper()} IS CURRENTLY {tnMode.ToUpper()}", "");
+            }
+            else
+            {
+                LogEvent.Trace(2, AssemblyName, traceInfo);
+                File.WriteAllText($@"{remoteRoot}\TINGEN {avSystemCode.ToUpper()} IS CURRENTLY IN AN UNKNOWN STATE", "");
+            }
         }
 
         public static void UpdateSettings(TingenSession tnSession)
@@ -65,6 +66,8 @@ namespace Outpost31.Module.Admin.Service
 
             if (File.Exists($@"{settingsFilePath}"))
             {
+                LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+
                 File.Delete($@"{settingsFilePath}");
             }
 
@@ -74,6 +77,8 @@ namespace Outpost31.Module.Admin.Service
 }
 
 /*
+
+-----------------
 Development notes
 -----------------
 

@@ -1,4 +1,4 @@
-﻿// u240605.1115
+﻿// u240607.1022
 
 using System;
 using System.IO;
@@ -14,17 +14,15 @@ namespace Outpost31.Core.Logger
         public int TraceLogDelay { get; set; }
 
         /// <summary>Build the trace log information.</summary>
+        /// <remarks>
+        /// The <b>TraceLogPath</b> is the same as the <b>tnSession.Framework.SystemCodePath.Session</b> It's here so we can easily pass all the data
+        /// </remarks>
         /// <param name="traceLogLevel"></param>
         /// <param name="traceLogDelay"></param>
         /// <param name="traceLogPath"></param>
         /// <returns></returns>
         public static TraceLog BuildInfo(string traceLogPath, int traceLogLevel, int traceLogDelay)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
-
-            /* The <b>TraceLogPath</b> is the same as the <b>tnSession.Framework.SystemCodePath.Session</b>
-             * It's here so we can easily pass all the data
-             */
             return new TraceLog
             {
                 TraceLogPath  = traceLogPath,
@@ -40,10 +38,8 @@ namespace Outpost31.Core.Logger
         /// <param name="callPath"></param>
         /// <param name="callMember"></param>
         /// <param name="callLine"></param>
-        public static void Create(int logLevel, string assemblyName, TraceLog traceInfo, string fromClass, string fromMethod, int line = 0)
+        public static void Create(int logLevel, string assemblyName, TraceLog traceInfo, string fromClass, string fromMethod, int line)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
-
             if (logLevel <= traceInfo.TraceLogLevel)
             {
                 Thread.Sleep(traceInfo.TraceLogDelay);
@@ -51,6 +47,18 @@ namespace Outpost31.Core.Logger
                 var traceLogPath = $@"{traceInfo.TraceLogPath}\{DateTime.Now:mmssfffffff}_{assemblyName}-{fromClass}-{fromMethod}-{line}.trace";
 
                 File.Create(traceLogPath).Dispose();
+            }
+        }
+
+        public static void Create(int logLevel, string assemblyName, TraceLog traceInfo, string fromClass, string fromMethod, int line, string message)
+        {
+            if (logLevel <= traceInfo.TraceLogLevel)
+            {
+                Thread.Sleep(traceInfo.TraceLogDelay);
+
+                var traceLogPath = $@"{traceInfo.TraceLogPath}\{DateTime.Now:mmssfffffff}_{assemblyName}-{fromClass}-{fromMethod}-{line}.trace";
+
+                File.WriteAllText(traceLogPath, message);
             }
         }
     }

@@ -1,4 +1,4 @@
-﻿// u240605.1128
+﻿// u240607.1020
 
 using System;
 
@@ -16,7 +16,6 @@ namespace Outpost31.Core.Logger
         /// <returns></returns>
         public static string StandardContent(string assemblyName, string calledClass, string calledMethod, string line, string message)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             return $"[ASSEMBLY] {assemblyName}{Environment.NewLine}" +
                    $"   [CLASS] {calledClass}{Environment.NewLine}" +
@@ -30,8 +29,8 @@ namespace Outpost31.Core.Logger
 
 /*
 
+-----------------
 Development notes
 -----------------
-
 
 */

@@ -1,4 +1,4 @@
-﻿// u240605.1113
+﻿// u240607.1020
 
 using System;
 using System.IO;
@@ -57,8 +57,6 @@ namespace Outpost31.Core.Logger
         /// </remarks>
         public static void Create(string assemblyName, string message, string fromClass, string fromMethod, int line)
         {
-            /* Can't do any logging here. Sorry! */
-
             Framework.Maintenance.VerifyDirectory(PrimevalLogPath);
 
             var fileContent = LoggerCatalog.StandardContent(assemblyName, fromClass, fromMethod, line.ToString(), message);
@@ -71,8 +69,6 @@ namespace Outpost31.Core.Logger
         /// <summary> Removes old Primeval logs.</summary>
         public static void DevelopmentCleanup()
         {
-            /* Can't do any logging here. Sorry! */
-
             Framework.Maintenance.RefreshDirectory(PrimevalLogPath);
         }
     }
@@ -80,6 +76,7 @@ namespace Outpost31.Core.Logger
 
 /*
 
+-----------------
 Development notes
 -----------------
 

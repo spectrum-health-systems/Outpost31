@@ -1,4 +1,4 @@
-﻿// u240605.1157
+﻿// u240607.1009
 
 using System.Collections.Generic;
 
@@ -13,9 +13,9 @@ namespace Outpost31.Core.Framework.Catalog
         public string Reports { get; set; }
         public string Warnings { get; set; }
 
-        public static PublicPaths Build(string tingenDataRoot)
+        public static PublicPaths BuildObject(string tnDataRoot)
         {
-            var publicRoot = $@"{tingenDataRoot}\Public\";
+            var publicRoot = $@"{tnDataRoot}\Public\";
 
             return new PublicPaths
             {
@@ -28,7 +28,7 @@ namespace Outpost31.Core.Framework.Catalog
             };
         }
 
-        public static List<string> Required(PublicPaths publicPaths)
+        public static List<string> RequiredPaths(PublicPaths publicPaths)
         {
             return new List<string>
             {
@@ -44,6 +44,8 @@ namespace Outpost31.Core.Framework.Catalog
 }
 
 /*
+
+-----------------
 Development notes
 -----------------
 

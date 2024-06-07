@@ -1,4 +1,4 @@
-﻿// u240606.0951
+﻿// u240607.1005
 
 using Outpost31.Core.Session;
 
@@ -15,10 +15,8 @@ namespace Outpost31.Core.Avatar
         ///   - The <paramref name="ReturnOptionObject"/> is still not formatted for Avatar, which is done at the end of Tingen.asmx.cs<br/>
         ///  </para>
         /// </remarks>
-        public static void ReturnUnmodified(TingenSession tnSession)
+        public static void ReturnUnmodifiedObject(TingenSession tnSession)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
-
             tnSession.AvData.ReturnOptionObject = tnSession.AvData.SentOptionObject.Clone();
         }
     }
@@ -26,10 +24,11 @@ namespace Outpost31.Core.Avatar
 
 /*
 
+-----------------
 Development notes
 -----------------
 
 - Verify trace logs cannot be used in ReturnUnmodified()
-- Limit what is passed to ReturnUnmodified()
+- Limit what is passed to ReturnUnmodified(), not the entire TingenSession object
 
 */

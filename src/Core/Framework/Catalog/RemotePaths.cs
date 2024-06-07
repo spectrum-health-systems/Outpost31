@@ -13,9 +13,9 @@ namespace Outpost31.Core.Framework.Catalog
         public string Reports { get; set; }
         public string Warnings { get; set; }
 
-        public static RemotePaths Build(string tingenDataRoot)
+        public static RemotePaths BuildObject(string tnDataRoot)
         {
-            var remoteRoot = $@"{tingenDataRoot}\Remote\";
+            var remoteRoot = $@"{tnDataRoot}\Remote\";
 
             return new RemotePaths
             {
@@ -28,7 +28,7 @@ namespace Outpost31.Core.Framework.Catalog
             };
         }
 
-        public static List<string> Required(RemotePaths remotePaths)
+        public static List<string> RequiredPaths(RemotePaths remotePaths)
         {
             return new List<string>
             {
@@ -40,11 +40,12 @@ namespace Outpost31.Core.Framework.Catalog
                 remotePaths.Warnings
             };
         }
-
     }
 }
 
 /*
+
+-----------------
 Development notes
 -----------------
 

@@ -19,27 +19,15 @@ namespace Outpost31.Core.Framework
         /// <summary>Soon.</summary>
         public static void CleanSessionData()
         {
-            //* For debugging */
-            //LogEvent.Primeval(Asm);
-
-            // Clean up temporary files
-            // Clean up log files
-            // Clean up cache files
-            // Clean up session files
+            // TODO
         }
-
-        ////public static void DevelopmentModeCleanup(string primeval, string sessions)
-        ////{
-        ////    Outpost31.Core.Framework.Maintenance.RefreshDirectory(primeval);
-        ////    Outpost31.Core.Framework.Maintenance.RefreshDirectory(sessions);
-        ////}
 
         public static void VerifyFrameworkStructure(TingenSession tnSession)
         {
-            Outpost31.Core.Framework.Maintenance.VerifyDirectories(Outpost31.Core.Framework.Catalog.TingenPaths.Required(tnSession.TnPath.Tingen));
-            Outpost31.Core.Framework.Maintenance.VerifyDirectories(Outpost31.Core.Framework.Catalog.PublicPaths.Required(tnSession.TnPath.Public));
-            Outpost31.Core.Framework.Maintenance.VerifyDirectories(Outpost31.Core.Framework.Catalog.RemotePaths.Required(tnSession.TnPath.Remote));
-            Outpost31.Core.Framework.Maintenance.VerifyDirectories(Outpost31.Core.Framework.Catalog.SystemCodePaths.Required(tnSession.TnPath.SystemCode));
+            VerifyDirectories(Catalog.TingenPaths.RequiredPaths(tnSession.TnPath.Tingen));
+            VerifyDirectories(Catalog.PublicPaths.RequiredPaths(tnSession.TnPath.Public));
+            VerifyDirectories(Catalog.RemotePaths.RequiredPaths(tnSession.TnPath.Remote));
+            VerifyDirectories(Catalog.SystemCodePaths.RequiredPaths(tnSession.TnPath.SystemCode));
         }
 
 
@@ -63,7 +51,7 @@ namespace Outpost31.Core.Framework
             }
             else
             {
-                // TODO Trace log here.
+                // TODO Trace log here?
             }
 
             if (System.IO.Directory.Exists(directoryPath))
@@ -93,7 +81,7 @@ namespace Outpost31.Core.Framework
             }
             else
             {
-                // TODO Trace log here.
+                // TODO Trace log here?
             }
 
             if (!System.IO.Directory.Exists(directoryPath))
@@ -124,7 +112,7 @@ namespace Outpost31.Core.Framework
                 }
                 else
                 {
-                    // TODO Trace log here.
+                    // TODO Trace log here?
                 }
 
                 if (!System.IO.Directory.Exists(directoryPath))
@@ -138,7 +126,10 @@ namespace Outpost31.Core.Framework
 
 /*
 
+-----------------
 Development notes
 -----------------
+
+- Most of this needs to be refactored.
 
 */
