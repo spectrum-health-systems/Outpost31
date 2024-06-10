@@ -65,6 +65,7 @@ namespace Outpost31.Core
                 tnSession.AvData.ReturnOptionObject = tnSession.AvData.WorkOptionObject.Clone(); // TODO move to core functionality
             }
 
+            TingenSession.WriteSessionDetails(tnSession);     
         }
     }
 }

@@ -88,6 +88,7 @@
     <Compile Include="Core\Session\Catalog.cs" />
     <Compile Include="Core\Session\TingenSession.cs" />
     <Compile Include="Core\Utilities\DuJson.cs" />
+    <Compile Include="Module\Admin\Export\OptionObject.cs" />
     <Compile Include="Module\Admin\Framework\Verify.cs" />
     <Compile Include="Module\Admin\Service\Status.cs" />
     <Compile Include="Module\FormComponent\Field.cs" />
@@ -101,6 +102,7 @@
     <Folder Include="Core\Exporter\" />
     <Folder Include="Core\Importer\" />
     <Folder Include="Core\Messenger\" />
+    <Folder Include="Core\NtstWebServices\" />
     <Folder Include="Core\Parser\" />
     <Folder Include="Module\Common\" />
     <Folder Include="Module\Testing\" />
