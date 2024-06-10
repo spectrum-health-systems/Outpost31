@@ -7,6 +7,7 @@ using Outpost31.Core.Avatar;
 using Outpost31.Core.Configuration;
 using Outpost31.Core.Framework;
 using Outpost31.Core.Logger;
+using Outpost31.Core.NtstWebService;
 using Outpost31.Module.OpenIncident;
 using ScriptLinkStandard.Objects;
 
@@ -47,6 +48,8 @@ namespace Outpost31.Core.Session
         ///  </para>
         /// </remarks>
         public AvatarData AvData { get; set; }
+
+        public NtstWebServiceSecurity NtstWebServiceSecurity { get; set; }
 
 
         /// <summary>Trace log information.</summary>
@@ -89,14 +92,16 @@ namespace Outpost31.Core.Session
         {
             var staticVar = BuildStaticVars();
 
+            var configPath = $@"{staticVar["tnDataRoot"]}\{staticVar["avSystemCode"]}\Config";
+
             var tnSession = new TingenSession
             {
                 TnVersion = tnVersion,
                 TnBuild   = staticVar["tnBuild"],
                 Date      = DateTime.Now.ToString("yyMMdd"),
                 Time      = DateTime.Now.ToString("HHmmss"),
-                TnConfig  = ConfigSettings.Load($@"{staticVar["tnDataRoot"]}\{staticVar["avSystemCode"]}\Config", staticVar["tnConfigFileName"]),
-                AvData    = AvatarData.BuildObject(sentOptionObject, sentScriptParameter, staticVar["avSystemCode"]),
+                TnConfig  = ConfigSettings.Load(configPath, staticVar["tnConfigFileName"]),
+                AvData    = AvatarData.BuildObject(sentOptionObject, sentScriptParameter, staticVar["avSystemCode"]),  
                 TnPath    = Paths.Build(staticVar["tnDataRoot"], staticVar["avSystemCode"])
             };
 
@@ -111,11 +116,20 @@ namespace Outpost31.Core.Session
             // Module stuff
             if (tnSession.TnConfig.ModOpenIncidentMode == "enabled" && tnSession.AvData.SentScriptParameter.ToLower().StartsWith("openincident"))
             {
-                tnSession.ModOpenIncident = ModuleOpenIncident.Load($@"{tnSession.TnPath.SystemCode.Config}\ModOpenIncident.config", tnSession.TnPath.SystemCode.Sessions, tnSession.AvData.WorkOptionObject, tnSession.TraceInfo);
+               // Bring up to date -- tnSession.ModOpenIncident = ModuleOpenIncident.Load($@"{tnSession.TnPath.SystemCode.Config}\ModOpenIncident.config", tnSession.TnPath.SystemCode.Sessions, tnSession.AvData.WorkOptionObject, tnSession.TraceInfo);
             }
             else
             {
                 tnSession.ModOpenIncident = new ModuleOpenIncident();
+            }
+
+            if(tnSession.TnConfig.NtstWebServices == "enabled")
+            {
+                tnSession.NtstWebServiceSecurity = NtstWebServiceSecurity.Load(tnSession.TnPath.SystemCode.Config, staticVar["ntstSecurityFileName"]);
+            }
+            else
+            {
+                tnSession.NtstWebServiceSecurity = new NtstWebServiceSecurity();
             }
 
             Initialize(tnSession); // somewhere else?
@@ -151,7 +165,8 @@ namespace Outpost31.Core.Session
                 { "tnBuild",          "240610.0753" },
                 { "avSystemCode",     "UAT" },
                 { "tnDataRoot",       @"C:\TingenData" },
-                { "tnConfigFileName", "Tingen.config" }
+                { "tnConfigFileName", "Tingen.config" },
+                { "ntstSecurityFileName", "NtstSecurity.config" }
             };
         }
     }

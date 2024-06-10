@@ -48,7 +48,6 @@ namespace Outpost31.Core
 
                     break;
             }
-
         }
 
         /// <summary>Handles any logic related to stopping Tingen.</summary>

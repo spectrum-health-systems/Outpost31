@@ -57,6 +57,12 @@ namespace Outpost31.Core
 
                 ParseOpenIncidentModule(tnSession);
             }
+            else if (tnSession.AvData.SentScriptParameter.StartsWith("testing"))
+            {
+                LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+
+                ParseTestingModule(tnSession);
+            }
             else
             {
                 LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
@@ -134,7 +140,20 @@ namespace Outpost31.Core
             {
                 case "openincident-verify-authorisviewing":
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                    Module.OpenIncident.Action.Verify.AuthorIsViewing(tnSession);
+                    // Module.OpenIncident.Verify.AuthorIsViewing(tnSession);
+                    break;
+            }
+        }
+
+        private static void ParseTestingModule(TingenSession tnSession)
+        {
+            LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
+
+            switch (tnSession.AvData.SentScriptParameter)
+            {
+                case "testing-ntstwebservice-usermgmt-doesexist":
+                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+                    Module.Testing.NtstWebService.OnSubmit.UserMgmt.DoesExist(tnSession);
                     break;
             }
         }

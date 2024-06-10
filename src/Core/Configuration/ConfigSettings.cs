@@ -54,6 +54,10 @@ namespace Outpost31.Core.Configuration
         /// <summary>Soon.</summary>
         public string ModOpenIncidentMode { get; set; }
 
+        /// <summary>Determines if the NTST web services are enabled.</summary>
+        public string NtstWebServices { get; set; }
+
+
         /// <summary>The trace log level.</summary>
         /// <remarks>
         ///  <para>
@@ -126,6 +130,7 @@ namespace Outpost31.Core.Configuration
             {
                 TingenMode          = "disabled",
                 ModOpenIncidentMode = "disabled",
+                NtstWebServices     = "enabled",
                 TraceLevel          = 0,
                 TraceDelay          = 10
             };

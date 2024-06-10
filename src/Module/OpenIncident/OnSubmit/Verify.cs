@@ -4,7 +4,7 @@ using System.Reflection;
 using Outpost31.Core.Logger;
 using Outpost31.Core.Session;
 
-namespace Outpost31.Module.OpenIncident.Action
+namespace Outpost31.Module.OpenIncident.OnSubmit
 {
     /// <summary>VerifyAuthor command.</summary>
     public static partial class Verify
