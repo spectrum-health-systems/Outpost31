@@ -1,11 +1,11 @@
-﻿// u240525.1402
+﻿// u240605.1135
 
 using System.IO;
 using System.Text.Json;
 
 namespace Outpost31.Core.Utilities
 {
-    /// <summary>Provides JSON data export and import functionality.</summary>
+    /// <summary>Provides JSON functionality.</summary>
     public static class DuJson
     {
         /// <summary>Export JSON data to an external file.</summary>
@@ -13,16 +13,20 @@ namespace Outpost31.Core.Utilities
         /// <param name="jsonObject">The JSON object.</param>
         /// <param name="filePath">The export file path.</param>
         /// <param name="formatJson">Determines if the JSON data is formatted.</param>
-        /// <example>
-        ///     To call DuJson.ExportToLocalFile():
-        ///     <code>
-        ///         TheObject theObject = new TheObject();
-        ///         DuJson.ExportToLocalFile<TheObject>(theObject, "/Path/To/Export/File");
-        /// </code>
-        /// </example>
+        /// <remarks>
+        ///  <para>
+        ///   <example>
+        ///    To call DuJson.ExportToLocalFile():
+        ///    <code>
+        ///     TheObject theObject = new TheObject();
+        ///     DuJson.ExportToLocalFile&lt;TheObject&gt;(theObject, "/Path/To/Export/File");
+        ///    </code>
+        ///   </example>
+        ///  </para>
+        /// </remarks>
         public static void ExportToLocalFile<JsonObject>(JsonObject jsonObject, string filePath, bool formatJson = true)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Utilities.DuJson.ExportToLocalFile()]"); /* <- For development use only */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             JsonSerializerOptions jsonFormat = new JsonSerializerOptions();
 
@@ -39,7 +43,7 @@ namespace Outpost31.Core.Utilities
         /// <returns>A JSON object as a string[].</returns>
         public static string ConvertToString<JsonObject>(JsonObject jsonObject)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Utilities.DuJson.ConvertToString()]"); /* <- For development use only */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             return JsonSerializer.Serialize(jsonObject);
         }
@@ -47,16 +51,20 @@ namespace Outpost31.Core.Utilities
         /// <summary>Import JSON data from an external file.</summary>
         /// <typeparam name="JsonObject">The JSON object type.</typeparam>
         /// <param name="filePath">The import file path.</param>
-        /// <example>
-        ///     To call DuJson.ImportFromLocalFile():
-        ///     <code>
-        ///         TheObject theObject = DuJson.ImportFromLocalFile<TheObject>("/Path/To/Import/File");
-        ///     </code>
-        /// </example>
+        /// <remarks>
+        ///  <para>
+        ///   <example>
+        ///    To call DuJson.ImportFromLocalFile():
+        ///    <code>
+        ///      TheObject theObject = DuJson.ImportFromLocalFile&lt;TheObject&gt;("/Path/To/Import/File");
+        ///    </code>
+        ///   </example>
+        ///  </para>
+        /// </remarks>
         /// <returns>The contents of the file as a JSON object.</returns>
         public static JsonObject ImportFromLocalFile<JsonObject>(string filePath)
         {
-            //Outpost31.Core.Debuggler.Primeval.Log($"[Outpost31.Core.Utilities.DuJson.ImportFromLocalFile()]"); /* <- For development use only */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             var configurationFileContents = File.ReadAllText(filePath);
 
@@ -64,3 +72,10 @@ namespace Outpost31.Core.Utilities
         }
     }
 }
+
+/*
+
+Development notes
+-----------------
+
+*/
