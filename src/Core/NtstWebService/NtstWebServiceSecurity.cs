@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿// u240613.1255
+
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Outpost31.Core.Configuration;
+
+/* This class is not yet implemented, but I'm leaving it here for future reference. 
+ */
 
 namespace Outpost31.Core.NtstWebService
 {

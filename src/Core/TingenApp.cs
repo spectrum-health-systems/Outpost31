@@ -1,11 +1,6 @@
 ﻿// u240607.0917
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using Outpost31.Core.Logger;
 using Outpost31.Core.Session;
 
@@ -57,14 +52,11 @@ namespace Outpost31.Core
 
             if (tnSession.TnConfig.TingenMode == "disabled")
             {
-                tnSession.AvData.ReturnOptionObject = tnSession.AvData.SentOptionObject.Clone(); // TODO move to core functionality
+                Core.Avatar.OptionObjects.ReturnClone(tnSession);
             }
-            else
-            {
-                tnSession.AvData.ReturnOptionObject = tnSession.AvData.WorkOptionObject.Clone(); // TODO move to core functionality
-            }
+            // Else, we assume the ReturnOptionObject was formmated correctly by whatever work was done.
 
-            TingenSession.WriteSessionDetails(tnSession);     
+            TingenSession.WriteSessionDetails(tnSession);
         }
     }
 }

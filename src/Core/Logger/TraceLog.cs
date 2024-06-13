@@ -23,6 +23,8 @@ namespace Outpost31.Core.Logger
         /// <returns></returns>
         public static TraceLog BuildInfo(string traceLogPath, int traceLogLevel, int traceLogDelay)
         {
+            /* no log */
+
             return new TraceLog
             {
                 TraceLogPath  = traceLogPath,
@@ -40,6 +42,8 @@ namespace Outpost31.Core.Logger
         /// <param name="callLine"></param>
         public static void Create(int logLevel, string assemblyName, TraceLog traceInfo, string fromClass, string fromMethod, int line)
         {
+            /* no log */
+
             if (logLevel <= traceInfo.TraceLogLevel)
             {
                 Thread.Sleep(traceInfo.TraceLogDelay);
@@ -47,11 +51,14 @@ namespace Outpost31.Core.Logger
                 var traceLogPath = $@"{traceInfo.TraceLogPath}\{DateTime.Now:mmssfffffff}_{assemblyName}-{fromClass}-{fromMethod}-{line}.trace";
 
                 File.Create(traceLogPath).Dispose();
+
             }
         }
 
         public static void Create(int logLevel, string assemblyName, TraceLog traceInfo, string fromClass, string fromMethod, int line, string message)
         {
+            /* no log */
+
             if (logLevel <= traceInfo.TraceLogLevel)
             {
                 Thread.Sleep(traceInfo.TraceLogDelay);

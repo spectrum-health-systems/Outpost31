@@ -126,11 +126,11 @@ namespace Outpost31.Core.Session
                    $"```json{Environment.NewLine}" +
                    $"{tnSession.AvData.ReturnOptionObject.ToJson()}{Environment.NewLine}" +
                    $"```{Environment.NewLine}" +
-                   $"#### Formatted ReturnObject{Environment.NewLine}" +
-                   Environment.NewLine +
-                   $"```json{Environment.NewLine}" +
-                   $"{tnSession.AvData.ReturnOptionObject.ToReturnOptionObject().ToJson()}{Environment.NewLine}" +
-                   $"```{Environment.NewLine}" +
+                   //$"#### Formatted ReturnObject{Environment.NewLine}" +
+                   //Environment.NewLine +
+                   //$"```json{Environment.NewLine}" +
+                   //$"{tnSession.AvData.ReturnOptionObject.ToReturnOptionObject().ToJson()}{Environment.NewLine}" +
+                   //$"```{Environment.NewLine}" +
                    Environment.NewLine +
                    $"<br>" +
                    $"<br>" +
