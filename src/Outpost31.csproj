@@ -72,7 +72,7 @@
     <Compile Include="Core\NtstWebService\NtstWebServiceSecurity.cs" />
     <Compile Include="Core\TingenApp.cs" />
     <Compile Include="Core\Avatar\AvatarData.cs" />
-    <Compile Include="Core\Avatar\OptionObjects.cs" />
+    <Compile Include="Core\Avatar\FormatReturnObject.cs" />
     <Compile Include="Core\Framework\Catalog\SystemCodePaths.cs" />
     <Compile Include="Core\Framework\Catalog\PublicPaths.cs" />
     <Compile Include="Core\Framework\Catalog\RemotePaths.cs" />

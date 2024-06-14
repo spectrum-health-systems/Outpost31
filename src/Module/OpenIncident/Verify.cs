@@ -37,12 +37,12 @@ namespace Outpost31.Module.OpenIncident
             if (tnSession.ModOpenIncident.OriginalFullName != tnSession.ModOpenIncident.CurrentFullName)
             {
                 LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                Core.Avatar.OptionObjects.ReturnError(tnSession, "Not the original author.");
+                Core.Avatar.FormatReturnObject.AsError(tnSession, "Not the original author.");
             }
             else
             {
                 LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                Core.Avatar.OptionObjects.ReturnSuccess(tnSession);
+                Core.Avatar.FormatReturnObject.AsNone(tnSession);
             }
         }
 
@@ -59,12 +59,12 @@ namespace Outpost31.Module.OpenIncident
             if (tnSession.ModOpenIncident.OriginalFullName != tnSession.ModOpenIncident.CurrentFullName)
             {
                 LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                Core.Avatar.OptionObjects.ReturnInfo(tnSession, "Since you are not the original author, you will only be able to view this.");
+                Core.Avatar.FormatReturnObject.AsInfo(tnSession, "Since you are not the original author, you will only be able to view this.");
             }
             else
             {
                 LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                Core.Avatar.OptionObjects.ReturnSuccess(tnSession);
+                Core.Avatar.FormatReturnObject.AsNone(tnSession);
             }
         }
     }

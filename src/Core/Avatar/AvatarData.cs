@@ -1,4 +1,4 @@
-﻿// u240607.1004
+﻿// u240614.1102
 
 using ScriptLinkStandard.Objects;
 
@@ -9,10 +9,11 @@ namespace Outpost31.Core.Avatar
     ///  <para>
     ///   This class should only contain Avatar-specific data:<br/>
     ///   <list type="bullet">
-    ///    <item>The <paramref name="AvatarSystemCode"/></item>
-    ///    <item>The <paramref name="SentOptionObject"/> sent from Avatar</item>
-    ///    <item>The <paramref name="SentScriptParameter"/> sent from Avatar</item>
-    ///    <item>The <paramref name="WorkOptionObject"/> and <paramref name="ReturnOptionObject"/>, which are derived from the <paramref name="SentOptionObject"/></item>
+    ///    <item>The <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-system-code">AvatarSystemCode</see></item>
+    ///    <item>The <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-script-parameter">SentScriptParameter</see></item>
+    ///    <item>The <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-option-object">SentOptionObject</see></item>
+    ///    <item>The <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-option-object">WorkOptionObject</see></item>
+    ///    <item>The <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-option-object">ReturnOptionObject</see></item>
     ///   </list>
     ///  </para>
     /// </remarks>
@@ -21,7 +22,7 @@ namespace Outpost31.Core.Avatar
         /// <summary>The Avatar System Code.</summary>
         /// <remarks>
         ///  <para>
-        ///   - The <paramref name="AvatarSystemCode"/> is initially set in Tingen.asmx.cs (or Tingen_development.asmx.cs).<br/>
+        ///   - The <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-system-code">AvatarSystemCode</see> is initially set in Tingen.asmx.cs (or Tingen_development.asmx.cs).<br/>
         ///  </para>
         ///  <para>
         ///   Valid Avatar System Codes:
@@ -42,10 +43,7 @@ namespace Outpost31.Core.Avatar
         /// <summary>The original ScriptParameter sent from Avatar.</summary>
         /// <remarks>
         ///  <para>
-        ///   - The original <see cref="SentScriptParameter"/> sent from Avatar.<br/>
-        ///  </para>
-        ///  <para>
-        ///   The ScriptParameter is a "-" delimited string with the following compoents:
+        ///   The <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-script-parameter">SentScriptParameter</see> is a "-" delimited string with the following compoents:
         ///   <list type="table">
         ///    <item>
         ///     <term>Module</term>
@@ -76,8 +74,8 @@ namespace Outpost31.Core.Avatar
         /// <summary>The original OptionObject sent from Avatar.</summary>
         /// <remarks>
         ///  <para>
-        ///   - This should <i>not be modified</i>.<br/>
-        ///   - All session work should use the <paramref name="WorkOptionObject"/>.
+        ///   - The <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-option-object">SentOptionObject</see><i> should not be modified</i>.<br/>
+        ///   - All work should be done with the <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-option-object">WorkOptionObject</see>
         ///  </para>
         /// </remarks>
         public OptionObject2015 SentOptionObject { get; set; }
@@ -85,8 +83,9 @@ namespace Outpost31.Core.Avatar
         /// <summary>The OptionObject that is modified during the session.</summary>
         /// <remarks>
         ///  <para>
-        ///   - When a session is initialized, the <paramref name="WorkOptionObject"/> is cloned from the <paramref name="SentOptionObject"/>.<br/>
-        ///   - All session work should use the <paramref name="WorkOptionObject"/>.
+        ///   - All work should be done with the <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-option-object">WorkOptionObject</see>.<br/>
+        ///   - When a Tingen session is initialized, the <paramref name="WorkOptionObject"/> is cloned from the <paramref name="SentOptionObject"/><br/>
+        ///   - The <paramref name="WorkOptionObject"/> <i>is not</i> formatted properly for returning to Avatar.
         ///  </para>
         /// </remarks>
         public OptionObject2015 WorkOptionObject { get; set; }
@@ -94,16 +93,21 @@ namespace Outpost31.Core.Avatar
         /// <summary>The OptionObject2015 that will be returned to Avatar.</summary>
         /// <remarks>
         ///  <para>
-        ///   - Prior to returning data to Avatar, the <paramref name="ReturnOptionObject"/> is cloned from the <paramref name="WorkOptionObject"/>.<br/>
-        ///   - The <paramref name="ReturnOptionObject"/> is property formatted, and is the only valid OptionObject that will be accepted by Avatar.
+        ///   - The <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-option-object">ReturnOptionObject</see> is formatted properly to be returned to Avatar.<br/>
         ///  </para>
         /// </remarks>
         public OptionObject2015 ReturnOptionObject { get; set; }
 
         /// <summary>Builds a new AvatarData object.</summary>
-        /// <param name="sentOptionObject">The OptionObject sent from Avatar.</param>
-        /// <param name="sentScriptParameter">The ScriptParameter sent from Avatar.</param>
-        /// <param name="avSystemCode">The Avatar System Code.</param>
+        /// <param name="sentOptionObject">The <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-option-object">OptionObject</see> sent from Avatar.</param>
+        /// <param name="sentScriptParameter">The <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-script-parameter">ScriptParameter</see> sent from Avatar.</param>
+        /// <param name="avSystemCode">The <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-option-object">OptionObject</see> to be returned to Avatar.</param>
+        /// <remarks>
+        ///  <para>
+        ///   - The <paramref name="sentScriptParameter"/> is converted to lowercase so it is easier to compare against.<br/>
+        ///   - The <paramref name="workOptionObject"/> is initally set to "null", and will be finalized prior to returning to Avatar.<br/>
+        ///  </para>
+        /// </remarks>
         /// <returns>The necessary Avatar data.</returns>
         public static AvatarData BuildObject(OptionObject2015 sentOptionObject, string sentScriptParameter, string avSystemCode)
         {
@@ -124,5 +128,6 @@ namespace Outpost31.Core.Avatar
 -----------------
 Development notes
 -----------------
+
 
 */

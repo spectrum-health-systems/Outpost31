@@ -52,7 +52,7 @@ namespace Outpost31.Core
 
             if (tnSession.TnConfig.TingenMode == "disabled")
             {
-                Core.Avatar.OptionObjects.ReturnClone(tnSession);
+                Core.Avatar.FormatReturnObject.AsSentObjectClone(tnSession);
             }
             // Else, we assume the ReturnOptionObject was formmated correctly by whatever work was done.
 

@@ -12,7 +12,7 @@ namespace Outpost31.Core.Configuration
     ///  <para>
     ///   Tingen configuration settings:
     ///   <list type="bullet">
-    ///    <item>Are specific to Tingen core functionality (other components/modules have their own configurations).</item>
+    ///    <item>Are specific to Tingen core functionality (other components/modules have their own configurations)</item>
     ///    <item>Do not change between Tingen sessions</item>
     ///    <item>Can be modified by the user to suit their environment</item>
     ///   </list>

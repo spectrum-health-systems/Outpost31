@@ -26,7 +26,7 @@ namespace Outpost31.Module.Admin.Service
 
             UpdateSettings(tnSession);
 
-            Core.Avatar.OptionObjects.ReturnInfo(tnSession, "All statuses updated.");
+            Core.Avatar.FormatReturnObject.AsInfo(tnSession, "All statuses updated.");
         }
 
         public static void UpdateMode(string remoteRoot, string avSystemCode, string tnMode, TraceLog traceInfo)

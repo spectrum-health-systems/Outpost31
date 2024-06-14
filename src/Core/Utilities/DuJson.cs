@@ -78,4 +78,6 @@ namespace Outpost31.Core.Utilities
 Development notes
 -----------------
 
+- Change "configurationFileContents" to "fileContents"
+
 */
