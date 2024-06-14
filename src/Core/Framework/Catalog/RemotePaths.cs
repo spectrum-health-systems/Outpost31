@@ -9,8 +9,10 @@ namespace Outpost31.Core.Framework.Catalog
         public string Root { get; set; }
         public string Alerts { get; set; }
         public string Errors { get; set; }
-        public string ExportData { get; set; }
+        public string Exports { get; set; }
         public string Reports { get; set; }
+        public string Sessions { get; set; }
+        public string CurrentSession { get; set; }
         public string Warnings { get; set; }
 
         public static RemotePaths BuildObject(string tnDataRoot)
@@ -19,12 +21,14 @@ namespace Outpost31.Core.Framework.Catalog
 
             return new RemotePaths
             {
-                Root       = remoteRoot,
-                Alerts     = $@"{remoteRoot}\Alerts",
-                Errors     = $@"{remoteRoot}\Errors",
-                ExportData = $@"{remoteRoot}\ExportData",
-                Reports    = $@"{remoteRoot}\Reports",
-                Warnings   = $@"{remoteRoot}\Warnings"
+                Root           = remoteRoot,
+                Alerts         = $@"{remoteRoot}\Alerts",
+                Errors         = $@"{remoteRoot}\Errors",
+                Exports        = $@"{remoteRoot}\Exports",
+                Reports        = $@"{remoteRoot}\Reports",
+                Sessions       = $@"{remoteRoot}\Sessions",
+                CurrentSession = "undefined",
+                Warnings       = $@"{remoteRoot}\Warnings"
             };
         }
 
@@ -35,8 +39,9 @@ namespace Outpost31.Core.Framework.Catalog
                 remotePaths.Root,
                 remotePaths.Alerts,
                 remotePaths.Errors,
-                remotePaths.ExportData,
+                remotePaths.Exports,
                 remotePaths.Reports,
+                remotePaths.Sessions,
                 remotePaths.Warnings
             };
         }

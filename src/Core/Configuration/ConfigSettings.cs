@@ -128,10 +128,10 @@ namespace Outpost31.Core.Configuration
         {
             return new ConfigSettings
             {
-                TingenMode          = "disabled",
-                ModOpenIncidentMode = "disabled",
-                NtstWebServices     = "enabled",
-                TraceLevel          = 0,
+                TingenMode          = "enabled",
+                ModOpenIncidentMode = "enabled",
+                NtstWebServices     = "disabled",
+                TraceLevel          = 3,
                 TraceDelay          = 10
             };
         }

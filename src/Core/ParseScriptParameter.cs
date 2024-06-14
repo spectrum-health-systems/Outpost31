@@ -1,6 +1,5 @@
 ﻿// u240607.1024
 
-using System;
 using System.Reflection;
 using Outpost31.Core.Logger;
 using Outpost31.Core.Session;
@@ -67,42 +66,6 @@ namespace Outpost31.Core
             {
                 LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
             }
-
-
-
-            //switch (tnSession.AvData.SentScriptParameter)
-            //{
-            //    /* Admin Module */
-
-            //    case "admin-service-mode-update":
-            //        LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-            //        Module.Admin.Service.Status.UpdateMode(tnSession.TnConfig.TingenMode, tnSession.AvData.AvatarSystemCode, tnSession.TnConfig.TingenMode, tnSession.TraceInfo);
-            //        break;
-
-            //    case "admin-service-currentsettings-update":
-            //        LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-            //        Module.Admin.Service.Status.UpdateSettings(tnSession);
-            //        break;
-
-            //    case "admin-service-all-update":
-            //        LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-            //        Module.Admin.Service.Status.UpdateAll(tnSession);
-            //        break;
-
-            //    /* Open Incident Module */
-
-            //    case "openincident-verify-authorisviewing":
-            //        LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-            //        Module.OpenIncident.Action.Verify.AuthorIsViewing(tnSession);
-            //        break;
-
-            //    /* Fall through */
-
-            //    default:
-            //        LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-            //        // TODO: Exit gracefully
-            //        break;
-            //}
         }
 
         private static void ParseAdminModule(TingenSession tnSession)
@@ -113,34 +76,41 @@ namespace Outpost31.Core
             {
                 case "admin-service-update-mode":
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-
                     Module.Admin.Service.Status.UpdateMode(tnSession.TnPath.Remote.Root, tnSession.AvData.AvatarSystemCode, tnSession.TnConfig.TingenMode, tnSession.TraceInfo);
-
                     break;
 
                 case "admin-service-update-currentsettings":
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-
                     Module.Admin.Service.Status.UpdateSettings(tnSession);
                     break;
 
                 case "admin-service-update-all":
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-
                     Module.Admin.Service.Status.UpdateAll(tnSession);
+                    break;
+
+                default:
                     break;
             }
         }
 
         private static void ParseOpenIncidentModule(TingenSession tnSession)
         {
-            LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
+            LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo, tnSession.AvData.SentScriptParameter);
 
             switch (tnSession.AvData.SentScriptParameter)
             {
-                case "openincident-verify-authorisviewing":
+                case "openincident-verify-originalauthorisopening":
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                    // Module.OpenIncident.Verify.AuthorIsViewing(tnSession);
+                    Module.OpenIncident.Verify.OriginalAuthorIsOpening(tnSession);
+                    break;
+
+                case "openincident-verify-originalauthorissubmitting":
+                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+                    Module.OpenIncident.Verify.OriginalAuthorIsSubmitting(tnSession);
+                    break;
+
+                default:
                     break;
             }
         }
@@ -151,9 +121,7 @@ namespace Outpost31.Core
 
             switch (tnSession.AvData.SentScriptParameter)
             {
-                case "testing-ntstwebservice-usermgmt-doesexist":
-                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                    Module.Testing.NtstWebService.OnSubmit.UserMgmt.DoesExist(tnSession);
+                default:
                     break;
             }
         }

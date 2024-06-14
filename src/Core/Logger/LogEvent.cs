@@ -70,4 +70,6 @@ Development notes
 
   var calledClass = calledPath.Split('\\').Last();
 
+- Make sure that passing the entire TingenSession object OR the traceInfo object work the same.
+
 */

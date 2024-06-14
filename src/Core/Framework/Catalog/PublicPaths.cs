@@ -9,7 +9,7 @@ namespace Outpost31.Core.Framework.Catalog
         public string Root { get; set; }
         public string Alerts { get; set; }
         public string Errors { get; set; }
-        public string ExportData { get; set; }
+        public string Exports { get; set; }
         public string Reports { get; set; }
         public string Warnings { get; set; }
 
@@ -19,12 +19,12 @@ namespace Outpost31.Core.Framework.Catalog
 
             return new PublicPaths
             {
-                Root       = publicRoot,
-                Alerts     = $@"{publicRoot}\Alerts",
-                Errors     = $@"{publicRoot}\Errors",
-                ExportData = $@"{publicRoot}\ExportData",
-                Reports    = $@"{publicRoot}\Reports",
-                Warnings   = $@"{publicRoot}\Warnings"
+                Root     = publicRoot,
+                Alerts   = $@"{publicRoot}\Alerts",
+                Errors   = $@"{publicRoot}\Errors",
+                Exports  = $@"{publicRoot}\Exports",
+                Reports  = $@"{publicRoot}\Reports",
+                Warnings = $@"{publicRoot}\Warnings"
             };
         }
 
@@ -35,7 +35,7 @@ namespace Outpost31.Core.Framework.Catalog
                 publicPaths.Root,
                 publicPaths.Alerts,
                 publicPaths.Errors,
-                publicPaths.ExportData,
+                publicPaths.Exports,
                 publicPaths.Reports,
                 publicPaths.Warnings
             };

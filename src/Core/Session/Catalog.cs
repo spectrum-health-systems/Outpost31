@@ -55,29 +55,33 @@ namespace Outpost31.Core.Session
                    Environment.NewLine +
                    $"### System Code{Environment.NewLine}" +
                    Environment.NewLine +
-                   $"Root: {tnSession.TnPath.SystemCode.Root}  {Environment.NewLine}" +
-                   $"Admin: {tnSession.TnPath.SystemCode.Admin}  {Environment.NewLine}" +
-                   $"Alerts: {tnSession.TnPath.SystemCode.Alerts}  {Environment.NewLine}" +
-                   $"Archive: {tnSession.TnPath.SystemCode.Archive}  {Environment.NewLine}" +
+                   $"**System Code Root**: {tnSession.TnPath.SystemCode.Root}  {Environment.NewLine}" +
                    $"Configuration: {tnSession.TnPath.SystemCode.Config}  {Environment.NewLine}" +
-                   $"Debugging: {tnSession.TnPath.SystemCode.Debug}  {Environment.NewLine}" +
-                   $"Errors: {tnSession.TnPath.SystemCode.Errors}  {Environment.NewLine}" +
-                   $"Exports: {tnSession.TnPath.SystemCode.ExportData}  {Environment.NewLine}" +
-                   $"Extensions: {tnSession.TnPath.SystemCode.Extensions}  {Environment.NewLine}" +
-                   $"Imports: {tnSession.TnPath.SystemCode.ImportData}  {Environment.NewLine}" +
-                   $"Logs: {tnSession.TnPath.SystemCode.Logs}  {Environment.NewLine}" +
-                   $"Reports: {tnSession.TnPath.SystemCode.Reports}  {Environment.NewLine}" +
                    $"Sessions: {tnSession.TnPath.SystemCode.Sessions}  {Environment.NewLine}" +
-                   $"Templates: {tnSession.TnPath.SystemCode.Templates}  {Environment.NewLine}" +
+                   $"Extensions: {tnSession.TnPath.SystemCode.Extensions}  {Environment.NewLine}" +
+                   $"Security: {tnSession.TnPath.SystemCode.Security}  {Environment.NewLine}" +
                    $"Temporary data: {tnSession.TnPath.SystemCode.Temporary}  {Environment.NewLine}" +
+                   $"**Message Root**: {tnSession.TnPath.SystemCode.MessageRoot}  {Environment.NewLine}" +
+                   $"Alerts: {tnSession.TnPath.SystemCode.Alerts}  {Environment.NewLine}" +
+                   $"Errors: {tnSession.TnPath.SystemCode.Errors}  {Environment.NewLine}" +
                    $"Warnings: {tnSession.TnPath.SystemCode.Warnings}  {Environment.NewLine}" +
+                   $"**Exports**: {tnSession.TnPath.SystemCode.ExportRoot}  {Environment.NewLine}" +
+                   $"Reports: {tnSession.TnPath.SystemCode.Reports}  {Environment.NewLine}" +
+                   $"**Imports**: {tnSession.TnPath.SystemCode.ImportRoot}  {Environment.NewLine}" +
+                   $"From Avatar: {tnSession.TnPath.SystemCode.FromAvatar}  {Environment.NewLine}" +
+                   $"Templates: {tnSession.TnPath.SystemCode.Templates}  {Environment.NewLine}" +
+                   $"**Support**: {tnSession.TnPath.SystemCode.SupportRoot}  {Environment.NewLine}" +
+                   $"Admin: {tnSession.TnPath.SystemCode.Admin}  {Environment.NewLine}" +
+                   $"Archive: {tnSession.TnPath.SystemCode.Archive}  {Environment.NewLine}" +
+                   $"Debugging: {tnSession.TnPath.SystemCode.Debugging}  {Environment.NewLine}" +
+                   $"Logs: {tnSession.TnPath.SystemCode.Logs}  {Environment.NewLine}" +
                    Environment.NewLine +
                    $"### Public{Environment.NewLine}" +
                    Environment.NewLine +
                    $"Root: {tnSession.TnPath.Public.Root}  {Environment.NewLine}" +
                    $"Alerts: {tnSession.TnPath.Public.Alerts}  {Environment.NewLine}" +
                    $"Errors: {tnSession.TnPath.Public.Errors}  {Environment.NewLine}" +
-                   $"Exports: {tnSession.TnPath.Public.ExportData}  {Environment.NewLine}" +
+                   $"Exports: {tnSession.TnPath.Public.Exports}  {Environment.NewLine}" +
                    $"Reports: {tnSession.TnPath.Public.Reports}  {Environment.NewLine}" +
                    $"Warnings: {tnSession.TnPath.Public.Warnings}  {Environment.NewLine}" +
                    Environment.NewLine +
@@ -86,7 +90,7 @@ namespace Outpost31.Core.Session
                    $"Root: {tnSession.TnPath.Remote.Root}  {Environment.NewLine}" +
                    $"Alerts: {tnSession.TnPath.Remote.Alerts}  {Environment.NewLine}" +
                    $"Errors: {tnSession.TnPath.Remote.Errors}  {Environment.NewLine}" +
-                   $"Exports: {tnSession.TnPath.Remote.ExportData}  {Environment.NewLine}" +
+                   $"Exports: {tnSession.TnPath.Remote.Exports}  {Environment.NewLine}" +
                    $"Reports: {tnSession.TnPath.Remote.Reports}  {Environment.NewLine}" +
                    $"Warnings: {tnSession.TnPath.Remote.Warnings}  {Environment.NewLine}";
         }
@@ -122,11 +126,11 @@ namespace Outpost31.Core.Session
                    $"```json{Environment.NewLine}" +
                    $"{tnSession.AvData.ReturnOptionObject.ToJson()}{Environment.NewLine}" +
                    $"```{Environment.NewLine}" +
-                   $"#### Formatted ReturnObject{Environment.NewLine}" +
-                   Environment.NewLine +
-                   $"```json{Environment.NewLine}" +
-                   $"{tnSession.AvData.ReturnOptionObject.ToReturnOptionObject().ToJson()}{Environment.NewLine}" +
-                   $"```{Environment.NewLine}" +
+                   //$"#### Formatted ReturnObject{Environment.NewLine}" +
+                   //Environment.NewLine +
+                   //$"```json{Environment.NewLine}" +
+                   //$"{tnSession.AvData.ReturnOptionObject.ToReturnOptionObject().ToJson()}{Environment.NewLine}" +
+                   //$"```{Environment.NewLine}" +
                    Environment.NewLine +
                    $"<br>" +
                    $"<br>" +
