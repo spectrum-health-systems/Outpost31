@@ -1,8 +1,7 @@
-﻿// u240607.1023
+﻿// u240617.1101
 
 using System;
 using System.Collections.Generic;
-using System.Reflection;
 using Outpost31.Core.Avatar;
 using Outpost31.Core.Configuration;
 using Outpost31.Core.Framework;
@@ -29,6 +28,9 @@ namespace Outpost31.Core.Session
         public string Date { get; set; }
         /// <summary>The session timestamp.</summary>
         public string Time { get; set; }
+
+        /// <summary>Return the cloned OptionObject.</summary>
+        public bool ReturnClonedOptionObject { get; set; }
 
         /// <summary>Config</summary>
         public ConfigSettings TnConfig { get; set; }
@@ -90,15 +92,8 @@ namespace Outpost31.Core.Session
         /// <returns>An Tingen Session object.</returns>
         public static TingenSession Build(OptionObject2015 sentOptionObject, string sentScriptParameter, string tnVersion)
         {
-
-
-            var staticVar = BuildStaticVars();
-
-
-
+            var staticVar  = BuildStaticVars();
             var configPath = $@"{staticVar["tnDataRoot"]}\{staticVar["avSystemCode"]}\Config";
-
-
 
             var tnSession = new TingenSession
             {
@@ -106,47 +101,32 @@ namespace Outpost31.Core.Session
                 TnBuild   = staticVar["tnBuild"],
                 Date      = DateTime.Now.ToString("yyMMdd"),
                 Time      = DateTime.Now.ToString("HHmmss"),
+                ReturnClonedOptionObject = false,
                 TnConfig  = ConfigSettings.Load(configPath, staticVar["tnConfigFileName"]),
                 AvData    = AvatarData.BuildObject(sentOptionObject, sentScriptParameter, staticVar["avSystemCode"]),
                 TnPath    = Paths.Build(staticVar["tnDataRoot"], staticVar["avSystemCode"])
             };
 
-
-
-            //////tnSession.Path = Paths.Build(tnSession.Config.TingenDataRoot, avSystemCode);
-
             /* The session-specific path is built here. */
             tnSession.TnPath.SystemCode.CurrentSession = $@"{tnSession.TnPath.SystemCode.Sessions}\{tnSession.Date}\{sentOptionObject.OptionUserId}\{tnSession.Time}-{tnSession.AvData.SentScriptParameter}";
             tnSession.TnPath.Remote.CurrentSession     =  $@"{tnSession.TnPath.Remote.Sessions}\{sentOptionObject.OptionUserId}\{tnSession.Date}";
 
-
-
             /* Trace info */
             tnSession.TraceInfo = TraceLog.BuildInfo(tnSession.TnPath.SystemCode.CurrentSession, tnSession.TnConfig.TraceLevel, tnSession.TnConfig.TraceDelay);
-
-
 
             // Module stuff
             if (tnSession.TnConfig.ModOpenIncidentMode == "enabled" && tnSession.AvData.SentScriptParameter.ToLower().StartsWith("openincident"))
             {
-
-
                 tnSession.ModOpenIncident = ModuleOpenIncident.Load($@"{tnSession.TnPath.SystemCode.Config}\ModOpenIncident.config", tnSession.TnPath.SystemCode.Sessions, tnSession.AvData.WorkOptionObject, tnSession.TraceInfo);
             }
             else
             {
-
-
                 tnSession.ModOpenIncident = new ModuleOpenIncident();
             }
-
-
 
             tnSession.NtstWebServiceSecurity =tnSession.TnConfig.NtstWebServices == "enabled"
                 ? NtstWebServiceSecurity.Load(tnSession.TnPath.SystemCode.Config, staticVar["ntstSecurityFileName"])
                 : new NtstWebServiceSecurity();
-
-
 
             Initialize(tnSession); // somewhere else?
 
@@ -157,8 +137,6 @@ namespace Outpost31.Core.Session
         /// <param name="tnSession"></param>
         public static void Initialize(TingenSession tnSession)
         {
-            LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name, tnSession.TnPath.SystemCode.CurrentSession);
-
             Maintenance.VerifyDirectory(tnSession.TnPath.SystemCode.CurrentSession);
             Maintenance.VerifyDirectory(tnSession.TnPath.Remote.CurrentSession);
         }
@@ -173,7 +151,7 @@ namespace Outpost31.Core.Session
         {
             return new Dictionary<string, string>
             {
-                { "tnBuild",              "240610.0753" },
+                { "tnBuild",              "240617.1159" },
                 { "avSystemCode",         "UAT" },
                 { "tnDataRoot",           @"C:\TingenData" },
                 { "tnConfigFileName",     "Tingen.config" },

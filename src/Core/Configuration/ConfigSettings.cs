@@ -1,13 +1,13 @@
-﻿// u240607.1007
+﻿// u240620.1203
 
 using System.IO;
 
 namespace Outpost31.Core.Configuration
 {
-    /// <summary>Tingen configuration.</summary>
+    /// <summary>Tingen configuration settings.</summary>
     /// <remarks>
     ///  <para>
-    ///   - The Tingen configuration file is located in <b>TingenData\%SystemCode%\Config\Tingen.config</b>.
+    ///   - The Tingen configuration file is located in <i>"TingenData\%SystemCode%\Config\Tingen.config"</i>.
     ///  </para>
     ///  <para>
     ///   Tingen configuration settings:
@@ -16,6 +16,9 @@ namespace Outpost31.Core.Configuration
     ///    <item>Do not change between Tingen sessions</item>
     ///    <item>Can be modified by the user to suit their environment</item>
     ///   </list>
+    ///  </para>
+    ///  <para>
+    ///   - More information about configuring Tingen <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-configuration">here.</see>
     ///  </para>
     /// </remarks>
     public class ConfigSettings
@@ -33,43 +36,54 @@ namespace Outpost31.Core.Configuration
         ///     <term>Disabled</term>
         ///     <description>Tingen is disabled, and the sentObject is returned to Avatar unmodified.</description>
         ///    </item>
-        ///    <item>
-        ///     <term>Development</term>
-        ///     <description>Tingen is enabled, and development/debugging data is reset at execution.</description>
-        ///    </item>
         ///   </list>
         ///  </para>
         ///  <para>
-        ///   <b>More information about the Tingen mode setting:</b><br/>
-        ///   Setting the mode to <i>disabled</i> is the equivalent of disabling ScriptLink calls on every form that uses Tingen. This
-        ///   is a good way to "turn off" the web service quickly, without having to modify every form that uses it.<br/><br/>
-        ///   When disabled, the majority of the work is done in <b>Tingen.asmx.cs</b>, not in Outpost31, so it should have an
-        ///   insignificant affect on Avatar's performance.<br/><br/>
-        ///   You can also enable/disable individual Modules, Commands, and Actions via their associated configuration files.
-        ///   This allows you to disable specific functionality without affecting the rest of Tingen.<br/><br/>
+        ///  - There is logic to catch <i>"enable"</i> and <i>"disable"</i>, since I kept making that mistake.<br/>
+        ///  - More information about Tingen modes <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-modes">here.</see>
         ///  </para>
         /// </remarks>
         public string TingenMode { get; set; }
 
-        /// <summary>Soon.</summary>
+        /// <summary>Determines if the <b>Open Incident Module</b> is enabled.</summary>
+        /// <remarks>
+        ///  <para>
+        ///   Valid Open Incident Module modes:
+        ///   <list type="table">
+        ///    <item>
+        ///     <term>Enabled (default)</term>
+        ///     <description>The Open Incident Module is enabled.</description>
+        ///    </item>
+        ///    <item>
+        ///     <term>Disabled</term>
+        ///     <description>The Open Incident Module is disabled., and the sentObject is returned to Avatar unmodified.</description>
+        ///    </item>
+        ///   </list>
+        ///  </para>
+        ///  <para>
+        ///  - Disabling this module not affect other modules, or Tingen as a whole.
+        ///  - More information about Tingen modes <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-modes">here.</see>
+        ///  </para>
+        /// </remarks>
         public string ModOpenIncidentMode { get; set; }
 
         /// <summary>Determines if the NTST web services are enabled.</summary>
-        public string NtstWebServices { get; set; }
-
-
-        /// <summary>The trace log level.</summary>
         /// <remarks>
         ///  <para>
-        ///   Trace logs are written to <b>%TingenDataRoot%\%AvatarSystemCode%\YYMM\%OptionUserId%\HHMMSS\TraceLogs\%</b>.
+        ///   - Currently not used, but will be in the future.<br/>
+        ///   - This should be set to "<b>disabled</b>" until the NTST web services are implemented.
         ///  </para>
+        /// </remarks>
+        public string NtstWebServices { get; set; }
+
+        /// <summary>The trace logging level.</summary>
+        /// <remarks>
         ///  <para>
-        ///   <b>More information about the trace log level:</b><br/>
-        ///   Trace logs calls include a <i>log level</i> parameter.<br/><br/>
-        ///   If the log level of the call is <i>less than or equal</i> to the TraceLogLevel, the log will be written. Otherwise,
-        ///   the log will be skipped.<br/><br/>
-        ///   This allows you to place log calls throughout the code, and then control the amount of logging that is done when Tingen
-        ///   is executed.<br/><br/>
+        ///   - Trace logs with a level less than or equal to the <paramref name="TraceLevel"/> will be written.<br/>
+        ///   - Trace logs are written to <i>"%TingenDataRoot%\%AvatarSystemCode%\YYMM\%OptionUserId%\HHMMSS\"</i>.<br/>
+        ///   - More information about trace logs can be found <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#logging">here</see>.
+        ///  </para>
+        /// </remarks>
         ///   <example>
         ///    If the TraceLogLevel is set to "<c>2</c>", the following log calls will be executed:<br/>
         ///    <c>LogEvent.Trace(1, tnSession.TraceLogs, Asm);</c><br/>
@@ -78,49 +92,29 @@ namespace Outpost31.Core.Configuration
         ///    <c>LogEvent.Trace(4, tnSession.TraceLogs, Asm);</c><br/>
         ///    <c>LogEvent.Trace(5, tnSession.TraceLogs, Asm);</c>
         ///   </example>
-        ///  </para>
-        /// </remarks>
+        /// <value>
+        ///  0 (default)
+        /// </value>
         public int TraceLevel { get; set; }
 
         /// <summary>The delay between trace log writes.</summary>
         /// <remarks>
-        ///  <para>"
+        ///  <para>
         ///   - In some cases, logs may be written too quickly, and cause files to be overwritten.<br/>
-        ///   - By including a short delay, the logs can be written in a way that prevents this from happening.<br/><br/>
+        ///   - By including a short delay, the logs can be written in a way that prevents this from happening.<br/>
         ///  </para>
-        /// </remarks>"
+        /// </remarks>
+        /// <value>
+        ///  10 (default)
+        /// </value>
         public int TraceDelay { get; set; }
 
         /// <summary>Build a default Tingen configuration object.</summary>
         /// <remarks>
         ///  <para>
         ///   - These are the default values for the Tingen configuration settings.<br/>
-        ///   - When a new version of Tingen is released, these need to be verified/updated.
-        ///  </para>
-        ///  <para>
-        ///   Default values:
-        ///   <list type="table">
-        ///    <item>
-        ///     <term>TingenMode</term>
-        ///     <description>"Enabled"</description>
-        ///    </item>
-        ///    <item>
-        ///     <term>TingenVersionBuild</term>
-        ///     <description><b>%version%-%build%</b> (ex: <b>24.5.0-240525.1310)</b></description>
-        ///    </item>
-        ///    <item>
-        ///     <term>TingenDataRoot</term>
-        ///     <description>@"C:\TingenData"</description>
-        ///    </item>
-        ///    <item>
-        ///     <term>TraceLogLevel</term>
-        ///     <description>0</description>
-        ///    </item>
-        ///    <item>
-        ///     <term>TraceLogDelay</term>
-        ///     <description>0</description>
-        ///    </item>
-        ///   </list>
+        ///   - When a new version of Tingen is released, these need to be verified/updated.<br/>
+        ///   - More information about configuring Tingen <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-configuration">here.</see>
         ///  </para>
         /// </remarks>
         /// <returns>An object with default Tingen configuration values.</returns>
@@ -166,10 +160,11 @@ namespace Outpost31.Core.Configuration
 
 /*
 
------------------
-Development notes
------------------
+=================
+DEVELOPMENT NOTES
+=================
 
+- Rename this directory to "Configs"?
 - Create a "blacklist" that will allow certain users to bypass Tingen?
 
 */

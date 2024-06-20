@@ -3,9 +3,9 @@
 // https://github.com/APrettyCoolProgram/Outpost31
 // Copyright (c) A Pretty Cool Program. All rights reserved.
 // Licensed under the Apache 2.0 license.
-// ================================================================ 240614 =====
+// ================================================================ 240620 =====
 
-// u240610.0732
+// u240617.0853
 
 /* ----------------------------------
  * IMPORTANT INFORMATION ABOUT OUTPOST31
@@ -17,6 +17,7 @@ namespace Outpost31
 {
     internal class WelcomeToOutpost31
     {
+        // Nothing is done here, it's just for documentation.
     }
 }
 
@@ -32,9 +33,9 @@ VALID SCRIPT PARAMETERS
 
 Module: Admin
 
-* admin-service-update-mode
-* admin-service-update-currentsettings
-* admin-service-update-all
+* admin-service-update-mode > Admin-Mode-Status-Update
+* admin-service-update-currentsettings > Admin-CurrentSettings-Status-Update
+* admin-service-update-all > Admin-All-Status-Update
 
 Module: OpenIncident
 

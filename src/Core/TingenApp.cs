@@ -1,4 +1,4 @@
-﻿// u240607.0917
+﻿// u240617.1103
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -28,6 +28,8 @@ namespace Outpost31.Core
                 case "disabled":
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
                     Framework.Refresh.RefreshOnDisable(tnSession);
+                    //tnSession.ReturnClonedOptionObject = true;
+                    Core.Avatar.ReturnObject.Finalize(tnSession, "clone", "");
 
                     break;
 
@@ -50,10 +52,10 @@ namespace Outpost31.Core
         {
             LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
 
-            if (tnSession.TnConfig.TingenMode == "disabled")
-            {
-                Core.Avatar.FormatReturnObject.AsSentObjectClone(tnSession);
-            }
+            //if (tnSession.ReturnClonedOptionObject == true)
+            //{
+            //    Core.Avatar.ReturnObject.Finalize(tnSession, "clone", "");
+            //}
             // Else, we assume the ReturnOptionObject was formmated correctly by whatever work was done.
 
             TingenSession.WriteSessionDetails(tnSession);
@@ -66,5 +68,9 @@ namespace Outpost31.Core
 -----------------
 Development notes
 -----------------
+
+* Add a "development" mode:
+    - Removes all Primeval logs
+    - Removes all Session data (UAT only)
 
 */

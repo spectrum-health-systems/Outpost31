@@ -1,4 +1,4 @@
-﻿// u240607.1049
+﻿// u240617.1146
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -17,14 +17,23 @@ namespace Outpost31.Module.OpenIncident
         /// </remarks>
         public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
-        //public static void GetAuthorInformation(TingenSession tnSession)
-        //{
-        //    tnSession.ModOpenIncident.OriginalFullName = tnSession.AvData.SentOptionObject.GetFieldValue("32");
+        public static void OriginalAuthorIsOpening(TingenSession tnSession)
+        {
+            LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 
-        //    tnSession.ModOpenIncident.CurrentFullName = ImportedFile.GetFullName(tnSession.TnPath.SystemCode.FromAvatar, tnSession.AvData.SentOptionObject.OptionUserId, tnSession.TraceInfo);
+            ModuleOpenIncident.GetAuthorInformation(tnSession);
 
-        //        //var match = ImportedFile.GetFullName(tnSession.TnPath.SystemCode.FromAvatar, tnSession.AvData.SentOptionObject.OptionUserId, tnSession.ModOpenIncident.OriginalFullName, tnSession.TraceInfo);
-        //}
+            if (tnSession.ModOpenIncident.OriginalFullName != tnSession.ModOpenIncident.CurrentFullName)
+            {
+                LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+                Core.Avatar.ReturnObject.Finalize(tnSession, tnSession.ModOpenIncident.FormOpenErrorCode, tnSession.ModOpenIncident.FormOpenMessage);
+            }
+            else
+            {
+                LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+                Core.Avatar.ReturnObject.Finalize(tnSession, "none");
+            }
+        }
 
         /// <summary>Verify the Avatar user is the same as the original author.</summary>
         /// <param name="tnSession"></param>
@@ -37,34 +46,12 @@ namespace Outpost31.Module.OpenIncident
             if (tnSession.ModOpenIncident.OriginalFullName != tnSession.ModOpenIncident.CurrentFullName)
             {
                 LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                Core.Avatar.FormatReturnObject.AsError(tnSession, "Not the original author.");
+                Core.Avatar.ReturnObject.Finalize(tnSession, tnSession.ModOpenIncident.FormSubmitErrorCode, tnSession.ModOpenIncident.FormSubmitMessage);
             }
             else
             {
                 LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                Core.Avatar.FormatReturnObject.AsNone(tnSession);
-            }
-        }
-
-        public static void OriginalAuthorIsOpening(TingenSession tnSession)
-        {
-            LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
-
-            //var originalAuthor = tnSession.AvData.SentOptionObject.GetFieldValue("32");
-
-            //var fullAuthor = ImportedFile.GetFullName(tnSession.TnPath.SystemCode.FromAvatar, tnSession.AvData.SentOptionObject.OptionUserId, originalAuthor, tnSession.TraceInfo);
-
-            ModuleOpenIncident.GetAuthorInformation(tnSession);
-
-            if (tnSession.ModOpenIncident.OriginalFullName != tnSession.ModOpenIncident.CurrentFullName)
-            {
-                LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                Core.Avatar.FormatReturnObject.AsInfo(tnSession, "Since you are not the original author, you will only be able to view this.");
-            }
-            else
-            {
-                LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                Core.Avatar.FormatReturnObject.AsNone(tnSession);
+                Core.Avatar.ReturnObject.Finalize(tnSession, "none");
             }
         }
     }

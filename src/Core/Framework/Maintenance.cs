@@ -1,4 +1,4 @@
-﻿// u240605.1111
+﻿// u2240617.1053
 
 using System.Collections.Generic;
 using System.Reflection;
@@ -6,6 +6,7 @@ using Outpost31.Core.Session;
 
 namespace Outpost31.Core.Framework
 {
+    /// <summary>Methods for maintaining the Tingen framework.</summary>
     public static class Maintenance
     {
         /// <summary>Assembly name for log files.</summary>
@@ -22,7 +23,9 @@ namespace Outpost31.Core.Framework
             // TODO
         }
 
-        public static void VerifyFrameworkStructure(TingenSession tnSession)
+        /// <summary>Verify the Tingen framework.</summary>
+        /// <param name="tnSession"></param>
+        public static void VerifyFramework(TingenSession tnSession)
         {
             VerifyDirectories(Catalog.TingenPaths.RequiredPaths(tnSession.TnPath.Tingen));
             VerifyDirectories(Catalog.PublicPaths.RequiredPaths(tnSession.TnPath.Public));

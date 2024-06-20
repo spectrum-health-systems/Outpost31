@@ -1,4 +1,4 @@
-﻿// u240607.1023
+﻿// u240617.1101
 
 using System;
 using System.Reflection;
@@ -46,6 +46,17 @@ namespace Outpost31.Core.Session
                    //$"Enabled: {tnSession.ModAdminEnabled}  {Environment.NewLine}" +
                    //$"Whitelist: {tnSession.ModAdminWhitelist}  {Environment.NewLine}" +
                    Environment.NewLine +
+                   $"### Open Incident Module{Environment.NewLine}" +
+                   Environment.NewLine +
+                   $"Enabled: {tnSession.TnConfig.ModOpenIncidentMode}  {Environment.NewLine}" +
+                   $"Whitelist: {tnSession.ModOpenIncident.Whitelist}  {Environment.NewLine}" +
+                   $"Blacklist: {tnSession.ModOpenIncident.Blacklist}  {Environment.NewLine}" +
+                   $"Person Completing Incident Form Field Id: {tnSession.ModOpenIncident.PersonCompletingIncidentFormFieldId}  {Environment.NewLine}" +
+                   $"Form Open Message: {tnSession.ModOpenIncident.FormOpenMessage}  {Environment.NewLine}" +
+                   $"Form Open Error Code: {tnSession.ModOpenIncident.FormOpenErrorCode}  {Environment.NewLine}" +
+                   $"Form Submit Message: {tnSession.ModOpenIncident.FormSubmitMessage}  {Environment.NewLine}" +
+                   $"Form Submit Error Code: {tnSession.ModOpenIncident.FormSubmitErrorCode}  {Environment.NewLine}" +
+                   Environment.NewLine +
                    $"## Paths{Environment.NewLine}" +
                    Environment.NewLine +
                    $"### Tingen{Environment.NewLine}" +
@@ -56,21 +67,26 @@ namespace Outpost31.Core.Session
                    $"### System Code{Environment.NewLine}" +
                    Environment.NewLine +
                    $"**System Code Root**: {tnSession.TnPath.SystemCode.Root}  {Environment.NewLine}" +
+                   Environment.NewLine +
                    $"Configuration: {tnSession.TnPath.SystemCode.Config}  {Environment.NewLine}" +
                    $"Sessions: {tnSession.TnPath.SystemCode.Sessions}  {Environment.NewLine}" +
                    $"Extensions: {tnSession.TnPath.SystemCode.Extensions}  {Environment.NewLine}" +
                    $"Security: {tnSession.TnPath.SystemCode.Security}  {Environment.NewLine}" +
                    $"Temporary data: {tnSession.TnPath.SystemCode.Temporary}  {Environment.NewLine}" +
                    $"**Message Root**: {tnSession.TnPath.SystemCode.MessageRoot}  {Environment.NewLine}" +
+                   Environment.NewLine +
                    $"Alerts: {tnSession.TnPath.SystemCode.Alerts}  {Environment.NewLine}" +
                    $"Errors: {tnSession.TnPath.SystemCode.Errors}  {Environment.NewLine}" +
                    $"Warnings: {tnSession.TnPath.SystemCode.Warnings}  {Environment.NewLine}" +
                    $"**Exports**: {tnSession.TnPath.SystemCode.ExportRoot}  {Environment.NewLine}" +
+                   Environment.NewLine +
                    $"Reports: {tnSession.TnPath.SystemCode.Reports}  {Environment.NewLine}" +
                    $"**Imports**: {tnSession.TnPath.SystemCode.ImportRoot}  {Environment.NewLine}" +
+                   Environment.NewLine +
                    $"From Avatar: {tnSession.TnPath.SystemCode.FromAvatar}  {Environment.NewLine}" +
                    $"Templates: {tnSession.TnPath.SystemCode.Templates}  {Environment.NewLine}" +
                    $"**Support**: {tnSession.TnPath.SystemCode.SupportRoot}  {Environment.NewLine}" +
+                   Environment.NewLine +
                    $"Admin: {tnSession.TnPath.SystemCode.Admin}  {Environment.NewLine}" +
                    $"Archive: {tnSession.TnPath.SystemCode.Archive}  {Environment.NewLine}" +
                    $"Debugging: {tnSession.TnPath.SystemCode.Debugging}  {Environment.NewLine}" +
@@ -95,14 +111,23 @@ namespace Outpost31.Core.Session
                    $"Warnings: {tnSession.TnPath.Remote.Warnings}  {Environment.NewLine}";
         }
 
+        /// <summary>Soon.</summary>
+        /// <param name="tnSession"></param>
+        /// <returns></returns>
         public static string SessionDetails(TingenSession tnSession)
         {
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 
+            var nowTime = DateTime.Now.ToString("HHmmss");
+
+            var diffTime = Convert.ToInt32(nowTime) - Convert.ToInt32(tnSession.Time);
+
             return $"# Session details{Environment.NewLine}" +
                    Environment.NewLine +
                    $"**Session date:** {tnSession.Date}  {Environment.NewLine}" +
-                   $"**Session time:** {tnSession.Time}  {Environment.NewLine}" +
+                   $"**Session start time:** {tnSession.Time}  {Environment.NewLine}" +
+                   $"**Session end time:** {nowTime}  {Environment.NewLine}" +
+                   $"**Session duration:** {diffTime} seconds  {Environment.NewLine}" +
                    Environment.NewLine +
                    $"## Avatar details{Environment.NewLine}" +
                    Environment.NewLine +

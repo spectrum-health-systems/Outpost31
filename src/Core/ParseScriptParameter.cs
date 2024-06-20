@@ -36,14 +36,6 @@ namespace Outpost31.Core
         {
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 
-            if (tnSession.TnConfig.TingenMode == "development")
-            {
-                LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-
-                // TODO - broken?
-                //PrimevalLog.DevelopmentCleanup();
-            }
-
             if (tnSession.AvData.SentScriptParameter.StartsWith("admin"))
             {
                 LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
@@ -52,9 +44,25 @@ namespace Outpost31.Core
             }
             else if (tnSession.AvData.SentScriptParameter.StartsWith("openincident"))
             {
-                LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-
-                ParseOpenIncidentModule(tnSession);
+                if (tnSession.TnConfig.ModOpenIncidentMode == "enabled")
+                {
+                    if ((tnSession.ModOpenIncident.Whitelist.Count == 0) || (tnSession.ModOpenIncident.Whitelist.Contains(tnSession.AvData.SentOptionObject.OptionUserId)))
+                    {
+                        LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+                        ParseOpenIncidentModule(tnSession);
+                    }
+                    else
+                    {
+                        LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+                        Core.Avatar.ReturnObject.Finalize(tnSession, "clone", "");
+                    }
+                }
+                else
+                {
+                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+                    //tnSession.ReturnClonedOptionObject = true;
+                    Core.Avatar.ReturnObject.Finalize(tnSession, "clone", "");
+                }
             }
             else if (tnSession.AvData.SentScriptParameter.StartsWith("testing"))
             {

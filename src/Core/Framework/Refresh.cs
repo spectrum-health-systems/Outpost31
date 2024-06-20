@@ -1,9 +1,10 @@
-﻿// u240607.1017
+﻿// u240617.1055
 
 using Outpost31.Core.Session;
 
 namespace Outpost31.Core.Framework
 {
+    /// <summary>Refresh the Tingen directory structure.</summary>
     public static class Refresh
     {
         /// <summary>Refresh the Tingen directory structure when Tingen is disabled.</summary>
@@ -14,20 +15,15 @@ namespace Outpost31.Core.Framework
         /// <param name="tnSession"></param>
         public static void RefreshOnDisable(TingenSession tnSession)
         {
-            Maintenance.VerifyFrameworkStructure(tnSession);
+            Maintenance.VerifyFramework(tnSession);
             Module.Admin.Service.Status.UpdateAll(tnSession);
         }
 
+        /// <summary>Refresh the Tingen directory structure when Tingen is in an unknown state.</summary>
         public static void RefreshOnUnknown(TingenSession tnSession)
         {
-            Maintenance.VerifyFrameworkStructure(tnSession);
+            Maintenance.VerifyFramework(tnSession);
             Module.Admin.Service.Status.UpdateAll(tnSession);
-        }
-
-        public static void RefreshOnDevelopment(TingenSession tnSession)
-        {
-            Maintenance.RefreshDirectory(tnSession.TnPath.Tingen.Primeval);
-            Maintenance.RefreshDirectory(tnSession.TnPath.SystemCode.Sessions);
         }
     }
 }

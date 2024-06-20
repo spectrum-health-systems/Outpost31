@@ -46,4 +46,6 @@ namespace Outpost31.Core.NtstWebService
 Development notes
 -----------------
 
+- Not yet implemented.
+
 */

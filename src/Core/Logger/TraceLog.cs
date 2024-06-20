@@ -1,4 +1,4 @@
-﻿// u240607.1022
+﻿// u240617.1100
 
 using System;
 using System.IO;
@@ -55,6 +55,14 @@ namespace Outpost31.Core.Logger
             }
         }
 
+        /// <summary>Soon.</summary>
+        /// <param name="logLevel"></param>
+        /// <param name="assemblyName"></param>
+        /// <param name="traceInfo"></param>
+        /// <param name="fromClass"></param>
+        /// <param name="fromMethod"></param>
+        /// <param name="line"></param>
+        /// <param name="message"></param>
         public static void Create(int logLevel, string assemblyName, TraceLog traceInfo, string fromClass, string fromMethod, int line, string message)
         {
             /* no log */

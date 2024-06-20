@@ -23,10 +23,14 @@ namespace Outpost31.Module.OpenIncident
         public string OriginalFullName { get; set; }
         public string CurrentFullName { get; set; }
         public int PersonCompletingIncidentFormFieldId { get; set; }
+        public string FormOpenMessage { get; set; }
+        public string FormOpenErrorCode { get; set; }
+        public string FormSubmitMessage { get; set; }
+        public string FormSubmitErrorCode { get; set; }
 
         public static ModuleOpenIncident BuildDefaultModOpenIncident(TraceLog traceInfo)
         {
-            //LogEvent.Trace(1, AssemblyName, traceInfo);
+            /* Log file? */
 
             return new ModuleOpenIncident
             {
@@ -34,17 +38,21 @@ namespace Outpost31.Module.OpenIncident
                 Blacklist                           = new List<string>(),
                 OriginalFullName                    = string.Empty,
                 CurrentFullName                     = string.Empty,
-                PersonCompletingIncidentFormFieldId = 32
+                PersonCompletingIncidentFormFieldId = 32,
+                FormOpenMessage                     = "Since you are not the original author of this incident, you will only be able to view it and will not be able to submit modifications.",
+                FormOpenErrorCode                   = "info",
+                FormSubmitMessage                   = "Since you are not the original author of this incident, you cannot submit modifications to this incident.",
+                FormSubmitErrorCode                 = "error"
             };
         }
 
         public static ModuleOpenIncident Load(string modConfigFilePath, string currentSessionPath, OptionObject2015 workOptionObject, TraceLog traceInfo)
         {
-            //LogEvent.Trace(1, AssemblyName, traceInfo);
+            /* Log file? */
 
             if (!File.Exists(modConfigFilePath))
             {
-                //LogEvent.Trace(2, AssemblyName, traceInfo);
+                /* Log file? */
 
                 Outpost31.Core.Utilities.DuJson.ExportToLocalFile<ModuleOpenIncident>(BuildDefaultModOpenIncident(traceInfo), modConfigFilePath);
             }
@@ -55,42 +63,36 @@ namespace Outpost31.Module.OpenIncident
 
         public static string GetFullName(string filePath, string avatarName, TraceLog traceInfo)
         {
-            LogEvent.Trace(1, AssemblyName, traceInfo);
+            /* Log file? */
 
             var fullName = "";
 
-            foreach (string line in File.ReadLines($@"{filePath}\USERID_User Description.txt"))
+            foreach (string entry in File.ReadLines($@"{filePath}\USERID_User Description.txt"))
             {
-                /* don't put log here, slow */
+                /* Log file? */
 
-                if (line.StartsWith(avatarName))
+                if (entry.StartsWith(avatarName))
                 {
-                    var line2 = line.Split('^');
+                    /* Log file? */
 
-                    fullName = line2[1];
+                    var entryComponent = entry.Split('^');
 
-                    //return line2[1];
+                    fullName = entryComponent[1];
 
                     break;
                 }
             }
 
-            LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name, $"{fullName}");
-
             return fullName;
         }
-
 
         public static void GetAuthorInformation(TingenSession tnSession)
         {
             tnSession.ModOpenIncident.OriginalFullName = tnSession.AvData.SentOptionObject.GetFieldValue("32");
 
             tnSession.ModOpenIncident.CurrentFullName = GetFullName(tnSession.TnPath.SystemCode.FromAvatar, tnSession.AvData.SentOptionObject.OptionUserId, tnSession.TraceInfo);
-
-            //var match = ImportedFile.GetFullName(tnSession.TnPath.SystemCode.FromAvatar, tnSession.AvData.SentOptionObject.OptionUserId, tnSession.ModOpenIncident.OriginalFullName, tnSession.TraceInfo);
         }
     }
-
 }
 
 /*
