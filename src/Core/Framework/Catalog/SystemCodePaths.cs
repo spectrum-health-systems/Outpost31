@@ -205,7 +205,6 @@ namespace Outpost31.Core.Framework.Catalog
 }
 
 /*
-
 =================
 DEVELOPMENT NOTES
 =================
@@ -213,4 +212,5 @@ DEVELOPMENT NOTES
 - Review all XML comments.
 - Better way to do RequiredPaths()?
 
+_Documentation updated 240620
 */

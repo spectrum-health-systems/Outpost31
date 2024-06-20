@@ -135,9 +135,9 @@ namespace Outpost31.Core.Avatar
 }
 
 /*
-
 =================
 DEVELOPMENT NOTES
 =================
 
+_Documentation updated 240620
 */

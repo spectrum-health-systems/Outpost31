@@ -16,6 +16,8 @@ namespace Outpost31.Core.Framework
         /// <param name="tnSession">The Tingen Session object</param>
         public static void RefreshOnDisable(TingenSession tnSession)
         {
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+
             /*[1]*/
             Maintenance.VerifyFramework(tnSession);
             Module.Admin.Service.Status.UpdateAll(tnSession);
@@ -26,6 +28,8 @@ namespace Outpost31.Core.Framework
         /// <summary>Refresh the Tingen directory structure when Tingen is in an unknown state.</summary>
         public static void RefreshOnUnknown(TingenSession tnSession)
         {
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+
             /*[1]*/
             /*[3]*/
             Maintenance.VerifyFramework(tnSession);
@@ -35,7 +39,6 @@ namespace Outpost31.Core.Framework
 }
 
 /*
-
 =================
 DEVELOPMENT NOTES
 =================
@@ -44,4 +47,5 @@ DEVELOPMENT NOTES
 [2] When Tingen is re-enabled, automate the process of refreshing the status files.
 [3] When unknown, status info is refreshed and there is a message. Should there be a message, and if so, what should that message be?
 
+_Documentation updated 240620
 */

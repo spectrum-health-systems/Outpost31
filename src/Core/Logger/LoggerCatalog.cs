@@ -1,4 +1,4 @@
-﻿// u240617.1056
+﻿// u240620.1340
 
 using System;
 
@@ -28,9 +28,9 @@ namespace Outpost31.Core.Logger
 }
 
 /*
+=================
+DEVELOPMENT NOTES
+=================
 
------------------
-Development notes
------------------
-
+_Documentation updated ------
 */

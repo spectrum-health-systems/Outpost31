@@ -92,11 +92,11 @@ namespace Outpost31.Core.Framework.Catalog
 }
 
 /*
-
 =================
 DEVELOPMENT NOTES
 =================
 
 - Better way to do RequiredPaths()?
 
+_Documentation updated 240620
 */

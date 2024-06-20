@@ -1,4 +1,4 @@
-﻿// u240617.1100
+﻿// u240620.1344
 
 using System;
 using System.IO;
@@ -13,48 +13,35 @@ namespace Outpost31.Core.Logger
         /// <summary>Primeval log path.</summary>
         /// <remarks>
         ///   <para>
-        ///    Primeval logs are always stored in the same <i>hardcoded</i>location: <b>C:\TingenData\Primeval\</b>, which is defined
-        ///    here so it can be easily changed if needed.
+        ///    - Primeval logs are written to <i>C:\TingenData\Primeval\</i>, defined here so it can be easily changed if needed.
         ///   </para>
         /// </remarks>
         public static string PrimevalLogPath { get; set; } = @"C:\TingenData\Primeval";
 
         /// <summary>Creates a Primeval log.</summary>
-        /// <param name="fileContent">The content of the log file.</param>
+        /// <param name="assemblyName"></param>
+        /// <param name="message"></param>
+        /// <param name="fromClass"></param>
+        /// <param name="fromMethod"></param>
+        /// <param name="line"></param>
         /// <remarks>
         ///  <para>
-        ///    Before a Primeval log is written, the Primeval log path is verified to ensure it exists. Technically this slows things<br/>
-        ///    down, but it's a good practice to ensure the path is there before trying to write to it. And since Primeval logs<br/>
-        ///    should only be used for testing/debugging, the slowdown is acceptable.<br/><br/>
-        ///    Log files may be created very quickly - and possibly at the same time - so a pause is added to ensure logs are unique.
+        ///    - Before a Primeval log is written, the Primeval log path is verified to ensure it exists.<br/>
+        ///    - Log files may be created quickly - and possibly at the same time - so a pause is added to ensure logs are unique.
         ///  </para>
-        ///  <para>
-        ///   Primeval logs are created with the following content:
-        ///   <list type="table">
-        ///    <item>
-        ///     <term>assemblyName</term>
-        ///     <description>Logic for the TingenConfiguration class</description>
-        ///    </item>
-        ///    <item>
-        ///     <term>TingenConfiguration.Properties.cs</term>
-        ///     <description>Properties for the TingenConfiguration class</description>
-        ///    </item>
-        ///   </list>
-        ///  </para>
-        ///
-        ///  <para>
+        /// </remarks>
         ///    <example>
-        ///    To create a simple Primeval log with the default content of "[TINGEN PRIMEVAL LOG]":
+        ///    To create a simple Primeval log:
         ///    <code>
-        ///     Outpost31.Core.Debuggler.Primeval.Log();
+        ///     LogEvent.Primeval(AssemblyName);
+        ///     LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
         ///    </code>
         ///    To create a Primeval log with custom content:
         ///    <code>
-        ///     Outpost31.Core.Debuggler.Primeval.Log("your-content-goes-here")
+        ///     LogEvent.Primeval(AssemblyName, message);
+        ///     LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name, message);
         ///    </code>
         ///   </example>
-        ///  </para>
-        /// </remarks>
         public static void Create(string assemblyName, string message, string fromClass, string fromMethod, int line)
         {
             Framework.Maintenance.VerifyDirectory(PrimevalLogPath);
@@ -67,6 +54,11 @@ namespace Outpost31.Core.Logger
         }
 
         /// <summary> Removes old Primeval logs.</summary>
+        /// <remarks>
+        ///  <para>
+        ///   - Not currently used.
+        ///  </para>
+        /// </remarks>
         public static void DevelopmentCleanup()
         {
             Framework.Maintenance.RefreshDirectory(PrimevalLogPath);
@@ -75,9 +67,9 @@ namespace Outpost31.Core.Logger
 }
 
 /*
+=================
+DEVELOPMENT NOTES
+=================
 
------------------
-Development notes
------------------
-
+_Documentation updated 240620
 */

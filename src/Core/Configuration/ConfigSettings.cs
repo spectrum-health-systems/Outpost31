@@ -163,7 +163,6 @@ namespace Outpost31.Core.Configuration
 }
 
 /*
-
 =================
 DEVELOPMENT NOTES
 =================
@@ -171,4 +170,5 @@ DEVELOPMENT NOTES
 - Rename this directory to "Configs"?
 - Create a "blacklist" that will allow certain users to bypass Tingen?
 
+_Documentation updated 240620
 */

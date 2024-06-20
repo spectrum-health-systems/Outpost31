@@ -127,7 +127,6 @@ namespace Outpost31.Core.Avatar
 }
 
 /*
-
 =================
 DEVELOPMENT NOTES
 =================
@@ -135,4 +134,5 @@ DEVELOPMENT NOTES
 - Verify there are no issues with a Trace Log being generated.
 - Limit what is passed to these methods (not the entire session object).
 
+_Documentation updated 240620
 */

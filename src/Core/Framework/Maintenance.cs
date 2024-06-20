@@ -142,7 +142,6 @@ namespace Outpost31.Core.Framework
 }
 
 /*
-
 =================
 DEVELOPMENT NOTES
 =================
@@ -150,4 +149,5 @@ DEVELOPMENT NOTES
 [1] - Probably don't need to pass the entire TingenSession object to this method. Just pass the TingenPaths object.
 [2] - Verify this works as expected (it used to be !directoryPath.Contains("Primeval")).
 
+_Documentation updated 240620
 */
