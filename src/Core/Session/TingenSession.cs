@@ -1,4 +1,4 @@
-﻿// u240617.1101
+﻿// u240620.1355
 
 using System;
 using System.Collections.Generic;
@@ -162,11 +162,11 @@ namespace Outpost31.Core.Session
 }
 
 /*
-
------------------
-Development notes
------------------
+=================
+DEVELOPMENT NOTES
+=================
 
 - Do we need to verify the session path?
 
+_Documentation updated ------
 */

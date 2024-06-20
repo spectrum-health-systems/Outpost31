@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿// u240620.1356
+
+using System.IO;
 
 namespace Outpost31.Core.Utilities
 {
@@ -10,3 +12,11 @@ namespace Outpost31.Core.Utilities
         }
     }
 }
+
+/*
+=================
+DEVELOPMENT NOTES
+=================
+
+_Documentation updated ------
+*/

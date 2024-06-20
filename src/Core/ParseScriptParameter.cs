@@ -1,4 +1,4 @@
-﻿// u240607.1024
+﻿// u240620.1356
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -136,10 +136,11 @@ namespace Outpost31.Core
     }
 }
 
+
 /*
+=================
+DEVELOPMENT NOTES
+=================
 
------------------
-Development notes
------------------
-
+_Documentation updated ------
 */

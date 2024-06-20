@@ -1,4 +1,4 @@
-﻿// u240617.1103
+﻿// u240620.1357
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -63,14 +63,15 @@ namespace Outpost31.Core
     }
 }
 
+
 /*
+=================
+DEVELOPMENT NOTES
+=================
 
------------------
-Development notes
------------------
-
-* Add a "development" mode:
+- Add a "development" mode:
     - Removes all Primeval logs
     - Removes all Session data (UAT only)
 
+_Documentation updated ------
 */

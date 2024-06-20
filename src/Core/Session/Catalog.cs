@@ -1,4 +1,4 @@
-﻿// u240617.1101
+﻿// u240620.1355
 
 using System;
 using System.Reflection;
@@ -170,14 +170,14 @@ namespace Outpost31.Core.Session
 }
 
 /*
-
------------------
-Development notes
------------------
+=================
+DEVELOPMENT NOTES
+=================
 
 - Verify all of the data is here
 - Module enabled/disabled information should be here.
 - Module whitelists, should be in the Module configuration.
 - Add other Modules information
 
+_Documentation updated ------
 */
