@@ -1,33 +1,38 @@
-﻿// u2240617.1023
+﻿// u240620.1226
 
 using System.Collections.Generic;
 
 namespace Outpost31.Core.Framework.Catalog
 {
     /// <summary>Remote paths for Tingen.</summary>
+    /// <remarks>
+    ///  <para>
+    ///   - Remote paths are used to store data that is accessible to specific users that have access to these locations.
+    ///  </para>
+    /// </remarks>
     public class RemotePaths
     {
-        /// <summary>Root path for remote files.</summary>
+        /// <summary>Root path for remote data.</summary>
         /// <value>C:\TingenData\Remote</value>
         public string Root { get; set; }
 
-        /// <summary>Path for remote alert files.</summary>
+        /// <summary>Path for remote alert data.</summary>
         /// <value>C:\TingenData\Remote\Alerts</value>
         public string Alerts { get; set; }
 
-        /// <summary>Path for remote error files.</summary>
+        /// <summary>Path for remote error data.</summary>
         /// <value>C:\TingenData\Remote\Errors</value>
         public string Errors { get; set; }
 
-        /// <summary>Path for remote export files.</summary>
+        /// <summary>Path for remote export data.</summary>
         /// <value>C:\TingenData\Remote\Exports</value>
         public string Exports { get; set; }
 
-        /// <summary>Path for remote report files.</summary>
+        /// <summary>Path for remote report data.</summary>
         /// <value>C:\TingenData\Remote\Reports</value>
         public string Reports { get; set; }
 
-        /// <summary>Path for remote session files.</summary>
+        /// <summary>Path for remote session data.</summary>
         /// <value>C:\TingenData\Remote\Sessions</value>
         public string Sessions { get; set; }
 
@@ -36,16 +41,16 @@ namespace Outpost31.Core.Framework.Catalog
         ///  <para>
         ///   - Set at runtime.
         ///  </para>
-        /// </remarks>>
+        /// </remarks>
         public string CurrentSession { get; set; }
 
         /// <summary>Path for remote warning files.</summary>
         /// <value>C:\TingenData\Remote\Warnings</value>
         public string Warnings { get; set; }
 
-        /// <summary>Builds the remote path object.</summary>
+        /// <summary>Builds the remote paths object.</summary>
         /// <param name="tnDataRoot">The Tingen data root.</param>
-        /// <returns>The remote paths</returns>
+        /// <returns>A collection of remote paths.</returns>
         public static RemotePaths BuildObject(string tnDataRoot)
         {
             var remoteRoot = $@"{tnDataRoot}\Remote\";
@@ -64,8 +69,8 @@ namespace Outpost31.Core.Framework.Catalog
         }
 
         /// <summary>Returns a list of required paths.</summary>
-        /// <param name="remotePaths"></param>
-        /// <returns></returns>
+        /// <param name="remotePaths">The Tingen remote paths.</param>
+        /// <returns>The list of required remote paths.</returns>
         public static List<string> RequiredPaths(RemotePaths remotePaths)
         {
             return new List<string>
@@ -84,9 +89,9 @@ namespace Outpost31.Core.Framework.Catalog
 
 /*
 
------------------
-Development notes
------------------
+=================
+DEVELOPMENT NOTES
+=================
 
 - Better way to do RequiredPaths()?
 

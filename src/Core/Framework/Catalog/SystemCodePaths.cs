@@ -1,13 +1,14 @@
-﻿// u240617.1031
+﻿// u240620.1230
 
 using System.Collections.Generic;
 
 namespace Outpost31.Core.Framework.Catalog
 {
-    /// <summary>System code paths for Tingen.</summary>
+    /// <summary>System Code paths for Tingen.</summary>
     /// <remarks>
     ///  <para>
-    ///   - More comments here, but this is the important stuff.
+    ///   - The System Code path is where Tingen stores most of it's important day-to-day data.
+    ///   - There is a separate System Code path for each Avatar System Code.
     ///  </para>
     /// </remarks>
     public class SystemCodePaths
@@ -15,15 +16,15 @@ namespace Outpost31.Core.Framework.Catalog
         /* System code paths.
          */
 
-        /// <summary>Root path for system code files.</summary>
+        /// <summary>Root path for System Code data.</summary>
         /// <value>C:\TingenData\%SystemCode%</value>
         public string Root { get; set; }
 
-        /// <summary>Path for system code configuration files.</summary>
+        /// <summary>Path for System Code configuration data.</summary>
         /// <value>C:\TingenData\%SystemCode%\Config</value>
         public string Config { get; set; }
 
-        /// <summary>Path for system code session files.</summary>
+        /// <summary>Path for System Code session data.</summary>
         /// <value>C:\TingenData\%SystemCode%\Sessions</value>
         public string Sessions { get; set; }
 
@@ -43,7 +44,7 @@ namespace Outpost31.Core.Framework.Catalog
         /// </remarks>
         public string Extensions { get; set; }
 
-        /// <summary>Path for Tingen security-related files.</summary>
+        /// <summary>Path for Tingen security-related data.</summary>
         /// <remarks>
         ///  <para>
         ///   - Future functionality.
@@ -51,7 +52,7 @@ namespace Outpost31.Core.Framework.Catalog
         /// </remarks>
         public string Security { get; set; }
 
-        /// <summary>Path for temporary files.</summary>
+        /// <summary>Path for temporary data.</summary>
         /// <remarks>
         ///  <para>
         ///   - Temporary files.
@@ -62,26 +63,26 @@ namespace Outpost31.Core.Framework.Catalog
         /* Message paths
          */
 
-        /// <summary>Root for message files.</summary>
+        /// <summary>Root for message data.</summary>
         /// <value>C:\TingenData\%SystemCode%\Messages</value>
         public string MessageRoot { get; set; }
 
-        /// <summary>Path for alert messages.</summary>
+        /// <summary>Path for alert data.</summary>
         /// <value>C:\TingenData\%SystemCode%\Messages\Alerts</value>
         public string Alerts { get; set; }
 
-        /// <summary>Path for error messages.</summary>
+        /// <summary>Path for error data.</summary>
         /// <value>C:\TingenData\%SystemCode%\Messages\Errors</value>
         public string Errors { get; set; }
 
-        /// <summary>Path for warning messages.</summary>
+        /// <summary>Path for warning data.</summary>
         /// <value>C:\TingenData\%SystemCode%\Messages\Warnings</value>
         public string Warnings { get; set; }
 
         /* Exported data paths
          */
 
-        /// <summary>Root for exported data files.</summary>
+        /// <summary>Root for exported data.</summary>
         /// <value>C:\TingenData\%SystemCode%\Exports</value>
         public string ExportRoot { get; set; }
 
@@ -92,7 +93,7 @@ namespace Outpost31.Core.Framework.Catalog
         /* Imported data paths
          */
 
-        /// <summary>Root for imported data files.</summary>
+        /// <summary>Root for imported data.</summary>
         /// <value>C:\TingenData\%SystemCode%\Imports</value>
         public string ImportRoot { get; set; }
 
@@ -105,31 +106,32 @@ namespace Outpost31.Core.Framework.Catalog
         public string Templates { get; set; }
 
         /* Support paths
+         * - Most of this isn't used yet, and either will be or will be removed.
          */
 
-        /// <summary>Root for support files.</summary>
+        /// <summary>Root for support data.</summary>
         /// <value>C:\TingenData\%SystemCode%\Support</value>
         public string SupportRoot { get; set; }
 
-        /// <summary>Path for admin files.</summary>
+        /// <summary>Path for admin data.</summary>
         /// <value>C:\TingenData\%SystemCode%\Support\Admin</value>
         public string Admin { get; set; }
 
-        /// <summary>Path for archived files.</summary>
+        /// <summary>Path for archived data.</summary>
         /// <value>C:\TingenData\%SystemCode%\Support\Archive</value>
         public string Archive { get; set; }
 
-        /// <summary>Path for debugging files.</summary>
+        /// <summary>Path for debugging data.</summary>
         /// <value>C:\TingenData\%SystemCode%\Support\Debugging</value>
         public string Debugging { get; set; }
 
-        /// <summary>Path for log files.</summary>
+        /// <summary>Path for log data.</summary>
         /// <value>C:\TingenData\%SystemCode%\Support\Logs</value>
         public string Logs { get; set; }
 
         /// <summary>Builds the system code paths object.</summary>
-        /// <param name="tnDataRoot"></param>
-        /// <param name="avSystemCode"></param>
+        /// <param name="tnDataRoot">The Tingen data root.</param>
+        /// <param name="avSystemCode">The Avatar System Code.</param>
         /// <returns></returns>
         public static SystemCodePaths BuildObject(string tnDataRoot, string avSystemCode)
         {
@@ -165,9 +167,9 @@ namespace Outpost31.Core.Framework.Catalog
             };
         }
 
-        /// <summary>Returns a list of required paths.</summary>
-        /// <param name="systemCodePaths"></param>
-        /// <returns></returns>
+        /// <summary>Returns a list of required System Code paths.</summary>
+        /// <param name="systemCodePaths">The System Code paths.</param>
+        /// <returns>The list of required System Code paths.</returns>
         public static List<string> RequiredPaths(SystemCodePaths systemCodePaths)
         {
             return new List<string>
@@ -200,9 +202,9 @@ namespace Outpost31.Core.Framework.Catalog
 
 /*
 
------------------
-Development notes
------------------
+=================
+DEVELOPMENT NOTES
+=================
 
 - Review all XML comments.
 - Better way to do RequiredPaths()?

@@ -100,7 +100,6 @@
     <Compile Include="WelcomeToOutpost31.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Core\Parser\" />
     <Folder Include="Module\Common\" />
     <Folder Include="Module\Testing\" />
   </ItemGroup>
