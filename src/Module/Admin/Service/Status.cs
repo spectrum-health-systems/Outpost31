@@ -1,4 +1,4 @@
-﻿// u240617.1203
+﻿// u2240620.1358
 
 using System.IO;
 using System.Reflection;
@@ -78,11 +78,11 @@ namespace Outpost31.Module.Admin.Service
 }
 
 /*
-
------------------
-Development notes
------------------
+=================
+DEVELOPMENT NOTES
+=================
 
 - Need to also finalize the OO in "settings" and "mode", not just "all"
 
+_Documentation updated ------
 */

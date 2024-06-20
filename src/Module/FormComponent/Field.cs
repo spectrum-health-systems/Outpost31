@@ -1,4 +1,4 @@
-﻿// u240607.1045
+﻿// u240620.1359
 
 using System.IO;
 using System.Reflection;
@@ -91,4 +91,10 @@ namespace Outpost31.Module.Common.Action
     }
 }
 
+/*
+=================
+DEVELOPMENT NOTES
+=================
 
+_Documentation updated ------
+*/

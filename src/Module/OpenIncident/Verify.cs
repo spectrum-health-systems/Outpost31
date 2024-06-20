@@ -1,4 +1,4 @@
-﻿// u240617.1146
+﻿// u240620.1359
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -58,9 +58,9 @@ namespace Outpost31.Module.OpenIncident
 }
 
 /*
+=================
+DEVELOPMENT NOTES
+=================
 
------------------
-Development notes
------------------
-
+_Documentation updated ------
 */
