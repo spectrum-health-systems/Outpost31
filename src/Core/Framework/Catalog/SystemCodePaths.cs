@@ -135,6 +135,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns></returns>
         public static SystemCodePaths BuildObject(string tnDataRoot, string avSystemCode)
         {
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+
             string systemCodeRoot    = $@"{tnDataRoot}\{avSystemCode}";
             const string messageRoot = "Messages";
             const string exportRoot  = "Exports";
@@ -172,6 +174,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>The list of required System Code paths.</returns>
         public static List<string> RequiredPaths(SystemCodePaths systemCodePaths)
         {
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+
             return new List<string>
             {
                 systemCodePaths.Root,

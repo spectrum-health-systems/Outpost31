@@ -41,6 +41,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>A collection of public paths.</returns>
         public static PublicPaths BuildObject(string tnDataRoot)
         {
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+
             var publicRoot = $@"{tnDataRoot}\Public\";
 
             return new PublicPaths
@@ -59,6 +61,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>The list of required public paths.</returns>
         public static List<string> RequiredPaths(PublicPaths publicPaths)
         {
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+
             return new List<string>
             {
                 publicPaths.Root,

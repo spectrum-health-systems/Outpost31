@@ -120,6 +120,8 @@ namespace Outpost31.Core.Configuration
         /// <returns>An object with default Tingen configuration values.</returns>
         public static ConfigSettings BuildDefaultObject()
         {
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+
             return new ConfigSettings
             {
                 TingenMode          = "enabled",
@@ -141,6 +143,8 @@ namespace Outpost31.Core.Configuration
         /// <returns>The Tingen configuration settings.</returns>
         public static ConfigSettings Load(string configPath, string configFileName)
         {
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+
             var configFilePath = $@"{configPath}\{configFileName}";
 
             if (!File.Exists(configFilePath))

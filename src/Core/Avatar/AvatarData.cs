@@ -120,6 +120,8 @@ namespace Outpost31.Core.Avatar
         /// <returns>The necessary Avatar data.</returns>
         public static AvatarData BuildObject(OptionObject2015 sentOptionObject, string sentScriptParameter, string avSystemCode)
         {
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+
             return new AvatarData
             {
                 AvatarSystemCode    = avSystemCode,

@@ -53,6 +53,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>A collection of remote paths.</returns>
         public static RemotePaths BuildObject(string tnDataRoot)
         {
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+
             var remoteRoot = $@"{tnDataRoot}\Remote\";
 
             return new RemotePaths
@@ -73,6 +75,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>The list of required remote paths.</returns>
         public static List<string> RequiredPaths(RemotePaths remotePaths)
         {
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+
             return new List<string>
             {
                 remotePaths.Root,
