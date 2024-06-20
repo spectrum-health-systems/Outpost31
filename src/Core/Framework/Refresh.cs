@@ -1,4 +1,4 @@
-﻿// u240617.1055
+﻿// u240620.1331
 
 using Outpost31.Core.Session;
 
@@ -9,19 +9,25 @@ namespace Outpost31.Core.Framework
     {
         /// <summary>Refresh the Tingen directory structure when Tingen is disabled.</summary>
         /// <remarks>
-        /// If Tingen is disabled, we should update the service status files so the necessary users are notified. When <br/>
-        /// Tingen is re-enabled, the service status files will need to be manually updated using the Admin Module.
+        ///  <para>
+        ///   - If Tingen is disabled, might as well update the service status files.
+        ///  </para>
         /// </remarks>
-        /// <param name="tnSession"></param>
+        /// <param name="tnSession">The Tingen Session object</param>
         public static void RefreshOnDisable(TingenSession tnSession)
         {
+            /*[1]*/
             Maintenance.VerifyFramework(tnSession);
             Module.Admin.Service.Status.UpdateAll(tnSession);
         }
 
+        /*[2]*/
+
         /// <summary>Refresh the Tingen directory structure when Tingen is in an unknown state.</summary>
         public static void RefreshOnUnknown(TingenSession tnSession)
         {
+            /*[1]*/
+            /*[3]*/
             Maintenance.VerifyFramework(tnSession);
             Module.Admin.Service.Status.UpdateAll(tnSession);
         }
@@ -30,8 +36,12 @@ namespace Outpost31.Core.Framework
 
 /*
 
------------------
-Development notes
------------------
+=================
+DEVELOPMENT NOTES
+=================
+
+[1] Don't pass the entire session object?
+[2] When Tingen is re-enabled, automate the process of refreshing the status files.
+[3] When unknown, status info is refreshed and there is a message. Should there be a message, and if so, what should that message be?
 
 */

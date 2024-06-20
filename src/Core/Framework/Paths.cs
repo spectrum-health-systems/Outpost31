@@ -1,4 +1,4 @@
-﻿// u240617.1054
+﻿// u240620.1329
 
 using Outpost31.Core.Framework.Catalog;
 
@@ -17,22 +17,22 @@ namespace Outpost31.Core.Framework
     /// </remarks>
     public class Paths
     {
-        /// <summary>Paths for Tingen.</summary>
+        /// <summary>Tingen data paths.</summary>
         public TingenPaths Tingen { get; set; }
 
-        /// <summary>Paths for system code.</summary>
+        /// <summary>System code data paths.</summary>
         public SystemCodePaths SystemCode { get; set; }
 
-        /// <summary>Paths for public files.</summary>
+        /// <summary>Public data paths.</summary>
         public PublicPaths Public { get; set; }
 
-        /// <summary>Paths for remote files.</summary>
+        /// <summary>Remote data paths.</summary>
         public RemotePaths Remote { get; set; }
 
         /// <summary>Builds the paths object.</summary>
-        /// <param name="tnDataRoot"></param>
-        /// <param name="avSystemCode"></param>
-        /// <returns></returns>
+        /// <param name="tnDataRoot">The Tingen data root.</param>
+        /// <param name="avSystemCode">The Avatar System Code.</param>
+        /// <returns>The Tingen data paths</returns>
         public static Paths Build(string tnDataRoot, string avSystemCode)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
@@ -50,8 +50,8 @@ namespace Outpost31.Core.Framework
 
 /*
 
------------------
-Development notes
------------------
+=================
+DEVELOPMENT NOTES
+=================
 
 */

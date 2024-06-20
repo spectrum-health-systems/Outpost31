@@ -132,7 +132,7 @@ namespace Outpost31.Core.Framework.Catalog
         /// <summary>Builds the system code paths object.</summary>
         /// <param name="tnDataRoot">The Tingen data root.</param>
         /// <param name="avSystemCode">The Avatar System Code.</param>
-        /// <returns></returns>
+        /// <returns>The System Code data paths.</returns>
         public static SystemCodePaths BuildObject(string tnDataRoot, string avSystemCode)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
