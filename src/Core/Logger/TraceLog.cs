@@ -1,4 +1,5 @@
-﻿// u240620.1354
+﻿// u240624.0843_code
+// u240624.0843_documentation
 
 using System;
 using System.IO;
@@ -78,11 +79,3 @@ namespace Outpost31.Core.Logger
         }
     }
 }
-
-/*
-=================
-DEVELOPMENT NOTES
-=================
-
-_Documentation updated ------
-*/

@@ -1,4 +1,5 @@
-﻿// u240620.1337
+﻿// u240624.0843_code
+// u240624.0843_documentation
 
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -65,17 +66,3 @@ namespace Outpost31.Core.Logger
         }
     }
 }
-
-/*
-=================
-DEVELOPMENT NOTES
-=================
-
-- Is there a more efficient way of doing this (see https://rules.sonarsource.com/csharp/RSPEC-6608/):
-
-  var calledClass = calledPath.Split('\\').Last();
-
-- Make sure that passing the entire TingenSession object OR the traceInfo object work the same.
-
-_Documentation updated 240620
-*/
