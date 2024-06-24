@@ -1,4 +1,5 @@
-﻿// u240620.1203
+﻿// u240624.0843_code
+// u240624.0843_documentation
 
 using System.IO;
 
@@ -6,9 +7,6 @@ namespace Outpost31.Core.Configuration
 {
     /// <summary>Tingen configuration settings.</summary>
     /// <remarks>
-    ///  <para>
-    ///   - The Tingen configuration file is located in <i>"TingenData\%SystemCode%\Config\Tingen.config"</i>.
-    ///  </para>
     ///  <para>
     ///   Tingen configuration settings:
     ///   <list type="bullet">
@@ -18,6 +16,7 @@ namespace Outpost31.Core.Configuration
     ///   </list>
     ///  </para>
     ///  <para>
+    ///   - The Tingen configuration file is located in <i>"TingenData\%SystemCode%\Config\Tingen.config"</i>.<br/>
     ///   - More information about configuring Tingen <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-configuration">here.</see>
     ///  </para>
     /// </remarks>
@@ -61,7 +60,7 @@ namespace Outpost31.Core.Configuration
         ///   </list>
         ///  </para>
         ///  <para>
-        ///  - Disabling this module not affect other modules, or Tingen as a whole.
+        ///  - Disabling this module not affect other modules, or Tingen as a whole.<br/>
         ///  - More information about Tingen modes <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-modes">here.</see>
         ///  </para>
         /// </remarks>
@@ -101,7 +100,7 @@ namespace Outpost31.Core.Configuration
         /// <remarks>
         ///  <para>
         ///   - In some cases, logs may be written too quickly, and cause files to be overwritten.<br/>
-        ///   - By including a short delay, the logs can be written in a way that prevents this from happening.<br/>
+        ///   - By including a short delay, the logs can be written in a way that prevents this from happening.
         ///  </para>
         /// </remarks>
         /// <value>
@@ -161,14 +160,3 @@ namespace Outpost31.Core.Configuration
         }
     }
 }
-
-/*
-=================
-DEVELOPMENT NOTES
-=================
-
-- Rename this directory to "Configs"?
-- Create a "blacklist" that will allow certain users to bypass Tingen?
-
-_Documentation updated 240620
-*/

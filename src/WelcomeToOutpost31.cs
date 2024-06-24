@@ -3,13 +3,14 @@
 // https://github.com/APrettyCoolProgram/Outpost31
 // Copyright (c) A Pretty Cool Program. All rights reserved.
 // Licensed under the Apache 2.0 license.
-// ================================================================ 240621 =====
+// ================================================================ 240624 =====
 
-// u240617.0853
+// u------.----_code
+// u240624.0843_documentation
 
-/* ----------------------------------
+/* -------------------------------------
  * IMPORTANT INFORMATION ABOUT OUTPOST31
- * ----------------------------------
+ * -------------------------------------
  * Outpost31 is the logic for the Tingen web service.
  */
 
@@ -40,6 +41,5 @@ Module: Admin
 Module: OpenIncident
 
 * openincident-verify-authorisviewing
-
 
 */

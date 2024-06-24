@@ -1,4 +1,5 @@
-﻿// u240620.1254
+﻿// u240624.0843_code
+// u240624.0843_documentation
 
 using System.Collections.Generic;
 using System.Reflection;
@@ -27,7 +28,6 @@ namespace Outpost31.Core.Framework
         /// <param name="tnSession">The Tingen Session object.</param>
         public static void VerifyFramework(TingenSession tnSession)
         {
-            /*[1]*/
             VerifyDirectories(Catalog.TingenPaths.RequiredPaths(tnSession.TnPath.Tingen));
             VerifyDirectories(Catalog.PublicPaths.RequiredPaths(tnSession.TnPath.Public));
             VerifyDirectories(Catalog.RemotePaths.RequiredPaths(tnSession.TnPath.Remote));
@@ -44,7 +44,6 @@ namespace Outpost31.Core.Framework
 
             if (directoryPath.Contains("Primeval"))
             {
-                /*[2]*/
                 /* You can't put a Trace log here, since this method may be called prior to the Tingen Session being initialized.
                  *
                  * You can't put a Primeval log here either, since that may result in an infinate loop/stack overflow when Primeval
@@ -79,7 +78,6 @@ namespace Outpost31.Core.Framework
 
             if (directoryPath.Contains("Primeval"))
             {
-                /*[2]*/
                 /* You can't put a Trace log here, since this method may be called prior to the Tingen Session being initialized.
                  *
                  * You can't put a Primeval log here either, since that may result in an infinate loop/stack overflow when Primeval
@@ -115,7 +113,6 @@ namespace Outpost31.Core.Framework
             {
                 if (directoryPath.Contains("Primeval"))
                 {
-                    /*[2]*/
                     /* You can't put a Trace log here, since this method may be called prior to the Tingen Session being initialized.
                      *
                      * You can't put a Primeval log here either, since that may result in an infinate loop/stack overflow when Primeval
@@ -140,14 +137,3 @@ namespace Outpost31.Core.Framework
         }
     }
 }
-
-/*
-=================
-DEVELOPMENT NOTES
-=================
-
-[1] - Probably don't need to pass the entire TingenSession object to this method. Just pass the TingenPaths object.
-[2] - Verify this works as expected (it used to be !directoryPath.Contains("Primeval")).
-
-_Documentation updated 240620
-*/

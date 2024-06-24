@@ -1,4 +1,5 @@
-﻿// u240620.1221
+﻿// u240624.0843_code
+// u240624.0843_documentation
 
 using System.Collections.Generic;
 
@@ -75,13 +76,3 @@ namespace Outpost31.Core.Framework.Catalog
         }
     }
 }
-
-/*
-=================
-DEVELOPMENT NOTES
-=================
-
-- Better way to do RequiredPaths()?
-
-_Documentation updated 240620
-*/

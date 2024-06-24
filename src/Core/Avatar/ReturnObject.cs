@@ -1,4 +1,5 @@
-﻿// u240620.1129
+﻿// u240624.0843_code
+// u240624.0843_documentation
 
 using System.Diagnostics;
 using Outpost31.Core.Logger;
@@ -26,9 +27,6 @@ namespace Outpost31.Core.Avatar
         /// <summary>Format an <paramref name="OptionObject"/> to be returned to Avatar.</summary>
         /// <param name="tnSession">The Tingen session object.</param>
         /// <remarks>
-        ///  <para>
-        ///   - The returnOptionObject must be propery formatted when returned to Avatar.
-        ///  </para>
         ///  <para>
         ///   Part of the finalization process is assigning a valid error code to the returnOptionObject:
         ///   <list type="table">
@@ -63,7 +61,8 @@ namespace Outpost31.Core.Avatar
         ///   </list>
         ///  </para>
         ///  <para>
-        ///   - <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">SentOptionObject</see>
+        ///   - <i>The returnOptionObject must be propery formatted when returned to Avatar</i>.<br/>
+        ///   - More information about OptionObjects <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">here</see>
         ///  </para>
         /// </remarks>
         ///  <example>
@@ -119,20 +118,9 @@ namespace Outpost31.Core.Avatar
 
                 default:
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                    // TODO: If the errorCode is not recognized, default to an error.
+                    // TODO: Graceful error handling.
                     break;
             }
         }
     }
 }
-
-/*
-=================
-DEVELOPMENT NOTES
-=================
-
-- Verify there are no issues with a Trace Log being generated.
-- Limit what is passed to these methods (not the entire session object).
-
-_Documentation updated 240620
-*/

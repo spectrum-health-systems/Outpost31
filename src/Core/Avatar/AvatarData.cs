@@ -1,4 +1,5 @@
-﻿// u240620.1203
+﻿// u240624.0843_code
+// u240624.0843_documentation
 
 using ScriptLinkStandard.Objects;
 
@@ -36,9 +37,7 @@ namespace Outpost31.Core.Avatar
         ///     <description>Used for the <i>production</i> version of Tingen.</description>
         ///    </item>
         ///   </list>
-        ///  </para>
-        ///  <para>
-        ///   - More information about Avatar System Codes <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-system-codes">here</see>.
+        ///    - More information about Avatar System Codes <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-system-codes">here</see>.
         ///  </para>
         /// </remarks>
         public string AvatarSystemCode { get; set; }
@@ -65,14 +64,15 @@ namespace Outpost31.Core.Avatar
         ///     <description>The optional <i>Action Option</i> (ex: "Update").</description>
         ///    </item>
         ///   </list>
-        ///  </para>
-        ///  <para>
-        ///   <example>
-        ///    The following Script Parameter will update all status files:<br/>
-        ///    <code>Admin-All-Status-Update</code>
-        ///   </example>
+        ///   - More information about the Avatar Script Parameter <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-script-parameter">here</see>.
         ///  </para>
         /// </remarks>
+        ///   <example>
+        ///    The following Script Parameter will update all status files:
+        ///    <code>
+        ///      Admin-All-Status-Update
+        ///    </code>
+        ///   </example>
         public string SentScriptParameter { get; set; }
 
         /// <summary>The original <b>OptionObject</b> sent from Avatar.</summary>
@@ -90,7 +90,7 @@ namespace Outpost31.Core.Avatar
         ///  <para>
         ///   - All work should be done with the <paramref name="WorkOptionObject"/>.<br/>
         ///   - When a Tingen session is initialized, the <paramref name="WorkOptionObject"/> is cloned from the <paramref name="SentOptionObject"/>.<br/>
-        ///   - The <paramref name="WorkOptionObject"/> <i>is not</i> formatted properly for returning to Avatar.
+        ///   - The <paramref name="WorkOptionObject"/> <i>is not</i> formatted properly for returning to Avatar.<br/>
         ///   - More information about OptionObjects <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">here</see>.
         ///  </para>
         /// </remarks>
@@ -108,7 +108,6 @@ namespace Outpost31.Core.Avatar
         /// <summary>Builds a new <b>AvatarData</b> object.</summary>
         /// <param name="sentOptionObject">The OptionObject sent from Avatar.</param>
         /// <param name="sentScriptParameter">The ScriptParameter sent from Avatar.</param>
-        /// <param name="avSystemCode">The Avatar System Code that Tingen will be working with.</param>
         /// <remarks>
         ///  <para>
         ///   - The <paramref name="sentScriptParameter"/> is converted to lowercase so it is easier to compare against.<br/>
@@ -124,7 +123,7 @@ namespace Outpost31.Core.Avatar
 
             return new AvatarData
             {
-                AvatarSystemCode    = "set-in-Tingen/Tingen_development.asmx",
+                AvatarSystemCode    = "defined-at-runtime",
                 SentScriptParameter = sentScriptParameter.ToLower(),
                 SentOptionObject    = sentOptionObject,
                 WorkOptionObject    = sentOptionObject.Clone(),
@@ -133,11 +132,3 @@ namespace Outpost31.Core.Avatar
         }
     }
 }
-
-/*
-=================
-DEVELOPMENT NOTES
-=================
-
-_Documentation updated 240620
-*/

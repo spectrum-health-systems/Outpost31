@@ -1,4 +1,5 @@
-﻿// u240620.1230
+﻿// u240624.0843_code
+// u240624.0843_documentation
 
 using System.Collections.Generic;
 
@@ -148,7 +149,7 @@ namespace Outpost31.Core.Framework.Catalog
                 Root           = systemCodeRoot,
                 Config         = $@"{systemCodeRoot}\Config",
                 Sessions       = $@"{systemCodeRoot}\Sessions",
-                CurrentSession = "not-defined-yet",
+                CurrentSession = "defined-at-runtime",
                 Extensions     = $@"{systemCodeRoot}\Extensions",
                 Security       = $@"{systemCodeRoot}\Security",
                 MessageRoot    = $@"{systemCodeRoot}\{messageRoot}",
@@ -203,14 +204,3 @@ namespace Outpost31.Core.Framework.Catalog
         }
     }
 }
-
-/*
-=================
-DEVELOPMENT NOTES
-=================
-
-- Review all XML comments.
-- Better way to do RequiredPaths()?
-
-_Documentation updated 240620
-*/

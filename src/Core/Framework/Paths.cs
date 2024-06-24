@@ -1,4 +1,5 @@
-﻿// u240620.1329
+﻿// u240624.0843_code
+// u240624.0843_documentation
 
 using Outpost31.Core.Framework.Catalog;
 
@@ -47,11 +48,3 @@ namespace Outpost31.Core.Framework
         }
     }
 }
-
-/*
-=================
-DEVELOPMENT NOTES
-=================
-
-_Documentation updated 240620
-*/
