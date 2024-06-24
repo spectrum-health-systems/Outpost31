@@ -118,13 +118,13 @@ namespace Outpost31.Core.Avatar
         ///  </para>
         /// </remarks>
         /// <returns>The necessary Avatar data.</returns>
-        public static AvatarData BuildObject(OptionObject2015 sentOptionObject, string sentScriptParameter, string avSystemCode)
+        public static AvatarData BuildObject(OptionObject2015 sentOptionObject, string sentScriptParameter)
         {
             /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             return new AvatarData
             {
-                AvatarSystemCode    = avSystemCode,
+                AvatarSystemCode    = "set-in-Tingen/Tingen_development.asmx",
                 SentScriptParameter = sentScriptParameter.ToLower(),
                 SentOptionObject    = sentOptionObject,
                 WorkOptionObject    = sentOptionObject.Clone(),

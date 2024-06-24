@@ -103,7 +103,7 @@ namespace Outpost31.Core.Session
                 Time      = DateTime.Now.ToString("HHmmss"),
                 ReturnClonedOptionObject = false,
                 TnConfig  = ConfigSettings.Load(configPath, staticVar["tnConfigFileName"]),
-                AvData    = AvatarData.BuildObject(sentOptionObject, sentScriptParameter, staticVar["avSystemCode"]),
+                AvData    = AvatarData.BuildObject(sentOptionObject, sentScriptParameter),
                 TnPath    = Paths.Build(staticVar["tnDataRoot"], staticVar["avSystemCode"])
             };
 
@@ -152,7 +152,7 @@ namespace Outpost31.Core.Session
             return new Dictionary<string, string>
             {
                 { "tnBuild",              "240621.0943" },
-                { "avSystemCode",         "UAT" },
+                //{ "avSystemCode",         "UAT" },
                 { "tnDataRoot",           @"C:\TingenData" },
                 { "tnConfigFileName",     "Tingen.config" },
                 { "ntstSecurityFileName", "NtstSecurity.config" }
