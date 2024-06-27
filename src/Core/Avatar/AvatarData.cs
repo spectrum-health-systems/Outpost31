@@ -18,7 +18,7 @@ namespace Outpost31.Core.Avatar
     ///   </list>
     ///  </para>
     ///  <para>
-    ///   - This object is included in the Tingen Session object when Tingen starts.<br/>
+    ///   - This object is added to the Tingen Session object when Tingen starts.<br/>
     ///  </para>
     /// </remarks>
     public class AvatarData
