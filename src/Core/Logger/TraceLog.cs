@@ -1,4 +1,5 @@
-﻿// u240607.1022
+﻿// u240624.0843_code
+// u240624.0843_documentation
 
 using System;
 using System.IO;
@@ -23,7 +24,7 @@ namespace Outpost31.Core.Logger
         /// <returns></returns>
         public static TraceLog BuildInfo(string traceLogPath, int traceLogLevel, int traceLogDelay)
         {
-            /* no log */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             return new TraceLog
             {
@@ -42,7 +43,7 @@ namespace Outpost31.Core.Logger
         /// <param name="callLine"></param>
         public static void Create(int logLevel, string assemblyName, TraceLog traceInfo, string fromClass, string fromMethod, int line)
         {
-            /* no log */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             if (logLevel <= traceInfo.TraceLogLevel)
             {
@@ -55,9 +56,17 @@ namespace Outpost31.Core.Logger
             }
         }
 
+        /// <summary>Soon.</summary>
+        /// <param name="logLevel"></param>
+        /// <param name="assemblyName"></param>
+        /// <param name="traceInfo"></param>
+        /// <param name="fromClass"></param>
+        /// <param name="fromMethod"></param>
+        /// <param name="line"></param>
+        /// <param name="message"></param>
         public static void Create(int logLevel, string assemblyName, TraceLog traceInfo, string fromClass, string fromMethod, int line, string message)
         {
-            /* no log */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
 
             if (logLevel <= traceInfo.TraceLogLevel)
             {
@@ -70,11 +79,3 @@ namespace Outpost31.Core.Logger
         }
     }
 }
-
-/*
-
------------------
-Development notes
------------------
-
-*/

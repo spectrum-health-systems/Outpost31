@@ -1,4 +1,5 @@
-﻿// u240613.1255
+﻿// u240624.0843_code
+// u240624.0843_documentation
 
 using System.IO;
 
@@ -39,11 +40,3 @@ namespace Outpost31.Core.NtstWebService
         }
     }
 }
-
-/*
-
------------------
-Development notes
------------------
-
-*/

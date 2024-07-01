@@ -1,0 +1,7 @@
+<map id="Outpost31.Core.Framework.Catalog.RemotePaths.BuildObject" name="Outpost31.Core.Framework.Catalog.RemotePaths.BuildObject">
+<area shape="rect" id="Node000001" title="Builds the remote paths object." alt="" coords="492,5,711,46"/>
+<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_framework_1_1_paths.html#a9ae4f409983508576ed04349ea22fbaf" title="Builds the paths object." alt="" coords="260,5,444,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="476,28,445,28,445,23,476,23"/>
+<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_session_1_1_tingen_session.html#abd8de2211ce4837992fbb7163f882b61" title="Builds the Tingen Session object." alt="" coords="5,5,212,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="244,28,212,28,212,23,244,23"/>
+</map>

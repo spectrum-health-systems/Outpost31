@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_outpost31_1_1_core_1_1_framework_1_1_catalog" xml:lang="en-US">
+<title>Outpost31.Core.Framework.Catalog Namespace Reference</title>
+<indexterm><primary>Outpost31.Core.Framework.Catalog</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths">PublicPaths</link></para>
+
+<para>Public paths for Tingen. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths">RemotePaths</link></para>
+
+<para>Remote paths for Tingen. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths">SystemCodePaths</link></para>
+
+<para>System Code paths for Tingen. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths">TingenPaths</link></para>
+
+<para>Specific to Tingen. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

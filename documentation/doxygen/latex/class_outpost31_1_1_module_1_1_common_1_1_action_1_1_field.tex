@@ -1,0 +1,138 @@
+\doxysection{Outpost31.\+Module.\+Common.\+Action.\+Field Class Reference}
+\hypertarget{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field}{}\label{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field}\index{Outpost31.Module.Common.Action.Field@{Outpost31.Module.Common.Action.Field}}
+
+
+\doxylink{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field}{Field} operations.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_a0ce18754b3f9ab5de6c412cce6cf9bc7}{Compare\+Value}} (string field01\+Value, string field02\+Value, \mbox{\hyperlink{class_outpost31_1_1_core_1_1_logger_1_1_trace_log}{Trace\+Log}} trace\+Info)
+\begin{DoxyCompactList}\small\item\em Compare the values of two form field IDs to determine if they are the same. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_a2037fbd8a694f23a2d6da30b8c4602a9}{Lock}} (string field\+Id)
+\begin{DoxyCompactList}\small\item\em Locks a field so that it cannot be edited. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_a828bb67552a8683ad009bf56a9baecb5}{Save\+Value}} (string value\+To\+Save, string file\+Path, \mbox{\hyperlink{class_outpost31_1_1_core_1_1_logger_1_1_trace_log}{Trace\+Log}} trace\+Info)
+\begin{DoxyCompactList}\small\item\em Saves the value of a field to a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_afb5729e7e24aa173ee54e1996e6532f5}{Assembly\+Name}} = Assembly.\+Get\+Executing\+Assembly().Get\+Name().Name\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Assembly name for log files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field}{Field} operations. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_a0ce18754b3f9ab5de6c412cce6cf9bc7}\index{Outpost31.Module.Common.Action.Field@{Outpost31.Module.Common.Action.Field}!CompareValue@{CompareValue}}
+\index{CompareValue@{CompareValue}!Outpost31.Module.Common.Action.Field@{Outpost31.Module.Common.Action.Field}}
+\doxysubsubsection{\texorpdfstring{CompareValue()}{CompareValue()}}
+{\footnotesize\ttfamily \label{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_a0ce18754b3f9ab5de6c412cce6cf9bc7} 
+static bool Outpost31.\+Module.\+Common.\+Action.\+Field.\+Compare\+Value (\begin{DoxyParamCaption}\item[{string}]{field01\+Value}{, }\item[{string}]{field02\+Value}{, }\item[{\mbox{\hyperlink{class_outpost31_1_1_core_1_1_logger_1_1_trace_log}{Trace\+Log}}}]{trace\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compare the values of two form field IDs to determine if they are the same. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field01\+Value} & The value of the first field.\\
+\hline
+{\em field02\+Value} & The value of the second field.\\
+\hline
+\end{DoxyParams}
+
+
+To call Field\+Operation.\+Compare()\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ value1\ =\ tnSession.AvComponents.SentOptionObject.GetFieldValue(\textcolor{stringliteral}{"{}10001"{}})}
+\DoxyCodeLine{var\ value2\ =\ tnSession.AvComponents.SentOptionObject.GetFieldValue(\textcolor{stringliteral}{"{}10002"{}});}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_outpost31}{Outpost31}}.\mbox{\hyperlink{namespace_outpost31_1_1_module}{Module}}.\mbox{\hyperlink{namespace_outpost31_1_1_module_1_1_common}{Common}}.FieldOperation.SaveValue(value1,\ value1);}
+
+\end{DoxyCode}
+ 
+
+\begin{DoxyReturn}{Returns}
+True (the fields values are the same) or false(the field values are different).
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_a0ce18754b3f9ab5de6c412cce6cf9bc7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_a2037fbd8a694f23a2d6da30b8c4602a9}\index{Outpost31.Module.Common.Action.Field@{Outpost31.Module.Common.Action.Field}!Lock@{Lock}}
+\index{Lock@{Lock}!Outpost31.Module.Common.Action.Field@{Outpost31.Module.Common.Action.Field}}
+\doxysubsubsection{\texorpdfstring{Lock()}{Lock()}}
+{\footnotesize\ttfamily \label{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_a2037fbd8a694f23a2d6da30b8c4602a9} 
+static void Outpost31.\+Module.\+Common.\+Action.\+Field.\+Lock (\begin{DoxyParamCaption}\item[{string}]{field\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Locks a field so that it cannot be edited. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field\+Id} & The field ID to be locked.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_a828bb67552a8683ad009bf56a9baecb5}\index{Outpost31.Module.Common.Action.Field@{Outpost31.Module.Common.Action.Field}!SaveValue@{SaveValue}}
+\index{SaveValue@{SaveValue}!Outpost31.Module.Common.Action.Field@{Outpost31.Module.Common.Action.Field}}
+\doxysubsubsection{\texorpdfstring{SaveValue()}{SaveValue()}}
+{\footnotesize\ttfamily \label{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_a828bb67552a8683ad009bf56a9baecb5} 
+static void Outpost31.\+Module.\+Common.\+Action.\+Field.\+Save\+Value (\begin{DoxyParamCaption}\item[{string}]{value\+To\+Save}{, }\item[{string}]{file\+Path}{, }\item[{\mbox{\hyperlink{class_outpost31_1_1_core_1_1_logger_1_1_trace_log}{Trace\+Log}}}]{trace\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Saves the value of a field to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value\+To\+Save} & The value to save.\\
+\hline
+{\em file\+Path} & The file path.\\
+\hline
+\end{DoxyParams}
+
+
+To call Field\+Operation.\+Compare()\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ fieldValue\ =\ tnSession.AvComponents.SentOptionObject.GetFieldValue(\textcolor{stringliteral}{"{}10001"{}})}
+\DoxyCodeLine{var\ filePath\ =\ \textcolor{stringliteral}{\$@"{}\{tnSession.TnFramework.TemporaryPath\}\(\backslash\)\{currentAvatarUser\}-\/\%filename\%.\%extension\%"{}};}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_outpost31}{Outpost31}}.\mbox{\hyperlink{namespace_outpost31_1_1_module}{Module}}.\mbox{\hyperlink{namespace_outpost31_1_1_module_1_1_common}{Common}}.FieldOperation.SaveValue(originalAuthor,\ filePath);}
+
+\end{DoxyCode}
+ 
+
+To ensure that any sensitive data is removed at the end of a session, the file\+Path should adhere to the following standards\+: 
+\begin{DoxyItemize}
+\item The filename should always start with the {\ttfamily current\+Avatar\+User} 
+\item The {\ttfamily file\+Path} should be in {\ttfamily tn\+Session.\+Tn\+Framework.\+Temporary\+Path} 
+\end{DoxyItemize}
+
+Since the {\ttfamily file\+Path} is user-\/definable, we will verify that the {\ttfamily file\+Path} doesn\textquotesingle{}t exist before (re)creating it. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_a828bb67552a8683ad009bf56a9baecb5_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_afb5729e7e24aa173ee54e1996e6532f5}\index{Outpost31.Module.Common.Action.Field@{Outpost31.Module.Common.Action.Field}!AssemblyName@{AssemblyName}}
+\index{AssemblyName@{AssemblyName}!Outpost31.Module.Common.Action.Field@{Outpost31.Module.Common.Action.Field}}
+\doxysubsubsection{\texorpdfstring{AssemblyName}{AssemblyName}}
+{\footnotesize\ttfamily \label{class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_afb5729e7e24aa173ee54e1996e6532f5} 
+string Outpost31.\+Module.\+Common.\+Action.\+Field.\+Assembly\+Name = Assembly.\+Get\+Executing\+Assembly().Get\+Name().Name\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Assembly name for log files. 
+
+
+\begin{DoxyItemize}
+\item Define the assembly name here so it can be used to write log files throughout the class. 
+\end{DoxyItemize}

@@ -1,4 +1,4 @@
-﻿// u240605.1135
+﻿// u240620.1356
 
 using System.IO;
 using System.Text.Json;
@@ -74,8 +74,11 @@ namespace Outpost31.Core.Utilities
 }
 
 /*
+=================
+DEVELOPMENT NOTES
+=================
 
-Development notes
------------------
+- Change "configurationFileContents" to "fileContents"
 
+_Documentation updated ------
 */

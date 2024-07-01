@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__welcome_to_outpost31_8cs" xml:lang="en-US">
+<title>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/WelcomeToOutpost31.cs File Reference</title>
+<indexterm><primary>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/WelcomeToOutpost31.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <emphasis role="strong">Outpost31.WelcomeToOutpost31</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_outpost31">Outpost31</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

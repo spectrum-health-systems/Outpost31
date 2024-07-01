@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e" kind="page">
+    <compoundname>md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e</compoundname>
+    <title>README</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para></para>
+<para> <image type="html" name="./.github/images/logos/Outpost32_logo.png" alt="logo" inline="yes"></image>
+</para>
+<para></para>
+<para><bold>This is a work in progress, and will be complete by the release of Tingen 24.6</bold></para>
+<sect1 id="md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e_1autotoc_md0">
+<title>About Outpost31</title><para>The <ref refid="namespace_outpost31" kindref="compound">Outpost31</ref> project contains the core components and modules for the <ulink url="https://github.com/spectrum-health-systems/Tingen">Tingen</ulink> web service.</para>
+</sect1>
+<sect1 id="md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e_1autotoc_md1">
+<title>Repository branches</title><para><itemizedlist>
+<listitem><para><ulink url="https://github.com/spectrum-health-systems/Outpost31_development/tree/main">main</ulink> The stable branch of <ref refid="namespace_outpost31" kindref="compound">Outpost31</ref></para>
+</listitem><listitem><para><ulink url="https://github.com/spectrum-health-systems/Outpost31_development/tree/development">development</ulink> The current development branch of <ref refid="namespace_outpost31" kindref="compound">Outpost31</ref> </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/README.md"/>
+  </compounddef>
+</doxygen>

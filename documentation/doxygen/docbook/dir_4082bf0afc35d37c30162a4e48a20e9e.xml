@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_4082bf0afc35d37c30162a4e48a20e9e" xml:lang="en-US">
+<title>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/obj/Debug Directory Reference</title>
+<indexterm><primary>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/obj/Debug Directory Reference</primary></indexterm>
+Directory dependency graph for Debug:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_4082bf0afc35d37c30162a4e48a20e9e_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__8_n_e_t_framework_00_version_0av4_88_8_assembly_attributes_8cs">.NETFramework,Version=v4.8.AssemblyAttributes.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

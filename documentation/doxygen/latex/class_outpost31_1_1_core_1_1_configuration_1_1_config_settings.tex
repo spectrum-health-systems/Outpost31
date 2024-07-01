@@ -1,0 +1,222 @@
+\doxysection{Outpost31.\+Core.\+Configuration.\+Config\+Settings Class Reference}
+\hypertarget{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings}{}\label{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings}\index{Outpost31.Core.Configuration.ConfigSettings@{Outpost31.Core.Configuration.ConfigSettings}}
+
+
+Tingen configuration settings.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings}{Config\+Settings}} \mbox{\hyperlink{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_acd67e31b82a94d2b72ce89d0099c1ae7}{Build\+Default\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Build a default Tingen configuration object. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings}{Config\+Settings}} \mbox{\hyperlink{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_a9cb9a342c0a283f7a38706c10e9869ce}{Load}} (string config\+Path, string config\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Loads the Tingen configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_a28109a2fe3fff375c0d49cc6688c3366}{Tingen\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Determines what Tingen does, if anything. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_aac88423bba238fded973d18a17986db2}{Mod\+Open\+Incident\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Determines if the {\bfseries{Open Incident \doxylink{namespace_outpost31_1_1_module}{Module}}} is enabled. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_a91be82944f253f870bf64b75bcd1130b}{Ntst\+Web\+Services}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Determines if the NTST web services are enabled. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_a3ea54ee69cc5b09a1ce9c5a49e10cc06}{Trace\+Level}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The trace logging level. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_ad45756319ae32581bce2a4d7536a11ea}{Trace\+Delay}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The delay between trace log writes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Tingen configuration settings. 
+
+Tingen configuration settings\+: 
+\begin{DoxyItemize}
+\item Are specific to Tingen core functionality (other components/modules have their own configurations) 
+\item Do not change between Tingen sessions 
+\item Can be modified by the user to suit their environment 
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item The Tingen configuration file is located in {\itshape "{}\+Tingen\+Data\textbackslash{}\%\+System\+Code\%\textbackslash{}\+Config\textbackslash{}\+Tingen.\+config"{}}.~\newline
+
+\item More information about configuring Tingen here.
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_acd67e31b82a94d2b72ce89d0099c1ae7}\index{Outpost31.Core.Configuration.ConfigSettings@{Outpost31.Core.Configuration.ConfigSettings}!BuildDefaultObject@{BuildDefaultObject}}
+\index{BuildDefaultObject@{BuildDefaultObject}!Outpost31.Core.Configuration.ConfigSettings@{Outpost31.Core.Configuration.ConfigSettings}}
+\doxysubsubsection{\texorpdfstring{BuildDefaultObject()}{BuildDefaultObject()}}
+{\footnotesize\ttfamily \label{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_acd67e31b82a94d2b72ce89d0099c1ae7} 
+static \mbox{\hyperlink{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings}{Config\+Settings}} Outpost31.\+Core.\+Configuration.\+Config\+Settings.\+Build\+Default\+Object (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Build a default Tingen configuration object. 
+
+
+\begin{DoxyItemize}
+\item These are the default values for the Tingen configuration settings.~\newline
+
+\item When a new version of Tingen is released, these need to be verified/updated.~\newline
+
+\item More information about configuring Tingen here.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+An object with default Tingen configuration values.
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_acd67e31b82a94d2b72ce89d0099c1ae7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_a9cb9a342c0a283f7a38706c10e9869ce}\index{Outpost31.Core.Configuration.ConfigSettings@{Outpost31.Core.Configuration.ConfigSettings}!Load@{Load}}
+\index{Load@{Load}!Outpost31.Core.Configuration.ConfigSettings@{Outpost31.Core.Configuration.ConfigSettings}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily \label{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_a9cb9a342c0a283f7a38706c10e9869ce} 
+static \mbox{\hyperlink{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings}{Config\+Settings}} Outpost31.\+Core.\+Configuration.\+Config\+Settings.\+Load (\begin{DoxyParamCaption}\item[{string}]{config\+Path}{, }\item[{string}]{config\+File\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads the Tingen configuration file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config\+Path} & Path to the Tingen configuration file.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyItemize}
+\item The configuration file path is created in {\bfseries{Tingen.\+asmx.\+cs}}~\newline
+
+\item If the configuration file does not exist, a configuration file with default values will be created. 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+The Tingen configuration settings.
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_a9cb9a342c0a283f7a38706c10e9869ce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_a9cb9a342c0a283f7a38706c10e9869ce_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_aac88423bba238fded973d18a17986db2}\index{Outpost31.Core.Configuration.ConfigSettings@{Outpost31.Core.Configuration.ConfigSettings}!ModOpenIncidentMode@{ModOpenIncidentMode}}
+\index{ModOpenIncidentMode@{ModOpenIncidentMode}!Outpost31.Core.Configuration.ConfigSettings@{Outpost31.Core.Configuration.ConfigSettings}}
+\doxysubsubsection{\texorpdfstring{ModOpenIncidentMode}{ModOpenIncidentMode}}
+{\footnotesize\ttfamily \label{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_aac88423bba238fded973d18a17986db2} 
+string Outpost31.\+Core.\+Configuration.\+Config\+Settings.\+Mod\+Open\+Incident\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Determines if the {\bfseries{Open Incident \doxylink{namespace_outpost31_1_1_module}{Module}}} is enabled. 
+
+Valid Open Incident \doxylink{namespace_outpost31_1_1_module}{Module} modes\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+Enabled (default) &The Open Incident \doxylink{namespace_outpost31_1_1_module}{Module} is enabled.  \\\cline{1-2}
+Disabled &The Open Incident \doxylink{namespace_outpost31_1_1_module}{Module} is disabled., and the sent\+Object is returned to \doxylink{namespace_outpost31_1_1_core_1_1_avatar}{Avatar} unmodified.  \\\cline{1-2}
+\end{longtabu}
+
+
+
+\begin{DoxyItemize}
+\item Disabling this module not affect other modules, or Tingen as a whole.~\newline
+
+\item More information about Tingen modes here.
+\end{DoxyItemize}\Hypertarget{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_a91be82944f253f870bf64b75bcd1130b}\index{Outpost31.Core.Configuration.ConfigSettings@{Outpost31.Core.Configuration.ConfigSettings}!NtstWebServices@{NtstWebServices}}
+\index{NtstWebServices@{NtstWebServices}!Outpost31.Core.Configuration.ConfigSettings@{Outpost31.Core.Configuration.ConfigSettings}}
+\doxysubsubsection{\texorpdfstring{NtstWebServices}{NtstWebServices}}
+{\footnotesize\ttfamily \label{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_a91be82944f253f870bf64b75bcd1130b} 
+string Outpost31.\+Core.\+Configuration.\+Config\+Settings.\+Ntst\+Web\+Services\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Determines if the NTST web services are enabled. 
+
+
+\begin{DoxyItemize}
+\item Currently not used, but will be in the future.~\newline
+
+\item This should be set to "{}$<$b$>$disabled$<$/b$>$"{} until the NTST web services are implemented. 
+\end{DoxyItemize}\Hypertarget{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_a28109a2fe3fff375c0d49cc6688c3366}\index{Outpost31.Core.Configuration.ConfigSettings@{Outpost31.Core.Configuration.ConfigSettings}!TingenMode@{TingenMode}}
+\index{TingenMode@{TingenMode}!Outpost31.Core.Configuration.ConfigSettings@{Outpost31.Core.Configuration.ConfigSettings}}
+\doxysubsubsection{\texorpdfstring{TingenMode}{TingenMode}}
+{\footnotesize\ttfamily \label{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_a28109a2fe3fff375c0d49cc6688c3366} 
+string Outpost31.\+Core.\+Configuration.\+Config\+Settings.\+Tingen\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Determines what Tingen does, if anything. 
+
+Valid Tingen modes\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+Enabled (default) &Tingen is enabled, and will hand work off to the requested {\itshape Tingen \doxylink{namespace_outpost31_1_1_module}{Module}}.  \\\cline{1-2}
+Disabled &Tingen is disabled, and the sent\+Object is returned to \doxylink{namespace_outpost31_1_1_core_1_1_avatar}{Avatar} unmodified.  \\\cline{1-2}
+\end{longtabu}
+
+
+
+\begin{DoxyItemize}
+\item There is logic to catch {\itshape "{}enable"{}} and {\itshape "{}disable"{}}, since I kept making that mistake.~\newline
+
+\item More information about Tingen modes here.
+\end{DoxyItemize}\Hypertarget{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_ad45756319ae32581bce2a4d7536a11ea}\index{Outpost31.Core.Configuration.ConfigSettings@{Outpost31.Core.Configuration.ConfigSettings}!TraceDelay@{TraceDelay}}
+\index{TraceDelay@{TraceDelay}!Outpost31.Core.Configuration.ConfigSettings@{Outpost31.Core.Configuration.ConfigSettings}}
+\doxysubsubsection{\texorpdfstring{TraceDelay}{TraceDelay}}
+{\footnotesize\ttfamily \label{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_ad45756319ae32581bce2a4d7536a11ea} 
+int Outpost31.\+Core.\+Configuration.\+Config\+Settings.\+Trace\+Delay\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The delay between trace log writes. 
+
+
+\begin{DoxyItemize}
+\item In some cases, logs may be written too quickly, and cause files to be overwritten.~\newline
+
+\item By including a short delay, the logs can be written in a way that prevents this from happening. 
+\end{DoxyItemize}
+
+10 (default) \Hypertarget{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_a3ea54ee69cc5b09a1ce9c5a49e10cc06}\index{Outpost31.Core.Configuration.ConfigSettings@{Outpost31.Core.Configuration.ConfigSettings}!TraceLevel@{TraceLevel}}
+\index{TraceLevel@{TraceLevel}!Outpost31.Core.Configuration.ConfigSettings@{Outpost31.Core.Configuration.ConfigSettings}}
+\doxysubsubsection{\texorpdfstring{TraceLevel}{TraceLevel}}
+{\footnotesize\ttfamily \label{class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_a3ea54ee69cc5b09a1ce9c5a49e10cc06} 
+int Outpost31.\+Core.\+Configuration.\+Config\+Settings.\+Trace\+Level\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The trace logging level. 
+
+
+\begin{DoxyItemize}
+\item Trace logs with a level less than or equal to the {\itshape Trace\+Level}  will be written.~\newline
+
+\item Trace logs are written to {\itshape "{}\%\+Tingen\+Data\+Root\%\textbackslash{}\%\+Avatar\+System\+Code\%\textbackslash{}\+YYMM\textbackslash{}\%\+Option\+User\+Id\%\textbackslash{}\+HHMMSS\textbackslash{}"{}$<$/i$>$.$<$br/$>$   -\/ More information about trace logs can be found $<$see href="{}github.\+com/spectrum-\/health-\/systems/\+Tingen-\/\+Documentation/blob/main/\+Glossary.md.\+logging"{}$>$here$<$/see$>$.  $<$/para$>$ $<$/remarks$>$   $<$example$>$    If the Trace\+Log\+Level is set to "{}{\ttfamily 2}"{}, the following log calls will be executed\+:$<$br/$>$    $<$c$>$\+Log\+Event.\+Trace(1, tn\+Session.\+Trace\+Logs, Asm);$<$/c$>$$<$br/$>$    $<$c$>$\+Log\+Event.\+Trace(2, tn\+Session.\+Trace\+Logs, Asm);$<$/c$>$$<$br/$>$$<$br/$>$    If the Trace\+Log\+Level is set to "{}{\ttfamily 2}"{}, the following log calls will {\itshape not} be executed\+:~\newline
+ {\ttfamily Log\+Event.\+Trace(4, tn\+Session.\+Trace\+Logs, Asm);}~\newline
+ {\ttfamily Log\+Event.\+Trace(5, tn\+Session.\+Trace\+Logs, Asm);} }
+\end{DoxyItemize}
+
+{\itshape  }
+
+{\itshape  0 (default) }
+
+{\itshape  }

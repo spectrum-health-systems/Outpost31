@@ -1,0 +1,19 @@
+<map id="Outpost31.Core.TingenApp.Start" name="Outpost31.Core.TingenApp.Start">
+<area shape="rect" id="Node000001" title="Start the Tingen web service." alt="" coords="5,185,187,228"/>
+<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_parse_script_parameter.html#af0460c8d33e9f2489486486180a1e321" title="OLD Determines which Tingen Module will be doing the work this session." alt="" coords="235,123,419,165"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,182,231,167,232,172,178,187"/>
+<area shape="rect" id="Node000004" href="$class_outpost31_1_1_core_1_1_logger_1_1_log_event.html#a7477552f340d46775d869b63e40e8e65" title="Log a trace event." alt="" coords="752,123,933,165"/>
+<area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="173,226,279,250,413,268,486,271,560,269,633,259,703,241,733,229,761,212,808,174,811,178,764,216,736,234,705,247,634,264,560,274,486,276,413,273,278,255,171,231"/>
+<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_parse_script_parameter.html#a7113f9d248da8ae751f1af88ae32447e" title=" " alt="" coords="487,5,685,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="362,120,410,92,466,64,498,51,500,56,468,69,413,97,365,124"/>
+<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="405,119,467,108,586,99,705,108,751,116,750,121,704,113,586,104,467,113,406,125"/>
+<area shape="rect" id="Node000006" href="$class_outpost31_1_1_core_1_1_parse_script_parameter.html#a1f575403bc0c3c93f050c44899246a94" title=" " alt="" coords="467,123,704,165"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="420,141,451,141,451,147,420,147"/>
+<area shape="rect" id="Node000007" href="$class_outpost31_1_1_core_1_1_parse_script_parameter.html#a60e5fffef8f78127da45dbdf6b3149c0" title=" " alt="" coords="484,189,687,232"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="413,163,486,182,485,187,412,169"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="659,46,705,64,795,112,793,117,703,69,657,51"/>
+<area shape="rect" id="Node000005" href="$class_outpost31_1_1_core_1_1_logger_1_1_trace_log.html#a1337fb24049079842cd6a4aab40f6c27" title="Soon." alt="" coords="981,123,1172,165"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="933,141,965,141,965,147,933,147"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="705,141,737,141,737,147,705,147"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="670,186,742,167,744,172,671,191"/>
+</map>

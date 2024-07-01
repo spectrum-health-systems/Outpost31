@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_4cb3d49791fd7a4fe319614acda3dd58" xml:lang="en-US">
+<title>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/Admin/Framework Directory Reference</title>
+<indexterm><primary>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/Admin/Framework Directory Reference</primary></indexterm>
+Directory dependency graph for Framework:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_4cb3d49791fd7a4fe319614acda3dd58_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__module_2_admin_2_framework_2_refresh_8cs">Refresh.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

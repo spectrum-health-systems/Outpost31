@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_primeval_log" xml:lang="en-US">
+<title>Outpost31.Core.Logger.PrimevalLog Class Reference</title>
+<indexterm><primary>Outpost31.Core.Logger.PrimevalLog</primary></indexterm>
+<para>
+
+<para>Primeval logs. </para>
+ 
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a5ef334a75ceb7eca289ff18e56443fb7">Create</link> (string assemblyName, string message, string fromClass, string fromMethod, int line)</para>
+
+<para>Creates a Primeval log. </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1add63a98e1ca24815bff62279fb1bd01e">DevelopmentCleanup</link> ()</para>
+
+<para>Removes old Primeval logs. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>static string <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a7baa7dcdf807da5bf82d5777c6d365ee">PrimevalLogPath</link> = @&quot;C:\TingenData\Primeval&quot;<computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Primeval log path. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Primeval logs. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a5ef334a75ceb7eca289ff18e56443fb7"/><section>
+    <title>Create()</title>
+<indexterm><primary>Create</primary><secondary>Outpost31.Core.Logger.PrimevalLog</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Logger.PrimevalLog</primary><secondary>Create</secondary></indexterm>
+<para><computeroutput>static void Outpost31.Core.Logger.PrimevalLog.Create (string assemblyName, string message, string fromClass, string fromMethod, int line)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Creates a Primeval log. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>assemblyName</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>message</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>fromClass</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>fromMethod</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>line</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+
+<para><itemizedlist>
+<listitem>
+<para>Before a Primeval log is written, the Primeval log path is verified to ensure it exists.<?linebreak?></para>
+</listitem><listitem>
+<para>Log files may be created quickly - and possibly at the same time - so a pause is added to ensure logs are unique. </para>
+</listitem></itemizedlist>
+</para>
+
+<para>To create a simple Primeval log: <literallayout><computeroutput>LogEvent.Primeval(AssemblyName);
+LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
+</computeroutput></literallayout> To create a Primeval log with custom content: <literallayout><computeroutput>LogEvent.Primeval(AssemblyName,&#32;message);
+LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name,&#32;message);
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_a5ef334a75ceb7eca289ff18e56443fb7_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_a5ef334a75ceb7eca289ff18e56443fb7_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1add63a98e1ca24815bff62279fb1bd01e"/><section>
+    <title>DevelopmentCleanup()</title>
+<indexterm><primary>DevelopmentCleanup</primary><secondary>Outpost31.Core.Logger.PrimevalLog</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Logger.PrimevalLog</primary><secondary>DevelopmentCleanup</secondary></indexterm>
+<para><computeroutput>static void Outpost31.Core.Logger.PrimevalLog.DevelopmentCleanup ( )<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Removes old Primeval logs. </para>
+</para>
+
+<para><itemizedlist>
+<listitem>
+<para>Not currently used. </para>
+</listitem></itemizedlist>
+</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a7baa7dcdf807da5bf82d5777c6d365ee"/><section>
+    <title>PrimevalLogPath</title>
+<indexterm><primary>PrimevalLogPath</primary><secondary>Outpost31.Core.Logger.PrimevalLog</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Logger.PrimevalLog</primary><secondary>PrimevalLogPath</secondary></indexterm>
+<para><computeroutput>string Outpost31.Core.Logger.PrimevalLog.PrimevalLogPath = @&quot;C:\TingenData\Primeval&quot;<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Primeval log path. </para>
+</para>
+
+<para><itemizedlist>
+<listitem>
+<para>Primeval logs are written to <emphasis>C:\TingenData\Primeval&lt;/i&gt;, defined here so it can be easily changed if needed. </emphasis></para>
+</listitem></itemizedlist>
+</para>
+
+<para><emphasis> </emphasis></para>
+
+<para><emphasis> </emphasis></para>
+</section>
+</section>
+</section>

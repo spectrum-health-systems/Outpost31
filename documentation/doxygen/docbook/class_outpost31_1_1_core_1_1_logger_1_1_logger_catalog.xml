@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_logger_catalog" xml:lang="en-US">
+<title>Outpost31.Core.Logger.LoggerCatalog Class Reference</title>
+<indexterm><primary>Outpost31.Core.Logger.LoggerCatalog</primary></indexterm>
+<para>
+
+<para>Log catalog for the <link linkend="_namespace_outpost31_1_1_core_1_1_logger">Outpost31.Core.Logger</link> namespace. </para>
+ 
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static string <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_logger_catalog_1a4f61a573573056dbbbd909d9d1412a34">StandardContent</link> (string assemblyName, string calledClass, string calledMethod, string line, string message)</para>
+
+<para>Soon. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Log catalog for the <link linkend="_namespace_outpost31_1_1_core_1_1_logger">Outpost31.Core.Logger</link> namespace. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_logger_catalog_1a4f61a573573056dbbbd909d9d1412a34"/><section>
+    <title>StandardContent()</title>
+<indexterm><primary>StandardContent</primary><secondary>Outpost31.Core.Logger.LoggerCatalog</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Logger.LoggerCatalog</primary><secondary>StandardContent</secondary></indexterm>
+<para><computeroutput>static string Outpost31.Core.Logger.LoggerCatalog.StandardContent (string assemblyName, string calledClass, string calledMethod, string line, string message)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Soon. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>assemblyName</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>callPath</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>callMember</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>callLine</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>message</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_logger_1_1_logger_catalog_a4f61a573573056dbbbd909d9d1412a34_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

@@ -3,13 +3,14 @@
 // https://github.com/APrettyCoolProgram/Outpost31
 // Copyright (c) A Pretty Cool Program. All rights reserved.
 // Licensed under the Apache 2.0 license.
-// ================================================================ 240613 =====
+// ================================================================ 240624 =====
 
-// u240610.0732
+// u------.----_code
+// u240624.0843_documentation
 
-/* ----------------------------------
+/* -------------------------------------
  * IMPORTANT INFORMATION ABOUT OUTPOST31
- * ----------------------------------
+ * -------------------------------------
  * Outpost31 is the logic for the Tingen web service.
  */
 
@@ -17,6 +18,7 @@ namespace Outpost31
 {
     internal class WelcomeToOutpost31
     {
+        // Nothing is done here, it's just for documentation.
     }
 }
 
@@ -32,13 +34,12 @@ VALID SCRIPT PARAMETERS
 
 Module: Admin
 
-* admin-service-update-mode
-* admin-service-update-currentsettings
-* admin-service-update-all
+* admin-service-update-mode > Admin-Mode-Status-Update
+* admin-service-update-currentsettings > Admin-CurrentSettings-Status-Update
+* admin-service-update-all > Admin-All-Status-Update
 
 Module: OpenIncident
 
 * openincident-verify-authorisviewing
-
 
 */

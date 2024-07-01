@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_a78e3d5c26c10c48c89f9886c35d1616" xml:lang="en-US">
+<title>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration Directory Reference</title>
+<indexterm><primary>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration Directory Reference</primary></indexterm>
+Directory dependency graph for Configuration:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_a78e3d5c26c10c48c89f9886c35d1616_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__config_settings_8cs">ConfigSettings.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

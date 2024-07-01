@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__module_open_incident_8cs" xml:lang="en-US">
+<title>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/OpenIncident/ModuleOpenIncident.cs File Reference</title>
+<indexterm><primary>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/OpenIncident/ModuleOpenIncident.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident">Outpost31.Module.OpenIncident.ModuleOpenIncident</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_outpost31">Outpost31</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_outpost31_1_1_module">Outpost31.Module</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_outpost31_1_1_module_1_1_open_incident">Outpost31.Module.OpenIncident</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

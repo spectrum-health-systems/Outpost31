@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_outpost31_1_1_core_1_1_utilities" xml:lang="en-US">
+<title>Outpost31.Core.Utilities Namespace Reference</title>
+<indexterm><primary>Outpost31.Core.Utilities</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_outpost31_1_1_core_1_1_utilities_1_1_du_file">DuFile</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_outpost31_1_1_core_1_1_utilities_1_1_du_json">DuJson</link></para>
+
+<para>Provides JSON functionality. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

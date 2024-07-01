@@ -1,4 +1,4 @@
-﻿// u240607.1043
+﻿// u2240620.1358
 
 using System.IO;
 using System.Reflection;
@@ -26,7 +26,7 @@ namespace Outpost31.Module.Admin.Service
 
             UpdateSettings(tnSession);
 
-            Core.Avatar.OptionObjects.ReturnInfo(tnSession, "All statuses updated.");
+            Core.Avatar.ReturnObject.Finalize(tnSession, "info", "All statuses updated.");
         }
 
         public static void UpdateMode(string remoteRoot, string avSystemCode, string tnMode, TraceLog traceInfo)
@@ -78,9 +78,11 @@ namespace Outpost31.Module.Admin.Service
 }
 
 /*
+=================
+DEVELOPMENT NOTES
+=================
 
------------------
-Development notes
------------------
+- Need to also finalize the OO in "settings" and "mode", not just "all"
 
+_Documentation updated ------
 */

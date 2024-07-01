@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
+<title>Class List</title>
+Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data">Outpost31.Core.Avatar.AvatarData</link>
+<para>Avatar-specific data and logic </para>
+<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_catalog">Outpost31.Core.Session.Catalog</link>
+<para>Soon </para>
+<link linkend="_class_outpost31_1_1_core_1_1_configuration_1_1_config_settings">Outpost31.Core.Configuration.ConfigSettings</link>
+<para>Tingen configuration settings </para>
+<link linkend="_class_outpost31_1_1_core_1_1_utilities_1_1_du_file">Outpost31.Core.Utilities.DuFile</link><link linkend="_class_outpost31_1_1_core_1_1_utilities_1_1_du_json">Outpost31.Core.Utilities.DuJson</link>
+<para>Provides JSON functionality </para>
+<link linkend="_class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field">Outpost31.Module.Common.Action.Field</link>
+<para><link linkend="_class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field">Field</link> operations </para>
+<link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_log_event">Outpost31.Core.Logger.LogEvent</link>
+<para>Provides logging functionality </para>
+<link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_logger_catalog">Outpost31.Core.Logger.LoggerCatalog</link>
+<para>Log catalog for the <link linkend="_namespace_outpost31_1_1_core_1_1_logger">Outpost31.Core.Logger</link> namespace </para>
+<link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_maintenance">Outpost31.Core.Framework.Maintenance</link>
+<para>Methods for maintaining the Tingen framework </para>
+<link linkend="_class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident">Outpost31.Module.OpenIncident.ModuleOpenIncident</link><link linkend="_class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security">Outpost31.Core.NtstWebService.NtstWebServiceSecurity</link><link linkend="_class_outpost31_1_1_module_1_1_admin_1_1_export_1_1_option_object">Outpost31.Module.Admin.Export.OptionObject</link><link linkend="_class_outpost31_1_1_core_1_1_parse_script_parameter">Outpost31.Core.ParseScriptParameter</link>
+<para>Soon </para>
+<link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_paths">Outpost31.Core.Framework.Paths</link>
+<para>The Tingen <link linkend="_namespace_outpost31_1_1_core_1_1_framework">Framework</link> </para>
+<link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_primeval_log">Outpost31.Core.Logger.PrimevalLog</link>
+<para>Primeval logs </para>
+<link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths">Outpost31.Core.Framework.Catalog.PublicPaths</link>
+<para>Public paths for Tingen </para>
+<link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_refresh">Outpost31.Core.Framework.Refresh</link>
+<para><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_refresh">Refresh</link> the Tingen directory structure </para>
+<link linkend="_class_outpost31_1_1_module_1_1_admin_1_1_framework_1_1_refresh">Outpost31.Module.Admin.Framework.Refresh</link><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths">Outpost31.Core.Framework.Catalog.RemotePaths</link>
+<para>Remote paths for Tingen </para>
+<link linkend="_class_outpost31_1_1_core_1_1_avatar_1_1_return_object">Outpost31.Core.Avatar.ReturnObject</link>
+<para>Logic specific to the returnOptionObject</para>
+<link linkend="_class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status">Outpost31.Module.Admin.Service.Status</link>
+<para>Soon </para>
+<link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths">Outpost31.Core.Framework.Catalog.SystemCodePaths</link>
+<para>System Code paths for Tingen </para>
+<link linkend="_class_outpost31_1_1_core_1_1_tingen_app">Outpost31.Core.TingenApp</link><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths">Outpost31.Core.Framework.Catalog.TingenPaths</link>
+<para>Specific to Tingen </para>
+<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">Outpost31.Core.Session.TingenSession</link>
+<para>Contains Tingen session logic </para>
+<link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log">Outpost31.Core.Logger.TraceLog</link>
+<para>Soon </para>
+<link linkend="_class_outpost31_1_1_module_1_1_open_incident_1_1_verify">Outpost31.Module.OpenIncident.Verify</link>
+<para>VerifyAuthor command </para>
+</section>
