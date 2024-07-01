@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_outpost31_1_1_core_1_1_session_1_1_catalog" xml:lang="en-US">
+<title>Outpost31.Core.Session.Catalog Class Reference</title>
+<indexterm><primary>Outpost31.Core.Session.Catalog</primary></indexterm>
+<para>
+
+<para>Soon. </para>
+ 
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static string <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_catalog_1af2e7323ba98c4b3a0df66fe93812ae4b">CurrentSettings</link> (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)</para>
+
+<para>Soon. </para>
+</listitem>
+            <listitem><para>static string <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_catalog_1a92d2976185a1b892644decb96fbf4ea9">SessionDetails</link> (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)</para>
+
+<para>Soon. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>static string <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_catalog_1a18ebe9ab761d04b9f583aa160fc65c51">AssemblyName</link> = Assembly.GetExecutingAssembly().GetName().Name<computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Assembly name for log files. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Soon. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_catalog_1af2e7323ba98c4b3a0df66fe93812ae4b"/><section>
+    <title>CurrentSettings()</title>
+<indexterm><primary>CurrentSettings</primary><secondary>Outpost31.Core.Session.Catalog</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.Catalog</primary><secondary>CurrentSettings</secondary></indexterm>
+<para><computeroutput>static string Outpost31.Core.Session.Catalog.CurrentSettings (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Soon. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>tnSession</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_session_1_1_catalog_af2e7323ba98c4b3a0df66fe93812ae4b_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_catalog_1a92d2976185a1b892644decb96fbf4ea9"/><section>
+    <title>SessionDetails()</title>
+<indexterm><primary>SessionDetails</primary><secondary>Outpost31.Core.Session.Catalog</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.Catalog</primary><secondary>SessionDetails</secondary></indexterm>
+<para><computeroutput>static string Outpost31.Core.Session.Catalog.SessionDetails (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Soon. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>tnSession</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_session_1_1_catalog_a92d2976185a1b892644decb96fbf4ea9_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_catalog_1a18ebe9ab761d04b9f583aa160fc65c51"/><section>
+    <title>AssemblyName</title>
+<indexterm><primary>AssemblyName</primary><secondary>Outpost31.Core.Session.Catalog</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.Catalog</primary><secondary>AssemblyName</secondary></indexterm>
+<para><computeroutput>string Outpost31.Core.Session.Catalog.AssemblyName = Assembly.GetExecutingAssembly().GetName().Name<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Assembly name for log files. </para>
+</para>
+
+<para><itemizedlist>
+<listitem>
+<para>Define the assembly name here so it can be used to write log files throughout the class. </para>
+</listitem></itemizedlist>
+</para>
+</section>
+</section>
+</section>

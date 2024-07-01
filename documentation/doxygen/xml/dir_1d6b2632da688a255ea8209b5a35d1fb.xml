@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="dir_1d6b2632da688a255ea8209b5a35d1fb" kind="dir">
+    <compoundname>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/NtstWebService</compoundname>
+    <innerfile refid="_ntst_web_service_security_8cs">NtstWebServiceSecurity.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/NtstWebService/"/>
+  </compounddef>
+</doxygen>

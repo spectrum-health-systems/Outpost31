@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log" kind="class" language="C#" prot="public">
+    <compoundname>Outpost31::Core::Logger::PrimevalLog</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a7baa7dcdf807da5bf82d5777c6d365ee" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Outpost31.Core.Logger.PrimevalLog.PrimevalLogPath</definition>
+        <argsstring></argsstring>
+        <name>PrimevalLogPath</name>
+        <qualifiedname>Outpost31.Core.Logger.PrimevalLog.PrimevalLogPath</qualifiedname>
+        <initializer>= @&quot;C:\TingenData\Primeval&quot;</initializer>
+        <briefdescription>
+<para>Primeval log path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Primeval logs are written to <emphasis>C:\TingenData\Primeval&lt;/i&gt;, defined here so it can be easily changed if needed. </emphasis></para>
+</listitem></itemizedlist>
+</para>
+<para><emphasis> </emphasis></para>
+<para><emphasis> </emphasis></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" line="20" column="30" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" bodystart="20" bodyend="20"/>
+        <referencedby refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a5ef334a75ceb7eca289ff18e56443fb7" compoundref="_primeval_log_8cs" startline="46" endline="55">Outpost31.Core.Logger.PrimevalLog.Create</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1add63a98e1ca24815bff62279fb1bd01e" compoundref="_primeval_log_8cs" startline="63" endline="66">Outpost31.Core.Logger.PrimevalLog.DevelopmentCleanup</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a5ef334a75ceb7eca289ff18e56443fb7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Outpost31.Core.Logger.PrimevalLog.Create</definition>
+        <argsstring>(string assemblyName, string message, string fromClass, string fromMethod, int line)</argsstring>
+        <name>Create</name>
+        <qualifiedname>Outpost31.Core.Logger.PrimevalLog.Create</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>assemblyName</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>fromClass</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>fromMethod</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>Creates a Primeval log. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>assemblyName</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fromClass</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fromMethod</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para><itemizedlist>
+<listitem><para>Before a Primeval log is written, the Primeval log path is verified to ensure it exists.<linebreak/>
+</para>
+</listitem><listitem><para>Log files may be created quickly - and possibly at the same time - so a pause is added to ensure logs are unique. </para>
+</listitem></itemizedlist>
+</para>
+<para>To create a simple Primeval log: <programlisting filename=".cs"><codeline><highlight class="normal">LogEvent.Primeval(AssemblyName);</highlight></codeline>
+<codeline><highlight class="normal">LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);</highlight></codeline>
+</programlisting> To create a Primeval log with custom content: <programlisting filename=".cs"><codeline><highlight class="normal">LogEvent.Primeval(AssemblyName,<sp/>message);</highlight></codeline>
+<codeline><highlight class="normal">LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name,<sp/>message);</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" line="46" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" bodystart="46" bodyend="55"/>
+        <references refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a7baa7dcdf807da5bf82d5777c6d365ee" compoundref="_primeval_log_8cs" startline="20" endline="20">Outpost31.Core.Logger.PrimevalLog.PrimevalLogPath</references>
+        <references refid="class_outpost31_1_1_core_1_1_logger_1_1_logger_catalog_1a4f61a573573056dbbbd909d9d1412a34" compoundref="_logger_catalog_8cs" startline="18" endline="27">Outpost31.Core.Logger.LoggerCatalog.StandardContent</references>
+        <referencedby refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1adf35641fd17daef20a0391da56a0d578" compoundref="_log_event_8cs" startline="59" endline="66">Outpost31.Core.Logger.LogEvent.Primeval</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1add63a98e1ca24815bff62279fb1bd01e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Outpost31.Core.Logger.PrimevalLog.DevelopmentCleanup</definition>
+        <argsstring>()</argsstring>
+        <name>DevelopmentCleanup</name>
+        <qualifiedname>Outpost31.Core.Logger.PrimevalLog.DevelopmentCleanup</qualifiedname>
+        <briefdescription>
+<para>Removes old Primeval logs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Not currently used. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" line="63" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" bodystart="63" bodyend="66"/>
+        <references refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a7baa7dcdf807da5bf82d5777c6d365ee" compoundref="_primeval_log_8cs" startline="20" endline="20">Outpost31.Core.Logger.PrimevalLog.PrimevalLogPath</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Primeval logs. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" line="12" column="19" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" bodystart="13" bodyend="67"/>
+    <listofallmembers>
+      <member refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a5ef334a75ceb7eca289ff18e56443fb7" prot="public" virt="non-virtual"><scope>Outpost31::Core::Logger::PrimevalLog</scope><name>Create</name></member>
+      <member refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1add63a98e1ca24815bff62279fb1bd01e" prot="public" virt="non-virtual"><scope>Outpost31::Core::Logger::PrimevalLog</scope><name>DevelopmentCleanup</name></member>
+      <member refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a7baa7dcdf807da5bf82d5777c6d365ee" prot="public" virt="non-virtual"><scope>Outpost31::Core::Logger::PrimevalLog</scope><name>PrimevalLogPath</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

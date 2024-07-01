@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths" kind="class" language="C#" prot="public">
+    <compoundname>Outpost31::Core::Framework::Catalog::TingenPaths</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1af785998e9152cbb18010a8aa52d1dcd6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Outpost31.Core.Framework.Catalog.TingenPaths.Root</definition>
+        <argsstring></argsstring>
+        <name>Root</name>
+        <qualifiedname>Outpost31.Core.Framework.Catalog.TingenPaths.Root</qualifiedname>
+        <briefdescription>
+<para>Root path for Tingen data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>C:\TingenData</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/TingenPaths.cs" line="13" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/TingenPaths.cs" bodystart="13" bodyend="13"/>
+        <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1aeb0e4d3bb115d95e5b5cbe9602c84c23" compoundref="_tingen_paths_8cs" startline="22" endline="31">Outpost31.Core.Framework.Catalog.TingenPaths.BuildObject</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1ad20aaecf14fd4bb09d259183c4b7d656" compoundref="_tingen_paths_8cs" startline="36" endline="45">Outpost31.Core.Framework.Catalog.TingenPaths.RequiredPaths</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1a1df0d38c7f7b7d80918f493fb1c93113" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Outpost31.Core.Framework.Catalog.TingenPaths.Primeval</definition>
+        <argsstring></argsstring>
+        <name>Primeval</name>
+        <qualifiedname>Outpost31.Core.Framework.Catalog.TingenPaths.Primeval</qualifiedname>
+        <briefdescription>
+<para>Path for Tingen Primeval data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>C:\TingenData\Primeval</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/TingenPaths.cs" line="17" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/TingenPaths.cs" bodystart="17" bodyend="17"/>
+        <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1aeb0e4d3bb115d95e5b5cbe9602c84c23" compoundref="_tingen_paths_8cs" startline="22" endline="31">Outpost31.Core.Framework.Catalog.TingenPaths.BuildObject</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1aeb0e4d3bb115d95e5b5cbe9602c84c23" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths" kindref="compound">TingenPaths</ref></type>
+        <definition>static TingenPaths Outpost31.Core.Framework.Catalog.TingenPaths.BuildObject</definition>
+        <argsstring>(string tnDataRoot)</argsstring>
+        <name>BuildObject</name>
+        <qualifiedname>Outpost31.Core.Framework.Catalog.TingenPaths.BuildObject</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>tnDataRoot</declname>
+        </param>
+        <briefdescription>
+<para>Builds the Tingen path object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tnDataRoot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Tingen data root.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A collection of Tingen paths.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/TingenPaths.cs" line="22" column="35" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/TingenPaths.cs" bodystart="22" bodyend="31"/>
+        <references refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1a1df0d38c7f7b7d80918f493fb1c93113" compoundref="_tingen_paths_8cs" startline="17" endline="17">Outpost31.Core.Framework.Catalog.TingenPaths.Primeval</references>
+        <references refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1af785998e9152cbb18010a8aa52d1dcd6" compoundref="_tingen_paths_8cs" startline="13" endline="13">Outpost31.Core.Framework.Catalog.TingenPaths.Root</references>
+        <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_paths_1a9ae4f409983508576ed04349ea22fbaf" compoundref="_paths_8cs" startline="37" endline="48">Outpost31.Core.Framework.Paths.Build</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1ad20aaecf14fd4bb09d259183c4b7d656" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; string &gt;</type>
+        <definition>static List&lt; string &gt; Outpost31.Core.Framework.Catalog.TingenPaths.RequiredPaths</definition>
+        <argsstring>(TingenPaths tnPaths)</argsstring>
+        <name>RequiredPaths</name>
+        <qualifiedname>Outpost31.Core.Framework.Catalog.TingenPaths.RequiredPaths</qualifiedname>
+        <param>
+          <type><ref refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths" kindref="compound">TingenPaths</ref></type>
+          <declname>tnPaths</declname>
+        </param>
+        <briefdescription>
+<para>Returns a list of required Tingen paths. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tnPaths</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Tingen paths.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The list of required Tingen paths.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/TingenPaths.cs" line="36" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/TingenPaths.cs" bodystart="36" bodyend="45"/>
+        <references refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1af785998e9152cbb18010a8aa52d1dcd6" compoundref="_tingen_paths_8cs" startline="13" endline="13">Outpost31.Core.Framework.Catalog.TingenPaths.Root</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Specific to Tingen. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/TingenPaths.cs" line="9" column="11" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/TingenPaths.cs" bodystart="10" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1aeb0e4d3bb115d95e5b5cbe9602c84c23" prot="public" virt="non-virtual"><scope>Outpost31::Core::Framework::Catalog::TingenPaths</scope><name>BuildObject</name></member>
+      <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1a1df0d38c7f7b7d80918f493fb1c93113" prot="public" virt="non-virtual"><scope>Outpost31::Core::Framework::Catalog::TingenPaths</scope><name>Primeval</name></member>
+      <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1ad20aaecf14fd4bb09d259183c4b7d656" prot="public" virt="non-virtual"><scope>Outpost31::Core::Framework::Catalog::TingenPaths</scope><name>RequiredPaths</name></member>
+      <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1af785998e9152cbb18010a8aa52d1dcd6" prot="public" virt="non-virtual"><scope>Outpost31::Core::Framework::Catalog::TingenPaths</scope><name>Root</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

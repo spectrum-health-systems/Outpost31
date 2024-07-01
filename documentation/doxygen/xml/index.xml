@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.11.0" xml:lang="en-US">
+  <compound refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data" kind="class"><name>Outpost31::Core::Avatar::AvatarData</name>
+    <member refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a389c3ef27d7bf8de64c38ada9461a37d" kind="property"><name>AvatarSystemCode</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1afdc8f4f7b585a5230cf55dbfd76771bb" kind="property"><name>SentScriptParameter</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a40c831fb6ee000c353c83f3305617b07" kind="property"><name>SentOptionObject</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1aecefbbed0fab590d1010a8340fc9538d" kind="property"><name>WorkOptionObject</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a481bcfcef58002af15fe22b6a7c04a3b" kind="property"><name>ReturnOptionObject</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a1d0b2deeb73520778f4a9634f390d5a3" kind="function"><name>BuildObject</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_session_1_1_catalog" kind="class"><name>Outpost31::Core::Session::Catalog</name>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_catalog_1a18ebe9ab761d04b9f583aa160fc65c51" kind="property"><name>AssemblyName</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_catalog_1af2e7323ba98c4b3a0df66fe93812ae4b" kind="function"><name>CurrentSettings</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_catalog_1a92d2976185a1b892644decb96fbf4ea9" kind="function"><name>SessionDetails</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings" kind="class"><name>Outpost31::Core::Configuration::ConfigSettings</name>
+    <member refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1a28109a2fe3fff375c0d49cc6688c3366" kind="property"><name>TingenMode</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1aac88423bba238fded973d18a17986db2" kind="property"><name>ModOpenIncidentMode</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1a91be82944f253f870bf64b75bcd1130b" kind="property"><name>NtstWebServices</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1a3ea54ee69cc5b09a1ce9c5a49e10cc06" kind="property"><name>TraceLevel</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1ad45756319ae32581bce2a4d7536a11ea" kind="property"><name>TraceDelay</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1acd67e31b82a94d2b72ce89d0099c1ae7" kind="function"><name>BuildDefaultObject</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1a9cb9a342c0a283f7a38706c10e9869ce" kind="function"><name>Load</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_file" kind="class"><name>Outpost31::Core::Utilities::DuFile</name>
+    <member refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_file_1a43fd8f2b4d7f3ac25e4584ce24b1ee5a" kind="function"><name>WriteLocal</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_json" kind="class"><name>Outpost31::Core::Utilities::DuJson</name>
+    <member refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_json_1a7adc2abeb7b9ffcdfbf4ab8e70905e65" kind="function"><name>ExportToLocalFile&lt; JsonObject &gt;</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_json_1a6c43259464adb11828dea5f31d38d021" kind="function"><name>ConvertToString&lt; JsonObject &gt;</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_json_1aea276b6f6c3c7a15a100e64cb446c485" kind="function"><name>ImportFromLocalFile&lt; JsonObject &gt;</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field" kind="class"><name>Outpost31::Module::Common::Action::Field</name>
+    <member refid="class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_1afb5729e7e24aa173ee54e1996e6532f5" kind="property"><name>AssemblyName</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_1a0ce18754b3f9ab5de6c412cce6cf9bc7" kind="function"><name>CompareValue</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_1a2037fbd8a694f23a2d6da30b8c4602a9" kind="function"><name>Lock</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_1a828bb67552a8683ad009bf56a9baecb5" kind="function"><name>SaveValue</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event" kind="class"><name>Outpost31::Core::Logger::LogEvent</name>
+    <member refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1a7477552f340d46775d869b63e40e8e65" kind="function"><name>Trace</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1adf35641fd17daef20a0391da56a0d578" kind="function"><name>Primeval</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_logger_1_1_logger_catalog" kind="class"><name>Outpost31::Core::Logger::LoggerCatalog</name>
+    <member refid="class_outpost31_1_1_core_1_1_logger_1_1_logger_catalog_1a4f61a573573056dbbbd909d9d1412a34" kind="function"><name>StandardContent</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_framework_1_1_maintenance" kind="class"><name>Outpost31::Core::Framework::Maintenance</name>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1ae9c6180f97de9ddf49cf577805d6d836" kind="property"><name>AssemblyName</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1aab8fb892dada7a127407df5bc14b0b49" kind="function"><name>CleanSessionData</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1ab1f72498a69bbdc3fefff990be01bacb" kind="function"><name>VerifyFramework</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1a2d103fa4fa7b7ed79cd7ec6f8a99895c" kind="function"><name>RefreshDirectory</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1a68bd2bdf65446f3fce680e23b1c8cf9a" kind="function"><name>VerifyDirectory</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1afdd06b6d7b7c3fbb8624bddfd5f7162e" kind="function"><name>VerifyDirectories</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1a33e8916212cbee21e7382b53c1c07008" kind="function"><name>TESTER</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident" kind="class"><name>Outpost31::Module::OpenIncident::ModuleOpenIncident</name>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1a0d338679e77544d9b235666cc131ead2" kind="property"><name>AssemblyName</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1a8139f9ad5327430507af8ff174775302" kind="property"><name>Whitelist</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1ab2db952bfe2cbdd56f6da718baa82db8" kind="property"><name>Blacklist</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1ac25b1a1d53695eb3fdb5c0045bde4aac" kind="property"><name>OriginalFullName</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1a30d5f0ddec181c16c696dbbf647a0387" kind="property"><name>CurrentFullName</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1af813264778c87e81436e978049426e4c" kind="property"><name>PersonCompletingIncidentFormFieldId</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1a1ea50149883a8d35f18fe543d13dc57d" kind="property"><name>FormOpenMessage</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1a34ab1aff755685761f82ff8bdd84c6a3" kind="property"><name>FormOpenErrorCode</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1aace6ffbe30498993418976ea636c66f2" kind="property"><name>FormSubmitMessage</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1ac0fd1c2dc4481571ec24cf5f4e24ece0" kind="property"><name>FormSubmitErrorCode</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1a30d1657d9a49ba376af56cf3e135053b" kind="function"><name>BuildDefaultModOpenIncident</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1a5b74da7faf903f123356f2a28bbc857c" kind="function"><name>Load</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1a43aff28f0cab9d5178a0dd8b6fb35535" kind="function"><name>GetFullName</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1a2ddbdf4ed0a3dda952ec891a3a1056c1" kind="function"><name>GetAuthorInformation</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security" kind="class"><name>Outpost31::Core::NtstWebService::NtstWebServiceSecurity</name>
+    <member refid="class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security_1ae8dca9c8e33b8665f134c54287c7361a" kind="property"><name>WebServiceUser</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security_1a0863f017e542d7e96b28185d43eb2235" kind="property"><name>WebServicePassword</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security_1a8a0c61bb1335b64d4829640aee35b1b3" kind="function"><name>BuildDefaultSecurityObject</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security_1a0a5f3b6c3adebefa8630f2bdf3e9c8a6" kind="function"><name>Load</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_module_1_1_admin_1_1_export_1_1_option_object" kind="class"><name>Outpost31::Module::Admin::Export::OptionObject</name>
+    <member refid="class_outpost31_1_1_module_1_1_admin_1_1_export_1_1_option_object_1a7c4175216e772643b650d8289b130e62" kind="function"><name>ToLocalFile</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_parse_script_parameter" kind="class"><name>Outpost31::Core::ParseScriptParameter</name>
+    <member refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a37f2ba22da169a6b397983964ef18eee" kind="property"><name>AssemblyName</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1af0460c8d33e9f2489486486180a1e321" kind="function"><name>Parse</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a7113f9d248da8ae751f1af88ae32447e" kind="function"><name>ParseAdminModule</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a1f575403bc0c3c93f050c44899246a94" kind="function"><name>ParseOpenIncidentModule</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a60e5fffef8f78127da45dbdf6b3149c0" kind="function"><name>ParseTestingModule</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_framework_1_1_paths" kind="class"><name>Outpost31::Core::Framework::Paths</name>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_paths_1a9a1ce8c76b449ec10e074138fe633135" kind="property"><name>Tingen</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_paths_1a570f71a401269c613b705a23512d41d9" kind="property"><name>SystemCode</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_paths_1ae29d045d4b6ccc0fed7f2699ff68d59c" kind="property"><name>Public</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_paths_1a861a875f6377cc6c9fc39c43384ddfac" kind="property"><name>Remote</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_paths_1a9ae4f409983508576ed04349ea22fbaf" kind="function"><name>Build</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log" kind="class"><name>Outpost31::Core::Logger::PrimevalLog</name>
+    <member refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a7baa7dcdf807da5bf82d5777c6d365ee" kind="property"><name>PrimevalLogPath</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a5ef334a75ceb7eca289ff18e56443fb7" kind="function"><name>Create</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1add63a98e1ca24815bff62279fb1bd01e" kind="function"><name>DevelopmentCleanup</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths" kind="class"><name>Outpost31::Core::Framework::Catalog::PublicPaths</name>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths_1abfa50efb033a753fec91c9baa6119e0b" kind="property"><name>Root</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths_1a564bce01054fea9f000d466d9359a5ee" kind="property"><name>Alerts</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths_1a8ff3061818a6201f9abce867d9018f99" kind="property"><name>Errors</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths_1a4e1c3ce282f7493d4f73fb5aecd530db" kind="property"><name>Exports</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths_1a343d4c6347b82995704fe771f656631f" kind="property"><name>Reports</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths_1abaa9041fdb4b4396316a86c4e42b6fb8" kind="property"><name>Warnings</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths_1a7eee9aadc0dd721e780b5e9e59792502" kind="function"><name>BuildObject</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths_1a2d7d9f1b091bd5da7740c2bb472b12f9" kind="function"><name>RequiredPaths</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_framework_1_1_refresh" kind="class"><name>Outpost31::Core::Framework::Refresh</name>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_refresh_1a1c066ff8cf56459ff4c4b6e8324b8802" kind="function"><name>RefreshOnDisable</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_refresh_1a44ea2d57095d04e12bdd1527248b9eec" kind="function"><name>RefreshOnUnknown</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_module_1_1_admin_1_1_framework_1_1_refresh" kind="class"><name>Outpost31::Module::Admin::Framework::Refresh</name>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths" kind="class"><name>Outpost31::Core::Framework::Catalog::RemotePaths</name>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a26b95dba63f53e65e4e5d3f019620268" kind="property"><name>Root</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1aa1f48938fdfac9e033df7909a425aeef" kind="property"><name>Alerts</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a966899fddb6f4f424082e41c8c453b58" kind="property"><name>Errors</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a6670f15ecca065ed6d97b0a0bc38b3ad" kind="property"><name>Exports</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a86b83ee9bd6d742b018a6028dc902f64" kind="property"><name>Reports</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a064105ca661d8bf56e4c5a380a9c2883" kind="property"><name>Sessions</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a0d0f56ab4dbbed3d8f23e9158ae9fe3f" kind="property"><name>CurrentSession</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1aabfcfa1752e6bc1e4e097ebbdc56fe1c" kind="property"><name>Warnings</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a3fb63f4dcf1289f6868da3aa981e6d8e" kind="function"><name>BuildObject</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a993d6d5b6781c5eed1ae8865bf5e98d0" kind="function"><name>RequiredPaths</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_avatar_1_1_return_object" kind="class"><name>Outpost31::Core::Avatar::ReturnObject</name>
+    <member refid="class_outpost31_1_1_core_1_1_avatar_1_1_return_object_1a19397abb6426cb86995316faf971692a" kind="property"><name>AssemblyName</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_avatar_1_1_return_object_1adf3843f480639836833b9a4177e33091" kind="function"><name>Finalize</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status" kind="class"><name>Outpost31::Module::Admin::Service::Status</name>
+    <member refid="class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status_1ad95eaf011bbd1f410acec160f5d3ca5f" kind="property"><name>AssemblyName</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status_1a76fffc90df0f19c27c612d3d16a80455" kind="function"><name>UpdateAll</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status_1ac0199d0cf596f7053126854494310e66" kind="function"><name>UpdateMode</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status_1a5c436fde969810e30c5f9365325a823f" kind="function"><name>UpdateSettings</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths" kind="class"><name>Outpost31::Core::Framework::Catalog::SystemCodePaths</name>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a62d8305abb3141b7b68fb266fee2770b" kind="property"><name>Root</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab91e05b2033a640eb7d01f28620d35d5" kind="property"><name>Config</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a80febf9ccba6988627a845462afbb3b0" kind="property"><name>Sessions</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a100e9aecf4c98ba31244c96cccf6cacc" kind="property"><name>CurrentSession</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a661226f9ec3dd9a694f631277a7d9a77" kind="property"><name>Extensions</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1af1568f067cde59a6fcb2c9b4378a44bf" kind="property"><name>Security</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a0fb9f9d1064f1a0576da23307d80404e" kind="property"><name>Temporary</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1acef72a7ce721635b86cd55f6515639a5" kind="property"><name>MessageRoot</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ad0f6d93a22d16b2ae242d3675fb62891" kind="property"><name>Alerts</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1abd7d1c2d1df8d580589f5af732ec1346" kind="property"><name>Errors</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1aedb650bd328be0cc1290d9070e8221e7" kind="property"><name>Warnings</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a11aed10d083d78d8ddf78c43c441f197" kind="property"><name>ExportRoot</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a14d075788032d103aebfa3c6d6004844" kind="property"><name>Reports</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a6be77c0af5ed3e14d44b32d0b28247f9" kind="property"><name>ImportRoot</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a1953a39ffa1ae370ec12835c71534cb5" kind="property"><name>FromAvatar</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1aedc69bbb03367be810a91f14a88cc493" kind="property"><name>Templates</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a32920e4a1024628eafb5429505118ee1" kind="property"><name>SupportRoot</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ac60f88ee2d4a0c7570f92a8c83c4a605" kind="property"><name>Admin</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a26fda54e5286ee25262034430b0fc9fe" kind="property"><name>Archive</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ad64158dc9e9599749a6e456a8e8ce569" kind="property"><name>Debugging</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a1fd5e349d521ace1e22b3ed57f8c8579" kind="property"><name>Logs</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" kind="function"><name>BuildObject</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" kind="function"><name>RequiredPaths</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_tingen_app" kind="class"><name>Outpost31::Core::TingenApp</name>
+    <member refid="class_outpost31_1_1_core_1_1_tingen_app_1a4ec49fccd2fcc869224dac4c66726e20" kind="property"><name>AssemblyName</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_tingen_app_1aecdc663e5b2013d5ba09ae1cb5fc2f5f" kind="function"><name>Start</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_tingen_app_1a1372d5df3d765c1590b850923c12a3d0" kind="function"><name>Stop</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths" kind="class"><name>Outpost31::Core::Framework::Catalog::TingenPaths</name>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1af785998e9152cbb18010a8aa52d1dcd6" kind="property"><name>Root</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1a1df0d38c7f7b7d80918f493fb1c93113" kind="property"><name>Primeval</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1aeb0e4d3bb115d95e5b5cbe9602c84c23" kind="function"><name>BuildObject</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths_1ad20aaecf14fd4bb09d259183c4b7d656" kind="function"><name>RequiredPaths</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session" kind="class"><name>Outpost31::Core::Session::TingenSession</name>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a1f5918e313ecfa27883e8dc9b858d673" kind="property"><name>TnVersion</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1aacc82612996405591b6c916f3b2c8e4d" kind="property"><name>TnBuild</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a767af7d923f9ffd13f833834a6d3119b" kind="property"><name>Date</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a69d6a93d68ce8a9b0e9d95af04f541d2" kind="property"><name>Time</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab4a2303bcd493b8288f21b831d6ea48e" kind="property"><name>ReturnClonedOptionObject</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5fbba191edb00e771960aaddb5435a57" kind="property"><name>TnConfig</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab1ca46a23541d202156ab0d3f35a3468" kind="property"><name>TnPath</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab5b39bfbdb7dd1abde1c3a6110c4bd6c" kind="property"><name>AvData</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1aa4e670c9a37d07f3594f92242afb00c7" kind="property"><name>NtstWebServiceSecurity</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a57c77f2520b82e9ff8f21c93034b31ad" kind="property"><name>TraceInfo</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ad9e9aa1be80c25431df4f126fbdbe546" kind="property"><name>ModOpenIncident</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1abd8de2211ce4837992fbb7163f882b61" kind="function"><name>Build</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a96196cd518d53aeb229268deefbc956e" kind="function"><name>Initialize</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a89840eb03b4f2dfdf210b3c8272b2dbb" kind="function"><name>WriteSessionDetails</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5f52be032451bdd09a6a5548f8db33dc" kind="function"><name>BuildStaticVars</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_core_1_1_logger_1_1_trace_log" kind="class"><name>Outpost31::Core::Logger::TraceLog</name>
+    <member refid="class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1a8f08bce7036869eaabd810972270937f" kind="property"><name>TraceLogPath</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1aa0c645a02e57f6d2e0c724fc64b2e40f" kind="property"><name>TraceLogLevel</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1ab1789e53299ab797d5b3cfd90321e243" kind="property"><name>TraceLogDelay</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1a4cdc0b826bd1758d411da0cdd69a0bf4" kind="function"><name>BuildInfo</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1a1337fb24049079842cd6a4aab40f6c27" kind="function"><name>Create</name></member>
+    <member refid="class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1ae0ae6f6c5a221eaf2ffc9c7605c23b71" kind="function"><name>Create</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify" kind="class"><name>Outpost31::Module::OpenIncident::Verify</name>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1a9f5d0b21e4b020d1e80bcf2f4a311fbc" kind="property"><name>AssemblyName</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ad224d08f1ab18c157715a564f91f521d" kind="function"><name>OriginalAuthorIsOpening</name></member>
+    <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ae6a10b8c2ecca1d1b642eb61978a3695" kind="function"><name>OriginalAuthorIsSubmitting</name></member>
+  </compound>
+  <compound refid="class_outpost31_1_1_welcome_to_outpost31" kind="class"><name>Outpost31::WelcomeToOutpost31</name>
+  </compound>
+  <compound refid="namespace_outpost31" kind="namespace"><name>Outpost31</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_core" kind="namespace"><name>Outpost31::Core</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_core_1_1_avatar" kind="namespace"><name>Outpost31::Core::Avatar</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_core_1_1_configuration" kind="namespace"><name>Outpost31::Core::Configuration</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_core_1_1_framework" kind="namespace"><name>Outpost31::Core::Framework</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_core_1_1_framework_1_1_catalog" kind="namespace"><name>Outpost31::Core::Framework::Catalog</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_core_1_1_logger" kind="namespace"><name>Outpost31::Core::Logger</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_core_1_1_ntst_web_service" kind="namespace"><name>Outpost31::Core::NtstWebService</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_core_1_1_session" kind="namespace"><name>Outpost31::Core::Session</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_core_1_1_utilities" kind="namespace"><name>Outpost31::Core::Utilities</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_module" kind="namespace"><name>Outpost31::Module</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_module_1_1_admin" kind="namespace"><name>Outpost31::Module::Admin</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_module_1_1_admin_1_1_export" kind="namespace"><name>Outpost31::Module::Admin::Export</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_module_1_1_admin_1_1_framework" kind="namespace"><name>Outpost31::Module::Admin::Framework</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_module_1_1_admin_1_1_service" kind="namespace"><name>Outpost31::Module::Admin::Service</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_module_1_1_common" kind="namespace"><name>Outpost31::Module::Common</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_module_1_1_common_1_1_action" kind="namespace"><name>Outpost31::Module::Common::Action</name>
+  </compound>
+  <compound refid="namespace_outpost31_1_1_module_1_1_open_incident" kind="namespace"><name>Outpost31::Module::OpenIncident</name>
+  </compound>
+  <compound refid="namespace_script_link_standard_1_1_objects" kind="namespace"><name>ScriptLinkStandard::Objects</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text_1_1_json" kind="namespace"><name>System::Text::Json</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading" kind="namespace"><name>System::Threading</name>
+  </compound>
+  <compound refid="_avatar_data_8cs" kind="file"><name>AvatarData.cs</name>
+  </compound>
+  <compound refid="_return_object_8cs" kind="file"><name>ReturnObject.cs</name>
+  </compound>
+  <compound refid="_config_settings_8cs" kind="file"><name>ConfigSettings.cs</name>
+  </compound>
+  <compound refid="_public_paths_8cs" kind="file"><name>PublicPaths.cs</name>
+  </compound>
+  <compound refid="_remote_paths_8cs" kind="file"><name>RemotePaths.cs</name>
+  </compound>
+  <compound refid="_system_code_paths_8cs" kind="file"><name>SystemCodePaths.cs</name>
+  </compound>
+  <compound refid="_tingen_paths_8cs" kind="file"><name>TingenPaths.cs</name>
+  </compound>
+  <compound refid="_maintenance_8cs" kind="file"><name>Maintenance.cs</name>
+  </compound>
+  <compound refid="_paths_8cs" kind="file"><name>Paths.cs</name>
+  </compound>
+  <compound refid="_core_2_framework_2_refresh_8cs" kind="file"><name>Refresh.cs</name>
+  </compound>
+  <compound refid="_module_2_admin_2_framework_2_refresh_8cs" kind="file"><name>Refresh.cs</name>
+  </compound>
+  <compound refid="_log_event_8cs" kind="file"><name>LogEvent.cs</name>
+  </compound>
+  <compound refid="_logger_catalog_8cs" kind="file"><name>LoggerCatalog.cs</name>
+  </compound>
+  <compound refid="_primeval_log_8cs" kind="file"><name>PrimevalLog.cs</name>
+  </compound>
+  <compound refid="_trace_log_8cs" kind="file"><name>TraceLog.cs</name>
+  </compound>
+  <compound refid="_ntst_web_service_security_8cs" kind="file"><name>NtstWebServiceSecurity.cs</name>
+  </compound>
+  <compound refid="_parse_script_parameter_8cs" kind="file"><name>ParseScriptParameter.cs</name>
+  </compound>
+  <compound refid="_catalog_8cs" kind="file"><name>Catalog.cs</name>
+  </compound>
+  <compound refid="_tingen_session_8cs" kind="file"><name>TingenSession.cs</name>
+  </compound>
+  <compound refid="_tingen_app_8cs" kind="file"><name>TingenApp.cs</name>
+  </compound>
+  <compound refid="_du_file_8cs" kind="file"><name>DuFile.cs</name>
+  </compound>
+  <compound refid="_du_json_8cs" kind="file"><name>DuJson.cs</name>
+  </compound>
+  <compound refid="_option_object_8cs" kind="file"><name>OptionObject.cs</name>
+  </compound>
+  <compound refid="_status_8cs" kind="file"><name>Status.cs</name>
+  </compound>
+  <compound refid="_field_8cs" kind="file"><name>Field.cs</name>
+  </compound>
+  <compound refid="_module_open_incident_8cs" kind="file"><name>ModuleOpenIncident.cs</name>
+  </compound>
+  <compound refid="_verify_8cs" kind="file"><name>Verify.cs</name>
+  </compound>
+  <compound refid="_8_n_e_t_framework_00_version_0av4_88_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.8.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="_welcome_to_outpost31_8cs" kind="file"><name>WelcomeToOutpost31.cs</name>
+  </compound>
+  <compound refid="md__c_1_2_i_t_2_git_hub_2_s_h_s_2_public_01repositories_2_outpost31_2src_2_r_e_a_d_m_e" kind="page"><name>md__c_1_2_i_t_2_git_hub_2_s_h_s_2_public_01repositories_2_outpost31_2src_2_r_e_a_d_m_e</name>
+  </compound>
+  <compound refid="dir_ccf1ddaea87fb51783b6fe8ee8a9677b" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/Admin</name>
+  </compound>
+  <compound refid="dir_e0b9eb2bb6e5323199167a18758fe681" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar</name>
+  </compound>
+  <compound refid="dir_a327843a97faf81db4f61da34aeb03c6" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog</name>
+  </compound>
+  <compound refid="dir_a78e3d5c26c10c48c89f9886c35d1616" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration</name>
+  </compound>
+  <compound refid="dir_a2f0e5642e47e7ed59fe0f0829eafb5f" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core</name>
+  </compound>
+  <compound refid="dir_4082bf0afc35d37c30162a4e48a20e9e" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/obj/Debug</name>
+  </compound>
+  <compound refid="dir_dfd676723902a52533dbbbe93f6d7ec4" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/Admin/Export</name>
+  </compound>
+  <compound refid="dir_f6c65be1ae8035f4437cb884a793bfe5" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/FormComponent</name>
+  </compound>
+  <compound refid="dir_9df1ff67499aa3a47c1111402a19f6e6" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework</name>
+  </compound>
+  <compound refid="dir_4cb3d49791fd7a4fe319614acda3dd58" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/Admin/Framework</name>
+  </compound>
+  <compound refid="dir_04f913797061d8a0adf70c13e317afde" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger</name>
+  </compound>
+  <compound refid="dir_7a678c4f5ebb49c12cb98071857a26cf" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module</name>
+  </compound>
+  <compound refid="dir_1d6b2632da688a255ea8209b5a35d1fb" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/NtstWebService</name>
+  </compound>
+  <compound refid="dir_3bc03cc55d4aa6566f37b02a8017003e" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/obj</name>
+  </compound>
+  <compound refid="dir_1413a7791f56d0cdaeb419e7fb7ef323" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident</name>
+  </compound>
+  <compound refid="dir_a6283325e2b58ba58d4c0c1ad7b1bf70" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Properties</name>
+  </compound>
+  <compound refid="dir_4d1d202620ab0dbbab59c8f5fde851a7" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/Admin/Service</name>
+  </compound>
+  <compound refid="dir_70b84188638da886b66411bce2ed9645" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src</name>
+  </compound>
+  <compound refid="dir_ef45e45aec05f26eee9d9a3bc88d5d9e" kind="dir"><name>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Utilities</name>
+  </compound>
+</doxygenindex>

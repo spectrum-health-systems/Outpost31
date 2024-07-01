@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="dir_70b84188638da886b66411bce2ed9645" kind="dir">
+    <compoundname>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session</compoundname>
+    <innerfile refid="_catalog_8cs">Catalog.cs</innerfile>
+    <innerfile refid="_tingen_session_8cs">TingenSession.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/"/>
+  </compounddef>
+</doxygen>

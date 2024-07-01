@@ -1,11 +1,9 @@
 ﻿// u240624.0843_code
 // u240624.0843_documentation
 
-using System.Diagnostics;
-using Outpost31.Core.Logger;
 using System.Reflection;
+using Outpost31.Core.Logger;
 using Outpost31.Core.Session;
-using Outpost31.Module.OpenIncident;
 
 namespace Outpost31.Core.Avatar
 {
@@ -62,7 +60,8 @@ namespace Outpost31.Core.Avatar
         ///  </para>
         ///  <para>
         ///   - <i>The returnOptionObject must be propery formatted when returned to Avatar</i>.<br/>
-        ///   - More information about OptionObjects <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">here</see>
+        ///   - More information about OptionObjects <a href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">here</a>.
+        ///  
         ///  </para>
         /// </remarks>
         ///  <example>

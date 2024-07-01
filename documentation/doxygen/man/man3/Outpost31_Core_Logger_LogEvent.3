@@ -1,0 +1,78 @@
+.TH "Outpost31.Core.Logger.LogEvent" 3 "Thu Jun 27 2024" "Outpost31" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Outpost31.Core.Logger.LogEvent \- Provides logging functionality\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBTrace\fP (int logLevel, string assemblyName, \fBTraceLog\fP traceInfo, string message='', [CallerFilePath] string fromPath='', [CallerMemberName] string fromMethod='', [CallerLineNumber] int line=0)"
+.br
+.RI "Log a trace event\&. "
+.ti -1c
+.RI "static void \fBPrimeval\fP (string assemblyName, string message='Tingen primeval log', [CallerFilePath] string fromPath='', [CallerMemberName] string fromMethod='', [CallerLineNumber] int line=0)"
+.br
+.RI "Log a primeval event\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Provides logging functionality\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static void Outpost31\&.Core\&.Logger\&.LogEvent\&.Primeval (string assemblyName, string message = \fR'Tingen primeval log'\fP, [CallerFilePath] string fromPath = \fR''\fP, [CallerMemberName] string fromMethod = \fR''\fP, [CallerLineNumber] int line = \fR0\fP)\fR [static]\fP"
+
+.PP
+Log a primeval event\&. Primeval logs are vary simple logs that can be created with very little information\&. 
+.PD 0
+.IP "\(bu" 2
+Do not require any paramaters 
+.IP "\(bu" 2
+Used when debugging/troublshooting during development, and should be disabled in production 
+.IP "\(bu" 2
+Important details can be found in the file contents 
+.IP "\(bu" 2
+May have custom messages (the default message is 'Tingen primeval log' 
+.IP "\(bu" 2
+To ensure all logs are captured, filenames are timestamped \fByyMMddHHmmssfffffff\fP 
+.IP "\(bu" 2
+Extenstion is \fB\&.primeval\fP 
+.PP
+.IP "\(bu" 2
+More information about Primeval logs here
+.PP
+.PP
+\&. 
+.SS "static void Outpost31\&.Core\&.Logger\&.LogEvent\&.Trace (int logLevel, string assemblyName, \fBTraceLog\fP traceInfo, string message = \fR''\fP, [CallerFilePath] string fromPath = \fR''\fP, [CallerMemberName] string fromMethod = \fR''\fP, [CallerLineNumber] int line = \fR0\fP)\fR [static]\fP"
+
+.PP
+Log a trace event\&. Trace logs are used to record information about the application's execution\&. 
+.PD 0
+.IP "\(bu" 2
+Records information about Tingen's execution 
+.IP "\(bu" 2
+Used when debugging/troublshooting during development, and should probably be disabled in production 
+.IP "\(bu" 2
+Important details are in the filename: \fBassemblyName%-calledClass%-calledMethod%-lineNumber\&.trace\fP 
+.IP "\(bu" 2
+Do not contain any data 
+.br
+ 
+.IP "\(bu" 2
+To ensure all logs are captured, filenames start with a timestamp: \fBssfffffff_\fP 
+.IP "\(bu" 2
+Extension is \fB\&.trace\fP 
+.PP
+.IP "\(bu" 2
+More information about Trace logs here
+.PP
+.PP
+\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Outpost31 from the source code\&.

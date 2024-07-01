@@ -135,5 +135,13 @@ namespace Outpost31.Core.Framework
                 }
             }
         }
+
+        /// <summary>
+        /// Tester
+        /// </summary>
+        private static void TESTER()
+        {
+
+        }
     }
 }

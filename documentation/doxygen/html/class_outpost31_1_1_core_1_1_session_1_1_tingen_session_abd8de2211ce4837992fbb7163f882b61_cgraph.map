@@ -1,0 +1,25 @@
+<map id="Outpost31.Core.Session.TingenSession.Build" name="Outpost31.Core.Session.TingenSession.Build">
+<area shape="rect" id="Node000001" title="Builds the Tingen Session object." alt="" coords="5,233,212,274"/>
+<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_framework_1_1_paths.html#a9ae4f409983508576ed04349ea22fbaf" title="Builds the paths object." alt="" coords="271,103,455,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,231,191,192,258,154,275,147,277,152,261,159,194,197,139,235"/>
+<area shape="rect" id="Node000007" href="$class_outpost31_1_1_core_1_1_logger_1_1_trace_log.html#a4cdc0b826bd1758d411da0cdd69a0bf4" title="Build the trace log information." alt="" coords="267,168,459,209"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="190,230,265,211,267,216,191,235"/>
+<area shape="rect" id="Node000008" href="$class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data.html#a1d0b2deeb73520778f4a9634f390d5a3" title="Builds a new AvatarData object." alt="" coords="265,233,461,274"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="212,251,249,251,249,256,212,256"/>
+<area shape="rect" id="Node000009" href="$class_outpost31_1_1_core_1_1_session_1_1_tingen_session.html#a96196cd518d53aeb229268deefbc956e" title="Soon." alt="" coords="260,299,466,339"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="191,272,267,292,265,297,190,277"/>
+<area shape="rect" id="Node000011" href="$class_outpost31_1_1_core_1_1_configuration_1_1_config_settings.html#a9cb9a342c0a283f7a38706c10e9869ce" title="Loads the Tingen configuration file." alt="" coords="265,364,461,405"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="139,272,194,310,261,349,277,356,275,361,258,353,191,315,136,277"/>
+<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths.html#a7eee9aadc0dd721e780b5e9e59792502" title="Builds the public paths object." alt="" coords="534,5,744,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,100,513,56,539,48,540,53,515,62,410,104"/>
+<area shape="rect" id="Node000004" href="$class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths.html#a3fb63f4dcf1289f6868da3aa981e6d8e" title="Builds the remote paths object." alt="" coords="529,71,748,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="455,110,513,103,514,108,456,115"/>
+<area shape="rect" id="Node000005" href="$class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths.html#ab187331940c728c5d8624fa359571ba5" title="Builds the system code paths object." alt="" coords="514,136,763,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="456,131,499,137,498,142,455,137"/>
+<area shape="rect" id="Node000006" href="$class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths.html#aeb0e4d3bb115d95e5b5cbe9602c84c23" title="Builds the Tingen path object." alt="" coords="532,201,745,242"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="437,141,467,154,491,170,515,186,534,193,532,198,513,191,488,175,465,159,435,146"/>
+<area shape="rect" id="Node000010" href="$class_outpost31_1_1_core_1_1_framework_1_1_maintenance.html#a68bd2bdf65446f3fce680e23b1c8cf9a" title="Verify a directory exists, and create it if it does not." alt="" coords="546,299,731,339"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="467,316,530,316,530,322,467,322"/>
+<area shape="rect" id="Node000012" href="$class_outpost31_1_1_core_1_1_configuration_1_1_config_settings.html#acd67e31b82a94d2b72ce89d0099c1ae7" title="Build a default Tingen configuration object." alt="" coords="530,364,748,405"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="462,382,514,382,514,387,462,387"/>
+</map>

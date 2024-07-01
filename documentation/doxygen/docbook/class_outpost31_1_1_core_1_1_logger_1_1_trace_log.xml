@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log" xml:lang="en-US">
+<title>Outpost31.Core.Logger.TraceLog Class Reference</title>
+<indexterm><primary>Outpost31.Core.Logger.TraceLog</primary></indexterm>
+<para>
+
+<para>Soon. </para>
+ 
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log">TraceLog</link> <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1a4cdc0b826bd1758d411da0cdd69a0bf4">BuildInfo</link> (string traceLogPath, int traceLogLevel, int traceLogDelay)</para>
+
+<para>Build the trace log information. </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1a1337fb24049079842cd6a4aab40f6c27">Create</link> (int logLevel, string assemblyName, <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log">TraceLog</link> traceInfo, string fromClass, string fromMethod, int line)</para>
+
+<para>Soon. </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1ae0ae6f6c5a221eaf2ffc9c7605c23b71">Create</link> (int logLevel, string assemblyName, <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log">TraceLog</link> traceInfo, string fromClass, string fromMethod, int line, string message)</para>
+
+<para>Soon. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1a8f08bce7036869eaabd810972270937f"/>string <emphasis role="strong">TraceLogPath</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1aa0c645a02e57f6d2e0c724fc64b2e40f"/>int <emphasis role="strong">TraceLogLevel</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1ab1789e53299ab797d5b3cfd90321e243"/>int <emphasis role="strong">TraceLogDelay</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Soon. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1a4cdc0b826bd1758d411da0cdd69a0bf4"/><section>
+    <title>BuildInfo()</title>
+<indexterm><primary>BuildInfo</primary><secondary>Outpost31.Core.Logger.TraceLog</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Logger.TraceLog</primary><secondary>BuildInfo</secondary></indexterm>
+<para><computeroutput>static <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log">TraceLog</link> Outpost31.Core.Logger.TraceLog.BuildInfo (string traceLogPath, int traceLogLevel, int traceLogDelay)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Build the trace log information. </para>
+</para>
+
+<para>The <emphasis role="bold">TraceLogPath</emphasis> is the same as the <emphasis role="bold">tnSession.Framework.SystemCodePath.Session</emphasis> It&apos;s here so we can easily pass all the data </para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>traceLogLevel</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>traceLogDelay</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>traceLogPath</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_logger_1_1_trace_log_a4cdc0b826bd1758d411da0cdd69a0bf4_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1a1337fb24049079842cd6a4aab40f6c27"/><section>
+    <title>Create()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Create</primary><secondary>Outpost31.Core.Logger.TraceLog</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Logger.TraceLog</primary><secondary>Create</secondary></indexterm>
+<para><computeroutput>static void Outpost31.Core.Logger.TraceLog.Create (int logLevel, string assemblyName, <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log">TraceLog</link> traceInfo, string fromClass, string fromMethod, int line)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Soon. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>traceLevel</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>traceInfo</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>assemblyName</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>callPath</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>callMember</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>callLine</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_logger_1_1_trace_log_a1337fb24049079842cd6a4aab40f6c27_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1ae0ae6f6c5a221eaf2ffc9c7605c23b71"/><section>
+    <title>Create()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Create</primary><secondary>Outpost31.Core.Logger.TraceLog</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Logger.TraceLog</primary><secondary>Create</secondary></indexterm>
+<para><computeroutput>static void Outpost31.Core.Logger.TraceLog.Create (int logLevel, string assemblyName, <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log">TraceLog</link> traceInfo, string fromClass, string fromMethod, int line, string message)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Soon. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>logLevel</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>assemblyName</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>traceInfo</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>fromClass</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>fromMethod</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>line</entry><entry></entry>
+                            </row>
+                            <row>
+<entry>message</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+</section>

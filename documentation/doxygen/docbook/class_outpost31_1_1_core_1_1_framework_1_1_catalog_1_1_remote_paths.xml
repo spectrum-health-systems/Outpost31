@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths" xml:lang="en-US">
+<title>Outpost31.Core.Framework.Catalog.RemotePaths Class Reference</title>
+<indexterm><primary>Outpost31.Core.Framework.Catalog.RemotePaths</primary></indexterm>
+<para>
+
+<para>Remote paths for Tingen. </para>
+ 
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths">RemotePaths</link> <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a3fb63f4dcf1289f6868da3aa981e6d8e">BuildObject</link> (string tnDataRoot)</para>
+
+<para>Builds the remote paths object. </para>
+</listitem>
+            <listitem><para>static List&lt; string &gt; <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a993d6d5b6781c5eed1ae8865bf5e98d0">RequiredPaths</link> (<link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths">RemotePaths</link> remotePaths)</para>
+
+<para>Returns a list of required paths. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a26b95dba63f53e65e4e5d3f019620268">Root</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Root path for remote data. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1aa1f48938fdfac9e033df7909a425aeef">Alerts</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Path for remote alert data. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a966899fddb6f4f424082e41c8c453b58">Errors</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Path for remote error data. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a6670f15ecca065ed6d97b0a0bc38b3ad">Exports</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Path for remote export data. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a86b83ee9bd6d742b018a6028dc902f64">Reports</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Path for remote report data. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a064105ca661d8bf56e4c5a380a9c2883">Sessions</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Path for remote session data. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a0d0f56ab4dbbed3d8f23e9158ae9fe3f">CurrentSession</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Current session path. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1aabfcfa1752e6bc1e4e097ebbdc56fe1c">Warnings</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Path for remote warning files. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Remote paths for Tingen. </para>
+
+
+
+<para><itemizedlist>
+<listitem>
+<para>Remote paths are used to store data that is accessible to specific users that have access to these locations. </para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a3fb63f4dcf1289f6868da3aa981e6d8e"/><section>
+    <title>BuildObject()</title>
+<indexterm><primary>BuildObject</primary><secondary>Outpost31.Core.Framework.Catalog.RemotePaths</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Framework.Catalog.RemotePaths</primary><secondary>BuildObject</secondary></indexterm>
+<para><computeroutput>static <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths">RemotePaths</link> Outpost31.Core.Framework.Catalog.RemotePaths.BuildObject (string tnDataRoot)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Builds the remote paths object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>tnDataRoot</entry><entry>
+<para>The Tingen data root.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A collection of remote paths.</para>
+</formalpara>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_a3fb63f4dcf1289f6868da3aa981e6d8e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a993d6d5b6781c5eed1ae8865bf5e98d0"/><section>
+    <title>RequiredPaths()</title>
+<indexterm><primary>RequiredPaths</primary><secondary>Outpost31.Core.Framework.Catalog.RemotePaths</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Framework.Catalog.RemotePaths</primary><secondary>RequiredPaths</secondary></indexterm>
+<para><computeroutput>static List&lt; string &gt; Outpost31.Core.Framework.Catalog.RemotePaths.RequiredPaths (<link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths">RemotePaths</link> remotePaths)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Returns a list of required paths. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>remotePaths</entry><entry>
+<para>The Tingen remote paths.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>The list of required remote paths.</para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1aa1f48938fdfac9e033df7909a425aeef"/><section>
+    <title>Alerts</title>
+<indexterm><primary>Alerts</primary><secondary>Outpost31.Core.Framework.Catalog.RemotePaths</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Framework.Catalog.RemotePaths</primary><secondary>Alerts</secondary></indexterm>
+<para><computeroutput>string Outpost31.Core.Framework.Catalog.RemotePaths.Alerts<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Path for remote alert data. </para>
+</para>
+
+<para>C:\TingenData\Remote\Alerts</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a0d0f56ab4dbbed3d8f23e9158ae9fe3f"/><section>
+    <title>CurrentSession</title>
+<indexterm><primary>CurrentSession</primary><secondary>Outpost31.Core.Framework.Catalog.RemotePaths</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Framework.Catalog.RemotePaths</primary><secondary>CurrentSession</secondary></indexterm>
+<para><computeroutput>string Outpost31.Core.Framework.Catalog.RemotePaths.CurrentSession<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Current session path. </para>
+</para>
+
+<para><itemizedlist>
+<listitem>
+<para>Set at runtime. </para>
+</listitem></itemizedlist>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a966899fddb6f4f424082e41c8c453b58"/><section>
+    <title>Errors</title>
+<indexterm><primary>Errors</primary><secondary>Outpost31.Core.Framework.Catalog.RemotePaths</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Framework.Catalog.RemotePaths</primary><secondary>Errors</secondary></indexterm>
+<para><computeroutput>string Outpost31.Core.Framework.Catalog.RemotePaths.Errors<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Path for remote error data. </para>
+</para>
+
+<para>C:\TingenData\Remote\Errors</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a6670f15ecca065ed6d97b0a0bc38b3ad"/><section>
+    <title>Exports</title>
+<indexterm><primary>Exports</primary><secondary>Outpost31.Core.Framework.Catalog.RemotePaths</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Framework.Catalog.RemotePaths</primary><secondary>Exports</secondary></indexterm>
+<para><computeroutput>string Outpost31.Core.Framework.Catalog.RemotePaths.Exports<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Path for remote export data. </para>
+</para>
+
+<para>C:\TingenData\Remote\Exports</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a86b83ee9bd6d742b018a6028dc902f64"/><section>
+    <title>Reports</title>
+<indexterm><primary>Reports</primary><secondary>Outpost31.Core.Framework.Catalog.RemotePaths</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Framework.Catalog.RemotePaths</primary><secondary>Reports</secondary></indexterm>
+<para><computeroutput>string Outpost31.Core.Framework.Catalog.RemotePaths.Reports<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Path for remote report data. </para>
+</para>
+
+<para>C:\TingenData\Remote\Reports</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a26b95dba63f53e65e4e5d3f019620268"/><section>
+    <title>Root</title>
+<indexterm><primary>Root</primary><secondary>Outpost31.Core.Framework.Catalog.RemotePaths</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Framework.Catalog.RemotePaths</primary><secondary>Root</secondary></indexterm>
+<para><computeroutput>string Outpost31.Core.Framework.Catalog.RemotePaths.Root<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Root path for remote data. </para>
+</para>
+
+<para>C:\TingenData\Remote</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a064105ca661d8bf56e4c5a380a9c2883"/><section>
+    <title>Sessions</title>
+<indexterm><primary>Sessions</primary><secondary>Outpost31.Core.Framework.Catalog.RemotePaths</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Framework.Catalog.RemotePaths</primary><secondary>Sessions</secondary></indexterm>
+<para><computeroutput>string Outpost31.Core.Framework.Catalog.RemotePaths.Sessions<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Path for remote session data. </para>
+</para>
+
+<para>C:\TingenData\Remote\Sessions</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1aabfcfa1752e6bc1e4e097ebbdc56fe1c"/><section>
+    <title>Warnings</title>
+<indexterm><primary>Warnings</primary><secondary>Outpost31.Core.Framework.Catalog.RemotePaths</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Framework.Catalog.RemotePaths</primary><secondary>Warnings</secondary></indexterm>
+<para><computeroutput>string Outpost31.Core.Framework.Catalog.RemotePaths.Warnings<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Path for remote warning files. </para>
+</para>
+
+<para>C:\TingenData\Remote\Warnings</para>
+</section>
+</section>
+</section>

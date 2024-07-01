@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="_du_json_8cs" kind="file" language="C#">
+    <compoundname>DuJson.cs</compoundname>
+    <innerclass refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_json" prot="public">Outpost31::Core::Utilities::DuJson</innerclass>
+    <innernamespace refid="namespace_outpost31">Outpost31</innernamespace>
+    <innernamespace refid="namespace_outpost31_1_1_core">Outpost31::Core</innernamespace>
+    <innernamespace refid="namespace_outpost31_1_1_core_1_1_utilities">Outpost31::Core::Utilities</innernamespace>
+    <innernamespace refid="namespace_system_1_1_text_1_1_json">System::Text::Json</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>u240620.1356</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.IO;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Text.Json;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_outpost31_1_1_core_1_1_utilities" kindref="compound">Outpost31.Core.Utilities</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_json" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_json" kindref="compound">DuJson</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27" refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_json_1a7adc2abeb7b9ffcdfbf4ab8e70905e65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_json_1a7adc2abeb7b9ffcdfbf4ab8e70905e65" kindref="member">ExportToLocalFile&lt;JsonObject&gt;</ref>(JsonObject<sp/>jsonObject,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filePath,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>formatJson<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Trace<sp/>logs<sp/>cannot<sp/>be<sp/>used<sp/>here.<sp/>For<sp/>debugging<sp/>purposes,<sp/>use<sp/>a<sp/>Primeval<sp/>log.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JsonSerializerOptions<sp/>jsonFormat<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>JsonSerializerOptions();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonFormat.WriteIndented<sp/>=<sp/>formatJson;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fileContent<sp/>=<sp/>JsonSerializer.Serialize(jsonObject,<sp/>jsonFormat);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>File.WriteAllText(filePath,<sp/>fileContent);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_json_1a6c43259464adb11828dea5f31d38d021" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_json_1a6c43259464adb11828dea5f31d38d021" kindref="member">ConvertToString&lt;JsonObject&gt;</ref>(JsonObject<sp/>jsonObject)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Trace<sp/>logs<sp/>cannot<sp/>be<sp/>used<sp/>here.<sp/>For<sp/>debugging<sp/>purposes,<sp/>use<sp/>a<sp/>Primeval<sp/>log.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>JsonSerializer.Serialize(jsonObject);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_json_1aea276b6f6c3c7a15a100e64cb446c485" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>JsonObject<sp/><ref refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_json_1aea276b6f6c3c7a15a100e64cb446c485" kindref="member">ImportFromLocalFile&lt;JsonObject&gt;</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filePath)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Trace<sp/>logs<sp/>cannot<sp/>be<sp/>used<sp/>here.<sp/>For<sp/>debugging<sp/>purposes,<sp/>use<sp/>a<sp/>Primeval<sp/>log.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>configurationFileContents<sp/>=<sp/>File.ReadAllText(filePath);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>JsonSerializer.Deserialize&lt;JsonObject&gt;(configurationFileContents);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="77"><highlight class="comment">=================</highlight></codeline>
+<codeline lineno="78"><highlight class="comment">DEVELOPMENT<sp/>NOTES</highlight></codeline>
+<codeline lineno="79"><highlight class="comment">=================</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"></highlight></codeline>
+<codeline lineno="81"><highlight class="comment">-<sp/>Change<sp/>&quot;configurationFileContents&quot;<sp/>to<sp/>&quot;fileContents&quot;</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"></highlight></codeline>
+<codeline lineno="83"><highlight class="comment">_Documentation<sp/>updated<sp/>------</highlight></codeline>
+<codeline lineno="84"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Utilities/DuJson.cs"/>
+  </compounddef>
+</doxygen>

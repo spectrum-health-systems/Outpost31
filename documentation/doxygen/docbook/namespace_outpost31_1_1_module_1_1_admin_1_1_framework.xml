@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_outpost31_1_1_module_1_1_admin_1_1_framework" xml:lang="en-US">
+<title>Outpost31.Module.Admin.Framework Namespace Reference</title>
+<indexterm><primary>Outpost31.Module.Admin.Framework</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_outpost31_1_1_module_1_1_admin_1_1_framework_1_1_refresh">Refresh</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

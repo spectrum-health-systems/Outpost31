@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="namespace_outpost31_1_1_core_1_1_logger" kind="namespace" language="C#">
+    <compoundname>Outpost31::Core::Logger</compoundname>
+    <innerclass refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event" prot="public">Outpost31::Core::Logger::LogEvent</innerclass>
+    <innerclass refid="class_outpost31_1_1_core_1_1_logger_1_1_logger_catalog" prot="public">Outpost31::Core::Logger::LoggerCatalog</innerclass>
+    <innerclass refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log" prot="public">Outpost31::Core::Logger::PrimevalLog</innerclass>
+    <innerclass refid="class_outpost31_1_1_core_1_1_logger_1_1_trace_log" prot="public">Outpost31::Core::Logger::TraceLog</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/LogEvent.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

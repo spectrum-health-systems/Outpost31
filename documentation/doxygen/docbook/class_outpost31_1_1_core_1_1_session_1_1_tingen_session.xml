@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session" xml:lang="en-US">
+<title>Outpost31.Core.Session.TingenSession Class Reference</title>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary></indexterm>
+<para>
+
+<para>Contains Tingen session logic. </para>
+ 
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1abd8de2211ce4837992fbb7163f882b61">Build</link> (OptionObject2015 sentOptionObject, string sentScriptParameter, string tnVersion)</para>
+
+<para>Builds the Tingen <link linkend="_namespace_outpost31_1_1_core_1_1_session">Session</link> object. </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a96196cd518d53aeb229268deefbc956e">Initialize</link> (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)</para>
+
+<para>Soon. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a89840eb03b4f2dfdf210b3c8272b2dbb"/>static void <emphasis role="strong">WriteSessionDetails</emphasis> (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5f52be032451bdd09a6a5548f8db33dc"/>static Dictionary&lt; string, string &gt; <emphasis role="strong">BuildStaticVars</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a1f5918e313ecfa27883e8dc9b858d673"/>string <emphasis role="strong">TnVersion</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1aacc82612996405591b6c916f3b2c8e4d"/>string <emphasis role="strong">TnBuild</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a767af7d923f9ffd13f833834a6d3119b"/>string <emphasis role="strong">Date</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The session datestamp. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a69d6a93d68ce8a9b0e9d95af04f541d2"/>string <emphasis role="strong">Time</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The session timestamp. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab4a2303bcd493b8288f21b831d6ea48e"/>bool <emphasis role="strong">ReturnClonedOptionObject</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Return the cloned OptionObject. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5fbba191edb00e771960aaddb5435a57"/><link linkend="_class_outpost31_1_1_core_1_1_configuration_1_1_config_settings">ConfigSettings</link> <emphasis role="strong">TnConfig</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Config. </para>
+</listitem>
+            <listitem><para><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_paths">Paths</link> <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab1ca46a23541d202156ab0d3f35a3468">TnPath</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Tingen <link linkend="_namespace_outpost31_1_1_core_1_1_framework">Framework</link> information. </para>
+</listitem>
+            <listitem><para><link linkend="_class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data">AvatarData</link> <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab5b39bfbdb7dd1abde1c3a6110c4bd6c">AvData</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para><link linkend="_namespace_outpost31_1_1_core_1_1_avatar">Avatar</link> components . </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1aa4e670c9a37d07f3594f92242afb00c7"/><link linkend="_class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security">NtstWebServiceSecurity</link> <emphasis role="strong">NtstWebServiceSecurity</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a57c77f2520b82e9ff8f21c93034b31ad"/><link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log">TraceLog</link> <emphasis role="strong">TraceInfo</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Trace log information. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ad9e9aa1be80c25431df4f126fbdbe546"/><link linkend="_class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident">ModuleOpenIncident</link> <emphasis role="strong">ModOpenIncident</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para><link linkend="_namespace_outpost31_1_1_module">Module</link> to open an incident. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Contains Tingen session logic. </para>
+
+
+
+<para>Properties for the Tingen session are located in <emphasis role="bold">TingenSession.Properties.cs.</emphasis> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1abd8de2211ce4837992fbb7163f882b61"/><section>
+    <title>Build()</title>
+<indexterm><primary>Build</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary><secondary>Build</secondary></indexterm>
+<para><computeroutput>static <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> Outpost31.Core.Session.TingenSession.Build (OptionObject2015 sentOptionObject, string sentScriptParameter, string tnVersion)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Builds the Tingen <link linkend="_namespace_outpost31_1_1_core_1_1_session">Session</link> object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>configFile</entry><entry>
+<para>The path to the Tingen configuration file.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>sentOptionObject</entry><entry>
+<para>The OptionObject sent from <link linkend="_namespace_outpost31_1_1_core_1_1_avatar">Avatar</link>.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>sentScriptParameter</entry><entry>
+<para>The ScriptParameter sent from <link linkend="_namespace_outpost31_1_1_core_1_1_avatar">Avatar</link>.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+
+<para>The Tingen <link linkend="_namespace_outpost31_1_1_core_1_1_session">Session</link> contains all of the information that Tingen needs to do what it does, including: <itemizedlist>
+<listitem>
+
+<para><link linkend="_namespace_outpost31_1_1_core_1_1_configuration">Configuration</link> settings (user-definable settings from the <emphasis>configFile</emphasis> ) </para>
+</listitem>
+<listitem>
+
+<para>Static settings (these do not change between sessions) </para>
+</listitem>
+<listitem>
+
+<para>Runtime settings (unique to the current session) </para>
+</listitem>
+<listitem>
+
+<para>Data sent from <link linkend="_namespace_outpost31_1_1_core_1_1_avatar">Avatar</link>, including the <emphasis>sentOptionObject</emphasis>  and <emphasis>sentScriptParameter</emphasis>  </para>
+</listitem>
+<listitem>
+
+<para>Data derived from the <emphasis>sentOptionObject</emphasis>  or <emphasis>sentScriptParameter</emphasis> . </para>
+</listitem>
+<listitem>
+
+<para>Required Tingen <link linkend="_namespace_outpost31_1_1_module">Module</link> details. </para>
+</listitem>
+</itemizedlist>
+</para>
+
+<para><emphasis role="bold">More information about this method:</emphasis><?linebreak?> This method is one of the most important in Tingen, as it builds the Tingen <link linkend="_namespace_outpost31_1_1_core_1_1_session">Session</link> object.<?linebreak?><?linebreak?> The <link linkend="_namespace_outpost31_1_1_core_1_1_session">Session</link> object is built in this order: <orderedlist>
+<listitem>
+
+<para>A basic <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> object is initalized with the current date, time, configuration settings, and <link linkend="_namespace_outpost31_1_1_core_1_1_avatar">Avatar</link> data. </para>
+</listitem>
+<listitem>
+
+<para><link linkend="_namespace_outpost31_1_1_core_1_1_framework">Framework</link> information is added seperately. </para>
+</listitem>
+<listitem>
+
+<para>Trace log information is added seperately. </para>
+</listitem>
+<listitem>
+
+<para><link linkend="_namespace_outpost31_1_1_module">Module</link> objects are added seperately. </para>
+</listitem>
+</orderedlist>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>An Tingen <link linkend="_namespace_outpost31_1_1_core_1_1_session">Session</link> object.</para>
+</formalpara>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_abd8de2211ce4837992fbb7163f882b61_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a96196cd518d53aeb229268deefbc956e"/><section>
+    <title>Initialize()</title>
+<indexterm><primary>Initialize</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary><secondary>Initialize</secondary></indexterm>
+<para><computeroutput>static void Outpost31.Core.Session.TingenSession.Initialize (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Soon. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>tnSession</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_a96196cd518d53aeb229268deefbc956e_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_a96196cd518d53aeb229268deefbc956e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab5b39bfbdb7dd1abde1c3a6110c4bd6c"/><section>
+    <title>AvData</title>
+<indexterm><primary>AvData</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary><secondary>AvData</secondary></indexterm>
+<para><computeroutput><link linkend="_class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data">AvatarData</link> Outpost31.Core.Session.TingenSession.AvData<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_namespace_outpost31_1_1_core_1_1_avatar">Avatar</link> components . </para>
+</para>
+
+<para>See <emphasis role="bold">Outpost31.Core.Configuration.TingenFramework.cs</emphasis> for more information. </para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab1ca46a23541d202156ab0d3f35a3468"/><section>
+    <title>TnPath</title>
+<indexterm><primary>TnPath</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary><secondary>TnPath</secondary></indexterm>
+<para><computeroutput><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_paths">Paths</link> Outpost31.Core.Session.TingenSession.TnPath<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Tingen <link linkend="_namespace_outpost31_1_1_core_1_1_framework">Framework</link> information. </para>
+</para>
+
+<para>See <emphasis role="bold">Outpost31.Core.Configuration.TingenFramework.cs</emphasis> for more information. </para>
+</section>
+</section>
+</section>

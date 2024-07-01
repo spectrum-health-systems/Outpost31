@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="namespace_outpost31_1_1_core_1_1_configuration" kind="namespace" language="C#">
+    <compoundname>Outpost31::Core::Configuration</compoundname>
+    <innerclass refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings" prot="public">Outpost31::Core::Configuration::ConfigSettings</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

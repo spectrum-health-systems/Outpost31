@@ -1,0 +1,81 @@
+.TH "Outpost31.Core.ParseScriptParameter" 3 "Thu Jun 27 2024" "Outpost31" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Outpost31.Core.ParseScriptParameter \- Soon\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBParse\fP (\fBTingenSession\fP tnSession)"
+.br
+.RI "OLD Determines which Tingen \fI\fBModule\fP\fP will be doing the work this session\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "static string \fBAssemblyName\fP = Assembly\&.GetExecutingAssembly()\&.GetName()\&.Name\fR [get, set]\fP"
+.br
+.RI "Executing assembly name for log files\&. "
+.in -1c
+.SS "Static Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBParseAdminModule\fP (\fBTingenSession\fP tnSession)"
+.br
+.ti -1c
+.RI "static void \fBParseOpenIncidentModule\fP (\fBTingenSession\fP tnSession)"
+.br
+.ti -1c
+.RI "static void \fBParseTestingModule\fP (\fBTingenSession\fP tnSession)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Soon\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static void Outpost31\&.Core\&.ParseScriptParameter\&.Parse (\fBTingenSession\fP tnSession)\fR [static]\fP"
+
+.PP
+OLD Determines which Tingen \fI\fBModule\fP\fP will be doing the work this session\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItnSession\fP The Tingen session object\&.
+.RE
+.PP
+.PP
+When a new Tingen \fBModule\fP is added, this method needs to be updated\&. 
+.PP
+To add a new Tingen \fBModule\fP named 'NewModule', the following code \fRelse if\fP needs be added 
+.PP
+.nf
+else if (tnSession\&.AvComponents\&.ScriptModule == "newmodule")
+{
+    Outpost31\&.Module\&.NewModule\&.ParseScriptCommand\&.ParseCommand(tnSession);
+}
+
+.fi
+.PP
+ 
+.SH "Property Documentation"
+.PP 
+.SS "string Outpost31\&.Core\&.ParseScriptParameter\&.AssemblyName = Assembly\&.GetExecutingAssembly()\&.GetName()\&.Name\fR [static]\fP, \fR [get]\fP, \fR [set]\fP"
+
+.PP
+Executing assembly name for log files\&. 
+.IP "\(bu" 2
+Executing assembly is defined here so it can be used when creating log files\&. 
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Outpost31 from the source code\&.

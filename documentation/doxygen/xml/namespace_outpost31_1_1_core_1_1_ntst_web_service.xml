@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="namespace_outpost31_1_1_core_1_1_ntst_web_service" kind="namespace" language="C#">
+    <compoundname>Outpost31::Core::NtstWebService</compoundname>
+    <innerclass refid="class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security" prot="public">Outpost31::Core::NtstWebService::NtstWebServiceSecurity</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/NtstWebService/NtstWebServiceSecurity.cs" line="9" column="1"/>
+  </compounddef>
+</doxygen>

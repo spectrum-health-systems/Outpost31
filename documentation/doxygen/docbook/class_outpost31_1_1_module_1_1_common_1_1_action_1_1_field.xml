@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field" xml:lang="en-US">
+<title>Outpost31.Module.Common.Action.Field Class Reference</title>
+<indexterm><primary>Outpost31.Module.Common.Action.Field</primary></indexterm>
+<para>
+
+<para><link linkend="_class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field">Field</link> operations. </para>
+ 
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static bool <link linkend="_class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_1a0ce18754b3f9ab5de6c412cce6cf9bc7">CompareValue</link> (string field01Value, string field02Value, <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log">TraceLog</link> traceInfo)</para>
+
+<para>Compare the values of two form field IDs to determine if they are the same. </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_1a2037fbd8a694f23a2d6da30b8c4602a9">Lock</link> (string fieldId)</para>
+
+<para>Locks a field so that it cannot be edited. </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_1a828bb67552a8683ad009bf56a9baecb5">SaveValue</link> (string valueToSave, string filePath, <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log">TraceLog</link> traceInfo)</para>
+
+<para>Saves the value of a field to a file. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>static string <link linkend="_class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_1afb5729e7e24aa173ee54e1996e6532f5">AssemblyName</link> = Assembly.GetExecutingAssembly().GetName().Name<computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Assembly name for log files. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field">Field</link> operations. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_1a0ce18754b3f9ab5de6c412cce6cf9bc7"/><section>
+    <title>CompareValue()</title>
+<indexterm><primary>CompareValue</primary><secondary>Outpost31.Module.Common.Action.Field</secondary></indexterm>
+<indexterm><primary>Outpost31.Module.Common.Action.Field</primary><secondary>CompareValue</secondary></indexterm>
+<para><computeroutput>static bool Outpost31.Module.Common.Action.Field.CompareValue (string field01Value, string field02Value, <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log">TraceLog</link> traceInfo)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Compare the values of two form field IDs to determine if they are the same. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>field01Value</entry><entry>
+<para>The value of the first field.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>field02Value</entry><entry>
+<para>The value of the second field.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+
+<para>To call FieldOperation.Compare(): <literallayout><computeroutput>var&#32;value1&#32;=&#32;tnSession.AvComponents.SentOptionObject.GetFieldValue(<emphasis role="stringliteral">&quot;10001&quot;</emphasis>)
+var&#32;value2&#32;=&#32;tnSession.AvComponents.SentOptionObject.GetFieldValue(<emphasis role="stringliteral">&quot;10002&quot;</emphasis>);
+<link linkend="_namespace_outpost31">Outpost31</link>.<link linkend="_namespace_outpost31_1_1_module">Module</link>.<link linkend="_namespace_outpost31_1_1_module_1_1_common">Common</link>.FieldOperation.SaveValue(value1,&#32;value1);
+</computeroutput></literallayout> </para>
+
+<para><formalpara><title>Returns</title>
+
+<para>True (the fields values are the same) or false(the field values are different).</para>
+</formalpara>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_a0ce18754b3f9ab5de6c412cce6cf9bc7_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_1a2037fbd8a694f23a2d6da30b8c4602a9"/><section>
+    <title>Lock()</title>
+<indexterm><primary>Lock</primary><secondary>Outpost31.Module.Common.Action.Field</secondary></indexterm>
+<indexterm><primary>Outpost31.Module.Common.Action.Field</primary><secondary>Lock</secondary></indexterm>
+<para><computeroutput>static void Outpost31.Module.Common.Action.Field.Lock (string fieldId)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Locks a field so that it cannot be edited. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>fieldId</entry><entry>
+<para>The field ID to be locked.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_1a828bb67552a8683ad009bf56a9baecb5"/><section>
+    <title>SaveValue()</title>
+<indexterm><primary>SaveValue</primary><secondary>Outpost31.Module.Common.Action.Field</secondary></indexterm>
+<indexterm><primary>Outpost31.Module.Common.Action.Field</primary><secondary>SaveValue</secondary></indexterm>
+<para><computeroutput>static void Outpost31.Module.Common.Action.Field.SaveValue (string valueToSave, string filePath, <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log">TraceLog</link> traceInfo)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Saves the value of a field to a file. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>valueToSave</entry><entry>
+<para>The value to save.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>filePath</entry><entry>
+<para>The file path.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+
+<para>To call FieldOperation.Compare(): <literallayout><computeroutput>var&#32;fieldValue&#32;=&#32;tnSession.AvComponents.SentOptionObject.GetFieldValue(<emphasis role="stringliteral">&quot;10001&quot;</emphasis>)
+var&#32;filePath&#32;=&#32;<emphasis role="stringliteral">$@&quot;{tnSession.TnFramework.TemporaryPath}\{currentAvatarUser}-%filename%.%extension%&quot;</emphasis>;
+<link linkend="_namespace_outpost31">Outpost31</link>.<link linkend="_namespace_outpost31_1_1_module">Module</link>.<link linkend="_namespace_outpost31_1_1_module_1_1_common">Common</link>.FieldOperation.SaveValue(originalAuthor,&#32;filePath);
+</computeroutput></literallayout> </para>
+
+<para>To ensure that any sensitive data is removed at the end of a session, the filePath should adhere to the following standards: <itemizedlist>
+<listitem>
+
+<para>The filename should always start with the <computeroutput>currentAvatarUser</computeroutput> </para>
+</listitem>
+<listitem>
+
+<para>The <computeroutput>filePath</computeroutput> should be in <computeroutput>tnSession.TnFramework.TemporaryPath</computeroutput> </para>
+</listitem>
+</itemizedlist>
+</para>
+
+<para>Since the <computeroutput>filePath</computeroutput> is user-definable, we will verify that the <computeroutput>filePath</computeroutput> doesn&apos;t exist before (re)creating it. </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_a828bb67552a8683ad009bf56a9baecb5_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_1afb5729e7e24aa173ee54e1996e6532f5"/><section>
+    <title>AssemblyName</title>
+<indexterm><primary>AssemblyName</primary><secondary>Outpost31.Module.Common.Action.Field</secondary></indexterm>
+<indexterm><primary>Outpost31.Module.Common.Action.Field</primary><secondary>AssemblyName</secondary></indexterm>
+<para><computeroutput>string Outpost31.Module.Common.Action.Field.AssemblyName = Assembly.GetExecutingAssembly().GetName().Name<computeroutput>[static]</computeroutput>, <computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Assembly name for log files. </para>
+</para>
+
+<para><itemizedlist>
+<listitem>
+<para>Define the assembly name here so it can be used to write log files throughout the class. </para>
+</listitem></itemizedlist>
+</para>
+</section>
+</section>
+</section>

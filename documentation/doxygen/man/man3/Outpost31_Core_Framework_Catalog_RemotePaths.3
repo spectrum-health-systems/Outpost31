@@ -1,0 +1,142 @@
+.TH "Outpost31.Core.Framework.Catalog.RemotePaths" 3 "Thu Jun 27 2024" "Outpost31" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Outpost31.Core.Framework.Catalog.RemotePaths \- Remote paths for Tingen\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBRemotePaths\fP \fBBuildObject\fP (string tnDataRoot)"
+.br
+.RI "Builds the remote paths object\&. "
+.ti -1c
+.RI "static List< string > \fBRequiredPaths\fP (\fBRemotePaths\fP remotePaths)"
+.br
+.RI "Returns a list of required paths\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBRoot\fP\fR [get, set]\fP"
+.br
+.RI "Root path for remote data\&. "
+.ti -1c
+.RI "string \fBAlerts\fP\fR [get, set]\fP"
+.br
+.RI "Path for remote alert data\&. "
+.ti -1c
+.RI "string \fBErrors\fP\fR [get, set]\fP"
+.br
+.RI "Path for remote error data\&. "
+.ti -1c
+.RI "string \fBExports\fP\fR [get, set]\fP"
+.br
+.RI "Path for remote export data\&. "
+.ti -1c
+.RI "string \fBReports\fP\fR [get, set]\fP"
+.br
+.RI "Path for remote report data\&. "
+.ti -1c
+.RI "string \fBSessions\fP\fR [get, set]\fP"
+.br
+.RI "Path for remote session data\&. "
+.ti -1c
+.RI "string \fBCurrentSession\fP\fR [get, set]\fP"
+.br
+.RI "Current session path\&. "
+.ti -1c
+.RI "string \fBWarnings\fP\fR [get, set]\fP"
+.br
+.RI "Path for remote warning files\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Remote paths for Tingen\&. 
+
+
+.IP "\(bu" 2
+Remote paths are used to store data that is accessible to specific users that have access to these locations\&. 
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "static \fBRemotePaths\fP Outpost31\&.Core\&.Framework\&.Catalog\&.RemotePaths\&.BuildObject (string tnDataRoot)\fR [static]\fP"
+
+.PP
+Builds the remote paths object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItnDataRoot\fP The Tingen data root\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A collection of remote paths\&.
+.RE
+.PP
+
+.SS "static List< string > Outpost31\&.Core\&.Framework\&.Catalog\&.RemotePaths\&.RequiredPaths (\fBRemotePaths\fP remotePaths)\fR [static]\fP"
+
+.PP
+Returns a list of required paths\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIremotePaths\fP The Tingen remote paths\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The list of required remote paths\&.
+.RE
+.PP
+
+.SH "Property Documentation"
+.PP 
+.SS "string Outpost31\&.Core\&.Framework\&.Catalog\&.RemotePaths\&.Alerts\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Path for remote alert data\&. C:\\TingenData\\Remote\\Alerts
+.SS "string Outpost31\&.Core\&.Framework\&.Catalog\&.RemotePaths\&.CurrentSession\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Current session path\&. 
+.IP "\(bu" 2
+Set at runtime\&. 
+.PP
+
+.SS "string Outpost31\&.Core\&.Framework\&.Catalog\&.RemotePaths\&.Errors\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Path for remote error data\&. C:\\TingenData\\Remote\\Errors
+.SS "string Outpost31\&.Core\&.Framework\&.Catalog\&.RemotePaths\&.Exports\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Path for remote export data\&. C:\\TingenData\\Remote\\Exports
+.SS "string Outpost31\&.Core\&.Framework\&.Catalog\&.RemotePaths\&.Reports\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Path for remote report data\&. C:\\TingenData\\Remote\\Reports
+.SS "string Outpost31\&.Core\&.Framework\&.Catalog\&.RemotePaths\&.Root\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Root path for remote data\&. C:\\TingenData\\Remote
+.SS "string Outpost31\&.Core\&.Framework\&.Catalog\&.RemotePaths\&.Sessions\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Path for remote session data\&. C:\\TingenData\\Remote\\Sessions
+.SS "string Outpost31\&.Core\&.Framework\&.Catalog\&.RemotePaths\&.Warnings\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Path for remote warning files\&. C:\\TingenData\\Remote\\Warnings
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Outpost31 from the source code\&.

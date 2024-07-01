@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="namespace_outpost31_1_1_module_1_1_admin_1_1_export" kind="namespace" language="C#">
+    <compoundname>Outpost31::Module::Admin::Export</compoundname>
+    <innerclass refid="class_outpost31_1_1_module_1_1_admin_1_1_export_1_1_option_object" prot="public">Outpost31::Module::Admin::Export::OptionObject</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/Admin/Export/OptionObject.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="_welcome_to_outpost31_8cs" kind="file" language="C#">
+    <compoundname>WelcomeToOutpost31.cs</compoundname>
+    <innerclass refid="class_outpost31_1_1_welcome_to_outpost31" prot="package">Outpost31::WelcomeToOutpost31</innerclass>
+    <innernamespace refid="namespace_outpost31">Outpost31</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>================================================================<sp/>24.6.0<sp/>=====</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Outpost31:<sp/>Logic<sp/>for<sp/>the<sp/>Tingen<sp/>web<sp/>service.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>https://github.com/APrettyCoolProgram/Outpost31</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>A<sp/>Pretty<sp/>Cool<sp/>Program.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>2.0<sp/>license.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================================================================<sp/>240624<sp/>=====</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>u------.----_code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>u240624.0843_documentation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>IMPORTANT<sp/>INFORMATION<sp/>ABOUT<sp/>OUTPOST31</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>-------------------------------------</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Outpost31<sp/>is<sp/>the<sp/>logic<sp/>for<sp/>the<sp/>Tingen<sp/>web<sp/>service.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_outpost31" kindref="compound">Outpost31</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">internal</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">WelcomeToOutpost31</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Nothing<sp/>is<sp/>done<sp/>here,<sp/>it&apos;s<sp/>just<sp/>for<sp/>documentation.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"></highlight></codeline>
+<codeline lineno="27"><highlight class="comment">Welcome<sp/>to<sp/>Outpost<sp/>31!</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"></highlight></codeline>
+<codeline lineno="29"><highlight class="comment">This<sp/>class<sp/>providea<sp/>important<sp/>information<sp/>and<sp/>documentation<sp/>about<sp/>Tingen/Outpost<sp/>31.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment">-----------------------</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">VALID<sp/>SCRIPT<sp/>PARAMETERS</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">-----------------------</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment">Module:<sp/>Admin</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"></highlight></codeline>
+<codeline lineno="37"><highlight class="comment">*<sp/>admin-service-update-mode<sp/>&gt;<sp/>Admin-Mode-Status-Update</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">*<sp/>admin-service-update-currentsettings<sp/>&gt;<sp/>Admin-CurrentSettings-Status-Update</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">*<sp/>admin-service-update-all<sp/>&gt;<sp/>Admin-All-Status-Update</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"></highlight></codeline>
+<codeline lineno="41"><highlight class="comment">Module:<sp/>OpenIncident</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"></highlight></codeline>
+<codeline lineno="43"><highlight class="comment">*<sp/>openincident-verify-authorisviewing</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"></highlight></codeline>
+<codeline lineno="45"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/WelcomeToOutpost31.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security" xml:lang="en-US">
+<title>Outpost31.Core.NtstWebService.NtstWebServiceSecurity Class Reference</title>
+<indexterm><primary>Outpost31.Core.NtstWebService.NtstWebServiceSecurity</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security_1a8a0c61bb1335b64d4829640aee35b1b3"/>static <link linkend="_class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security">NtstWebServiceSecurity</link> <emphasis role="strong">BuildDefaultSecurityObject</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security_1a0a5f3b6c3adebefa8630f2bdf3e9c8a6"/>static <link linkend="_class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security">NtstWebServiceSecurity</link> <emphasis role="strong">Load</emphasis> (string ntstWebServiceSecurityPath, string ntstWebServiceSecurityFileName)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security_1ae8dca9c8e33b8665f134c54287c7361a"/>string <emphasis role="strong">WebServiceUser</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security_1a0863f017e542d7e96b28185d43eb2235"/>string <emphasis role="strong">WebServicePassword</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

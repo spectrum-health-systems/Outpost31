@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="class_outpost31_1_1_module_1_1_open_incident_1_1_verify" kind="class" language="C#" prot="public">
+    <compoundname>Outpost31::Module::OpenIncident::Verify</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1a9f5d0b21e4b020d1e80bcf2f4a311fbc" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Outpost31.Module.OpenIncident.Verify.AssemblyName</definition>
+        <argsstring></argsstring>
+        <name>AssemblyName</name>
+        <qualifiedname>Outpost31.Module.OpenIncident.Verify.AssemblyName</qualifiedname>
+        <initializer>= Assembly.GetExecutingAssembly().GetName().Name</initializer>
+        <briefdescription>
+<para>Assembly name for log files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Define the assembly name here so it can be used to write log files throughout the class. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" line="18" column="30" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" bodystart="18" bodyend="18"/>
+        <referencedby refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ae6a10b8c2ecca1d1b642eb61978a3695" compoundref="_verify_8cs" startline="40" endline="56">Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsSubmitting</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ad224d08f1ab18c157715a564f91f521d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsOpening</definition>
+        <argsstring>(TingenSession tnSession)</argsstring>
+        <name>OriginalAuthorIsOpening</name>
+        <qualifiedname>Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsOpening</qualifiedname>
+        <param>
+          <type><ref refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session" kindref="compound">TingenSession</ref></type>
+          <declname>tnSession</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" line="20" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" bodystart="20" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ae6a10b8c2ecca1d1b642eb61978a3695" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsSubmitting</definition>
+        <argsstring>(TingenSession tnSession)</argsstring>
+        <name>OriginalAuthorIsSubmitting</name>
+        <qualifiedname>Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsSubmitting</qualifiedname>
+        <param>
+          <type><ref refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session" kindref="compound">TingenSession</ref></type>
+          <declname>tnSession</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify" kindref="compound">Verify</ref> the Avatar user is the same as the original author. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tnSession</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" line="40" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" bodystart="40" bodyend="56"/>
+        <references refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1a9f5d0b21e4b020d1e80bcf2f4a311fbc" compoundref="_verify_8cs" startline="18" endline="18">Outpost31.Module.OpenIncident.Verify.AssemblyName</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ad9e9aa1be80c25431df4f126fbdbe546" compoundref="_tingen_session_8cs" startline="62" endline="62">Outpost31.Core.Session.TingenSession.ModOpenIncident</references>
+        <references refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1a7477552f340d46775d869b63e40e8e65" compoundref="_log_event_8cs" startline="27" endline="41">Outpost31.Core.Logger.LogEvent.Trace</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a57c77f2520b82e9ff8f21c93034b31ad" compoundref="_tingen_session_8cs" startline="58" endline="58">Outpost31.Core.Session.TingenSession.TraceInfo</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>VerifyAuthor command. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" line="10" column="26" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" bodystart="11" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1a9f5d0b21e4b020d1e80bcf2f4a311fbc" prot="public" virt="non-virtual"><scope>Outpost31::Module::OpenIncident::Verify</scope><name>AssemblyName</name></member>
+      <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ad224d08f1ab18c157715a564f91f521d" prot="public" virt="non-virtual"><scope>Outpost31::Module::OpenIncident::Verify</scope><name>OriginalAuthorIsOpening</name></member>
+      <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ae6a10b8c2ecca1d1b642eb61978a3695" prot="public" virt="non-virtual"><scope>Outpost31::Module::OpenIncident::Verify</scope><name>OriginalAuthorIsSubmitting</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
