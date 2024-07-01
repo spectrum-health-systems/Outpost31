@@ -1,0 +1,11 @@
+<map id="Outpost31.Core.Framework.Paths.Build" name="Outpost31.Core.Framework.Paths.Build">
+<area shape="rect" id="Node000001" title="Builds the paths object." alt="" coords="5,104,190,145"/>
+<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths.html#a7eee9aadc0dd721e780b5e9e59792502" title="Builds the public paths object." alt="" coords="257,5,468,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,101,237,57,261,48,262,53,239,61,139,106"/>
+<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths.html#a3fb63f4dcf1289f6868da3aa981e6d8e" title="Builds the remote paths object." alt="" coords="253,71,472,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,110,237,104,238,109,190,115"/>
+<area shape="rect" id="Node000004" href="$class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths.html#ab187331940c728c5d8624fa359571ba5" title="Builds the system code paths object." alt="" coords="238,136,487,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="190,133,223,137,222,142,190,138"/>
+<area shape="rect" id="Node000005" href="$class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths.html#aeb0e4d3bb115d95e5b5cbe9602c84c23" title="Builds the Tingen path object." alt="" coords="256,201,469,242"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="140,143,239,186,262,194,261,199,237,191,138,148"/>
+</map>

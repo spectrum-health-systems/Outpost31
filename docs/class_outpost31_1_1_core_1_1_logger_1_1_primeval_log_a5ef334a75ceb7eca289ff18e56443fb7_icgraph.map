@@ -1,0 +1,5 @@
+<map id="Outpost31.Core.Logger.PrimevalLog.Create" name="Outpost31.Core.Logger.PrimevalLog.Create">
+<area shape="rect" id="Node000001" title="Creates a Primeval log." alt="" coords="234,5,444,46"/>
+<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_logger_1_1_log_event.html#adf35641fd17daef20a0391da56a0d578" title="Log a primeval event." alt="" coords="5,5,186,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,28,186,28,186,23,218,23"/>
+</map>
