@@ -2,7 +2,7 @@
 
 using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Reflection;
 using Outpost31.Core.Avatar;
 using Outpost31.Core.Configuration;
 using Outpost31.Core.Framework;
@@ -90,9 +90,15 @@ namespace Outpost31.Core.Session
         /// <returns>An Tingen Session object.</returns>
         public static TingenSession Build(OptionObject2015 sentOptionObject, string sentScriptParameter, string tnVersion)
         {
+
+
             var staticVar = BuildStaticVars();
 
+
+
             var configPath = $@"{staticVar["tnDataRoot"]}\{staticVar["avSystemCode"]}\Config";
+
+
 
             var tnSession = new TingenSession
             {
@@ -101,36 +107,46 @@ namespace Outpost31.Core.Session
                 Date      = DateTime.Now.ToString("yyMMdd"),
                 Time      = DateTime.Now.ToString("HHmmss"),
                 TnConfig  = ConfigSettings.Load(configPath, staticVar["tnConfigFileName"]),
-                AvData    = AvatarData.BuildObject(sentOptionObject, sentScriptParameter, staticVar["avSystemCode"]),  
+                AvData    = AvatarData.BuildObject(sentOptionObject, sentScriptParameter, staticVar["avSystemCode"]),
                 TnPath    = Paths.Build(staticVar["tnDataRoot"], staticVar["avSystemCode"])
             };
+
+
 
             //////tnSession.Path = Paths.Build(tnSession.Config.TingenDataRoot, avSystemCode);
 
             /* The session-specific path is built here. */
-            tnSession.TnPath.SystemCode.CurrentSession = $@"{tnSession.TnPath.SystemCode.Sessions}\{tnSession.Date}\{sentOptionObject.OptionUserId}\{tnSession.Time}";
+            tnSession.TnPath.SystemCode.CurrentSession = $@"{tnSession.TnPath.SystemCode.Sessions}\{tnSession.Date}\{sentOptionObject.OptionUserId}\{tnSession.Time}-{tnSession.AvData.SentScriptParameter}";
+            tnSession.TnPath.Remote.CurrentSession     =  $@"{tnSession.TnPath.Remote.Sessions}\{sentOptionObject.OptionUserId}\{tnSession.Date}";
+
+
 
             /* Trace info */
             tnSession.TraceInfo = TraceLog.BuildInfo(tnSession.TnPath.SystemCode.CurrentSession, tnSession.TnConfig.TraceLevel, tnSession.TnConfig.TraceDelay);
 
+
+
             // Module stuff
             if (tnSession.TnConfig.ModOpenIncidentMode == "enabled" && tnSession.AvData.SentScriptParameter.ToLower().StartsWith("openincident"))
             {
-               // Bring up to date -- tnSession.ModOpenIncident = ModuleOpenIncident.Load($@"{tnSession.TnPath.SystemCode.Config}\ModOpenIncident.config", tnSession.TnPath.SystemCode.Sessions, tnSession.AvData.WorkOptionObject, tnSession.TraceInfo);
+
+
+                tnSession.ModOpenIncident = ModuleOpenIncident.Load($@"{tnSession.TnPath.SystemCode.Config}\ModOpenIncident.config", tnSession.TnPath.SystemCode.Sessions, tnSession.AvData.WorkOptionObject, tnSession.TraceInfo);
             }
             else
             {
+
+
                 tnSession.ModOpenIncident = new ModuleOpenIncident();
             }
 
-            if(tnSession.TnConfig.NtstWebServices == "enabled")
-            {
-                tnSession.NtstWebServiceSecurity = NtstWebServiceSecurity.Load(tnSession.TnPath.SystemCode.Config, staticVar["ntstSecurityFileName"]);
-            }
-            else
-            {
-                tnSession.NtstWebServiceSecurity = new NtstWebServiceSecurity();
-            }
+
+
+            tnSession.NtstWebServiceSecurity =tnSession.TnConfig.NtstWebServices == "enabled"
+                ? NtstWebServiceSecurity.Load(tnSession.TnPath.SystemCode.Config, staticVar["ntstSecurityFileName"])
+                : new NtstWebServiceSecurity();
+
+
 
             Initialize(tnSession); // somewhere else?
 
@@ -141,31 +157,26 @@ namespace Outpost31.Core.Session
         /// <param name="tnSession"></param>
         public static void Initialize(TingenSession tnSession)
         {
-            /* Can't do any logging here. Sorry! */
-
-            ////var requiredDirectories = new List<string>
-            ////{
-            ////   tnSession.Framework.
-            ////};
+            LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name, tnSession.TnPath.SystemCode.CurrentSession);
 
             Maintenance.VerifyDirectory(tnSession.TnPath.SystemCode.CurrentSession);
+            Maintenance.VerifyDirectory(tnSession.TnPath.Remote.CurrentSession);
         }
 
         public static void WriteSessionDetails(TingenSession tnSession)
         {
-            var sessionDetailFilePath = $@"{tnSession.TnPath.SystemCode.CurrentSession}\Session.md";
-
-            File.WriteAllText(sessionDetailFilePath, Catalog.SessionDetails(tnSession));
+            Utilities.DuFile.WriteLocal($@"{tnSession.TnPath.SystemCode.CurrentSession}\Session.md", Catalog.SessionDetails(tnSession));
+            Utilities.DuFile.WriteLocal($@"{tnSession.TnPath.Remote.CurrentSession}\{tnSession.Time}-{tnSession.AvData.SentScriptParameter}.md", Catalog.SessionDetails(tnSession));
         }
 
         public static Dictionary<string, string> BuildStaticVars()
         {
             return new Dictionary<string, string>
             {
-                { "tnBuild",          "240610.0753" },
-                { "avSystemCode",     "UAT" },
-                { "tnDataRoot",       @"C:\TingenData" },
-                { "tnConfigFileName", "Tingen.config" },
+                { "tnBuild",              "240610.0753" },
+                { "avSystemCode",         "UAT" },
+                { "tnDataRoot",           @"C:\TingenData" },
+                { "tnConfigFileName",     "Tingen.config" },
                 { "ntstSecurityFileName", "NtstSecurity.config" }
             };
         }

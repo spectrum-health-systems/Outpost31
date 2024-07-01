@@ -1,6 +1,5 @@
 ﻿// u240607.1004
 
-using Outpost31.Core.Session;
 using ScriptLinkStandard.Objects;
 
 namespace Outpost31.Core.Avatar

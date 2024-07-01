@@ -1,7 +1,6 @@
 ﻿// u240607.1043
 
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using Outpost31.Core.Logger;
 using Outpost31.Core.Session;
@@ -26,6 +25,8 @@ namespace Outpost31.Module.Admin.Service
             UpdateMode(tnSession.TnPath.Remote.Root, tnSession.AvData.AvatarSystemCode, tnSession.TnConfig.TingenMode, tnSession.TraceInfo);
 
             UpdateSettings(tnSession);
+
+            Core.Avatar.OptionObjects.ReturnInfo(tnSession, "All statuses updated.");
         }
 
         public static void UpdateMode(string remoteRoot, string avSystemCode, string tnMode, TraceLog traceInfo)

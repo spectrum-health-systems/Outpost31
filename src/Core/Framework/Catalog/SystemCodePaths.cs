@@ -1,7 +1,6 @@
 ﻿// u240607.1011
 
 using System.Collections.Generic;
-using System.Security.Permissions;
 
 namespace Outpost31.Core.Framework.Catalog
 {
@@ -37,7 +36,7 @@ namespace Outpost31.Core.Framework.Catalog
 
         /* Support paths
          */
-        public string SupportRoot {get; set; }
+        public string SupportRoot { get; set; }
         public string Admin { get; set; }
         public string Archive { get; set; }
         public string Debugging { get; set; }
