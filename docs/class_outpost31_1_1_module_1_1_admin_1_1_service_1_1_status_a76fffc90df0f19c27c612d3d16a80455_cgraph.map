@@ -1,0 +1,16 @@
+<map id="Outpost31.Module.Admin.Service.Status.UpdateAll" name="Outpost31.Module.Admin.Service.Status.UpdateAll">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,38,224,81"/>
+<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_logger_1_1_log_event.html#a7477552f340d46775d869b63e40e8e65" title="Log a trace event." alt="" coords="804,67,985,110"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,35,330,17,465,5,538,3,612,5,685,11,757,23,803,38,845,57,843,62,801,43,756,28,685,16,612,10,538,8,466,10,331,23,219,40"/>
+<area shape="rect" id="Node000004" href="$class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status.html#ac0199d0cf596f7053126854494310e66" title=" " alt="" coords="538,38,756,81"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="224,57,523,57,523,62,224,62"/>
+<area shape="rect" id="Node000005" href="$class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status.html#a5c436fde969810e30c5f9365325a823f" title=" " alt="" coords="272,97,490,139"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="215,79,266,90,265,95,214,84"/>
+<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_logger_1_1_trace_log.html#a1337fb24049079842cd6a4aab40f6c27" title="Soon." alt="" coords="1033,67,1224,110"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="985,86,1017,86,1017,91,985,91"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="757,70,789,73,789,79,757,75"/>
+<area shape="poly" id="edge8_Node000005_Node000002" title=" " alt="" coords="490,109,788,92,789,97,491,114"/>
+<area shape="rect" id="Node000006" href="$class_outpost31_1_1_core_1_1_session_1_1_catalog.html#af2e7323ba98c4b3a0df66fe93812ae4b" title="Soon." alt="" coords="540,155,755,198"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="481,137,533,149,531,154,480,142"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="709,152,817,113,819,118,711,157"/>
+</map>

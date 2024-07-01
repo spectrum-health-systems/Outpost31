@@ -1,0 +1,7 @@
+<map id="Outpost31.Core.Configuration.ConfigSettings.BuildDefaultObject" name="Outpost31.Core.Configuration.ConfigSettings.BuildDefaultObject">
+<area shape="rect" id="Node000001" title="Build a default Tingen configuration object." alt="" coords="504,5,722,46"/>
+<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_configuration_1_1_config_settings.html#a9cb9a342c0a283f7a38706c10e9869ce" title="Loads the Tingen configuration file." alt="" coords="260,5,456,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="488,28,456,28,456,23,488,23"/>
+<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_session_1_1_tingen_session.html#abd8de2211ce4837992fbb7163f882b61" title="Builds the Tingen Session object." alt="" coords="5,5,212,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="244,28,212,28,212,23,244,23"/>
+</map>
