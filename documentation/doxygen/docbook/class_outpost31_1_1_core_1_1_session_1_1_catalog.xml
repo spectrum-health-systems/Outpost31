@@ -78,6 +78,15 @@ Here is the call graph for this function:<para>
         </mediaobject>
     </informalfigure>
 </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_session_1_1_catalog_af2e7323ba98c4b3a0df66fe93812ae4b_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 </section>
 <anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_catalog_1a92d2976185a1b892644decb96fbf4ea9"/><section>
     <title>SessionDetails()</title>
@@ -116,6 +125,15 @@ Here is the call graph for this function:<para>
         <mediaobject>
             <imageobject>
                 <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_session_1_1_catalog_a92d2976185a1b892644decb96fbf4ea9_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_session_1_1_catalog_a92d2976185a1b892644decb96fbf4ea9_icgraph.png"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>

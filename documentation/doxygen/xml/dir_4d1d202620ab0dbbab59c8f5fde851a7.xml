@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
   <compounddef id="dir_4d1d202620ab0dbbab59c8f5fde851a7" kind="dir">
-    <compoundname>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/Admin/Service</compoundname>
+    <compoundname>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/Admin/Service</compoundname>
     <innerfile refid="_status_8cs">Status.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/Admin/Service/"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/Admin/Service/"/>
   </compounddef>
 </doxygen>

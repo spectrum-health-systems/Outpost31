@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="45" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="45" bodyend="45"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="45" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="45" bodyend="45"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1acd67e31b82a94d2b72ce89d0099c1ae7" compoundref="_config_settings_8cs" startline="120" endline="132">Outpost31.Core.Configuration.ConfigSettings.BuildDefaultObject</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1aac88423bba238fded973d18a17986db2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="67" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="67" bodyend="67"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="67" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="67" bodyend="67"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1acd67e31b82a94d2b72ce89d0099c1ae7" compoundref="_config_settings_8cs" startline="120" endline="132">Outpost31.Core.Configuration.ConfigSettings.BuildDefaultObject</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1a91be82944f253f870bf64b75bcd1130b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="76" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="76" bodyend="76"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="76" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="76" bodyend="76"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1acd67e31b82a94d2b72ce89d0099c1ae7" compoundref="_config_settings_8cs" startline="120" endline="132">Outpost31.Core.Configuration.ConfigSettings.BuildDefaultObject</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1a3ea54ee69cc5b09a1ce9c5a49e10cc06" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="97" column="20" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="97" bodyend="97"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="97" column="20" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="97" bodyend="97"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1acd67e31b82a94d2b72ce89d0099c1ae7" compoundref="_config_settings_8cs" startline="120" endline="132">Outpost31.Core.Configuration.ConfigSettings.BuildDefaultObject</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1ad45756319ae32581bce2a4d7536a11ea" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="109" column="20" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="109" bodyend="109"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="109" column="20" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="109" bodyend="109"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1acd67e31b82a94d2b72ce89d0099c1ae7" compoundref="_config_settings_8cs" startline="120" endline="132">Outpost31.Core.Configuration.ConfigSettings.BuildDefaultObject</referencedby>
       </memberdef>
     </sectiondef>
@@ -173,7 +173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="120" column="38" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="120" bodyend="132"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="120" column="38" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="120" bodyend="132"/>
         <references refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1aac88423bba238fded973d18a17986db2" compoundref="_config_settings_8cs" startline="67" endline="67">Outpost31.Core.Configuration.ConfigSettings.ModOpenIncidentMode</references>
         <references refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1a91be82944f253f870bf64b75bcd1130b" compoundref="_config_settings_8cs" startline="76" endline="76">Outpost31.Core.Configuration.ConfigSettings.NtstWebServices</references>
         <references refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1a28109a2fe3fff375c0d49cc6688c3366" compoundref="_config_settings_8cs" startline="45" endline="45">Outpost31.Core.Configuration.ConfigSettings.TingenMode</references>
@@ -221,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="143" column="38" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="143" bodyend="160"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="143" column="38" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="143" bodyend="160"/>
         <references refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1acd67e31b82a94d2b72ce89d0099c1ae7" compoundref="_config_settings_8cs" startline="120" endline="132">Outpost31.Core.Configuration.ConfigSettings.BuildDefaultObject</references>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1abd8de2211ce4837992fbb7163f882b61" compoundref="_tingen_session_8cs" startline="93" endline="134">Outpost31.Core.Session.TingenSession.Build</referencedby>
       </memberdef>
@@ -249,7 +249,7 @@
 </listitem></itemizedlist>
 </para>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="23" column="11" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="24" bodyend="161"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" line="23" column="11" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Configuration/ConfigSettings.cs" bodystart="24" bodyend="161"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1acd67e31b82a94d2b72ce89d0099c1ae7" prot="public" virt="non-virtual"><scope>Outpost31::Core::Configuration::ConfigSettings</scope><name>BuildDefaultObject</name></member>
       <member refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1a9cb9a342c0a283f7a38706c10e9869ce" prot="public" virt="non-virtual"><scope>Outpost31::Core::Configuration::ConfigSettings</scope><name>Load</name></member>

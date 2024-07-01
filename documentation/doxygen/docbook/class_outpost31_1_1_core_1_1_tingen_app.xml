@@ -9,7 +9,7 @@
 
 <para>Start the Tingen web service. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_tingen_app_1a1372d5df3d765c1590b850923c12a3d0"/>static void <emphasis role="strong">Stop</emphasis> (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)</para>
+            <listitem><para>static void <link linkend="_class_outpost31_1_1_core_1_1_tingen_app_1a1372d5df3d765c1590b850923c12a3d0">Stop</link> (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)</para>
 
 <para>Handles any logic related to stopping Tingen. </para>
 </listitem>
@@ -62,6 +62,24 @@ Here is the call graph for this function:<para>
         <mediaobject>
             <imageobject>
                 <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_tingen_app_aecdc663e5b2013d5ba09ae1cb5fc2f5f_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_tingen_app_1a1372d5df3d765c1590b850923c12a3d0"/><section>
+    <title>Stop()</title>
+<indexterm><primary>Stop</primary><secondary>Outpost31.Core.TingenApp</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.TingenApp</primary><secondary>Stop</secondary></indexterm>
+<para><computeroutput>static void Outpost31.Core.TingenApp.Stop (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Handles any logic related to stopping Tingen. </para>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_tingen_app_a1372d5df3d765c1590b850923c12a3d0_cgraph.png"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>

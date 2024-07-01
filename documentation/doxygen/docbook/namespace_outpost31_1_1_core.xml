@@ -3,6 +3,25 @@
 <title>Outpost31.Core Namespace Reference</title>
 <indexterm><primary>Outpost31.Core</primary></indexterm>
 <simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_outpost31_1_1_core_1_1_avatar">Avatar</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_outpost31_1_1_core_1_1_configuration">Configuration</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_outpost31_1_1_core_1_1_framework">Framework</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_outpost31_1_1_core_1_1_logger">Logger</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_outpost31_1_1_core_1_1_ntst_web_service">NtstWebService</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_outpost31_1_1_core_1_1_session">Session</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_outpost31_1_1_core_1_1_utilities">Utilities</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_class_outpost31_1_1_core_1_1_parse_script_parameter">ParseScriptParameter</link></para>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_9df1ff67499aa3a47c1111402a19f6e6" xml:lang="en-US">
+<title>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework Directory Reference</title>
+<indexterm><primary>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework Directory Reference</primary></indexterm>
+Directory dependency graph for Framework:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_9df1ff67499aa3a47c1111402a19f6e6_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_a327843a97faf81db4f61da34aeb03c6">Catalog</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__maintenance_8cs">Maintenance.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__paths_8cs">Paths.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__core_2_framework_2_refresh_8cs">Refresh.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -18,37 +18,37 @@
 
 <para>Soon. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a89840eb03b4f2dfdf210b3c8272b2dbb"/>static void <emphasis role="strong">WriteSessionDetails</emphasis> (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)</para>
+            <listitem><para>static void <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a89840eb03b4f2dfdf210b3c8272b2dbb">WriteSessionDetails</link> (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)</para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5f52be032451bdd09a6a5548f8db33dc"/>static Dictionary&lt; string, string &gt; <emphasis role="strong">BuildStaticVars</emphasis> ()</para>
+            <listitem><para>static Dictionary&lt; string, string &gt; <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5f52be032451bdd09a6a5548f8db33dc">BuildStaticVars</link> ()</para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Properties    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a1f5918e313ecfa27883e8dc9b858d673"/>string <emphasis role="strong">TnVersion</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para>string <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a1f5918e313ecfa27883e8dc9b858d673">TnVersion</link><computeroutput> [get, set]</computeroutput>
 </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1aacc82612996405591b6c916f3b2c8e4d"/>string <emphasis role="strong">TnBuild</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para>string <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1aacc82612996405591b6c916f3b2c8e4d">TnBuild</link><computeroutput> [get, set]</computeroutput>
 </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a767af7d923f9ffd13f833834a6d3119b"/>string <emphasis role="strong">Date</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para>string <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a767af7d923f9ffd13f833834a6d3119b">Date</link><computeroutput> [get, set]</computeroutput>
 </para>
 
 <para>The session datestamp. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a69d6a93d68ce8a9b0e9d95af04f541d2"/>string <emphasis role="strong">Time</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para>string <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a69d6a93d68ce8a9b0e9d95af04f541d2">Time</link><computeroutput> [get, set]</computeroutput>
 </para>
 
 <para>The session timestamp. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab4a2303bcd493b8288f21b831d6ea48e"/>bool <emphasis role="strong">ReturnClonedOptionObject</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para>bool <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab4a2303bcd493b8288f21b831d6ea48e">ReturnClonedOptionObject</link><computeroutput> [get, set]</computeroutput>
 </para>
 
 <para>Return the cloned OptionObject. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5fbba191edb00e771960aaddb5435a57"/><link linkend="_class_outpost31_1_1_core_1_1_configuration_1_1_config_settings">ConfigSettings</link> <emphasis role="strong">TnConfig</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para><link linkend="_class_outpost31_1_1_core_1_1_configuration_1_1_config_settings">ConfigSettings</link> <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5fbba191edb00e771960aaddb5435a57">TnConfig</link><computeroutput> [get, set]</computeroutput>
 </para>
 
 <para>Config. </para>
@@ -63,15 +63,15 @@
 
 <para><link linkend="_namespace_outpost31_1_1_core_1_1_avatar">Avatar</link> components . </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1aa4e670c9a37d07f3594f92242afb00c7"/><link linkend="_class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security">NtstWebServiceSecurity</link> <emphasis role="strong">NtstWebServiceSecurity</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para><link linkend="_class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security">NtstWebServiceSecurity</link> <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1aa4e670c9a37d07f3594f92242afb00c7">NtstWebServiceSecurity</link><computeroutput> [get, set]</computeroutput>
 </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a57c77f2520b82e9ff8f21c93034b31ad"/><link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log">TraceLog</link> <emphasis role="strong">TraceInfo</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para><link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log">TraceLog</link> <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a57c77f2520b82e9ff8f21c93034b31ad">TraceInfo</link><computeroutput> [get, set]</computeroutput>
 </para>
 
 <para>Trace log information. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ad9e9aa1be80c25431df4f126fbdbe546"/><link linkend="_class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident">ModuleOpenIncident</link> <emphasis role="strong">ModOpenIncident</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para><link linkend="_class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident">ModuleOpenIncident</link> <link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ad9e9aa1be80c25431df4f126fbdbe546">ModOpenIncident</link><computeroutput> [get, set]</computeroutput>
 </para>
 
 <para><link linkend="_namespace_outpost31_1_1_module">Module</link> to open an incident. </para>
@@ -193,6 +193,20 @@ Here is the call graph for this function:<para>
     </informalfigure>
 </para>
 </section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5f52be032451bdd09a6a5548f8db33dc"/><section>
+    <title>BuildStaticVars()</title>
+<indexterm><primary>BuildStaticVars</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary><secondary>BuildStaticVars</secondary></indexterm>
+<para><computeroutput>static Dictionary&lt; string, string &gt; Outpost31.Core.Session.TingenSession.BuildStaticVars ( )<computeroutput>[static]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_a5f52be032451bdd09a6a5548f8db33dc_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
 <anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a96196cd518d53aeb229268deefbc956e"/><section>
     <title>Initialize()</title>
 <indexterm><primary>Initialize</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
@@ -240,6 +254,29 @@ Here is the caller graph for this function:<para>
     </informalfigure>
 </para>
 </section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a89840eb03b4f2dfdf210b3c8272b2dbb"/><section>
+    <title>WriteSessionDetails()</title>
+<indexterm><primary>WriteSessionDetails</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary><secondary>WriteSessionDetails</secondary></indexterm>
+<para><computeroutput>static void Outpost31.Core.Session.TingenSession.WriteSessionDetails (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)<computeroutput>[static]</computeroutput></computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_a89840eb03b4f2dfdf210b3c8272b2dbb_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_a89840eb03b4f2dfdf210b3c8272b2dbb_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
 </section>
 <section>
 <title>Property Documentation</title>
@@ -254,6 +291,61 @@ Here is the caller graph for this function:<para>
 
 <para>See <emphasis role="bold">Outpost31.Core.Configuration.TingenFramework.cs</emphasis> for more information. </para>
 </section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a767af7d923f9ffd13f833834a6d3119b"/><section>
+    <title>Date</title>
+<indexterm><primary>Date</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary><secondary>Date</secondary></indexterm>
+<para><computeroutput>string Outpost31.Core.Session.TingenSession.Date<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The session datestamp. </para>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ad9e9aa1be80c25431df4f126fbdbe546"/><section>
+    <title>ModOpenIncident</title>
+<indexterm><primary>ModOpenIncident</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary><secondary>ModOpenIncident</secondary></indexterm>
+<para><computeroutput><link linkend="_class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident">ModuleOpenIncident</link> Outpost31.Core.Session.TingenSession.ModOpenIncident<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_namespace_outpost31_1_1_module">Module</link> to open an incident. </para>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1aa4e670c9a37d07f3594f92242afb00c7"/><section>
+    <title>NtstWebServiceSecurity</title>
+<indexterm><primary>NtstWebServiceSecurity</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary><secondary>NtstWebServiceSecurity</secondary></indexterm>
+<para><computeroutput><link linkend="_class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security">NtstWebServiceSecurity</link> Outpost31.Core.Session.TingenSession.NtstWebServiceSecurity<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab4a2303bcd493b8288f21b831d6ea48e"/><section>
+    <title>ReturnClonedOptionObject</title>
+<indexterm><primary>ReturnClonedOptionObject</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary><secondary>ReturnClonedOptionObject</secondary></indexterm>
+<para><computeroutput>bool Outpost31.Core.Session.TingenSession.ReturnClonedOptionObject<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Return the cloned OptionObject. </para>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a69d6a93d68ce8a9b0e9d95af04f541d2"/><section>
+    <title>Time</title>
+<indexterm><primary>Time</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary><secondary>Time</secondary></indexterm>
+<para><computeroutput>string Outpost31.Core.Session.TingenSession.Time<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The session timestamp. </para>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1aacc82612996405591b6c916f3b2c8e4d"/><section>
+    <title>TnBuild</title>
+<indexterm><primary>TnBuild</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary><secondary>TnBuild</secondary></indexterm>
+<para><computeroutput>string Outpost31.Core.Session.TingenSession.TnBuild<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5fbba191edb00e771960aaddb5435a57"/><section>
+    <title>TnConfig</title>
+<indexterm><primary>TnConfig</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary><secondary>TnConfig</secondary></indexterm>
+<para><computeroutput><link linkend="_class_outpost31_1_1_core_1_1_configuration_1_1_config_settings">ConfigSettings</link> Outpost31.Core.Session.TingenSession.TnConfig<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Config. </para>
+</para>
+</section>
 <anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab1ca46a23541d202156ab0d3f35a3468"/><section>
     <title>TnPath</title>
 <indexterm><primary>TnPath</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
@@ -264,6 +356,20 @@ Here is the caller graph for this function:<para>
 </para>
 
 <para>See <emphasis role="bold">Outpost31.Core.Configuration.TingenFramework.cs</emphasis> for more information. </para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a1f5918e313ecfa27883e8dc9b858d673"/><section>
+    <title>TnVersion</title>
+<indexterm><primary>TnVersion</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary><secondary>TnVersion</secondary></indexterm>
+<para><computeroutput>string Outpost31.Core.Session.TingenSession.TnVersion<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a57c77f2520b82e9ff8f21c93034b31ad"/><section>
+    <title>TraceInfo</title>
+<indexterm><primary>TraceInfo</primary><secondary>Outpost31.Core.Session.TingenSession</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Session.TingenSession</primary><secondary>TraceInfo</secondary></indexterm>
+<para><computeroutput><link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log">TraceLog</link> Outpost31.Core.Session.TingenSession.TraceInfo<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Trace log information. </para>
+</para>
 </section>
 </section>
 </section>

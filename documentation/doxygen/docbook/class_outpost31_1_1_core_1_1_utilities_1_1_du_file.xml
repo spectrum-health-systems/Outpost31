@@ -5,8 +5,16 @@
 <simplesect>
     <title>Static Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_utilities_1_1_du_file_1a43fd8f2b4d7f3ac25e4584ce24b1ee5a"/>static void <emphasis role="strong">WriteLocal</emphasis> (string filePath, string fileContent)</para>
+            <listitem><para>static void <link linkend="_class_outpost31_1_1_core_1_1_utilities_1_1_du_file_1a43fd8f2b4d7f3ac25e4584ce24b1ee5a">WriteLocal</link> (string filePath, string fileContent)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_utilities_1_1_du_file_1a43fd8f2b4d7f3ac25e4584ce24b1ee5a"/><section>
+    <title>WriteLocal()</title>
+<indexterm><primary>WriteLocal</primary><secondary>Outpost31.Core.Utilities.DuFile</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Utilities.DuFile</primary><secondary>WriteLocal</secondary></indexterm>
+<para><computeroutput>static void Outpost31.Core.Utilities.DuFile.WriteLocal (string filePath, string fileContent)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
 </section>

@@ -23,7 +23,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" line="20" column="30" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" bodystart="20" bodyend="20"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/PrimevalLog.cs" line="20" column="30" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/PrimevalLog.cs" bodystart="20" bodyend="20"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a5ef334a75ceb7eca289ff18e56443fb7" compoundref="_primeval_log_8cs" startline="46" endline="55">Outpost31.Core.Logger.PrimevalLog.Create</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1add63a98e1ca24815bff62279fb1bd01e" compoundref="_primeval_log_8cs" startline="63" endline="66">Outpost31.Core.Logger.PrimevalLog.DevelopmentCleanup</referencedby>
       </memberdef>
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" line="46" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" bodystart="46" bodyend="55"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/PrimevalLog.cs" line="46" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/PrimevalLog.cs" bodystart="46" bodyend="55"/>
         <references refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a7baa7dcdf807da5bf82d5777c6d365ee" compoundref="_primeval_log_8cs" startline="20" endline="20">Outpost31.Core.Logger.PrimevalLog.PrimevalLogPath</references>
         <references refid="class_outpost31_1_1_core_1_1_logger_1_1_logger_catalog_1a4f61a573573056dbbbd909d9d1412a34" compoundref="_logger_catalog_8cs" startline="18" endline="27">Outpost31.Core.Logger.LoggerCatalog.StandardContent</references>
         <referencedby refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1adf35641fd17daef20a0391da56a0d578" compoundref="_log_event_8cs" startline="59" endline="66">Outpost31.Core.Logger.LogEvent.Primeval</referencedby>
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" line="63" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" bodystart="63" bodyend="66"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/PrimevalLog.cs" line="63" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/PrimevalLog.cs" bodystart="63" bodyend="66"/>
         <references refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a7baa7dcdf807da5bf82d5777c6d365ee" compoundref="_primeval_log_8cs" startline="20" endline="20">Outpost31.Core.Logger.PrimevalLog.PrimevalLogPath</references>
       </memberdef>
     </sectiondef>
@@ -141,7 +141,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" line="12" column="19" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/PrimevalLog.cs" bodystart="13" bodyend="67"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/PrimevalLog.cs" line="12" column="19" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/PrimevalLog.cs" bodystart="13" bodyend="67"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a5ef334a75ceb7eca289ff18e56443fb7" prot="public" virt="non-virtual"><scope>Outpost31::Core::Logger::PrimevalLog</scope><name>Create</name></member>
       <member refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1add63a98e1ca24815bff62279fb1bd01e" prot="public" virt="non-virtual"><scope>Outpost31::Core::Logger::PrimevalLog</scope><name>DevelopmentCleanup</name></member>

@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="18" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="18" bodyend="18"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="18" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="18" bodyend="18"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a3fb63f4dcf1289f6868da3aa981e6d8e" compoundref="_remote_paths_8cs" startline="55" endline="72">Outpost31.Core.Framework.Catalog.RemotePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a993d6d5b6781c5eed1ae8865bf5e98d0" compoundref="_remote_paths_8cs" startline="77" endline="91">Outpost31.Core.Framework.Catalog.RemotePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="22" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="22" bodyend="22"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="22" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="22" bodyend="22"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a3fb63f4dcf1289f6868da3aa981e6d8e" compoundref="_remote_paths_8cs" startline="55" endline="72">Outpost31.Core.Framework.Catalog.RemotePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a993d6d5b6781c5eed1ae8865bf5e98d0" compoundref="_remote_paths_8cs" startline="77" endline="91">Outpost31.Core.Framework.Catalog.RemotePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="26" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="26" bodyend="26"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="26" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="26" bodyend="26"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a3fb63f4dcf1289f6868da3aa981e6d8e" compoundref="_remote_paths_8cs" startline="55" endline="72">Outpost31.Core.Framework.Catalog.RemotePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a993d6d5b6781c5eed1ae8865bf5e98d0" compoundref="_remote_paths_8cs" startline="77" endline="91">Outpost31.Core.Framework.Catalog.RemotePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="30" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="30" bodyend="30"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="30" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="30" bodyend="30"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a3fb63f4dcf1289f6868da3aa981e6d8e" compoundref="_remote_paths_8cs" startline="55" endline="72">Outpost31.Core.Framework.Catalog.RemotePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a993d6d5b6781c5eed1ae8865bf5e98d0" compoundref="_remote_paths_8cs" startline="77" endline="91">Outpost31.Core.Framework.Catalog.RemotePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="34" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="34" bodyend="34"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="34" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="34" bodyend="34"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a3fb63f4dcf1289f6868da3aa981e6d8e" compoundref="_remote_paths_8cs" startline="55" endline="72">Outpost31.Core.Framework.Catalog.RemotePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a993d6d5b6781c5eed1ae8865bf5e98d0" compoundref="_remote_paths_8cs" startline="77" endline="91">Outpost31.Core.Framework.Catalog.RemotePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="38" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="38" bodyend="38"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="38" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="38" bodyend="38"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a3fb63f4dcf1289f6868da3aa981e6d8e" compoundref="_remote_paths_8cs" startline="55" endline="72">Outpost31.Core.Framework.Catalog.RemotePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a993d6d5b6781c5eed1ae8865bf5e98d0" compoundref="_remote_paths_8cs" startline="77" endline="91">Outpost31.Core.Framework.Catalog.RemotePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="46" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="46" bodyend="46"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="46" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="46" bodyend="46"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a3fb63f4dcf1289f6868da3aa981e6d8e" compoundref="_remote_paths_8cs" startline="55" endline="72">Outpost31.Core.Framework.Catalog.RemotePaths.BuildObject</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1aabfcfa1752e6bc1e4e097ebbdc56fe1c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="50" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="50" bodyend="50"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="50" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="50" bodyend="50"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a3fb63f4dcf1289f6868da3aa981e6d8e" compoundref="_remote_paths_8cs" startline="55" endline="72">Outpost31.Core.Framework.Catalog.RemotePaths.BuildObject</referencedby>
       </memberdef>
     </sectiondef>
@@ -179,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="55" column="35" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="55" bodyend="72"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="55" column="35" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="55" bodyend="72"/>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1aa1f48938fdfac9e033df7909a425aeef" compoundref="_remote_paths_8cs" startline="22" endline="22">Outpost31.Core.Framework.Catalog.RemotePaths.Alerts</references>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a0d0f56ab4dbbed3d8f23e9158ae9fe3f" compoundref="_remote_paths_8cs" startline="46" endline="46">Outpost31.Core.Framework.Catalog.RemotePaths.CurrentSession</references>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a966899fddb6f4f424082e41c8c453b58" compoundref="_remote_paths_8cs" startline="26" endline="26">Outpost31.Core.Framework.Catalog.RemotePaths.Errors</references>
@@ -219,7 +219,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="77" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="77" bodyend="91"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="77" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="77" bodyend="91"/>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1aa1f48938fdfac9e033df7909a425aeef" compoundref="_remote_paths_8cs" startline="22" endline="22">Outpost31.Core.Framework.Catalog.RemotePaths.Alerts</references>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a966899fddb6f4f424082e41c8c453b58" compoundref="_remote_paths_8cs" startline="26" endline="26">Outpost31.Core.Framework.Catalog.RemotePaths.Errors</references>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a6670f15ecca065ed6d97b0a0bc38b3ad" compoundref="_remote_paths_8cs" startline="30" endline="30">Outpost31.Core.Framework.Catalog.RemotePaths.Exports</references>
@@ -237,7 +237,7 @@
 </listitem></itemizedlist>
 </para>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="14" column="11" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="15" bodyend="92"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" line="14" column="11" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/RemotePaths.cs" bodystart="15" bodyend="92"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1aa1f48938fdfac9e033df7909a425aeef" prot="public" virt="non-virtual"><scope>Outpost31::Core::Framework::Catalog::RemotePaths</scope><name>Alerts</name></member>
       <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths_1a3fb63f4dcf1289f6868da3aa981e6d8e" prot="public" virt="non-virtual"><scope>Outpost31::Core::Framework::Catalog::RemotePaths</scope><name>BuildObject</name></member>

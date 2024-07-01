@@ -3,6 +3,13 @@
 <title>Outpost31.Core.Framework Namespace Reference</title>
 <indexterm><primary>Outpost31.Core.Framework</primary></indexterm>
 <simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_outpost31_1_1_core_1_1_framework_1_1_catalog">Catalog</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_maintenance">Maintenance</link></para>

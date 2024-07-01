@@ -77,17 +77,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/LogEvent.cs" line="27" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/LogEvent.cs" bodystart="27" bodyend="41"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/LogEvent.cs" line="27" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/LogEvent.cs" bodystart="27" bodyend="41"/>
         <references refid="class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1a1337fb24049079842cd6a4aab40f6c27" compoundref="_trace_log_8cs" startline="44" endline="57">Outpost31.Core.Logger.TraceLog.Create</references>
         <referencedby refid="class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_1a0ce18754b3f9ab5de6c412cce6cf9bc7" compoundref="_field_8cs" startline="34" endline="39">Outpost31.Module.Common.Action.Field.CompareValue</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_catalog_1af2e7323ba98c4b3a0df66fe93812ae4b" compoundref="_catalog_8cs" startline="23" endline="112">Outpost31.Core.Session.Catalog.CurrentSettings</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_avatar_1_1_return_object_1adf3843f480639836833b9a4177e33091" compoundref="_return_object_8cs" startline="73" endline="123">Outpost31.Core.Avatar.ReturnObject.Finalize</referencedby>
+        <referencedby refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ad224d08f1ab18c157715a564f91f521d" compoundref="_verify_8cs" startline="20" endline="36">Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsOpening</referencedby>
         <referencedby refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ae6a10b8c2ecca1d1b642eb61978a3695" compoundref="_verify_8cs" startline="40" endline="56">Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsSubmitting</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1af0460c8d33e9f2489486486180a1e321" compoundref="_parse_script_parameter_8cs" startline="35" endline="77">Outpost31.Core.ParseScriptParameter.Parse</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a7113f9d248da8ae751f1af88ae32447e" compoundref="_parse_script_parameter_8cs" startline="79" endline="103">Outpost31.Core.ParseScriptParameter.ParseAdminModule</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a1f575403bc0c3c93f050c44899246a94" compoundref="_parse_script_parameter_8cs" startline="105" endline="124">Outpost31.Core.ParseScriptParameter.ParseOpenIncidentModule</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a60e5fffef8f78127da45dbdf6b3149c0" compoundref="_parse_script_parameter_8cs" startline="126" endline="135">Outpost31.Core.ParseScriptParameter.ParseTestingModule</referencedby>
         <referencedby refid="class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field_1a828bb67552a8683ad009bf56a9baecb5" compoundref="_field_8cs" startline="76" endline="90">Outpost31.Module.Common.Action.Field.SaveValue</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_catalog_1a92d2976185a1b892644decb96fbf4ea9" compoundref="_catalog_8cs" startline="117" endline="168">Outpost31.Core.Session.Catalog.SessionDetails</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_tingen_app_1aecdc663e5b2013d5ba09ae1cb5fc2f5f" compoundref="_tingen_app_8cs" startline="22" endline="48">Outpost31.Core.TingenApp.Start</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_tingen_app_1a1372d5df3d765c1590b850923c12a3d0" compoundref="_tingen_app_8cs" startline="51" endline="62">Outpost31.Core.TingenApp.Stop</referencedby>
+        <referencedby refid="class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status_1a76fffc90df0f19c27c612d3d16a80455" compoundref="_status_8cs" startline="21" endline="30">Outpost31.Module.Admin.Service.Status.UpdateAll</referencedby>
+        <referencedby refid="class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status_1ac0199d0cf596f7053126854494310e66" compoundref="_status_8cs" startline="32" endline="58">Outpost31.Module.Admin.Service.Status.UpdateMode</referencedby>
+        <referencedby refid="class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status_1a5c436fde969810e30c5f9365325a823f" compoundref="_status_8cs" startline="60" endline="76">Outpost31.Module.Admin.Service.Status.UpdateSettings</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1adf35641fd17daef20a0391da56a0d578" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -154,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/LogEvent.cs" line="59" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/LogEvent.cs" bodystart="59" bodyend="66"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/LogEvent.cs" line="59" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/LogEvent.cs" bodystart="59" bodyend="66"/>
         <references refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a5ef334a75ceb7eca289ff18e56443fb7" compoundref="_primeval_log_8cs" startline="46" endline="55">Outpost31.Core.Logger.PrimevalLog.Create</references>
       </memberdef>
     </sectiondef>
@@ -163,7 +170,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/LogEvent.cs" line="10" column="19" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/LogEvent.cs" bodystart="11" bodyend="67"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/LogEvent.cs" line="10" column="19" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/LogEvent.cs" bodystart="11" bodyend="67"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1adf35641fd17daef20a0391da56a0d578" prot="public" virt="non-virtual"><scope>Outpost31::Core::Logger::LogEvent</scope><name>Primeval</name></member>
       <member refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1a7477552f340d46775d869b63e40e8e65" prot="public" virt="non-virtual"><scope>Outpost31::Core::Logger::LogEvent</scope><name>Trace</name></member>

@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="22" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="22" bodyend="22"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="22" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="22" bodyend="22"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="26" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="26" bodyend="26"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="26" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="26" bodyend="26"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="30" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="30" bodyend="30"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="30" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="30" bodyend="30"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="38" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="38" bodyend="38"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="38" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="38" bodyend="38"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="46" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="46" bodyend="46"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="46" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="46" bodyend="46"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="54" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="54" bodyend="54"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="54" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="54" bodyend="54"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -137,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="62" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="62" bodyend="62"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="62" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="62" bodyend="62"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -155,7 +155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="69" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="69" bodyend="69"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="69" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="69" bodyend="69"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -173,7 +173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="73" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="73" bodyend="73"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="73" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="73" bodyend="73"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -191,7 +191,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="77" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="77" bodyend="77"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="77" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="77" bodyend="77"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -209,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="81" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="81" bodyend="81"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="81" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="81" bodyend="81"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -227,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="88" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="88" bodyend="88"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="88" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="88" bodyend="88"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -245,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="92" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="92" bodyend="92"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="92" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="92" bodyend="92"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -263,7 +263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="99" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="99" bodyend="99"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="99" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="99" bodyend="99"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -281,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="103" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="103" bodyend="103"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="103" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="103" bodyend="103"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -299,7 +299,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="107" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="107" bodyend="107"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="107" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="107" bodyend="107"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -317,7 +317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="115" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="115" bodyend="115"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="115" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="115" bodyend="115"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -335,7 +335,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="119" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="119" bodyend="119"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="119" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="119" bodyend="119"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -353,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="123" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="123" bodyend="123"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="123" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="123" bodyend="123"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -371,7 +371,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="127" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="127" bodyend="127"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="127" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="127" bodyend="127"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a3e031d9a9cc79054df7d356cb9214ce4" compoundref="_system_code_paths_8cs" startline="176" endline="204">Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths</referencedby>
       </memberdef>
@@ -389,7 +389,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="131" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="131" bodyend="131"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="131" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="131" bodyend="131"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ab187331940c728c5d8624fa359571ba5" compoundref="_system_code_paths_8cs" startline="137" endline="171">Outpost31.Core.Framework.Catalog.SystemCodePaths.BuildObject</referencedby>
       </memberdef>
     </sectiondef>
@@ -435,7 +435,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="137" column="39" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="137" bodyend="171"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="137" column="39" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="137" bodyend="171"/>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ac60f88ee2d4a0c7570f92a8c83c4a605" compoundref="_system_code_paths_8cs" startline="119" endline="119">Outpost31.Core.Framework.Catalog.SystemCodePaths.Admin</references>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ad0f6d93a22d16b2ae242d3675fb62891" compoundref="_system_code_paths_8cs" startline="73" endline="73">Outpost31.Core.Framework.Catalog.SystemCodePaths.Alerts</references>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a26fda54e5286ee25262034430b0fc9fe" compoundref="_system_code_paths_8cs" startline="123" endline="123">Outpost31.Core.Framework.Catalog.SystemCodePaths.Archive</references>
@@ -488,7 +488,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="176" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="176" bodyend="204"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="176" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="176" bodyend="204"/>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ac60f88ee2d4a0c7570f92a8c83c4a605" compoundref="_system_code_paths_8cs" startline="119" endline="119">Outpost31.Core.Framework.Catalog.SystemCodePaths.Admin</references>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ad0f6d93a22d16b2ae242d3675fb62891" compoundref="_system_code_paths_8cs" startline="73" endline="73">Outpost31.Core.Framework.Catalog.SystemCodePaths.Alerts</references>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1a26fda54e5286ee25262034430b0fc9fe" compoundref="_system_code_paths_8cs" startline="123" endline="123">Outpost31.Core.Framework.Catalog.SystemCodePaths.Archive</references>
@@ -521,7 +521,7 @@
 </listitem></itemizedlist>
 </para>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="15" column="11" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="16" bodyend="205"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" line="15" column="11" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/SystemCodePaths.cs" bodystart="16" bodyend="205"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ac60f88ee2d4a0c7570f92a8c83c4a605" prot="public" virt="non-virtual"><scope>Outpost31::Core::Framework::Catalog::SystemCodePaths</scope><name>Admin</name></member>
       <member refid="class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths_1ad0f6d93a22d16b2ae242d3675fb62891" prot="public" virt="non-virtual"><scope>Outpost31::Core::Framework::Catalog::SystemCodePaths</scope><name>Alerts</name></member>

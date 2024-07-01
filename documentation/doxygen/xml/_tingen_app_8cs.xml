@@ -61,7 +61,7 @@
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Else,<sp/>we<sp/>assume<sp/>the<sp/>ReturnOptionObject<sp/>was<sp/>formmated<sp/>correctly<sp/>by<sp/>whatever<sp/>work<sp/>was<sp/>done.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session" kindref="compound">TingenSession</ref>.WriteSessionDetails(tnSession);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session" kindref="compound">TingenSession</ref>.<ref refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a89840eb03b4f2dfdf210b3c8272b2dbb" kindref="member">WriteSessionDetails</ref>(tnSession);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="64"><highlight class="normal">}</highlight></codeline>
@@ -79,6 +79,6 @@
 <codeline lineno="76"><highlight class="comment">_Documentation<sp/>updated<sp/>------</highlight></codeline>
 <codeline lineno="77"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/TingenApp.cs"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/TingenApp.cs"/>
   </compounddef>
 </doxygen>

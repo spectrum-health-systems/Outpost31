@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
   <compounddef id="dir_1413a7791f56d0cdaeb419e7fb7ef323" kind="dir">
-    <compoundname>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident</compoundname>
+    <compoundname>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/OpenIncident</compoundname>
     <innerfile refid="_module_open_incident_8cs">ModuleOpenIncident.cs</innerfile>
     <innerfile refid="_verify_8cs">Verify.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/OpenIncident/"/>
   </compounddef>
 </doxygen>

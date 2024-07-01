@@ -27,13 +27,13 @@
 <simplesect>
     <title>Properties    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1a8f08bce7036869eaabd810972270937f"/>string <emphasis role="strong">TraceLogPath</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para>string <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1a8f08bce7036869eaabd810972270937f">TraceLogPath</link><computeroutput> [get, set]</computeroutput>
 </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1aa0c645a02e57f6d2e0c724fc64b2e40f"/>int <emphasis role="strong">TraceLogLevel</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para>int <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1aa0c645a02e57f6d2e0c724fc64b2e40f">TraceLogLevel</link><computeroutput> [get, set]</computeroutput>
 </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1ab1789e53299ab797d5b3cfd90321e243"/>int <emphasis role="strong">TraceLogDelay</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para>int <link linkend="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1ab1789e53299ab797d5b3cfd90321e243">TraceLogDelay</link><computeroutput> [get, set]</computeroutput>
 </para>
 </listitem>
         </itemizedlist>
@@ -195,5 +195,23 @@ Parameters</title>
                 </formalpara>
                 </para>
 </section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1ab1789e53299ab797d5b3cfd90321e243"/><section>
+    <title>TraceLogDelay</title>
+<indexterm><primary>TraceLogDelay</primary><secondary>Outpost31.Core.Logger.TraceLog</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Logger.TraceLog</primary><secondary>TraceLogDelay</secondary></indexterm>
+<para><computeroutput>int Outpost31.Core.Logger.TraceLog.TraceLogDelay<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1aa0c645a02e57f6d2e0c724fc64b2e40f"/><section>
+    <title>TraceLogLevel</title>
+<indexterm><primary>TraceLogLevel</primary><secondary>Outpost31.Core.Logger.TraceLog</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Logger.TraceLog</primary><secondary>TraceLogLevel</secondary></indexterm>
+<para><computeroutput>int Outpost31.Core.Logger.TraceLog.TraceLogLevel<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1a8f08bce7036869eaabd810972270937f"/><section>
+    <title>TraceLogPath</title>
+<indexterm><primary>TraceLogPath</primary><secondary>Outpost31.Core.Logger.TraceLog</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Logger.TraceLog</primary><secondary>TraceLogPath</secondary></indexterm>
+<para><computeroutput>string Outpost31.Core.Logger.TraceLog.TraceLogPath<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para></section>
 </section>
 </section>

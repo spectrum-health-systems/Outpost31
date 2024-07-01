@@ -1,11 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefilmnoprstvw",
+  0: ".abcdefgilmnoprstuvw",
   1: "acdflmnoprstv",
   2: "o",
-  3: "bcdefiloprstv",
-  4: "acdefilmnprstw",
-  5: "r"
+  3: ".acdflmnoprstvw",
+  4: "bcdefgiloprstuvw",
+  5: "abcdefilmnoprstw",
+  6: "r"
 };
 
 var indexSectionNames =
@@ -13,9 +14,10 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "namespaces",
-  3: "functions",
-  4: "properties",
-  5: "pages"
+  3: "files",
+  4: "functions",
+  5: "properties",
+  6: "pages"
 };
 
 var indexSectionLabels =
@@ -23,8 +25,9 @@ var indexSectionLabels =
   0: "All",
   1: "Classes",
   2: "Namespaces",
-  3: "Functions",
-  4: "Properties",
-  5: "Pages"
+  3: "Files",
+  4: "Functions",
+  5: "Properties",
+  6: "Pages"
 };
 

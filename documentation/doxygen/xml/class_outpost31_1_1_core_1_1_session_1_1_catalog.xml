@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/Catalog.cs" line="18" column="30" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/Catalog.cs" bodystart="18" bodyend="18"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/Catalog.cs" line="18" column="30" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/Catalog.cs" bodystart="18" bodyend="18"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_catalog_1af2e7323ba98c4b3a0df66fe93812ae4b" compoundref="_catalog_8cs" startline="23" endline="112">Outpost31.Core.Session.Catalog.CurrentSettings</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_catalog_1a92d2976185a1b892644decb96fbf4ea9" compoundref="_catalog_8cs" startline="117" endline="168">Outpost31.Core.Session.Catalog.SessionDetails</referencedby>
       </memberdef>
@@ -55,10 +55,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/Catalog.cs" line="23" column="30" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/Catalog.cs" bodystart="23" bodyend="112"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/Catalog.cs" line="23" column="30" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/Catalog.cs" bodystart="23" bodyend="112"/>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_catalog_1a18ebe9ab761d04b9f583aa160fc65c51" compoundref="_catalog_8cs" startline="18" endline="18">Outpost31.Core.Session.Catalog.AssemblyName</references>
         <references refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1a7477552f340d46775d869b63e40e8e65" compoundref="_log_event_8cs" startline="27" endline="41">Outpost31.Core.Logger.LogEvent.Trace</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a57c77f2520b82e9ff8f21c93034b31ad" compoundref="_tingen_session_8cs" startline="58" endline="58">Outpost31.Core.Session.TingenSession.TraceInfo</references>
+        <referencedby refid="class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status_1a5c436fde969810e30c5f9365325a823f" compoundref="_status_8cs" startline="60" endline="76">Outpost31.Module.Admin.Service.Status.UpdateSettings</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_outpost31_1_1_core_1_1_session_1_1_catalog_1a92d2976185a1b892644decb96fbf4ea9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -88,11 +89,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/Catalog.cs" line="117" column="30" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/Catalog.cs" bodystart="117" bodyend="168"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/Catalog.cs" line="117" column="30" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/Catalog.cs" bodystart="117" bodyend="168"/>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_catalog_1a18ebe9ab761d04b9f583aa160fc65c51" compoundref="_catalog_8cs" startline="18" endline="18">Outpost31.Core.Session.Catalog.AssemblyName</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a69d6a93d68ce8a9b0e9d95af04f541d2" compoundref="_tingen_session_8cs" startline="30" endline="30">Outpost31.Core.Session.TingenSession.Time</references>
         <references refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1a7477552f340d46775d869b63e40e8e65" compoundref="_log_event_8cs" startline="27" endline="41">Outpost31.Core.Logger.LogEvent.Trace</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a57c77f2520b82e9ff8f21c93034b31ad" compoundref="_tingen_session_8cs" startline="58" endline="58">Outpost31.Core.Session.TingenSession.TraceInfo</references>
+        <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a89840eb03b4f2dfdf210b3c8272b2dbb" compoundref="_tingen_session_8cs" startline="144" endline="148">Outpost31.Core.Session.TingenSession.WriteSessionDetails</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -100,7 +102,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/Catalog.cs" line="10" column="19" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/Catalog.cs" bodystart="11" bodyend="169"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/Catalog.cs" line="10" column="19" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/Catalog.cs" bodystart="11" bodyend="169"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_core_1_1_session_1_1_catalog_1a18ebe9ab761d04b9f583aa160fc65c51" prot="public" virt="non-virtual"><scope>Outpost31::Core::Session::Catalog</scope><name>AssemblyName</name></member>
       <member refid="class_outpost31_1_1_core_1_1_session_1_1_catalog_1af2e7323ba98c4b3a0df66fe93812ae4b" prot="public" virt="non-virtual"><scope>Outpost31::Core::Session::Catalog</scope><name>CurrentSettings</name></member>

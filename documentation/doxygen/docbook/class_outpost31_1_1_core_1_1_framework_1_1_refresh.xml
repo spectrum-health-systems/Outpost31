@@ -14,7 +14,7 @@
 
 <para><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_refresh">Refresh</link> the Tingen directory structure when Tingen is disabled. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_refresh_1a44ea2d57095d04e12bdd1527248b9eec"/>static void <emphasis role="strong">RefreshOnUnknown</emphasis> (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)</para>
+            <listitem><para>static void <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_refresh_1a44ea2d57095d04e12bdd1527248b9eec">RefreshOnUnknown</link> (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)</para>
 
 <para><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_refresh">Refresh</link> the Tingen directory structure when Tingen is in an unknown state. </para>
 </listitem>
@@ -68,6 +68,24 @@ Here is the call graph for this function:<para>
         <mediaobject>
             <imageobject>
                 <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_framework_1_1_refresh_a1c066ff8cf56459ff4c4b6e8324b8802_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_refresh_1a44ea2d57095d04e12bdd1527248b9eec"/><section>
+    <title>RefreshOnUnknown()</title>
+<indexterm><primary>RefreshOnUnknown</primary><secondary>Outpost31.Core.Framework.Refresh</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Framework.Refresh</primary><secondary>RefreshOnUnknown</secondary></indexterm>
+<para><computeroutput>static void Outpost31.Core.Framework.Refresh.RefreshOnUnknown (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_refresh">Refresh</link> the Tingen directory structure when Tingen is in an unknown state. </para>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_core_1_1_framework_1_1_refresh_a44ea2d57095d04e12bdd1527248b9eec_cgraph.png"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>

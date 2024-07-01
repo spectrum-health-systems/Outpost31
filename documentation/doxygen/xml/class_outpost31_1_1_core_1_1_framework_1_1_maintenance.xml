@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" line="19" column="30" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="19" bodyend="19"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" line="19" column="30" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="19" bodyend="19"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" line="22" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="22" bodyend="25"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" line="22" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="22" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1ab1f72498a69bbdc3fefff990be01bacb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" line="29" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="29" bodyend="35"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" line="29" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="29" bodyend="35"/>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab1ca46a23541d202156ab0d3f35a3468" compoundref="_tingen_session_8cs" startline="44" endline="44">Outpost31.Core.Session.TingenSession.TnPath</references>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1afdd06b6d7b7c3fbb8624bddfd5f7162e" compoundref="_maintenance_8cs" startline="106" endline="137">Outpost31.Core.Framework.Maintenance.VerifyDirectories</references>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_refresh_1a1c066ff8cf56459ff4c4b6e8324b8802" compoundref="_core_2_framework_2_refresh_8cs" startline="18" endline="24">Outpost31.Core.Framework.Refresh.RefreshOnDisable</referencedby>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" line="39" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="39" bodyend="68"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" line="39" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="39" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1a68bd2bdf65446f3fce680e23b1c8cf9a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" line="73" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="73" bodyend="101"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" line="73" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="73" bodyend="101"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a96196cd518d53aeb229268deefbc956e" compoundref="_tingen_session_8cs" startline="138" endline="142">Outpost31.Core.Session.TingenSession.Initialize</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1afdd06b6d7b7c3fbb8624bddfd5f7162e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -159,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" line="106" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="106" bodyend="137"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" line="106" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="106" bodyend="137"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1ab1f72498a69bbdc3fefff990be01bacb" compoundref="_maintenance_8cs" startline="29" endline="35">Outpost31.Core.Framework.Maintenance.VerifyFramework</referencedby>
       </memberdef>
     </sectiondef>
@@ -177,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" line="142" column="29" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="142" bodyend="145"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" line="142" column="29" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="142" bodyend="145"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -185,7 +185,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" line="11" column="19" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="12" bodyend="146"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" line="11" column="19" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Maintenance.cs" bodystart="12" bodyend="146"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1ae9c6180f97de9ddf49cf577805d6d836" prot="public" virt="non-virtual"><scope>Outpost31::Core::Framework::Maintenance</scope><name>AssemblyName</name></member>
       <member refid="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1aab8fb892dada7a127407df5bc14b0b49" prot="public" virt="non-virtual"><scope>Outpost31::Core::Framework::Maintenance</scope><name>CleanSessionData</name></member>

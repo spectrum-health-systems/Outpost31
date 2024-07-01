@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Utilities/DuJson.cs" line="27" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Utilities/DuJson.cs" bodystart="27" bodyend="38"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Utilities/DuJson.cs" line="27" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Utilities/DuJson.cs" bodystart="27" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="class_outpost31_1_1_core_1_1_utilities_1_1_du_json_1a6c43259464adb11828dea5f31d38d021" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Utilities/DuJson.cs" line="44" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Utilities/DuJson.cs" bodystart="44" bodyend="49"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Utilities/DuJson.cs" line="44" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Utilities/DuJson.cs" bodystart="44" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="class_outpost31_1_1_core_1_1_utilities_1_1_du_json_1aea276b6f6c3c7a15a100e64cb446c485" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>JsonObject</type>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Utilities/DuJson.cs" line="65" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Utilities/DuJson.cs" bodystart="65" bodyend="72"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Utilities/DuJson.cs" line="65" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Utilities/DuJson.cs" bodystart="65" bodyend="72"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -158,7 +158,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Utilities/DuJson.cs" line="9" column="19" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Utilities/DuJson.cs" bodystart="10" bodyend="73"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Utilities/DuJson.cs" line="9" column="19" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Utilities/DuJson.cs" bodystart="10" bodyend="73"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_json_1a6c43259464adb11828dea5f31d38d021" prot="public" virt="non-virtual"><scope>Outpost31::Core::Utilities::DuJson</scope><name>ConvertToString&lt; JsonObject &gt;</name></member>
       <member refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_json_1a7adc2abeb7b9ffcdfbf4ab8e70905e65" prot="public" virt="non-virtual"><scope>Outpost31::Core::Utilities::DuJson</scope><name>ExportToLocalFile&lt; JsonObject &gt;</name></member>

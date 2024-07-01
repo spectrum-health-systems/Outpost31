@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e" xml:lang="en-US">
+<title>README</title>
+<indexterm><primary>README</primary></indexterm>
+
+<para></para>
+
+<para> </para>
+
+<para></para>
+
+<para><emphasis role="bold">This is a work in progress, and will be complete by the release of Tingen 24.6</emphasis></para>
+<section xml:id="_md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e_1autotoc_md0">
+<title>About Outpost31</title>
+<para>The <link linkend="_namespace_outpost31">Outpost31</link> project contains the core components and modules for the <link xlink:href="https://github.com/spectrum-health-systems/Tingen">Tingen</link> web service.</para>
+</section>
+<section xml:id="_md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e_1autotoc_md1">
+<title>Repository branches</title>
+<para><itemizedlist>
+<listitem>
+<para><link xlink:href="https://github.com/spectrum-health-systems/Outpost31_development/tree/main">main</link> The stable branch of <link linkend="_namespace_outpost31">Outpost31</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://github.com/spectrum-health-systems/Outpost31_development/tree/development">development</link> The current development branch of <link linkend="_namespace_outpost31">Outpost31</link> </para>
+</listitem></itemizedlist>
+</para>
+</section>
+</section>

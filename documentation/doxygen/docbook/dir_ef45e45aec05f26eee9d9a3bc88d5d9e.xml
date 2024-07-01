@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_ef45e45aec05f26eee9d9a3bc88d5d9e" xml:lang="en-US">
+<title>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Utilities Directory Reference</title>
+<indexterm><primary>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Utilities Directory Reference</primary></indexterm>
+Directory dependency graph for Utilities:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_ef45e45aec05f26eee9d9a3bc88d5d9e_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__du_file_8cs">DuFile.cs</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__du_json_8cs">DuJson.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

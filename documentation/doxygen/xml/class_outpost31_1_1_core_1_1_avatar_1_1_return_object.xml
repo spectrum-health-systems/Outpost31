@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/ReturnObject.cs" line="23" column="30" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/ReturnObject.cs" bodystart="23" bodyend="23"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/ReturnObject.cs" line="23" column="30" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/ReturnObject.cs" bodystart="23" bodyend="23"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_avatar_1_1_return_object_1adf3843f480639836833b9a4177e33091" compoundref="_return_object_8cs" startline="73" endline="123">Outpost31.Core.Avatar.ReturnObject.Finalize</referencedby>
       </memberdef>
     </sectiondef>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/ReturnObject.cs" line="73" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/ReturnObject.cs" bodystart="73" bodyend="123"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/ReturnObject.cs" line="73" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/ReturnObject.cs" bodystart="73" bodyend="123"/>
         <references refid="class_outpost31_1_1_core_1_1_avatar_1_1_return_object_1a19397abb6426cb86995316faf971692a" compoundref="_return_object_8cs" startline="23" endline="23">Outpost31.Core.Avatar.ReturnObject.AssemblyName</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab5b39bfbdb7dd1abde1c3a6110c4bd6c" compoundref="_tingen_session_8cs" startline="52" endline="52">Outpost31.Core.Session.TingenSession.AvData</references>
         <references refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1a7477552f340d46775d869b63e40e8e65" compoundref="_log_event_8cs" startline="27" endline="41">Outpost31.Core.Logger.LogEvent.Trace</references>
@@ -114,7 +114,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/ReturnObject.cs" line="15" column="19" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/ReturnObject.cs" bodystart="16" bodyend="124"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/ReturnObject.cs" line="15" column="19" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/ReturnObject.cs" bodystart="16" bodyend="124"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_core_1_1_avatar_1_1_return_object_1a19397abb6426cb86995316faf971692a" prot="public" virt="non-virtual"><scope>Outpost31::Core::Avatar::ReturnObject</scope><name>AssemblyName</name></member>
       <member refid="class_outpost31_1_1_core_1_1_avatar_1_1_return_object_1adf3843f480639836833b9a4177e33091" prot="public" virt="non-virtual"><scope>Outpost31::Core::Avatar::ReturnObject</scope><name>Finalize</name></member>

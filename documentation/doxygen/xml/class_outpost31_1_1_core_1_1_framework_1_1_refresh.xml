@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Refresh.cs" line="18" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Refresh.cs" bodystart="18" bodyend="24"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Refresh.cs" line="18" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Refresh.cs" bodystart="18" bodyend="24"/>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1ab1f72498a69bbdc3fefff990be01bacb" compoundref="_maintenance_8cs" startline="29" endline="35">Outpost31.Core.Framework.Maintenance.VerifyFramework</references>
       </memberdef>
       <memberdef kind="function" id="class_outpost31_1_1_core_1_1_framework_1_1_refresh_1a44ea2d57095d04e12bdd1527248b9eec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Refresh.cs" line="27" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Refresh.cs" bodystart="27" bodyend="33"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Refresh.cs" line="27" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Refresh.cs" bodystart="27" bodyend="33"/>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1ab1f72498a69bbdc3fefff990be01bacb" compoundref="_maintenance_8cs" startline="29" endline="35">Outpost31.Core.Framework.Maintenance.VerifyFramework</references>
       </memberdef>
     </sectiondef>
@@ -63,7 +63,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Refresh.cs" line="9" column="19" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Refresh.cs" bodystart="10" bodyend="34"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Refresh.cs" line="9" column="19" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Refresh.cs" bodystart="10" bodyend="34"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_core_1_1_framework_1_1_refresh_1a1c066ff8cf56459ff4c4b6e8324b8802" prot="public" virt="non-virtual"><scope>Outpost31::Core::Framework::Refresh</scope><name>RefreshOnDisable</name></member>
       <member refid="class_outpost31_1_1_core_1_1_framework_1_1_refresh_1a44ea2d57095d04e12bdd1527248b9eec" prot="public" virt="non-virtual"><scope>Outpost31::Core::Framework::Refresh</scope><name>RefreshOnUnknown</name></member>

@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/AvatarData.cs" line="43" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/AvatarData.cs" bodystart="43" bodyend="43"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/AvatarData.cs" line="43" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/AvatarData.cs" bodystart="43" bodyend="43"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a1d0b2deeb73520778f4a9634f390d5a3" compoundref="_avatar_data_8cs" startline="120" endline="132">Outpost31.Core.Avatar.AvatarData.BuildObject</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1afdc8f4f7b585a5230cf55dbfd76771bb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/AvatarData.cs" line="76" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/AvatarData.cs" bodystart="76" bodyend="76"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/AvatarData.cs" line="76" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/AvatarData.cs" bodystart="76" bodyend="76"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a1d0b2deeb73520778f4a9634f390d5a3" compoundref="_avatar_data_8cs" startline="120" endline="132">Outpost31.Core.Avatar.AvatarData.BuildObject</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a40c831fb6ee000c353c83f3305617b07" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/AvatarData.cs" line="86" column="33" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/AvatarData.cs" bodystart="86" bodyend="86"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/AvatarData.cs" line="86" column="33" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/AvatarData.cs" bodystart="86" bodyend="86"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a1d0b2deeb73520778f4a9634f390d5a3" compoundref="_avatar_data_8cs" startline="120" endline="132">Outpost31.Core.Avatar.AvatarData.BuildObject</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1aecefbbed0fab590d1010a8340fc9538d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/AvatarData.cs" line="97" column="33" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/AvatarData.cs" bodystart="97" bodyend="97"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/AvatarData.cs" line="97" column="33" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/AvatarData.cs" bodystart="97" bodyend="97"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a1d0b2deeb73520778f4a9634f390d5a3" compoundref="_avatar_data_8cs" startline="120" endline="132">Outpost31.Core.Avatar.AvatarData.BuildObject</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a481bcfcef58002af15fe22b6a7c04a3b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/AvatarData.cs" line="106" column="33" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/AvatarData.cs" bodystart="106" bodyend="106"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/AvatarData.cs" line="106" column="33" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/AvatarData.cs" bodystart="106" bodyend="106"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a1d0b2deeb73520778f4a9634f390d5a3" compoundref="_avatar_data_8cs" startline="120" endline="132">Outpost31.Core.Avatar.AvatarData.BuildObject</referencedby>
       </memberdef>
     </sectiondef>
@@ -205,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/AvatarData.cs" line="120" column="34" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/AvatarData.cs" bodystart="120" bodyend="132"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/AvatarData.cs" line="120" column="34" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/AvatarData.cs" bodystart="120" bodyend="132"/>
         <references refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a389c3ef27d7bf8de64c38ada9461a37d" compoundref="_avatar_data_8cs" startline="43" endline="43">Outpost31.Core.Avatar.AvatarData.AvatarSystemCode</references>
         <references refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a481bcfcef58002af15fe22b6a7c04a3b" compoundref="_avatar_data_8cs" startline="106" endline="106">Outpost31.Core.Avatar.AvatarData.ReturnOptionObject</references>
         <references refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a40c831fb6ee000c353c83f3305617b07" compoundref="_avatar_data_8cs" startline="86" endline="86">Outpost31.Core.Avatar.AvatarData.SentOptionObject</references>
@@ -243,7 +243,7 @@
 </listitem></itemizedlist>
 </para>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/AvatarData.cs" line="24" column="11" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Avatar/AvatarData.cs" bodystart="25" bodyend="133"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/AvatarData.cs" line="24" column="11" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/AvatarData.cs" bodystart="25" bodyend="133"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a389c3ef27d7bf8de64c38ada9461a37d" prot="public" virt="non-virtual"><scope>Outpost31::Core::Avatar::AvatarData</scope><name>AvatarSystemCode</name></member>
       <member refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a1d0b2deeb73520778f4a9634f390d5a3" prot="public" virt="non-virtual"><scope>Outpost31::Core::Avatar::AvatarData</scope><name>BuildObject</name></member>

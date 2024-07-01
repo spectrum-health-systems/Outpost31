@@ -10,7 +10,7 @@
 <simplesect>
     <title>Static Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ad224d08f1ab18c157715a564f91f521d"/>static void <emphasis role="strong">OriginalAuthorIsOpening</emphasis> (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)</para>
+            <listitem><para>static void <link linkend="_class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ad224d08f1ab18c157715a564f91f521d">OriginalAuthorIsOpening</link> (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)</para>
 </listitem>
             <listitem><para>static void <link linkend="_class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ae6a10b8c2ecca1d1b642eb61978a3695">OriginalAuthorIsSubmitting</link> (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)</para>
 
@@ -35,6 +35,20 @@
 </section>
 <section>
 <title>Member Function Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ad224d08f1ab18c157715a564f91f521d"/><section>
+    <title>OriginalAuthorIsOpening()</title>
+<indexterm><primary>OriginalAuthorIsOpening</primary><secondary>Outpost31.Module.OpenIncident.Verify</secondary></indexterm>
+<indexterm><primary>Outpost31.Module.OpenIncident.Verify</primary><secondary>OriginalAuthorIsOpening</secondary></indexterm>
+<para><computeroutput>static void Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsOpening (<link linkend="_class_outpost31_1_1_core_1_1_session_1_1_tingen_session">TingenSession</link> tnSession)<computeroutput>[static]</computeroutput></computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_ad224d08f1ab18c157715a564f91f521d_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
 <anchor xml:id="_class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ae6a10b8c2ecca1d1b642eb61978a3695"/><section>
     <title>OriginalAuthorIsSubmitting()</title>
 <indexterm><primary>OriginalAuthorIsSubmitting</primary><secondary>Outpost31.Module.OpenIncident.Verify</secondary></indexterm>

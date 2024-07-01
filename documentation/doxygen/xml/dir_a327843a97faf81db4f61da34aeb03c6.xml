@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
   <compounddef id="dir_a327843a97faf81db4f61da34aeb03c6" kind="dir">
-    <compoundname>C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog</compoundname>
+    <compoundname>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog</compoundname>
     <innerfile refid="_public_paths_8cs">PublicPaths.cs</innerfile>
     <innerfile refid="_remote_paths_8cs">RemotePaths.cs</innerfile>
     <innerfile refid="_system_code_paths_8cs">SystemCodePaths.cs</innerfile>
@@ -10,6 +10,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Framework/Catalog/"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Framework/Catalog/"/>
   </compounddef>
 </doxygen>

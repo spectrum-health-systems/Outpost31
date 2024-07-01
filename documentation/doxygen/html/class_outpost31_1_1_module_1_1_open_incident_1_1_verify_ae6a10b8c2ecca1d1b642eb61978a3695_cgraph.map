@@ -1,7 +1,11 @@
 <map id="Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsSubmitting" name="Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsSubmitting">
-<area shape="rect" id="Node000001" title="Verify the Avatar user is the same as the original author." alt="" coords="5,5,220,46"/>
-<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_logger_1_1_log_event.html#a7477552f340d46775d869b63e40e8e65" title="Log a trace event." alt="" coords="268,5,448,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,23,252,23,252,28,220,28"/>
-<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_logger_1_1_trace_log.html#a1337fb24049079842cd6a4aab40f6c27" title="Soon." alt="" coords="496,5,688,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="448,23,480,23,480,28,448,28"/>
+<area shape="rect" id="Node000001" title="Verify the Avatar user is the same as the original author." alt="" coords="5,39,218,81"/>
+<area shape="rect" id="Node000002" href="$class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident.html#a2ddbdf4ed0a3dda952ec891a3a1056c1" title=" " alt="" coords="266,5,531,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,45,250,41,250,47,219,50"/>
+<area shape="rect" id="Node000004" href="$class_outpost31_1_1_core_1_1_logger_1_1_log_event.html#a7477552f340d46775d869b63e40e8e65" title="Log a trace event." alt="" coords="308,72,489,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="219,70,293,78,292,84,218,75"/>
+<area shape="rect" id="Node000003" href="$class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident.html#a43aff28f0cab9d5178a0dd8b6fb35535" title=" " alt="" coords="579,5,798,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="531,24,564,24,564,29,531,29"/>
+<area shape="rect" id="Node000005" href="$class_outpost31_1_1_core_1_1_logger_1_1_trace_log.html#a1337fb24049079842cd6a4aab40f6c27" title="Soon." alt="" coords="593,72,784,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="489,91,577,91,577,96,489,96"/>
 </map>

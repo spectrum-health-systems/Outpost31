@@ -25,9 +25,9 @@
 var NAVTREE =
 [
   [ "Outpost31", "index.html", [
-    [ "README", "md__c_1_2_i_t_2_git_hub_2_s_h_s_2_public_01repositories_2_outpost31_2src_2_r_e_a_d_m_e.html", [
-      [ "About Outpost31", "md__c_1_2_i_t_2_git_hub_2_s_h_s_2_public_01repositories_2_outpost31_2src_2_r_e_a_d_m_e.html#autotoc_md0", null ],
-      [ "Repository branches", "md__c_1_2_i_t_2_git_hub_2_s_h_s_2_public_01repositories_2_outpost31_2src_2_r_e_a_d_m_e.html#autotoc_md1", null ]
+    [ "README", "md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e.html", [
+      [ "About Outpost31", "md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e.html#autotoc_md0", null ],
+      [ "Repository branches", "md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e.html#autotoc_md1", null ]
     ] ],
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ]
@@ -40,14 +40,17 @@ var NAVTREE =
         [ "Functions", "functions_func.html", null ],
         [ "Properties", "functions_prop.html", null ]
       ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"class_outpost31_1_1_core_1_1_utilities_1_1_du_json.html#aea276b6f6c3c7a15a100e64cb446c485"
+"_8_n_e_t_framework_00_version_0av4_88_8_assembly_attributes_8cs.html",
+"class_outpost31_1_1_core_1_1_parse_script_parameter.html#a7113f9d248da8ae751f1af88ae32447e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

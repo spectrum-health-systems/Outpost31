@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__return_object_8cs" xml:lang="en-US">
+<title>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/ReturnObject.cs File Reference</title>
+<indexterm><primary>C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Avatar/ReturnObject.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_outpost31_1_1_core_1_1_avatar_1_1_return_object">Outpost31.Core.Avatar.ReturnObject</link></para>
+
+<para>Logic specific to the returnOptionObject</para>
+
+<para>. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_outpost31">Outpost31</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_outpost31_1_1_core">Outpost31.Core</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_outpost31_1_1_core_1_1_avatar">Outpost31.Core.Avatar</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -23,14 +23,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Utilities/DuFile.cs" line="9" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Utilities/DuFile.cs" bodystart="9" bodyend="12"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Utilities/DuFile.cs" line="9" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Utilities/DuFile.cs" bodystart="9" bodyend="12"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Utilities/DuFile.cs" line="7" column="19" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Utilities/DuFile.cs" bodystart="8" bodyend="13"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Utilities/DuFile.cs" line="7" column="19" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Utilities/DuFile.cs" bodystart="8" bodyend="13"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_core_1_1_utilities_1_1_du_file_1a43fd8f2b4d7f3ac25e4584ce24b1ee5a" prot="public" virt="non-virtual"><scope>Outpost31::Core::Utilities::DuFile</scope><name>WriteLocal</name></member>
     </listofallmembers>

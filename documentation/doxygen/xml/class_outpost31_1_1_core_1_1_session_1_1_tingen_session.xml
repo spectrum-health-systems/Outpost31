@@ -15,7 +15,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="23" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="23" bodyend="23"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="23" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="23" bodyend="23"/>
+        <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1abd8de2211ce4837992fbb7163f882b61" compoundref="_tingen_session_8cs" startline="93" endline="134">Outpost31.Core.Session.TingenSession.Build</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1aacc82612996405591b6c916f3b2c8e4d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -29,7 +30,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="25" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="25" bodyend="25"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="25" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="25" bodyend="25"/>
+        <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1abd8de2211ce4837992fbb7163f882b61" compoundref="_tingen_session_8cs" startline="93" endline="134">Outpost31.Core.Session.TingenSession.Build</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a767af7d923f9ffd13f833834a6d3119b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -44,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="28" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="28" bodyend="28"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="28" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="28" bodyend="28"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1abd8de2211ce4837992fbb7163f882b61" compoundref="_tingen_session_8cs" startline="93" endline="134">Outpost31.Core.Session.TingenSession.Build</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a69d6a93d68ce8a9b0e9d95af04f541d2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
@@ -60,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="30" column="23" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="30" bodyend="30"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="30" column="23" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="30" bodyend="30"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1abd8de2211ce4837992fbb7163f882b61" compoundref="_tingen_session_8cs" startline="93" endline="134">Outpost31.Core.Session.TingenSession.Build</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_catalog_1a92d2976185a1b892644decb96fbf4ea9" compoundref="_catalog_8cs" startline="117" endline="168">Outpost31.Core.Session.Catalog.SessionDetails</referencedby>
       </memberdef>
@@ -77,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="33" column="21" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="33" bodyend="33"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="33" column="21" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="33" bodyend="33"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1abd8de2211ce4837992fbb7163f882b61" compoundref="_tingen_session_8cs" startline="93" endline="134">Outpost31.Core.Session.TingenSession.Build</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5fbba191edb00e771960aaddb5435a57" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
@@ -93,10 +95,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="36" column="31" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="36" bodyend="36"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="36" column="31" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="36" bodyend="36"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1abd8de2211ce4837992fbb7163f882b61" compoundref="_tingen_session_8cs" startline="93" endline="134">Outpost31.Core.Session.TingenSession.Build</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1af0460c8d33e9f2489486486180a1e321" compoundref="_parse_script_parameter_8cs" startline="35" endline="77">Outpost31.Core.ParseScriptParameter.Parse</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a7113f9d248da8ae751f1af88ae32447e" compoundref="_parse_script_parameter_8cs" startline="79" endline="103">Outpost31.Core.ParseScriptParameter.ParseAdminModule</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_tingen_app_1aecdc663e5b2013d5ba09ae1cb5fc2f5f" compoundref="_tingen_app_8cs" startline="22" endline="48">Outpost31.Core.TingenApp.Start</referencedby>
+        <referencedby refid="class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status_1a76fffc90df0f19c27c612d3d16a80455" compoundref="_status_8cs" startline="21" endline="30">Outpost31.Module.Admin.Service.Status.UpdateAll</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab1ca46a23541d202156ab0d3f35a3468" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type><ref refid="class_outpost31_1_1_core_1_1_framework_1_1_paths" kindref="compound">Paths</ref></type>
@@ -112,9 +116,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="44" column="22" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="44" bodyend="44"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="44" column="22" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="44" bodyend="44"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1abd8de2211ce4837992fbb7163f882b61" compoundref="_tingen_session_8cs" startline="93" endline="134">Outpost31.Core.Session.TingenSession.Build</referencedby>
+        <referencedby refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1a2ddbdf4ed0a3dda952ec891a3a1056c1" compoundref="_module_open_incident_8cs" startline="89" endline="94">Outpost31.Module.OpenIncident.ModuleOpenIncident.GetAuthorInformation</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a96196cd518d53aeb229268deefbc956e" compoundref="_tingen_session_8cs" startline="138" endline="142">Outpost31.Core.Session.TingenSession.Initialize</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a7113f9d248da8ae751f1af88ae32447e" compoundref="_parse_script_parameter_8cs" startline="79" endline="103">Outpost31.Core.ParseScriptParameter.ParseAdminModule</referencedby>
+        <referencedby refid="class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status_1a76fffc90df0f19c27c612d3d16a80455" compoundref="_status_8cs" startline="21" endline="30">Outpost31.Module.Admin.Service.Status.UpdateAll</referencedby>
+        <referencedby refid="class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status_1a5c436fde969810e30c5f9365325a823f" compoundref="_status_8cs" startline="60" endline="76">Outpost31.Module.Admin.Service.Status.UpdateSettings</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_framework_1_1_maintenance_1ab1f72498a69bbdc3fefff990be01bacb" compoundref="_maintenance_8cs" startline="29" endline="35">Outpost31.Core.Framework.Maintenance.VerifyFramework</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab5b39bfbdb7dd1abde1c3a6110c4bd6c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
@@ -131,10 +139,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="52" column="27" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="52" bodyend="52"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="52" column="27" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="52" bodyend="52"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1abd8de2211ce4837992fbb7163f882b61" compoundref="_tingen_session_8cs" startline="93" endline="134">Outpost31.Core.Session.TingenSession.Build</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_avatar_1_1_return_object_1adf3843f480639836833b9a4177e33091" compoundref="_return_object_8cs" startline="73" endline="123">Outpost31.Core.Avatar.ReturnObject.Finalize</referencedby>
+        <referencedby refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1a2ddbdf4ed0a3dda952ec891a3a1056c1" compoundref="_module_open_incident_8cs" startline="89" endline="94">Outpost31.Module.OpenIncident.ModuleOpenIncident.GetAuthorInformation</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1af0460c8d33e9f2489486486180a1e321" compoundref="_parse_script_parameter_8cs" startline="35" endline="77">Outpost31.Core.ParseScriptParameter.Parse</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a7113f9d248da8ae751f1af88ae32447e" compoundref="_parse_script_parameter_8cs" startline="79" endline="103">Outpost31.Core.ParseScriptParameter.ParseAdminModule</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a1f575403bc0c3c93f050c44899246a94" compoundref="_parse_script_parameter_8cs" startline="105" endline="124">Outpost31.Core.ParseScriptParameter.ParseOpenIncidentModule</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a60e5fffef8f78127da45dbdf6b3149c0" compoundref="_parse_script_parameter_8cs" startline="126" endline="135">Outpost31.Core.ParseScriptParameter.ParseTestingModule</referencedby>
+        <referencedby refid="class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status_1a76fffc90df0f19c27c612d3d16a80455" compoundref="_status_8cs" startline="21" endline="30">Outpost31.Module.Admin.Service.Status.UpdateAll</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1aa4e670c9a37d07f3594f92242afb00c7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type><ref refid="class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security" kindref="compound">NtstWebServiceSecurity</ref></type>
@@ -148,7 +161,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="54" column="39" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="54" bodyend="54"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="54" column="39" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="54" bodyend="54"/>
+        <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1abd8de2211ce4837992fbb7163f882b61" compoundref="_tingen_session_8cs" startline="93" endline="134">Outpost31.Core.Session.TingenSession.Build</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a57c77f2520b82e9ff8f21c93034b31ad" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type><ref refid="class_outpost31_1_1_core_1_1_logger_1_1_trace_log" kindref="compound">TraceLog</ref></type>
@@ -163,14 +177,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="58" column="25" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="58" bodyend="58"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="58" column="25" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="58" bodyend="58"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_catalog_1af2e7323ba98c4b3a0df66fe93812ae4b" compoundref="_catalog_8cs" startline="23" endline="112">Outpost31.Core.Session.Catalog.CurrentSettings</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_avatar_1_1_return_object_1adf3843f480639836833b9a4177e33091" compoundref="_return_object_8cs" startline="73" endline="123">Outpost31.Core.Avatar.ReturnObject.Finalize</referencedby>
+        <referencedby refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1a2ddbdf4ed0a3dda952ec891a3a1056c1" compoundref="_module_open_incident_8cs" startline="89" endline="94">Outpost31.Module.OpenIncident.ModuleOpenIncident.GetAuthorInformation</referencedby>
+        <referencedby refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ad224d08f1ab18c157715a564f91f521d" compoundref="_verify_8cs" startline="20" endline="36">Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsOpening</referencedby>
         <referencedby refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ae6a10b8c2ecca1d1b642eb61978a3695" compoundref="_verify_8cs" startline="40" endline="56">Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsSubmitting</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1af0460c8d33e9f2489486486180a1e321" compoundref="_parse_script_parameter_8cs" startline="35" endline="77">Outpost31.Core.ParseScriptParameter.Parse</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a7113f9d248da8ae751f1af88ae32447e" compoundref="_parse_script_parameter_8cs" startline="79" endline="103">Outpost31.Core.ParseScriptParameter.ParseAdminModule</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a1f575403bc0c3c93f050c44899246a94" compoundref="_parse_script_parameter_8cs" startline="105" endline="124">Outpost31.Core.ParseScriptParameter.ParseOpenIncidentModule</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a60e5fffef8f78127da45dbdf6b3149c0" compoundref="_parse_script_parameter_8cs" startline="126" endline="135">Outpost31.Core.ParseScriptParameter.ParseTestingModule</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_catalog_1a92d2976185a1b892644decb96fbf4ea9" compoundref="_catalog_8cs" startline="117" endline="168">Outpost31.Core.Session.Catalog.SessionDetails</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_tingen_app_1aecdc663e5b2013d5ba09ae1cb5fc2f5f" compoundref="_tingen_app_8cs" startline="22" endline="48">Outpost31.Core.TingenApp.Start</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_tingen_app_1a1372d5df3d765c1590b850923c12a3d0" compoundref="_tingen_app_8cs" startline="51" endline="62">Outpost31.Core.TingenApp.Stop</referencedby>
+        <referencedby refid="class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status_1a76fffc90df0f19c27c612d3d16a80455" compoundref="_status_8cs" startline="21" endline="30">Outpost31.Module.Admin.Service.Status.UpdateAll</referencedby>
+        <referencedby refid="class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status_1a5c436fde969810e30c5f9365325a823f" compoundref="_status_8cs" startline="60" endline="76">Outpost31.Module.Admin.Service.Status.UpdateSettings</referencedby>
       </memberdef>
       <memberdef kind="property" id="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ad9e9aa1be80c25431df4f126fbdbe546" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type><ref refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident" kindref="compound">ModuleOpenIncident</ref></type>
@@ -185,7 +206,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="62" column="35" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="62" bodyend="62"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="62" column="35" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="62" bodyend="62"/>
+        <referencedby refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ad224d08f1ab18c157715a564f91f521d" compoundref="_verify_8cs" startline="20" endline="36">Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsOpening</referencedby>
         <referencedby refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ae6a10b8c2ecca1d1b642eb61978a3695" compoundref="_verify_8cs" startline="40" endline="56">Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsSubmitting</referencedby>
         <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1af0460c8d33e9f2489486486180a1e321" compoundref="_parse_script_parameter_8cs" startline="35" endline="77">Outpost31.Core.ParseScriptParameter.Parse</referencedby>
       </memberdef>
@@ -284,18 +306,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="93" column="37" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="93" bodyend="134"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="93" column="37" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="93" bodyend="134"/>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab5b39bfbdb7dd1abde1c3a6110c4bd6c" compoundref="_tingen_session_8cs" startline="52" endline="52">Outpost31.Core.Session.TingenSession.AvData</references>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_paths_1a9ae4f409983508576ed04349ea22fbaf" compoundref="_paths_8cs" startline="37" endline="48">Outpost31.Core.Framework.Paths.Build</references>
         <references refid="class_outpost31_1_1_core_1_1_logger_1_1_trace_log_1a4cdc0b826bd1758d411da0cdd69a0bf4" compoundref="_trace_log_8cs" startline="25" endline="35">Outpost31.Core.Logger.TraceLog.BuildInfo</references>
         <references refid="class_outpost31_1_1_core_1_1_avatar_1_1_avatar_data_1a1d0b2deeb73520778f4a9634f390d5a3" compoundref="_avatar_data_8cs" startline="120" endline="132">Outpost31.Core.Avatar.AvatarData.BuildObject</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5f52be032451bdd09a6a5548f8db33dc" compoundref="_tingen_session_8cs" startline="150" endline="160">Outpost31.Core.Session.TingenSession.BuildStaticVars</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a767af7d923f9ffd13f833834a6d3119b" compoundref="_tingen_session_8cs" startline="28" endline="28">Outpost31.Core.Session.TingenSession.Date</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a96196cd518d53aeb229268deefbc956e" compoundref="_tingen_session_8cs" startline="138" endline="142">Outpost31.Core.Session.TingenSession.Initialize</references>
         <references refid="class_outpost31_1_1_core_1_1_configuration_1_1_config_settings_1a9cb9a342c0a283f7a38706c10e9869ce" compoundref="_config_settings_8cs" startline="143" endline="160">Outpost31.Core.Configuration.ConfigSettings.Load</references>
+        <references refid="class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security_1a0a5f3b6c3adebefa8630f2bdf3e9c8a6" compoundref="_ntst_web_service_security_8cs" startline="25" endline="40">Outpost31.Core.NtstWebService.NtstWebServiceSecurity.Load</references>
+        <references refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1a5b74da7faf903f123356f2a28bbc857c" compoundref="_module_open_incident_8cs" startline="49" endline="61">Outpost31.Module.OpenIncident.ModuleOpenIncident.Load</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1aa4e670c9a37d07f3594f92242afb00c7" compoundref="_tingen_session_8cs" startline="54" endline="54">Outpost31.Core.Session.TingenSession.NtstWebServiceSecurity</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab4a2303bcd493b8288f21b831d6ea48e" compoundref="_tingen_session_8cs" startline="33" endline="33">Outpost31.Core.Session.TingenSession.ReturnClonedOptionObject</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a69d6a93d68ce8a9b0e9d95af04f541d2" compoundref="_tingen_session_8cs" startline="30" endline="30">Outpost31.Core.Session.TingenSession.Time</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1aacc82612996405591b6c916f3b2c8e4d" compoundref="_tingen_session_8cs" startline="25" endline="25">Outpost31.Core.Session.TingenSession.TnBuild</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5fbba191edb00e771960aaddb5435a57" compoundref="_tingen_session_8cs" startline="36" endline="36">Outpost31.Core.Session.TingenSession.TnConfig</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab1ca46a23541d202156ab0d3f35a3468" compoundref="_tingen_session_8cs" startline="44" endline="44">Outpost31.Core.Session.TingenSession.TnPath</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a1f5918e313ecfa27883e8dc9b858d673" compoundref="_tingen_session_8cs" startline="23" endline="23">Outpost31.Core.Session.TingenSession.TnVersion</references>
       </memberdef>
       <memberdef kind="function" id="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a96196cd518d53aeb229268deefbc956e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -323,7 +351,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="138" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="138" bodyend="142"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="138" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="138" bodyend="142"/>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_paths_1a861a875f6377cc6c9fc39c43384ddfac" compoundref="_paths_8cs" startline="31" endline="31">Outpost31.Core.Framework.Paths.Remote</references>
         <references refid="class_outpost31_1_1_core_1_1_framework_1_1_paths_1a570f71a401269c613b705a23512d41d9" compoundref="_paths_8cs" startline="25" endline="25">Outpost31.Core.Framework.Paths.SystemCode</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab1ca46a23541d202156ab0d3f35a3468" compoundref="_tingen_session_8cs" startline="44" endline="44">Outpost31.Core.Session.TingenSession.TnPath</references>
@@ -346,7 +374,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="144" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="144" bodyend="148"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="144" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="144" bodyend="148"/>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_catalog_1a92d2976185a1b892644decb96fbf4ea9" compoundref="_catalog_8cs" startline="117" endline="168">Outpost31.Core.Session.Catalog.SessionDetails</references>
+        <referencedby refid="class_outpost31_1_1_core_1_1_tingen_app_1a1372d5df3d765c1590b850923c12a3d0" compoundref="_tingen_app_8cs" startline="51" endline="62">Outpost31.Core.TingenApp.Stop</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5f52be032451bdd09a6a5548f8db33dc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Dictionary&lt; string, string &gt;</type>
@@ -360,7 +390,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="150" column="34" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="150" bodyend="160"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="150" column="34" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="150" bodyend="160"/>
+        <referencedby refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1abd8de2211ce4837992fbb7163f882b61" compoundref="_tingen_session_8cs" startline="93" endline="134">Outpost31.Core.Session.TingenSession.Build</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -369,7 +400,7 @@
     <detaileddescription>
 <para>Properties for the Tingen session are located in <bold>TingenSession.Properties.cs.</bold> </para>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" line="21" column="11" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Session/TingenSession.cs" bodystart="22" bodyend="161"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" line="21" column="11" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Session/TingenSession.cs" bodystart="22" bodyend="161"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab5b39bfbdb7dd1abde1c3a6110c4bd6c" prot="public" virt="non-virtual"><scope>Outpost31::Core::Session::TingenSession</scope><name>AvData</name></member>
       <member refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1abd8de2211ce4837992fbb7163f882b61" prot="public" virt="non-virtual"><scope>Outpost31::Core::Session::TingenSession</scope><name>Build</name></member>

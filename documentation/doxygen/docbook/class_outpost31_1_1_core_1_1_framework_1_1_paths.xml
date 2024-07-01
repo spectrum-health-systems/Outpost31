@@ -19,22 +19,22 @@
 <simplesect>
     <title>Properties    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_paths_1a9a1ce8c76b449ec10e074138fe633135"/><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths">TingenPaths</link> <emphasis role="strong">Tingen</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths">TingenPaths</link> <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_paths_1a9a1ce8c76b449ec10e074138fe633135">Tingen</link><computeroutput> [get, set]</computeroutput>
 </para>
 
 <para>Tingen data paths. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_paths_1a570f71a401269c613b705a23512d41d9"/><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths">SystemCodePaths</link> <emphasis role="strong">SystemCode</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths">SystemCodePaths</link> <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_paths_1a570f71a401269c613b705a23512d41d9">SystemCode</link><computeroutput> [get, set]</computeroutput>
 </para>
 
 <para>System code data paths. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_paths_1ae29d045d4b6ccc0fed7f2699ff68d59c"/><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths">PublicPaths</link> <emphasis role="strong">Public</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths">PublicPaths</link> <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_paths_1ae29d045d4b6ccc0fed7f2699ff68d59c">Public</link><computeroutput> [get, set]</computeroutput>
 </para>
 
 <para>Public data paths. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_paths_1a861a875f6377cc6c9fc39c43384ddfac"/><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths">RemotePaths</link> <emphasis role="strong">Remote</emphasis><computeroutput> [get, set]</computeroutput>
+            <listitem><para><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths">RemotePaths</link> <link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_paths_1a861a875f6377cc6c9fc39c43384ddfac">Remote</link><computeroutput> [get, set]</computeroutput>
 </para>
 
 <para>Remote data paths. </para>
@@ -122,6 +122,45 @@ Here is the caller graph for this function:<para>
             </imageobject>
         </mediaobject>
     </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_paths_1ae29d045d4b6ccc0fed7f2699ff68d59c"/><section>
+    <title>Public</title>
+<indexterm><primary>Public</primary><secondary>Outpost31.Core.Framework.Paths</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Framework.Paths</primary><secondary>Public</secondary></indexterm>
+<para><computeroutput><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths">PublicPaths</link> Outpost31.Core.Framework.Paths.Public<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Public data paths. </para>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_paths_1a861a875f6377cc6c9fc39c43384ddfac"/><section>
+    <title>Remote</title>
+<indexterm><primary>Remote</primary><secondary>Outpost31.Core.Framework.Paths</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Framework.Paths</primary><secondary>Remote</secondary></indexterm>
+<para><computeroutput><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths">RemotePaths</link> Outpost31.Core.Framework.Paths.Remote<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Remote data paths. </para>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_paths_1a570f71a401269c613b705a23512d41d9"/><section>
+    <title>SystemCode</title>
+<indexterm><primary>SystemCode</primary><secondary>Outpost31.Core.Framework.Paths</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Framework.Paths</primary><secondary>SystemCode</secondary></indexterm>
+<para><computeroutput><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths">SystemCodePaths</link> Outpost31.Core.Framework.Paths.SystemCode<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>System code data paths. </para>
+</para>
+</section>
+<anchor xml:id="_class_outpost31_1_1_core_1_1_framework_1_1_paths_1a9a1ce8c76b449ec10e074138fe633135"/><section>
+    <title>Tingen</title>
+<indexterm><primary>Tingen</primary><secondary>Outpost31.Core.Framework.Paths</secondary></indexterm>
+<indexterm><primary>Outpost31.Core.Framework.Paths</primary><secondary>Tingen</secondary></indexterm>
+<para><computeroutput><link linkend="_class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths">TingenPaths</link> Outpost31.Core.Framework.Paths.Tingen<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Tingen data paths. </para>
 </para>
 </section>
 </section>

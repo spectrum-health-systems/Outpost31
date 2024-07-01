@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/LoggerCatalog.cs" line="18" column="30" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/LoggerCatalog.cs" bodystart="18" bodyend="27"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/LoggerCatalog.cs" line="18" column="30" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/LoggerCatalog.cs" bodystart="18" bodyend="27"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_logger_1_1_primeval_log_1a5ef334a75ceb7eca289ff18e56443fb7" compoundref="_primeval_log_8cs" startline="46" endline="55">Outpost31.Core.Logger.PrimevalLog.Create</referencedby>
       </memberdef>
     </sectiondef>
@@ -84,7 +84,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/LoggerCatalog.cs" line="9" column="19" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/Logger/LoggerCatalog.cs" bodystart="10" bodyend="28"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/LoggerCatalog.cs" line="9" column="19" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/Logger/LoggerCatalog.cs" bodystart="10" bodyend="28"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_core_1_1_logger_1_1_logger_catalog_1a4f61a573573056dbbbd909d9d1412a34" prot="public" virt="non-virtual"><scope>Outpost31::Core::Logger::LoggerCatalog</scope><name>StandardContent</name></member>
     </listofallmembers>

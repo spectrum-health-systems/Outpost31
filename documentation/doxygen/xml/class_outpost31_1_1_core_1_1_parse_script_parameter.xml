@@ -21,8 +21,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/ParseScriptParameter.cs" line="18" column="30" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/ParseScriptParameter.cs" bodystart="18" bodyend="18"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/ParseScriptParameter.cs" line="18" column="30" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/ParseScriptParameter.cs" bodystart="18" bodyend="18"/>
         <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1af0460c8d33e9f2489486486180a1e321" compoundref="_parse_script_parameter_8cs" startline="35" endline="77">Outpost31.Core.ParseScriptParameter.Parse</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a7113f9d248da8ae751f1af88ae32447e" compoundref="_parse_script_parameter_8cs" startline="79" endline="103">Outpost31.Core.ParseScriptParameter.ParseAdminModule</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a1f575403bc0c3c93f050c44899246a94" compoundref="_parse_script_parameter_8cs" startline="105" endline="124">Outpost31.Core.ParseScriptParameter.ParseOpenIncidentModule</referencedby>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a60e5fffef8f78127da45dbdf6b3149c0" compoundref="_parse_script_parameter_8cs" startline="126" endline="135">Outpost31.Core.ParseScriptParameter.ParseTestingModule</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -59,10 +62,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/ParseScriptParameter.cs" line="35" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/ParseScriptParameter.cs" bodystart="35" bodyend="77"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/ParseScriptParameter.cs" line="35" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/ParseScriptParameter.cs" bodystart="35" bodyend="77"/>
         <references refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a37f2ba22da169a6b397983964ef18eee" compoundref="_parse_script_parameter_8cs" startline="18" endline="18">Outpost31.Core.ParseScriptParameter.AssemblyName</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab5b39bfbdb7dd1abde1c3a6110c4bd6c" compoundref="_tingen_session_8cs" startline="52" endline="52">Outpost31.Core.Session.TingenSession.AvData</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ad9e9aa1be80c25431df4f126fbdbe546" compoundref="_tingen_session_8cs" startline="62" endline="62">Outpost31.Core.Session.TingenSession.ModOpenIncident</references>
+        <references refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a7113f9d248da8ae751f1af88ae32447e" compoundref="_parse_script_parameter_8cs" startline="79" endline="103">Outpost31.Core.ParseScriptParameter.ParseAdminModule</references>
+        <references refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a1f575403bc0c3c93f050c44899246a94" compoundref="_parse_script_parameter_8cs" startline="105" endline="124">Outpost31.Core.ParseScriptParameter.ParseOpenIncidentModule</references>
+        <references refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a60e5fffef8f78127da45dbdf6b3149c0" compoundref="_parse_script_parameter_8cs" startline="126" endline="135">Outpost31.Core.ParseScriptParameter.ParseTestingModule</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5fbba191edb00e771960aaddb5435a57" compoundref="_tingen_session_8cs" startline="36" endline="36">Outpost31.Core.Session.TingenSession.TnConfig</references>
         <references refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1a7477552f340d46775d869b63e40e8e65" compoundref="_log_event_8cs" startline="27" endline="41">Outpost31.Core.Logger.LogEvent.Trace</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a57c77f2520b82e9ff8f21c93034b31ad" compoundref="_tingen_session_8cs" startline="58" endline="58">Outpost31.Core.Session.TingenSession.TraceInfo</references>
@@ -86,7 +92,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/ParseScriptParameter.cs" line="79" column="29" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/ParseScriptParameter.cs" bodystart="79" bodyend="103"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/ParseScriptParameter.cs" line="79" column="29" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/ParseScriptParameter.cs" bodystart="79" bodyend="103"/>
+        <references refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a37f2ba22da169a6b397983964ef18eee" compoundref="_parse_script_parameter_8cs" startline="18" endline="18">Outpost31.Core.ParseScriptParameter.AssemblyName</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab5b39bfbdb7dd1abde1c3a6110c4bd6c" compoundref="_tingen_session_8cs" startline="52" endline="52">Outpost31.Core.Session.TingenSession.AvData</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a5fbba191edb00e771960aaddb5435a57" compoundref="_tingen_session_8cs" startline="36" endline="36">Outpost31.Core.Session.TingenSession.TnConfig</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab1ca46a23541d202156ab0d3f35a3468" compoundref="_tingen_session_8cs" startline="44" endline="44">Outpost31.Core.Session.TingenSession.TnPath</references>
+        <references refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1a7477552f340d46775d869b63e40e8e65" compoundref="_log_event_8cs" startline="27" endline="41">Outpost31.Core.Logger.LogEvent.Trace</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a57c77f2520b82e9ff8f21c93034b31ad" compoundref="_tingen_session_8cs" startline="58" endline="58">Outpost31.Core.Session.TingenSession.TraceInfo</references>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1af0460c8d33e9f2489486486180a1e321" compoundref="_parse_script_parameter_8cs" startline="35" endline="77">Outpost31.Core.ParseScriptParameter.Parse</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_outpost31_1_1_core_1_1_parse_script_parameter_1a1f575403bc0c3c93f050c44899246a94" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -104,7 +117,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/ParseScriptParameter.cs" line="105" column="29" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/ParseScriptParameter.cs" bodystart="105" bodyend="124"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/ParseScriptParameter.cs" line="105" column="29" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/ParseScriptParameter.cs" bodystart="105" bodyend="124"/>
+        <references refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a37f2ba22da169a6b397983964ef18eee" compoundref="_parse_script_parameter_8cs" startline="18" endline="18">Outpost31.Core.ParseScriptParameter.AssemblyName</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab5b39bfbdb7dd1abde1c3a6110c4bd6c" compoundref="_tingen_session_8cs" startline="52" endline="52">Outpost31.Core.Session.TingenSession.AvData</references>
+        <references refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1a7477552f340d46775d869b63e40e8e65" compoundref="_log_event_8cs" startline="27" endline="41">Outpost31.Core.Logger.LogEvent.Trace</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a57c77f2520b82e9ff8f21c93034b31ad" compoundref="_tingen_session_8cs" startline="58" endline="58">Outpost31.Core.Session.TingenSession.TraceInfo</references>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1af0460c8d33e9f2489486486180a1e321" compoundref="_parse_script_parameter_8cs" startline="35" endline="77">Outpost31.Core.ParseScriptParameter.Parse</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_outpost31_1_1_core_1_1_parse_script_parameter_1a60e5fffef8f78127da45dbdf6b3149c0" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -122,7 +140,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/ParseScriptParameter.cs" line="126" column="29" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/ParseScriptParameter.cs" bodystart="126" bodyend="135"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/ParseScriptParameter.cs" line="126" column="29" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/ParseScriptParameter.cs" bodystart="126" bodyend="135"/>
+        <references refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a37f2ba22da169a6b397983964ef18eee" compoundref="_parse_script_parameter_8cs" startline="18" endline="18">Outpost31.Core.ParseScriptParameter.AssemblyName</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ab5b39bfbdb7dd1abde1c3a6110c4bd6c" compoundref="_tingen_session_8cs" startline="52" endline="52">Outpost31.Core.Session.TingenSession.AvData</references>
+        <references refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1a7477552f340d46775d869b63e40e8e65" compoundref="_log_event_8cs" startline="27" endline="41">Outpost31.Core.Logger.LogEvent.Trace</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a57c77f2520b82e9ff8f21c93034b31ad" compoundref="_tingen_session_8cs" startline="58" endline="58">Outpost31.Core.Session.TingenSession.TraceInfo</references>
+        <referencedby refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1af0460c8d33e9f2489486486180a1e321" compoundref="_parse_script_parameter_8cs" startline="35" endline="77">Outpost31.Core.ParseScriptParameter.Parse</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -130,7 +153,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/ParseScriptParameter.cs" line="10" column="19" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Core/ParseScriptParameter.cs" bodystart="11" bodyend="136"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/ParseScriptParameter.cs" line="10" column="19" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Core/ParseScriptParameter.cs" bodystart="11" bodyend="136"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1a37f2ba22da169a6b397983964ef18eee" prot="public" virt="non-virtual"><scope>Outpost31::Core::ParseScriptParameter</scope><name>AssemblyName</name></member>
       <member refid="class_outpost31_1_1_core_1_1_parse_script_parameter_1af0460c8d33e9f2489486486180a1e321" prot="public" virt="non-virtual"><scope>Outpost31::Core::ParseScriptParameter</scope><name>Parse</name></member>

@@ -21,7 +21,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" line="18" column="30" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" bodystart="18" bodyend="18"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/OpenIncident/Verify.cs" line="18" column="30" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/OpenIncident/Verify.cs" bodystart="18" bodyend="18"/>
+        <referencedby refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ad224d08f1ab18c157715a564f91f521d" compoundref="_verify_8cs" startline="20" endline="36">Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsOpening</referencedby>
         <referencedby refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ae6a10b8c2ecca1d1b642eb61978a3695" compoundref="_verify_8cs" startline="40" endline="56">Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsSubmitting</referencedby>
       </memberdef>
     </sectiondef>
@@ -42,7 +43,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" line="20" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" bodystart="20" bodyend="36"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/OpenIncident/Verify.cs" line="20" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/OpenIncident/Verify.cs" bodystart="20" bodyend="36"/>
+        <references refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1a9f5d0b21e4b020d1e80bcf2f4a311fbc" compoundref="_verify_8cs" startline="18" endline="18">Outpost31.Module.OpenIncident.Verify.AssemblyName</references>
+        <references refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1a2ddbdf4ed0a3dda952ec891a3a1056c1" compoundref="_module_open_incident_8cs" startline="89" endline="94">Outpost31.Module.OpenIncident.ModuleOpenIncident.GetAuthorInformation</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ad9e9aa1be80c25431df4f126fbdbe546" compoundref="_tingen_session_8cs" startline="62" endline="62">Outpost31.Core.Session.TingenSession.ModOpenIncident</references>
+        <references refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1a7477552f340d46775d869b63e40e8e65" compoundref="_log_event_8cs" startline="27" endline="41">Outpost31.Core.Logger.LogEvent.Trace</references>
+        <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a57c77f2520b82e9ff8f21c93034b31ad" compoundref="_tingen_session_8cs" startline="58" endline="58">Outpost31.Core.Session.TingenSession.TraceInfo</references>
       </memberdef>
       <memberdef kind="function" id="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ae6a10b8c2ecca1d1b642eb61978a3695" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -70,8 +76,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" line="40" column="28" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" bodystart="40" bodyend="56"/>
+        <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/OpenIncident/Verify.cs" line="40" column="28" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/OpenIncident/Verify.cs" bodystart="40" bodyend="56"/>
         <references refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1a9f5d0b21e4b020d1e80bcf2f4a311fbc" compoundref="_verify_8cs" startline="18" endline="18">Outpost31.Module.OpenIncident.Verify.AssemblyName</references>
+        <references refid="class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident_1a2ddbdf4ed0a3dda952ec891a3a1056c1" compoundref="_module_open_incident_8cs" startline="89" endline="94">Outpost31.Module.OpenIncident.ModuleOpenIncident.GetAuthorInformation</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1ad9e9aa1be80c25431df4f126fbdbe546" compoundref="_tingen_session_8cs" startline="62" endline="62">Outpost31.Core.Session.TingenSession.ModOpenIncident</references>
         <references refid="class_outpost31_1_1_core_1_1_logger_1_1_log_event_1a7477552f340d46775d869b63e40e8e65" compoundref="_log_event_8cs" startline="27" endline="41">Outpost31.Core.Logger.LogEvent.Trace</references>
         <references refid="class_outpost31_1_1_core_1_1_session_1_1_tingen_session_1a57c77f2520b82e9ff8f21c93034b31ad" compoundref="_tingen_session_8cs" startline="58" endline="58">Outpost31.Core.Session.TingenSession.TraceInfo</references>
@@ -82,7 +89,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" line="10" column="26" bodyfile="C:/IT/GitHub/SHS/Public repositories/Outpost31/src/Module/OpenIncident/Verify.cs" bodystart="11" bodyend="57"/>
+    <location file="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/OpenIncident/Verify.cs" line="10" column="26" bodyfile="C:/Users/cbanw/GitHub/Spectrum Health Systems/Outpost31/src/Module/OpenIncident/Verify.cs" bodystart="11" bodyend="57"/>
     <listofallmembers>
       <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1a9f5d0b21e4b020d1e80bcf2f4a311fbc" prot="public" virt="non-virtual"><scope>Outpost31::Module::OpenIncident::Verify</scope><name>AssemblyName</name></member>
       <member refid="class_outpost31_1_1_module_1_1_open_incident_1_1_verify_1ad224d08f1ab18c157715a564f91f521d" prot="public" virt="non-virtual"><scope>Outpost31::Module::OpenIncident::Verify</scope><name>OriginalAuthorIsOpening</name></member>
