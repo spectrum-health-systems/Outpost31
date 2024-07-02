@@ -1,7 +1,0 @@
-<map id="Outpost31.Core.Session.Catalog.SessionDetails" name="Outpost31.Core.Session.Catalog.SessionDetails">
-<area shape="rect" id="Node000001" title="Soon." alt="" coords="517,5,732,46"/>
-<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_session_1_1_tingen_session.html#a89840eb03b4f2dfdf210b3c8272b2dbb" title=" " alt="" coords="263,5,469,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="501,28,469,28,469,23,501,23"/>
-<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_tingen_app.html#a1372d5df3d765c1590b850923c12a3d0" title="Handles any logic related to stopping Tingen." alt="" coords="5,13,215,39"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="247,28,215,28,215,23,247,23"/>
-</map>
