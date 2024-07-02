@@ -114,7 +114,7 @@ namespace Outpost31.Core.Avatar
         ///   - The <paramref name="workOptionObject"/> is cloned from the  <paramref name="sentOptionObject"/> so it can be modified without affecting the original data.<br/>
         ///   - The <paramref name="returnOptionObject"/> is initally set to "null", and will be formatted/finalized prior to returning to Avatar.<br/>
         ///   - More information about OptionObjects <a href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">here</a>.<br/>
-        ///   - <see href="https://github.com">GitHub</see>
+        ///   - <see href="https://github.com">Git!Hub</see>
         /// </para>
         /// </remarks>
         /// <returns>The necessary Avatar data.</returns>
