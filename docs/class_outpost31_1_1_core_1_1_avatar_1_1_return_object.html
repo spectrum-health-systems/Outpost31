@@ -106,13 +106,13 @@ $(function(){initNavTree('class_outpost31_1_1_core_1_1_avatar_1_1_return_object.
 </div><!--header-->
 <div class="contents">
 
-<p>Logic specific to the returnOptionObject.  
+<p>Finalizes an OptionObject so it can be returned to AvatarNX.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:adf3843f480639836833b9a4177e33091" id="r_adf3843f480639836833b9a4177e33091"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf3843f480639836833b9a4177e33091">Finalize</a> (<a class="el" href="class_outpost31_1_1_core_1_1_session_1_1_tingen_session.html">TingenSession</a> tnSession, string errorCode, string errorMessage=&quot;&quot;)</td></tr>
-<tr class="memdesc:adf3843f480639836833b9a4177e33091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format an <em>OptionObject</em>  to be returned to <a class="el" href="namespace_outpost31_1_1_core_1_1_avatar.html">Avatar</a>.  <br /></td></tr>
+<tr class="memdesc:adf3843f480639836833b9a4177e33091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize an <em>OptionObject</em>  to be returned to AvatarNX.  <br /></td></tr>
 <tr class="separator:adf3843f480639836833b9a4177e33091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
@@ -122,8 +122,15 @@ Properties</h2></td></tr>
 <tr class="separator:a19397abb6426cb86995316faf971692a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Logic specific to the returnOptionObject</p>
-<p>. </p>
+<div class="textblock"><p>Finalizes an OptionObject so it can be returned to AvatarNX. </p>
+<p><b>About this class</b><br  />
+ Before returning an OptionObject to AvatarNX, it must be finalized. That's what this class does. It finalizes the <br  />
+ OptionObject so it can be returned to AvatarNX. </p>
+<p><b>More information</b><br  />
+ <a href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</a><br  />
+ </p>
+<p><b>Also...</b><br  />
+ Please see the <a href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</a> for more information. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="adf3843f480639836833b9a4177e33091" name="adf3843f480639836833b9a4177e33091"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf3843f480639836833b9a4177e33091">&#9670;&#160;</a></span>Finalize()</h2>
@@ -157,14 +164,24 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Format an <em>OptionObject</em>  to be returned to <a class="el" href="namespace_outpost31_1_1_core_1_1_avatar.html">Avatar</a>. </p>
+<p>Finalize an <em>OptionObject</em>  to be returned to AvatarNX. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tnSession</td><td>The Tingen session object.</td></tr>
+    <tr><td class="paramname">sentOptionObject</td><td>The OptionObject sent from AvatarNX.</td></tr>
+    <tr><td class="paramname">sentScriptParameter</td><td>The ScriptParameter sent from AvatarNX.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Part of the finalization process is assigning a valid error code to the returnOptionObject: </p><table class="doxtable">
+<p><b>About this method</b><br  />
+ The finalization process is a two part process: </p><ol>
+<li>
+Assign an error code to the returnOptionObject  </li>
+<li>
+Verify the returnOptionObject cointains all required data  </li>
+</ol>
+<p>And here is the list of valid error codes: </p><table class="doxtable">
+<tr>
+<th>Error code </th><th>Description  </th></tr>
 <tr>
 <td>0 </td><td>Success - Returns the OptionObject without a message  </td></tr>
 <tr>
@@ -180,19 +197,18 @@ Properties</h2></td></tr>
 <tr>
 <td>6 </td><td>OpenForm - Presents an OK/Cancel dialog to open a form (only be used on Form Load and Field events).  </td></tr>
 </table>
-<ul>
-<li><em>The returnOptionObject must be propery formatted when returned to <a class="el" href="namespace_outpost31_1_1_core_1_1_avatar.html">Avatar</a></em>.<br  />
-</li>
-<li>More information about OptionObjects <a href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">here</a>.</li>
-</ul>
 <p>To return a formatted returnOptionObject:<br  />
  </p><div class="fragment"><div class="line">Core.Avatar.FormatReturnObject.AsErrorCode(tnSession, errorCode, errorMessage);</div>
-</div><!-- fragment --> <div class="dynheader">
+</div><!-- fragment --> <p><b>More information</b><br  />
+ <a href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</a><br  />
+ </p>
+<dl class="section return"><dt>Returns</dt><dd>The necessary AvatarNX data.</dd></dl>
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_outpost31_1_1_core_1_1_avatar_1_1_return_object_adf3843f480639836833b9a4177e33091_cgraph.png" border="0" usemap="#aclass_outpost31_1_1_core_1_1_avatar_1_1_return_object_adf3843f480639836833b9a4177e33091_cgraph" alt=""/></div>
 <map name="aclass_outpost31_1_1_core_1_1_avatar_1_1_return_object_adf3843f480639836833b9a4177e33091_cgraph" id="aclass_outpost31_1_1_core_1_1_avatar_1_1_return_object_adf3843f480639836833b9a4177e33091_cgraph">
-<area shape="rect" title="Format an OptionObject &#160;to be returned to Avatar." alt="" coords="5,5,202,46"/>
+<area shape="rect" title="Finalize an OptionObject &#160;to be returned to AvatarNX." alt="" coords="5,5,202,46"/>
 <area shape="rect" href="class_outpost31_1_1_core_1_1_logger_1_1_log_event.html#a7477552f340d46775d869b63e40e8e65" title="Log a trace event." alt="" coords="250,5,430,46"/>
 <area shape="poly" title=" " alt="" coords="202,23,234,23,234,28,202,28"/>
 <area shape="rect" href="class_outpost31_1_1_core_1_1_logger_1_1_trace_log.html#a1337fb24049079842cd6a4aab40f6c27" title="Soon." alt="" coords="478,5,670,46"/>
@@ -224,9 +240,8 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Assembly name for log files. </p>
-<ul>
-<li>Define the assembly name here so it can be used to write log files throughout the class. </li>
-</ul>
+<p><b>About this property</b><br  />
+ The assembly name is defined here so it can be used to write log files throughout the class. </p>
 
 </div>
 </div>

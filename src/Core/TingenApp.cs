@@ -21,6 +21,8 @@ namespace Outpost31.Core
         /// <param name="tnSession">The TingenSession object for this session.</param>
         public static void Start(TingenSession tnSession)
         {
+            // TODO: catch "enable" and "disable"?
+
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 
             switch (tnSession.TnConfig.TingenMode)
