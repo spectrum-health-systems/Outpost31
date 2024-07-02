@@ -1,10 +1,10 @@
 <map id="Outpost31.Module.Admin.Service.Status.UpdateSettings" name="Outpost31.Module.Admin.Service.Status.UpdateSettings">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,224,77"/>
-<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_session_1_1_catalog.html#af2e7323ba98c4b3a0df66fe93812ae4b" title="Soon." alt="" coords="272,5,487,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,41,256,38,257,43,224,47"/>
-<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_logger_1_1_log_event.html#a7477552f340d46775d869b63e40e8e65" title="Log a trace event." alt="" coords="535,35,715,77"/>
-<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="224,56,272,57,487,57,519,57,519,62,487,63,272,63,224,62"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="488,37,520,41,519,46,487,42"/>
-<area shape="rect" id="Node000004" href="$class_outpost31_1_1_core_1_1_logger_1_1_trace_log.html#a1337fb24049079842cd6a4aab40f6c27" title="Soon." alt="" coords="763,35,955,77"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="716,53,748,53,748,59,716,59"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,226,75"/>
+<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_session_1_1_catalog.html#af2e7323ba98c4b3a0df66fe93812ae4b" title="Soon." alt="" coords="274,5,489,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,40,258,37,258,42,226,45"/>
+<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_logger_1_1_log_event.html#a7477552f340d46775d869b63e40e8e65" title="Log a trace event." alt="" coords="537,35,717,75"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="226,54,274,55,489,55,521,55,521,60,489,60,274,60,226,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="490,36,522,40,521,45,489,41"/>
+<area shape="rect" id="Node000004" href="$class_outpost31_1_1_core_1_1_logger_1_1_trace_log.html#a1337fb24049079842cd6a4aab40f6c27" title="Soon." alt="" coords="765,35,958,75"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="717,52,750,52,750,58,717,58"/>
 </map>

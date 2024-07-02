@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['readme_0',['README',['../md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e.html',1,'']]],
+  ['readme_0',['README',['../md__c_1_2_i_t_2_git_hub_2_s_h_s_2_public_01repositories_2_outpost31_2src_2_r_e_a_d_m_e.html',1,'']]],
   ['readme_2emd_1',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
   ['refresh_2',['Refresh',['../class_outpost31_1_1_core_1_1_framework_1_1_refresh.html',1,'Outpost31.Core.Framework.Refresh'],['../class_outpost31_1_1_module_1_1_admin_1_1_framework_1_1_refresh.html',1,'Outpost31.Module.Admin.Framework.Refresh']]],
   ['refresh_2ecs_3',['Refresh.cs',['../_core_2_framework_2_refresh_8cs.html',1,'(Global Namespace)'],['../_module_2_admin_2_framework_2_refresh_8cs.html',1,'(Global Namespace)']]],
@@ -11,7 +11,7 @@ var searchData=
   ['remotepaths_8',['RemotePaths',['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths.html',1,'Outpost31::Core::Framework::Catalog']]],
   ['remotepaths_2ecs_9',['RemotePaths.cs',['../_remote_paths_8cs.html',1,'']]],
   ['reports_10',['Reports',['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths.html#a343d4c6347b82995704fe771f656631f',1,'Outpost31.Core.Framework.Catalog.PublicPaths.Reports'],['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths.html#a86b83ee9bd6d742b018a6028dc902f64',1,'Outpost31.Core.Framework.Catalog.RemotePaths.Reports'],['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths.html#a14d075788032d103aebfa3c6d6004844',1,'Outpost31.Core.Framework.Catalog.SystemCodePaths.Reports']]],
-  ['repository_20branches_11',['Repository branches',['../md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e.html#autotoc_md1',1,'']]],
+  ['repository_20branches_11',['Repository branches',['../md__c_1_2_i_t_2_git_hub_2_s_h_s_2_public_01repositories_2_outpost31_2src_2_r_e_a_d_m_e.html#autotoc_md1',1,'']]],
   ['requiredpaths_12',['RequiredPaths',['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths.html#a2d7d9f1b091bd5da7740c2bb472b12f9',1,'Outpost31.Core.Framework.Catalog.PublicPaths.RequiredPaths()'],['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths.html#a993d6d5b6781c5eed1ae8865bf5e98d0',1,'Outpost31.Core.Framework.Catalog.RemotePaths.RequiredPaths()'],['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths.html#a3e031d9a9cc79054df7d356cb9214ce4',1,'Outpost31.Core.Framework.Catalog.SystemCodePaths.RequiredPaths()'],['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_tingen_paths.html#ad20aaecf14fd4bb09d259183c4b7d656',1,'Outpost31.Core.Framework.Catalog.TingenPaths.RequiredPaths()']]],
   ['returnclonedoptionobject_13',['ReturnClonedOptionObject',['../class_outpost31_1_1_core_1_1_session_1_1_tingen_session.html#ab4a2303bcd493b8288f21b831d6ea48e',1,'Outpost31::Core::Session::TingenSession']]],
   ['returnobject_14',['ReturnObject',['../class_outpost31_1_1_core_1_1_avatar_1_1_return_object.html',1,'Outpost31::Core::Avatar']]],

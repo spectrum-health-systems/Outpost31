@@ -5,7 +5,7 @@ var searchData=
   ['originalauthorisopening_2',['OriginalAuthorIsOpening',['../class_outpost31_1_1_module_1_1_open_incident_1_1_verify.html#ad224d08f1ab18c157715a564f91f521d',1,'Outpost31::Module::OpenIncident::Verify']]],
   ['originalauthorissubmitting_3',['OriginalAuthorIsSubmitting',['../class_outpost31_1_1_module_1_1_open_incident_1_1_verify.html#ae6a10b8c2ecca1d1b642eb61978a3695',1,'Outpost31::Module::OpenIncident::Verify']]],
   ['originalfullname_4',['OriginalFullName',['../class_outpost31_1_1_module_1_1_open_incident_1_1_module_open_incident.html#ac25b1a1d53695eb3fdb5c0045bde4aac',1,'Outpost31::Module::OpenIncident::ModuleOpenIncident']]],
-  ['outpost31_5',['Outpost31',['../md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e.html#autotoc_md0',1,'About Outpost31'],['../namespace_outpost31.html',1,'Outpost31']]],
+  ['outpost31_5',['Outpost31',['../md__c_1_2_i_t_2_git_hub_2_s_h_s_2_public_01repositories_2_outpost31_2src_2_r_e_a_d_m_e.html#autotoc_md0',1,'About Outpost31'],['../namespace_outpost31.html',1,'Outpost31']]],
   ['outpost31_3a_3acore_6',['Core',['../namespace_outpost31_1_1_core.html',1,'Outpost31']]],
   ['outpost31_3a_3acore_3a_3aavatar_7',['Avatar',['../namespace_outpost31_1_1_core_1_1_avatar.html',1,'Outpost31::Core']]],
   ['outpost31_3a_3acore_3a_3aconfiguration_8',['Configuration',['../namespace_outpost31_1_1_core_1_1_configuration.html',1,'Outpost31::Core']]],

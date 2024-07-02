@@ -1,9 +1,9 @@
 <map id="Outpost31.Core.Session.TingenSession.WriteSessionDetails" name="Outpost31.Core.Session.TingenSession.WriteSessionDetails">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,211,48"/>
-<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_session_1_1_catalog.html#a92d2976185a1b892644decb96fbf4ea9" title="Soon." alt="" coords="259,5,474,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,24,243,24,243,29,211,29"/>
-<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_logger_1_1_log_event.html#a7477552f340d46775d869b63e40e8e65" title="Log a trace event." alt="" coords="522,5,702,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="474,24,506,24,506,29,474,29"/>
-<area shape="rect" id="Node000004" href="$class_outpost31_1_1_core_1_1_logger_1_1_trace_log.html#a1337fb24049079842cd6a4aab40f6c27" title="Soon." alt="" coords="750,5,942,48"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="703,24,735,24,735,29,703,29"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,212,46"/>
+<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_session_1_1_catalog.html#a92d2976185a1b892644decb96fbf4ea9" title="Soon." alt="" coords="260,5,475,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,23,244,23,244,28,212,28"/>
+<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_logger_1_1_log_event.html#a7477552f340d46775d869b63e40e8e65" title="Log a trace event." alt="" coords="523,5,703,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="475,23,507,23,507,28,475,28"/>
+<area shape="rect" id="Node000004" href="$class_outpost31_1_1_core_1_1_logger_1_1_trace_log.html#a1337fb24049079842cd6a4aab40f6c27" title="Soon." alt="" coords="751,5,944,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="703,23,736,23,736,28,703,28"/>
 </map>

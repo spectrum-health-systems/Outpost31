@@ -1,7 +1,7 @@
 <map id="Outpost31.Module.OpenIncident.ModuleOpenIncident.GetAuthorInformation" name="Outpost31.Module.OpenIncident.ModuleOpenIncident.GetAuthorInformation">
-<area shape="rect" id="Node000001" title=" " alt="" coords="266,39,531,81"/>
-<area shape="rect" id="Node000002" href="$class_outpost31_1_1_module_1_1_open_incident_1_1_verify.html#ad224d08f1ab18c157715a564f91f521d" title=" " alt="" coords="6,5,217,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,45,217,42,218,36,251,40"/>
-<area shape="rect" id="Node000003" href="$class_outpost31_1_1_module_1_1_open_incident_1_1_verify.html#ae6a10b8c2ecca1d1b642eb61978a3695" title="Verify the Avatar user is the same as the original author." alt="" coords="5,72,218,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="250,80,218,84,218,78,250,75"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="268,39,536,79"/>
+<area shape="rect" id="Node000002" href="$class_outpost31_1_1_module_1_1_open_incident_1_1_verify.html#ad224d08f1ab18c157715a564f91f521d" title=" " alt="" coords="6,5,219,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,44,219,41,220,35,252,39"/>
+<area shape="rect" id="Node000003" href="$class_outpost31_1_1_module_1_1_open_incident_1_1_verify.html#ae6a10b8c2ecca1d1b642eb61978a3695" title="Verify the Avatar user is the same as the original author." alt="" coords="5,71,220,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,78,220,82,220,76,252,73"/>
 </map>

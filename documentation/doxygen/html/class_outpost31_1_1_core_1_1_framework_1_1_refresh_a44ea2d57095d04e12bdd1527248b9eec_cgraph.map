@@ -1,7 +1,0 @@
-<map id="Outpost31.Core.Framework.Refresh.RefreshOnUnknown" name="Outpost31.Core.Framework.Refresh.RefreshOnUnknown">
-<area shape="rect" id="Node000001" title="Refresh the Tingen directory structure when Tingen is in an unknown state." alt="" coords="5,5,190,48"/>
-<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_framework_1_1_maintenance.html#ab1f72498a69bbdc3fefff990be01bacb" title="Verify the Tingen framework." alt="" coords="238,5,434,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,24,222,24,222,29,190,29"/>
-<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_framework_1_1_maintenance.html#afdd06b6d7b7c3fbb8624bddfd5f7162e" title="Verify a list of directories exist, and create them if they do not." alt="" coords="482,5,676,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="434,24,466,24,466,29,434,29"/>
-</map>

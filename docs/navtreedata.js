@@ -25,9 +25,9 @@
 var NAVTREE =
 [
   [ "Outpost31", "index.html", [
-    [ "README", "md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e.html", [
-      [ "About Outpost31", "md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e.html#autotoc_md0", null ],
-      [ "Repository branches", "md__c_1_2_users_2cbanw_2_git_hub_2_spectrum_01_health_01_systems_2_outpost31_2src_2_r_e_a_d_m_e.html#autotoc_md1", null ]
+    [ "README", "md__c_1_2_i_t_2_git_hub_2_s_h_s_2_public_01repositories_2_outpost31_2src_2_r_e_a_d_m_e.html", [
+      [ "About Outpost31", "md__c_1_2_i_t_2_git_hub_2_s_h_s_2_public_01repositories_2_outpost31_2src_2_r_e_a_d_m_e.html#autotoc_md0", null ],
+      [ "Repository branches", "md__c_1_2_i_t_2_git_hub_2_s_h_s_2_public_01repositories_2_outpost31_2src_2_r_e_a_d_m_e.html#autotoc_md1", null ]
     ] ],
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ]
