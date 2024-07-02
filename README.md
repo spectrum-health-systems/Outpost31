@@ -3,6 +3,8 @@
 <div align="center">
 
   ![logo](./.github/images/logos/Outpost31_README.png)
+  
+  ![BranchWarning](https://img.shields.io/badge/Release-24.7-darkgreen?style=for-the-badge)
 
 </div>
 
@@ -10,4 +12,4 @@
 
 Outpost31 contains the core and module functionality for the Tingen web service.
 
-This page is a placeholder, and will be updated with the release of Tingen 24.6 (late June, 2024).
+[API documentation](https://spectrum-health-systems.github.io/Outpost31/)
