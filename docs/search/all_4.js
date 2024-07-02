@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['date_0',['Date',['../class_outpost31_1_1_core_1_1_session_1_1_tingen_session.html#a767af7d923f9ffd13f833834a6d3119b',1,'Outpost31::Core::Session::TingenSession']]],
-  ['debugging_1',['Debugging',['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths.html#ad64158dc9e9599749a6e456a8e8ce569',1,'Outpost31::Core::Framework::Catalog::SystemCodePaths']]],
-  ['developmentcleanup_2',['DevelopmentCleanup',['../class_outpost31_1_1_core_1_1_logger_1_1_primeval_log.html#add63a98e1ca24815bff62279fb1bd01e',1,'Outpost31::Core::Logger::PrimevalLog']]],
-  ['documentation_3',['Documentation',['../md__c_1_2_i_t_2_git_hub_2_s_h_s_2_public_01repositories_2_outpost31_2src_2packages_2_microsoft_8390e865fd3bf78fbdc6835d65191b59c.html#autotoc_md4',1,'Additional Documentation'],['../md__c_1_2_i_t_2_git_hub_2_s_h_s_2_public_01repositories_2_outpost31_2src_2packages_2_system_8_tef850b7f8883fccf3d14a727013c9eccf.html#autotoc_md10',1,'Additional Documentation']]],
-  ['dufile_4',['DuFile',['../class_outpost31_1_1_core_1_1_utilities_1_1_du_file.html',1,'Outpost31::Core::Utilities']]],
-  ['dufile_2ecs_5',['DuFile.cs',['../_du_file_8cs.html',1,'']]],
-  ['dujson_6',['DuJson',['../class_outpost31_1_1_core_1_1_utilities_1_1_du_json.html',1,'Outpost31::Core::Utilities']]],
-  ['dujson_2ecs_7',['DuJson.cs',['../_du_json_8cs.html',1,'']]]
+  ['errors_0',['Errors',['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths.html#a8ff3061818a6201f9abce867d9018f99',1,'Outpost31.Core.Framework.Catalog.PublicPaths.Errors'],['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths.html#a966899fddb6f4f424082e41c8c453b58',1,'Outpost31.Core.Framework.Catalog.RemotePaths.Errors'],['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths.html#abd7d1c2d1df8d580589f5af732ec1346',1,'Outpost31.Core.Framework.Catalog.SystemCodePaths.Errors']]],
+  ['exportroot_1',['ExportRoot',['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths.html#a11aed10d083d78d8ddf78c43c441f197',1,'Outpost31::Core::Framework::Catalog::SystemCodePaths']]],
+  ['exports_2',['Exports',['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_public_paths.html#a4e1c3ce282f7493d4f73fb5aecd530db',1,'Outpost31.Core.Framework.Catalog.PublicPaths.Exports'],['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_remote_paths.html#a6670f15ecca065ed6d97b0a0bc38b3ad',1,'Outpost31.Core.Framework.Catalog.RemotePaths.Exports']]],
+  ['exporttolocalfile_3c_20jsonobject_20_3e_3',['ExportToLocalFile&lt; JsonObject &gt;',['../class_outpost31_1_1_core_1_1_utilities_1_1_du_json.html#a7adc2abeb7b9ffcdfbf4ab8e70905e65',1,'Outpost31::Core::Utilities::DuJson']]],
+  ['extensions_4',['Extensions',['../class_outpost31_1_1_core_1_1_framework_1_1_catalog_1_1_system_code_paths.html#a661226f9ec3dd9a694f631277a7d9a77',1,'Outpost31::Core::Framework::Catalog::SystemCodePaths']]]
 ];

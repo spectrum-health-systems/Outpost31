@@ -1,45 +1,22 @@
 <map id="Outpost31.Core.Logger.LogEvent.Trace" name="Outpost31.Core.Logger.LogEvent.Trace">
-<area shape="rect" id="Node000001" title="Log a trace event." alt="" coords="828,453,1009,494"/>
-<area shape="rect" id="Node000002" href="$class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field.html#a0ce18754b3f9ab5de6c412cce6cf9bc7" title="Compare the values of two form field IDs to determine if they are the same." alt="" coords="568,5,755,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="913,438,904,362,883,262,866,209,843,157,814,109,779,66,753,49,756,44,782,62,819,106,848,155,871,207,888,260,910,361,918,438"/>
-<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_session_1_1_catalog.html#af2e7323ba98c4b3a0df66fe93812ae4b" title="Soon." alt="" coords="554,171,769,211"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="905,439,888,391,862,333,826,276,804,249,779,226,759,214,762,210,782,222,807,246,830,272,867,331,893,389,910,438"/>
-<area shape="rect" id="Node000004" href="$class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status.html#a5c436fde969810e30c5f9365325a823f" title=" " alt="" coords="274,160,494,201"/>
-<area shape="poly" id="edge25_Node000001_Node000004" title=" " alt="" coords="911,438,900,375,878,297,860,258,839,221,812,188,779,161,738,140,693,129,647,124,600,125,510,140,438,162,436,157,509,135,599,120,647,119,694,123,740,136,782,157,815,184,843,218,865,256,883,296,906,374,917,437"/>
-<area shape="rect" id="Node000005" href="$class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status.html#a76fffc90df0f19c27c612d3d16a80455" title=" " alt="" coords="5,160,226,201"/>
-<area shape="poly" id="edge22_Node000001_Node000005" title=" " alt="" coords="813,471,681,456,610,441,541,422,480,398,420,371,306,309,211,250,143,203,146,199,214,245,309,305,422,366,482,393,543,416,612,436,682,450,813,466"/>
-<area shape="rect" id="Node000006" href="$class_outpost31_1_1_core_1_1_avatar_1_1_return_object.html#adf3843f480639836833b9a4177e33091" title="Format an OptionObject &#160;to be returned to Avatar." alt="" coords="563,236,759,277"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="898,441,878,405,851,365,818,325,779,292,756,280,759,275,782,287,822,322,856,362,883,403,903,438"/>
-<area shape="rect" id="Node000007" href="$class_outpost31_1_1_module_1_1_open_incident_1_1_verify.html#ad224d08f1ab18c157715a564f91f521d" title=" " alt="" coords="555,301,767,342"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="887,444,839,399,810,377,779,357,751,345,753,340,782,353,813,372,842,395,890,440"/>
-<area shape="rect" id="Node000008" href="$class_outpost31_1_1_module_1_1_open_incident_1_1_verify.html#ae6a10b8c2ecca1d1b642eb61978a3695" title="Verify the Avatar user is the same as the original author." alt="" coords="554,367,768,407"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="843,450,779,428,726,410,728,405,781,423,845,445"/>
-<area shape="rect" id="Node000009" href="$class_outpost31_1_1_core_1_1_parse_script_parameter.html#af0460c8d33e9f2489486486180a1e321" title="OLD Determines which Tingen Module will be doing the work this session." alt="" coords="292,612,476,653"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="907,509,888,548,861,593,826,634,805,652,782,667,738,684,691,693,644,696,596,693,508,677,436,656,438,651,509,672,597,688,644,691,690,688,736,679,779,662,802,648,822,631,857,589,883,546,902,507"/>
-<area shape="rect" id="Node000010" href="$class_outpost31_1_1_core_1_1_tingen_app.html#aecdc663e5b2013d5ba09ae1cb5fc2f5f" title="Start the Tingen web service." alt="" coords="24,771,207,811"/>
-<area shape="poly" id="edge20_Node000001_Node000010" title=" " alt="" coords="916,510,904,572,881,647,863,686,841,722,814,754,782,781,737,800,675,813,601,819,519,821,351,815,207,804,207,798,351,810,519,816,600,814,674,808,735,795,779,777,811,751,837,719,859,683,876,645,899,571,911,509"/>
-<area shape="rect" id="Node000011" href="$class_outpost31_1_1_core_1_1_parse_script_parameter.html#a7113f9d248da8ae751f1af88ae32447e" title=" " alt="" coords="562,481,760,522"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="813,488,761,494,761,488,813,482"/>
-<area shape="rect" id="Node000012" href="$class_outpost31_1_1_core_1_1_parse_script_parameter.html#a1f575403bc0c3c93f050c44899246a94" title=" " alt="" coords="542,547,780,587"/>
-<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="861,503,781,536,743,549,741,544,779,531,859,498"/>
-<area shape="rect" id="Node000013" href="$class_outpost31_1_1_core_1_1_parse_script_parameter.html#a60e5fffef8f78127da45dbdf6b3149c0" title=" " alt="" coords="559,612,763,653"/>
-<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="892,508,844,556,814,580,782,601,754,614,752,609,779,597,811,576,840,552,888,504"/>
-<area shape="rect" id="Node000014" href="$class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field.html#a828bb67552a8683ad009bf56a9baecb5" title="Saves the value of a field to a file." alt="" coords="568,727,755,767"/>
-<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="908,510,890,555,863,609,827,664,782,710,752,728,749,724,779,706,823,660,859,607,885,553,903,508"/>
-<area shape="rect" id="Node000015" href="$class_outpost31_1_1_core_1_1_session_1_1_catalog.html#a92d2976185a1b892644decb96fbf4ea9" title="Soon." alt="" coords="554,841,769,882"/>
-<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="916,510,904,576,880,661,863,705,841,749,814,789,782,825,755,843,752,839,779,821,810,786,836,746,858,703,875,659,899,575,911,509"/>
-<area shape="rect" id="Node000017" href="$class_outpost31_1_1_core_1_1_tingen_app.html#a1372d5df3d765c1590b850923c12a3d0" title="Handles any logic related to stopping Tingen." alt="" coords="11,864,220,889"/>
-<area shape="poly" id="edge21_Node000001_Node000017" title=" " alt="" coords="921,510,917,593,910,645,899,700,882,755,857,808,824,856,782,896,743,920,701,939,658,953,613,962,521,969,429,964,342,949,263,930,149,892,150,887,265,925,343,944,430,958,521,964,612,957,657,948,699,934,740,916,779,892,820,853,852,806,877,753,894,698,905,644,912,592,916,510"/>
-<area shape="rect" id="Node000018" href="$class_outpost31_1_1_module_1_1_admin_1_1_service_1_1_status.html#ac0199d0cf596f7053126854494310e66" title=" " alt="" coords="274,73,494,114"/>
-<area shape="poly" id="edge23_Node000001_Node000018" title=" " alt="" coords="913,438,904,369,882,282,865,237,842,194,814,156,779,124,746,104,711,89,674,79,635,73,559,70,489,75,489,70,559,64,636,67,675,74,713,84,749,99,782,120,818,152,847,192,869,235,887,280,909,368,918,438"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="538,189,494,187,495,182,538,184"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="258,183,226,183,226,178,258,178"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="336,663,153,773,150,768,333,659"/>
-<area shape="poly" id="edge11_Node000011_Node000009" title=" " alt="" coords="562,530,543,537,472,575,415,614,412,609,470,571,541,533,560,525"/>
-<area shape="poly" id="edge13_Node000012_Node000009" title=" " alt="" coords="558,594,474,614,473,609,557,589"/>
-<area shape="poly" id="edge15_Node000013_Node000009" title=" " alt="" coords="543,635,476,635,476,630,543,630"/>
-<area shape="rect" id="Node000016" href="$class_outpost31_1_1_core_1_1_session_1_1_tingen_session.html#a89840eb03b4f2dfdf210b3c8272b2dbb" title=" " alt="" coords="281,841,487,882"/>
-<area shape="poly" id="edge18_Node000015_Node000016" title=" " alt="" coords="538,864,487,864,487,859,538,859"/>
-<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="265,871,221,873,220,868,265,865"/>
-<area shape="poly" id="edge24_Node000018_Node000005" title=" " alt="" coords="304,122,182,162,180,157,303,117"/>
+<area shape="rect" id="Node000001" title="Log a trace event." alt="" coords="499,267,679,307"/>
+<area shape="rect" id="Node000002" href="$class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field.html#a0ce18754b3f9ab5de6c412cce6cf9bc7" title="Compare the values of two form field IDs to determine if they are the same." alt="" coords="250,5,437,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="574,253,555,209,529,157,493,106,449,61,430,49,432,44,453,57,497,102,533,155,560,207,579,251"/>
+<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_session_1_1_catalog.html#af2e7323ba98c4b3a0df66fe93812ae4b" title="Soon." alt="" coords="236,71,451,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="566,255,518,189,486,156,450,127,426,114,429,109,452,122,489,152,522,186,570,252"/>
+<area shape="rect" id="Node000004" href="$class_outpost31_1_1_core_1_1_avatar_1_1_return_object.html#adf3843f480639836833b9a4177e33091" title="Format an OptionObject &#160;to be returned to Avatar." alt="" coords="245,136,442,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="550,259,504,224,450,192,420,180,422,175,452,187,507,220,554,255"/>
+<area shape="rect" id="Node000005" href="$class_outpost31_1_1_module_1_1_open_incident_1_1_verify.html#ae6a10b8c2ecca1d1b642eb61978a3695" title="Verify the Avatar user is the same as the original author." alt="" coords="236,201,451,242"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="495,265,422,245,423,240,496,260"/>
+<area shape="rect" id="Node000006" href="$class_outpost31_1_1_core_1_1_parse_script_parameter.html#af0460c8d33e9f2489486486180a1e321" title="OLD Determines which Tingen Module will be doing the work this session." alt="" coords="251,267,436,307"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="484,290,436,290,436,284,484,284"/>
+<area shape="rect" id="Node000007" href="$class_outpost31_1_1_core_1_1_tingen_app.html#aecdc663e5b2013d5ba09ae1cb5fc2f5f" title="Start the Tingen web service." alt="" coords="5,296,188,337"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="498,314,451,322,383,327,313,329,188,326,188,320,313,324,382,322,451,316,497,309"/>
+<area shape="rect" id="Node000008" href="$class_outpost31_1_1_module_1_1_common_1_1_action_1_1_field.html#a828bb67552a8683ad009bf56a9baecb5" title="Saves the value of a field to a file." alt="" coords="250,381,437,422"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="542,318,452,365,408,383,406,378,450,361,540,313"/>
+<area shape="rect" id="Node000009" href="$class_outpost31_1_1_core_1_1_session_1_1_catalog.html#a92d2976185a1b892644decb96fbf4ea9" title="Soon." alt="" coords="236,447,451,487"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="567,322,519,380,487,410,452,436,428,448,426,444,450,431,484,406,515,376,563,318"/>
+<area shape="rect" id="Node000010" href="$class_outpost31_1_1_core_1_1_tingen_app.html#a1372d5df3d765c1590b850923c12a3d0" title="Handles any logic related to stopping Tingen." alt="" coords="239,512,448,537"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="578,323,559,364,532,413,496,461,453,501,430,513,427,509,449,497,493,457,527,410,554,362,573,321"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="236,302,188,308,188,303,235,297"/>
 </map>

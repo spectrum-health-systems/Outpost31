@@ -27,14 +27,14 @@ var annotated_dup =
           [ "TraceLog", "class_outpost31_1_1_core_1_1_logger_1_1_trace_log.html", "class_outpost31_1_1_core_1_1_logger_1_1_trace_log" ]
         ] ],
         [ "NtstWebService", "namespace_outpost31_1_1_core_1_1_ntst_web_service.html", [
-          [ "NtstWebServiceSecurity", "class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security.html", "class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security" ]
+          [ "NtstWebServiceSecurity", "class_outpost31_1_1_core_1_1_ntst_web_service_1_1_ntst_web_service_security.html", null ]
         ] ],
         [ "Session", "namespace_outpost31_1_1_core_1_1_session.html", [
           [ "Catalog", "class_outpost31_1_1_core_1_1_session_1_1_catalog.html", "class_outpost31_1_1_core_1_1_session_1_1_catalog" ],
           [ "TingenSession", "class_outpost31_1_1_core_1_1_session_1_1_tingen_session.html", "class_outpost31_1_1_core_1_1_session_1_1_tingen_session" ]
         ] ],
         [ "Utilities", "namespace_outpost31_1_1_core_1_1_utilities.html", [
-          [ "DuFile", "class_outpost31_1_1_core_1_1_utilities_1_1_du_file.html", "class_outpost31_1_1_core_1_1_utilities_1_1_du_file" ],
+          [ "DuFile", "class_outpost31_1_1_core_1_1_utilities_1_1_du_file.html", null ],
           [ "DuJson", "class_outpost31_1_1_core_1_1_utilities_1_1_du_json.html", "class_outpost31_1_1_core_1_1_utilities_1_1_du_json" ]
         ] ],
         [ "ParseScriptParameter", "class_outpost31_1_1_core_1_1_parse_script_parameter.html", "class_outpost31_1_1_core_1_1_parse_script_parameter" ],
@@ -43,7 +43,7 @@ var annotated_dup =
       [ "Module", "namespace_outpost31_1_1_module.html", [
         [ "Admin", "namespace_outpost31_1_1_module_1_1_admin.html", [
           [ "Export", "namespace_outpost31_1_1_module_1_1_admin_1_1_export.html", [
-            [ "OptionObject", "class_outpost31_1_1_module_1_1_admin_1_1_export_1_1_option_object.html", "class_outpost31_1_1_module_1_1_admin_1_1_export_1_1_option_object" ]
+            [ "OptionObject", "class_outpost31_1_1_module_1_1_admin_1_1_export_1_1_option_object.html", null ]
           ] ],
           [ "Framework", "namespace_outpost31_1_1_module_1_1_admin_1_1_framework.html", [
             [ "Refresh", "class_outpost31_1_1_module_1_1_admin_1_1_framework_1_1_refresh.html", null ]
