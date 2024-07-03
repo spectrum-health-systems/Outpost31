@@ -6,26 +6,7 @@ using System.IO;
 namespace Outpost31.Core.Configuration
 {
     /// <summary>The Tingen configuration settings.</summary>
-    /// <remarks>
-    ///     <para>
-    ///         <b>About this class</b><br/>
-    ///         This class initializes the Tingen configuration settings, which:
-    ///         <list type="bullet">
-    ///             <item>Are specific to Tingen core functionality (other components/modules have their own configuration files)</item>
-    ///             <item>Do not change between Tingen sessions</item>
-    ///             <item>Can be modified by the user to suit their environment</item>
-    ///             <item>Are stored in "TingenData\%SystemCode%\Config\Tingen.config"</item>
-    ///         </list>
-    ///     </para>
-    ///     <para>
-    ///         <b>More information</b><br/>
-    ///         <a href="http://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-configuration">Configuring Tingen</a>
-    ///     </para>
-    ///     <para>
-    ///         <b>Also...</b><br/>
-    ///         Please see the <a href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</a> for more information.
-    ///     </para>
-    /// </remarks>
+    /// <include file='XMLDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/Configuration/*'/>
     public class ConfigSettings
     {
         /// <summary>Determines the Tingen Mode for the session.</summary>

@@ -16,6 +16,7 @@
 
 namespace Outpost31
 {
+    /// <summary>Just a welcome message.</summary>
     internal class WelcomeToOutpost31
     {
         // Nothing is done here, it's just for documentation.

@@ -22,7 +22,7 @@ namespace Outpost31.Module.Admin.Service
         {
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 
-            UpdateMode(tnSession.TnPath.Remote.Root, tnSession.AvData.AvatarSystemCode, tnSession.TnConfig.TingenMode, tnSession.TraceInfo);
+            UpdateMode(tnSession.TnPath.Remote.Root, tnSession.AvData.SystemCode, tnSession.TnConfig.TingenMode, tnSession.TraceInfo);
 
             UpdateSettings(tnSession);
 
@@ -62,7 +62,7 @@ namespace Outpost31.Module.Admin.Service
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 
             var remoteRoot       = tnSession.TnPath.Remote.Root;
-            var settingsFileName = $"Current-Tingen-{tnSession.AvData.AvatarSystemCode}-settings.md";
+            var settingsFileName = $"Current-Tingen-{tnSession.AvData.SystemCode}-settings.md";
             var settingsFilePath = $@"{remoteRoot}\{settingsFileName}";
 
             if (File.Exists($@"{settingsFilePath}"))

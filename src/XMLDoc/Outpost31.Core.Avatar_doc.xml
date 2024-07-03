@@ -1,0 +1,115 @@
+﻿<Doc>
+    <Sec name="avatardata">
+        <AvatarData>
+            <remarks>
+                <para>
+                    All of the imortant data sent from Avatar is stored here, and should only contain the following Avatar-specific data:<br/>
+                    <list type="bullet">
+                        <item>The <paramref name="AvatarSystemCode"/></item>
+                        <item>The <paramref name="SentScriptParameter"/></item>
+                        <item>The <paramref name="SentOptionObject"/> </item>
+                        <item>The <paramref name="WorkOptionObject"/></item>
+                        <item>The <paramref name="ReturnOptionObject"/></item>
+                    </list>
+                    <br/>
+                    When Tingen starts, this object is created and added to the session object.
+                    <br/>
+                    Please see the <see href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</see> for more information.
+                </para>
+            </remarks>
+        </AvatarData>
+        <SystemCode>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-system-codes">System Codes</seealso>
+        </SystemCode>
+        <ScriptParameter>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-script-parameter">Script Parameter</seealso>
+        </ScriptParameter>
+        <SentOptionObject>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</seealso>
+        </SentOptionObject>
+        <WorkOptionObject>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</seealso>
+        </WorkOptionObject>
+        <ReturnOptionObject>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</seealso>
+        </ReturnOptionObject>
+        <BuildObject>
+                <remarks>
+                    <para>
+                        The <paramref name="sentScriptParameter"/> is converted to lowercase so it is easier to compare against.<br/>
+                        <br/>
+                        The <paramref name="workOptionObject"/> is cloned from the  <paramref name="sentOptionObject"/> so it can be modified without affecting the original data.<br/>
+                        <br/>
+                        The <paramref name="returnOptionObject"/> is initally set to <c>null</c>, and will be formatted/finalized prior to returning to Avatar.
+                    </para>
+            </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-script-paramater">Script Parameter</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-system-codes">System Codes</seealso>
+        </BuildObject>
+    </Sec>
+    <Sec name="returnobject">
+        <ReturnObject>
+            <remarks>
+                <para>
+                    Before returning an OptionObject to Avatar, it must be finalized.<br/>
+                    <br/>
+                    That's what this class does. It finalizes the OptionObject so it can be returned to Avatar.
+                    <br/>
+                    Please see the <a href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</a> for more information.
+                </para>
+            </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</seealso>
+        </ReturnObject>
+        <Finalize>
+            <remarks>
+                <para>
+                    Before returning an OptionObject to Avatar, it must be finalized.<br/>
+                    <br/>
+                    Finalizing an OptionObject is a two part process:
+                    <list type="number">
+                        <item>Assign an error code to the returnOptionObject</item>
+                        <item>Verify the returnOptionObject contains all required data</item>
+                    </list>
+                    And here is the list of valid error codes:
+                    <list type="table">
+                        <listheader>
+                            <term>Error code</term>
+                            <description>Description</description>
+                        </listheader>
+                        <item>
+                            <term>0</term>
+                            <description>Success - Returns the OptionObject without a message</description>
+                        </item>
+                        <item>
+                            <term>1</term>
+                            <description> Error - Stops the script from processing and displays an message with an "OK" button</description>
+                        </item>
+                        <item>
+                            <term>2</term>
+                            <description>OKCancel - Displays a message with "OK" and "Cancel" buttons.</description>
+                        </item>
+                        <item>
+                            <term>3</term>
+                            <description>Info - Displays an informational warning message with an "OK" button.</description>
+                        </item>
+                        <item>
+                            <term>4</term>
+                            <description>YesNo - Displays a message with "Yes" and "No" buttons.</description>
+                        </item>
+                        <item>
+                            <term>5</term>
+                            <description>OpenURL - Opens an URL in a browser</description>
+                        </item>
+                        <item>
+                            <term>6</term>
+                            <description>OpenForm - Presents an OK/Cancel dialog to open a form (only be used on Form Load and Field events).</description>
+                        </item>
+                    </list>
+                </para>
+            </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</seealso>
+        </Finalize>
+    </Sec>
+</Doc>
+

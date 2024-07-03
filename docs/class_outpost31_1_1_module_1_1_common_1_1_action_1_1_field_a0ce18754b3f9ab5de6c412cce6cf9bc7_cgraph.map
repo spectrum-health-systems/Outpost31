@@ -1,7 +1,0 @@
-<map id="Outpost31.Module.Common.Action.Field.CompareValue" name="Outpost31.Module.Common.Action.Field.CompareValue">
-<area shape="rect" id="Node000001" title="Compare the values of two form field IDs to determine if they are the same." alt="" coords="5,5,193,46"/>
-<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_logger_1_1_log_event.html#a7477552f340d46775d869b63e40e8e65" title="Log a trace event." alt="" coords="241,5,421,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,23,225,23,225,28,193,28"/>
-<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_logger_1_1_trace_log.html#a1337fb24049079842cd6a4aab40f6c27" title="Soon." alt="" coords="469,5,661,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="421,23,453,23,453,28,421,28"/>
-</map>

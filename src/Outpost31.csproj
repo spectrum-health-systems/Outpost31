@@ -21,7 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\.github\generatedXML\Outpost31.xml</DocumentationFile>
+    <DocumentationFile>XMLDoc\generatedXML\Outpost31.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -105,8 +105,12 @@
     <Folder Include="Module\Testing\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="XMLDoc\Outpost31.Core.Configuration_doc.xml" />
+    <Content Include="XMLDoc\Outpost31.Core.Avatar_doc.xml" />
+    <Content Include="XMLDoc\Outpost31_doc.xml" />
     <None Include="app.config" />
     <None Include="packages.config" />
+    <Content Include="XMLDoc\README.md" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
@@ -118,7 +122,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="XMLDoc\Common.xml" />
+    <Content Include="XMLDoc\generatedXML\Outpost31.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
