@@ -32,7 +32,7 @@ namespace Outpost31.Core.Avatar
         /// <summary>Builds a new AvatarData object.</summary>
         /// <param name="sentOptionObject">The OptionObject sent from Avatar.</param>
         /// <param name="sentScriptParameter">The ScriptParameter sent from Avatar.</param>
-        /// <returns>The necessary AvatarNX data.</returns>
+        /// <returns>The necessary Avatar data.</returns>
         /// <include file='XMLDoc/Outpost31.Core.Avatar_doc.xml' path='Doc/Sec[@name="avatardata"]/BuildObject/*'/>
         public static AvatarData BuildObject(OptionObject2015 sentOptionObject, string sentScriptParameter)
         {

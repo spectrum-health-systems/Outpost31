@@ -24,6 +24,7 @@
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-system-codes">System Codes</seealso>
         </SystemCode>
         <ScriptParameter>
+            <value>The Script Parameter sent from Avatar (e.g.: "Admin-Mode-Status-Update")</value>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-script-parameter">Script Parameter</seealso>
         </ScriptParameter>
         <SentOptionObject>

@@ -18,11 +18,11 @@ namespace Outpost31.Core.Configuration
         public string ModOpenIncidentMode { get; set; }
 
         /// <summary>Determines if the Netmart web services functionality is enabled.</summary>
-        /// <include file='XMLDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/NtstWebServiceMode/*'/>
+        /// <include file='XMLDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/NtstWebServicesMode/*'/>
         public string NtstWebServicesMode { get; set; }
 
-        /// <summary>Determines the session <a href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#trace-logs">Trace Log level</a>.</summary>
-        /// <value>0 (default)</value>
+        /// <summary>Determines the session Trace Log level.</summary>
+        /// <include file='XMLDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/TraceLevel/*'/> 
         public int TraceLevel { get; set; }
 
         /// <summary>Determines the <a href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#trace-logs">Trace Log delay</a>.</summary>
@@ -48,7 +48,7 @@ namespace Outpost31.Core.Configuration
             {
                 TingenMode          = "enabled",
                 ModOpenIncidentMode = "enabled",
-                NtstWebServicesMode     = "disabled",
+                NtstWebServicesMode = "disabled",
                 TraceLevel          = 3,
                 TraceDelay          = 10
             };
