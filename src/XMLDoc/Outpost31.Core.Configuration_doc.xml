@@ -1,6 +1,6 @@
 ﻿<Doc>
     <Sec name="configuration">
-        <Configuration>
+        <ConfigSettings>
             <remarks>
                 <para>
                     This class initializes the Tingen configuration settings, which:
@@ -15,6 +15,63 @@
                 </para>
             </remarks>
             <seealso href="http://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-configuration">Configuring Tingen</seealso>
-        </Configuration>
+        </ConfigSettings>
+        <TingenMode>
+            <remarks>
+                <para>
+                    These are the valid Tingen modes:
+                    <list type="table">
+                        <listheader>
+                            <term>Mode</term>
+                            <description>Description</description>
+                        </listheader>
+                        <item>
+                            <term>Enabled</term>
+                            <description>The Tingen web service is enabled (default).</description>
+                        </item>
+                        <item>
+                            <term>Disabled</term>
+                            <description>The Tingen web service is disabled</description>
+                        </item>
+                    </list>
+                    When <b>enabled</b>, the Tingen web service will do work and (potentially) return a <i>modified</i> OptionObject.<br/>
+                    When <b>disabled</b>,the Tingen web service will <i>not</i> do work and will return an <i>unmodified</i> OptionObject.
+                </para>
+            </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-modes">Tingen modes</seealso>
+        </TingenMode>
+        <ModOpenIncidentMode>
+            <remarks>
+                <para>
+                    <list type="table">
+                        <listheader>
+                            <term>Mode</term>
+                            <description>Description</description>
+                        </listheader>
+                        <item>
+                            <term>Enabled</term>
+                            <description>The Open Incident Module is enabled (default).</description>
+                        </item>
+                        <item>
+                            <term>Disabled</term>
+                            <description>The Open Incident Module is disabled</description>
+                        </item>
+                    </list>
+                    When <b>enabled</b>, the Open Incident Module will do work and (potentially) return a <i>modified</i> OptionObject.<br/>
+                    When <b>disabled</b>,the Open Incident Module will <i>not</i> do work and will return an <i>unmodified</i> OptionObject.<br/>
+                </para>
+            </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#open-incident-module">Open Incident Module</seealso>
+        </ModOpenIncidentMode>
+        <NtstWebServicesMode>
+            <remarks>
+                <para>
+                    Eventually Tingen may use Netsmart web services. 
+                    This functionality is not implemented yet.
+                </para>
+            </remarks>
+            
+        </NtstWebServicesMode>
+        
     </Sec>
 </Doc>

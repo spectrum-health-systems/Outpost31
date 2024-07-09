@@ -14,11 +14,13 @@
                     <br/>
                     When Tingen starts, this object is created and added to the session object.
                     <br/>
+                    <br/>
                     Please see the <see href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</see> for more information.
                 </para>
             </remarks>
         </AvatarData>
         <SystemCode>
+            <value>An Avatar System Code (e.g.: "LIVE", "UAT", "SBOX")</value>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-system-codes">System Codes</seealso>
         </SystemCode>
         <ScriptParameter>
@@ -38,7 +40,7 @@
                     <para>
                         The <paramref name="sentScriptParameter"/> is converted to lowercase so it is easier to compare against.<br/>
                         <br/>
-                        The <paramref name="workOptionObject"/> is cloned from the  <paramref name="sentOptionObject"/> so it can be modified without affecting the original data.<br/>
+                        The <paramref name="workOptionObject"/> is cloned from the <paramref name="sentOptionObject"/> so it can be modified without affecting the original data.<br/>
                         <br/>
                         The <paramref name="returnOptionObject"/> is initally set to <c>null</c>, and will be formatted/finalized prior to returning to Avatar.
                     </para>
@@ -55,6 +57,7 @@
                     Before returning an OptionObject to Avatar, it must be finalized.<br/>
                     <br/>
                     That's what this class does. It finalizes the OptionObject so it can be returned to Avatar.
+                    <br/>
                     <br/>
                     Please see the <a href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</a> for more information.
                 </para>
@@ -109,6 +112,7 @@
                 </para>
             </remarks>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#optionobject-error-codes">OptionObject error codes</seealso>
         </Finalize>
     </Sec>
 </Doc>
