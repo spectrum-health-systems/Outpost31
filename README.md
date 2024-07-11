@@ -12,7 +12,7 @@
 > You're probably looking for the [Tingen](https://github.com/spectrum-health-systems/Tingen) repository, which ties everything together nicely.
 
 # About Outpost 31
-=
+
 Outpost31 contains the core and module functionality for the [Tingen](https://github.com/spectrum-health-systems/Tingen) web service.
 
 ## About this repository
@@ -38,3 +38,4 @@ There are three type of branches in this repository:
   The majority of Outpost31 development is done in this branch.
 
 * Outpost31 development snapshots.
+* 
