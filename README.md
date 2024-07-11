@@ -4,7 +4,7 @@
 
   ![logo](./.github/images/logos/Outpost31_README.png)
   
-  ![BranchWarning](https://img.shields.io/badge/Release-24.7-darkgreen?style=for-the-badge)
+  ![BranchWarning](https://img.shields.io/badge/Development_Release-24.7-red?style=for-the-badge)
 
 </div>
  
@@ -17,7 +17,7 @@ Outpost31 contains the core and module functionality for the [Tingen](https://gi
 
 ## About this repository
 
-This repository is for the *development* version of Outpost31.
+This repository is used for Outpost31 ***active development***.
 
 Since Outpost 31 technically doesn't do anything on it's own, there isn't a "stable" release aside from what is included in the stable release of Tingen.
 
@@ -28,7 +28,7 @@ This repository is public because I think it's important to make the source code
 There are three type of branches in this repository:
 
 * [main](https://github.com/spectrum-health-systems/Outpost31)  
-  This is about as "stable" as Outpost31 is going to get, and is the version that is included in the same version number of Tingen.
+  This is about as "stable" as Outpost31 is going to get, and is the version that is included in the same version number of Tingen. Even the `main` branch of Outpost31 is considered a development version, so it may contain broken/incomplete functionality!
 
   For example, ***Release 24.7*** *of Tingen* includes ***Release 24.7*** **of Outpost31**
 
@@ -37,4 +37,5 @@ There are three type of branches in this repository:
 * [development](https://github.com/spectrum-health-systems/Outpost31/tree/development)  
   The majority of Outpost31 development is done in this branch.
 
-* Outpost31 development snapshots
+* Outpost31 development snapshots.
+* 
