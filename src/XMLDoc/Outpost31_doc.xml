@@ -1,0 +1,11 @@
+﻿<Doc>
+    <Sec name="outpost31">
+        <AssemblyName>
+            <remarks>
+                <para>
+                    The assembly name is defined here so it can be used to write log files throughout the class.
+                </para>
+            </remarks>
+        </AssemblyName>
+    </Sec>
+</Doc>

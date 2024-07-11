@@ -1,7 +1,0 @@
-<map id="Outpost31.Core.Framework.Refresh.RefreshOnDisable" name="Outpost31.Core.Framework.Refresh.RefreshOnDisable">
-<area shape="rect" id="Node000001" title="Refresh the Tingen directory structure when Tingen is disabled." alt="" coords="5,5,190,46"/>
-<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_framework_1_1_maintenance.html#ab1f72498a69bbdc3fefff990be01bacb" title="Verify the Tingen framework." alt="" coords="238,5,435,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,23,222,23,222,28,190,28"/>
-<area shape="rect" id="Node000003" href="$class_outpost31_1_1_core_1_1_framework_1_1_maintenance.html#afdd06b6d7b7c3fbb8624bddfd5f7162e" title="Verify a list of directories exist, and create them if they do not." alt="" coords="483,5,678,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="436,23,467,23,467,28,436,28"/>
-</map>

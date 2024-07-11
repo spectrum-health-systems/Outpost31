@@ -1,5 +1,0 @@
-<map id="Outpost31.Core.ParseScriptParameter.Parse" name="Outpost31.Core.ParseScriptParameter.Parse">
-<area shape="rect" id="Node000001" title="OLD Determines which Tingen Module will be doing the work this session." alt="" coords="236,5,420,46"/>
-<area shape="rect" id="Node000002" href="$class_outpost31_1_1_core_1_1_tingen_app.html#aecdc663e5b2013d5ba09ae1cb5fc2f5f" title="Start the Tingen web service." alt="" coords="5,5,188,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,28,188,28,188,23,220,23"/>
-</map>

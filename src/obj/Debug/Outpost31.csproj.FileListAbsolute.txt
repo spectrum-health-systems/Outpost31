@@ -1,24 +1,3 @@
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.dll.config
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.dll
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.pdb
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\ScriptLinkStandard.dll
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Buffers.dll
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Memory.dll
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Text.Encodings.Web.dll
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Text.Json.dll
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.ValueTuple.dll
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Newtonsoft.Json.dll
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\ScriptLinkStandard.pdb
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Text.Json.xml
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.csproj.AssemblyReference.cache
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.csproj.CoreCompileInputs.cache
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.csproj.Up2Date
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.dll
-C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.pdb
 C:\IT\GitHub\SHS\Public repositories\Outpost31\src\bin\Debug\Outpost31.dll.config
 C:\IT\GitHub\SHS\Public repositories\Outpost31\src\bin\Debug\Outpost31.dll
 C:\IT\GitHub\SHS\Public repositories\Outpost31\src\bin\Debug\Outpost31.pdb
@@ -41,3 +20,25 @@ C:\IT\GitHub\SHS\Public repositories\Outpost31\src\obj\Debug\Outpost31.csproj.Co
 C:\IT\GitHub\SHS\Public repositories\Outpost31\src\obj\Debug\Outpost31.csproj.Up2Date
 C:\IT\GitHub\SHS\Public repositories\Outpost31\src\obj\Debug\Outpost31.dll
 C:\IT\GitHub\SHS\Public repositories\Outpost31\src\obj\Debug\Outpost31.pdb
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.dll.config
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.dll
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.pdb
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.xml
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\ScriptLinkStandard.dll
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Buffers.dll
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Memory.dll
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Text.Json.dll
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.ValueTuple.dll
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Newtonsoft.Json.dll
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\ScriptLinkStandard.pdb
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Text.Json.xml
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.csproj.AssemblyReference.cache
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.csproj.CoreCompileInputs.cache
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.csproj.Up2Date
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.dll
+C:\Users\cbanw\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.pdb

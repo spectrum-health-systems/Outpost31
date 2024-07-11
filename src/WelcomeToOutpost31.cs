@@ -1,21 +1,21 @@
-﻿// ================================================================ 24.6.0 =====
+﻿// ================================================================ 24.7.0 =====
 // Outpost31: Logic for the Tingen web service.
 // https://github.com/APrettyCoolProgram/Outpost31
 // Copyright (c) A Pretty Cool Program. All rights reserved.
 // Licensed under the Apache 2.0 license.
-// ================================================================ 240624 =====
+// ================================================================ 240709 =====
 
-// u------.----_code
-// u240624.0843_documentation
+// u240709.0000_documentation
 
-/* -------------------------------------
- * IMPORTANT INFORMATION ABOUT OUTPOST31
- * -------------------------------------
+/* ---------------
+ * About Outpost31
+ * ---------------
  * Outpost31 is the logic for the Tingen web service.
  */
 
 namespace Outpost31
 {
+    /// <summary>Just a welcome message.</summary>
     internal class WelcomeToOutpost31
     {
         // Nothing is done here, it's just for documentation.
@@ -26,7 +26,7 @@ namespace Outpost31
 
 Welcome to Outpost 31!
 
-This class providea important information and documentation about Tingen/Outpost 31.
+This class provides important information and documentation about Tingen/Outpost 31.
 
 -----------------------
 VALID SCRIPT PARAMETERS

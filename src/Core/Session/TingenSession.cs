@@ -124,7 +124,7 @@ namespace Outpost31.Core.Session
                 tnSession.ModOpenIncident = new ModuleOpenIncident();
             }
 
-            tnSession.NtstWebServiceSecurity =tnSession.TnConfig.NtstWebServices == "enabled"
+            tnSession.NtstWebServiceSecurity =tnSession.TnConfig.NtstWebServicesMode == "enabled"
                 ? NtstWebServiceSecurity.Load(tnSession.TnPath.SystemCode.Config, staticVar["ntstSecurityFileName"])
                 : new NtstWebServiceSecurity();
 

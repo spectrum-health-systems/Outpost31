@@ -30,7 +30,7 @@ namespace Outpost31.Core.Session
                    Environment.NewLine +
                    $"## Tingen{Environment.NewLine}" +
                    $"Mode: {tnSession.TnConfig.TingenMode}  {Environment.NewLine}" +
-                   $"System Code: {tnSession.AvData.AvatarSystemCode.ToUpper()}  {Environment.NewLine}" +
+                   $"System Code: {tnSession.AvData.SystemCode.ToUpper()}  {Environment.NewLine}" +
                    Environment.NewLine +
                    $"## Logging{Environment.NewLine}" +
                    Environment.NewLine +
@@ -132,7 +132,7 @@ namespace Outpost31.Core.Session
                    $"## Avatar details{Environment.NewLine}" +
                    Environment.NewLine +
                    $"**Script Parameter:** {tnSession.AvData.SentScriptParameter}  {Environment.NewLine}" +
-                   $"**System Code:** {tnSession.AvData.AvatarSystemCode}  {Environment.NewLine}" +
+                   $"**System Code:** {tnSession.AvData.SystemCode}  {Environment.NewLine}" +
                    Environment.NewLine +
                    $"### OptionObjects{Environment.NewLine}" +
                    Environment.NewLine +
