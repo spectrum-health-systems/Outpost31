@@ -151,7 +151,7 @@ namespace Outpost31.Core.Session
         {
             return new Dictionary<string, string>
             {
-                { "tnBuild",              "240621.0943" },
+                { "tnBuild",              "240805" },
                 //{ "avSystemCode",         "UAT" },
                 { "tnDataRoot",           @"C:\TingenData" },
                 { "tnConfigFileName",     "Tingen.config" },
@@ -168,5 +168,4 @@ DEVELOPMENT NOTES
 
 - Do we need to verify the session path?
 
-_Documentation updated ------
 */

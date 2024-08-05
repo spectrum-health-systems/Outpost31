@@ -18,14 +18,14 @@
     <Name>Documentation</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.8</FrameworkVersion>
-    <OutputPath>..\..\docs\</OutputPath>
+    <OutputPath>..\..\..\Tingen-Documentation\docs\API\Outpost31\</OutputPath>
     <HtmlHelpName>Documentation</HtmlHelpName>
     <Language>en-US</Language>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\..\src\Outpost31.csproj" xmlns="" />
     </DocumentationSources>
     <HelpFileFormat>Website</HelpFileFormat>
-    <SyntaxFilters>C#, ASP.NET</SyntaxFilters>
+    <SyntaxFilters>C#, XAML Usage, ASP.NET</SyntaxFilters>
     <PresentationStyle>Default2022</PresentationStyle>
     <CleanIntermediates>True</CleanIntermediates>
     <KeepLogFile>True</KeepLogFile>
@@ -34,7 +34,7 @@
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
     <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
     <HelpTitle>Outpost31 API documentation</HelpTitle>
-    <HelpFileVersion>1.0.0.0</HelpFileVersion>
+    <HelpFileVersion>24.8</HelpFileVersion>
     <NamingMethod>MemberName</NamingMethod>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
     <RootNamespaceContainer>False</RootNamespaceContainer>
@@ -44,7 +44,7 @@
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <VisibleItems>Internals, Privates, PrivateFields, ProtectedInternalAsProtected</VisibleItems>
     <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
-    <WorkingPath>\working\</WorkingPath>
+    <WorkingPath>W:\Caches\Sandcastle\</WorkingPath>
     <RootNamespaceTitle>
     </RootNamespaceTitle>
     <HeaderText>
