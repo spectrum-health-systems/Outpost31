@@ -84,7 +84,7 @@ namespace Outpost31.Core
             {
                 case "admin-service-update-mode":
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                    Module.Admin.Service.Status.UpdateMode(tnSession.TnPath.Remote.Root, tnSession.AvData.AvatarSystemCode, tnSession.TnConfig.TingenMode, tnSession.TraceInfo);
+                    Module.Admin.Service.Status.UpdateMode(tnSession.TnPath.Remote.Root, tnSession.AvData.SystemCode, tnSession.TnConfig.TingenMode, tnSession.TraceInfo);
                     break;
 
                 case "admin-service-update-currentsettings":

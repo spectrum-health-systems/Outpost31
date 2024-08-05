@@ -1,0 +1,109 @@
+﻿<Doc>
+    <Sec name="configuration">
+        <ConfigSettings>
+            <remarks>
+                <para>
+                    This class initializes the Tingen configuration settings, which:
+                    <list type="bullet">
+                        <item>Are specific to Tingen core functionality (other components/modules have their own configuration files)</item>
+                        <item>Do not change between Tingen sessions</item>
+                        <item>Can be modified by the user to suit their environment</item>
+                        <item>Are stored in "TingenData\%SystemCode%\Config\Tingen.config"</item>
+                    </list>
+                    <br/>
+                    Please see the <a href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</a> for more information.
+                </para>
+            </remarks>
+            <seealso href="http://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-configuration">Configuring Tingen</seealso>
+        </ConfigSettings>
+        <TingenMode>
+            <remarks>
+                <para>
+                    These are the valid Tingen modes:
+                    <list type="table">
+                        <listheader>
+                            <term>Mode</term>
+                            <description>Description</description>
+                        </listheader>
+                        <item>
+                            <term>Enabled</term>
+                            <description>The Tingen web service is enabled (default).</description>
+                        </item>
+                        <item>
+                            <term>Disabled</term>
+                            <description>The Tingen web service is disabled</description>
+                        </item>
+                    </list>
+                    When <b>enabled</b>, the Tingen web service will do work and (potentially) return a <i>modified</i> OptionObject.<br/>
+                    When <b>disabled</b>,the Tingen web service will <i>not</i> do work and will return an <i>unmodified</i> OptionObject.
+                </para>
+            </remarks>
+            <value>Either "enabled" or "disabled"</value>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-modes">Tingen modes</seealso>
+        </TingenMode>
+        <ModOpenIncidentMode>
+            <remarks>
+                <para>
+                    <list type="table">
+                        <listheader>
+                            <term>Mode</term>
+                            <description>Description</description>
+                        </listheader>
+                        <item>
+                            <term>Enabled</term>
+                            <description>The Open Incident Module is enabled (default).</description>
+                        </item>
+                        <item>
+                            <term>Disabled</term>
+                            <description>The Open Incident Module is disabled</description>
+                        </item>
+                    </list>
+                    When <b>enabled</b>, the Open Incident Module will do work and (potentially) return a <i>modified</i> OptionObject.<br/>
+                    When <b>disabled</b>,the Open Incident Module will <i>not</i> do work and will return an <i>unmodified</i> OptionObject.<br/>
+                </para>
+            </remarks>
+            <value>Either "enabled" or "disabled"</value>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#open-incident-module">Open Incident Module</seealso>
+        </ModOpenIncidentMode>
+        <NtstWebServicesMode>
+            <remarks>
+                <para>
+                    Eventually Tingen may use Netsmart web services.<br/>
+                    This functionality is not implemented yet.
+                </para>
+            </remarks>
+            <value>Either "enabled" or "disabled"</value>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#netsmart-web-services">Netsmart web services</seealso>
+        </NtstWebServicesMode>
+        <TraceLevel>
+            <remarks>
+                <para>
+                    The trace level determines the amount of information that is logged.
+                    <list type="table">
+                        <listheader>
+                            <term>Level</term>
+                            <description>Type of log written</description>
+                        </listheader>
+                        <item>
+                            <term>0</term>
+                            <description>Trace logs are disabled.</description>
+                        </item>
+                        <item>
+                            <term>1</term>
+                            <description>Method trace logs are created.</description>
+                        </item>
+                        <item>
+                            <term>2...9</term>
+                            <description>Statement/loop trace logs are written.</description>
+                        </item>
+                    </list>
+                    Trace log levels are cumulative, meaning that a level 3 trace log will also write level 2 and level 1 trace logs.<br/>
+                    <br/>
+                    Trace logs are fairly complex, so please see the <a href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#logging">logging documentation</a> for more information.
+                </para>
+            </remarks>
+            <value>An integer between 0 and 9 (default = 0)</value>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#trace-logs">Trace logs</seealso>
+        </TraceLevel>
+    </Sec>
+</Doc>

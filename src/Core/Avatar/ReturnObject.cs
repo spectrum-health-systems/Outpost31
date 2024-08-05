@@ -1,5 +1,5 @@
-﻿// u240624.0843_code
-// u240624.0843_documentation
+﻿// u240709.0000_code
+// u240709.0000_documentation
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -7,71 +7,23 @@ using Outpost31.Core.Session;
 
 namespace Outpost31.Core.Avatar
 {
-    /// <summary>Logic specific to the <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">returnOptionObject</see>.</summary>
-    /// <remarks>
-    ///  <para>
-    ///  </para>
-    /// </remarks>
+    /// <summary>Finalizes an OptionObject so it can be returned to AvatarNX.</summary>
+    /// <include file='XMLDoc/Outpost31.Core.Avatar_doc.xml' path='Doc/Sec[@name="returnobject"]/ReturnObject/*'/>
     public static class ReturnObject
     {
-        /// <summary>Assembly name for log files.</summary>
-        /// <remarks>
-        ///   <para>
-        ///    - Define the assembly name here so it can be used to write log files throughout the class.
-        ///   </para>
-        /// </remarks>
+        /// <summary>Assembly name for logging purposes.</summary>
+        /// <include file='XMLDoc/Outpost31_doc.xml' path='Doc/Sec[@name="outpost31"]/AssemblyName/*'/>
         public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
-        /// <summary>Format an <paramref name="OptionObject"/> to be returned to Avatar.</summary>
+        /// <summary>Finalize an OptionObject so it can be returned to Avatar.</summary>
         /// <param name="tnSession">The Tingen session object.</param>
-        /// <remarks>
-        ///  <para>
-        ///   Part of the finalization process is assigning a valid error code to the returnOptionObject:
-        ///   <list type="table">
-        ///    <item>
-        ///     <term>0</term>
-        ///     <description>Success - Returns the OptionObject without a message</description>
-        ///    </item>
-        ///    <item>
-        ///     <term>1</term>
-        ///     <description> Error - Stops the script from processing and displays an message with an "OK" button</description>
-        ///    </item>
-        ///    <item>
-        ///     <term>2</term>
-        ///     <description>OKCancel - Displays a message with "OK" and "Cancel" buttons.</description>
-        ///    </item>
-        ///    <item>
-        ///     <term>3</term>
-        ///     <description>Info - Displays an informational warning message with an "OK" button.</description>
-        ///    </item>
-        ///    <item>
-        ///     <term>4</term>
-        ///     <description>YesNo - Displays a message with "Yes" and "No" buttons.</description>
-        ///    </item>
-        ///    <item>
-        ///     <term>5</term>
-        ///     <description>OpenURL - Opens an URL in a browser</description>
-        ///    </item>
-        ///    <item>
-        ///     <term>6</term>
-        ///     <description>OpenForm - Presents an OK/Cancel dialog to open a form (only be used on Form Load and Field events).</description>
-        ///    </item>
-        ///   </list>
-        ///  </para>
-        ///  <para>
-        ///   - <i>The returnOptionObject must be propery formatted when returned to Avatar</i>.<br/>
-        ///   - More information about OptionObjects <a href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">here</a>.
-        ///  
-        ///  </para>
-        /// </remarks>
-        ///  <example>
-        ///   To return a formatted returnOptionObject:<br/>
-        ///   <code>
-        ///    Core.Avatar.FormatReturnObject.AsErrorCode(tnSession, errorCode, errorMessage);
-        ///   </code>
-        ///  </example>
+        /// <param name="errorCode">The OptionObject error code.</param>
+        /// <param name="errorMessage">The OptionObject error message.</param>
+        /// <include file='XMLDoc/Outpost31.Core.Avatar_doc.xml' path='Doc/Sec[@name="returnobject"]/Finalize/*'/>
         public static void Finalize(TingenSession tnSession, string errorCode, string errorMessage = "")
         {
+            // TODO: split this into two methods: AssignErrorCode() and Finalize()
+
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 
             tnSession.AvData.ReturnOptionObject = tnSession.AvData.WorkOptionObject.Clone();
