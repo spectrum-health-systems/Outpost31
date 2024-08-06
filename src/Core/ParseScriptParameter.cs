@@ -1,4 +1,5 @@
-﻿// u240620.1356
+﻿// u240806.1224_code
+// u240806.1224_documentation
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -6,36 +7,22 @@ using Outpost31.Core.Session;
 
 namespace Outpost31.Core
 {
-    /// <summary>Soon.</summary>
+    /// <summary>Parse the Script Parameter passed from Avatar.</summary>
+    /// <include file='XMLDoc/Outpost31_doc.xml' path='Doc/Sec[@name="ParseScriptParameter}"]/ParseScriptParameter/*'/>
     public static class ParseScriptParameter
     {
-        /// <summary>Executing assembly name for log files.</summary>
-        /// <remarks>
-        ///   <para>
-        ///    - Executing assembly is defined here so it can be used when creating log files.
-        ///   </para>
-        /// </remarks>
+        /// <summary>Assembly name for logging purposes.</summary>
+        /// <remarks> The assembly name is defined here so it can be used to write log files throughout the class.</remarks>
         public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
-        /// <summary>OLD Determines which Tingen <i>Module</i> will be doing the work this session.</summary>
-        /// <param name="tnSession">The Tingen session object.</param>
-        /// <remarks>
-        ///  <para> When a new Tingen Module is added, this method needs to be updated.
-        ///   <example>
-        ///    To add a new Tingen Module named "NewModule", the following code <c>else if</c> needs be added
-        ///     <code>
-        ///      else if (tnSession.AvComponents.ScriptModule == "newmodule")
-        ///      {
-        ///          Outpost31.Module.NewModule.ParseScriptCommand.ParseCommand(tnSession);
-        ///      }
-        ///     </code>
-        ///    </example>
-        ///   </para>
-        /// </remarks>
-        public static void Parse(TingenSession tnSession)
+        /// <summary>Parses the original Script Parameter sent from Avatar.</summary>
+        /// <param name="tnSession">The TingenSession object for this session.</param>
+        /// <include file='XMLDoc/Outpost31.Core_doc.xml' path='Doc/Sec[@name="ParseScriptParameter}"]/ParseSentParameter/*'/>
+        public static void ParseSentParameter(TingenSession tnSession)
         {
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 
+            /* [01] */
             if (tnSession.AvData.SentScriptParameter.StartsWith("admin"))
             {
                 LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
@@ -60,7 +47,7 @@ namespace Outpost31.Core
                 else
                 {
                     LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
-                    //tnSession.ReturnClonedOptionObject = true;
+                    //tnSession.ReturnClonedOptionObject = true; /* Not sure what this is 240806 */
                     Core.Avatar.ReturnObject.Finalize(tnSession, "clone", "");
                 }
             }
@@ -142,5 +129,8 @@ namespace Outpost31.Core
 DEVELOPMENT NOTES
 =================
 
-_Documentation updated ------
+[01]
+Does it make more sense to use a switch statement here? It may be easier to read and maintain.
+
+
 */

@@ -107,7 +107,7 @@
   <ItemGroup>
     <Content Include="XMLDoc\Outpost31.Core.Configuration_doc.xml" />
     <Content Include="XMLDoc\Outpost31.Core.Avatar_doc.xml" />
-    <Content Include="XMLDoc\Outpost31_doc.xml" />
+    <Content Include="XMLDoc\Outpost31.Core_doc.xml" />
     <None Include="app.config" />
     <None Include="packages.config" />
     <Content Include="XMLDoc\README.md" />
