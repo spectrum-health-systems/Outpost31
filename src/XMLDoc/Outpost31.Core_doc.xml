@@ -1,9 +1,21 @@
-﻿<Doc>
-    <Sec name="TingenApp">
+﻿<!--
+    u240817.1021_documentation
+-->
+
+<Outpost31>
+
+    <!--
+        TingenApp.cs
+    -->
+    <Cs name="TingenApp">
         <TingenApp>
             <remarks>
                 <para>
-                    Please see the <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">Tingen documentation</see> for more information.
+                    The TingenApp class takes care of the Tingen web service as a whole. It is responsible for:
+                    <list type="bullet">
+                        <item>Starting the Tingen web service</item>
+                        <item>Stopping the Tingen web service</item>
+                    </list>
                 </para>
             </remarks>
         </TingenApp>
@@ -31,19 +43,34 @@
                 </para>
             </remarks>
         </StartApp>
-    </Sec>
-    <Sec name="ParseScriptParameter">
-        <ParseScriptParameter>
+    </Cs>
+    <!--
+        ScriptParameter.cs
+    -->
+    <Sec name="ScriptParameter">
+        <ParseSent>
             <remarks>
                 <para>
-                    Please see the <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">Tingen documentation</see> for more information.
+                    The ScriptParameter class is used to store the parameters that are passed to the Tingen web service.
                 </para>
             </remarks>
-        </ParseScriptParameter>
+        </ParseSent>
+        <ParseAdminModule>
+            <remarks>
+                <para>
+                    The ScriptParameter class is used to store the parameters that are passed to the Tingen web service.
+                </para>
+            </remarks>
+        </ParseAdminModule>
     </Sec>
-</Doc>
+</Outpost31>
 
 <!--
+
+
+
+
+
 Determines which Tingen <i>Module</i> will be doing the work this session.
 
 

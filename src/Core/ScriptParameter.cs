@@ -1,5 +1,5 @@
-﻿// u240806.1224_code
-// u240806.1224_documentation
+﻿// u240817.1048_code
+// u240817.1048_documentation
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -7,18 +7,17 @@ using Outpost31.Core.Session;
 
 namespace Outpost31.Core
 {
-    /// <summary>Parse the Script Parameter passed from Avatar.</summary>
-    /// <include file='XMLDoc/Outpost31_doc.xml' path='Doc/Sec[@name="ParseScriptParameter}"]/ParseScriptParameter/*'/>
-    public static class ParseScriptParameter
+    /// <summary>Parse the Script Parameter components passed from Avatar.</summary>
+    public static class ScriptParameter
     {
         /// <summary>Assembly name for logging purposes.</summary>
-        /// <remarks> The assembly name is defined here so it can be used to write log files throughout the class.</remarks>
+        /// <remarks>The assembly name is defined here so it can be used to write log files throughout the class.</remarks>
         public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>Parses the original Script Parameter sent from Avatar.</summary>
         /// <param name="tnSession">The TingenSession object for this session.</param>
-        /// <include file='XMLDoc/Outpost31.Core_doc.xml' path='Doc/Sec[@name="ParseScriptParameter}"]/ParseSentParameter/*'/>
-        public static void ParseSentParameter(TingenSession tnSession)
+        /// <include file='XmlDoc/Outpost31.Core_doc.xml' path='Outpost31/Cs[@name="ScriptParameter"]/ParseSent/*'/>
+        public static void ParseSent(TingenSession tnSession)
         {
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
 
@@ -63,6 +62,8 @@ namespace Outpost31.Core
             }
         }
 
+        /// <summary>test</summary>
+        /// <param name="tnSession"></param>
         private static void ParseAdminModule(TingenSession tnSession)
         {
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
@@ -129,8 +130,9 @@ namespace Outpost31.Core
 DEVELOPMENT NOTES
 =================
 
-[01]
+-----------------
+[DN01] 240817
+-----------------
 Does it make more sense to use a switch statement here? It may be easier to read and maintain.
-
 
 */

@@ -1,0 +1,179 @@
+﻿<!--
+    u240817.1021_documentation
+-->
+
+<!--
+    This XML Documentation file contains common documentation that is used throughout the Tingen project.
+-->
+
+<Common>
+
+    <Term name="Term">
+        <!--
+            AssemblyName
+        -->
+        <AssemblyName>
+            <remarks>
+                <para>
+                    The assembly name is defined here so it can be used to write log files throughout the class.
+                </para>
+            </remarks>
+        </AssemblyName>
+
+        <!--
+            SystemCode
+        -->
+        <SystemCode>
+            <remarks>
+                <para>
+                    Each Avatar environment has a unique System Code:<br/>
+                    <list type="table">
+                        <listheader>
+                            <term>System Code</term>
+                            <description>Description</description>
+                        </listheader>
+                        <item>
+                            <term>LIVE</term>
+                            <description>Production environment</description>
+                        </item>
+                        <item>
+                            <term>UAT</term>
+                            <description>User Acceptance Testing environment</description>
+                        </item>
+                        <item>
+                            <term>SBOX</term>
+                            <description>Sandbox environment</description>
+                        </item>
+                    </list>
+                    <br/>
+                    Please note that while Tingen is designed to work with all of these environments, it is only tested using "LIVE" and "UAT".
+                </para>
+            </remarks>
+            <value>
+                An Avatar System Code (e.g.: "LIVE", "UAT", "SBOX")
+            </value>
+        </SystemCode>
+
+        <!--
+            SentOptionObject
+        -->
+        <SentOptionObject>
+            <remarks>
+                <para>
+                    Avatar sends two components to Tingen:
+                    <list type="table">
+                        <listheader>
+                            <term>Component</term>
+                            <description>Description</description>
+                        </listheader>
+                        <item>
+                            <term><b>OptionObject</b></term>
+                            <description>
+                                The <i>Avatar data</i> that Tingen needs to do work.
+                            </description>
+                        </item>
+                        <item>
+                            <term>Script Parameter</term>
+                            <description>
+                                The <i>commands</i> that tell Tingen what work needs to be done.
+                            </description>
+                        </item>
+                    </list>
+                </para>
+                <para>
+                    It is important to note that the SentOptionObject is <i>never modified by Tingen</i>.<br/>
+                    <br/>
+                    All work is done using the <see cref="WorkOptionObject"/>, and the <see cref="ReturnOptionObject"/> is used to send data back to Avatar.
+                </para>
+            </remarks>
+            <seealso cref="WorkOptionObject"/>
+            <seealso cref="ReturnOptionObject"/>
+        </SentOptionObject>
+
+        <!--
+            SentScriptParameter
+        -->
+        <SentScriptParameter>
+            <remarks>
+                <para>
+                    Avatar sends two components to Tingen:
+                    <list type="table">
+                        <listheader>
+                            <term>Component</term>
+                            <description>Description</description>
+                        </listheader>
+                        <item>
+                            <term>OptionObject</term>
+                            <description>The <i>Avatar data</i> that Tingen needs to do work.</description>
+                        </item>
+                        <item>
+                            <term><b>Script Parameter</b></term>
+                            <description>The <i>commands</i> that tell Tingen what work needs to be done.</description>
+                        </item>
+                    </list>
+                </para>
+                <para>
+                    <i>In general</i> the Script Parameter will contain the following components seperated by a hyphen:
+                    <list type="table">
+                        <listheader>
+                            <term>Component</term>
+                            <description>Description</description>
+                        </listheader>
+                        <item>
+                            <term>Module</term>
+                            <description>The <i>module</i> that is being called (e.g.: "Admin")</description>
+                        </item>
+                        <item>
+                            <term>Command</term>
+                            <description>The requested <i>command</i> (e.g.: "Service")</description>
+                        </item>
+                        <item>
+                            <term>Action</term>
+                            <description>The requested <i>action</i> (e.g.: "Update")</description>
+                        </item>
+                        <item>
+                            <term>Option</term>
+                            <description>The (optional) <i>option</i> (e.g.: "All")</description>
+                        </item>
+                    </list>
+                </para>
+            </remarks>
+            <example>
+                To update all service information:
+                <code>
+                    Admin-Service-Update-All
+                </code>
+                To verify that the user is authorized to submit an open incident:
+                <code>
+                    OpenIncident-Verify-AuthorIsViewing
+                </code>
+            </example>
+            <value>
+                The Script Parameter sent from Avatar (e.g.: "Admin-Service-Update-All")
+            </value>
+        </SentScriptParameter>
+
+        <!--
+            WorkOptionObject
+        -->
+        <WorkOptionObject>
+            <remarks>
+                <para>
+                    The <b>WorkOptionObject</b> is a clone of the <see cref="SentOptionObject"/> that is used to do work.<br/>
+                </para>
+            </remarks>
+        </WorkOptionObject>
+
+        <!--
+            ReturnOptionObject
+        -->
+        <ReturnOptionObject>
+            <remarks>
+                <para>
+                    The <b>WorkOptionObject</b> is a clone of the <see cref="SentOptionObject"/> that is used to return data back to Avatar.<br/>
+                </para>
+            </remarks>
+        </ReturnOptionObject>
+    </Term>
+
+</Common>

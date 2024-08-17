@@ -42,3 +42,25 @@ C:\IT\GitHub\SHS\Public repositories\Outpost31\src\obj\Debug\Outpost31.csproj.Co
 C:\IT\GitHub\SHS\Public repositories\Outpost31\src\obj\Debug\Outpost31.csproj.Up2Date
 C:\IT\GitHub\SHS\Public repositories\Outpost31\src\obj\Debug\Outpost31.dll
 C:\IT\GitHub\SHS\Public repositories\Outpost31\src\obj\Debug\Outpost31.pdb
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.dll.config
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.dll
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.pdb
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.xml
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\ScriptLinkStandard.dll
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Buffers.dll
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Memory.dll
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Numerics.Vectors.dll
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Text.Encodings.Web.dll
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Text.Json.dll
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Threading.Tasks.Extensions.dll
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.ValueTuple.dll
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Newtonsoft.Json.dll
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\ScriptLinkStandard.pdb
+V:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\System.Text.Json.xml
+V:\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.csproj.AssemblyReference.cache
+V:\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.csproj.CoreCompileInputs.cache
+V:\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.csproj.Up2Date
+V:\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.dll
+V:\GitHub\Spectrum Health Systems\Outpost31\src\obj\Debug\Outpost31.pdb

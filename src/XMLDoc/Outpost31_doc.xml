@@ -1,40 +1,5 @@
-﻿<Doc>
-    <Sec name="ParseScriptParameter">
-        <ParseScriptParameter>
-            <remarks>
-                <para>
-                    Please see the <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">Tingen documentation</see> for more information.
-                </para>
-            </remarks>
-        </ParseScriptParameter>
-    </Sec>
+﻿<!--
+    u240817.1021_documentation
+-->
 
-</Doc>
-
-<!--
-Determines which Tingen <i>Module</i> will be doing the work this session.
-
-    <Sec name="ParseScriptParameter">
-        <ParseScriptParameter>
-            <remarks>
-                <para>
-                    Please see the <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">Tingen documentation</see> for more information.
-                </para>
-            </remarks>
-        </ParseScriptParameter>
-    </Sec>
-
-        /// <remarks>
-        ///  <para> When a new Tingen Module is added, this method needs to be updated.
-        ///   <example>
-        ///    To add a new Tingen Module named "NewModule", the following code <c>else if</c> needs be added
-        ///     <code>
-        ///      else if (tnSession.AvComponents.ScriptModule == "newmodule")
-        ///      {
-        ///          Outpost31.Module.NewModule.ParseScriptCommand.ParseCommand(tnSession);
-        ///      }
-        ///     </code>
-        ///    </example>
-        ///   </para>
-        /// </remarks>
-        -->
+<!-- Nothing here yet. -->

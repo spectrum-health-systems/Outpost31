@@ -1,15 +1,31 @@
-﻿<Doc>
-    <Sec name="avatardata">
+﻿<!--
+    u240817.1021_documentation
+-->
+
+<!--
+    XML Documentation for Outpost31.Core.Avatar namespace
+-->
+
+<Outpost31>
+
+    <!--
+        Outpost31.Core.Avatar.AvatarData class
+    -->
+    <Cs name="AvatarData">
+
+        <!--
+            Class documentation
+        -->
         <AvatarData>
             <remarks>
                 <para>
                     All of the imortant data sent from Avatar is stored here, and should only contain the following Avatar-specific data:<br/>
                     <list type="bullet">
-                        <item>The <paramref name="AvatarSystemCode"/></item>
-                        <item>The <paramref name="SentScriptParameter"/></item>
-                        <item>The <paramref name="SentOptionObject"/> </item>
-                        <item>The <paramref name="WorkOptionObject"/></item>
-                        <item>The <paramref name="ReturnOptionObject"/></item>
+                        <item>The <see cref="SystemCode"/> </item>
+                        <item>The <see cref="SentScriptParameter"/></item>
+                        <item>The <see cref="SentOptionObject"/> </item>
+                        <item>The <see cref="WorkOptionObject"/></item>
+                        <item>The <see cref="ReturnOptionObject"/></item>
                     </list>
                     <br/>
                     When Tingen starts, this object is created and added to the session object.
@@ -19,63 +35,59 @@
                 </para>
             </remarks>
         </AvatarData>
-        <SystemCode>
-            <value>An Avatar System Code (e.g.: "LIVE", "UAT", "SBOX")</value>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-system-codes">System Codes</seealso>
-        </SystemCode>
-        <ScriptParameter>
-            <value>The Script Parameter sent from Avatar (e.g.: "Admin-Mode-Status-Update")</value>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-script-parameter">Script Parameter</seealso>
-        </ScriptParameter>
-        <SentOptionObject>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</seealso>
-        </SentOptionObject>
-        <WorkOptionObject>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</seealso>
-        </WorkOptionObject>
-        <ReturnOptionObject>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</seealso>
-        </ReturnOptionObject>
+
+        <!--
+            Outpost31.Core.Avatar.AvatarData.BuildObject()
+        -->
         <BuildObject>
                 <remarks>
                     <para>
-                        The <paramref name="sentScriptParameter"/> is converted to lowercase so it is easier to compare against.<br/>
+                        The <see cref="SystemCode"/> is defined at runtime in <c>Tingen.Runscript()</c>.<br/>
                         <br/>
-                        The <paramref name="workOptionObject"/> is cloned from the <paramref name="sentOptionObject"/> so it can be modified without affecting the original data.<br/>
+                        The <see cref="SentScriptParameter"/> is converted to lowercase so it is easier to compare against.<br/>
                         <br/>
-                        The <paramref name="returnOptionObject"/> is initally set to <c>null</c>, and will be formatted/finalized prior to returning to Avatar.
+                        The <see cref="WorkOptionObject"/> is cloned from the <see cref="SentOptionObject"/>, so it can be modified without affecting the original data.<br/>
+                        <br/>
+                        The <see cref="ReturnOptionObject"/> is initally set to <c>null</c>, and will be formatted/finalized prior to returning to Avatar.
                     </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</seealso>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-script-paramater">Script Parameter</seealso>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-system-codes">System Codes</seealso>
         </BuildObject>
-    </Sec>
-    <Sec name="returnobject">
+    </Cs>
+
+
+    <!--
+        Outpost31.Core.Avatar.ReturnObject class
+    -->
+    <Cs name="ReturnObject">
+
+        <!--
+            Class documentation
+        -->
         <ReturnObject>
             <remarks>
                 <para>
-                    Before returning an OptionObject to Avatar, it must be finalized.<br/>
-                    <br/>
-                    That's what this class does. It finalizes the OptionObject so it can be returned to Avatar.
-                    <br/>
+                    Before returning an OptionObject to Avatar, it must be finalized, which is what this class does: it finalizes the OptionObject so it can be returned to Avatar.<br/>
                     <br/>
                     Please see the <a href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</a> for more information.
                 </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</seealso>
         </ReturnObject>
+
+        <!--
+            Outpost31.Core.Avatar.ReturnObject.Finalize()
+        -->
         <Finalize>
             <remarks>
                 <para>
-                    Before returning an OptionObject to Avatar, it must be finalized.<br/>
+                    Before returning an OptionObject to Avatar, it must be <b>finalized</b>.<br/>
                     <br/>
-                    Finalizing an OptionObject is a two part process:
+                    Finalizing an OptionObject is a three part process:
                     <list type="number">
-                        <item>Assign an error code to the returnOptionObject</item>
+                        <item>Assign an <i>error code</i> to the returnOptionObject</item>
+                        <item>Assign an <i>error message</i> to the returnOptionObject</item>
                         <item>Verify the returnOptionObject contains all required data</item>
                     </list>
-                    And here is the list of valid error codes:
+                    Valid error codes include:
                     <list type="table">
                         <listheader>
                             <term>Error code</term>
@@ -83,38 +95,39 @@
                         </listheader>
                         <item>
                             <term>0</term>
-                            <description>Success - Returns the OptionObject without a message</description>
+                            <description><b>Success</b> - Returns the OptionObject without a message</description>
                         </item>
                         <item>
                             <term>1</term>
-                            <description> Error - Stops the script from processing and displays an message with an "OK" button</description>
+                            <description><b>Error</b> - Stops the script from processing and displays an message with an "OK" button</description>
                         </item>
                         <item>
                             <term>2</term>
-                            <description>OKCancel - Displays a message with "OK" and "Cancel" buttons.</description>
+                            <description><b>OKCancel</b> - Displays a message with "OK" and "Cancel" buttons.</description>
                         </item>
                         <item>
                             <term>3</term>
-                            <description>Info - Displays an informational warning message with an "OK" button.</description>
+                            <description><b>Info</b> - Displays an informational warning message with an "OK" button.</description>
                         </item>
                         <item>
                             <term>4</term>
-                            <description>YesNo - Displays a message with "Yes" and "No" buttons.</description>
+                            <description><b>YesNo</b> - Displays a message with "Yes" and "No" buttons.</description>
                         </item>
                         <item>
                             <term>5</term>
-                            <description>OpenURL - Opens an URL in a browser</description>
+                            <description><b>OpenURL</b> - Opens an URL in a browser</description>
                         </item>
                         <item>
                             <term>6</term>
-                            <description>OpenForm - Presents an OK/Cancel dialog to open a form (only be used on Form Load and Field events).</description>
+                            <description><b>OpenForm</b> - Presents an OK/Cancel dialog to open a form (only be used on Form Load and Field events).</description>
                         </item>
                     </list>
                 </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#avatar-optionobject">OptionObjects</seealso>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#optionobject-error-codes">OptionObject error codes</seealso>
+            <seealso href="https://github.com/rcskids/ScriptLinkStandard">ScriptLinkStandard</seealso>) :
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject-error-codes.md">OptionObject Error Codes</seealso>)
         </Finalize>
-    </Sec>
-</Doc>
+    </Cs>
+    
+</Outpost31>
 

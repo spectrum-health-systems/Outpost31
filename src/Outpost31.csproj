@@ -81,7 +81,7 @@
     <Compile Include="Core\Framework\Refresh.cs" />
     <Compile Include="Core\Logger\LoggerCatalog.cs" />
     <Compile Include="Core\Logger\TraceLog.cs" />
-    <Compile Include="Core\ParseScriptParameter.cs" />
+    <Compile Include="Core\ScriptParameter.cs" />
     <Compile Include="Core\Configuration\ConfigSettings.cs" />
     <Compile Include="Core\Logger\PrimevalLog.cs" />
     <Compile Include="Core\Framework\Maintenance.cs" />
@@ -105,12 +105,13 @@
     <Folder Include="Module\Testing\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="XMLDoc\Outpost31.Core.Configuration_doc.xml" />
-    <Content Include="XMLDoc\Outpost31.Core.Avatar_doc.xml" />
-    <Content Include="XMLDoc\Outpost31.Core_doc.xml" />
+    <Content Include="XmlDoc\Common_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Configuration_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Avatar_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core_doc.xml" />
     <None Include="app.config" />
     <None Include="packages.config" />
-    <Content Include="XMLDoc\README.md" />
+    <Content Include="XmlDoc\README.md" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
@@ -122,7 +123,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="XMLDoc\generatedXML\Outpost31.xml" />
+    <Content Include="XmlDoc\generatedXML\Outpost31.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

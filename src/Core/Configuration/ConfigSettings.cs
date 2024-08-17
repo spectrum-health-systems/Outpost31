@@ -6,23 +6,23 @@ using System.IO;
 namespace Outpost31.Core.Configuration
 {
     /// <summary>The Tingen configuration settings.</summary>
-    /// <include file='XMLDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/ConfigSettings/*'/>
+    /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/ConfigSettings/*'/>
     public class ConfigSettings
     {
         /// <summary>Determines the Tingen Mode for the session.</summary>
-        /// <include file='XMLDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/TingenMode/*'/>
+        /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/TingenMode/*'/>
         public string TingenMode { get; set; }
 
         /// <summary>Determines if the Open Incident Module functionality is enabled.</summary>
-        /// <include file='XMLDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/ModOpenIncidentMode/*'/>
+        /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/ModOpenIncidentMode/*'/>
         public string ModOpenIncidentMode { get; set; }
 
         /// <summary>Determines if the Netmart web services functionality is enabled.</summary>
-        /// <include file='XMLDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/NtstWebServicesMode/*'/>
+        /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/NtstWebServicesMode/*'/>
         public string NtstWebServicesMode { get; set; }
 
         /// <summary>Determines the session Trace Log level.</summary>
-        /// <include file='XMLDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/TraceLevel/*'/> 
+        /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/TraceLevel/*'/> 
         public int TraceLevel { get; set; }
 
         /// <summary>Determines the <a href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#trace-logs">Trace Log delay</a>.</summary>
