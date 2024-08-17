@@ -124,8 +124,7 @@
                     </list>
                 </para>
             </remarks>
-            <seealso href="https://github.com/rcskids/ScriptLinkStandard">ScriptLinkStandard</seealso>) :
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject-error-codes.md">OptionObject Error Codes</seealso>)
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">OptionObject Error Codes</seealso>
         </Finalize>
     </Cs>
     

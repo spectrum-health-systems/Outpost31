@@ -1,32 +1,32 @@
-﻿// u240709.0000_code
-// u240709.0000_documentation
+﻿// u240817.1849_code
+// u240817.1849_documentation
 
 using System.IO;
 
 namespace Outpost31.Core.Configuration
 {
     /// <summary>The Tingen configuration settings.</summary>
-    /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/ConfigSettings/*'/>
+    /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Outpost31/Cs[@name="ConfigSettings"]/ConfigSettings/*'/>
     public class ConfigSettings
     {
-        /// <summary>Determines the Tingen Mode for the session.</summary>
-        /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/TingenMode/*'/>
+        /// <summary>Determines the available Tingen web service functionality.</summary>
+        /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/Mode/*'/>
         public string TingenMode { get; set; }
 
-        /// <summary>Determines if the Open Incident Module functionality is enabled.</summary>
-        /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/ModOpenIncidentMode/*'/>
+        /// <summary>Determines the available Open Incident Module functionality.</summary>
+        /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/Mode/*'/>
         public string ModOpenIncidentMode { get; set; }
 
-        /// <summary>Determines if the Netmart web services functionality is enabled.</summary>
-        /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/NtstWebServicesMode/*'/>
+        /// <summary>Determines the available Netsmart web service functionality.</summary>
+        /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/Mode/*'/>
         public string NtstWebServicesMode { get; set; }
 
         /// <summary>Determines the session Trace Log level.</summary>
-        /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Doc/Sec[@name="configuration"]/TraceLevel/*'/> 
+        /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/TraceLevel/*'/>
         public int TraceLevel { get; set; }
 
-        /// <summary>Determines the <a href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#trace-logs">Trace Log delay</a>.</summary>
-        /// <value>10 (default)</value> 
+        /// <summary>Determines the Trace Log delay.</summary>
+        /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/TraceDelay/*'/>
         public int TraceDelay { get; set; }
 
         /// <summary>Build a default Tingen configuration object.</summary>
@@ -59,11 +59,11 @@ namespace Outpost31.Core.Configuration
         ///// <remarks>
         /////  <para>
         /////   - The configuration file path is created in <b>Tingen.asmx.cs</b><br/>
-        /////   - 
+        /////   -
         /////  </para>
         ///// </remarks>
         ///// <returns>The Tingen configuration settings.</returns>
-        ///// 
+        /////
 
         /// <summary>Load the Tingen configuration file.</summary>
         /// <param name="configPath">Path to the Tingen configuration file.</param>
@@ -123,7 +123,7 @@ namespace Outpost31.Core.Configuration
 ///  - More information about Tingen modes <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#tingen-modes">here.</see>
 ///  </para>
 /// </remarks>
-/// 
+///
 
 /// <summary>Determines if the <b>Open Incident Module</b> is enabled.</summary>
 /// <remarks>
@@ -153,7 +153,7 @@ namespace Outpost31.Core.Configuration
 ///   - This should be set to "<b>disabled</b>" until the NTST web services are implemented.
 ///  </para>
 /// </remarks>
-/// 
+///
 
 /// <summary>The trace logging level.</summary>
 /// <remarks>
@@ -174,7 +174,7 @@ namespace Outpost31.Core.Configuration
 /// <value>
 ///  0 (default)
 /// </value>
-/// 
+///
 
 
 /// <summary>The delay between trace log writes.</summary>

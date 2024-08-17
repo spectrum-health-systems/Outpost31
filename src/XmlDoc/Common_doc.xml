@@ -86,8 +86,7 @@
                     All work is done using the <see cref="WorkOptionObject"/>, and the <see cref="ReturnOptionObject"/> is used to send data back to Avatar.
                 </para>
             </remarks>
-            <seealso cref="WorkOptionObject"/>
-            <seealso cref="ReturnOptionObject"/>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">The OptionObject</seealso>
         </SentOptionObject>
 
         <!--
@@ -162,6 +161,7 @@
                     The <b>WorkOptionObject</b> is a clone of the <see cref="SentOptionObject"/> that is used to do work.<br/>
                 </para>
             </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">The OptionObject</seealso>
         </WorkOptionObject>
 
         <!--
@@ -173,7 +173,110 @@
                     The <b>WorkOptionObject</b> is a clone of the <see cref="SentOptionObject"/> that is used to return data back to Avatar.<br/>
                 </para>
             </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">The OptionObject</seealso>
         </ReturnOptionObject>
+
+        <!--
+            Mode
+        -->
+        <Mode>
+            <remarks>
+                <para>
+                    The Tingen web service, as well as its individual Modules, have various levels of functionality that are determined by their <b>Mode</b> setting.<br/>
+                    <br/>
+                    Modes are defined as:
+                    <list type="table">
+                        <listheader>
+                            <term>Mode</term>
+                            <description>Description</description>
+                        </listheader>
+                        <item>
+                            <term>Enabled</term>
+                            <description>Full functionality</description>
+                        </item>
+                        <item>
+                            <term>Disabled</term>
+                            <description>All functionality is disabled</description>
+                        </item>
+                    </list>
+                </para>
+                <para>
+                    When the Tingen web service is <b>enabled</b>, it will do work and (potentially) return a <i>modified</i> OptionObject.<br/>
+                    When the Tingen web service is <b>disabled</b>, it will <i>not</i> do work and will return an <i>unmodified</i> OptionObject.
+                </para>
+                <para>
+                    Each Tingen component may have a different Mode setting, so it is important to verify the Mode setting for each component.
+                    <br/>
+                    Valid modes include:
+                    <list type="table">
+                        <listheader>
+                            <term>Component</term>
+                            <description>Valid modes</description>
+                        </listheader>
+                        <item>
+                            <term>Tingen</term>
+                            <description><c>enabled</c>, <c>enabled</c></description>
+                        </item>
+                        <item>
+                            <term>Open Incident Module</term>
+                            <description>All functionality is disabled</description>
+                        </item>
+                        <item>
+                            <term>Netsmart web services</term>
+                            <description><i>Not implemented</i></description>
+                        </item>
+                    </list>
+                </para>
+            </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Modes.md">Tingen modes</seealso>
+        </Mode>
+
+        <!--
+            TraceLevel
+        -->
+        <TraceLevel>
+            <remarks>
+                <para>
+                    The trace level determines the amount of information that is logged.
+                    <list type="table">
+                        <listheader>
+                            <term>Level</term>
+                            <description>Type of log written</description>
+                        </listheader>
+                        <item>
+                            <term>0</term>
+                            <description>Trace logs are disabled.</description>
+                        </item>
+                        <item>
+                            <term>1</term>
+                            <description>Method trace logs are created.</description>
+                        </item>
+                        <item>
+                            <term>2...9</term>
+                            <description>Statement/loop trace logs are written.</description>
+                        </item>
+                    </list>
+                    Trace log levels are cumulative, meaning that a level 3 trace log will also write level 2 and level 1 trace logs.<br/>
+                </para>
+            </remarks>
+            <value>An integer between 0 and 9 (default = 0)</value>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Logging.md">Trace log levels</seealso>
+        </TraceLevel>
+
+        <!--
+            TraceDelay
+        -->
+        <TraceDelay>
+            <remarks>
+                <para>
+                    The trace level determines the delay, in milliseconds, between trace log writes.<br/>
+                    <br/>
+                    Since trace logs may be written <i>extremely fast</i>, the TraceDelay setting can be used to slow down the log writing process, ensuring all logs are written.
+                </para>
+            </remarks>
+            <value>10 (default)</value>
+        </TraceDelay>
+
     </Term>
 
 </Common>
