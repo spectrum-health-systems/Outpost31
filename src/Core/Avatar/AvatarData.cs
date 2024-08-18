@@ -9,15 +9,15 @@ namespace Outpost31.Core.Avatar
     /// <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31/Cs[@name="AvatarData"]/AvatarData/*'/>
     public class AvatarData
     {
-        /// <summary>The Avatar System Code that Tingen will use.</summary>
+        /// <summary>The Avatar System Code that Tingen will interface with.</summary>
         /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/SystemCode/*'/>
         public string SystemCode { get; set; }
 
-        /// <summary>The original <see cref="OptionObject"/> sent from Avatar.</summary>
+        /// <summary>The original OptionObject sent from Avatar.</summary>
         /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/SentOptionObject/*'/>
         public OptionObject2015 SentOptionObject { get; set; }
 
-        /// <summary>The original Script Parameter sent from Avatar.</summary>
+        /// <summary>The original <paramref name="ScriptParameter"/> sent from Avatar.</summary>
         /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/SentScriptParameter/*'/>
         public string SentScriptParameter { get; set; }
 

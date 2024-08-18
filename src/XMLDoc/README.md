@@ -6,5 +6,5 @@ This directory contains the following XML documentation for the Outpost31 projec
   Documentation created when the project is built, used by Sandcastle to build
   API documentation.
 
-- ***%ClassName%*****_doc.xml**  
-  External XML documentation for *%ClassName%*.
+- ***%Namespace%.%ClassName%*****_doc.xml**  
+  External XML documentation for *%Namespace%.%ClassName%*.

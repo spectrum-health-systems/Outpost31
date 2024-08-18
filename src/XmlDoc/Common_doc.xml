@@ -57,8 +57,8 @@
                     </list>
                 </para>
                 <para>
-                    When the Tingen web service is <b>enabled</b>, it will do work and (potentially) return a <i>modified</i><br/>
-                    OptionObject. When the Tingen web service is <b>disabled</b>, it will <i>not</i> do work and will<br/>
+                    When the Tingen web service is <c>enabled</c>, it will do work and (potentially) return a <i>modified</i><br/>
+                    OptionObject. When the Tingen web service is <c>disabled</c>, it will <i>not</i> do work and will<br/>
                     return an <i>unmodified</i> OptionObject.
                 </para>
                 <para>
@@ -89,7 +89,7 @@
                     </list>
                 </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Modes.md">Tingen modes</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Modes.md">TigenDocumentation: Modes</seealso>
         </Mode>
 
         <!--
@@ -111,25 +111,23 @@
         <SentOptionObject>
             <remarks>
                 <para>
-                    Avatar sends two components to Tingen:
+                    The <b><see cref="OptionObject"/></b> is a data structure that is used to send data from Avatar<br/>
+                    to Tingen, and to (potentially) return (potentially) modified data from Tingen<br/>
+                    to Avatar.
+                    <br/>
+                    When a <b>ScriptLink event</b> occurs, Avatar sends two components to Tingen:
                     <list type="table">
                         <listheader>
                             <term>Component</term>
                             <description>Description</description>
                         </listheader>
                         <item>
-                            <term>
-                                <b>OptionObject</b>
-                            </term>
-                            <description>
-                                The <i>Avatar data</i> that Tingen needs to do work.
-                            </description>
+                            <term>OptionObject</term>
+                            <description>The <i>Avatar data</i> that Tingen needs to do work.</description>
                         </item>
                         <item>
                             <term>Script Parameter</term>
-                            <description>
-                                The <i>commands</i> that tell Tingen what work needs to be done.
-                            </description>
+                            <description>The <i>commands</i> that tell Tingen what work needs to be done.</description>
                         </item>
                     </list>
                 </para>
@@ -140,7 +138,8 @@
                     the <see cref="ReturnOptionObject"/> is used to send data back to Avatar.
                 </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">The OptionObject</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/ScriptLink.md">Tingen Documentation: ScriptLink</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
         </SentOptionObject>
 
         <!--
@@ -226,7 +225,8 @@
         <SystemCode>
             <remarks>
                 <para>
-                    Each Avatar environment has a unique System Code:<br/>
+                    The Tingen works with a single Avatar environment at a time, defined by one of<br/>
+                    the following <b>System Codes</b>:
                     <list type="table">
                         <listheader>
                             <term>System Code</term>
@@ -240,18 +240,14 @@
                             <term>UAT</term>
                             <description>The <b>User Acceptance Testing</b> environment</description>
                         </item>
-                        <item>
-                            <term>SBOX</term>
-                            <description>The <b>Sandbox</b> environment</description>
-                        </item>
                     </list>
                     <br/>
-                    Please note that while Tingen is designed to work with all of these environments,<br/>
-                    it is only tested using "LIVE" and "UAT".
+                    Your organization may have additional Avatar environments, but Tingen is only<br/>
+                    designed/tested to work with the above System Codes.  
                 </para>
             </remarks>
             <value>
-                The Avatar System Code (e.g.: "LIVE", "UAT", "SBOX")
+                This should be <c>LIVE</c> for production environments, and <c>UAT</c> for testing environments.
             </value>
         </SystemCode>
 

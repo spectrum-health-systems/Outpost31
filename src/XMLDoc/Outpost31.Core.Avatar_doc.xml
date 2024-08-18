@@ -24,17 +24,8 @@
                     The <see cref="AvatarData"/> class is part of the <see cref="Session.TingenSession"/> object, and contains<br/>
                     all of the necessary Avatar-related data that Tingen needs to do its work.<br/>
                     <br/>
-                    This object contains:
-                    <list type="bullet">
-                        <item>The <see cref="SystemCode"/> </item>
-                        <item>The <see cref="SentScriptParameter"/></item>
-                        <item>The <see cref="SentOptionObject"/> </item>
-                        <item>The <see cref="WorkOptionObject"/></item>
-                        <item>The <see cref="ReturnOptionObject"/></item>
-                    </list>
-                    <br/>
-                    When Tingen starts, the <see cref="AvatarData"/> object is added to<br/>
-                    the <see cref="Session.TingenSession"/> object.
+                    When Tingen starts, the <see cref="AvatarData"/> object is built, and is then added<br/>
+                    to the <see cref="Session.TingenSession"/> object.
                 </para>
             </remarks>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen/Outpost31 Documentation</seealso>
