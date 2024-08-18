@@ -16,40 +16,41 @@
     <Cs name="AvatarData">
 
         <!--
-            Class documentation
+            Class documentation u240818
         -->
         <AvatarData>
             <remarks>
                 <para>
-                    The <see cref="AvatarData"/> class is part of the <see cref="Session.TingenSession"/> object, and contains<br/>
+                    The <see cref="AvatarData"/> class is part of the <b><see cref="Session.TingenSession"/></b> object, and contains<br/>
                     all of the necessary Avatar-related data that Tingen needs to do its work.<br/>
                     <br/>
                     When Tingen starts, the <see cref="AvatarData"/> object is built, and is then added<br/>
                     to the <see cref="Session.TingenSession"/> object.
                 </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen/Outpost31 Documentation</seealso>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Session.md">Tingen Sessions</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Session.md">Tingen Documentation: The Tingen Session</seealso>
         </AvatarData>
 
         <!--
-            Outpost31.Core.Avatar.AvatarData.BuildObject()
+            Outpost31.Core.Avatar.AvatarData.BuildObject() u240818
         -->
         <BuildObject>
                 <remarks>
                     <para>
-                        The <see cref="SystemCode"/> is defined at runtime in <c>Tingen.Runscript()</c>.<br/>
-                        <br/>
-                        The <see cref="SentScriptParameter"/> is converted to lowercase so it is easier<br/>
-                        to compare against.<br/>
-                        <br/>
-                        The <see cref="WorkOptionObject"/> is cloned from the <see cref="SentOptionObject"/>,<br/>
-                        so it can be modified without affecting the original data.<br/>
-                        <br/>
-                        The <see cref="ReturnOptionObject"/> is initally set to <c>null</c>, and will be<br/>
-                        formatted/finalized prior to returning to Avatar.
+                        A few things about this method:
+                        <list type="bullet">
+                            <item>The <see cref="SystemCode"/> is defined at runtime in <c>Tingen.Runscript()</c>.</item>
+                            <item>The <b><see cref="SentScriptParameter"/></b> is converted to lowercase so it is easier<br/>
+                            to compare against.</item>
+                            <item>The <b><see cref="WorkOptionObject"/></b> is cloned from the <see cref="SentOptionObject"/><br/>
+                            so it can be modified without affecting the original data.</item>
+                            <item>The <b><see cref="ReturnOptionObject"/></b> is initally set to <c>null</c>, and will be<br/>
+                            formatted/finalized prior to returning to Avatar.</item>
+                        </list>
                     </para>
             </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Script-Parameter.md">Tingen Documentation: The Script Parameter</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
         </BuildObject>
     </Cs>
 
@@ -60,7 +61,7 @@
     <Cs name="ReturnObject">
 
         <!--
-            Class documentation
+            Class documentation u240818
         -->
         <ReturnObject>
             <remarks>
@@ -73,7 +74,7 @@
         </ReturnObject>
 
         <!--
-            Outpost31.Core.Avatar.ReturnObject.Finalize()
+            Outpost31.Core.Avatar.ReturnObject.Finalize() u240818
         -->
         <Finalize>
             <remarks>

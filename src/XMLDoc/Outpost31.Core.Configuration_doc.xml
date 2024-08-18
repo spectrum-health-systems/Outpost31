@@ -1,10 +1,12 @@
 ﻿<!--
-    u240817.1021_documentation
+    u240818.0906_documentation
+
+    XML Documentation for the Outpost31.Core.Configuration
+
+    Classes
+        ConfigSettings.cs
 -->
 
-<!--
-    XML Documentation for Outpost31.Core.Configuration namespace
--->
 
 <Outpost31>
 
@@ -19,22 +21,135 @@
         <ConfigSettings>
             <remarks>
                 <para>
-                    This class initializes the Tingen configuration settings, which define the <i>core functionality</i> of Tingen web service.<br/>
-                    <br/>
-                    The only configuration settings that are not related to core functionality are the Module <i>mode</i> settings, which are store here
-                    While Module <i>mode</i> settings are stored in the configuration file, the full configuration settings are stored in the <c>Tingen.config</c> file.<br/>
-
+                    Tingen configuration settings are always stored in <c>TingenData\%SystemCode%\Config\Tingen.config</c> and:
                     <list type="bullet">
-                        <item>Are specific to Tingen <i>core functionality</i></item>
+                        <item>Define the <i>core functionality</i> of the Tingen web service.</item>
+                        <item>Do not contain configuration settings for<br/>
+                              Tingen <b>Modules</b> (aside from a Module's <b>Mode</b>)</item>
                         <item>Do not change between Tingen sessions</item>
-                        <item>Can be modified by the user to suit their environment</item>
-                        <item>Are stored in "TingenData\%SystemCode%\Config\Tingen.config"</item>
+                        <item>Can be modified by the end user to suit their environment</item>
+                        <item>Modifications to configuration settings will be applied when the file is saved.</item>
                     </list>
-                    <br/>
-                    Please see the <a href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</a> for more information.
+                    While a Module's Mode settings is stored in the Tingen configuration file, the rest<br/>
+                    of the Module's configuration settings are stored in that Module's configuration file.<br/>
                 </para>
             </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Modules.md">Tingen Documentation: Modules</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Modes.md">Tingen Documentation: Modes</seealso>
         </ConfigSettings>
+
+        <!--
+            TingenMode u240818
+        -->
+        <TingenMode>
+            <remarks>
+                <para>
+                    The Tingen web service has the following <b>Modes</b>:<br/>
+                    <list type="table">
+                        <listheader>
+                            <term>Mode</term>
+                            <description>Description</description>
+                        </listheader>
+                        <item>
+                            <term>enabled</term>
+                            <description>The Tingen web service is enabled, and functions normally.</description>
+                        </item>
+                        <item>
+                            <term>disabled</term>
+                            <description>The Tingen web service is disabled, and does not do any work.</description>
+                        </item>
+                    </list>
+                    Disabling the Tingen web service will disable <i>all functionality</i>, including <i>all <b>Module</b> functionality</i>.
+                </para>
+            </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Modules.md">Tingen Documentation: Modules</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Modes.md">Tingen Documentation: Modes</seealso>
+        </TingenMode>
+
+        <!--
+            ModOpenIncidentMode u240818
+        -->
+        <ModOpenIncidentMode>
+            <remarks>
+                <para>
+                    The OpenIncident <b>Module</b> has the following <b>Modes</b>:<br/>
+                    <list type="table">
+                        <listheader>
+                            <term>Mode</term>
+                            <description>Description</description>
+                        </listheader>
+                        <item>
+                            <term>enabled</term>
+                            <description>The OpenIncident Module is enabled, and functions normally.</description>
+                        </item>
+                        <item>
+                            <term>disabled</term>
+                            <description>The OpenIncident Module is disabled, and does not do any work.</description>
+                        </item>
+                    </list>
+                    Disabling the OpenIncident Module <i>will not affect</i> any other Tingen Modules, or the Tingen web service as a whole.
+                </para>
+            </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Modules.md">Tingen Documentation: Modules</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Modes.md">Tingen Documentation: Modes</seealso>
+        </ModOpenIncidentMode>
+
+        <!--
+            Outpost31.Core.Configuration.ConfigSettings.BuildDefaultObject u240818
+        -->
+        <BuildDefaultObject>
+            <remarks>
+                <para>
+                    Builds the default Tingen configuration settings, usually because a configuration file doesn't exist.<br/>
+                    <br/>
+                    Default values for the Tingen configuration settings:<br/>
+                    <list type="table">  
+                        <listheader>
+                            <term>Setting</term>
+                            <description>Value</description>
+                        </listheader>
+                        <item>
+                            <term>TingenMode</term>
+                            <description>enabled</description>
+                        </item>
+                        <item>
+                            <term>ModOpenIncidentMode</term>
+                            <description>enabled</description>
+                        </item>
+                        <item>
+                            <term>NtstWebServicesMode</term>
+                            <description>disabled</description>
+                        </item>
+                        <item>
+                            <term>TraceLevel</term>
+                            <description>1</description>
+                        </item>
+                        <item>
+                            <term>TraceDelay</term>
+                            <description>10</description>
+                        </item>
+                    </list>
+                    When a new version of Tingen is released, these need to be verified/updated.<br/>
+                    <br/>
+                </para>
+            </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Modules.md">Tingen Documentation: Modules</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Modes.md">Tingen Documentation: Modes</seealso>
+        </BuildDefaultObject>
+
+        <!--
+            Outpost31.Core.Configuration.ConfigSettings.Load() u240818
+        -->
+        <Load>
+            <remarks>
+                <para>
+                    The configuration file path is hard-coded, and set in <see cref="Session.TingenSession.Build"/> when the <b>Tingen Session</b> is initialized.<br/>
+                    <br/>
+                    If the configuration file does not exist, a configuration file with default values will be created.<br/>>
+                </para>
+            </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Session.md">Tingen Documentation: Tingen Sessions</seealso>
+        </Load>
 
     </Cs>
 

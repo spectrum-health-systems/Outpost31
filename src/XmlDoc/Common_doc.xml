@@ -20,7 +20,7 @@
     <Term name="Term">
 
         <!--
-            AssemblyName
+            AssemblyName u240818
         -->
         <AssemblyName>
             <remarks>
@@ -32,146 +32,77 @@
         </AssemblyName>
 
         <!--
-            Mode
+            Mode u240818
         -->
         <Mode>
             <remarks>
                 <para>
-                    The Tingen web service, as well as its individual Modules, have various levels of functionality that<br/>
+                    The Tingen web service, as well as its individual <b>Modules</b>, have various levels of functionality that<br/>
                     are determined by their <b>Mode</b> settings.<br/>
                     <br/>
-                    Modes are defined as:
-                    <list type="table">
-                        <listheader>
-                            <term>Mode</term>
-                            <description>Description</description>
-                        </listheader>
-                        <item>
-                            <term>Enabled</term>
-                            <description>Full functionality</description>
-                        </item>
-                        <item>
-                            <term>Disabled</term>
-                            <description>All functionality is disabled</description>
-                        </item>
-                    </list>
-                </para>
-                <para>
-                    When the Tingen web service is <c>enabled</c>, it will do work and (potentially) return a <i>modified</i><br/>
-                    OptionObject. When the Tingen web service is <c>disabled</c>, it will <i>not</i> do work and will<br/>
-                    return an <i>unmodified</i> OptionObject.
-                </para>
-                <para>
-                    Each Tingen component may have a different Mode setting, so it is important to verify the Mode setting for each component.
+                    When a component is <c>enabled</c>, it will do work and (potentially) return a <i>modified</i> OptionObject.<br/>
                     <br/>
-                    Valid modes include:
-                    <list type="table">
-                        <listheader>
-                            <term>Component</term>
-                            <description>Valid modes</description>
-                        </listheader>
-                        <item>
-                            <term>Tingen</term>
-                            <description>
-                                <c>enabled</c>, <c>enabled</c>
-                            </description>
-                        </item>
-                        <item>
-                            <term>Open Incident Module</term>
-                            <description>All functionality is disabled</description>
-                        </item>
-                        <item>
-                            <term>Netsmart web services</term>
-                            <description>
-                                <i>Not implemented</i>
-                            </description>
-                        </item>
-                    </list>
+                    When a component is <c>disabled</c>, it will <i>not</i> do work and will return an <i>unmodified</i> OptionObject.<br/>
+                    <br/>
+                    Disabling the Tingen web service will disable <i>all functionality</i>, including <i>all Module functionality</i>.<br/>
                 </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Modes.md">TigenDocumentation: Modes</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Modules.md">Tingen Documentation: Modules</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Modes.md">Tingen Documentation: Modes</seealso>
         </Mode>
 
         <!--
-            ReturnOptionObject
+            NotImplemented u240818
+        -->
+        <NotImplemented>
+            <remarks>
+                <para>
+                    This functionality is not implemented (yet).
+                </para>
+            </remarks>
+        </NotImplemented>
+        
+        <!--
+            ReturnOptionObject u240818
         -->
         <ReturnOptionObject>
             <remarks>
                 <para>
-                    The <b>WorkOptionObject</b> is a clone of the <see cref="SentOptionObject"/> that is used to return<br/>
-                    back to Avatar.
+                    When Tingen has completed its work the <see cref="ReturnOptionObject"/> is<br/>
+                    cloned from the <see cref="WorkOptionObject"/><br/>
+                    <br/>
+                    Prior to returning the <see cref="ReturnOptionObject"/> to Avatar, the object<br/>
+                    is <i>finalized</i>, meaning any missing required information is added.
                 </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">The OptionObject</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
         </ReturnOptionObject>
 
         <!--
-            SentOptionObject
+            SentOptionObject u240818
         -->
         <SentOptionObject>
             <remarks>
                 <para>
-                    The <b><see cref="OptionObject"/></b> is a data structure that is used to send data from Avatar<br/>
-                    to Tingen, and to (potentially) return (potentially) modified data from Tingen<br/>
-                    to Avatar.
+                    The <see cref="SentOptionObject"/> is the original data structure that is sent from<br/>
+                    Avatar to Tingen, and contains all of the <i>information</i> Tingen needs to do its work.<br/>
                     <br/>
-                    When a <b>ScriptLink event</b> occurs, Avatar sends two components to Tingen:
-                    <list type="table">
-                        <listheader>
-                            <term>Component</term>
-                            <description>Description</description>
-                        </listheader>
-                        <item>
-                            <term>OptionObject</term>
-                            <description>The <i>Avatar data</i> that Tingen needs to do work.</description>
-                        </item>
-                        <item>
-                            <term>Script Parameter</term>
-                            <description>The <i>commands</i> that tell Tingen what work needs to be done.</description>
-                        </item>
-                    </list>
-                </para>
-                <para>
                     It is important to note that the SentOptionObject is <i>never modified</i> by Tingen.<br/>
-                    <br/>
-                    All work is done using the <see cref="WorkOptionObject"/>, and<br/>
-                    the <see cref="ReturnOptionObject"/> is used to send data back to Avatar.
                 </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/ScriptLink.md">Tingen Documentation: ScriptLink</seealso>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
         </SentOptionObject>
 
         <!--
-            SentScriptParameter
+            SentScriptParameter u240818
         -->
         <SentScriptParameter>
             <remarks>
                 <para>
-                    Avatar sends two components to Tingen:
-                    <list type="table">
-                        <listheader>
-                            <term>Component</term>
-                            <description>Description</description>
-                        </listheader>
-                        <item>
-                            <term>OptionObject</term>
-                            <description>
-                                The <i>Avatar data</i> that Tingen needs to do work.
-                            </description>
-                        </item>
-                        <item>
-                            <term>
-                                <b>Script Parameter</b>
-                            </term>
-                            <description>
-                                The <i>commands</i> that tell Tingen what work needs to be done.
-                            </description>
-                        </item>
-                    </list>
-                </para>
-                <para>
-                    <i>In general</i> the Script Parameter will contain the following components seperated by a hyphen:
+                    The <b><paramref name="ScriptParameter"/></b> is a string that tells Tingen what work needs to be done, <br/>
+                    and how it should be done.<br/>
+                    <br/>
+                    The Script Parameter will <i>generally</i> contain the following components:
                     <list type="table">
                         <listheader>
                             <term>Component</term>
@@ -180,7 +111,7 @@
                         <item>
                             <term>Module</term>
                             <description>
-                                The <i>module</i> that is being called (e.g.: "Admin")
+                                The Tingen <i><b>Module</b></i> that will do the work (e.g.: "Admin")
                             </description>
                         </item>
                         <item>
@@ -202,31 +133,45 @@
                             </description>
                         </item>
                     </list>
+                    Some Script Parameters may not contain all of the above components, or may<br/>
+                    contain additional components that aren't listed.<br/>
+                    <br/>
+                    All Script Parameter components are separated by a "<c>-</c>" character.<br/>
+                    <br/>
+                    Script Parameters are pre-defined, so you can't just make up a new one and<br/>
+                    have it magically work. Sorry! You will need to use one of<br/>
+                    the <see href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Script-Parameter.md">currently supported Script Parameters</see>.<br/>
+                    <br/>
+                    Tingen converts Script Parameters to lowercase for easier parsing, so you can use<br/>
+                    whatever casing makes sense to you when creating a <b>ScriptLink event</b>.
                 </para>
             </remarks>
             <example>
-                To update all service information:
+                To update all service information, the Script Parameter would be:
                 <code>
                     Admin-Service-Update-All
                 </code>
-                To verify that the user is authorized to submit an open incident:
+                And to verify that the current user is authorized to submit an open incident:
                 <code>
                     OpenIncident-Verify-AuthorIsViewing
                 </code>
             </example>
             <value>
-                The Script Parameter sent from Avatar (e.g.: "Admin-Service-Update-All")
+                A valid "<c>-</c>" delimited string (e.g, "<c>Admin-Service-Update-All</c>")
             </value>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Modules.md">Tingen Documentation: Tingen Modules</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Script-Parameter.md">Tingen Documentation: The Script Parameter</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/ScriptLink.md">Tingen Documentation: ScriptLink</seealso>
         </SentScriptParameter>
 
         <!--
-            SystemCode
+            SystemCode u240818
         -->
         <SystemCode>
             <remarks>
                 <para>
                     The Tingen works with a single Avatar environment at a time, defined by one of<br/>
-                    the following <b>System Codes</b>:
+                    the following System Codes:
                     <list type="table">
                         <listheader>
                             <term>System Code</term>
@@ -234,16 +179,16 @@
                         </listheader>
                         <item>
                             <term>LIVE</term>
-                            <description>The <b>Production</b> environment</description>
+                            <description>The <i>Production</i> environment</description>
                         </item>
                         <item>
                             <term>UAT</term>
-                            <description>The <b>User Acceptance Testing</b> environment</description>
+                            <description>The <i>User Acceptance Testing</i> environment</description>
                         </item>
                     </list>
                     <br/>
                     Your organization may have additional Avatar environments, but Tingen is only<br/>
-                    designed/tested to work with the above System Codes.  
+                    designed/tested to work with the above System Codes.
                 </para>
             </remarks>
             <value>
@@ -252,61 +197,62 @@
         </SystemCode>
 
         <!--
-            TraceDelay
+            TraceDelay u240818
         -->
         <TraceDelay>
             <remarks>
                 <para>
-                    The trace level determines the delay, in milliseconds, between trace log writes.<br/>
+                    Determines the delay, in milliseconds, between <b>Trace Log</b> writes.<br/>
                     <br/>
-                    Since trace logs may be written <i>extremely fast</i>, the TraceDelay setting can be used to slow down the log writing process, ensuring all logs are written.
+                    Since Trace Logs may be written <i>extremely fast</i>, the <c>TraceDelay</c> setting can be<br/>
+                    used to slow down the log writing process, ensuring all logs are written.<br/>
+                    <br/>
                 </para>
             </remarks>
-            <value>10 (default)</value>
+            <value>
+                The default is <c>10</c>.<br/>
+                Increasing this value is not recommended, since it can have an adverse affect on performance.
+            </value>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Logging.md">Tingen Documentation: Logging</seealso>
         </TraceDelay>
 
         <!--
-            TraceLevel
+            TraceLevel u240818
         -->
         <TraceLevel>
             <remarks>
                 <para>
-                    The trace level determines the amount of information that is logged.
-                    <list type="table">
-                        <listheader>
-                            <term>Level</term>
-                            <description>Type of log written</description>
-                        </listheader>
-                        <item>
-                            <term>0</term>
-                            <description>Trace logs are disabled.</description>
-                        </item>
-                        <item>
-                            <term>1</term>
-                            <description>Method trace logs are created.</description>
-                        </item>
-                        <item>
-                            <term>2...9</term>
-                            <description>Statement/loop trace logs are written.</description>
-                        </item>
-                    </list>
-                    Trace log levels are cumulative, meaning that a level 3 trace log will also write level 2 and level 1 trace logs.<br/>
+                    Determines the amount of <b>Trace Logs</b> that are generated.<br/>
+                    <br/>
+                    The Trace Level can be be between <c>0</c> (disabled) and <c>9</c> (all Trace Logs are written).<br/>
+                    <br/>
+                    Trace log levels are cumulative, meaning that a level <c>3</c> trace log will also write level <c>2</c> and level <c>1</c> trace logs.<br/>
                 </para>
             </remarks>
-            <value>An integer between 0 and 9 (default = 0)</value>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Logging.md">Trace log levels</seealso>
+            <value>
+                If you aren't having any issues, you can set this to <c>0</c>.<br/>
+                The higher the number, the greater affect creating Trace Logs will have on performance.
+            </value>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Logging.md">Tingen Documentation: Logging</seealso>
         </TraceLevel>
 
         <!--
-            WorkOptionObject
+            WorkOptionObject u240818
         -->
         <WorkOptionObject>
             <remarks>
                 <para>
-                    The <b>WorkOptionObject</b> is a clone of the <see cref="SentOptionObject"/> that is used to do work.
+                    When the <see cref="AvatarData"/> structure is created, the  <see cref="WorkOptionObject"/><br/>
+                    is cloned from the original <see cref="SentOptionObject"/>.<br/>
+                    <br/>
+                    Any modifications Tingen makes to the data are made in<br/>
+                    the <see cref="WorkOptionObject"/> data structure.<br/>
+                    <br/>
+                    The <see cref="WorkOptionObject"/> does not contain all of the required data to be<br/>
+                    returned to Avatar, and needs to be finalized before it can be returned.<br/>
                 </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">The OptionObject</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
         </WorkOptionObject>
 
     </Term>

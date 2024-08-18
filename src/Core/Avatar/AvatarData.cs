@@ -1,5 +1,5 @@
-﻿// u240818.0908_code
-// u240818.0908_documentation
+﻿// u240818.1244_code
+// u240818.1244_documentation
 
 using ScriptLinkStandard.Objects;
 
@@ -17,11 +17,11 @@ namespace Outpost31.Core.Avatar
         /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/SentOptionObject/*'/>
         public OptionObject2015 SentOptionObject { get; set; }
 
-        /// <summary>The original <paramref name="ScriptParameter"/> sent from Avatar.</summary>
+        /// <summary>The original Script Parameter sent from Avatar.</summary>
         /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/SentScriptParameter/*'/>
         public string SentScriptParameter { get; set; }
 
-        /// <summary>The OptionObject that may be modified by Tingen.</summary>
+        /// <summary>The OptionObject is (potentially) modified by Tingen.</summary>
         /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/WorkOptionObject/*'/>
         public OptionObject2015 WorkOptionObject { get; set; }
 
@@ -29,18 +29,19 @@ namespace Outpost31.Core.Avatar
         /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/ReturnOptionObject/*'/>
         public OptionObject2015 ReturnOptionObject { get; set; }
 
-        /// <summary>Builds a new <see cref="AvatarData"/> object.</summary>
-        /// <param name="sentOptionObject">The <see cref="SentOptionObject"/> sent from Avatar.</param>
-        /// <param name="sentScriptParameter">The <see cref="SentScriptParameter"/> sent from Avatar.</param>
+        /// <summary>Builds a new AvatarData data structure.</summary>
+        /// <param name="sentOptionObject">The SentOptionObject data structure sent from Avatar.</param>
+        /// <param name="sentScriptParameter">The SentScriptParameter sent from Avatar.</param>
         /// <returns>All of the data/information Tingen needs in order to do work.</returns>
         /// <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31/Cs[@name="AvatarData"]/BuildObject/*'/>
         public static AvatarData BuildObject(OptionObject2015 sentOptionObject, string sentScriptParameter)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+             */
 
             return new AvatarData
             {
-                SystemCode          = "defined-at-runtime",
+                SystemCode          = "defined-at-runtime-in-Tingen.Runscript()",
                 SentOptionObject    = sentOptionObject,
                 SentScriptParameter = sentScriptParameter.ToLower(),
                 WorkOptionObject    = sentOptionObject.Clone(),
