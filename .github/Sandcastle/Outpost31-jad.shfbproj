@@ -25,7 +25,7 @@
       <DocumentationSource sourceFile="..\..\src\Outpost31.csproj" xmlns="" />
     </DocumentationSources>
     <HelpFileFormat>Website</HelpFileFormat>
-    <SyntaxFilters>C#, XAML Usage, ASP.NET</SyntaxFilters>
+    <SyntaxFilters>C#, ASP.NET</SyntaxFilters>
     <PresentationStyle>Default2022</PresentationStyle>
     <CleanIntermediates>True</CleanIntermediates>
     <KeepLogFile>True</KeepLogFile>
