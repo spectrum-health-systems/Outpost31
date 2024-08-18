@@ -1,5 +1,8 @@
 ﻿// u240620.1355
 
+// Tingen session hold everything.
+
+
 using System;
 using System.Collections.Generic;
 using Outpost31.Core.Avatar;

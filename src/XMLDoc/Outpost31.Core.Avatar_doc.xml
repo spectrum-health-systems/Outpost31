@@ -1,9 +1,12 @@
 ﻿<!--
-    u240817.1021_documentation
--->
+    u240818.0906_documentation
 
-<!--
-    XML Documentation for Outpost31.Core.Avatar namespace
+    Namespace
+        Outpost31.Core.Avatar
+
+    Classes
+        AvatarData.cs
+        ReturnObject.cs
 -->
 
 <Outpost31>
@@ -19,7 +22,8 @@
         <AvatarData>
             <remarks>
                 <para>
-                    All of the imortant data sent from Avatar is stored here, and should only contain the following Avatar-specific data:<br/>
+                    All of the imortant data sent from Avatar is stored here, and should only contain
+                    the following Avatar-specific data:
                     <list type="bullet">
                         <item>The <see cref="SystemCode"/> </item>
                         <item>The <see cref="SentScriptParameter"/></item>
@@ -28,12 +32,11 @@
                         <item>The <see cref="ReturnOptionObject"/></item>
                     </list>
                     <br/>
-                    When Tingen starts, this object is created and added to the session object.
-                    <br/>
-                    <br/>
-                    Please see the <see href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</see> for more information.
+                    When Tingen starts, this object is created and added to the <see cref="Session.TingenSession"/> object.
                 </para>
             </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen/Outpost31 Documentation</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Session.md">Tingen Sessions</seealso>
         </AvatarData>
 
         <!--
@@ -127,6 +130,6 @@
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">OptionObject Error Codes</seealso>
         </Finalize>
     </Cs>
-    
+
 </Outpost31>
 

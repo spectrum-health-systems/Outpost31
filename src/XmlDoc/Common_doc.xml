@@ -46,7 +46,8 @@
                         </item>
                     </list>
                     <br/>
-                    Please note that while Tingen is designed to work with all of these environments, it is only tested using "LIVE" and "UAT".
+                    Please note that while Tingen is designed to work with all of these environments, it is only tested<br/>
+                    using "LIVE" and "UAT".
                 </para>
             </remarks>
             <value>
@@ -83,7 +84,8 @@
                 <para>
                     It is important to note that the SentOptionObject is <i>never modified by Tingen</i>.<br/>
                     <br/>
-                    All work is done using the <see cref="WorkOptionObject"/>, and the <see cref="ReturnOptionObject"/> is used to send data back to Avatar.
+                    All work is done using the <see cref="WorkOptionObject"/>, and the <see cref="ReturnOptionObject"/><br/>
+                    is used to send data back to Avatar.
                 </para>
             </remarks>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">The OptionObject</seealso>
@@ -158,7 +160,7 @@
         <WorkOptionObject>
             <remarks>
                 <para>
-                    The <b>WorkOptionObject</b> is a clone of the <see cref="SentOptionObject"/> that is used to do work.<br/>
+                    The <b>WorkOptionObject</b> is a clone of the <see cref="SentOptionObject"/> that is used to do work.
                 </para>
             </remarks>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">The OptionObject</seealso>
@@ -170,7 +172,8 @@
         <ReturnOptionObject>
             <remarks>
                 <para>
-                    The <b>WorkOptionObject</b> is a clone of the <see cref="SentOptionObject"/> that is used to return data back to Avatar.<br/>
+                    The <b>WorkOptionObject</b> is a clone of the <see cref="SentOptionObject"/> that is used to return<br/>
+                    back to Avatar.
                 </para>
             </remarks>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">The OptionObject</seealso>
@@ -182,7 +185,8 @@
         <Mode>
             <remarks>
                 <para>
-                    The Tingen web service, as well as its individual Modules, have various levels of functionality that are determined by their <b>Mode</b> setting.<br/>
+                    The Tingen web service, as well as its individual Modules, have various levels of functionality that<br/>
+                    are determined by their <b>Mode</b> settings.<br/>
                     <br/>
                     Modes are defined as:
                     <list type="table">
@@ -201,8 +205,9 @@
                     </list>
                 </para>
                 <para>
-                    When the Tingen web service is <b>enabled</b>, it will do work and (potentially) return a <i>modified</i> OptionObject.<br/>
-                    When the Tingen web service is <b>disabled</b>, it will <i>not</i> do work and will return an <i>unmodified</i> OptionObject.
+                    When the Tingen web service is <b>enabled</b>, it will do work and (potentially) return a <i>modified</i><br/>
+                    OptionObject. When the Tingen web service is <b>disabled</b>, it will <i>not</i> do work and will<br/>
+                    return an <i>unmodified</i> OptionObject.
                 </para>
                 <para>
                     Each Tingen component may have a different Mode setting, so it is important to verify the Mode setting for each component.

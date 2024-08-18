@@ -21,7 +21,8 @@
                 <para>
                     This class initializes the Tingen configuration settings, which define the <i>core functionality</i> of Tingen web service.<br/>
                     <br/>
-                    While Module
+                    The only configuration settings that are not related to core functionality are the Module <i>mode</i> settings, which are store here
+                    While Module <i>mode</i> settings are stored in the configuration file, the full configuration settings are stored in the <c>Tingen.config</c> file.<br/>
 
                     <list type="bullet">
                         <item>Are specific to Tingen <i>core functionality</i></item>
