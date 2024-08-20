@@ -1,5 +1,5 @@
-﻿// u240817.1814_code
-// u240817.1814_documentation
+﻿// u240820.1131_code
+// u240820.1131_documentation
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -7,20 +7,20 @@ using Outpost31.Core.Session;
 
 namespace Outpost31.Core.Avatar
 {
-    /// <summary>Finalizes an OptionObject so it can be returned to AvatarNX.</summary>
+    /// <summary>Logic for the ReturnOptionObject data structure.</summary>
     /// <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31/Cs[@name="ReturnObject"]/ReturnObject/*'/>
     public static class ReturnObject
     {
         /// <summary>Assembly name for logging purposes.</summary>
-        /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/AssemblyName/*'/>
+        /// <include file='XmlDoc/Common_doc.xml' path='Common/Type[@name="Property"]/AssemblyName/*'/>
         public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>Finalize an OptionObject so it can be returned to Avatar.</summary>
-        /// <param name="tnSession">The <see cref="TingenSession"/> object.</param>
-        /// <param name="errorCode">The OptionObject <see href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject-error-codes.md">error code</see>.</param>
+        /// <param name="tnSession">The Tingen Session data structure object.</param>
+        /// <param name="errorString">The OptionObject error string.</param>
         /// <param name="errorMessage">The OptionObject error message .</param>
         /// <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31/Cs[@name="ReturnObject"]/Finalize/*'/>
-        public static void Finalize(TingenSession tnSession, string errorCode, string errorMessage = "")
+        public static void Finalize(TingenSession tnSession, string errorString, string errorMessage = "")
         {
             /* [DN01] */
 
@@ -28,7 +28,7 @@ namespace Outpost31.Core.Avatar
 
             tnSession.AvData.ReturnOptionObject = tnSession.AvData.WorkOptionObject.Clone();
 
-            switch (errorCode.ToLower())
+            switch (errorString.ToLower())
             {
                 case "clone":
                 case "none":

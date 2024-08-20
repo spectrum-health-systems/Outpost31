@@ -1,5 +1,5 @@
-﻿// u240709.0000_code
-// u240709.0000_documentation
+﻿// u240820.1345_code
+// u240820.1345_documentation
 
 using System.Collections.Generic;
 using System.Reflection;
@@ -10,12 +10,8 @@ namespace Outpost31.Core.Framework
     /// <summary>Methods for maintaining the Tingen framework.</summary>
     public static class Maintenance
     {
-        /// <summary>Assembly name for log files.</summary>
-        /// <remarks>
-        ///   <para>
-        ///    - Define the assembly name here so it can be used to write log files throughout the class.
-        ///   </para>
-        /// </remarks>
+        /// <summary>Assembly name for logging purposes.</summary>
+        /// <include file='XmlDoc/Common_doc.xml' path='Common/Type[@name="Property"]/AssemblyName/*'/>
         public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>Soon.</summary>

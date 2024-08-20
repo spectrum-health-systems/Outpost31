@@ -1,0 +1,117 @@
+﻿<!--
+    u240818_documentation
+
+    Namespace
+        Outpost31.Core.Framework
+
+    Classes
+        Catalog.PublicPaths.cs
+-->
+
+<Outpost31>
+
+    <!--
+        Outpost31.Core.Framework.Catalog.PublicPaths.cs
+    -->
+    <Cs name="PublicPaths">
+        <!-- [u240820] /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31/Cs[@name="PublicPaths"]/PublicPaths/*'/> -->
+        <PublicPaths>
+            <remarks>
+                <para>
+                    Public paths are used to store data that is accessible to the public.
+                </para>
+                <para>
+                    The following types of data are stored in public paths:
+                    <list type="bullet">
+                        <item>Alerts</item>
+                        <item>Errors</item>
+                        <item>Reports</item>
+                        <item>Warnings</item>
+                    </list>
+                </para>
+            </remarks>
+        </PublicPaths>
+        <!-- [u240820] /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31/Cs[@name="PublicPaths"]/Root/*'/> -->
+        <Root>
+            <remarks>
+                <para>
+                    All public data will be stored here.
+                </para>
+            </remarks>
+            <value>
+                <c>C:\TingenData\Public</c>
+            </value>
+        </Root>
+        <!-- [u240820] /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31/Cs[@name="PublicPaths"]/Alerts/*'/> -->
+        <Alerts>
+            <remarks>
+                <para>
+                    All public alerts will be stored here.
+                </para>
+            </remarks>
+            <value>
+                <c>%publicRoot%\Alerts</c>
+            </value>
+        </Alerts>
+        <!-- [u240820] /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31/Cs[@name="PublicPaths"]/Errors/*'/> -->
+        <Errors>
+            <remarks>
+                <para>
+                    All public alerts will be stored here.
+                </para>
+            </remarks>
+            <value>
+                <c>%publicRoot%\Errors</c>
+            </value>
+        </Errors>
+        <!-- [u240820] /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31/Cs[@name="PublicPaths"]/Exports/*'/> -->
+        <Exports>
+            <remarks>
+                <para>
+                    All public exported data will be stored here.
+                </para>
+            </remarks>
+            <value>
+                <c>%publicRoot%\Exports</c>
+            </value>
+        </Exports>
+        <!-- [u240820] /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31/Cs[@name="PublicPaths"]/Reports/*'/> -->
+        <Reports>
+            <remarks>
+                <para>
+                    All public reports data will be stored here.
+                </para>
+            </remarks>
+            <value>
+                <c>%publicRoot%\Reports</c>
+            </value>
+        </Reports>
+        <!-- [u240820] /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31/Cs[@name="PublicPaths"]/Warnings/*'/> -->
+        <Warnings>
+            <remarks>
+                <para>
+                    All public warnings data will be stored here.
+                </para>
+            </remarks>
+            <value>
+                <c>%publicRoot%\Warnings</c>
+            </value>
+        </Warnings>
+        <!-- [u240820] /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31/Cs[@name="PublicPaths"]/BuildObject/*'/> -->
+        <BuildObject>
+            <remarks>
+                <para>
+                    TBD
+                </para>
+            </remarks>
+        </BuildObject>
+        <!-- [u240820] /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31/Cs[@name="PublicPaths"]/RequiredPaths/*'/> -->
+        <RequiredPaths>
+            <remarks>
+                <para>
+                    TBD
+                </para>
+            </remarks>
+        </RequiredPaths>
+    </Cs>
+</Outpost31>

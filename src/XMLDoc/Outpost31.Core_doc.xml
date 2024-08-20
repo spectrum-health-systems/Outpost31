@@ -1,17 +1,24 @@
 ﻿<!--
     u240817.1021_documentation
+
+    XML Documentation for the Outpost31.Core namespace
 -->
 
 <Outpost31>
 
     <!--
-        TingenApp.cs
+        Outpost31.Core.TingenApp.cs
     -->
     <Cs name="TingenApp">
+
+        <!--
+            Class documentation u240819
+        -->
         <TingenApp>
             <remarks>
                 <para>
-                    The TingenApp class takes care of the Tingen web service as a whole. It is responsible for:
+                    The TingenApp class takes care of the Tingen web service as a whole, and is<br/>
+                    responsible for:
                     <list type="bullet">
                         <item>Starting the Tingen web service</item>
                         <item>Stopping the Tingen web service</item>
@@ -19,35 +26,28 @@
                 </para>
             </remarks>
         </TingenApp>
+
+        <!--
+            Outpost31.Core.TingenApp.BuildObject() u240819
+        -->
         <StartApp>
             <remarks>
                 <para>
-                    The Tingen web service has the following modes:
-                    <list type="table">
-                        <listheader>
-                            <term>Mode</term>
-                            <description>Description</description>
-                        </listheader>
-                        <item>
-                            <term>enabled</term>
-                            <description>The Tingen web service is enabled, and functions normally.</description>
-                        </item>
-                        <item>
-                            <term>disabled</term>
-                            <description>The Tingen web service is disabled, and does not do any work.</description>
-                        </item>
-                    </list>
-                    The TingenMode affects the Tingen web service as a whole, so setting the TingenMode to <c>disabled</c> will disable <i>all</i> functionality.<br/>
-                    <br/>
-                    Individual Modulescan be enabled/disabled via the modules "Mode" property.<br/>
+                    If the Tingen <b>Mode</b> is set to "disabled"
                 </para>
             </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Modes.md">Tingen Documentation: Modes</seealso>
         </StartApp>
     </Cs>
+
     <!--
-        ScriptParameter.cs
+        Outpost31.Core.ScriptParameter.cs
     -->
-    <Sec name="ScriptParameter">
+    <Cs name="ScriptParameter">
+
+        <!--
+            Outpost31.Core.ScriptParameter.ParseSent() u240819
+        -->
         <ParseSent>
             <remarks>
                 <para>
@@ -62,7 +62,8 @@
                 </para>
             </remarks>
         </ParseAdminModule>
-    </Sec>
+    </Cs>
+    
 </Outpost31>
 
 <!--

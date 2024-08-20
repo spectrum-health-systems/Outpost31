@@ -1,132 +1,138 @@
 ﻿<!--
-    u240818.0906_documentation
+    u240820_documentation [WORK-IN-PROGRESS]
 
-    XML Documentation for the Outpost31.Core.Avatar namespace
+    Namespace
+        Outpost31.Core.Avatar
 
     Classes
-        AvatarData.cs
-        ReturnObject.cs
+        Outpost31.Core.Avatar.AvatarData.cs
+        Outpost31.Core.Avatar.ReturnObject.cs
 -->
 
 <Outpost31>
-
     <!--
-        Outpost31.Core.Avatar.AvatarData class
+        Outpost31.Core.Avatar.AvatarData.cs
     -->
     <Cs name="AvatarData">
-
-        <!--
-            Class documentation u240818
-        -->
+        <!-- [u240820f] /// <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31/Cs[@name="AvatarData"]/AvatarData/*'/>  -->
         <AvatarData>
             <remarks>
                 <para>
-                    The <see cref="AvatarData"/> class is part of the <b><see cref="Session.TingenSession"/></b> object, and contains<br/>
-                    all of the necessary Avatar-related data that Tingen needs to do its work.<br/>
-                    <br/>
-                    When Tingen starts, the <see cref="AvatarData"/> object is built, and is then added<br/>
-                    to the <see cref="Session.TingenSession"/> object.
+                    The <c>AvatarData</c> class is the foundation of a data structure that contains the following <i>Avatar-related data</i>:
+                    <list type="bullet">
+                        <item><see cref="SystemCode"/></item>
+                        <item><see cref="ReturnOptionObject"/></item>
+                        <item><see cref="SentOptionObject"/></item>
+                        <item><see cref="SentScriptParameter"/></item>
+                        <item><see cref="WorkOptionObject"/></item>
+                    </list>
+                </para>
+                <para>
+                    The <c>AvatarData</c> data structure is added to the <see cref="Outpost31.Core.Session.TingenSession"/> at runtime.
                 </para>
             </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Script-Parameter.md">Tingen Documentation: The Script Parameter</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Session.md">Tingen Documentation: The Tingen Session</seealso>
         </AvatarData>
-
-        <!--
-            Outpost31.Core.Avatar.AvatarData.BuildObject() u240818
-        -->
+        <!-- [u240820f] <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31/Cs[@name="AvatarData"]/BuildObject/*'/> -->
         <BuildObject>
-                <remarks>
-                    <para>
-                        A few things about this method:
-                        <list type="bullet">
-                            <item>The <see cref="SystemCode"/> is defined at runtime in <c>Tingen.Runscript()</c>.</item>
-                            <item>The <b><see cref="SentScriptParameter"/></b> is converted to lowercase so it is easier<br/>
-                            to compare against.</item>
-                            <item>The <b><see cref="WorkOptionObject"/></b> is cloned from the <see cref="SentOptionObject"/><br/>
-                            so it can be modified without affecting the original data.</item>
-                            <item>The <b><see cref="ReturnOptionObject"/></b> is initally set to <c>null</c>, and will be<br/>
-                            formatted/finalized prior to returning to Avatar.</item>
-                        </list>
-                    </para>
+            <remarks>
+                <para>
+                    A few things about this method:
+                    <list type="bullet">
+                        <item>The <see cref="SystemCode"/> is defined at runtime in <c>Tingen.Runscript()</c>.</item>
+                        <item>The <see cref="SentScriptParameter"/> is converted to lowercase so it is easier to compare against.</item>
+                        <item>All work is done in the <see cref="WorkOptionObject"/>, which is cloned from the <see cref="SentOptionObject"/>, ensuring that the original data sent from Avatar remains unmodified.</item>
+                        <item>The <see cref="ReturnOptionObject"/> is initally set to <c>null</c>, and will be finalized prior to returning to Avatar.</item>
+                    </list>
+                </para>
             </remarks>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Script-Parameter.md">Tingen Documentation: The Script Parameter</seealso>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
         </BuildObject>
     </Cs>
-
-
     <!--
-        Outpost31.Core.Avatar.ReturnObject class
+        Outpost31.Core.Avatar.ReturnObject.cs
     -->
     <Cs name="ReturnObject">
-
-        <!--
-            Class documentation u240818
-        -->
+        <!--  [u240820f] /// <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31/Cs[@name="ReturnObject"]/ReturnObject/*'/> -->
         <ReturnObject>
             <remarks>
                 <para>
-                    Before returning an OptionObject to Avatar, it must be finalized, which is what this class does: it finalizes the OptionObject so it can be returned to Avatar.<br/>
-                    <br/>
-                    Please see the <a href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</a> for more information.
+                    This class does various things with the <see cref="Outpost31.Core.Avatar.AvatarData.ReturnOptionObject"/> data structure, including:
+                    <list type="bullet">
+                        <item>Finalizes the <c>ReturnOptionObject</c>, so it can be returned to Avatar</item>
+                    </list>
                 </para>
             </remarks>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
         </ReturnObject>
-
-        <!--
-            Outpost31.Core.Avatar.ReturnObject.Finalize() u240818
-        -->
+        <!-- /// [u240820f] <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31/Cs[@name="ReturnObject"]/Finalize/*'/> -->
         <Finalize>
             <remarks>
                 <para>
-                    Before returning an OptionObject to Avatar, it must be <b>finalized</b>.<br/>
-                    <br/>
-                    Finalizing an OptionObject is a three part process:
+                    Before returning an OptionObject data structure to Avatar, it must be formatted properly, and contain all required information. The <c>Finalize</c> process takes care of those things by:
                     <list type="number">
-                        <item>Assign an <i>error code</i> to the returnOptionObject</item>
-                        <item>Assign an <i>error message</i> to the returnOptionObject</item>
-                        <item>Verify the returnOptionObject contains all required data</item>
+                        <item>Cloning the <see cref="Outpost31.Core.Avatar.AvatarData.ReturnOptionObject"/> the <see cref="Outpost31.Core.Avatar.AvatarData.WorkOptionObject"/></item>
+                        <item>Assigning a valid <i>error code</i> to the returnOptionObject</item>
+                        <item>Assigning an <i>error message</i> to the returnOptionObject</item>
+                        <item>Verifying the returnOptionObject contains all required data</item>
                     </list>
-                    Valid error codes include:
+                    The OptionObject expects an error code of type <c>int</c>, but to make it more readable, Tingen works with the following "error strings" (which will then be converted to an <c>int</c>):
                     <list type="table">
                         <listheader>
-                            <term>Error code</term>
+                            <term>Error string</term>
                             <description>Description</description>
                         </listheader>
                         <item>
-                            <term>0</term>
-                            <description><b>Success</b> - Returns the OptionObject without a message</description>
+                            <term>"clone",<br/>"none",<br/> "success"</term>
+                            <description>Returns the OptionObject without a message (error code <c>0</c>)</description>
                         </item>
                         <item>
-                            <term>1</term>
-                            <description><b>Error</b> - Stops the script from processing and displays an message with an "OK" button</description>
+                            <term>"error"</term>
+                            <description>Stops the script from processing and displays an message with an "OK" button (error code <c>1</c>)</description>
                         </item>
                         <item>
-                            <term>2</term>
-                            <description><b>OKCancel</b> - Displays a message with "OK" and "Cancel" buttons.</description>
+                            <term>"okcancel"</term>
+                            <description>Displays a message with "OK" and "Cancel" buttons (error code <c>2</c>)</description>
                         </item>
                         <item>
-                            <term>3</term>
-                            <description><b>Info</b> - Displays an informational warning message with an "OK" button.</description>
+                            <term>"info"</term>
+                            <description>Displays an informational warning message with an "OK" button (error code <c>3</c>)</description>
                         </item>
                         <item>
-                            <term>4</term>
-                            <description><b>YesNo</b> - Displays a message with "Yes" and "No" buttons.</description>
+                            <term>"yesno"</term>
+                            <description>Displays a message with "Yes" and "No" buttons (error code <c>4</c>)</description>
                         </item>
                         <item>
-                            <term>5</term>
-                            <description><b>OpenURL</b> - Opens an URL in a browser</description>
+                            <term>"openurl"</term>
+                            <description>Opens an URL in a browser (error code <c>5</c>)</description>
                         </item>
                         <item>
-                            <term>6</term>
-                            <description><b>OpenForm</b> - Presents an OK/Cancel dialog to open a form (only be used on Form Load and Field events).</description>
+                            <term>"openform"</term>
+                            <description>Presents an OK/Cancel dialog to open a form (error code <c>6</c>)<br/>
+                            </description>
                         </item>
                     </list>
+                    <b>NOTE:</b> The <c>openform</c> error string can only be used on Form Load and Field events.
                 </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">OptionObject Error Codes</seealso>
+            <example>
+                To stop a script from processing and display an error message with an "OK" button:
+                <code>
+                    Outpost31.Core.Avatar.ReturnObject.Finalize(tnSession, "error", "There was an error!");
+                </code>
+                To pause a script and ask if the user wants to continue:
+                <code>
+                    Outpost31.Core.Avatar.ReturnObject.Finalize(tnSession, "yesno", "You might want to check your data. Do you want to continue?");
+                </code>
+                To display an informational message:
+                <code>
+                    Outpost31.Core.Avatar.ReturnObject.Finalize(tnSession, "info", "Have a nice day!");
+                </code>
+            </example>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">OptionObject</seealso>
         </Finalize>
     </Cs>
-
 </Outpost31>
-

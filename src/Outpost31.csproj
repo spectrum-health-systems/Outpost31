@@ -108,6 +108,7 @@
     <Content Include="XmlDoc\Common_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Configuration_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Avatar_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core_doc.xml" />
     <None Include="app.config" />
     <None Include="packages.config" />

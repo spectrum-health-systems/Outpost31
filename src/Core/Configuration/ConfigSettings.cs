@@ -49,17 +49,6 @@ namespace Outpost31.Core.Configuration
             };
         }
 
-        ///// <summary></summary>
-        ///// <param name="configPath">Path to the Tingen configuration file.</param>
-        ///// <remarks>
-        /////  <para>
-        /////   - The configuration file path is created in <b>Tingen.asmx.cs</b><br/>
-        /////   -
-        /////  </para>
-        ///// </remarks>
-        ///// <returns>The Tingen configuration settings.</returns>
-        /////
-
         /// <summary>Load the Tingen configuration file.</summary>
         /// <param name="configPath">Path to the Tingen configuration file.</param>
         /// <returns>The necessary AvatarNX data.</returns>
