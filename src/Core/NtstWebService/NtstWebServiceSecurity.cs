@@ -8,11 +8,16 @@ using System.IO;
 
 namespace Outpost31.Core.NtstWebService
 {
+    /// <summary>TBD</summary>
     public class NtstWebServiceSecurity
     {
+        /// <summary>TBD</summary>
         public string WebServiceUser { get; set; }
+
+        /// <summary>TBD</summary>
         public string WebServicePassword { get; set; }
 
+        /// <summary>TBD</summary>
         public static NtstWebServiceSecurity BuildDefaultSecurityObject()
         {
             return new NtstWebServiceSecurity()
@@ -22,6 +27,7 @@ namespace Outpost31.Core.NtstWebService
             };
         }
 
+        /// <summary>TBD</summary>
         public static NtstWebServiceSecurity Load(string ntstWebServiceSecurityPath, string ntstWebServiceSecurityFileName)
         {
             var ntstWebServiceSecurityFilePath = $@"{ntstWebServiceSecurityPath}\{ntstWebServiceSecurityFileName}";

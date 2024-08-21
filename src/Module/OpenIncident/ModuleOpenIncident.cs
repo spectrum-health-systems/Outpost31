@@ -1,5 +1,5 @@
-﻿// u240620.1359
-
+﻿// uXXXXXX.XXXX_code
+// uXXXXXX.XXXX_documentation
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
@@ -9,6 +9,7 @@ using ScriptLinkStandard.Objects;
 
 namespace Outpost31.Module.OpenIncident
 {
+    /// <summary>TBD</summary>
     public class ModuleOpenIncident
     {
         /// <summary>Assembly name for log files.</summary>
@@ -18,16 +19,35 @@ namespace Outpost31.Module.OpenIncident
         ///   </para>
         /// </remarks>
         public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+
+        /// <summary>TBD</summary>
         public List<string> Whitelist { get; set; }
+
+        /// <summary>TBD</summary>
         public List<string> Blacklist { get; set; }
+
+        /// <summary>TBD</summary>
         public string OriginalFullName { get; set; }
+
+        /// <summary>TBD</summary>
         public string CurrentFullName { get; set; }
+
+        /// <summary>TBD</summary>
         public int PersonCompletingIncidentFormFieldId { get; set; }
+
+        /// <summary>TBD</summary>
         public string FormOpenMessage { get; set; }
+
+        /// <summary>TBD</summary>
         public string FormOpenErrorCode { get; set; }
+
+        /// <summary>TBD</summary>
         public string FormSubmitMessage { get; set; }
+
+        /// <summary>TBD</summary>
         public string FormSubmitErrorCode { get; set; }
 
+        /// <summary>TBD</summary>
         public static ModuleOpenIncident BuildDefaultModOpenIncident(TraceLog traceInfo)
         {
             /* Log file? */
@@ -46,6 +66,7 @@ namespace Outpost31.Module.OpenIncident
             };
         }
 
+        /// <summary>TBD</summary>
         public static ModuleOpenIncident Load(string modConfigFilePath, string currentSessionPath, OptionObject2015 workOptionObject, TraceLog traceInfo)
         {
             /* Log file? */
@@ -60,7 +81,7 @@ namespace Outpost31.Module.OpenIncident
             return Outpost31.Core.Utilities.DuJson.ImportFromLocalFile<ModuleOpenIncident>(modConfigFilePath);
         }
 
-
+        /// <summary>TBD</summary>
         public static string GetFullName(string filePath, string avatarName, TraceLog traceInfo)
         {
             /* Log file? */
@@ -86,6 +107,7 @@ namespace Outpost31.Module.OpenIncident
             return fullName;
         }
 
+        /// <summary>TBD</summary>
         public static void GetAuthorInformation(TingenSession tnSession)
         {
             tnSession.ModOpenIncident.OriginalFullName = tnSession.AvData.SentOptionObject.GetFieldValue("32");

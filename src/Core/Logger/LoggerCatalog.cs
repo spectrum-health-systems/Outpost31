@@ -17,7 +17,6 @@ namespace Outpost31.Core.Logger
         /// <returns></returns>
         public static string StandardContent(string assemblyName, string calledClass, string calledMethod, string line, string message)
         {
-
             return $"[ASSEMBLY] {assemblyName}{Environment.NewLine}" +
                    $"   [CLASS] {calledClass}{Environment.NewLine}" +
                    $"  [METHOD] {calledMethod}(){Environment.NewLine}" +

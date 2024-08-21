@@ -1,5 +1,5 @@
-﻿// u240709.0000_code
-// u240709.0000_documentation
+﻿// u240821.1043_code
+// uXXXXXX.XXXX_documentation
 
 using System.Collections.Generic;
 
@@ -21,7 +21,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>A collection of Tingen paths.</returns>
         public static TingenPaths BuildObject(string tnDataRoot)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+             */
 
             return new TingenPaths
             {
@@ -35,7 +36,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>The list of required Tingen paths.</returns>
         public static List<string> RequiredPaths(TingenPaths tnPaths)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+             */
 
             return new List<string>
             {

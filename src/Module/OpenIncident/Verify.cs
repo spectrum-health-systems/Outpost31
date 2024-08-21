@@ -1,4 +1,5 @@
-﻿// u240620.1359
+﻿// uXXXXXX.XXXX_code
+// uXXXXXX.XXXX_documentation
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -17,6 +18,7 @@ namespace Outpost31.Module.OpenIncident
         /// </remarks>
         public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
+        /// <summary>TBD</summary>
         public static void OriginalAuthorIsOpening(TingenSession tnSession)
         {
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);

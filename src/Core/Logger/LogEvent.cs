@@ -26,7 +26,8 @@ namespace Outpost31.Core.Logger
         /// </remarks>
         public static void Trace(int logLevel, string assemblyName, TraceLog traceInfo, string message = "", [CallerFilePath] string fromPath = "", [CallerMemberName] string fromMethod = "", [CallerLineNumber] int line = 0)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+             */
 
             var fromClass = fromPath.Split('\\').Last();
 
@@ -58,7 +59,8 @@ namespace Outpost31.Core.Logger
 
         public static void Primeval(string assemblyName, string message = "Tingen primeval log", [CallerFilePath] string fromPath = "", [CallerMemberName] string fromMethod = "", [CallerLineNumber] int line = 0)
         {
-            /* Can't create any logs here! Sorry! */
+            /* Can't create any logs here! Sorry!
+             */
 
             var fromClass = fromPath.Split('\\').Last();
 

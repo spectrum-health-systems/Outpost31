@@ -1,133 +1,96 @@
-﻿// u240709.0000_code
-// u240709.0000_documentation
+﻿// u240821.1037_code
+// u240821.1020_documentation
 
 using System.Collections.Generic;
 
 namespace Outpost31.Core.Framework.Catalog
 {
     /// <summary>System Code paths for Tingen.</summary>
-    /// <remarks>
-    ///  <para>
-    ///   - The System Code path is where Tingen stores most of it's important day-to-day data.
-    ///   - There is a separate System Code path for each Avatar System Code.
-    ///  </para>
-    /// </remarks>
+    /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31/Cs[@name="SystemCodePaths"]/SystemCodePaths/*'/>
     public class SystemCodePaths
     {
-        /* System code paths.
-         */
-
         /// <summary>Root path for System Code data.</summary>
-        /// <value>C:\TingenData\%SystemCode%</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\</c>"</remarks>
         public string Root { get; set; }
 
         /// <summary>Path for System Code configuration data.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Config</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Config\</c>"</remarks>
         public string Config { get; set; }
 
         /// <summary>Path for System Code session data.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Sessions</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Sessions\</c>"</remarks>
         public string Sessions { get; set; }
 
         /// <summary>Current session path.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   - Set at runtime.
-        ///  </para>
-        /// </remarks>
+        /// <remarks>This is set at runtime.</remarks>
         public string CurrentSession { get; set; }
 
         /// <summary>Path for Tingen Extensions.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   - Future functionality.
-        ///  </para>
-        /// </remarks>
+        /// <remarks>Future functionality.</remarks>
         public string Extensions { get; set; }
 
         /// <summary>Path for Tingen security-related data.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   - Future functionality.
-        ///  </para>
-        /// </remarks>
+        /// <remarks>Future functionality.</remarks>
         public string Security { get; set; }
 
         /// <summary>Path for temporary data.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   - Temporary files.
-        ///  </para>
-        /// </remarks>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\</c>"</remarks>
         public string Temporary { get; set; }
 
-        /* Message paths
-         */
-
         /// <summary>Root for message data.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Messages</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Messages\</c>"</remarks>
         public string MessageRoot { get; set; }
 
         /// <summary>Path for alert data.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Messages\Alerts</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\MessagesAlerts\</c>"</remarks>
         public string Alerts { get; set; }
 
         /// <summary>Path for error data.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Messages\Errors</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\MessagesErrors\</c>"</remarks>
         public string Errors { get; set; }
 
         /// <summary>Path for warning data.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Messages\Warnings</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\MessagesWarnings\</c>"</remarks>
         public string Warnings { get; set; }
 
-        /* Exported data paths
-         */
-
         /// <summary>Root for exported data.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Exports</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Exports\</c>"</remarks>
         public string ExportRoot { get; set; }
 
         /// <summary>Path for exported reports.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Exports\Reports</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Exports\Reports\</c>"</remarks>
         public string Reports { get; set; }
 
-        /* Imported data paths
-         */
-
         /// <summary>Root for imported data.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Imports</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Imports\</c>"</remarks>
         public string ImportRoot { get; set; }
 
         /// <summary>Path for imported data from Avatar.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Imports\FromAvatar</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Imports\FromAvatar\</c>"</remarks>
         public string FromAvatar { get; set; }
 
         /// <summary>Path for imported templates.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Imports\Templates</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Imports\Templates\</c>"</remarks>
         public string Templates { get; set; }
 
-        /* Support paths
-         * - Most of this isn't used yet, and either will be or will be removed.
-         */
-
         /// <summary>Root for support data.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Support</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Support\</c>"</remarks>
         public string SupportRoot { get; set; }
 
         /// <summary>Path for admin data.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Support\Admin</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Support\Admin\</c>"</remarks>
         public string Admin { get; set; }
 
         /// <summary>Path for archived data.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Support\Archive</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Support\Archive\</c>"</remarks>
         public string Archive { get; set; }
 
         /// <summary>Path for debugging data.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Support\Debugging</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Support\Debugging\</c>"</remarks>
         public string Debugging { get; set; }
 
         /// <summary>Path for log data.</summary>
-        /// <value>C:\TingenData\%SystemCode%\Support\Logs</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Support\Logs\</c>"</remarks>
         public string Logs { get; set; }
 
         /// <summary>Builds the system code paths object.</summary>
@@ -136,7 +99,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>The System Code data paths.</returns>
         public static SystemCodePaths BuildObject(string tnDataRoot, string avSystemCode)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+             */
 
             string systemCodeRoot    = $@"{tnDataRoot}\{avSystemCode}";
             const string messageRoot = "Messages";
@@ -175,7 +139,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>The list of required System Code paths.</returns>
         public static List<string> RequiredPaths(SystemCodePaths systemCodePaths)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+             */
 
             return new List<string>
             {

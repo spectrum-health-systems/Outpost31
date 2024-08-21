@@ -36,7 +36,8 @@ namespace Outpost31.Core.Framework
         /// <returns>The Tingen data paths</returns>
         public static Paths Build(string tnDataRoot, string avSystemCode)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+             */
 
             return new Paths
             {

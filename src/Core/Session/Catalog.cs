@@ -1,4 +1,5 @@
-﻿// u240620.1355
+﻿// uXXXXXX.XXXX_code
+// uXXXXXX.XXXX_documentation
 
 using System;
 using System.Reflection;
@@ -6,7 +7,7 @@ using Outpost31.Core.Logger;
 
 namespace Outpost31.Core.Session
 {
-    /// <summary>Soon.</summary>
+    /// <summary>TBD</summary>
     public static class Catalog
     {
         /// <summary>Assembly name for log files.</summary>
@@ -17,7 +18,7 @@ namespace Outpost31.Core.Session
         /// </remarks>
         public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
-        /// <summary>Soon.</summary>
+        /// <summary>TBD</summary>
         /// <param name="tnSession"></param>
         /// <returns></returns>
         public static string CurrentSettings(TingenSession tnSession)
@@ -111,7 +112,7 @@ namespace Outpost31.Core.Session
                    $"Warnings: {tnSession.TnPath.Remote.Warnings}  {Environment.NewLine}";
         }
 
-        /// <summary>Soon.</summary>
+        /// <summary>TBD</summary>
         /// <param name="tnSession"></param>
         /// <returns></returns>
         public static string SessionDetails(TingenSession tnSession)

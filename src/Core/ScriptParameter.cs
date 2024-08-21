@@ -124,7 +124,6 @@ namespace Outpost31.Core
     }
 }
 
-
 /*
 =================
 DEVELOPMENT NOTES

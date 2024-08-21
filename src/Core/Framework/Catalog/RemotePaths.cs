@@ -1,5 +1,5 @@
-﻿// u240709.0000_code
-// u240709.0000_documentation
+﻿// u2240821.1008_code
+// u240821.1008_documentation
 
 using System.Collections.Generic;
 
@@ -14,47 +14,44 @@ namespace Outpost31.Core.Framework.Catalog
     public class RemotePaths
     {
         /// <summary>Root path for remote data.</summary>
-        /// <value>C:\TingenData\Remote</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\Remote</c>"</remarks>
         public string Root { get; set; }
 
         /// <summary>Path for remote alert data.</summary>
-        /// <value>C:\TingenData\Remote\Alerts</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\Remote\Alerts\</c>"</remarks>
         public string Alerts { get; set; }
 
         /// <summary>Path for remote error data.</summary>
-        /// <value>C:\TingenData\Remote\Errors</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\Remote\Errors\</c>"</remarks>
         public string Errors { get; set; }
 
         /// <summary>Path for remote export data.</summary>
-        /// <value>C:\TingenData\Remote\Exports</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\Remote\Exports\</c>"</remarks>
         public string Exports { get; set; }
 
         /// <summary>Path for remote report data.</summary>
-        /// <value>C:\TingenData\Remote\Reports</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\Remote\Reports\</c>"</remarks>
         public string Reports { get; set; }
 
         /// <summary>Path for remote session data.</summary>
-        /// <value>C:\TingenData\Remote\Sessions</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\Remote\Sessions\</c>"</remarks>
         public string Sessions { get; set; }
 
         /// <summary>Current session path.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   - Set at runtime.
-        ///  </para>
-        /// </remarks>
+        /// <remarks>This is set at runtime.</remarks>
         public string CurrentSession { get; set; }
 
         /// <summary>Path for remote warning files.</summary>
-        /// <value>C:\TingenData\Remote\Warnings</value>
+        /// <remarks>Should be "<c>%tnDataRoot%\Remote\Warnings\</c>"</remarks>
         public string Warnings { get; set; }
 
         /// <summary>Builds the remote paths object.</summary>
         /// <param name="tnDataRoot">The Tingen data root.</param>
-        /// <returns>A collection of remote paths.</returns>
+        /// <returns>The Tingen remote paths data structure.</returns>
         public static RemotePaths BuildObject(string tnDataRoot)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+             */
 
             var remoteRoot = $@"{tnDataRoot}\Remote\";
 
@@ -66,7 +63,7 @@ namespace Outpost31.Core.Framework.Catalog
                 Exports        = $@"{remoteRoot}\Exports",
                 Reports        = $@"{remoteRoot}\Reports",
                 Sessions       = $@"{remoteRoot}\Sessions",
-                CurrentSession = "undefined",
+                CurrentSession = "set-at-runtime",
                 Warnings       = $@"{remoteRoot}\Warnings"
             };
         }
@@ -76,7 +73,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>The list of required remote paths.</returns>
         public static List<string> RequiredPaths(RemotePaths remotePaths)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+             */
 
             return new List<string>
             {

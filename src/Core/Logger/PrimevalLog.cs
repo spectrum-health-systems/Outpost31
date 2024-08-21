@@ -8,7 +8,6 @@ using System.Threading;
 namespace Outpost31.Core.Logger
 {
     /// <summary>Primeval logs</summary>
-
     public static class PrimevalLog
     {
         /// <summary>Primeval log path.</summary>

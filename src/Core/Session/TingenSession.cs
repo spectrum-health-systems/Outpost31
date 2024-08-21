@@ -1,7 +1,5 @@
-﻿// u240620.1355
-
-// Tingen session hold everything.
-
+﻿// uXXXXXX.XXXX_code
+// uXXXXXX.XXXX_documentation
 
 using System;
 using System.Collections.Generic;
@@ -23,8 +21,10 @@ namespace Outpost31.Core.Session
     /// </remarks>
     public class TingenSession
     {
+        /// <summary>TBD</summary>
         public string TnVersion { get; set; }
 
+        /// <summary>TBD</summary>
         public string TnBuild { get; set; }
 
         /// <summary>The session datestamp.</summary>
@@ -54,8 +54,8 @@ namespace Outpost31.Core.Session
         /// </remarks>
         public AvatarData AvData { get; set; }
 
+        /// <summary>TBD</summary>
         public NtstWebServiceSecurity NtstWebServiceSecurity { get; set; }
-
 
         /// <summary>Trace log information.</summary>
         public TraceLog TraceInfo { get; set; }
@@ -144,12 +144,14 @@ namespace Outpost31.Core.Session
             Maintenance.VerifyDirectory(tnSession.TnPath.Remote.CurrentSession);
         }
 
+        /// <summary>TBD</summary>
         public static void WriteSessionDetails(TingenSession tnSession)
         {
             Utilities.DuFile.WriteLocal($@"{tnSession.TnPath.SystemCode.CurrentSession}\Session.md", Catalog.SessionDetails(tnSession));
             Utilities.DuFile.WriteLocal($@"{tnSession.TnPath.Remote.CurrentSession}\{tnSession.Time}-{tnSession.AvData.SentScriptParameter}.md", Catalog.SessionDetails(tnSession));
         }
 
+        /// <summary>TBD</summary>
         public static Dictionary<string, string> BuildStaticVars()
         {
             return new Dictionary<string, string>

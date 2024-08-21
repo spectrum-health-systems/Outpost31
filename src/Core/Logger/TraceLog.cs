@@ -10,8 +10,13 @@ namespace Outpost31.Core.Logger
     /// <summary>Soon.</summary>
     public class TraceLog
     {
+        /// <summary>TBD</summary>
         public string TraceLogPath { get; set; }
+
+        /// <summary>TBD</summary>
         public int TraceLogLevel { get; set; }
+
+        /// <summary>TBD</summary>
         public int TraceLogDelay { get; set; }
 
         /// <summary>Build the trace log information.</summary>
@@ -24,7 +29,8 @@ namespace Outpost31.Core.Logger
         /// <returns></returns>
         public static TraceLog BuildInfo(string traceLogPath, int traceLogLevel, int traceLogDelay)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+             */
 
             return new TraceLog
             {
@@ -43,7 +49,8 @@ namespace Outpost31.Core.Logger
         /// <param name="callLine"></param>
         public static void Create(int logLevel, string assemblyName, TraceLog traceInfo, string fromClass, string fromMethod, int line)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+             */
 
             if (logLevel <= traceInfo.TraceLogLevel)
             {
@@ -52,7 +59,6 @@ namespace Outpost31.Core.Logger
                 var traceLogPath = $@"{traceInfo.TraceLogPath}\{DateTime.Now:mmssfffffff}_{assemblyName}-{fromClass}-{fromMethod}-{line}.trace";
 
                 File.Create(traceLogPath).Dispose();
-
             }
         }
 
@@ -66,7 +72,8 @@ namespace Outpost31.Core.Logger
         /// <param name="message"></param>
         public static void Create(int logLevel, string assemblyName, TraceLog traceInfo, string fromClass, string fromMethod, int line, string message)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+             */
 
             if (logLevel <= traceInfo.TraceLogLevel)
             {

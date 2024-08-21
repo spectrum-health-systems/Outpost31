@@ -1,4 +1,5 @@
-﻿// u2240620.1358
+﻿// uXXXXXX.XXXX_code
+// uXXXXXX.XXXX_documentation
 
 using System.IO;
 using System.Reflection;
@@ -7,7 +8,7 @@ using Outpost31.Core.Session;
 
 namespace Outpost31.Module.Admin.Service
 {
-    /// <summary>Soon.</summary>
+    /// <summary>TBD</summary>
     public static class Status
     {
         /// <summary>Assembly name for log files.</summary>
@@ -18,6 +19,7 @@ namespace Outpost31.Module.Admin.Service
         /// </remarks>
         public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
+        /// <summary>TBD</summary>
         public static void UpdateAll(TingenSession tnSession)
         {
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
@@ -29,6 +31,7 @@ namespace Outpost31.Module.Admin.Service
             Core.Avatar.ReturnObject.Finalize(tnSession, "info", "All statuses updated.");
         }
 
+        /// <summary>TBD</summary>
         public static void UpdateMode(string remoteRoot, string avSystemCode, string tnMode, TraceLog traceInfo)
         {
             LogEvent.Trace(1, AssemblyName, traceInfo);
@@ -57,6 +60,7 @@ namespace Outpost31.Module.Admin.Service
             }
         }
 
+        /// <summary>TBD</summary>
         public static void UpdateSettings(TingenSession tnSession)
         {
             LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);

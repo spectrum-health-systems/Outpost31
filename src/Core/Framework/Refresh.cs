@@ -17,7 +17,8 @@ namespace Outpost31.Core.Framework
         /// <param name="tnSession">The Tingen Session object</param>
         public static void RefreshOnDisable(TingenSession tnSession)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+             */
 
             Maintenance.VerifyFramework(tnSession);
             Module.Admin.Service.Status.UpdateAll(tnSession);
@@ -26,7 +27,8 @@ namespace Outpost31.Core.Framework
         /// <summary>Refresh the Tingen directory structure when Tingen is in an unknown state.</summary>
         public static void RefreshOnUnknown(TingenSession tnSession)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+             */
 
             Maintenance.VerifyFramework(tnSession);
             Module.Admin.Service.Status.UpdateAll(tnSession);
