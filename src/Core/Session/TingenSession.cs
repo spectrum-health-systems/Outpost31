@@ -3,6 +3,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using Outpost31.Core.Avatar;
 using Outpost31.Core.Configuration;
 using Outpost31.Core.Framework;
@@ -95,7 +96,9 @@ namespace Outpost31.Core.Session
         /// <returns>An Tingen Session object.</returns>
         public static TingenSession Build(OptionObject2015 sentOptionObject, string sentScriptParameter, string tnVersion)
         {
-            var staticVar  = BuildStaticVars();
+            LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name, "TingenSession.Build()");
+
+            var staticVar = BuildStaticVars();
             var configPath = $@"{staticVar["tnDataRoot"]}\{staticVar["avSystemCode"]}\Config";
 
             var tnSession = new TingenSession
@@ -109,6 +112,8 @@ namespace Outpost31.Core.Session
                 AvData    = AvatarData.BuildObject(sentOptionObject, sentScriptParameter),
                 TnPath    = Paths.Build(staticVar["tnDataRoot"], staticVar["avSystemCode"])
             };
+
+            LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name, "Tingen Session created");
 
             /* The session-specific path is built here. */
             tnSession.TnPath.SystemCode.CurrentSession = $@"{tnSession.TnPath.SystemCode.Sessions}\{tnSession.Date}\{sentOptionObject.OptionUserId}\{tnSession.Time}-{tnSession.AvData.SentScriptParameter}";
