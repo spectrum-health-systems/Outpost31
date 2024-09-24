@@ -4,43 +4,50 @@
 
   ![logo](./.github/images/logos/Outpost31_README.png)
   
-  ![DevelopmentBranchNotifiction](https://img.shields.io/badge/DEVELOPMENT_RELEASE-E10600?style=for-the-badge)
+  <!-- ![DevelopmentBranchNotifiction](https://img.shields.io/badge/DEVELOPMENT_RELEASE-firebrick?style=for-the-badge) -->
 
-  ![DevelopmentStatus](https://img.shields.io/badge/status-active-lightgreen?style=flat-square)&nbsp;&nbsp;
-  ![ReleaseVersion](https://img.shields.io/badge/release-24.7-red?style=flat-square)&nbsp;&nbsp;
-  ![License](https://img.shields.io/github/license/spectrum-health-systems/Outpost31?style=flat-square)&nbsp;&nbsp;
-  ![DotNet](https://img.shields.io/badge/.net-Framework_4.8-blue?style=flat-square)&nbsp;&nbsp;
+  <!-- ![DevelopmentStatus](https://img.shields.io/badge/status-active-chartreuse?style=flat-square)&nbsp;&nbsp; -->
+  ![ReleaseVersion](https://img.shields.io/badge/release-24.9--development-firebrick?style=flat-square)&nbsp;&nbsp;
+  ![DotNet](https://img.shields.io/badge/.net-Framework_4.8-darkslateblue?style=flat-square)&nbsp;&nbsp;
   ![Platform](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)&nbsp;&nbsp;
-
+  ![License](https://img.shields.io/github/license/spectrum-health-systems/Outpost31?style=flat-square)&nbsp;&nbsp;
+  
 </div>
  
 > HI THERE!  
-> You're probably looking for the [Tingen](https://github.com/spectrum-health-systems/Tingen) repository, which ties everything together nicely.
+> 
+> This is the **development version** of Outpost31, and actually doesn't do anything on it's own.
+>
+> You're probably looking for the [Tingen development version](https://github.com/spectrum-health-systems/Tingen_development).
 
-# About Outpost 31
+# About Outpost31
 
 Outpost31 contains the core and module functionality for the [Tingen](https://github.com/spectrum-health-systems/Tingen) web service.
 
-## About this repository
+Outpost31 is:
 
-This repository is used for Outpost31 ***active development***.
+* A ***development version***!
+* ***Not intended*** to be used on it's own, or outside of Tingen!
+* Most likely filled with ***bad/ugly/dumb placeholder code***!
+* Only used by the ***developer(s)*** of Outpost31, ***for the development*** of Outpost31!
 
-Since Outpost 31 technically doesn't do anything on it's own, there isn't a "stable" release aside from what is included in the stable release of Tingen.
+This repository is public because I think it's important to make the source code available for everyone to see.
 
-This repository is public because I think it's important to make the source code available so everyone can poke through it, but it's not intended to be used on it's own.
+# Repository branches
 
-## About the repository branches
+There are three types of branches in this repository:
 
-There are three type of branches in this repository:
+* **[main](https://github.com/spectrum-health-systems/Outpost31)**  
+  This is about as "stable" as Outpost31 is going to get, and even then it is considered a development version, so ***don't use it in production environments***!
 
-* [main](https://github.com/spectrum-health-systems/Outpost31)  
-  This is about as "stable" as Outpost31 is going to get, and is the version that is included in the same version number of Tingen. Even the `main` branch of Outpost31 is considered a development version, so it may contain broken/incomplete functionality!
+  The development branch is merged into main occasionally, generally for documentation updates, so commits to this branch are not a good indication of development progress.
+  
+* **[development](https://github.com/spectrum-health-systems/Outpost31/tree/development)**  
+  The majority of Outpost31 development is done in this branch, so if you want the latest-and-greatest, this is where to go.
 
-  For example, ***Release 24.7*** *of Tingen* includes ***Release 24.7*** **of Outpost31**
+* **Outpost31 archive snapshots**  
+  When development starts on a new monthly version, the previous version is archived to a separate branch (e.g., `24.9.0-development+final`).
 
-  The `main` version is occasionally merged with `development` for testing/documentation purposes.
+# Documentation
 
-* [development](https://github.com/spectrum-health-systems/Outpost31/tree/development)  
-  The majority of Outpost31 development is done in this branch.
-
-* Outpost31 development snapshots.
+You can find all the documentation you could ever want about Tingen (and related projects) [here](https://github.com/spectrum-health-systems/Tingen-Documentation).
