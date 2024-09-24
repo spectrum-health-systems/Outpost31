@@ -18,11 +18,11 @@
 > 
 > This is the **development version** of Outpost31, and actually doesn't do anything on it's own.
 >
-> You're probably looking for the [Tingen development version](https://github.com/spectrum-health-systems/Tingen_development).
+> You're probably looking for the [development version](https://github.com/spectrum-health-systems/Tingen_development) of Tingen.
 
 # About Outpost31
 
-Outpost31 contains the core and module functionality for the [Tingen](https://github.com/spectrum-health-systems/Tingen) web service.
+Outpost31 contains the core and module functionality for [Tingen](https://github.com/spectrum-health-systems/Tingen).
 
 Outpost31 is:
 
