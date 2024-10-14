@@ -111,6 +111,9 @@
     <Content Include="XmlDoc\Outpost31.Core.Framework_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core_doc.xml" />
     <None Include="app.config" />
+    <None Include="AppData\Tinplates\TingenCurrentSettings.tinplate.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <Content Include="XmlDoc\README.md" />
   </ItemGroup>
