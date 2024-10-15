@@ -1,4 +1,3 @@
-D:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\AppData\Tinplates\TingenCurrentSettings.tinplate.md
 D:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.dll.config
 D:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.dll
 D:\GitHub\Spectrum Health Systems\Outpost31\src\bin\Debug\Outpost31.pdb
