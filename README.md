@@ -18,7 +18,7 @@
 > 
 > This is the **development version** of Outpost31, and actually doesn't do anything on it's own.
 >
-> You're probably looking for the [development version](https://github.com/spectrum-health-systems/Tingen_development) of Tingen.
+> You're probably looking for the development version of [Tingen](https://github.com/spectrum-health-systems/Tingen_development).
 
 # About Outpost31
 
