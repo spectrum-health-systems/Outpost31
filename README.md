@@ -1,13 +1,10 @@
-<!-- u240711 -->
+<!-- u241017 -->
 
 <div align="center">
 
   ![logo](./.github/images/logos/Outpost31_README.png)
   
-  <!-- ![DevelopmentBranchNotifiction](https://img.shields.io/badge/DEVELOPMENT_RELEASE-firebrick?style=for-the-badge) -->
-
-  <!-- ![DevelopmentStatus](https://img.shields.io/badge/status-active-chartreuse?style=flat-square)&nbsp;&nbsp; -->
-  ![DEVELOPMENTNVERSION](https://img.shields.io/badge/release-24.10--development-firebrick?style=flat-square)&nbsp;&nbsp;
+  ![DEVELOPMENT_VERSION](https://img.shields.io/badge/release-24.10--development-firebrick?style=flat-square)&nbsp;&nbsp;
   ![DotNet](https://img.shields.io/badge/.net-Framework_4.8-darkslateblue?style=flat-square)&nbsp;&nbsp;
   ![Platform](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)&nbsp;&nbsp;
   ![License](https://img.shields.io/github/license/spectrum-health-systems/Outpost31?style=flat-square)&nbsp;&nbsp;
