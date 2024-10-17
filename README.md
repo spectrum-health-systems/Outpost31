@@ -7,15 +7,15 @@
   <!-- ![DevelopmentBranchNotifiction](https://img.shields.io/badge/DEVELOPMENT_RELEASE-firebrick?style=for-the-badge) -->
 
   <!-- ![DevelopmentStatus](https://img.shields.io/badge/status-active-chartreuse?style=flat-square)&nbsp;&nbsp; -->
-  ![RELEASEVERSION](https://img.shields.io/badge/release-24.10--development-firebrick?style=flat-square)&nbsp;&nbsp;
+  ![PRODUCTIONVERSION](https://img.shields.io/badge/release-24.10-seagreen?style=flat-square)&nbsp;&nbsp;
   ![DotNet](https://img.shields.io/badge/.net-Framework_4.8-darkslateblue?style=flat-square)&nbsp;&nbsp;
   ![Platform](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)&nbsp;&nbsp;
   ![License](https://img.shields.io/github/license/spectrum-health-systems/Outpost31?style=flat-square)&nbsp;&nbsp;
   
 </div>
- 
+
 > HI THERE!  
-> 
+>
 > This is the **development version** of Outpost31, and actually doesn't do anything on it's own.
 >
 > You're probably looking for the development version of [Tingen](https://github.com/spectrum-health-systems/Tingen_development).
