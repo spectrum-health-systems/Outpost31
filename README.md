@@ -7,7 +7,7 @@
   <!-- ![DevelopmentBranchNotifiction](https://img.shields.io/badge/DEVELOPMENT_RELEASE-firebrick?style=for-the-badge) -->
 
   <!-- ![DevelopmentStatus](https://img.shields.io/badge/status-active-chartreuse?style=flat-square)&nbsp;&nbsp; -->
-  ![ReleaseVersion](https://img.shields.io/badge/release-24.9--development-firebrick?style=flat-square)&nbsp;&nbsp;
+  ![RELEASEVERSION](https://img.shields.io/badge/release-24.10--development-firebrick?style=flat-square)&nbsp;&nbsp;
   ![DotNet](https://img.shields.io/badge/.net-Framework_4.8-darkslateblue?style=flat-square)&nbsp;&nbsp;
   ![Platform](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)&nbsp;&nbsp;
   ![License](https://img.shields.io/github/license/spectrum-health-systems/Outpost31?style=flat-square)&nbsp;&nbsp;
@@ -18,11 +18,11 @@
 > 
 > This is the **development version** of Outpost31, and actually doesn't do anything on it's own.
 >
-> You're probably looking for the [Tingen development version](https://github.com/spectrum-health-systems/Tingen_development).
+> You're probably looking for the development version of [Tingen](https://github.com/spectrum-health-systems/Tingen_development).
 
 # About Outpost31
 
-Outpost31 contains the core and module functionality for the [Tingen](https://github.com/spectrum-health-systems/Tingen) web service.
+Outpost31 contains the core and module functionality for [Tingen](https://github.com/spectrum-health-systems/Tingen).
 
 Outpost31 is:
 
@@ -47,6 +47,10 @@ There are three types of branches in this repository:
 
 * **Outpost31 archive snapshots**  
   When development starts on a new monthly version, the previous version is archived to a separate branch (e.g., `24.9.0-development+final`).
+
+# Roadmap and Changelogs
+
+The current Tingen [Roadmap](https://github.com/orgs/spectrum-health-systems/projects/41/views/2) and [Changelog](https://github.com/orgs/spectrum-health-systems/projects/41/views/5?groupedBy%5BcolumnId%5D=141147959&visibleFields=%5B%22Title%22%2C%22Status%22%2C%22Assignees%22%2C141147959%5D&filterQuery=status%3ACompleted) are publicly available
 
 # Documentation
 
