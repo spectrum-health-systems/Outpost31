@@ -50,7 +50,7 @@ There are three types of branches in this repository:
 
 # Roadmap and Changelogs
 
-The current Tingen [Roadmap](https://github.com/orgs/spectrum-health-systems/projects/41/views/2) and [Changelog](https://github.com/orgs/spectrum-health-systems/projects/41/views/5) are publicly available
+The current Tingen [Roadmap](https://github.com/orgs/spectrum-health-systems/projects/41/views/2) and [Changelog](https://github.com/orgs/spectrum-health-systems/projects/41/views/5?groupedBy%5BcolumnId%5D=141147959&visibleFields=%5B%22Title%22%2C%22Status%22%2C%22Assignees%22%2C141147959%5D&filterQuery=status%3ACompleted) are publicly available
 
 # Documentation
 
