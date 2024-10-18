@@ -42,7 +42,7 @@ There are three types of branches in this repository:
 * **[development](https://github.com/spectrum-health-systems/Outpost31/tree/development)**  
   The majority of Outpost31 development is done in this branch, so if you want the latest-and-greatest, this is where to go.
 
-  And if you are curious as to what features/bugs/etc. are being worked on, [here you go](https://github.com/orgs/spectrum-health-systems/projects/41/views/1)
+  If you are curious as to what features/bugs/etc. are being worked on, [here you go](https://github.com/orgs/spectrum-health-systems/projects/41/views/1)
 
 * **Outpost31 archive snapshots**  
   When development starts on a new monthly version, the previous version is archived to a separate branch (e.g., `24.9.0-development+final`).
@@ -52,7 +52,7 @@ There are three types of branches in this repository:
 You can also review the Outpost31:
 
 * [Roadmap](https://github.com/orgs/spectrum-health-systems/projects/41/views/2)
-* [Changelog](https://github.com/orgs/spectrum-health-systems/projects/41/views/5?groupedBy%5BcolumnId%5D=141147959&visibleFields=%5B%22Title%22%2C%22Status%22%2C%22Assignees%22%2C141147959%5D&filterQuery=status%3ACompleted)
+* [Changelog](https://github.com/orgs/spectrum-health-systems/projects/41/views/5)
 
 # Documentation
 
