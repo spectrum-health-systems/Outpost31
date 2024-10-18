@@ -21,7 +21,7 @@
 
 Outpost31 contains the core and module functionality for [Tingen](https://github.com/spectrum-health-systems/Tingen).
 
-The Outpost31 reository is:
+The Outpost31 repository is:
 
 * A ***development version***!
 * ***Not intended*** to be used on it's own, or outside of Tingen!
