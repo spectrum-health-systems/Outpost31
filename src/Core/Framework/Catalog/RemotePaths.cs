@@ -1,16 +1,12 @@
 ﻿// u2240821.1008_code
-// u240821.1008_documentation
+// u241018_documentation
 
 using System.Collections.Generic;
 
 namespace Outpost31.Core.Framework.Catalog
 {
     /// <summary>Remote paths for Tingen.</summary>
-    /// <remarks>
-    ///  <para>
-    ///   - Remote paths are used to store data that is accessible to specific users that have access to these locations.
-    ///  </para>
-    /// </remarks>
+    /// <remarks>Remote paths are used to store data that is accessible users that have access to the <c>Remote/</c> folder.</remarks>
     public class RemotePaths
     {
         /// <summary>Root path for remote data.</summary>
@@ -18,31 +14,33 @@ namespace Outpost31.Core.Framework.Catalog
         public string Root { get; set; }
 
         /// <summary>Path for remote alert data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\Remote\Alerts\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Alerts/*'/>
         public string Alerts { get; set; }
 
         /// <summary>Path for remote error data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\Remote\Errors\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Errors/*'/>
         public string Errors { get; set; }
 
         /// <summary>Path for remote export data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\Remote\Exports\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Exports/*'/>
         public string Exports { get; set; }
 
         /// <summary>Path for remote report data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\Remote\Reports\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Reports/*'/>
         public string Reports { get; set; }
 
+        /* [DN01] */
         /// <summary>Path for remote session data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\Remote\Sessions\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Sessions/*'/>
         public string Sessions { get; set; }
 
+        /* [DN01] */
         /// <summary>Current session path.</summary>
         /// <remarks>This is set at runtime.</remarks>
         public string CurrentSession { get; set; }
 
         /// <summary>Path for remote warning files.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\Remote\Warnings\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Warnings/*'/>
         public string Warnings { get; set; }
 
         /// <summary>Builds the remote paths object.</summary>
@@ -50,7 +48,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>The Tingen remote paths data structure.</returns>
         public static RemotePaths BuildObject(string tnDataRoot)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet, so if you
+             * need to create a logfile here, use a Primeval Log.
              */
 
             var remoteRoot = $@"{tnDataRoot}\Remote\";
@@ -73,7 +72,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>The list of required remote paths.</returns>
         public static List<string> RequiredPaths(RemotePaths remotePaths)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet, so if you
+             * need to create a logfile here, use a Primeval Log.
              */
 
             return new List<string>
@@ -89,3 +89,15 @@ namespace Outpost31.Core.Framework.Catalog
         }
     }
 }
+
+/*
+=================
+DEVELOPMENT NOTES
+=================
+
+-----------------
+[DN01] 241018
+-----------------
+Rename these to "SessionData" and "CurrentSessionData"?
+
+*/

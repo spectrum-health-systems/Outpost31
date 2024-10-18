@@ -1,20 +1,11 @@
-﻿<!--
-    u240820_documentation [WORK-IN-PROGRESS]
+﻿<!-- u241018 -->
 
-    Namespace
-        Outpost31.Core.Avatar
+<Outpost31.Core.Avatar>
 
-    Classes
-        Outpost31.Core.Avatar.AvatarData.cs
-        Outpost31.Core.Avatar.ReturnObject.cs
--->
-
-<Outpost31>
     <!--
-        Outpost31.Core.Avatar.AvatarData.cs
+        AvatarData.cs
     -->
     <Cs name="AvatarData">
-        <!-- [u240820f] /// <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31/Cs[@name="AvatarData"]/AvatarData/*'/>  -->
         <AvatarData>
             <remarks>
                 <para>
@@ -35,7 +26,8 @@
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Session.md">Tingen Documentation: The Tingen Session</seealso>
         </AvatarData>
-        <!-- [u240820f] <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31/Cs[@name="AvatarData"]/BuildObject/*'/> -->
+
+        <!-- BuildObject() -->
         <BuildObject>
             <remarks>
                 <para>
@@ -52,11 +44,11 @@
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
         </BuildObject>
     </Cs>
+
     <!--
-        Outpost31.Core.Avatar.ReturnObject.cs
+        ReturnObject.cs
     -->
     <Cs name="ReturnObject">
-        <!--  [u240820f] /// <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31/Cs[@name="ReturnObject"]/ReturnObject/*'/> -->
         <ReturnObject>
             <remarks>
                 <para>
@@ -68,7 +60,8 @@
             </remarks>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
         </ReturnObject>
-        <!-- /// [u240820f] <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31/Cs[@name="ReturnObject"]/Finalize/*'/> -->
+
+        <!-- Finalize() -->
         <Finalize>
             <remarks>
                 <para>
@@ -134,5 +127,7 @@
             </example>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">OptionObject</seealso>
         </Finalize>
+        
     </Cs>
-</Outpost31>
+
+</Outpost31.Core.Avatar>

@@ -1,24 +1,25 @@
 ﻿// u240821.1037_code
-// u240821.1020_documentation
+// u241018_documentation
 
 using System.Collections.Generic;
 
 namespace Outpost31.Core.Framework.Catalog
 {
     /// <summary>System Code paths for Tingen.</summary>
-    /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31/Cs[@name="SystemCodePaths"]/SystemCodePaths/*'/>
+    /// <remarks>System Code paths are used to store all sorts of data for different Avatar System Codes.</remarks>>
     public class SystemCodePaths
     {
         /// <summary>Root path for System Code data.</summary>
         /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\</c>"</remarks>
         public string Root { get; set; }
 
+        /* [DN01] */
         /// <summary>Path for System Code configuration data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Config\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Configs/*'/>
         public string Config { get; set; }
 
         /// <summary>Path for System Code session data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Sessions\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Sessions/*'/>
         public string Sessions { get; set; }
 
         /// <summary>Current session path.</summary>
@@ -26,33 +27,35 @@ namespace Outpost31.Core.Framework.Catalog
         public string CurrentSession { get; set; }
 
         /// <summary>Path for Tingen Extensions.</summary>
-        /// <remarks>Future functionality.</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Other"]/NotImplemented/*'/>
         public string Extensions { get; set; }
 
         /// <summary>Path for Tingen security-related data.</summary>
-        /// <remarks>Future functionality.</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Other"]/NotImplemented/*'/>
         public string Security { get; set; }
 
         /// <summary>Path for temporary data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Temporary/*'/>
         public string Temporary { get; set; }
 
+        /* [DN02] */
         /// <summary>Root for message data.</summary>
         /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Messages\</c>"</remarks>
         public string MessageRoot { get; set; }
 
         /// <summary>Path for alert data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\MessagesAlerts\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Alerts/*'/>
         public string Alerts { get; set; }
 
         /// <summary>Path for error data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\MessagesErrors\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Errors/*'/>
         public string Errors { get; set; }
 
         /// <summary>Path for warning data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\MessagesWarnings\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Warnings/*'/>
         public string Warnings { get; set; }
 
+        /* [DN02] */
         /// <summary>Root for exported data.</summary>
         /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Exports\</c>"</remarks>
         public string ExportRoot { get; set; }
@@ -61,36 +64,39 @@ namespace Outpost31.Core.Framework.Catalog
         /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Exports\Reports\</c>"</remarks>
         public string Reports { get; set; }
 
+        /* [DN02] */
         /// <summary>Root for imported data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Imports\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Reports/*'/>
         public string ImportRoot { get; set; }
 
         /// <summary>Path for imported data from Avatar.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Imports\FromAvatar\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/FromAvatar/*'/>
         public string FromAvatar { get; set; }
 
+        /* [DN03] */
         /// <summary>Path for imported templates.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Imports\Templates\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Templates/*'/>
         public string Templates { get; set; }
 
+        /* [DN02] */
         /// <summary>Root for support data.</summary>
         /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Support\</c>"</remarks>
         public string SupportRoot { get; set; }
 
         /// <summary>Path for admin data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Support\Admin\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Admin/*'/>
         public string Admin { get; set; }
 
         /// <summary>Path for archived data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Support\Archive\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Archives/*'/>
         public string Archive { get; set; }
 
         /// <summary>Path for debugging data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Support\Debugging\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Debugging/*'/>
         public string Debugging { get; set; }
 
         /// <summary>Path for log data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\%SystemCode%\Support\Logs\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Logging/*'/>
         public string Logs { get; set; }
 
         /// <summary>Builds the system code paths object.</summary>
@@ -99,7 +105,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>The System Code data paths.</returns>
         public static SystemCodePaths BuildObject(string tnDataRoot, string avSystemCode)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet, so if you
+             * need to create a logfile here, use a Primeval Log.
              */
 
             string systemCodeRoot    = $@"{tnDataRoot}\{avSystemCode}";
@@ -139,7 +146,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>The list of required System Code paths.</returns>
         public static List<string> RequiredPaths(SystemCodePaths systemCodePaths)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet, so if you
+             * need to create a logfile here, use a Primeval Log.
              */
 
             return new List<string>
@@ -169,3 +177,25 @@ namespace Outpost31.Core.Framework.Catalog
         }
     }
 }
+
+/*
+=================
+DEVELOPMENT NOTES
+=================
+
+-----------------
+[DN01] 241018
+-----------------
+Rename this to SystemCodeConfig?
+
+-----------------
+[DN02] 241018
+-----------------
+Rename or better documentation for these.
+
+-----------------
+[DN03] 241018
+-----------------
+Rename to "tinplates"
+
+*/

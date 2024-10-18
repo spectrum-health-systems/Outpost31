@@ -1,0 +1,24 @@
+﻿<!-- u241018 -->
+
+<Outpost31>
+    <Cs name="WelcomeToOutpost31">
+        <Welcome>
+            <remarks>
+                <para>
+                    Outpost31 is the backend logic for the Tingen web service.<br/>
+                    <br/>
+                    This class is just a placeholder for documentation, and where the Outpost31 version number is<br/>
+                    updated (see the header above).<br/>
+                    <br/>
+                    While you're here, take a look at this stuff:
+                    <list type="bullet">
+                        <item>
+                            The <see href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen Documentation</see>
+                        </item>
+                    </list>
+                    Uh...I guess that's it. Thanks for stopping by!
+                </para>
+            </remarks>
+        </Welcome>
+    </Cs>
+</Outpost31>

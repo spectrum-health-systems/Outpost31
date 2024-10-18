@@ -1,21 +1,11 @@
-﻿<!--
-    u240820_documentation
+﻿<!-- u241018 -->
 
-    Namespace
-        Outpost31.Core.Configuration
-
-    Classes
-        ConfigSettings.cs
--->
-
-
-<Outpost31>
+<Outpost31.Core.Configuration>
 
     <!--
-        Outpost31.Core.Configuration.ConfigSettings.cs
+        ConfigSettings.cs
     -->
     <Cs name="ConfigSettings">
-        <!-- [u240820] /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Outpost31/Cs[@name="ConfigSettings"]/ConfigSettings/*'/> -->
         <ConfigSettings>
             <remarks>
                 <para>
@@ -35,10 +25,12 @@
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Modules.md">Tingen Documentation: Modules</seealso>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Modes.md">Tingen Documentation: Modes</seealso>
         </ConfigSettings>
-        <!-- [u240820] /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Outpost31/Cs[@name="ConfigSettings"]/TingenMode/*'/> -->
+
+        <!-- TingenMode -->
         <TingenMode>
             <remarks>
                 <para>
+                    HO
                     The Tingen web service has the following <b>Modes</b>:
                     <list type="table">
                         <listheader>
@@ -53,6 +45,10 @@
                             <term>disabled</term>
                             <description>The Tingen web service is disabled, and does not do any work.</description>
                         </item>
+                        <item>
+                            <term>Passthrough</term>
+                            <description>Functionality is enabled, but no changes are made (and log files are written).</description>
+                        </item>
                     </list>
                 </para>
                 <para>
@@ -62,7 +58,8 @@
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Modules.md">Tingen Documentation: Modules</seealso>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Modes.md">Tingen Documentation: Modes</seealso>
         </TingenMode>
-        <!-- [u240820] /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Outpost31/Cs[@name="ConfigSettings"]/ModOpenIncidentMode/*'/> -->
+
+        <!-- ModOpenIncidentMode -->
         <ModOpenIncidentMode>
             <remarks>
                 <para>
@@ -81,7 +78,7 @@
                             <description>The OpenIncident Module is disabled, and does not do any work.</description>
                         </item>
                     </list>
-                    </para>
+                </para>
                 <para>
                     Disabling the OpenIncident Module <i>will not affect</i> any other Tingen Modules, or the Tingen web service as a whole.
                 </para>
@@ -89,7 +86,8 @@
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Modules.md">Tingen Documentation: Modules</seealso>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Modes.md">Tingen Documentation: Modes</seealso>
         </ModOpenIncidentMode>
-        <!-- [u240820] /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Outpost31/Cs[@name="ConfigSettings"]/BuildDefaultObject/*'/> -->
+
+        <!-- BuildDefaultObject() -->
         <BuildDefaultObject>
             <remarks>
                 <para>
@@ -123,25 +121,26 @@
                     </para>
                 <para>
                     When a new version of Tingen is released, these need to be verified/updated.
-                </para>
-                <para>
+                    <br/>
                     Builds the default Tingen configuration settings, usually because a configuration file doesn't exist.
                 </para>
             </remarks>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Modules.md">Tingen Documentation: Modules</seealso>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Modes.md">Tingen Documentation: Modes</seealso>
         </BuildDefaultObject>
-        <!-- [u240820] /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Outpost31/Cs[@name="ConfigSettings"]/Load/*'/> -->
+
+        <!-- Load() -->
         <Load>
             <remarks>
                 <para>
                     The configuration file path is hard-coded, and set in <see cref="Session.TingenSession.Build"/> when the <b>Tingen Session</b> is initialized.<br/>
-                </para>
-                <para>
-                    If the configuration file does not exist, a configuration file with default values will be created.<br/>>
+                    <br/>
+                    If the configuration file does not exist, a configuration file with default values will be created.
                 </para>
             </remarks>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Session.md">Tingen Documentation: Tingen Sessions</seealso>
         </Load>
+
     </Cs>
-</Outpost31>
+
+</Outpost31.Core.Configuration>

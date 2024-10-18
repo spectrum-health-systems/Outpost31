@@ -1,42 +1,43 @@
 ﻿// u240820.1131_code
-// u240820.1131_documentation
+// u241018_documentation
 
 using ScriptLinkStandard.Objects;
 
 namespace Outpost31.Core.Avatar
 {
     /// <summary>The Tingen session component that contains Avatar-related data.</summary>
-    /// <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31/Cs[@name="AvatarData"]/AvatarData/*'/>
+    /// <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31.Core.Avatar/Cs[@name="AvatarData"]/AvatarData/*'/>
     public class AvatarData
     {
         /// <summary>The Avatar System Code that Tingen will interface with.</summary>
-        /// <include file='XmlDoc/Common_doc.xml' path='Common/Type[@name="Property"]/SystemCode/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="SystemCodes"]/SystemCode/*'/>
         public string SystemCode { get; set; }
 
         /// <summary>The original data structure sent from Avatar.</summary>
-        /// <include file='XmlDoc/Common_doc.xml' path='Common/Type[@name="Property"]/SentOptionObject/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="OptionObjects"]/SentOptionObject/*'/>
         public OptionObject2015 SentOptionObject { get; set; }
 
         /// <summary>The original Script Parameter sent from Avatar.</summary>
-        /// <include file='XmlDoc/Common_doc.xml' path='Common/Type[@name="Property"]/SentScriptParameter/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="ScriptLink"]/ScriptParameter/*'/>
         public string SentScriptParameter { get; set; }
 
         /// <summary>The data structure that (is potentially) modified during a Tingen Session.</summary>
-        /// <include file='XmlDoc/Common_doc.xml' path='Common/Type[@name="Property"]/WorkOptionObject/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="OptionObjects"]/WorkOptionObject/*'/>
         public OptionObject2015 WorkOptionObject { get; set; }
 
-        /// <summary>The data structure that returned to Avatar.</summary>
-        /// <include file='XmlDoc/Common_doc.xml' path='Common/Type[@name="Property"]/ReturnOptionObject/*'/>
+        /// <summary>The data structure that is returned to Avatar.</summary>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="OptionObjects"]/ReturnOptionObject/*'/>
         public OptionObject2015 ReturnOptionObject { get; set; }
 
         /// <summary>Builds a new AvatarData data structure.</summary>
         /// <param name="sentOptionObject">The SentOptionObject data structure sent from Avatar.</param>
         /// <param name="sentScriptParameter">The SentScriptParameter sent from Avatar.</param>
         /// <returns>All of the data/information Tingen needs in order to do work.</returns>
-        /// <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Common/Type[@name="Property"]/BuildObject/*'/>
+        /// <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31.Core.Avatar/Cs[@name="AvatarData"]/BuildObject/*'/>
         public static AvatarData BuildObject(OptionObject2015 sentOptionObject, string sentScriptParameter)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet, so if you
+             * need to create a logfile here, use a Primeval Log.
              */
 
             return new AvatarData
@@ -50,3 +51,12 @@ namespace Outpost31.Core.Avatar
         }
     }
 }
+
+/*
+=================
+DEVELOPMENT NOTES
+=================
+
+None.
+
+*/
