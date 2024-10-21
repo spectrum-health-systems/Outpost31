@@ -548,6 +548,30 @@
     </Type>
 
     <!--
+        SessionInfo
+    -->
+    <Type name="SessionInfo">
+
+        <SessionDate> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="SessionInfo"]/SessionDate/*'/> -->
+            <remarks>
+                <para>
+                   Session date
+                </para>
+            </remarks>
+        </SessionDate>
+
+        <SessionTime>
+            <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="SessionInfo"]/SessionTime/*'/> -->
+            <remarks>
+                <para>
+                    Session Time
+                </para>
+            </remarks>
+        </SessionTime>
+    
+    </Type>
+    
+    <!--
         System Codes
     -->
     <Type name="SystemCodes">
@@ -579,7 +603,38 @@
                 This should be <c>LIVE</c> for production environments, and <c>UAT</c> for testing environments.
             </value>
         </SystemCode>
+    </Type>
+
+    <!--
+        TingenInfo
+    -->
+    <Type name="TingenInfo">
+        <TingenVersion> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="TingenInfo"]/TingenVersion/*'/> -->
+            <remarks>
+                <para>
+                   The version of Tingen
+                </para>
+            </remarks>
+        </TingenVersion>
+
+        <TingenBuild> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="TingenInfo"]/TingenBuild/*'/> -->
+            <remarks>
+                <para>
+                    The Build of Tingen
+                </para>
+            </remarks>
+        </TingenBuild>
+
+        <TingenConfig>
+            <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="TingenInfo"]/TingenConfig/*'/> -->
+            <remarks>
+                <para>
+                    See <b>Outpost31.Core.Configuration.TingenFramework.cs</b> for more information.
+                </para>
+            </remarks>
+        </TingenConfig>
 
     </Type>
+
 
 </Outpost31-Common>

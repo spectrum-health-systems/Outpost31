@@ -1,5 +1,5 @@
-﻿// uXXXXXX.XXXX_code
-// uXXXXXX.XXXX_documentation
+﻿// u241021.1131_code
+// u241021_documentation
 
 using System;
 using System.Collections.Generic;
@@ -22,78 +22,62 @@ namespace Outpost31.Core.Session
     /// </remarks>
     public class TingenSession
     {
-        /// <summary>TBD</summary>
+        /// <summary>The Tingen version.</summary>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="TingenInfo"]/TingenVersion/*'/>
         public string TnVersion { get; set; }
 
-        /// <summary>TBD</summary>
+        /// <summary>The Tingen build.</summary>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="TingenInfo"]/TingenBuild/*'/>
         public string TnBuild { get; set; }
 
         /// <summary>The session datestamp.</summary>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="SessionInfo"]/SessionDate/*'/>
         public string Date { get; set; }
+
         /// <summary>The session timestamp.</summary>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="SessionInfo"]/SessionTime/*'/>
         public string Time { get; set; }
 
         /// <summary>Return the cloned OptionObject.</summary>
+        /// <remarks>Do we return the cloned object?</remarks>
+        /// <returns>True/False.</returns>
         public bool ReturnClonedOptionObject { get; set; }
 
         /// <summary>Config</summary>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="TingenInfo"]/TingenConfig/*'/>
         public ConfigSettings TnConfig { get; set; }
 
+        /* [DN01] */
         /// <summary>Tingen Framework information.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   See <b>Outpost31.Core.Configuration.TingenFramework.cs</b> for more information.
-        ///  </para>
-        /// </remarks>
+        /// <remarks>NEED XML Build path stuff?</remarks>
+        /// <returns>Paths stuff</returns>
         public Paths TnPath { get; set; }
 
         /// <summary>Avatar components .</summary>
-        /// <remarks>
-        ///  <para>
-        ///   See <b>Outpost31.Core.Configuration.TingenFramework.cs</b> for more information.
-        ///  </para>
-        /// </remarks>
+        /// <remarks>NEED XML Avatar data</remarks>
+        /// <returns>Avatar data</returns>
         public AvatarData AvData { get; set; }
 
-        /// <summary>TBD</summary>
+        /// <summary>Not used.</summary>
+        /// <remarks>Not used.</remarks>
+        /// <returns>Netsmart web service security information.</returns>
         public NtstWebServiceSecurity NtstWebServiceSecurity { get; set; }
 
         /// <summary>Trace log information.</summary>
+        /// <remarks>NEED XML Trace log information.</remarks>
         public TraceLog TraceInfo { get; set; }
 
         /// <summary>Module to open an incident.</summary>
-        ///
+        /// <remarks>NEED XML</remarks>
+        /// <returns>What it returns</returns>
         public ModuleOpenIncident ModOpenIncident { get; set; }
 
         /// <summary>Builds the Tingen Session object.</summary>
         /// <param name="configFile">The path to the Tingen configuration file.</param>
         /// <param name="sentOptionObject">The OptionObject sent from Avatar.</param>
         /// <param name="sentScriptParameter">The ScriptParameter sent from Avatar.</param>
-        /// <remarks>
-        ///  <para>
-        ///   The Tingen Session contains all of the information that Tingen needs to do what it does, including:
-        ///   <list type="bullet">
-        ///    <item>Configuration settings (user-definable settings from the <paramref name="configFile"/>)</item>
-        ///    <item>Static settings (these do not change between sessions)</item>
-        ///    <item>Runtime settings (unique to the current session)</item>
-        ///    <item>Data sent from Avatar, including the <paramref name="sentOptionObject"/> and <paramref name="sentScriptParameter"/></item>
-        ///    <item>Data derived from the <paramref name="sentOptionObject"/> or <paramref name="sentScriptParameter"/>.</item>
-        ///    <item>Required Tingen Module details.</item>
-        ///   </list>
-        ///  </para>
-        ///  <para>
-        ///   <b>More information about this method:</b><br/>
-        ///   This method is one of the most important in Tingen, as it builds the Tingen Session object.<br/><br/>
-        ///   The Session object is built in this order:
-        ///   <list type="number">
-        ///    <item>A basic TingenSession object is initalized with the current date, time, configuration settings, and Avatar data.</item>
-        ///    <item>Framework information is added seperately.</item>
-        ///    <item>Trace log information is added seperately.</item>
-        ///    <item>Module objects are added seperately.</item>
-        ///   </list>
-        ///  </para>
-        /// </remarks>
         /// <returns>An Tingen Session object.</returns>
+        /// <include file='XmlDoc/Outpost31.Core.Session_doc.xml' path='Outpost31.Core.Session/Cs[@name="TingenSession"]/Build/*'/>
         public static TingenSession Build(OptionObject2015 sentOptionObject, string sentScriptParameter, string tnVersion)
         {
             LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name, "TingenSession.Build()");
@@ -177,5 +161,10 @@ DEVELOPMENT NOTES
 =================
 
 - Do we need to verify the session path?
+
+-----------------
+[DN01] 241021
+-----------------
+Rename "Paths"?
 
 */

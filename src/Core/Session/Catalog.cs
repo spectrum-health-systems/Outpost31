@@ -1,9 +1,12 @@
-﻿// uXXXXXX.XXXX_code
-// uXXXXXX.XXXX_documentation
+﻿// u241021.1131_code
+// u241021_documentation
 
 using System;
 using System.Reflection;
 using Outpost31.Core.Logger;
+
+/* This class will be changing soon, so I am not working on XML documentation at this time. 
+ */
 
 namespace Outpost31.Core.Session
 {
