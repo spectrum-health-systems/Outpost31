@@ -1,12 +1,12 @@
 ﻿// u240821.1037_code
-// u241018_documentation
+// u241021_documentation
 
 using System.Collections.Generic;
 
 namespace Outpost31.Core.Framework.Catalog
 {
     /// <summary>System Code paths for Tingen.</summary>
-    /// <remarks>System Code paths are used to store all sorts of data for different Avatar System Codes.</remarks>>
+    /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31.Core.Framework/Cs[@name="SystemCodePaths"]/SystemCodePaths/*'/>
     public class SystemCodePaths
     {
         /// <summary>Root path for System Code data.</summary>

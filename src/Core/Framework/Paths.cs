@@ -1,21 +1,12 @@
 ﻿// u240709.0000_code
-// u240709.0000_documentation
+// u241021_documentation
 
 using Outpost31.Core.Framework.Catalog;
 
 namespace Outpost31.Core.Framework
 {
     /// <summary>The Tingen Framework.</summary>
-    /// <remarks>
-    ///  <para>
-    ///   The Tingen Framework is comprised of:
-    ///   <list type = "bullet">
-    ///    <item>The Tingen directory structure</item>
-    ///    <item>Tingen core data/files</item>
-    ///    <item>Tingen maintenance procedures</item>
-    ///   </list>
-    ///  </para>
-    /// </remarks>
+    /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31.Core.Framework/Cs[@name="Paths"]/Paths/*'/>
     public class Paths
     {
         /// <summary>Tingen data paths.</summary>

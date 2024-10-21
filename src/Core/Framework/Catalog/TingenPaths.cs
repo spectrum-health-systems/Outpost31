@@ -1,12 +1,12 @@
 ﻿// u240821.1043_code
-// u241018_documentation
+// u241021_documentation
 
 using System.Collections.Generic;
 
 namespace Outpost31.Core.Framework.Catalog
 {
     /// <summary>Specific to Tingen.</summary>
-    /// <remarks>Tingen paths are specific to Tingen.</remarks>
+    /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31.Core.Framework/Cs[@name="TingenPaths"]/TingenPaths/*'/>
     public class TingenPaths
     {
         /// <summary>Root path for Tingen data.</summary>

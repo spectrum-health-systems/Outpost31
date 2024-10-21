@@ -1,12 +1,12 @@
 ﻿// u240821.0938_code
-// u241018_documentation
+// u241021_documentation
 
 using System.Collections.Generic;
 
 namespace Outpost31.Core.Framework.Catalog
 {
     /// <summary>Public paths for Tingen.</summary>
-    /// <remarks>Public paths are used to store data that is accessible users that have access to the <c>Public/</c> folder.</remarks>
+    /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31.Core.Framework/Cs[@name="PublicPaths"]/PublicPaths/*'/>
     public class PublicPaths
     {
         /// <summary>The root path for public data.</summary>
