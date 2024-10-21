@@ -1,5 +1,5 @@
 ﻿// u240709.0000_code
-// u240709.0000_documentation
+// u241021_documentation
 
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -7,26 +7,16 @@ using System.Runtime.CompilerServices;
 namespace Outpost31.Core.Logger
 {
     /// <summary>Provides logging functionality.</summary>
+    /// <include file='XmlDoc/Outpost31.Core.Logger_doc.xml' path='Outpost31.Core.Logger/Cs[@name="LogEvent"]/LogEvent/*'/>
+
     public static class LogEvent
     {
         /// <summary>Log a trace event.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   Trace logs are used to record information about the application's execution.
-        ///   <list type="bullet">
-        ///    <item>Records information about Tingen's execution</item>
-        ///    <item>Used when debugging/troublshooting during development, and should probably be disabled in production</item>
-        ///    <item>Important details are in the filename: <b>%assemblyName%-%calledClass%-%calledMethod%-%lineNumber.trace</b></item>
-        ///    <item>Do not contain any data</item>   
-        ///    <item>To ensure all logs are captured, filenames start with a timestamp: <b>ssfffffff_</b></item>
-        ///    <item>Extension is <b>.trace</b></item>
-        ///   </list>
-        ///   - More information about Trace logs <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#logging">here</see>.
-        ///  </para>
-        /// </remarks>
+        /// <include file='XmlDoc/Outpost31.Core.Logger_doc.xml' path='Outpost31.Core.Logger/Cs[@name="LogEvent"]/Trace/*'/>
         public static void Trace(int logLevel, string assemblyName, TraceLog traceInfo, string message = "", [CallerFilePath] string fromPath = "", [CallerMemberName] string fromMethod = "", [CallerLineNumber] int line = 0)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet, so if you
+             * need to create a logfile here, use a Primeval Log.
              */
 
             var fromClass = fromPath.Split('\\').Last();
@@ -42,24 +32,16 @@ namespace Outpost31.Core.Logger
         }
 
         /// <summary>Log a primeval event.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   Primeval logs are vary simple logs that can be created with very little information.
-        ///   <list type="bullet">
-        ///    <item>Do not require any paramaters</item>
-        ///    <item>Used when debugging/troublshooting during development, and should be disabled in production</item>
-        ///    <item>Important details can be found in the file contents</item>
-        ///    <item>May have custom messages (the default message is "Tingen primeval log"</item>
-        ///    <item>To ensure all logs are captured, filenames are timestamped <b>yyMMddHHmmssfffffff</b></item>
-        ///    <item>Extenstion is <b>.primeval</b></item>
-        ///   </list>
-        ///   - More information about Primeval logs <see href="github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Glossary.md#logging">here</see>.
-        ///  </para>
-        /// </remarks>
+        /// <include file='XmlDoc/Outpost31.Core.Logger_doc.xml' path='Outpost31.Core.Logger/Cs[@name="LogEvent"]/Primeval/*'/>
 
         public static void Primeval(string assemblyName, string message = "Tingen primeval log", [CallerFilePath] string fromPath = "", [CallerMemberName] string fromMethod = "", [CallerLineNumber] int line = 0)
         {
-            /* Can't create any logs here! Sorry!
+            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet.
+             *
+             * You can't put a Primeval log here either, since that may result in an infinite loop/stack overflow
+             * when Primeval log directory is being refreshed.
+             *
+             * So, no logging for you!
              */
 
             var fromClass = fromPath.Split('\\').Last();
@@ -68,3 +50,12 @@ namespace Outpost31.Core.Logger
         }
     }
 }
+
+/*
+=================
+DEVELOPMENT NOTES
+=================
+
+None.
+
+*/

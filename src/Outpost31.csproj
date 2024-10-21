@@ -105,6 +105,7 @@
     <Folder Include="Module\Testing\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="XmlDoc\Outpost31.Core.Logger_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Welcome_doc.xml" />
     <Content Include="XmlDoc\Outpost31-Common_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Configuration_doc.xml" />

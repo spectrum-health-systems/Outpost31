@@ -1,5 +1,5 @@
 ﻿// u240709.0000_code
-// u240709.0000_documentation
+// u241021_documentation
 
 using System;
 using System.IO;
@@ -8,42 +8,29 @@ using System.Threading;
 namespace Outpost31.Core.Logger
 {
     /// <summary>Primeval logs</summary>
+    /// <include file='XmlDoc/Outpost31.Core.Logger_doc.xml' path='Outpost31.Core.Logger/Cs[@name="PrimevalLog"]/PrimevalLog/*'/>
     public static class PrimevalLog
     {
         /// <summary>Primeval log path.</summary>
-        /// <remarks>
-        ///   <para>
-        ///    - Primeval logs are written to <i>C:\TingenData\Primeval\</i>, defined here so it can be easily changed if needed.
-        ///   </para>
-        /// </remarks>
+        /// <include file='XmlDoc/Outpost31.Core.Logger_doc.xml' path='Outpost31.Core.Logger/Cs[@name="PrimevalLog"]/PrimevalLogPath/*'/>
         public static string PrimevalLogPath { get; set; } = @"C:\TingenData\Primeval";
 
+        /* [DN01] */
         /// <summary>Creates a Primeval log.</summary>
-        /// <param name="assemblyName"></param>
-        /// <param name="message"></param>
-        /// <param name="fromClass"></param>
-        /// <param name="fromMethod"></param>
-        /// <param name="line"></param>
-        /// <remarks>
-        ///  <para>
-        ///    - Before a Primeval log is written, the Primeval log path is verified to ensure it exists.<br/>
-        ///    - Log files may be created quickly - and possibly at the same time - so a pause is added to ensure logs are unique.
-        ///  </para>
-        /// </remarks>
-        ///    <example>
-        ///    To create a simple Primeval log:
-        ///    <code>
-        ///     LogEvent.Primeval(AssemblyName);
-        ///     LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name);
-        ///    </code>
-        ///    To create a Primeval log with custom content:
-        ///    <code>
-        ///     LogEvent.Primeval(AssemblyName, message);
-        ///     LogEvent.Primeval(Assembly.GetExecutingAssembly().GetName().Name, message);
-        ///    </code>
-        ///   </example>
+        /// <param name="assemblyName">The executing assembly name.</param>
+        /// <param name="message">The log message</param>
+        /// <param name="fromClass">The path of the calling class.</param>
+        /// <param name="fromMethod">The path of the calling method</param>
+        /// <param name="line">The line of code</param>
+        /// <include file='XmlDoc/Outpost31.Core.Logger_doc.xml' path='Outpost31.Core.Logger/Cs[@name="PrimevalLog"]/Create/*'/>
         public static void Create(string assemblyName, string message, string fromClass, string fromMethod, int line)
         {
+            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet.
+             *
+             * You can't put a Primeval log here either, since that may result in an infinite loop/stack overflow
+             * when Primeval log directory is being refreshed.
+            */
+
             Framework.Maintenance.VerifyDirectory(PrimevalLogPath);
 
             var fileContent = LoggerCatalog.StandardContent(assemblyName, fromClass, fromMethod, line.ToString(), message);
@@ -53,15 +40,23 @@ namespace Outpost31.Core.Logger
             File.WriteAllText(filePath, fileContent);
         }
 
-        /// <summary> Removes old Primeval logs.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   - Not currently used.
-        ///  </para>
-        /// </remarks>
+        /// <summary>Removes old Primeval logs.</summary>
+        /// <remarks>Not currently used.</remarks>
         public static void DevelopmentCleanup()
         {
             Framework.Maintenance.RefreshDirectory(PrimevalLogPath);
         }
     }
 }
+
+/*
+=================
+DEVELOPMENT NOTES
+=================
+
+-----------------
+[DN01] 241021
+-----------------
+These should standardized.
+
+*/
