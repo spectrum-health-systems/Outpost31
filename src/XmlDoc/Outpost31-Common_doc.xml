@@ -296,8 +296,7 @@
             </remarks>
         </FromAvatar>
 
-        <Logging>
-            <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Logging/*'/> -->
+        <Logging> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Logging/*'/> -->
             <remarks>
                 <para>
                     Logging data.
@@ -312,8 +311,7 @@
             </remarks>
         </Logging>
 
-        <Primeval>
-            <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Primeval/*'/> -->
+        <Primeval> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Primeval/*'/> -->
             <remarks>
                 <para>
                     Primeval logging data.
@@ -327,6 +325,37 @@
                 </para>
             </remarks>
         </Primeval>
+
+        <PublicDataRoot> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/PublicDataRoot/*'/> -->
+            <remarks>
+                <para>
+                    The root folder for public data.
+                </para>
+                <para>
+                    Examples of public data include:
+                    <list type="bullet">
+                        <item>Example #1</item>
+                        <item>Example #2</item>
+                    </list>
+                </para>
+            </remarks>
+        </PublicDataRoot>
+
+        <RemoteDataRoot>
+            <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/RemoteDataRoot/*'/> -->
+            <remarks>
+                <para>
+                    The root folder for remote data.
+                </para>
+                <para>
+                    Examples of remote data include:
+                    <list type="bullet">
+                        <item>Example #1</item>
+                        <item>Example #2</item>
+                    </list>
+                </para>
+            </remarks>
+        </RemoteDataRoot>
 
         <Reports> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Reports/*'/> -->
             <remarks>
@@ -358,6 +387,22 @@
             </remarks>
         </Sessions>
 
+        <SystemCodesDataRoot>
+            <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/SystemCodesDataRoot/*'/> -->
+            <remarks>
+                <para>
+                    The root folder for Avatar System Codes data.
+                </para>
+                <para>
+                    Examples of vatar System Codes data include:
+                    <list type="bullet">
+                        <item>Example #1</item>
+                        <item>Example #2</item>
+                    </list>
+                </para>
+            </remarks>
+        </SystemCodesDataRoot>
+
         <Templates> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Templates/*'/> -->
             <remarks>
                 <para>
@@ -388,6 +433,22 @@
             </remarks>
         </Temporary>
 
+        <TingenDataRoot>
+            <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/TingenDataRoot/*'/> -->
+            <remarks>
+                <para>
+                    The root folder for Tingen-specific data.
+                </para>
+                <para>
+                    Examples of Tingen-specific data include:
+                    <list type="bullet">
+                        <item>Example #1</item>
+                        <item>Example #2</item>
+                    </list>
+                </para>
+            </remarks>
+        </TingenDataRoot>
+        
         <Warnings> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Warnings/*'/> -->
             <remarks>
                 <para>

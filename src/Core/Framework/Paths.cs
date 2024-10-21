@@ -10,12 +10,15 @@ namespace Outpost31.Core.Framework
     public class Paths
     {
         /// <summary>Tingen data paths.</summary>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/TingenDataRoot/*'/>
         public TingenPaths Tingen { get; set; }
 
         /// <summary>System code data paths.</summary>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/SystemCodesDataRoot/*'/>
         public SystemCodePaths SystemCode { get; set; }
 
         /// <summary>Public data paths.</summary>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/PublicDataRoot/*'/>
         public PublicPaths Public { get; set; }
 
         /// <summary>Remote data paths.</summary>
@@ -24,10 +27,12 @@ namespace Outpost31.Core.Framework
         /// <summary>Builds the paths object.</summary>
         /// <param name="tnDataRoot">The Tingen data root.</param>
         /// <param name="avSystemCode">The Avatar System Code.</param>
-        /// <returns>The Tingen data paths</returns>
+        /// <remarks>Builds the paths object.</remarks>
+        /// <returns>The Tingen data paths.</returns>
         public static Paths Build(string tnDataRoot, string avSystemCode)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet, so if you
+             * need to create a logfile here, use a Primeval Log.
              */
 
             return new Paths
@@ -40,3 +45,12 @@ namespace Outpost31.Core.Framework
         }
     }
 }
+
+/*
+=================
+DEVELOPMENT NOTES
+=================
+
+None.
+
+*/

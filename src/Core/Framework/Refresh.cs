@@ -1,23 +1,21 @@
 ﻿// u240709.0000_code
-// u240709.0000_documentation
+// u241021_documentation
 
 using Outpost31.Core.Session;
 
 namespace Outpost31.Core.Framework
 {
     /// <summary>Refresh the Tingen directory structure.</summary>
+    /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31.Core.Framework/Cs[@name="Refresh"]/Refresh/*'/>
     public static class Refresh
     {
         /// <summary>Refresh the Tingen directory structure when Tingen is disabled.</summary>
-        /// <remarks>
-        ///  <para>
-        ///   - If Tingen is disabled, might as well update the service status files.
-        ///  </para>
-        /// </remarks>
         /// <param name="tnSession">The Tingen Session object</param>
+        /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31.Core.Framework/Cs[@name="Refresh"]/RefreshOnDisable/*'/>
         public static void RefreshOnDisable(TingenSession tnSession)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet, so if you
+             * need to create a logfile here, use a Primeval Log.
              */
 
             Maintenance.VerifyFramework(tnSession);
@@ -25,9 +23,12 @@ namespace Outpost31.Core.Framework
         }
 
         /// <summary>Refresh the Tingen directory structure when Tingen is in an unknown state.</summary>
+        /// <param name="tnSession">The Tingen Session object</param>
+        /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31.Core.Framework/Cs[@name="Refresh"]/RefreshOnUnknown/*'/>
         public static void RefreshOnUnknown(TingenSession tnSession)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet, so if you
+             * need to create a logfile here, use a Primeval Log.
              */
 
             Maintenance.VerifyFramework(tnSession);
@@ -35,3 +36,12 @@ namespace Outpost31.Core.Framework
         }
     }
 }
+
+/*
+=================
+DEVELOPMENT NOTES
+=================
+
+None.
+
+*/
