@@ -1,4 +1,4 @@
-﻿<!-- u241018 -->
+﻿<!-- u241021 -->
 
 <Outpost31.Core.Avatar>
 
@@ -9,7 +9,7 @@
         <AvatarData>
             <remarks>
                 <para>
-                    The <c>AvatarData</c> class is the foundation of a data structure that contains the following <i>Avatar-related data</i>:
+                    The <c>AvatarData</c> class is the foundation of a data structure that contains the following::
                     <list type="bullet">
                         <item><see cref="SystemCode"/></item>
                         <item><see cref="ReturnOptionObject"/></item>

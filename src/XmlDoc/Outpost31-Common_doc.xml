@@ -1,7 +1,61 @@
-﻿<!-- u241018 -->
+﻿<!-- u241021 -->
 
 <!--
-    This file contains external XML documentation for common properties that are used throughout the Tingen web service.
+    This file contains external XML documentation for the following common items that are used throughout the Tingen
+    web service:
+
+    Logging
+        TraceDelay
+        TraceLevel
+
+    Modes
+        Mode
+
+    OptionObjects
+        ReturnOptionObject
+        SentOptionObject
+        WorkOptionObject
+
+    Other
+        NotImplemented
+
+    Paths
+        Admin
+        Alerts
+        Archives
+        Configs
+        CurrentSession
+        Debugging
+        Errors
+        Exports
+        FromAvatar
+        Logging
+        Primeval
+        PublicDataRoot
+        RemoteDataRoot
+        Reports
+        Sessions
+        SystemCodesDataRoot
+        Templates
+        Temporary
+        TingenDataRoot
+        Warnings
+
+    ScriptLink
+        ScriptParameter
+
+    SessionInfo
+
+        SessionDate
+        SessionTime
+
+   SystemCodes
+        SystemCode
+
+   TingenInfo
+        TingenVersion
+        TingenBuild
+        TingenConfig
 -->
 
 <Outpost31-Common>
@@ -11,9 +65,7 @@
     -->
     <Type name="Logging">
 
-        <!-- TraceDelay -->
-        <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="CommonProperty"]/TraceDelay/*'/> -->
-        <TraceDelay>
+        <TraceDelay> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="CommonProperty"]/TraceDelay/*'/> -->
             <remarks>
                 <para>
                     Determines the delay, in milliseconds, between <b>Trace Log</b> writes.
@@ -28,9 +80,7 @@
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Logging.md">Tingen Documentation: Logging</seealso>
         </TraceDelay>
 
-        <!-- TraceLevel -->
-        <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="CommonProperty"]/TraceLevel/*'/> -->
-        <TraceLevel>
+        <TraceLevel>  <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="CommonProperty"]/TraceLevel/*'/> -->
             <remarks>
                 <para>
                     Determines the amount of <b>Trace Logs</b> that are generated.
@@ -98,9 +148,7 @@
     -->
     <Type name="OptionObjects">
 
-        <!-- ReturnOptionObject -->
-        <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="OptionObjects"]/ReturnOptionObject/*'/> -->
-        <ReturnOptionObject>
+        <ReturnOptionObject> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="OptionObjects"]/ReturnOptionObject/*'/> -->
             <remarks>
                 <para>
                     The <c>ReturnOptionObject</c> is the data structure that is returned to Avatar, and contains any modifications made to the original data.<br/>
@@ -113,9 +161,7 @@
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
         </ReturnOptionObject>
 
-        <!-- SentOptionObject -->
-        <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="OptionObjects"]/SentOptionObject/*'/> -->
-        <SentOptionObject>
+        <SentOptionObject> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="OptionObjects"]/SentOptionObject/*'/> -->
             <remarks>
                 <para>
                     The <c>SentOptionObject</c> is the original data structure that is sent from  Avatar to Tingen, and contains all of the <i>data</i> Tingen needs to do its work.<br/>
@@ -126,9 +172,7 @@
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
         </SentOptionObject>
 
-        <!-- WorkOptionObject -->
-        <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="OptionObjects"]/WorkOptionObject/*'/> -->
-        <WorkOptionObject>
+        <WorkOptionObject> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="OptionObjects"]/WorkOptionObject/*'/> -->
             <remarks>
                 <para>
                     Any modifications made to the original data sent from Avatar are made in the <c>WorkOptionObject</c> data structure.<br/>
@@ -341,8 +385,7 @@
             </remarks>
         </PublicDataRoot>
 
-        <RemoteDataRoot>
-            <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/RemoteDataRoot/*'/> -->
+        <RemoteDataRoot> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/RemoteDataRoot/*'/> -->
             <remarks>
                 <para>
                     The root folder for remote data.
@@ -387,8 +430,7 @@
             </remarks>
         </Sessions>
 
-        <SystemCodesDataRoot>
-            <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/SystemCodesDataRoot/*'/> -->
+        <SystemCodesDataRoot> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/SystemCodesDataRoot/*'/> -->
             <remarks>
                 <para>
                     The root folder for Avatar System Codes data.
@@ -433,8 +475,7 @@
             </remarks>
         </Temporary>
 
-        <TingenDataRoot>
-            <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/TingenDataRoot/*'/> -->
+        <TingenDataRoot> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/TingenDataRoot/*'/> -->
             <remarks>
                 <para>
                     The root folder for Tingen-specific data.
@@ -448,7 +489,7 @@
                 </para>
             </remarks>
         </TingenDataRoot>
-        
+
         <Warnings> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Warnings/*'/> -->
             <remarks>
                 <para>
@@ -560,23 +601,22 @@
             </remarks>
         </SessionDate>
 
-        <SessionTime>
-            <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="SessionInfo"]/SessionTime/*'/> -->
+        <SessionTime> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="SessionInfo"]/SessionTime/*'/> -->
             <remarks>
                 <para>
                     Session Time
                 </para>
             </remarks>
         </SessionTime>
-    
+
     </Type>
-    
+
     <!--
         System Codes
     -->
-    <Type name="SystemCodes">
+    <Type name="AvatarSystemCodes">
 
-        <SystemCode> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="SystemCodes"]/SystemCode/*'/> -->
+        <SystemCode> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="AvatarSystemCodes"]/AvatarSystemCodes/*'/> -->
             <remarks>
                 <para>
                     The Tingen works with a single Avatar environment at a time, defined by oneof the following Avatar <c>System Codes</c>:

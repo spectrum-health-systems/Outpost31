@@ -10,7 +10,7 @@ namespace Outpost31.Core.Avatar
     public class AvatarData
     {
         /// <summary>The Avatar System Code that Tingen will interface with.</summary>
-        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="SystemCodes"]/SystemCode/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="AvatarSystemCodes"]/AvatarSystemCodes/*'/>
         public string SystemCode { get; set; }
 
         /// <summary>The original data structure sent from Avatar.</summary>

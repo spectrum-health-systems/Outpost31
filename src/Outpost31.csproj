@@ -105,6 +105,7 @@
     <Folder Include="Module\Testing\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="XmlDoc\Outpost31-AvatarSystemCodes_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Session_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Logger_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Welcome_doc.xml" />
