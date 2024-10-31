@@ -109,7 +109,7 @@
     <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.TingenPaths_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.SystemCodePaths_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.RemotePaths_doc.xml" />
-    <Content Include="XmlDoc\Outpost31.Core.Framework_doc - Copy.xml" />
+    <Content Include="XmlDoc\_Outpost31.Core.Framework_doc - Copy.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Utilities_doc.xml" />
     <Content Include="XmlDoc\Outpost31-AvatarSystemCodes_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Session_doc.xml" />
