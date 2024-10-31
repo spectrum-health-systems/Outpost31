@@ -52,10 +52,6 @@
    SystemCodes
         SystemCode
 
-   TingenInfo
-        TingenVersion
-        TingenBuild
-        TingenConfig
 -->
 
 <Outpost31-Common>
@@ -644,37 +640,5 @@
             </value>
         </SystemCode>
     </Type>
-
-    <!--
-        TingenInfo
-    -->
-    <Type name="TingenInfo">
-        <TingenVersion> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="TingenInfo"]/TingenVersion/*'/> -->
-            <remarks>
-                <para>
-                   The version of Tingen
-                </para>
-            </remarks>
-        </TingenVersion>
-
-        <TingenBuild> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="TingenInfo"]/TingenBuild/*'/> -->
-            <remarks>
-                <para>
-                    The Build of Tingen
-                </para>
-            </remarks>
-        </TingenBuild>
-
-        <TingenConfig>
-            <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="TingenInfo"]/TingenConfig/*'/> -->
-            <remarks>
-                <para>
-                    See <b>Outpost31.Core.Configuration.TingenFramework.cs</b> for more information.
-                </para>
-            </remarks>
-        </TingenConfig>
-
-    </Type>
-
 
 </Outpost31-Common>

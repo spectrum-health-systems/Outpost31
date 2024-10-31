@@ -5,7 +5,7 @@
         <Welcome>
             <remarks>
                 <para>
-                    Outpost31 is the backend logic for the Tingen web service.<br/>
+                    Outpost31 is the back-end logic for the Tingen web service.<br/>
                     <br/>
                     This class is just a placeholder for documentation, and where the Outpost31 version number is<br/>
                     updated (see the header above).<br/>

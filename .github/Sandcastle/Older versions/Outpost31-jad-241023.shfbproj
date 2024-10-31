@@ -44,7 +44,7 @@
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <VisibleItems>Internals, Privates, PrivateFields, ProtectedInternalAsProtected</VisibleItems>
     <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
-    <WorkingPath>D:\Caches\Sandcastle\</WorkingPath>
+    <WorkingPath>W:\Caches\Sandcastle\</WorkingPath>
     <RootNamespaceTitle>
     </RootNamespaceTitle>
     <HeaderText>

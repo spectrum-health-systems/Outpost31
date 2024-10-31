@@ -1,10 +1,10 @@
-﻿<!-- u241021 -->
+﻿<!-- u241031 -->
+
+<!-- This is the external XML Documentation file for Tingen.Tingen.asmx.cs -->
 
 <Outpost31.Core.Avatar>
 
-    <!--
-        AvatarData.cs
-    -->
+    <!-- AvatarData.cs  -->
     <Cs name="AvatarData">
         <AvatarData>
             <remarks>
