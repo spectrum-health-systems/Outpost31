@@ -10,8 +10,8 @@
 
 namespace Outpost31
 {
-    /// <summary>Welcome to Outpost31</summary>
-    /// <include file='XmlDoc/Outpost31.Welcome_doc.xml' path='Outpost31/Cs[@name="WelcomeToOutpost31"]/Welcome/*'/>
+    /// <summary>A place for Outpost31 details and stuff.</summary>
+    /// <include file='XmlDoc/Outpost31.WelcomeToOutpost31_doc.xml' path='Outpost31.WelcomeToOutpost31/Type[@name="Class"]/WelcomeToOutpost31/*'/>
     internal class WelcomeToOutpost31
     {
         // Nothing is done here, it's just for documentation.

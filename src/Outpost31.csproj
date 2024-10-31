@@ -105,15 +105,20 @@
     <Folder Include="Module\Testing\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="XmlDoc\Outpost31.Core.Avatar.ReturnObject_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.TingenPaths_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.SystemCodePaths_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.RemotePaths_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework_doc - Copy.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Utilities_doc.xml" />
     <Content Include="XmlDoc\Outpost31-AvatarSystemCodes_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Session_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Logger_doc.xml" />
-    <Content Include="XmlDoc\Outpost31.Welcome_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.WelcomeToOutpost31_doc.xml" />
     <Content Include="XmlDoc\Outpost31-Common_doc.xml" />
-    <Content Include="XmlDoc\Outpost31.Core.Configuration_doc.xml" />
-    <Content Include="XmlDoc\Outpost31.Core.Avatar_doc.xml" />
-    <Content Include="XmlDoc\Outpost31.Core.Framework_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Configuration.ConfigurationSettings_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Avatar.AvatarData_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.PublicPaths_doc.xml" />
     <Content Include="XmlDoc\_Outpost31.Core_doc.xml" />
     <None Include="app.config" />
     <None Include="packages.config" />

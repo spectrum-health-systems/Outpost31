@@ -1,37 +1,37 @@
 ﻿// u2240821.1008_code
-// u241021_documentation
+// u2410311_documentation
 
 using System.Collections.Generic;
 
 namespace Outpost31.Core.Framework.Catalog
 {
     /// <summary>Remote paths for Tingen.</summary>
-    /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31.Core.Framework/Cs[@name="RemotePaths"]/RemotePaths/*'/>
+    /// <include file='XmlDoc/Outpost31.Core.Framework.Catalog.RemotePaths_doc.xml' path='Outpost31.Core.Framework.Catalog.RemotePaths/Type[@name="Class"]/RemotePaths/*'/>
     public class RemotePaths
     {
         /// <summary>Root path for remote data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\Remote</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="RootPath"]/RemoteData/*'/>
         public string Root { get; set; }
 
         /// <summary>Path for remote alert data.</summary>
-        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Alerts/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Alerts/*'/>
         public string Alerts { get; set; }
 
         /// <summary>Path for remote error data.</summary>
-        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Errors/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Errors/*'/>
         public string Errors { get; set; }
 
         /// <summary>Path for remote export data.</summary>
-        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Exports/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Exports/*'/>
         public string Exports { get; set; }
 
         /// <summary>Path for remote report data.</summary>
-        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Reports/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Path"]/Reports/*'/>
         public string Reports { get; set; }
 
         /* [DN01] */
         /// <summary>Path for remote session data.</summary>
-        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Sessions/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Session/*'/>
         public string Sessions { get; set; }
 
         /* [DN01] */
@@ -40,7 +40,7 @@ namespace Outpost31.Core.Framework.Catalog
         public string CurrentSession { get; set; }
 
         /// <summary>Path for remote warning files.</summary>
-        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Warnings/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Warnings/*'/>
         public string Warnings { get; set; }
 
         /// <summary>Builds the remote paths object.</summary>
@@ -48,8 +48,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>The Tingen remote paths data structure.</returns>
         public static RemotePaths BuildObject(string tnDataRoot)
         {
-            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet, so if you
-             * need to create a logfile here, use a Primeval Log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet, so if you
+             * need to create a log file here, use a Primeval Log.
              */
 
             var remoteRoot = $@"{tnDataRoot}\Remote\";
@@ -72,8 +72,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>The list of required remote paths.</returns>
         public static List<string> RequiredPaths(RemotePaths remotePaths)
         {
-            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet, so if you
-             * need to create a logfile here, use a Primeval Log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet, so if you
+             * need to create a log file here, use a Primeval Log.
              */
 
             return new List<string>
@@ -98,6 +98,6 @@ DEVELOPMENT NOTES
 -----------------
 [DN01] 241018
 -----------------
-Rename these to "SessionData" and "CurrentSessionData"?
+Rename these to "Session" or "SessionData" and "CurrentSessionData"?
 
 */

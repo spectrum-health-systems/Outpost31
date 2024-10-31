@@ -1,54 +1,15 @@
-﻿<!-- u241031 -->
+﻿<!--
+    u241031
 
-<!-- This is the external XML Documentation file for Tingen.Tingen.asmx.cs -->
+    This is the external XML Documentation file for the Outpost31.Core.Avatar.ReturnObject class.
+-->
 
-<Outpost31.Core.Avatar>
+<Outpost31.Core.Avatar.ReturnObject>
 
-    <!-- AvatarData.cs  -->
-    <Cs name="AvatarData">
-        <AvatarData>
-            <remarks>
-                <para>
-                    The <c>AvatarData</c> class is the foundation of a data structure that contains the following::
-                    <list type="bullet">
-                        <item><see cref="SystemCode"/></item>
-                        <item><see cref="ReturnOptionObject"/></item>
-                        <item><see cref="SentOptionObject"/></item>
-                        <item><see cref="SentScriptParameter"/></item>
-                        <item><see cref="WorkOptionObject"/></item>
-                    </list>
-                </para>
-                <para>
-                    The <c>AvatarData</c> data structure is added to the <see cref="Outpost31.Core.Session.TingenSession"/> at runtime.
-                </para>
-            </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Script-Parameter.md">Tingen Documentation: The Script Parameter</seealso>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Session.md">Tingen Documentation: The Tingen Session</seealso>
-        </AvatarData>
+    <!-- Classes  -->
+    <Type name="Class">
 
-        <!-- BuildObject() -->
-        <BuildObject>
-            <remarks>
-                <para>
-                    A few things about this method:
-                    <list type="bullet">
-                        <item>The <see cref="SystemCode"/> is defined at runtime in <c>Tingen.Runscript()</c>.</item>
-                        <item>The <see cref="SentScriptParameter"/> is converted to lowercase so it is easier to compare against.</item>
-                        <item>All work is done in the <see cref="WorkOptionObject"/>, which is cloned from the <see cref="SentOptionObject"/>, ensuring that the original data sent from Avatar remains unmodified.</item>
-                        <item>The <see cref="ReturnOptionObject"/> is initally set to <c>null</c>, and will be finalized prior to returning to Avatar.</item>
-                    </list>
-                </para>
-            </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Script-Parameter.md">Tingen Documentation: The Script Parameter</seealso>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
-        </BuildObject>
-    </Cs>
-
-    <!--
-        ReturnObject.cs
-    -->
-    <Cs name="ReturnObject">
+        <!-- ReturnObject.cs -->
         <ReturnObject>
             <remarks>
                 <para>
@@ -58,8 +19,18 @@
                     </list>
                 </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</seealso>
         </ReturnObject>
+
+    </Type>
+
+    <!-- Properties -->
+    <Type name="Method>">
+        <!-- Properties for this class are defined in the common file. -->
+    </Type>
+
+    <!-- Methods -->
+    <Type name="Method">
 
         <!-- Finalize() -->
         <Finalize>
@@ -79,12 +50,12 @@
                             <description>Description</description>
                         </listheader>
                         <item>
-                            <term>"clone",<br/>"none",<br/> "success"</term>
+                            <term>"clone",<br/>"none",<br/> "success" </term>
                             <description>Returns the OptionObject without a message (error code <c>0</c>)</description>
                         </item>
                         <item>
                             <term>"error"</term>
-                            <description>Stops the script from processing and displays an message with an "OK" button (error code <c>1</c>)</description>
+                            <description> Stops the script from processing and displays an message with an "OK" button (error code <c>1</c>)</description>
                         </item>
                         <item>
                             <term>"okcancel"</term>
@@ -92,7 +63,7 @@
                         </item>
                         <item>
                             <term>"info"</term>
-                            <description>Displays an informational warning message with an "OK" button (error code <c>3</c>)</description>
+                            <description>Displays an informational warning message with an "OK" button (error code <c>3</c>) </description>
                         </item>
                         <item>
                             <term>"yesno"</term>
@@ -104,8 +75,7 @@
                         </item>
                         <item>
                             <term>"openform"</term>
-                            <description>Presents an OK/Cancel dialog to open a form (error code <c>6</c>)<br/>
-                            </description>
+                            <description>Presents an OK/Cancel dialog to open a form (error code <c>6</c>)<br/></description>
                         </item>
                     </list>
                     <b>NOTE:</b> The <c>openform</c> error string can only be used on Form Load and Field events.
@@ -125,9 +95,8 @@
                     Outpost31.Core.Avatar.ReturnObject.Finalize(tnSession, "info", "Have a nice day!");
                 </code>
             </example>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">OptionObject</seealso>
         </Finalize>
-        
-    </Cs>
 
-</Outpost31.Core.Avatar>
+    </Type>
+
+</Outpost31.Core.Avatar.ReturnObject>

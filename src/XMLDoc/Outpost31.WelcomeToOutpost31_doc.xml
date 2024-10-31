@@ -1,8 +1,14 @@
-﻿<!-- u241018 -->
+﻿<!--
+    u241031
+    This is the external XML Documentation file for the Outpost31.WelcomeToOutpost31 class.
+-->
 
-<Outpost31>
-    <Cs name="WelcomeToOutpost31">
-        <Welcome>
+<Outpost31.WelcomeToOutpost31>
+
+    <!-- Classes -->
+    <Type name="Class">
+
+        <WelcomeToOutpost31>
             <remarks>
                 <para>
                     Outpost31 is the back-end logic for the Tingen web service.<br/>
@@ -12,13 +18,14 @@
                     <br/>
                     While you're here, take a look at this stuff:
                     <list type="bullet">
-                        <item>
-                            The <see href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen Documentation</see>
-                        </item>
+                        <item>The <see href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen Documentation</see></item>
                     </list>
                     Uh...I guess that's it. Thanks for stopping by!
                 </para>
             </remarks>
-        </Welcome>
-    </Cs>
-</Outpost31>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</seealso>
+        </WelcomeToOutpost31>
+
+    </Type>
+
+</Outpost31.WelcomeToOutpost31>

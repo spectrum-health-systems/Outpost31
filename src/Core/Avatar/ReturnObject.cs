@@ -1,5 +1,5 @@
 ﻿// u241018.1104_code
-// u241018_documentation
+// u241031_documentation
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -8,22 +8,21 @@ using Outpost31.Core.Session;
 namespace Outpost31.Core.Avatar
 {
     /// <summary>Logic for the ReturnOptionObject data structure.</summary>
-    /// <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31.Core.Avatar/Cs[@name="ReturnObject"]/ReturnObject/*'/>
+    /// <include file='XmlDoc/Outpost31.Core.Avatar.ReturnObject_doc.xml' path='Outpost31.Core.Avatar.ReturnObject/Type[@name="Class"]/ReturnObject/*'/>
     public static class ReturnObject
     {
         /// <summary>The executing assembly name.</summary>
         /// <remarks>This is defined here so it can be used to write log files throughout the class.</remarks>
         public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
+        /* [DN01] */
         /// <summary>Finalize an OptionObject so it can be returned to Avatar.</summary>
         /// <param name="tnSession">The Tingen Session data structure object.</param>
         /// <param name="errorString">The OptionObject error string.</param>
         /// <param name="errorMessage">The OptionObject error message .</param>
-        /// <include file='XmlDoc/Outpost31.Core.Avatar_doc.xml' path='Outpost31.Core.Avatar/Cs[@name="ReturnObject"]/Finalize/*'/>
+        /// <include file='XmlDoc/Outpost31.Core.Avatar.ReturnObject_doc.xml' path='Outpost31.Core.Avatar.ReturnObject/Type[@name="Method"]/Finalize/*'/>
         public static void Finalize(TingenSession tnSession, string errorString, string errorMessage = "")
         {
-            /* [DN01] */
-
             LogEvent.Trace(1, ExeAsm, tnSession.TraceInfo);
 
             tnSession.AvData.ReturnOptionObject = tnSession.AvData.WorkOptionObject.Clone();

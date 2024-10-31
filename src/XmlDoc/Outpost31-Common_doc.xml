@@ -1,67 +1,59 @@
-﻿<!-- u241021 -->
+﻿<!--
+    u241031
+    This is the external XML Documentation file for the common items in the Outpost31 namespace.
 
-<!--
-    This file contains external XML documentation for the following common items that are used throughout the Tingen
-    web service:
-
-    Logging
-        TraceDelay
-        TraceLevel
-
-    Modes
-        Mode
-
-    OptionObjects
-        ReturnOptionObject
-        SentOptionObject
-        WorkOptionObject
-
-    Other
-        NotImplemented
-
-    Paths
-        Admin
-        Alerts
-        Archives
-        Configs
-        CurrentSession
-        Debugging
-        Errors
-        Exports
-        FromAvatar
-        Logging
-        Primeval
-        PublicDataRoot
-        RemoteDataRoot
-        Reports
+    Contents:
+        AvatarSystemCodes
+        DataPaths
+        Logs
+        Modes
+        OptionObjects
+        Other
+        RootPaths
         Sessions
-        SystemCodesDataRoot
-        Templates
-        Temporary
-        TingenDataRoot
-        Warnings
-
-    ScriptLink
-        ScriptParameter
-
-    SessionInfo
-
-        SessionDate
-        SessionTime
-
-   SystemCodes
-        SystemCode
-
+        ScriptLink
 -->
 
 <Outpost31-Common>
 
-    <!--
-        Logging
-    -->
-    <Type name="Logging">
+    <!-- Avatar System Codes -->
+    <Type name="AvatarSystemCodes">
 
-        <TraceDelay> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="CommonProperty"]/TraceDelay/*'/> -->
+        <!--AvatarSystemCode [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="AvatarSystemCodes"]/AvatarSystemCode/*'/> ] -->
+        <AvatarSystemCode>
+            <remarks>
+                <para>
+                    Tingen works with a single Avatar environment at a time, defined by one of the following Avatar <c>System Codes</c>:
+                    <list type="table">
+                        <listheader>
+                            <term>System Code</term>
+                            <description>Description</description>
+                        </listheader>
+                        <item>
+                            <term>LIVE</term>
+                            <description>The Production environment</description>
+                        </item>
+                        <item>
+                            <term>UAT</term>
+                            <description>The User Acceptance Testing environment</description>
+                        </item>
+                    </list>
+                </para>
+                <para>
+                    Your organization may have additional Avatar environments, but Tingen is only designed/tested to work with the above System Codes.
+                </para>
+            </remarks>
+            <value>
+                This should be <c>LIVE</c> for production environments, and <c>UAT</c> for testing environments.
+            </value>
+        </AvatarSystemCode>
+    </Type>
+
+    <!-- Logs -->
+    <Type name="Logs">
+
+        <!-- TraceDelay [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Logs"]/TraceDelay/*'/> ] -->
+        <TraceDelay>
             <remarks>
                 <para>
                     Determines the delay, in milliseconds, between <b>Trace Log</b> writes.
@@ -76,7 +68,8 @@
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Logging.md">Tingen Documentation: Logging</seealso>
         </TraceDelay>
 
-        <TraceLevel>  <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="CommonProperty"]/TraceLevel/*'/> -->
+        <!-- TraceLevel [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Logs"]/TraceLevel/*'/> ] -->
+        <TraceLevel>
             <remarks>
                 <para>
                     Determines the amount of <b>Trace Logs</b> that are generated.
@@ -96,12 +89,11 @@
 
     </Type>
 
-    <!--
-        Modes
-    -->
+    <!-- Modes -->
     <Type name="Modes">
 
-        <Mode> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Modes"]/Mode/*'/> -->
+        <!-- StandardMode [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Modes"]/StandardModes/*'/> ] -->
+        <StandardModes>
             <remarks>
                 <para>
                     The following modes are available to Tingen and its individual Modules:
@@ -133,18 +125,15 @@
                     </list>
                 </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Tingen-Modules.md">Tingen Documentation: Modules</seealso>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/Modes.md">Tingen Documentation: Modes</seealso>
-        </Mode>
+        </StandardModes>
 
     </Type>
 
-    <!--
-        OptionObjects
-    -->
+    <!-- OptionObjects -->
     <Type name="OptionObjects">
 
-        <ReturnOptionObject> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="OptionObjects"]/ReturnOptionObject/*'/> -->
+        <!-- ReturnOptionObject [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="OptionObjects"]/ReturnOptionObject/*'/> ] -->
+        <ReturnOptionObject>
             <remarks>
                 <para>
                     The <c>ReturnOptionObject</c> is the data structure that is returned to Avatar, and contains any modifications made to the original data.<br/>
@@ -154,10 +143,10 @@
                     The finalization process verifies that the <c>ReturnOptionObject</c> is formatted correctly, and that all of the required information Avatar needs to accept the returned data is is present.
                 </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
         </ReturnOptionObject>
-
-        <SentOptionObject> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="OptionObjects"]/SentOptionObject/*'/> -->
+]
+        <!-- SentOptionObject [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="OptionObjects"]/SentOptionObject/*'/> ] -->
+        <SentOptionObject>
             <remarks>
                 <para>
                     The <c>SentOptionObject</c> is the original data structure that is sent from  Avatar to Tingen, and contains all of the <i>data</i> Tingen needs to do its work.<br/>
@@ -165,10 +154,10 @@
                     It is important to note that the <c>SentOptionObject</c> is <i>never directly modified</i> by Tingen, since all modifications are made using the <see cref="WorkOptionObject"/>.
                 </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
         </SentOptionObject>
 
-        <WorkOptionObject> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="OptionObjects"]/WorkOptionObject/*'/> -->
+        <!-- WorkOptionObject [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="OptionObjects"]/WorkOptionObject/*'/> ]-->
+        <WorkOptionObject>
             <remarks>
                 <para>
                     Any modifications made to the original data sent from Avatar are made in the <c>WorkOptionObject</c> data structure.<br/>
@@ -176,17 +165,15 @@
                     The <c>WorkOptionObject</c> is not formatted correctly, nor does it contain the required information, to be returned to Avatar (that's the job of the <see cref="ReturnOptionObject"/>).
                 </para>
             </remarks>
-            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation/blob/main/Static/OptionObject.md">Tingen Documentation: The OptionObject</seealso>
         </WorkOptionObject>
 
     </Type>
 
-    <!--
-        Other
-    -->
+    <!-- Other -->
     <Type name="Other">
 
-        <NotImplemented> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Other"]/NotImplemented/*'/> -->
+        <!-- NotImplemented [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Other"]/NotImplemented/*'/> ] -->
+        <NotImplemented>
             <remarks>
                 <para>
                     This functionality is not implemented (yet).
@@ -196,12 +183,11 @@
 
     </Type>
 
-    <!--
-        Paths
-    -->
-    <Type name="Paths">
+    <!-- DataPaths -->
+    <Type name="DataPath">
 
-        <Admin> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Admin/*'/> -->
+        <!-- Admin [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Admin/*'/> ] -->
+        <Admin>
             <remarks>
                 <para>
                     Admin data.
@@ -216,7 +202,8 @@
             </remarks>
         </Admin>
 
-        <Alerts> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Alerts/*'/> -->
+        <!-- Alerts [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Alerts/*'/> ]-->
+        <Alerts>
             <remarks>
                 <para>
                     Alert messages are used to notify the user of important information.
@@ -231,7 +218,8 @@
             </remarks>
         </Alerts>
 
-        <Archives> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Archives/*'/> -->
+        <!-- Archive [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Archive/*'/> ]-->
+        <Archive>
             <remarks>
                 <para>
                     Archived data
@@ -244,9 +232,10 @@
                     </list>
                 </para>
             </remarks>
-        </Archives>
+        </Archive>
 
-        <Configs> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Configs/*'/> -->
+        <!-- Config [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Config/*'/> ] -->
+        <Configs>
             <remarks>
                 <para>
                     Configuration data.
@@ -261,22 +250,8 @@
             </remarks>
         </Configs>
 
-        <CurrentSession> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/CurrentSession/*'/> -->
-            <remarks>
-                <para>
-                    Reports are used to display data in a structured format.
-                </para>
-                <para>
-                    Examples of reports include:
-                    <list type="bullet">
-                        <item>Example #1</item>
-                        <item>Example #2</item>
-                    </list>
-                </para>
-            </remarks>
-        </CurrentSession>
-
-        <Debugging>  <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Debugging/*'/> -->
+        <!-- Debug [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Debug/*'/> ] -->
+        <Debug>
             <remarks>
                 <para>
                     Debugging data.
@@ -289,9 +264,10 @@
                     </list>
                 </para>
             </remarks>
-        </Debugging>
+        </Debug>
 
-        <Errors> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Errors/*'/> -->
+        <!-- Errors [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Errors/*'/> ] -->
+        <Errors>
             <remarks>
                 <para>
                     Error messages are used to notify the user of a problem that has occurred.
@@ -306,7 +282,8 @@
             </remarks>
         </Errors>
 
-        <Exports> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Exports/*'/> -->
+        <!-- Exports [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Exports/*'/> ] -->
+        <Exports>
             <remarks>
                 <para>
                     Exported data.
@@ -321,7 +298,8 @@
             </remarks>
         </Exports>
 
-        <FromAvatar> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/FromAvatar/*'/> -->
+        <!-- FromAvatar [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/FromAvatar/*'/> ] -->
+        <FromAvatar>
             <remarks>
                 <para>
                     Data exported from Avatar.
@@ -336,7 +314,8 @@
             </remarks>
         </FromAvatar>
 
-        <Logging> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Logging/*'/> -->
+        <!-- Logs [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Logs/*'/> ] -->
+        <Logs> <!-- ///  -->
             <remarks>
                 <para>
                     Logging data.
@@ -349,9 +328,10 @@
                     </list>
                 </para>
             </remarks>
-        </Logging>
+        </Logs>
 
-        <Primeval> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Primeval/*'/> -->
+        <!-- PrimevalLog [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/PrimevalLog/*'/> ] -->
+        <PrimevalLog>
             <remarks>
                 <para>
                     Primeval logging data.
@@ -364,39 +344,10 @@
                     </list>
                 </para>
             </remarks>
-        </Primeval>
+        </PrimevalLog>
 
-        <PublicDataRoot> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/PublicDataRoot/*'/> -->
-            <remarks>
-                <para>
-                    The root folder for public data.
-                </para>
-                <para>
-                    Examples of public data include:
-                    <list type="bullet">
-                        <item>Example #1</item>
-                        <item>Example #2</item>
-                    </list>
-                </para>
-            </remarks>
-        </PublicDataRoot>
-
-        <RemoteDataRoot> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/RemoteDataRoot/*'/> -->
-            <remarks>
-                <para>
-                    The root folder for remote data.
-                </para>
-                <para>
-                    Examples of remote data include:
-                    <list type="bullet">
-                        <item>Example #1</item>
-                        <item>Example #2</item>
-                    </list>
-                </para>
-            </remarks>
-        </RemoteDataRoot>
-
-        <Reports> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Reports/*'/> -->
+        <!-- Reports [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Reports/*'/> ] -->
+        <Reports>
             <remarks>
                 <para>
                     Reports are used to display data in a structured format.
@@ -411,7 +362,8 @@
             </remarks>
         </Reports>
 
-        <Sessions> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Sessions/*'/> -->
+        <!-- Session [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Session/*'/> ] -->
+        <Session>
             <remarks>
                 <para>
                     Session data
@@ -424,24 +376,10 @@
                     </list>
                 </para>
             </remarks>
-        </Sessions>
+        </Session>
 
-        <SystemCodesDataRoot> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/SystemCodesDataRoot/*'/> -->
-            <remarks>
-                <para>
-                    The root folder for Avatar System Codes data.
-                </para>
-                <para>
-                    Examples of vatar System Codes data include:
-                    <list type="bullet">
-                        <item>Example #1</item>
-                        <item>Example #2</item>
-                    </list>
-                </para>
-            </remarks>
-        </SystemCodesDataRoot>
-
-        <Templates> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Templates/*'/> -->
+        <!-- Templates [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Templates/*'/> ] -->
+        <Templates>
             <remarks>
                 <para>
                     Templates
@@ -456,7 +394,8 @@
             </remarks>
         </Templates>
 
-        <Temporary> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Temporary/*'/> -->
+        <!-- Temporary [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Temporary/*'/> ] -->
+        <Temporary>
             <remarks>
                 <para>
                     Temporary data.
@@ -471,22 +410,8 @@
             </remarks>
         </Temporary>
 
-        <TingenDataRoot> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/TingenDataRoot/*'/> -->
-            <remarks>
-                <para>
-                    The root folder for Tingen-specific data.
-                </para>
-                <para>
-                    Examples of Tingen-specific data include:
-                    <list type="bullet">
-                        <item>Example #1</item>
-                        <item>Example #2</item>
-                    </list>
-                </para>
-            </remarks>
-        </TingenDataRoot>
-
-        <Warnings> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Warnings/*'/> -->
+        <!-- Warnings <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Warnings/*'/> -->
+        <Warnings>
             <remarks>
                 <para>
                     Warning messages are used to notify the user of a potential problem.
@@ -500,6 +425,76 @@
                 </para>
             </remarks>
         </Warnings>
+
+    </Type>
+
+    <!-- RootPaths -->
+    <Type name="RootPath">
+
+        <!-- PublicData [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="RootPath"]/PublicData/*'/> ]  -->
+        <PublicData>
+            <!-- /// -->
+            <remarks>
+                <para>
+                    The root folder for public data.
+                </para>
+                <para>
+                    Examples of public data include:
+                    <list type="bullet">
+                        <item>Example #1</item>
+                        <item>Example #2</item>
+                    </list>
+                </para>
+            </remarks>
+        </PublicData>
+
+        <!-- RemoteData [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="RootPath"]/RemoteData/*'/> ]  -->
+        <RemoteData>
+            <remarks>
+                <para>
+                    The root folder for remote data.
+                </para>
+                <para>
+                    Examples of remote data include:
+                    <list type="bullet">
+                        <item>Example #1</item>
+                        <item>Example #2</item>
+                    </list>
+                </para>
+            </remarks>
+        </RemoteData>
+
+        <!-- SystemCodeData [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="RootPath"]/SystemCodeData/*'/> ]  -->
+        <SystemCodeData>
+            <remarks>
+                <para>
+                    The root folder for Avatar System Codes data.
+                </para>
+                <para>
+                    Examples of Avatar System Codes data include:
+                    <list type="bullet">
+                        <item>Example #1</item>
+                        <item>Example #2</item>
+                    </list>
+                </para>
+            </remarks>
+        </SystemCodeData>
+
+        <!-- SystemCodeData [ <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="RootPath"]/TingenData/*'/> ]  -->
+        <TingenData>
+            <remarks>
+                <para>
+                    The root folder for Tingen-specific data.
+                </para>
+                <para>
+                    Examples of Tingen-specific data include:
+                    <list type="bullet">
+                        <item>Example #1</item>
+                        <item>Example #2</item>
+                    </list>
+                </para>
+            </remarks>
+        </TingenData>
 
     </Type>
 
@@ -605,40 +600,6 @@
             </remarks>
         </SessionTime>
 
-    </Type>
-
-    <!--
-        System Codes
-    -->
-    <Type name="AvatarSystemCodes">
-
-        <SystemCode> <!-- /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="AvatarSystemCodes"]/AvatarSystemCodes/*'/> -->
-            <remarks>
-                <para>
-                    The Tingen works with a single Avatar environment at a time, defined by oneof the following Avatar <c>System Codes</c>:
-                    <list type="table">
-                        <listheader>
-                            <term>System Code</term>
-                            <description>Description</description>
-                        </listheader>
-                        <item>
-                            <term>LIVE</term>
-                            <description>The Production environment</description>
-                        </item>
-                        <item>
-                            <term>UAT</term>
-                            <description>The User Acceptance Testing environment</description>
-                        </item>
-                    </list>
-                </para>
-                <para>
-                    Your organization may have additional Avatar environments, but Tingen is only designed/tested to work with the above System Codes.
-                </para>
-            </remarks>
-            <value>
-                This should be <c>LIVE</c> for production environments, and <c>UAT</c> for testing environments.
-            </value>
-        </SystemCode>
     </Type>
 
 </Outpost31-Common>
