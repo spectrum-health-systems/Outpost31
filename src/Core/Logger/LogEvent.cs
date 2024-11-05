@@ -1,5 +1,5 @@
 ﻿// u240709.0000_code
-// u241021_documentation
+// u241104_documentation
 
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -15,8 +15,8 @@ namespace Outpost31.Core.Logger
         /// <include file='XmlDoc/Outpost31.Core.Logger_doc.xml' path='Outpost31.Core.Logger/Cs[@name="LogEvent"]/Trace/*'/>
         public static void Trace(int logLevel, string assemblyName, TraceLog traceInfo, string message = "", [CallerFilePath] string fromPath = "", [CallerMemberName] string fromMethod = "", [CallerLineNumber] int line = 0)
         {
-            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet, so if you
-             * need to create a logfile here, use a Primeval Log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet, so if you
+             * need to create a log file here, use a Primeval Log.
              */
 
             var fromClass = fromPath.Split('\\').Last();
@@ -36,7 +36,7 @@ namespace Outpost31.Core.Logger
 
         public static void Primeval(string assemblyName, string message = "Tingen primeval log", [CallerFilePath] string fromPath = "", [CallerMemberName] string fromMethod = "", [CallerLineNumber] int line = 0)
         {
-            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet.
              *
              * You can't put a Primeval log here either, since that may result in an infinite loop/stack overflow
              * when Primeval log directory is being refreshed.
@@ -55,7 +55,5 @@ namespace Outpost31.Core.Logger
 =================
 DEVELOPMENT NOTES
 =================
-
-None.
 
 */
