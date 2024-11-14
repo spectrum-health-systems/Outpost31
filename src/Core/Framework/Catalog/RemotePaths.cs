@@ -26,7 +26,7 @@ namespace Outpost31.Core.Framework.Catalog
         public string Exports { get; set; }
 
         /// <summary>Path for remote report data.</summary>
-        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Path"]/Reports/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Reports/*'/>
         public string Reports { get; set; }
 
         /* [DN01] */

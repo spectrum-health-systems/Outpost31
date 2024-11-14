@@ -1,30 +1,28 @@
 ﻿<!--
-    u241031
+    u241114
 
-    This is the external XML Documentation file for the Outpost31.Core.Framework.Catalog.TingenPaths class.
+    This is the external XML Documentation file for the Outpost31.Core.Framework.Paths class.
 -->
 
-<Outpost31.Core.Framework.Catalog.TingenPaths>
+<Outpost31.Core.Framework.Paths>
 
     <!-- Classes -->
     <Type name="Class">
 
-        <!-- TingenPaths.cs -->
-        <TingenPaths>
+        <!-- Paths.cs -->
+        <Paths>
             <remarks>
                 <para>
-                    Builds/verifies Tingen remote paths.<br/>
-                    <br/>
-                    Tingen-specific are paths that are used by Tingen, and are generally not available to users.
+                    Does things with paths and stuff.<br/>
                 </para>
             </remarks>
             <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</seealso>
-        </TingenPaths>
+        </Paths>
 
     </Type>
 
     <!-- Properties -->
-    <Type name="Property">
+    <Type name="Property>">
         <!-- Properties for this class are defined in the common file. -->
     </Type>
 
@@ -33,4 +31,4 @@
         <!-- Methods for this class are documented in the source code. -->
     </Type>
 
-</Outpost31.Core.Framework.Catalog.TingenPaths>
+</Outpost31.Core.Framework.Paths>

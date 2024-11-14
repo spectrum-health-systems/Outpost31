@@ -99,6 +99,7 @@
     <Compile Include="Module\OpenIncident\Verify.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WelcomeToOutpost31.cs" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework.Maintenance_doc.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Module\Common\" />
@@ -109,6 +110,8 @@
     <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.TingenPaths_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.SystemCodePaths_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.RemotePaths_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework.Paths_doc.xml" />
+    <Content Include="XmlDoc\xml_documentation_template.xml" />
     <Content Include="XmlDoc\_Outpost31.Core.Framework_doc - Copy.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Utilities_doc.xml" />
     <Content Include="XmlDoc\Outpost31-AvatarSystemCodes_doc.xml" />

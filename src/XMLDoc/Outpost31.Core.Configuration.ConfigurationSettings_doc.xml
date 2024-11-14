@@ -32,12 +32,12 @@
     </Type>
 
     <!-- Properties -->
-    <Type name="Method>">
+    <Type name="Property">
         <!-- Properties for this class are defined in the common file. -->
     </Type>
 
      <!-- Methods -->
-    <Type name="Method>">
+    <Type name="Method">
 
         <!-- BuildDefaultObject() -->
         <BuildDefaultObject>

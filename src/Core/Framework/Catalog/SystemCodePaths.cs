@@ -44,11 +44,11 @@ namespace Outpost31.Core.Framework.Catalog
         public string MessageRoot { get; set; }
 
         /// <summary>Path for alert data.</summary>
-        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Paths"]/Alerts/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Alerts/*'/>
         public string Alerts { get; set; }
 
         /// <summary>Path for error data.</summary>
-        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Alerts/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Errors/*'/>
         public string Errors { get; set; }
 
         /// <summary>Path for warning data.</summary>

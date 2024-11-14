@@ -101,7 +101,7 @@ namespace Outpost31.Core.Session
 
             /* The session-specific path is built here. */
             tnSession.TnPath.SystemCode.CurrentSession = $@"{tnSession.TnPath.SystemCode.Sessions}\{tnSession.Date}\{sentOptionObject.OptionUserId}\{tnSession.Time}-{tnSession.AvData.SentScriptParameter}";
-            tnSession.TnPath.Remote.CurrentSession     =  $@"{tnSession.TnPath.Remote.Sessions}\{sentOptionObject.OptionUserId}\{tnSession.Date}";
+            tnSession.TnPath.Remote.CurrentSession     = $@"{tnSession.TnPath.Remote.Sessions}\{sentOptionObject.OptionUserId}\{tnSession.Date}";
 
             /* Trace info */
             tnSession.TraceInfo = TraceLog.BuildInfo(tnSession.TnPath.SystemCode.CurrentSession, tnSession.TnConfig.TraceLevel, tnSession.TnConfig.TraceDelay);
@@ -145,7 +145,7 @@ namespace Outpost31.Core.Session
         {
             return new Dictionary<string, string>
             {
-                { "tnBuild",              "1005" },
+                { "tnBuild",              "0753" },
                 { "avSystemCode",         "UAT" },
                 { "tnDataRoot",           @"C:\TingenData" },
                 { "tnConfigFileName",     "Tingen.config" },
