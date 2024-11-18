@@ -111,6 +111,7 @@
     <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.SystemCodePaths_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.RemotePaths_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Framework.Paths_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework.Refresh_doc.xml" />
     <Content Include="XmlDoc\xml_documentation_template.xml" />
     <Content Include="XmlDoc\_Outpost31.Core.Framework_doc - Copy.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Utilities_doc.xml" />

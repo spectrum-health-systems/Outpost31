@@ -10,19 +10,19 @@ namespace Outpost31.Core.Framework
     public class Paths
     {
         /// <summary>Tingen data paths.</summary>
-        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="RootPath"]/TingenDataRoot/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="RootPath"]/TingenData/*'/>
         public TingenPaths Tingen { get; set; }
 
         /// <summary>System code data paths.</summary>
-        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="RootPath"]/SystemCodesDataRoot/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="RootPath"]/SystemCodeData/*'/>
         public SystemCodePaths SystemCode { get; set; }
 
         /// <summary>Public data paths.</summary>
-        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="RootPath"]/PublicDataRoot/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="RootPath"]/PublicData/*'/>
         public PublicPaths Public { get; set; }
 
         /// <summary>Remote data paths.</summary>
-        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="RootPath"]/RemoteDataRoot/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="RootPath"]/RemoteData/*'/>
         public RemotePaths Remote { get; set; }
 
         /// <summary>Builds the paths object.</summary>
