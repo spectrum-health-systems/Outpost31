@@ -112,8 +112,12 @@
     <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.RemotePaths_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Framework.Paths_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Framework.Refresh_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Logger.LogEvent_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Logger.LoggerCatalog_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Logger.PrimevalLog_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Logger.TraceLog_doc.xml" />
     <Content Include="XmlDoc\xml_documentation_template.xml" />
-    <Content Include="XmlDoc\_Outpost31.Core.Framework_doc - Copy.xml" />
+    <Content Include="XmlDoc\depreciated_Outpost31.Core.Framework_doc - Copy.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Utilities_doc.xml" />
     <Content Include="XmlDoc\Outpost31-AvatarSystemCodes_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Session_doc.xml" />
@@ -123,7 +127,7 @@
     <Content Include="XmlDoc\Outpost31.Core.Configuration.ConfigurationSettings_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Avatar.AvatarData_doc.xml" />
     <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.PublicPaths_doc.xml" />
-    <Content Include="XmlDoc\_Outpost31.Core_doc.xml" />
+    <Content Include="XmlDoc\depreciated_Outpost31.Core_doc.xml" />
     <None Include="app.config" />
     <None Include="packages.config" />
     <Content Include="XmlDoc\README.md" />

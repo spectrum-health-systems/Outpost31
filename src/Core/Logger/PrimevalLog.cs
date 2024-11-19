@@ -8,11 +8,11 @@ using System.Threading;
 namespace Outpost31.Core.Logger
 {
     /// <summary>Primeval logs</summary>
-    /// <include file='XmlDoc/Outpost31.Core.Logger_doc.xml' path='Outpost31.Core.Logger/Cs[@name="PrimevalLog"]/PrimevalLog/*'/>
+    /// <include file='XmlDoc/Outpost31.Core.Logger.PrimevalLog_doc.xml' path='Outpost31.Core.Logger.PrimevalLog/Type[@name="Class"]/PrimevalLog/*'/>
     public static class PrimevalLog
     {
         /// <summary>Primeval log path.</summary>
-        /// <include file='XmlDoc/Outpost31.Core.Logger_doc.xml' path='Outpost31.Core.Logger/Cs[@name="PrimevalLog"]/PrimevalLogPath/*'/>
+        /// <remarks>Why this is important, and why it is what it is.</remarks>
         public static string PrimevalLogPath { get; set; } = @"C:\TingenData\Primeval";
 
         /* [DN01] */
@@ -22,14 +22,16 @@ namespace Outpost31.Core.Logger
         /// <param name="fromClass">The path of the calling class.</param>
         /// <param name="fromMethod">The path of the calling method</param>
         /// <param name="line">The line of code</param>
-        /// <include file='XmlDoc/Outpost31.Core.Logger_doc.xml' path='Outpost31.Core.Logger/Cs[@name="PrimevalLog"]/Create/*'/>
+        /// <include file='XmlDoc/Outpost31.Core.Logger.PrimevalLog_doc.xml' path='Outpost31.Core.Logger.PrimevalLog/Type[@name="Method"]/Create/*'/>
         public static void Create(string assemblyName, string message, string fromClass, string fromMethod, int line)
         {
-            /* Trace Logs can't go here because the logging infrastructure hasn't been been initialized yet.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet.
              *
-             * You can't put a Primeval log here either, since that may result in an infinite loop/stack overflow
+             * You can't put a Primeval Log here either, since that may result in an infinite loop/stack overflow
              * when Primeval log directory is being refreshed.
-            */
+             *
+             * So, no logging for you!
+             */
 
             Framework.Maintenance.VerifyDirectory(PrimevalLogPath);
 

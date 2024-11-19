@@ -18,7 +18,7 @@ namespace Outpost31.Module.OpenIncident
         ///    - Define the assembly name here so it can be used to write log files throughout the class.
         ///   </para>
         /// </remarks>
-        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+        public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>TBD</summary>
         public List<string> Whitelist { get; set; }

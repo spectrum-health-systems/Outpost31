@@ -1,5 +1,5 @@
-﻿// u241021.1131_code
-// u241021_documentation
+﻿// u241119.0827_code
+// u241119_documentation
 
 using System;
 using System.Reflection;
@@ -19,14 +19,14 @@ namespace Outpost31.Core.Session
         ///    - Define the assembly name here so it can be used to write log files throughout the class.
         ///   </para>
         /// </remarks>
-        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+        public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>TBD</summary>
         /// <param name="tnSession"></param>
         /// <returns></returns>
         public static string CurrentSettings(TingenSession tnSession)
         {
-            LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
+            LogEvent.Trace(1, ExeAsm, tnSession.TraceInfo);
 
             return $"# Current Tingen Settings{Environment.NewLine}" +
                    $"> Version {tnSession.TnVersion} [Build {tnSession.TnBuild}]  {Environment.NewLine}" +
@@ -120,7 +120,7 @@ namespace Outpost31.Core.Session
         /// <returns></returns>
         public static string SessionDetails(TingenSession tnSession)
         {
-            LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
+            LogEvent.Trace(1, ExeAsm, tnSession.TraceInfo);
 
             var nowTime = DateTime.Now.ToString("HHmmss");
 

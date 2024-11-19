@@ -1,5 +1,5 @@
 ﻿// u240709.0000_code
-// u241104_documentation
+// u241118_documentation
 
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -7,12 +7,12 @@ using System.Runtime.CompilerServices;
 namespace Outpost31.Core.Logger
 {
     /// <summary>Provides logging functionality.</summary>
-    /// <include file='XmlDoc/Outpost31.Core.Logger_doc.xml' path='Outpost31.Core.Logger/Cs[@name="LogEvent"]/LogEvent/*'/>
+    /// <include file='XmlDoc/Outpost31.Core.Logger.LogEvent_doc.xml' path='Outpost31.Core.Logger.LogEvent/Type[@name="Class"]/LogEvent/*'/>
 
     public static class LogEvent
     {
         /// <summary>Log a trace event.</summary>
-        /// <include file='XmlDoc/Outpost31.Core.Logger_doc.xml' path='Outpost31.Core.Logger/Cs[@name="LogEvent"]/Trace/*'/>
+        /// <include file='XmlDoc/Outpost31.Core.Logger.LogEvent_doc.xml' path='Outpost31.Core.Logger.LogEvent/Type[@name="Method"]/Trace/*'/>
         public static void Trace(int logLevel, string assemblyName, TraceLog traceInfo, string message = "", [CallerFilePath] string fromPath = "", [CallerMemberName] string fromMethod = "", [CallerLineNumber] int line = 0)
         {
             /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet, so if you
@@ -32,13 +32,13 @@ namespace Outpost31.Core.Logger
         }
 
         /// <summary>Log a primeval event.</summary>
-        /// <include file='XmlDoc/Outpost31.Core.Logger_doc.xml' path='Outpost31.Core.Logger/Cs[@name="LogEvent"]/Primeval/*'/>
+        /// <include file='XmlDoc/Outpost31.Core.Logger.LogEvent_doc.xml' path='Outpost31.Core.Logger.LogEvent/Type[@name="Method"]/Primeval/*'/>
 
         public static void Primeval(string assemblyName, string message = "Tingen primeval log", [CallerFilePath] string fromPath = "", [CallerMemberName] string fromMethod = "", [CallerLineNumber] int line = 0)
         {
             /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet.
              *
-             * You can't put a Primeval log here either, since that may result in an infinite loop/stack overflow
+             * You can't put a Primeval Log here either, since that may result in an infinite loop/stack overflow
              * when Primeval log directory is being refreshed.
              *
              * So, no logging for you!

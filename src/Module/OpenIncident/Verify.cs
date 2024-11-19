@@ -16,23 +16,23 @@ namespace Outpost31.Module.OpenIncident
         ///    - Define the assembly name here so it can be used to write log files throughout the class.
         ///   </para>
         /// </remarks>
-        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+        public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>TBD</summary>
         public static void OriginalAuthorIsOpening(TingenSession tnSession)
         {
-            LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
+            LogEvent.Trace(1, ExeAsm, tnSession.TraceInfo);
 
             ModuleOpenIncident.GetAuthorInformation(tnSession);
 
             if (tnSession.ModOpenIncident.OriginalFullName != tnSession.ModOpenIncident.CurrentFullName)
             {
-                LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+                LogEvent.Trace(2, ExeAsm, tnSession.TraceInfo);
                 Core.Avatar.ReturnObject.Finalize(tnSession, tnSession.ModOpenIncident.FormOpenErrorCode, tnSession.ModOpenIncident.FormOpenMessage);
             }
             else
             {
-                LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+                LogEvent.Trace(2, ExeAsm, tnSession.TraceInfo);
                 Core.Avatar.ReturnObject.Finalize(tnSession, "none");
             }
         }
@@ -41,18 +41,18 @@ namespace Outpost31.Module.OpenIncident
         /// <param name="tnSession"></param>
         public static void OriginalAuthorIsSubmitting(TingenSession tnSession)
         {
-            LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
+            LogEvent.Trace(1, ExeAsm, tnSession.TraceInfo);
 
             ModuleOpenIncident.GetAuthorInformation(tnSession);
 
             if (tnSession.ModOpenIncident.OriginalFullName != tnSession.ModOpenIncident.CurrentFullName)
             {
-                LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+                LogEvent.Trace(2, ExeAsm, tnSession.TraceInfo);
                 Core.Avatar.ReturnObject.Finalize(tnSession, tnSession.ModOpenIncident.FormSubmitErrorCode, tnSession.ModOpenIncident.FormSubmitMessage);
             }
             else
             {
-                LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+                LogEvent.Trace(2, ExeAsm, tnSession.TraceInfo);
                 Core.Avatar.ReturnObject.Finalize(tnSession, "none");
             }
         }

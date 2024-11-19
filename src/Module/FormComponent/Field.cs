@@ -16,7 +16,7 @@ namespace Outpost31.Module.Common.Action
         ///    - Define the assembly name here so it can be used to write log files throughout the class.
         ///   </para>
         /// </remarks>
-        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+        public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>Compare the values of two form field IDs to determine if they are the same.</summary>
         /// <param name="field01Value">The value of the first field.</param>
@@ -34,7 +34,7 @@ namespace Outpost31.Module.Common.Action
         /// <returns>True (the fields values are the same) or false(the field values are different).</returns>
         public static bool CompareValue(string field01Value, string field02Value, TraceLog traceInfo)
         {
-            LogEvent.Trace(1, AssemblyName, traceInfo);
+            LogEvent.Trace(1, ExeAsm, traceInfo);
 
             return field01Value == field02Value;
         }
@@ -76,13 +76,13 @@ namespace Outpost31.Module.Common.Action
         /// </remarks>
         public static void SaveValue(string valueToSave, string filePath, TraceLog traceInfo)
         {
-            LogEvent.Trace(1, AssemblyName, traceInfo);
+            LogEvent.Trace(1, ExeAsm, traceInfo);
 
             // TODO: Might want to encrypt this data.
 
             if (!File.Exists(filePath))
             {
-                LogEvent.Trace(2, AssemblyName, traceInfo);
+                LogEvent.Trace(2, ExeAsm, traceInfo);
 
                 File.Create(filePath);
             }
