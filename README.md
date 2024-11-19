@@ -1,13 +1,10 @@
-<!-- u240711 -->
+<!-- u241018 -->
 
 <div align="center">
 
   ![logo](./.github/images/logos/Outpost31_README.png)
   
-  <!-- ![DevelopmentBranchNotifiction](https://img.shields.io/badge/DEVELOPMENT_RELEASE-firebrick?style=for-the-badge) -->
-
-  <!-- ![DevelopmentStatus](https://img.shields.io/badge/status-active-chartreuse?style=flat-square)&nbsp;&nbsp; -->
-  ![DEVELOPMENTNVERSION](https://img.shields.io/badge/release-24.10--development-firebrick?style=flat-square)&nbsp;&nbsp;
+  ![DEVELOPMENT_VERSION](https://img.shields.io/badge/release-24.11--development-firebrick?style=flat-square)&nbsp;&nbsp;
   ![DotNet](https://img.shields.io/badge/.net-Framework_4.8-darkslateblue?style=flat-square)&nbsp;&nbsp;
   ![Platform](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)&nbsp;&nbsp;
   ![License](https://img.shields.io/github/license/spectrum-health-systems/Outpost31?style=flat-square)&nbsp;&nbsp;
@@ -24,7 +21,7 @@
 
 Outpost31 contains the core and module functionality for [Tingen](https://github.com/spectrum-health-systems/Tingen).
 
-Outpost31 is:
+The Outpost31 repository is:
 
 * A ***development version***!
 * ***Not intended*** to be used on it's own, or outside of Tingen!
@@ -45,12 +42,17 @@ There are three types of branches in this repository:
 * **[development](https://github.com/spectrum-health-systems/Outpost31/tree/development)**  
   The majority of Outpost31 development is done in this branch, so if you want the latest-and-greatest, this is where to go.
 
+  If you are curious as to what features/bugs/etc. are being worked on, [here you go](https://github.com/orgs/spectrum-health-systems/projects/41/views/1).
+
 * **Outpost31 archive snapshots**  
   When development starts on a new monthly version, the previous version is archived to a separate branch (e.g., `24.9.0-development+final`).
 
-# Roadmap and Changelogs
+# Additional information
 
-The current Tingen [Roadmap](https://github.com/orgs/spectrum-health-systems/projects/41/views/2) and [Changelog](https://github.com/orgs/spectrum-health-systems/projects/41/views/5?groupedBy%5BcolumnId%5D=141147959&visibleFields=%5B%22Title%22%2C%22Status%22%2C%22Assignees%22%2C141147959%5D&filterQuery=status%3ACompleted) are publicly available
+You can also review the Outpost31:
+
+* [Roadmap](https://github.com/orgs/spectrum-health-systems/projects/41/views/2)
+* [Changelog](https://github.com/orgs/spectrum-health-systems/projects/41/views/5)
 
 # Documentation
 

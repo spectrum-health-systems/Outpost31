@@ -1,5 +1,5 @@
-﻿// u240819.0935_code
-// u240819.0935_documentation
+﻿// u2241119.0831_code
+// u241119_documentation
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -11,22 +11,22 @@ namespace Outpost31.Core
     /// <include file='XmlDoc/Outpost31.Core_doc.xml' path='Outpost31/Cs[@name="TingenApp"]/TingenApp/*'/>
     public static class TingenApp
     {
-        /// <summary>Assembly name for logging purposes.</summary>
-        /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/AssemblyName/*'/>
-        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+        /// <summary>The executing Assembly name.</summary>
+        /// <remarks>A required component for writing log files, defined here so it can be used throughout the class.</remarks>
+        public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>Starts the Tingen web service.</summary>
         /// <param name="tnSession">The TingenSession object for this session.</param>
         /// <include file='XmlDoc/Outpost31.Core_doc.xml' path='Outpost31/Cs[@name="TingenApp"]/StartApp/*'/>
         public static void StartApp(TingenSession tnSession)
         {
-            LogEvent.Trace(1, AssemblyName, tnSession.TraceInfo);
+            LogEvent.Trace(1, ExeAsm, tnSession.TraceInfo);
 
             /* [DN01] */
             switch (tnSession.TnConfig.TingenMode)
             {
                 case "disabled":
-                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+                    LogEvent.Trace(2, ExeAsm, tnSession.TraceInfo);
 
                     Framework.Refresh.RefreshOnDisable(tnSession);
 
@@ -37,7 +37,7 @@ namespace Outpost31.Core
                     break;
 
                 case "enabled":
-                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+                    LogEvent.Trace(2, ExeAsm, tnSession.TraceInfo);
 
                     ScriptParameter.ParseSent(tnSession);
 
@@ -45,7 +45,7 @@ namespace Outpost31.Core
 
                 /* [DN02] */
                 default: // Tingen is in an unknown state
-                    LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+                    LogEvent.Trace(2, ExeAsm, tnSession.TraceInfo);
 
                     Framework.Refresh.RefreshOnUnknown(tnSession);
 
@@ -57,7 +57,7 @@ namespace Outpost31.Core
         /// <param name="tnSession">The TingenSession object for this session.</param>
         public static void StopApp(TingenSession tnSession)
         {
-            LogEvent.Trace(2, AssemblyName, tnSession.TraceInfo);
+            LogEvent.Trace(2, ExeAsm, tnSession.TraceInfo);
 
             /* Not sure what this is 240806 */
             //if (tnSession.ReturnClonedOptionObject == true)

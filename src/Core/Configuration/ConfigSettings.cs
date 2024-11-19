@@ -1,42 +1,42 @@
 ﻿// u240818.1245_code
-// u240818.1245_documentation
+// 241031_documentation
 
 using System.IO;
 
 namespace Outpost31.Core.Configuration
 {
     /// <summary>The Tingen configuration settings.</summary>
-    /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Outpost31/Cs[@name="ConfigSettings"]/ConfigSettings/*'/>
+    /// <include file='XmlDoc/Outpost31.Core.Configuration.ConfigurationSettings_doc.xml' path='Outpost31.Core.Configuration.ConfigurationSettings/Type[@name="Class"]/ConfigSettings/*'/>
     public class ConfigSettings
     {
         /// <summary>Determines the available Tingen web service functionality.</summary>
-        /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Outpost31/Cs[@name="ConfigSettings"]/TingenMode/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Modes"]/StandardModes/*'/>
         public string TingenMode { get; set; }
 
         /// <summary>Determines the available Open Incident Module functionality.</summary>
-        /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Outpost31/Cs[@name="ConfigSettings"]/ModOpenIncidentMode/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Modes"]/StandardModes/*'/>
         public string ModOpenIncidentMode { get; set; }
 
         /// <summary>Determines the available Netsmart web service functionality.</summary>
-        /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/NotImplemented/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Other"]/NotImplemented/*'/>
         public string NtstWebServicesMode { get; set; }
 
         /// <summary>Determines the session Trace Log level.</summary>
-        /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/TraceLevel/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Logs"]/TraceLevel/*'/>
         public int TraceLevel { get; set; }
 
         /// <summary>Determines the Trace Log delay.</summary>
-        /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/TraceDelay/*'/>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Logs"]/TraceDelay/*'/>
         public int TraceDelay { get; set; }
 
+        /* [DN01] */
         /// <summary>Build a default Tingen configuration object.</summary>
         /// <returns>An data structure with default Tingen configuration values.</returns>
-        /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Outpost31/Cs[@name="ConfigSettings"]/BuildDefaultObject/*'/>
+        /// <include file='XmlDoc/Outpost31.Core.Configuration.ConfigurationSettings_doc.xml' path='Outpost31.Core.Configuration.ConfigurationSettings/Type[@name="Method"]/BuildDefaultObject/*'/>
         public static ConfigSettings BuildDefaultObject()
         {
-            /* [DN01] */
-
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet, so if you
+             * need to create a log file here, use a Primeval Log.
              */
 
             return new ConfigSettings
@@ -52,10 +52,11 @@ namespace Outpost31.Core.Configuration
         /// <summary>Load the Tingen configuration file.</summary>
         /// <param name="configPath">Path to the Tingen configuration file.</param>
         /// <returns>The necessary AvatarNX data.</returns>
-        /// <include file='XmlDoc/Outpost31.Core.Configuration_doc.xml' path='Outpost31/Cs[@name="ConfigSettings"]/Load/*'/>
+        /// <include file='XmlDoc/Outpost31.Core.Configuration.ConfigurationSettings_doc.xml' path='Outpost31.Core.Configuration.ConfigurationSettings/Type[@name="Method"]/Load/*'/>
         public static ConfigSettings Load(string configPath, string configFileName)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet, so if you
+             * need to create a log file here, use a Primeval Log.
              */
 
             var configFilePath = $@"{configPath}\{configFileName}";

@@ -1,36 +1,36 @@
 ﻿// u240821.0938_code
-// u240821.0938_documentation
+// u241031_documentation
 
 using System.Collections.Generic;
 
 namespace Outpost31.Core.Framework.Catalog
 {
     /// <summary>Public paths for Tingen.</summary>
-    /// <include file='XmlDoc/Outpost31.Core.Framework_doc.xml' path='Outpost31/Cs[@name="PublicPaths"]/PublicPaths/*'/>
+    /// <include file='XmlDoc/Outpost31.Core.Framework.Catalog.PublicPaths_doc.xml' path='Outpost31.Core.Framework.Catalog.PublicPaths/Type[@name="Class"]/PublicPaths/*'/>
     public class PublicPaths
     {
         /// <summary>The root path for public data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\Public\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="RootPath"]/PublicData/*'/>
         public string Root { get; set; }
 
         /// <summary>The public path for alerts.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\Public\Alerts\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Alerts/*'/>
         public string Alerts { get; set; }
 
         /// <summary>Path for public error messages.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\Public\Errors\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Errors/*'/>
         public string Errors { get; set; }
 
         /// <summary>Path for public exported data.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\Public\Exports\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Exports/*'/>
         public string Exports { get; set; }
 
         /// <summary>Path for public reports.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\Public\Reports\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Reports/*'/>
         public string Reports { get; set; }
 
         /// <summary>Path for public warning messages.</summary>
-        /// <remarks>Should be "<c>%tnDataRoot%\Public\Warnings\</c>"</remarks>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="DataPath"]/Warnings/*'/>
         public string Warnings { get; set; }
 
         /// <summary>Builds the public paths data structure.</summary>
@@ -38,7 +38,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>The Tingen public paths data structure.</returns>
         public static PublicPaths BuildObject(string tnDataRoot)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet, so if you
+             * need to create a log file here, use a Primeval Log.
              */
 
             var publicRoot = $@"{tnDataRoot}\Public\";
@@ -59,7 +60,8 @@ namespace Outpost31.Core.Framework.Catalog
         /// <returns>The list of required public paths.</returns>
         public static List<string> RequiredPaths(PublicPaths publicPaths)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet, so if you
+             * need to create a log file here, use a Primeval Log.
              */
 
             return new List<string>
@@ -74,3 +76,10 @@ namespace Outpost31.Core.Framework.Catalog
         }
     }
 }
+
+/*
+=================
+DEVELOPMENT NOTES
+=================
+
+*/

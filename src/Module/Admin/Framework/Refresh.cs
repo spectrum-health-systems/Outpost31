@@ -16,5 +16,4 @@ DEVELOPMENT NOTES
 
 - Unknown?
 
-_Documentation updated ------
 */

@@ -1,5 +1,5 @@
-﻿// uXXXXXX.XXXX_code
-// uXXXXXX.XXXX_documentation
+﻿// u241021.1131_code
+// u241023_documentation
 
 using System.IO;
 using System.Text.Json;
@@ -7,6 +7,7 @@ using System.Text.Json;
 namespace Outpost31.Core.Utilities
 {
     /// <summary>Provides JSON functionality.</summary>
+    /// <include file='XmlDoc/Outpost31.Core.Utilities_doc.xml' path='Outpost31.Core.Utilities/Cs[@name="DuJson"]/DuJSon/*'/>
     public static class DuJson
     {
         /// <summary>Export JSON data to an external file.</summary>
@@ -14,20 +15,12 @@ namespace Outpost31.Core.Utilities
         /// <param name="jsonObject">The JSON object.</param>
         /// <param name="filePath">The export file path.</param>
         /// <param name="formatJson">Determines if the JSON data is formatted.</param>
-        /// <remarks>
-        ///  <para>
-        ///   <example>
-        ///    To call DuJson.ExportToLocalFile():
-        ///    <code>
-        ///     TheObject theObject = new TheObject();
-        ///     DuJson.ExportToLocalFile&lt;TheObject&gt;(theObject, "/Path/To/Export/File");
-        ///    </code>
-        ///   </example>
-        ///  </para>
-        /// </remarks>
+        /// <include file='XmlDoc/Outpost31.Core.Utilities_doc.xml' path='Outpost31.Core.Utilities/Cs[@name="DuJson"]/ExportToLocalFile/*'/>
         public static void ExportToLocalFile<JsonObject>(JsonObject jsonObject, string filePath, bool formatJson = true)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet, so if you
+             * need to create a log file here, use a Primeval Log.
+             */
 
             JsonSerializerOptions jsonFormat = new JsonSerializerOptions();
 
@@ -44,7 +37,9 @@ namespace Outpost31.Core.Utilities
         /// <returns>A JSON object as a string[].</returns>
         public static string ConvertToString<JsonObject>(JsonObject jsonObject)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet, so if you
+             * need to create a log file here, use a Primeval Log.
+             */
 
             return JsonSerializer.Serialize(jsonObject);
         }
@@ -52,20 +47,13 @@ namespace Outpost31.Core.Utilities
         /// <summary>Import JSON data from an external file.</summary>
         /// <typeparam name="JsonObject">The JSON object type.</typeparam>
         /// <param name="filePath">The import file path.</param>
-        /// <remarks>
-        ///  <para>
-        ///   <example>
-        ///    To call DuJson.ImportFromLocalFile():
-        ///    <code>
-        ///      TheObject theObject = DuJson.ImportFromLocalFile&lt;TheObject&gt;("/Path/To/Import/File");
-        ///    </code>
-        ///   </example>
-        ///  </para>
-        /// </remarks>
         /// <returns>The contents of the file as a JSON object.</returns>
+        /// <include file='XmlDoc/Outpost31.Core.Utilities_doc.xml' path='Outpost31.Core.Utilities/Cs[@name="DuJson"]/ImportToLocalFile/*'/>
         public static JsonObject ImportFromLocalFile<JsonObject>(string filePath)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log. */
+            /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet, so if you
+             * need to create a log file here, use a Primeval Log.
+             */
 
             var configurationFileContents = File.ReadAllText(filePath);
 
@@ -79,7 +67,4 @@ namespace Outpost31.Core.Utilities
 DEVELOPMENT NOTES
 =================
 
-- Change "configurationFileContents" to "fileContents"
-
-_Documentation updated ------
 */

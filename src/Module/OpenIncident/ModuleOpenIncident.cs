@@ -1,5 +1,6 @@
-﻿// uXXXXXX.XXXX_code
-// uXXXXXX.XXXX_documentation
+﻿// u241119.0834_code
+// u241119_documentation
+
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
@@ -12,13 +13,9 @@ namespace Outpost31.Module.OpenIncident
     /// <summary>TBD</summary>
     public class ModuleOpenIncident
     {
-        /// <summary>Assembly name for log files.</summary>
-        /// <remarks>
-        ///   <para>
-        ///    - Define the assembly name here so it can be used to write log files throughout the class.
-        ///   </para>
-        /// </remarks>
-        public static string AssemblyName { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
+        /// <summary>The executing Assembly name.</summary>
+        /// <remarks>A required component for writing log files, defined here so it can be used throughout the class.</remarks>
+        public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>TBD</summary>
         public List<string> Whitelist { get; set; }

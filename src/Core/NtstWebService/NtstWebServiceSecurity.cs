@@ -3,7 +3,8 @@
 
 using System.IO;
 
-/* This class is not yet implemented, but I'm leaving it here for future reference. 
+/* PLEASE NOTE
+ * This class is not yet implemented, but I'm leaving it here for future reference. 
  */
 
 namespace Outpost31.Core.NtstWebService

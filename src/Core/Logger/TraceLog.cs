@@ -1,5 +1,5 @@
 ﻿// u240709.0000_code
-// u240709.0000_documentation
+// u241021_documentation
 
 using System;
 using System.IO;
@@ -7,29 +7,32 @@ using System.Threading;
 
 namespace Outpost31.Core.Logger
 {
-    /// <summary>Soon.</summary>
+    /// <summary>Trace logs.</summary>
+    /// <include file='XmlDoc/Outpost31.Core.Logger.TraceLog_doc.xml' path='Outpost31.Core.Logger.TraceLog/Type[@name="Class"]/TraceLog/*'/>
     public class TraceLog
     {
-        /// <summary>TBD</summary>
+        /// <summary>Path to the TraceLog</summary>
+        /// <include file='XmlDoc/Outpost31.Core.Logger.TraceLog_doc.xml' path='Outpost31.Core.Logger.TraceLog/Type[@name="Property"]/TraceLogPath/*'/>
         public string TraceLogPath { get; set; }
 
-        /// <summary>TBD</summary>
+        /// <summary>TraceLogLevel</summary>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Logs"]/TraceLevel/*'/>
         public int TraceLogLevel { get; set; }
 
-        /// <summary>TBD</summary>
+        /// <summary>TraceLogDelay</summary>
+        /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Logs"]/TraceDelay/*'/>
         public int TraceLogDelay { get; set; }
 
         /// <summary>Build the trace log information.</summary>
-        /// <remarks>
-        /// The <b>TraceLogPath</b> is the same as the <b>tnSession.Framework.SystemCodePath.Session</b> It's here so we can easily pass all the data
-        /// </remarks>
-        /// <param name="traceLogLevel"></param>
-        /// <param name="traceLogDelay"></param>
-        /// <param name="traceLogPath"></param>
-        /// <returns></returns>
+        /// <param name="traceLogLevel">TraceLog level</param>
+        /// <param name="traceLogDelay">TraceLog delay</param>
+        /// <param name="traceLogPath">TraceLog path</param>
+        /// <remarks>Builds the Trace Log information.</remarks>
+        /// <returns>TraceLog information.</returns>
         public static TraceLog BuildInfo(string traceLogPath, int traceLogLevel, int traceLogDelay)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet, so if you
+             * need to create a log file here, use a Primeval Log.
              */
 
             return new TraceLog
@@ -40,16 +43,19 @@ namespace Outpost31.Core.Logger
             };
         }
 
-        /// <summary>Soon.</summary>
-        /// <param name="traceLevel"></param>
-        /// <param name="traceInfo"></param>
-        /// <param name="assemblyName"></param>
-        /// <param name="callPath"></param>
-        /// <param name="callMember"></param>
-        /// <param name="callLine"></param>
+        /* [DN01] */
+        /// <summary>Create a TraceLog</summary>
+        /// <param name="traceLevel">TraceLog level</param>
+        /// <param name="traceInfo">Tracelog information</param>
+        /// <param name="assemblyName">Executing assembly</param>
+        /// <param name="callPath">Called class</param>
+        /// <param name="callMember">Called method</param>
+        /// <param name="callLine">Called line</param>
+        /// <include file='XmlDoc/Outpost31.Core.Logger.TraceLog_doc.xml' path='Outpost31.Core.Logger.TraceLog/Type[@name="Method"]/Create/*'/>
         public static void Create(int logLevel, string assemblyName, TraceLog traceInfo, string fromClass, string fromMethod, int line)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet, so if you
+             * need to create a log file here, use a Primeval Log.
              */
 
             if (logLevel <= traceInfo.TraceLogLevel)
@@ -62,17 +68,20 @@ namespace Outpost31.Core.Logger
             }
         }
 
+        /* [DN01] */
         /// <summary>Soon.</summary>
-        /// <param name="logLevel"></param>
-        /// <param name="assemblyName"></param>
-        /// <param name="traceInfo"></param>
-        /// <param name="fromClass"></param>
-        /// <param name="fromMethod"></param>
-        /// <param name="line"></param>
-        /// <param name="message"></param>
+        /// <param name="logLevel">TraceLog level</param>
+        /// <param name="assemblyName">Executing assembly</param>
+        /// <param name="traceInfo">Tracelog information</param>
+        /// <param name="fromClass">Called class</param>
+        /// <param name="fromMethod">Called method</param>
+        /// <param name="line">Called line</param>
+        /// <param name="message">Log message</param>
+        /// <include file='XmlDoc/Outpost31.Core.Logger.TraceLog_doc.xml' path='Outpost31.Core.Logger.TraceLog/Type[@name="Method"]/Create_WithMessage/*'/>
         public static void Create(int logLevel, string assemblyName, TraceLog traceInfo, string fromClass, string fromMethod, int line, string message)
         {
-            /* Trace logs cannot be used here. For debugging purposes, use a Primeval log.
+            /* Trace Logs can't go here because the logging infrastructure hasn't been initialized yet, so if you
+             * need to create a log file here, use a Primeval Log.
              */
 
             if (logLevel <= traceInfo.TraceLogLevel)
@@ -86,3 +95,15 @@ namespace Outpost31.Core.Logger
         }
     }
 }
+
+/*
+=================
+DEVELOPMENT NOTES
+=================
+
+-----------------
+[DN01] 241021
+-----------------
+These should standardized.
+
+*/

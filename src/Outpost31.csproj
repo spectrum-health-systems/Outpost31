@@ -99,17 +99,35 @@
     <Compile Include="Module\OpenIncident\Verify.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WelcomeToOutpost31.cs" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework.Maintenance_doc.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Module\Common\" />
     <Folder Include="Module\Testing\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="XmlDoc\Common_doc.xml" />
-    <Content Include="XmlDoc\Outpost31.Core.Configuration_doc.xml" />
-    <Content Include="XmlDoc\Outpost31.Core.Avatar_doc.xml" />
-    <Content Include="XmlDoc\Outpost31.Core.Framework_doc.xml" />
-    <Content Include="XmlDoc\Outpost31.Core_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Avatar.ReturnObject_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.TingenPaths_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.SystemCodePaths_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.RemotePaths_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework.Paths_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework.Refresh_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Logger.LogEvent_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Logger.LoggerCatalog_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Logger.PrimevalLog_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Logger.TraceLog_doc.xml" />
+    <Content Include="XmlDoc\xml_documentation_template.xml" />
+    <Content Include="XmlDoc\depreciated_Outpost31.Core.Framework_doc - Copy.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Utilities_doc.xml" />
+    <Content Include="XmlDoc\Outpost31-AvatarSystemCodes_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Session_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Logger_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.WelcomeToOutpost31_doc.xml" />
+    <Content Include="XmlDoc\Outpost31-Common_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Configuration.ConfigurationSettings_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Avatar.AvatarData_doc.xml" />
+    <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.PublicPaths_doc.xml" />
+    <Content Include="XmlDoc\depreciated_Outpost31.Core_doc.xml" />
     <None Include="app.config" />
     <None Include="packages.config" />
     <Content Include="XmlDoc\README.md" />
