@@ -16,7 +16,7 @@ namespace Outpost31.Module.Admin.Export
 DEVELOPMENT NOTES
 =================
 
-- Future testing stuff.
+This may be implemented for future testing stuff.
 
-_Documentation updated ------
+
 */

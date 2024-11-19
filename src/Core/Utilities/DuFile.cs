@@ -21,5 +21,4 @@ namespace Outpost31.Core.Utilities
 DEVELOPMENT NOTES
 =================
 
-_Documentation updated ------
 */

@@ -1,5 +1,5 @@
-﻿// u240817.1048_code
-// u240817.1048_documentation
+﻿// u241119.0830_code
+// u241119_documentation
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -10,8 +10,8 @@ namespace Outpost31.Core
     /// <summary>Parse the Script Parameter components passed from Avatar.</summary>
     public static class ScriptParameter
     {
-        /// <summary>Assembly name for logging purposes.</summary>
-        /// <remarks>The assembly name is defined here so it can be used to write log files throughout the class.</remarks>
+        /// <summary>The executing Assembly name.</summary>
+        /// <remarks>A required component for writing log files, defined here so it can be used throughout the class.</remarks>
         public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>Parses the original Script Parameter sent from Avatar.</summary>

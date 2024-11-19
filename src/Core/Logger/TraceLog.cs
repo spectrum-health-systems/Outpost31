@@ -27,7 +27,7 @@ namespace Outpost31.Core.Logger
         /// <param name="traceLogLevel">TraceLog level</param>
         /// <param name="traceLogDelay">TraceLog delay</param>
         /// <param name="traceLogPath">TraceLog path</param>
-        /// <include file='XmlDoc/Outpost31.Core.Logger.TraceLog_doc.xml' path='Outpost31.Core.Logger.TraceLog/Type[@name="Method"]/BuildInfo/*'/>
+        /// <remarks>Builds the Trace Log information.</remarks>
         /// <returns>TraceLog information.</returns>
         public static TraceLog BuildInfo(string traceLogPath, int traceLogLevel, int traceLogDelay)
         {

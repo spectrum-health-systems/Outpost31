@@ -38,14 +38,14 @@
     <!-- Methods -->
     <Type name="Method">
 
-        <!-- BuildInfo() -->
-        <BuildInfo>
+        <!-- Create() -->
+        <Create>
             <remarks>
                 <para>
-                    What this does.<br/>
+                    What this creates.<br/>
                 </para>
             </remarks>
-        </BuildInfo>
+        </Create>
 
     </Type>
 

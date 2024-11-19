@@ -13,12 +13,8 @@ namespace Outpost31.Core.Session
     /// <summary>TBD</summary>
     public static class Catalog
     {
-        /// <summary>Assembly name for log files.</summary>
-        /// <remarks>
-        ///   <para>
-        ///    - Define the assembly name here so it can be used to write log files throughout the class.
-        ///   </para>
-        /// </remarks>
+        /// <summary>The executing Assembly name.</summary>
+        /// <remarks>A required component for writing log files, defined here so it can be used throughout the class.</remarks>
         public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>TBD</summary>
@@ -183,5 +179,5 @@ DEVELOPMENT NOTES
 - Module whitelists, should be in the Module configuration.
 - Add other Modules information
 
-_Documentation updated ------
+Most of this is going away with .tinplate functionality
 */

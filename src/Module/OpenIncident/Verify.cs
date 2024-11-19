@@ -10,12 +10,8 @@ namespace Outpost31.Module.OpenIncident
     /// <summary>VerifyAuthor command.</summary>
     public static partial class Verify
     {
-        /// <summary>Assembly name for log files.</summary>
-        /// <remarks>
-        ///   <para>
-        ///    - Define the assembly name here so it can be used to write log files throughout the class.
-        ///   </para>
-        /// </remarks>
+        /// <summary>The executing Assembly name.</summary>
+        /// <remarks>A required component for writing log files, defined here so it can be used throughout the class.</remarks>
         public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>TBD</summary>
@@ -64,5 +60,4 @@ namespace Outpost31.Module.OpenIncident
 DEVELOPMENT NOTES
 =================
 
-_Documentation updated ------
 */

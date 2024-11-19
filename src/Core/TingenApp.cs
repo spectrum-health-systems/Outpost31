@@ -1,5 +1,5 @@
-﻿// u240819.0935_code
-// u240819.0935_documentation
+﻿// u2241119.0831_code
+// u241119_documentation
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -11,8 +11,8 @@ namespace Outpost31.Core
     /// <include file='XmlDoc/Outpost31.Core_doc.xml' path='Outpost31/Cs[@name="TingenApp"]/TingenApp/*'/>
     public static class TingenApp
     {
-        /// <summary>Assembly name for logging purposes.</summary>
-        /// <include file='XmlDoc/Common_doc.xml' path='Common/Term[@name="Term"]/AssemblyName/*'/>
+        /// <summary>The executing Assembly name.</summary>
+        /// <remarks>A required component for writing log files, defined here so it can be used throughout the class.</remarks>
         public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>Starts the Tingen web service.</summary>
