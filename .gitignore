@@ -1,0 +1,39 @@
+## .gitignore for Outpost31
+## b241119
+
+## Since Outpost31 is part of the Tingen solution, the repository is slightly
+## more restrictive than Tingen (e.g. the "bin\" and "obj\" directories are
+## not committed)
+
+[Bb]in/
+[Ll]og/
+[Ll]ogs/
+
+## User-specific
+*.rsuser
+*.sln.docstates
+*.suo
+*.user
+*.userosscache
+*.userprefs
+*.vs/
+
+## Build results.
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Oo]bj/
+
+## MacOS specific
+*DS_Store
+
+## Data/sourcecode that is used during development, but should not be committed
+## to the repository should go here.
+*.non-committal/
