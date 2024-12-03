@@ -129,6 +129,7 @@
     <Content Include="XmlDoc\Outpost31.Core.Framework.Catalog.PublicPaths_doc.xml" />
     <Content Include="XmlDoc\depreciated_Outpost31.Core_doc.xml" />
     <None Include="app.config" />
+    <None Include="AppData\Outpost31.json" />
     <None Include="packages.config" />
     <Content Include="XmlDoc\README.md" />
   </ItemGroup>

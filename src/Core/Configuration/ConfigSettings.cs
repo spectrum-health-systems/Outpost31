@@ -2,6 +2,7 @@
 // 241031_documentation
 
 using System.IO;
+using System.Reflection;
 
 namespace Outpost31.Core.Configuration
 {
@@ -9,6 +10,9 @@ namespace Outpost31.Core.Configuration
     /// <include file='XmlDoc/Outpost31.Core.Configuration.ConfigurationSettings_doc.xml' path='Outpost31.Core.Configuration.ConfigurationSettings/Type[@name="Class"]/ConfigSettings/*'/>
     public class ConfigSettings
     {
+        /// <summary>DOCUMENTATION NEEDED</summary>
+        public string Outpost31Version { get; set; }
+
         /// <summary>Determines the available Tingen web service functionality.</summary>
         /// <include file='XmlDoc/Outpost31-Common_doc.xml' path='Outpost31-Common/Type[@name="Modes"]/StandardModes/*'/>
         public string TingenMode { get; set; }
@@ -41,6 +45,7 @@ namespace Outpost31.Core.Configuration
 
             return new ConfigSettings
             {
+                Outpost31Version    = Assembly.GetExecutingAssembly().GetName().Version.ToString(),
                 TingenMode          = "enabled",
                 ModOpenIncidentMode = "enabled",
                 NtstWebServicesMode = "disabled",
