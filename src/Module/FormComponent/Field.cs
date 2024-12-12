@@ -1,5 +1,5 @@
-﻿// uX241119.0833_code
-// uX241119_documentation
+﻿// u241119.0833_code
+// u241212_documentation
 
 using System.IO;
 using System.Reflection;
@@ -8,6 +8,7 @@ using Outpost31.Core.Logger;
 namespace Outpost31.Module.Common.Action
 {
     /// <summary>Field operations.</summary>
+    /// INCLUDE FILE
     public static partial class Field
     {
         /// <summary>The executing Assembly name.</summary>
@@ -28,6 +29,7 @@ namespace Outpost31.Module.Common.Action
         ///  </example>
         /// </remarks>
         /// <returns>True (the fields values are the same) or false(the field values are different).</returns>
+        /// INCLUDE FILE
         public static bool CompareValue(string field01Value, string field02Value, TraceLog traceInfo)
         {
             LogEvent.Trace(1, ExeAsm, traceInfo);
@@ -70,6 +72,7 @@ namespace Outpost31.Module.Common.Action
         ///   Since the <c>filePath</c> is user-definable, we will verify that the <c>filePath</c> doesn't exist before (re)creating it.
         ///  </para>
         /// </remarks>
+        /// INCLUDE FILE
         public static void SaveValue(string valueToSave, string filePath, TraceLog traceInfo)
         {
             LogEvent.Trace(1, ExeAsm, traceInfo);
@@ -88,10 +91,5 @@ namespace Outpost31.Module.Common.Action
     }
 }
 
-/*
-=================
-DEVELOPMENT NOTES
-=================
-
-_Documentation updated ------
-*/
+/* DEVELOPMENT NOTES
+ */

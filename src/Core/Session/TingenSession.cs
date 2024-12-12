@@ -145,7 +145,7 @@ namespace Outpost31.Core.Session
         {
             return new Dictionary<string, string>
             {
-                { "tnBuild",              "241205.0944" },
+                { "tnBuild",              "241212.1608" },
                 { "avSystemCode",         "UAT" },
                 { "tnDataRoot",           @"C:\TingenData" },
                 { "tnConfigFileName",     "Tingen.config" },

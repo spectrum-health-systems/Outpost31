@@ -9,11 +9,5 @@ namespace Outpost31.Module.Admin.Framework
     }
 }
 
-/*
-=================
-DEVELOPMENT NOTES
-=================
-
-- Unknown?
-
-*/
+/* DEVELOPMENT NOTES
+ */

@@ -77,11 +77,8 @@ namespace Outpost31.Module.Admin.Service
     }
 }
 
-/*
-=================
-DEVELOPMENT NOTES
-=================
-
+/* DEVELOPMENT NOTES
+ 
 - Need to also finalize the OO in "settings" and "mode", not just "all"
 
-*/
+ */
