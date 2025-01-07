@@ -1437,6 +1437,7 @@
         </member>
         <member name="T:Outpost31.Module.Common.Action.Field">
             <summary>Field operations.</summary>
+            INCLUDE FILE
         </member>
         <member name="P:Outpost31.Module.Common.Action.Field.ExeAsm">
             <summary>The executing Assembly name.</summary>
@@ -1457,6 +1458,7 @@
              </example>
             </remarks>
             <returns>True (the fields values are the same) or false(the field values are different).</returns>
+            INCLUDE FILE
         </member>
         <member name="M:Outpost31.Module.Common.Action.Field.Lock(System.String)">
             <summary>Locks a field so that it cannot be edited.</summary>
@@ -1488,9 +1490,11 @@
               Since the <c>filePath</c> is user-definable, we will verify that the <c>filePath</c> doesn't exist before (re)creating it.
              </para>
             </remarks>
+            INCLUDE FILE
         </member>
         <member name="T:Outpost31.Module.OpenIncident.ModuleOpenIncident">
             <summary>TBD</summary>
+            INCLUDE FILE
         </member>
         <member name="P:Outpost31.Module.OpenIncident.ModuleOpenIncident.ExeAsm">
             <summary>The executing Assembly name.</summary>
@@ -1537,6 +1541,7 @@
         </member>
         <member name="T:Outpost31.Module.OpenIncident.Verify">
             <summary>VerifyAuthor command.</summary>
+            INCLUDE FILE
         </member>
         <member name="P:Outpost31.Module.OpenIncident.Verify.ExeAsm">
             <summary>The executing Assembly name.</summary>
@@ -1544,10 +1549,12 @@
         </member>
         <member name="M:Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsOpening(Outpost31.Core.Session.TingenSession)">
             <summary>TBD</summary>
+            INCLUDE FILE
         </member>
         <member name="M:Outpost31.Module.OpenIncident.Verify.OriginalAuthorIsSubmitting(Outpost31.Core.Session.TingenSession)">
             <summary>Verify the Avatar user is the same as the original author.</summary>
             <param name="tnSession"></param>
+            INCLUDE FILE
         </member>
         <member name="T:Outpost31.WelcomeToOutpost31">
             <summary>A place for Outpost31 details and stuff.</summary>
