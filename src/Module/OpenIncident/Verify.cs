@@ -1,5 +1,5 @@
-﻿// uXXXXXX.XXXX_code
-// uXXXXXX.XXXX_documentation
+﻿// u241212.1608_code
+// u241212_documentation
 
 using System.Reflection;
 using Outpost31.Core.Logger;
@@ -8,6 +8,7 @@ using Outpost31.Core.Session;
 namespace Outpost31.Module.OpenIncident
 {
     /// <summary>VerifyAuthor command.</summary>
+    /// INCLUDE FILE
     public static partial class Verify
     {
         /// <summary>The executing Assembly name.</summary>
@@ -15,6 +16,7 @@ namespace Outpost31.Module.OpenIncident
         public static string ExeAsm { get; set; } = Assembly.GetExecutingAssembly().GetName().Name;
 
         /// <summary>TBD</summary>
+        /// INCLUDE FILE
         public static void OriginalAuthorIsOpening(TingenSession tnSession)
         {
             LogEvent.Trace(1, ExeAsm, tnSession.TraceInfo);
@@ -35,6 +37,7 @@ namespace Outpost31.Module.OpenIncident
 
         /// <summary>Verify the Avatar user is the same as the original author.</summary>
         /// <param name="tnSession"></param>
+        /// INCLUDE FILE
         public static void OriginalAuthorIsSubmitting(TingenSession tnSession)
         {
             LogEvent.Trace(1, ExeAsm, tnSession.TraceInfo);
@@ -55,9 +58,5 @@ namespace Outpost31.Module.OpenIncident
     }
 }
 
-/*
-=================
-DEVELOPMENT NOTES
-=================
-
-*/
+/* DEVELOPMENT NOTES
+ */

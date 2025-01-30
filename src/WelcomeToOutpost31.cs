@@ -1,9 +1,9 @@
-﻿// =============================================================== 24.11.0 =====
+﻿// =============================================================== 25.1.0 ======
 // Outpost31: The Tingen web service logic.
 // https://github.com/APrettyCoolProgram/Outpost31
 // Copyright (c) A Pretty Cool Program. All rights reserved.
 // Licensed under the Apache 2.0 license.
-// ================================================================ 241118 =====
+// ================================================================ 250114 =====
 
 // u240818.0959_code
 // u241018_documentation

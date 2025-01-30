@@ -1,5 +1,5 @@
 ﻿// u241119.0834_code
-// u241119_documentation
+// u241212_documentation
 
 using System.Collections.Generic;
 using System.IO;
@@ -11,6 +11,7 @@ using ScriptLinkStandard.Objects;
 namespace Outpost31.Module.OpenIncident
 {
     /// <summary>TBD</summary>
+    /// INCLUDE FILE
     public class ModuleOpenIncident
     {
         /// <summary>The executing Assembly name.</summary>
@@ -47,7 +48,7 @@ namespace Outpost31.Module.OpenIncident
         /// <summary>TBD</summary>
         public static ModuleOpenIncident BuildDefaultModOpenIncident(TraceLog traceInfo)
         {
-            /* Log file? */
+            /* Can/should we put a log file here? */
 
             return new ModuleOpenIncident
             {
@@ -66,11 +67,11 @@ namespace Outpost31.Module.OpenIncident
         /// <summary>TBD</summary>
         public static ModuleOpenIncident Load(string modConfigFilePath, string currentSessionPath, OptionObject2015 workOptionObject, TraceLog traceInfo)
         {
-            /* Log file? */
+            /* Can/should we put a log file here? */
 
             if (!File.Exists(modConfigFilePath))
             {
-                /* Log file? */
+                /* Can/should we put a log file here? */
 
                 Outpost31.Core.Utilities.DuJson.ExportToLocalFile<ModuleOpenIncident>(BuildDefaultModOpenIncident(traceInfo), modConfigFilePath);
             }
@@ -81,17 +82,17 @@ namespace Outpost31.Module.OpenIncident
         /// <summary>TBD</summary>
         public static string GetFullName(string filePath, string avatarName, TraceLog traceInfo)
         {
-            /* Log file? */
+            /* Can/should we put a log file here? */
 
             var fullName = "";
 
             foreach (string entry in File.ReadLines($@"{filePath}\USERID_User Description.txt"))
             {
-                /* Log file? */
+                /* Can/should we put a log file here? */
 
                 if (entry.StartsWith(avatarName))
                 {
-                    /* Log file? */
+                    /* Can/should we put a log file here? */
 
                     var entryComponent = entry.Split('^');
 
@@ -114,10 +115,5 @@ namespace Outpost31.Module.OpenIncident
     }
 }
 
-/*
-=================
-DEVELOPMENT NOTES
-=================
-
-_Documentation updated ------
-*/
+/* DEVELOPMENT NOTES
+ */

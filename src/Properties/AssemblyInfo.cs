@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("A Pretty Cool Program & Spectrum Health Systems")]
 [assembly: AssemblyProduct("Outpost31")]
-[assembly: AssemblyCopyright("Copyright 2024 A Pretty Cool Program")]
+[assembly: AssemblyCopyright("Copyright 2015-2025 A Pretty Cool Program")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -31,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("24.11.0.0")]
-[assembly: AssemblyFileVersion("24.11.0.0")]
+[assembly: AssemblyVersion("25.1.0.0")]
+[assembly: AssemblyFileVersion("25.1.0.0")]
