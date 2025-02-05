@@ -1,0 +1,43 @@
+﻿<!--
+    u250204
+-->
+
+<Outpost31.Core>
+
+    <!-- Classes -->
+    <Type name="Class">
+
+        <!-- Startup.cs -->
+        <Startup>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</seealso>
+        </Startup>
+
+    </Type>
+
+    <!-- Properties-->
+    <Type name="Property">
+
+    </Type>
+
+    <!-- Methods -->
+    <Type name="Method">
+
+        <!-- GetSystemCode() -->
+        <GetSystemCode>
+            <remarks>
+                <para>
+                    The Tingen Web Service determines which Avatar System Code it will use by reading the contents of the
+                    <c>./AppData/Runtime/system.code</c> file.<br/>
+                    <br/>
+                    This file should contain a single line of text with one of the following values:
+                    <list type="bullet">
+                        <item>LIVE</item>
+                        <item>UAT</item>
+                    </list>
+                </para>
+            </remarks>
+        </GetSystemCode>
+
+    </Type>
+
+</Outpost31.Core>

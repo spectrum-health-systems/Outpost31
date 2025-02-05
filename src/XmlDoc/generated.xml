@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Outpost31</name>
+    </assembly>
+    <members>
+        <member name="T:Outpost31.Core.Startup">
+            <summary>Performs startup processes.</summary>
+            <seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</seealso>
+        </member>
+        <member name="M:Outpost31.Core.Startup.GetSystemCode">
+            <summary>Get the Avatar System Code that the Tingen Web Service will use.</summary>
+            <returns>An Avatar System Code.</returns>
+            <remarks>
+                <para>
+                    The Tingen Web Service determines which Avatar System Code it will use by reading the contents of the
+                    <c>./AppData/Runtime/system.code</c> file.<br />
+                    <br />
+                    This file should contain a single line of text with one of the following values:
+                    <list type="bullet">
+                        <item>LIVE</item>
+                        <item>UAT</item>
+                    </list>
+                </para>
+            </remarks>
+        </member>
+        <member name="T:Outpost31.WelcomeToOutpost31">
+            <summary>A place for Outpost31 details and stuff.</summary>
+            <remarks>
+                <para>
+                    Outpost31 is the back-end logic for the Tingen web service.<br />
+                    <br />
+                    This class is just a placeholder for documentation, and where the Outpost31 version number is<br />
+                    updated (see the header above).<br />
+                    <br />
+                    While you're here, take a look at this stuff:
+                    <list type="bullet">
+                        <item>The <see href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen Documentation</see></item>
+                    </list>
+                    Uh...I guess that's it. Thanks for stopping by!
+                </para>
+            </remarks><seealso href="https://github.com/spectrum-health-systems/Tingen-Documentation">Tingen documentation</seealso>
+        </member>
+    </members>
+</doc>

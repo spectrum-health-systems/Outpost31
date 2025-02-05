@@ -1,0 +1,22 @@
+﻿<!--
+    u250204
+-->
+
+<Namespace>
+
+    <!-- Classes -->
+    <Type name="Class">
+
+    </Type>
+
+    <!-- Properties-->
+    <Type name="Property">
+
+    </Type>
+
+    <!-- Methods -->
+    <Type name="Method">
+
+    </Type>
+
+</Namespace>
